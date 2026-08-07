@@ -1,0 +1,14 @@
+capability_id: OFFLINE-002
+name: AI Local / RAG Offline (Assistance Layer)
+version: 1.0.0
+maturity_level: N5
+target_maturity: N6
+evidence_state: VALIDATED
+access_level: PUBLIC
+coverage: FULL
+tags:
+- edge
+- iot
+- castuo-system
+last_update: '2026-08-04'
+owner: Gregorio Jiménez Bodes

@@ -1,0 +1,19 @@
+# KPI Definitions for Capability Validation
+metrics:
+  - id: "KPI-001"
+    name: "Message Delivery Rate"
+    unit: "percentage"
+    target: 99.9
+    description: "Porcentaje de mensajes MQTT entregados correctamente al broker."
+
+  - id: "KPI-002"
+    name: "Latency P95"
+    unit: "ms"
+    target: 200
+    description: "Latencia en el percentil 95 para el procesamiento de eventos en el Edge."
+
+  - id: "KPI-003"
+    name: "Offline Autonomy"
+    unit: "hours"
+    target: 24
+    description: "Tiempo que el sistema puede operar y bufferear datos sin conexión cloud."

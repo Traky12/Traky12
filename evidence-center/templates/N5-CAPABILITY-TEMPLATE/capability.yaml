@@ -1,0 +1,15 @@
+# CASTÚO-SYSTEM Capability Metadata
+capability_id: "CAP-XXX"
+name: "Nombre de la Capacidad"
+version: "1.0.0"
+maturity_level: "N5"
+target_maturity: "N6"
+evidence_state: "VALIDATED"
+access_level: "PUBLIC" # PUBLIC, PARTNER, RESTRICTED, NA
+coverage: "FULL" # FULL, PARTIAL, NONE
+tags:
+  - edge
+  - iot
+  - castuo-system
+last_update: "2026-08-04"
+owner: "Gregorio Jiménez Bodes"
