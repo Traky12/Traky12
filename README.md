@@ -1,6 +1,7 @@
 # Hi, I'm Gregorio Jiménez Bodes 👋
 
-**Founder and Technical Architect of CASTÚO-SYSTEM**, an open, modular and evidence-driven ecosystem for AI-assisted digital infrastructure, edge computing, IoT, workflow automation and digital twins.
+**Founder & Technical Architect building evidence-driven digital infrastructure for rural, industrial and environmental systems.**
+CASTÚO-SYSTEM is an open, modular ecosystem combining IoT, edge computing, secure APIs, workflow automation, observability, and AI-assisted operations, with a focus on traceability, resilience, and evidence-based engineering.
 
 I design and develop modular, interoperable technologies that connect cloud services, edge devices, artificial intelligence and observability into practical solutions for rural, environmental and industrial digital transformation.
 
