@@ -191,7 +191,7 @@ CASTÚO-EVOLUTION correlates evidence, evaluates defined maturity conditions, de
 
 ## Federated registries
 
-The control plane maintains logically separated but linked registries for:
+The control plane defines logically separated registries intended to be linked through shared identifiers and provenance relationships.
 
 - repositories
 - profiles and actors
@@ -202,8 +202,6 @@ The control plane maintains logically separated but linked registries for:
 - Gates
 - decisions
 - evolutionary baselines
-
-These registries are connected through shared identifiers and provenance relationships.
 
 ## Repository adapters
 
@@ -338,7 +336,7 @@ The current priority is not simply adding more features.
 
 It is increasing the amount of real, reproducible evidence behind the capabilities that matter most.
 
-Current promotion targets include:
+Current promotion targets are being pursued for:
 
 - MQTT ingestion → Implemented → Pilot
 - Offline-first buffering → Implemented → Pilot
@@ -351,28 +349,6 @@ Current promotion targets include:
 These are maturity transitions and promotion targets, not claims that the destination state has already been independently demonstrated.
 
 The objective is to move selected capabilities from implemented software toward independently supported technical evidence.
-
----
-
-## Technical replacement-cost estimate
-
-Where a technical asset valuation is referenced in project documentation, it is treated separately from liquidity, financing and market valuation.
-
-**Technical replacement-cost estimate (RCN): €420,000, based on 5,600 estimated development hours at €75/hour.**
-
-This figure is a technical replacement-cost estimate under the stated assumptions.
-
-It is not presented here as:
-
-- cash
-- financing
-- revenue
-- market value
-- company valuation
-- money already spent in that amount
-- available liquidity
-
-Any use of this estimate for accounting, legal, corporate or funding purposes requires the corresponding documentary and professional treatment outside this profile README.
 
 ---
 
@@ -410,11 +386,36 @@ The objective is not to claim maturity because a repository exists.
 
 It is to leave behind an inspectable engineering trail in which implementations, tests, changes, evidence and decisions can progressively be related to one another.
 
+The same principle applies to the ecosystem:
+
+**Claim ≠ Evidence**
+
+and:
+
+**Evidence should be traceable to an implementation, test, event, artifact, decision or other defined source.**
+
+---
+
+## Versioning and scope
+
+The public profile intentionally distinguishes between:
+
+- CASTÚO-EVOLUTION specification / control-plane version: v2.2
+- ecosystem documentation baselines: maintained separately where applicable
+
+Version labels are only used when their scope is explicitly defined and stable.
+
+The current CASTÚO-EVOLUTION control plane remains:
+
+**PARTIAL / EVIDENCE-BACKED**
+
+while end-to-end federation and vendor-independent validation continue.
+
 ---
 
 ## Connect
 
-🌐 [Website](https://castuo-system.es)  
+🌐 [Website](https://castuo-system.es/)  
 🔬 [ORCID](https://orcid.org/0009-0007-3489-0565)  
 💼 [LinkedIn — Castúo-System](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/)  
 🐙 [GitHub — Traky12](https://github.com/Traky12)
