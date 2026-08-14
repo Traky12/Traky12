@@ -1,42 +1,37 @@
-# Gregorio Jiménez Bodes 👋
+# Gregorio Jiménez Bodes · Traky12
 
-### Founder · Technical Architect · Software Engineer
+**Founder · Technical Architect · Software Engineer**
 
-I build **evidence-driven digital infrastructure** for rural, industrial and environmental systems.
+> I build evidence-driven digital infrastructure for rural, industrial and environmental systems.
 
 My work combines:
 
-**AI · Edge Computing · IoT · DevSecOps · Distributed Systems · Digital Twins · Observability · Open Source**
+**AI · Edge Computing · IoT · DevSecOps · Distributed Systems · Digital Twins · Observability · Open-Source Components · Evidence Engineering**
 
-I am the founder and technical architect behind **CASTÚO-SYSTEM**, an open and modular ecosystem connecting cloud services, edge infrastructure, APIs, automation, AI and operational evidence.
-
-My engineering principle is simple:
+I am the founder and technical architect behind **CASTÚO-SYSTEM**, a modular technology ecosystem with open-source components that connects cloud services, edge infrastructure, APIs, automation, AI, data and evidence-driven governance.
 
 > **Build it. Test it. Observe it. Document the evidence. Then increase its maturity.**
 
 ---
 
-## What I Build
+## What I build
 
-I work on systems where **connectivity, resilience, interoperability and traceability matter**.
+I work on systems where **connectivity, resilience, interoperability and traceability** matter.
 
-| Area                         | Focus                                                                |
-| ---------------------------- | -------------------------------------------------------------------- |
-| 🧠 **AI**                    | Local AI · RAG · AI-assisted operations · decision support           |
-| 📡 **Edge & IoT**            | Raspberry Pi · ESP32 · MQTT · LoRaWAN · offline buffering            |
-| 🔐 **Secure Infrastructure** | APIs · authentication · DevSecOps · IaC · audit trails               |
-| 📊 **Observability**         | Prometheus · metrics · operational visibility · validation           |
-| 🛰️ **Spatial Systems**      | GIS · Digital Twins · environmental monitoring                       |
-| 🧪 **Evidence Engineering**  | Capabilities · evidence governance · validation gates · traceability |
-| ⚙️ **Automation**            | Workflow automation · CI/CD · reproducible engineering               |
+- 🧠 **AI** — local AI, RAG, AI-assisted operations and decision support.
+- 📡 **Edge & IoT** — Raspberry Pi, ESP32, MQTT, LoRaWAN and offline buffering.
+- 🔐 **Secure Infrastructure** — APIs, authentication, DevSecOps, IaC and audit trails.
+- 📊 **Observability** — Prometheus, Grafana, metrics and operational visibility.
+- 🛰️ **Spatial Systems** — GIS, Digital Twins and environmental monitoring.
+- 🧪 **Evidence Engineering** — capabilities, provenance, evidence governance, validation gates and traceability.
+- ⚙️ **Automation** — workflow automation, CI/CD and reproducible engineering.
+- 🏛️ **Federated Governance** — repositories, capabilities, evidence, risks, decisions and evolutionary baselines.
 
-The common objective is to turn individual technologies into **systems that can be operated, measured and progressively validated**.
+The common objective is to build systems that can be **operated, measured, traced and progressively validated** rather than simply described.
 
 ---
 
 # CASTÚO-SYSTEM
-
-### An evidence-driven digital infrastructure ecosystem
 
 **CASTÚO-SYSTEM** is the main technology ecosystem I am building.
 
@@ -64,231 +59,324 @@ Evidence & Governance
 
 The architecture is modular: components can operate independently while also participating in a larger interoperable system.
 
-The focus is particularly relevant to **rural, environmental and industrial environments**, where connectivity and infrastructure cannot always be assumed.
+The focus is particularly relevant to rural, environmental and industrial environments, where connectivity and infrastructure cannot always be assumed.
 
----
+## Engineering approach
 
-## Offline-First
+Code existing is not the same as technology being validated.
 
-A central architectural principle is **Offline-First operation**.
+CASTÚO-SYSTEM deliberately separates technical maturity states:
 
-Field systems may need to continue operating when connectivity is limited or temporarily unavailable.
+| State | Meaning |
+|--|--|
+| Implemented | The capability exists in the codebase within a defined scope. |
+| Tested | The capability has defined automated, integration or other tests, with corresponding execution evidence. |
+| Validated | Evidence demonstrates the capability beyond isolated implementation within a defined scope and against explicit acceptance criteria. |
+| Pilot | The capability is deployed in a real environment and evaluated against defined evidence and KPIs. |
+| Operational | The capability operates continuously with operational evidence, observability and defined controls. |
 
-The approach combines:
+The progression is intentionally non-equivalent:
 
-* **Offline knowledge** — Kiwix
-* **Local assistance** — Local AI / RAG
-* **Field mapping** — Organic Maps
-* **Off-grid communication** — Meshtastic
-* **Edge infrastructure** — Raspberry Pi / ESP32
-* **IoT connectivity** — MQTT / LoRaWAN
-* **Cloud services** — centralized integration and processing
-* **Evidence** — traceability of capabilities, releases and validation
+```text
+DOCUMENTED
+    ≠
+IMPLEMENTED
+    ≠
+TESTED
+    ≠
+VALIDATED
+    ≠
+PILOT
+    ≠
+OPERATIONAL
+```
 
-The result is an architecture designed around **resilience rather than permanent connectivity**.
+A feature existing in code does not by itself establish validation, pilot deployment or operational maturity.
 
----
+This distinction is central to the way I design and communicate technical systems.
 
-# Engineering Approach
+## Evidence & Governance
 
-One distinction drives much of my current work:
+A major part of my work is building an auditable capability and evidence framework.
 
-> **Code existing is not the same as technology being validated.**
+The principle is simple:
 
-CASTÚO-SYSTEM therefore distinguishes between different maturity states.
+**Technical claims should be traceable to evidence.**
 
-### Implemented
+This includes:
 
-The capability exists in code and has associated automated testing.
+- Capability registries
+- Evidence registries
+- Provenance
+- Verification states
+- Validation gates
+- Evidence promotion
+- Temporal evidence policies
+- Risk registries
+- Decision records
+- CI validation
+- Documentation contracts
+- Traceability between requirements, capabilities, implementations and evidence
 
-### Validated
-
-The capability has been validated beyond isolated implementation, including integration or staging evidence where applicable.
-
-### Pilot
-
-The capability is deployed in a real environment and measured using defined evidence and KPIs.
-
-### Operational
-
-The capability operates continuously with operational evidence, observability and defined controls.
+The objective is to establish a reproducible relationship between:
 
 ```text
 Requirement
-     ↓
+    ↓
 Capability
-     ↓
+    ↓
 Implementation
-     ↓
-Testing
-     ↓
+    ↓
+Test
+    ↓
 Evidence
-     ↓
+    ↓
 Validation
-     ↓
-Pilot
-     ↓
-Operational maturity
+    ↓
+Decision
 ```
 
-This model helps keep technical communication aligned with what has actually been demonstrated.
-
 ---
 
-# Evidence & Governance
+# CASTÚO-EVOLUTION
 
-A major part of the recent CASTÚO-SYSTEM development is an **auditable capability and evidence framework**.
+**CASTÚO-EVOLUTION provides the federated governance and control plane for repositories, capabilities, evidence, provenance, risks, Gates, decisions and evolutionary baselines through a shared evidence model and canonical event flow.**
 
-Its purpose is straightforward:
+The current control plane is maintained as **PARTIAL / EVIDENCE-BACKED** while end-to-end federation and vendor-independent validation continue.
 
-> **Technical claims should be traceable to evidence.**
+It is designed to connect autonomous repositories through a shared evidence model rather than simple repository coexistence.
 
-The work includes:
+Its Single Source of Truth (SSOT) scope covers:
 
-* Capability registries
-* Evidence governance
-* Evidence roots
-* Verification states
-* Validation gates
-* Evidence promotion
-* Temporal evidence policies
-* Metrics
-* CI validation
-* Documentation contracts
-* Traceability between capabilities and implementation
+- identity
+- repositories
+- capabilities
+- implementations
+- evidence
+- provenance
+- risks
+- Gates
+- decisions
+- evolutionary baselines
 
-This provides a structured distinction between:
+The purpose is not to centralize every runtime component. Each governed repository remains operationally autonomous while contributing structured technical evidence to a common governance layer.
 
-**Planned → Implemented → Validated → Pilot → Operational**
-
-rather than treating every completed feature as production-ready.
-
----
-
-# Selected Projects
-
-## 🏗️ CASTÚO-SYSTEM
-
-**Core platform and ecosystem integration.**
-
-The main repository for the CASTÚO technology ecosystem, including platform capabilities, integrations, evidence governance and operational architecture.
-
-→ [CASTÚO-SYSTEM](https://github.com/Traky12/Castuo-system)
-
----
-
-## 📡 castuo-agro-edge
-
-**Offline-first edge infrastructure for rural and environmental environments.**
-
-Focused on edge gateways, MQTT ingestion, local buffering and Raspberry Pi / ESP32 infrastructure.
-
-→ [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge)
-
----
-
-## 🌱 ctaex-iot-pilot
-
-**IoT pilot work for agricultural environments.**
-
-A repository associated with IoT deployment and experimentation in agricultural contexts.
-
-→ [ctaex-iot-pilot](https://github.com/Traky12/ctaex-iot-pilot)
-
----
-
-## 🧪 Cast-o
-
-**Automated software testing and validation framework.**
-
-Focused on automated unit, integration and E2E testing, regression detection and performance benchmarking.
-
-→ [Cast-o](https://github.com/Traky12/Cast-o)
-
----
-
-## 🔬 GOLDfish
-
-**Engineering and validation infrastructure.**
-
-A separate project focused on reproducible software engineering, validation, security and deployment practices.
-
-→ [GOLDfish](https://github.com/Traky12/goldfish)
-
----
-
-# Technical Stack
+## Federated architecture
 
 ```text
-AI / Knowledge
-    Local AI · RAG · Sabionda
-
-Backend
-    Python · FastAPI · APIs
-
-Edge / IoT
-    Raspberry Pi · ESP32
-    MQTT · LoRaWAN
-
-Data / Infrastructure
-    PostgreSQL · TimescaleDB · Redis
-
-Automation
-    n8n
-
-Observability
-    Prometheus · Grafana
-
-Spatial
-    GIS · Digital Twins
-
-Engineering
-    GitHub · CI/CD · DevSecOps
-    Infrastructure as Code
-    Automated Testing
-
+Repository
+    ↓
+Repository Adapter
+    ↓
+Canonical Event
+    ↓
+Provenance
+    ↓
 Evidence
-    Capability Registry
-    Evidence Governance
-    Validation Gates
-    Traceability
+    ↓
+Capability
+    ↓
+Risk
+    ↓
+Gate
+    ↓
+Decision
+    ↓
+Evolutionary Baseline
 ```
+
+The canonical flow is designed to preserve traceability across independently evolving repositories.
+
+CASTÚO-EVOLUTION correlates evidence, evaluates defined maturity conditions, detects drift and records promotion decisions without treating documentation alone as proof of maturity.
+
+## Federated registries
+
+The control plane maintains logically separated but linked registries for:
+
+- repositories
+- profiles and actors
+- capabilities
+- evidence
+- provenance
+- risks
+- Gates
+- decisions
+- evolutionary baselines
+
+These registries are connected through shared identifiers and provenance relationships.
+
+## Repository adapters
+
+Repositories do not need to implement the complete governance model themselves.
+
+Repository-specific adapters translate repository events and evidence into the canonical CASTÚO-EVOLUTION model.
+
+Examples include:
+
+- castuo-agro-edge → edge, MQTT, buffering and field-operation evidence
+- Cast-o → testing, regression and benchmark evidence
+- GOLDfish → assurance, security and deployment evidence
+- ctaex-iot-pilot → field and IoT validation evidence
+
+The control plane can then correlate these inputs into a common governance view.
+
+## Evidence, Gates and maturity
+
+Federation is evidence-driven.
+
+The control plane explicitly distinguishes:
+
+```text
+DOCUMENTED
+    ≠
+IMPLEMENTED
+    ≠
+TESTED
+    ≠
+VALIDATED
+    ≠
+PILOT
+    ≠
+OPERATIONAL
+```
+
+and:
+
+```text
+UNKNOWN ≠ GREEN
+```
+
+Promotion is therefore based on the evidence defined by the corresponding Gate.
+
+Documentation, implementation or test existence alone does not automatically establish validation or operational readiness.
+
+## Baselines and drift
+
+Governed repositories can be associated with evolutionary baselines.
+
+CASTÚO-EVOLUTION compares:
+
+```text
+Baseline state
+      ↓
+Current state
+```
+
+to identify:
+
+- configuration drift
+- unpromoted changes
+- missing evidence
+- provenance inconsistencies
+- capability-state mismatches
+- potential false-green conditions
+
+The purpose is to preserve a traceable history of what was recorded, what changed and what evidence supported a given state.
+
+This does not imply that every recorded state is independently validated.
+
+## Governance principle
+
+Repositories remain autonomous.
+
+Governance is federated through:
+
+**evidence · provenance · Gates · decisions · baselines**
+
+The objective is to turn independently evolving repositories into a traceable, evidence-governed technological system without overstating their maturity.
+
+CASTÚO-EVOLUTION connects the ecosystem through evidence, provenance and maturity controls rather than simple repository coexistence.
 
 ---
 
-# Current Focus
+## Selected projects
+
+- 🏗️ [**CASTÚO-SYSTEM**](https://github.com/Traky12/Castuo-system) — Core platform and ecosystem integration.
+- ⚙️ [**CASTÚO-EVOLUTION**](https://github.com/Traky12/castuo-evolution) — Federated governance, provenance, evidence, Gates and evolutionary baselines.
+- 📡 [**castuo-agro-edge**](https://github.com/Traky12/castuo-agro-edge) — Offline-first edge infrastructure for rural and environmental environments.
+- 🧪 [**Cast-o**](https://github.com/Traky12/Cast-o) — Automated software testing, regression detection and performance benchmarking.
+- 🔬 [**GOLDfish**](https://github.com/Traky12/goldfish) — Engineering assurance, validation, security and deployment practices.
+- 🌱 [**ctaex-iot-pilot**](https://github.com/Traky12/ctaex-iot-pilot) — Agricultural IoT experimentation and field validation.
+- 📴 [**castuo-offline-field-operations**](https://github.com/Traky12/castuo-offline-field-operations) — Offline-first field operations, local assistance and resilient communications.
+
+---
+
+## Technical stack
+
+**AI / Knowledge**  
+Local AI · RAG · SABIONDA · LangGraph
+
+**Backend**  
+Python · FastAPI · Pydantic · APIs
+
+**Edge / IoT**  
+Raspberry Pi · ESP32 · MQTT · LoRaWAN
+
+**Data / Infrastructure**  
+PostgreSQL · TimescaleDB · Redis
+
+**Automation**  
+n8n
+
+**Observability**  
+Prometheus · Grafana · Alertmanager
+
+**Spatial**  
+GIS · Digital Twins
+
+**Engineering**  
+GitHub · GitHub Actions · CI/CD · DevSecOps · Terraform · Docker · Kubernetes · Automated Testing
+
+**Evidence / Governance**  
+Capability Registry · Evidence Registry · Provenance · Evidence Governance · Validation Gates · Risk Registry · Decision Registry · Traceability
+
+---
+
+## Current focus
 
 The current priority is not simply adding more features.
 
-It is **increasing the amount of real evidence behind the capabilities that matter most**.
+It is increasing the amount of real, reproducible evidence behind the capabilities that matter most.
 
-Current validation work includes:
+Current promotion targets include:
 
-| Capability                   | Direction           |
-| ---------------------------- | ------------------- |
-| **MQTT ingestion**           | Implemented → Pilot |
-| **Offline-first buffering**  | Implemented → Pilot |
-| **Raspberry Pi gateway**     | Implemented → Pilot |
-| **Prometheus observability** | Implemented → Pilot |
-| **LoRaWAN**                  | Prepared → Pilot    |
+- MQTT ingestion → Implemented → Pilot
+- Offline-first buffering → Implemented → Pilot
+- Raspberry Pi gateway → Implemented → Pilot
+- Prometheus observability → Implemented → Pilot
+- LoRaWAN → Prepared → Pilot
+- Federated governance → Implemented / Tested → Validation
+- Evidence governance → Implemented / Tested → Validation
 
-The objective is to move selected capabilities from **working software to demonstrated technology**.
+These are maturity transitions and promotion targets, not claims that the destination state has already been independently demonstrated.
 
----
-
-# Open Source & Reproducible Engineering
-
-GitHub is part of the engineering process, not just a code repository.
-
-Development is supported by:
-
-**Repositories · Issues · Pull Requests · Tests · CI/CD · Documentation · Releases · Evidence**
-
-This creates a public development trail through which the evolution of the technology can increasingly be inspected and reproduced.
+The objective is to move selected capabilities from implemented software toward independently supported technical evidence.
 
 ---
 
-# Why This Work
+## Technical replacement-cost estimate
+
+Where a technical asset valuation is referenced in project documentation, it is treated separately from liquidity, financing and market valuation.
+
+**Technical replacement-cost estimate (RCN): €420,000, based on 5,600 estimated development hours at €75/hour.**
+
+This figure is a technical replacement-cost estimate under the stated assumptions.
+
+It is not presented here as:
+
+- cash
+- financing
+- revenue
+- market value
+- company valuation
+- money already spent in that amount
+- available liquidity
+
+Any use of this estimate for accounting, legal, corporate or funding purposes requires the corresponding documentary and professional treatment outside this profile README.
+
+---
+
+## Why this work
 
 Many digital systems assume:
 
@@ -296,7 +384,11 @@ Many digital systems assume:
 
 Real-world field environments often do not provide those guarantees.
 
-My work explores architectures that can continue operating under constrained conditions while progressively **synchronizing, observing, validating and documenting** what happens.
+My work explores architectures that can continue operating under constrained conditions while progressively:
+
+**synchronizing · observing · validating · documenting**
+
+what happens.
 
 That makes:
 
@@ -306,37 +398,25 @@ architectural concerns rather than afterthoughts.
 
 ---
 
-# Vision
+## Professional approach
 
-To build digital infrastructure that can move from **prototype to real-world operation** without losing transparency about what has actually been demonstrated.
+I use GitHub as part of the engineering process rather than only as a code archive.
 
-The long-term direction is an **evidence-driven technology ecosystem** combining:
+The development workflow combines:
 
-**AI + Edge + IoT + DevSecOps + Digital Infrastructure + GIS + Digital Twins + Open Source**
+**Repositories · Issues · Pull Requests · Tests · CI/CD · Documentation · Releases · Evidence**
 
-with a particular focus on **rural, environmental and industrial systems**.
+The objective is not to claim maturity because a repository exists.
 
----
-
-# Connect
-
-🌐 **Website**
-[castuo-system.es](https://castuo-system.es)
-
-🔬 **ORCID**
-[0009-0007-3489-0565](https://orcid.org/0009-0007-3489-0565)
-
-💼 **LinkedIn**
-[Castúo-System](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/)
-
-🐙 **GitHub**
-[Traky12](https://github.com/Traky12)
+It is to leave behind an inspectable engineering trail in which implementations, tests, changes, evidence and decisions can progressively be related to one another.
 
 ---
 
-<p align="center">
+## Connect
+
+🌐 [Website](https://castuo-system.es)  
+🔬 [ORCID](https://orcid.org/0009-0007-3489-0565)  
+💼 [LinkedIn — Castúo-System](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/)  
+🐙 [GitHub — Traky12](https://github.com/Traky12)
 
 **Build · Validate · Observe · Document · Evolve**
-
-</p>
-
