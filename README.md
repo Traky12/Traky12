@@ -1,8 +1,8 @@
 # Gregorio Jiménez Bodes — Traky12
 
-**Systems Architect · Evidence Engineer · AI Governance & Assurance**
+### Systems Architect · Evidence Engineer · AI Governance & Assurance
 
-Founder and lead architect of **CASTÚO-SYSTEM™**
+**Founder and lead architect of CASTÚO-SYSTEM™**
 
 Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure for environments where connectivity, traceability, security, and operational reliability matter.
 
@@ -16,9 +16,7 @@ Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure for 
 
 ## ⚡ CASTÚO-SYSTEM™ at a Glance
 
-CASTÚO-SYSTEM™ is a federated technology ecosystem built around an **Evidence Operating System (EvOS)**.
-
-Its purpose is not only to build software, but to make technical decisions, system states, claims, and validation results traceable, reproducible, and governable.
+CASTÚO-SYSTEM™ is a federated technology ecosystem built around an **Evidence Operating System (EvOS)**. Its purpose is not only to build software, but to make technical decisions, system states, claims, and validation results traceable, reproducible, and governable.
 
 ```text
 Regulation
@@ -50,31 +48,27 @@ Publication
 
 ## 📊 Current Evidence Status
 
-| Indicator | Current state | Interpretation |
+| Indicator | Current | Meaning |
 | :--- | :---: | :--- |
-| **Ecosystem Connectivity Index (ECI)** | 6.00 / 6.00 | Internal canonical repository connectivity |
-| **Evidence Validation Index (EVI)** | 5.14 / 6.00 | Internal evidence-depth indicator |
-| **AI Assurance Gate** | G4 — CONTROLLED | Current assurance stage |
-| **Adversarial assurance tests** | 12 / 12 passing | Automated fail-closed controls |
-| **External review package** | E2-ready | Prepared for independent inspection |
-| **Independent verification** | E3 pending | Not claimed until externally verified |
+| **ECI** (Canonical Connectivity) | 6.00 / 6.00 | Internal repository connectivity |
+| **EVI** (Internal Evidence Depth) | 5.14 / 6.00 | Internal evidence-depth metric |
+| **AI Assurance Gate** | G4 | Current assurance stage |
+| **Adversarial tests** | 12 / 12 | Automated assurance tests passing |
+| **External review** | E2-ready | Review package prepared |
+| **Independent verification** | E3 pending | No external verification claimed |
 | **Technology asset estimate** | €420,000 | Indicative replacement-cost estimate |
 
-*Metrics shown here are engineering/evidence indicators, not certifications or independent audit results.*
+*These are internal engineering/evidence indicators. They are not certifications, legal opinions, or independent audit results.*
 
 ---
 
 ## 🛡️ Evidence-First Engineering
 
-CASTÚO-SYSTEM™ is designed around a simple rule:
-
-> *A system should be able to show why a claim is true — and when it is not justified, it should refuse to make the claim.*
-
-The assurance layer therefore uses **fail-closed controls**.
+CASTÚO-SYSTEM™ is designed around a simple rule: *A system should be able to show why a claim is true — and when it is not justified, it should refuse to make the claim.* The assurance layer therefore uses fail-closed controls.
 
 ### Example: Unsupported Performance Claim
 - Target benchmark = `85.0%`
-- Observed benchmark = `82.4%`
+- Observed result = `82.4%`
 
 ```text
 82.4% < 85.0%
@@ -84,24 +78,13 @@ ASSURANCE GATE
 CLAIM BLOCKED
 ```
 
-The system does not silently upgrade the result, reinterpret the target, or publish an unsupported performance claim. This is a deliberate design property of the EvOS assurance layer.
+The system does not silently upgrade the result, reinterpret the target, or publish an unsupported performance claim. Unsupported or insufficiently evidenced claims are blocked rather than promoted.
 
 ---
 
 ## 🤖 AI Governance & Assurance
 
-The AI governance layer provides a canonical structure for:
-- AI system inventory
-- Intended purpose
-- Risk classification
-- Risk register
-- Data provenance
-- Human oversight
-- Validation benchmarks
-- Change control
-- AI passports
-- Assurance gates
-- Evidence-backed claims
+The AI governance layer provides a canonical structure for AI system inventory, intended purpose, risk classification, risk register, data provenance, human oversight, validation benchmarks, change control, AI passports, assurance gates, and evidence-backed claims.
 
 ### Current Evidence Artifacts
 - `ai-system-registry.yaml`
@@ -114,7 +97,7 @@ The AI governance layer provides a canonical structure for:
 - `PASS-AI-001.yaml`
 
 ### Regulatory Posture
-CASTÚO-SYSTEM™ maintains a technical readiness and applicability framework for the EU AI Act (Regulation (EU) 2024/1689).
+CASTÚO-SYSTEM™ maintains a technical applicability and readiness framework for the EU AI Act (Regulation (EU) 2024/1689 and Digital Omnibus Regulation (EU) 2026/1744).
 
 - Technical governance: **IMPLEMENTED**
 - Evidence mapping: **IMPLEMENTED**
@@ -129,7 +112,7 @@ CASTÚO-SYSTEM™ maintains a technical readiness and applicability framework fo
 
 ## 🧪 Assurance Evidence
 
-### 12/12 adversarial tests passing (`tests/assurance/`)
+### 12 / 12 adversarial assurance tests passing (`tests/assurance/`)
 
 The assurance suite covers failure scenarios including:
 - unsupported claims
@@ -152,7 +135,7 @@ The core assurance evidence is publicly inspectable:
 git clone https://github.com/Traky12/castuo-evolution
 cd castuo-evolution
 
-pytest tests/assurance/
+pytest tests/assurance/ -q
 
 # Then inspect:
 cat sev/SEV-000.yaml
@@ -169,25 +152,39 @@ The public evidence index provides the canonical map: [`Public Evidence Index`](
 
 ## 💶 Technology Asset Evidence
 
-The current internal evidence model includes an **indicative replacement-cost estimate of €420,000** for the technology asset developed within the ecosystem.
+### Indicative technology-asset replacement-cost estimate: **€420,000**
 
-Basis includes:
-- Technology inventory
-- Engineering effort
-- Architecture & integration
-- Testing & assurance
-- Security & governance
-- Documented replacement-cost methodology
+Basis:
+- asset inventory
+- engineering effort
+- architecture
+- integration
+- testing
+- security
+- governance
+- documentation
+- replacement-cost methodology
 
 ### Important Distinction
 `€420,000` is **not** presented as:
 - market value
 - fair value
 - accounting value
-- company valuation
+- enterprise valuation
 - independent appraisal
 
-It is an indicative replacement-cost estimate supported by a documented reconstruction methodology and evidence inventory.
+It is an indicative replacement-cost estimate supported by a documented reconstruction methodology and evidence inventory. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md) for sensitivity analysis (conservative, base, expansive scenarios).
+
+---
+
+## 🌍 Real-World Validation
+
+CASTÚO-SYSTEM™ is designed for environments where systems cannot assume perfect infrastructure (offline operation, resilient synchronization, traceable state, observable infrastructure, human oversight, controlled automation, evidence-backed decisions).
+
+### Validation Progression
+```text
+Problem → Capability → Pilot → Evidence → KPI → Economic Outcome → External Validation → Scalable Capability
+```
 
 ---
 
@@ -215,8 +212,8 @@ It is an indicative replacement-cost estimate supported by a documented reconstr
 ## 🚀 Strategic Repositories
 
 ### 🛡️ Core & Governance
-- [`CASTÚO-SYSTEM`](https://github.com/Traky12/Castuo-system) — Core platform and backend capabilities.
 - [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) — Control plane, evidence governance, canonical registries, and assurance.
+- [`Castuo-system`](https://github.com/Traky12/Castuo-system) — Core platform and backend capabilities.
 - [`goldfish`](https://github.com/Traky12/goldfish) — Security hardening, validation, and assurance engineering.
 
 ### 📡 Edge & Real-World Operations
@@ -229,57 +226,25 @@ It is an indicative replacement-cost estimate supported by a documented reconstr
 
 ---
 
-## 🧰 Technical Stack
-
-- **AI & Knowledge:** Local AI · RAG · SABIONDA · LangGraph
-- **Backend:** Python · FastAPI · Pydantic · REST APIs
-- **Edge / IoT:** Raspberry Pi · ESP32 · MQTT · LoRaWAN
-- **Data & Infrastructure:** PostgreSQL · TimescaleDB · Redis · Docker · Kubernetes
-- **Engineering & Assurance:** CI/CD · DevSecOps · Automated Testing · Evidence Governance · Security Scanning
-
----
-
-## 🌍 Real-World Orientation
-
-CASTÚO-SYSTEM™ is designed for environments where systems cannot assume perfect infrastructure.
-
-Core requirements include:
-- Offline operation
-- Resilient synchronization
-- Traceable state
-- Observable infrastructure
-- Human oversight
-- Controlled automation
-- Evidence-backed decisions
-
-The intended progression is:
-```text
-Problem → Capability → Pilot → Evidence → KPI → Economic Result → External Validation → Scalable Capability
-```
-
----
-
 ## 🔬 Evidence Portfolio
 
-| Domain | Canonical source |
-| :--- | :--- |
-| Repository architecture | `governance/registry/repository-registry.yaml` |
-| Master evidence | `sev/SEV-000.yaml` |
-| AI systems | `governance/ai/ai-system-registry.yaml` |
-| AI assurance | `governance/ai/ai_assurance_gate.py` |
-| AI validation | `governance/ai/ai-validation-registry.yaml` |
-| AI passport | `governance/ai/PASS-AI-001.yaml` |
-| Economic evidence | `PASS-ECONOMIC-001` |
-| Asset reconstruction | `governance/valuation/asset-reconstruction-report.md` |
-| Regulatory applicability | `governance/ai/regulatory-applicability-register.yaml` |
-| External review | `external-validation/` |
-| Public evidence index | `docs/public-evidence-index.md` |
+| Domain | Canonical source | State | Demonstrates | Does NOT Demonstrate |
+| :--- | :--- | :---: | :--- | :--- |
+| **Repository architecture** | `repository-registry.yaml` | E1 | Canonical ecosystem inventory | Commercial viability |
+| **Master evidence** | `sev/SEV-000.yaml` | E1 | Master evidence index | External audit sign-off |
+| **AI systems** | `ai-system-registry.yaml` | E1 | AI system inventory and status | Legal compliance |
+| **AI assurance** | `ai_assurance_gate.py` | E1 | Fail-closed control logic | Total security guarantees |
+| **AI validation** | `ai-validation-registry.yaml` | E1 | Benchmark targets vs. observed | External benchmark certification |
+| **Adversarial tests** | `tests/assurance/` | E1 | 12/12 automated pass rate | Complete absence of runtime flaws |
+| **External review** | `external-validation/` | E2-ready | Independently reviewable package | Completed independent audit (E3) |
+| **Economic evidence** | `asset-reconstruction-report.md` | E2-ready | Replacement-cost methodology | Market or accounting valuation |
+| **Regulatory posture** | `regulatory-applicability-register.yaml` | Under review | EU AI Act applicability analysis | Legal conformity certification |
 
 ---
 
 ## ⚠️ Known Limitations
 
-Evidence-first engineering also means making limitations visible. Current limitations include:
+Evidence-first engineering also means making limitations visible:
 - Independent E3 verification is still pending.
 - Regulatory applicability is assessed per system and intended purpose.
 - No blanket AI Act certification claim is made.
@@ -287,6 +252,24 @@ Evidence-first engineering also means making limitations visible. Current limita
 - Deployment readiness remains context-dependent.
 - Benchmark results below target remain visible and block the associated claim.
 - External validation and real-world evidence continue to mature.
+
+---
+
+## ⚖️ Legal & Evidence Notice
+
+CASTÚO-SYSTEM™ is a technology and engineering project. Public documentation describes technical architecture, engineering evidence, internal controls, validation status, and regulatory-readiness work.
+
+Nothing in this repository should be interpreted as:
+- legal advice
+- regulatory certification
+- conformity assessment
+- accounting valuation
+- investment advice
+- independent audit opinion
+- guarantee of production safety
+- guarantee of commercial performance
+
+Regulatory applicability is assessed per system, intended purpose, and deployment context.
 
 ---
 
