@@ -35,6 +35,7 @@ The immediate objective is not to add complexity. It is to convert a technically
 
 - Understand the project: [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
 - Review the evolution model: [`castuo-evolution`](https://github.com/Traky12/castuo-evolution)
+- Read the integrated governance plan: [`GitHub · Evidence · Security · Sovereign Orchestration`](https://github.com/Traky12/castuo-evolution/blob/main/docs/INTEGRATED_GITHUB_EVIDENCE_SECURITY_SOVEREIGN_ORCHESTRATION_PLAN_v1.0.md)
 - Inspect scoped public evidence: [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center)
 - Review the N6 model: [`KPI registry`](https://github.com/Traky12/castuo-evolution/blob/main/data/n6-kpi-registry.yaml) and [`pilot dossier template`](https://github.com/Traky12/Traky12/tree/main/evidence-center/templates/COMMERCIAL-PILOT-DOSSIER)
 - Follow the technical chronology: [`EVOLUTION_TIMELINE_PUBLIC.md`](EVOLUTION_TIMELINE_PUBLIC.md)
