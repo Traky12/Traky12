@@ -4,179 +4,120 @@
 
 **Founder and lead architect of CASTÚO-SYSTEM™**
 
-Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure where software, operational state, and public claims must remain traceable and verifiable.
+Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure where usability, security, operational state and public claims remain traceable and verifiable.
 
 > `NO CLAIM WITHOUT PROVENANCE`
 >
 > `NO AI DEPLOYMENT WITHOUT ASSURANCE`
 >
-> `NO EXTERNAL CLAIM WITHOUT REPRODUCIBLE EVIDENCE`
+> `NO SCALE WITHOUT SECURITY AND OBSERVABILITY`
 
 ---
 
-## ⚡ EvOS v13.0 — Public Evidence Baseline Frozen
+## CASTÚO-SYSTEM™ · 2026 evolution
 
-CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline (`evos-v13.0/`). The documentation layer is now frozen for the current maturity cycle; further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
+CASTÚO-SYSTEM™ is evolving from a technically developed core toward a **usable, evidence-driven and security-first rural technology ecosystem**. The current engineering priority is not to claim that every future component is already operational; it is to make each capability progressively easier to use, safer to scale and more defensible through reproducible evidence.
 
-### Ecosystem Transition Policy
-```text
-EVOS v13.0 (FROZEN BASELINE)
-    ↓
-Exact Commit / Tag (Cryptographically Identified)
-    ↓
-E3-001 — INDEPENDENT REVIEW & REPRODUCTION (Bundle under external-validation/E3-001/)
-    ↓
-THIRD-PARTY EXECUTION (Raw results, discrepancies, findings, remediation, re-test)
-    ↓
-E3 — INDEPENDENTLY VERIFIED (Scope-Bound)
-    ↓
-REAL-WORLD PILOT → OPERATIONAL KPIs → ECONOMIC OUTCOME → CUSTOMER / CONTRACT → SCALABLE CAPABILITY
-```
-
-| Maturity Status | Status | Scope & Meaning |
-| :--- | :---: | :--- |
-| **E1 — Internally Verified** | **CURRENT** | Relevant controls, tests, and evidence artifacts have been verified within the project's own engineering, CI/CD, and evidence-governance processes, within the documented scope. |
-| **E2 — Review-Ready** | **READY** | Independent review package prepared and available for third-party inspection (`external-validation/`). |
-| **E3 — Independent Verification** | **PENDING** | No external verification claimed. |
-
-*These maturity states apply to the defined evidence scope and do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented artifacts.*
-
----
-
-## 🎯 Next External Milestone: E3-001 — Independent Review & Reproduction
-
-The first external validation milestone is structured as a reproducible evidence bundle (`external-validation/E3-001/`):
-- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 automated adversarial tests covering 6 control categories.
-- **Protocol:** Defined under [`Review Protocol`](https://github.com/Traky12/castuo-evolution/blob/main/external-validation/E3-001/REVIEW-PROTOCOL.yaml).
-- **Evidence Integrity Rule:** Negative results, discrepancies, failures, and incidents form part of the evidence record (`FAILURE ≠ DELETE` → `FAILURE → FINDING → REMEDIATION → RE-TEST`). Unfavorable results will not be silently replaced.
-- **Outcome:** An independently produced review report documenting the examined scope and observed results.
-
-*E3 status will only be assigned to the specific scope actually examined and supported by independent evidence.*
-
----
-
-## 🧭 CASTÚO-SYSTEM™ at a Glance
-
-CASTÚO-SYSTEM™ is a federated technology ecosystem built around an **Evidence Operating System (EvOS)**. Its purpose is to make technical decisions, system states, claims, and validation results traceable and governable.
+The public evolution plan is documented in [`CASTUO_EVOLUTION_2026.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO_EVOLUTION_2026.md), with the security and encryption operating model in [`SECURITY_ENCRYPTION_OPERATING_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/SECURITY_ENCRYPTION_OPERATING_MODEL.md).
 
 ```text
-Regulation → Control → Capability → Implementation → Test → Evidence → Provenance → Passport → Gate → Decision → Claim → Publication
+Usability → Capability → Implementation → Test → Security Gate
+    → Evidence / Provenance → Operational Metric → External Review
+    → Customer / Contract → Controlled Scale → Reassessment ↺
 ```
 
----
+## Maturity and evidence status
 
-## 🛡️ Evidence-First Engineering
+| Status | Meaning | Public claim allowed |
+| :--- | :--- | :--- |
+| **E1 — Internally verified** | Evidence checked within the declared engineering scope | Internal verification only |
+| **E2 — Review-ready** | Reproduction package prepared for third-party inspection | Review-ready, not independently verified |
+| **E3 — Independent verification** | Scope-bound independent review completed | Only for the examined scope |
+| **Operational** | Live capability with owner, metrics and runbook | Only under the stated conditions |
+| **Reassessment required** | Model, dependency, risk or perimeter changed | Promotion is blocked until review |
 
-CASTÚO-SYSTEM™ is designed around a simple rule: *A system should be able to show why a claim is true — and when it is not justified, it should refuse to make the claim.*
+`UNKNOWN ≠ GREEN` · `DOCUMENTED ≠ IMPLEMENTED` · `IMPLEMENTED ≠ TESTED` · `TESTED ≠ VALIDATED` · `VALIDATED ≠ OPERATIONAL`
 
-### Example: Unsupported Performance Claim
-- Target benchmark = `85.0%`
-- Observed result = `82.4%`
+These states do not constitute certification, legal conformity, independent audit opinion or assurance beyond the evidence identified by commit, artifact, hash and scope.
+
+## Usability-first product direction
+
+The rural user should be able to configure a pilot, work without continuous connectivity, understand the next action, recover from an error and export a verifiable report without needing to understand the entire underlying stack. The adoption roadmap therefore prioritises guided onboarding, offline-first field work, clear dashboards, explicit incident messages, accessibility, safe defaults and measured support requirements.
+
+The relevant measures are practical: time to first successful configuration, task completion, synchronisation failures, support requests, recurring weekly use and successful export of a traceable artifact. “Easy to use” remains a target until these measures are tested with real users.
+
+## Controlled scale
+
+The ecosystem separates four scaling planes:
+
+| Plane | Scaling objective | Required guardrail |
+|---|---|---|
+| **SaaS** | More tenants and customers without data confusion | Tenant isolation, RBAC, quotas and versioned migrations |
+| **Edge / IoT** | More devices and intermittent connectivity | Device identity, local buffering, idempotent sync and revocation |
+| **Data** | More events and evidence without uncontrolled retention | Minimisation, schema versioning, encryption and retention policy |
+| **Operations** | More releases without unsafe promotion | Observability, rollback, runbooks and approval Gates |
+
+The system does not promote a physical or expensive expansion merely because it is technically attractive. It uses G1–G5 Gates to require technical, commercial, financial and documentary evidence before the next stage.
+
+## Security and encryption by default
+
+Security is treated as an operational boundary rather than a marketing statement. The public model is documented in the [security and encryption operating model](https://github.com/Traky12/castuo-evolution/blob/main/docs/SECURITY_ENCRYPTION_OPERATING_MODEL.md).
+
+| Control | Public position |
+|---|---|
+| Secrets | No production secret belongs in Git; examples are non-functional |
+| Identity | OIDC with pinned algorithms when configured; local development is not production |
+| Authorisation | RBAC, minimum privilege and fail-closed role mapping |
+| API | Input validation, explicit CORS, rate limits and safe errors |
+| Data | TLS in transit, encryption at rest and minimisation by tenant |
+| IoT | Device identity, credential rotation and replay protection |
+| Evidence | Commit, artifact hash, reviewer and scope; negative findings are retained |
+| Supply chain | Dependency scanning, SBOM and release blocking for critical issues |
+| Continuity | Encrypted backups, restoration exercises and documented RPO/RTO |
+
+“Encrypted” does not mean anonymous, certified or risk-free. The actual state of a control is the state supported by its implementation and evidence.
+
+## Public evidence baseline and next milestone
+
+EvOS v13.0 remains the public evidence baseline. The next external milestone is **E3-001 — Independent Review & Reproduction**, with a scope-bound protocol and a requirement to preserve discrepancies, failures, remediation and re-test.
+
+The correct chain is:
 
 ```text
-82.4% < 85.0%
-       ↓
-ASSURANCE GATE
-       ↓
-CLAIM BLOCKED
+FAILURE → FINDING → REMEDIATION → RE-TEST
 ```
 
-**Reproduction:** [`test_benchmark_below_target.py`](https://github.com/Traky12/castuo-evolution/blob/main/tests/assurance/test_benchmark_below_target.py)
+Never:
 
-The system is designed to reject an unsupported positive claim rather than promote a below-target result.
-
----
-
-## 🤖 AI Governance & Assurance
-
-- **Technical readiness:** IMPLEMENTED
-- **Applicability assessment:** ACTIVE
-- **Legal conformity:** NOT CLAIMED
-- **Independent certification:** NOT CLAIMED
-
-*The system deliberately distinguishes technical readiness from regulatory applicability, legal conformity, and certification.*
-
----
-
-## 🧩 Selected Engineering Work
-
-1. **Evidence Control Plane (`castuo-evolution`)**  
-   Federated control plane implementing canonical evidence roots, provenance controls, and documentation-drift guardrails. — [`Repository`](https://github.com/Traky12/castuo-evolution)
-2. **AI Assurance Gate & Adversarial Suite**  
-   Deterministic fail-closed validation blocking unbacked or sub-target claims via 12 automated adversarial tests across 6 control categories. — [`Source`](https://github.com/Traky12/castuo-evolution/blob/main/governance/ai/ai_assurance_gate.py)
-3. **Security Hardening & CI/CD Gates (`goldfish`)**  
-   Merge gates, dependency hardening, secrets governance, and automated vulnerability remediation. — [`Repository`](https://github.com/Traky12/goldfish)
-4. **COMP / Capability Architecture**  
-   Executable capability registry, governance rules, and capability-integrity controls for implementation traceability. — [`Evidence`](https://github.com/Traky12/castuo-evolution/blob/main/governance/registry/repository-registry.yaml)
-5. **Offline-First Edge & IoT Systems**  
-   Resilient telemetry synchronization and field-oriented infrastructure for agricultural resilience. — [`Agro-Edge`](https://github.com/Traky12/castuo-agro-edge)
-
----
-
-## 🚀 Capability-Controlled Runtime Architecture — Target Design
-
-The next engineering stage is the progressive integration of:
 ```text
-COMP → Capability Contract → Implementation → CI/CD → Assurance Gate → Runtime Policy → AI / Agents → Edge / IoT → Observed Outcome → Evidence / Provenance → Claim → External Review → E3 → Reassessment / Drift ↺
+FAILURE → DELETE
 ```
 
-*Target architecture: this is a forward-looking engineering design. It must not be interpreted as a claim that every component is already fully integrated, production-ready, or independently validated.*
+## Selected repositories
 
-### Design Principles
-- **NO EXECUTION WITHOUT POLICY**
-- **NO PROMOTION WITHOUT ASSURANCE**
-- **NO CLAIM WITHOUT PROVENANCE**
-- **NO DRIFT WITHOUT REASSESSMENT**
+1. [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) — control plane, governance, evidence and Gates.
+2. [`Castuo-system`](https://github.com/Traky12/Castuo-system) — core platform and business logic.
+3. [`goldfish`](https://github.com/Traky12/goldfish) — security hardening, CI/CD and assurance engineering.
+4. [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) — offline-first agricultural edge and IoT plane.
+5. [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) — resilient field operations and local continuity.
+6. [`Cast-o`](https://github.com/Traky12/Cast-o) — test automation and performance tooling.
 
----
+## Economic and project boundary
 
-## 💶 Economic Evidence — Separate Domain
+The indicative **€420,000 replacement-cost estimate** is a technical reconstruction estimate, not market value, accounting value, investment valuation or independent appraisal. The PIE PLUS business plan and financial model maintain a separate boundary between the existing technical asset, Phase 1 financing needs and future infrastructure conditioned by Gates.
 
-### Indicative technology-asset replacement-cost estimate: **€420,000**
+No public profile statement should be read as a claim that funding has been received, a customer contract exists, a certification has been obtained, or a future physical phase is already committed.
 
-This figure represents an indicative replacement-cost estimate based on documented reconstruction methodology and asset evidence.
+## Limitations
 
-It is **not** presented as market value, fair value, accounting value, enterprise valuation, investment valuation, or independent appraisal. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
+Independent E3 verification remains pending. Regulatory applicability is system-specific. Legal conformity and certification are not claimed. Real-world external evidence is continuing. Production readiness is context-dependent and must always be read together with the declared scope, environment, metrics and evidence.
 
-*Economic evidence is maintained as a separate domain and is not mingled with E1/E2/E3 evidence maturity levels.*
+## Connect
 
----
+- [CASTÚO-SYSTEM™](https://castuo-system.es/)
+- [ORCID](https://orcid.org/0009-0007-3489-0565)
+- [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/)
 
-## 🚀 Strategic Repositories
+> *The goal is not to make the system look certain. The goal is to make its evidence inspectable, its use understandable and its evolution safe.*
 
-1. [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) — **GOVERNANCE**: Control plane and evidence SSOT.
-2. [`Castuo-system`](https://github.com/Traky12/Castuo-system) — **CORE**: Platform backend and business logic.
-3. [`goldfish`](https://github.com/Traky12/goldfish) — **ASSURANCE**: Hardened security and validation engineering.
-4. [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) — **EDGE**: Offline-first IoT infrastructure.
-5. [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) — **FIELD**: Resilient field operations.
-6. [`Cast-o`](https://github.com/Traky12/Cast-o) — **TOOLING**: Engineering automation and benchmarking.
-
----
-
-## ⚠️ Known Limitations
-
-- Independent E3 verification: **pending** (next milestone: E3-001).
-- Regulatory applicability: **system-specific**.
-- Legal conformity: **not claimed**.
-- €420,000 estimate: **replacement-cost basis**.
-- Independent valuation: **not claimed**; obtained only when required for specific purposes.
-- Production readiness: **context-dependent**.
-- Real-world external evidence: **continuing**.
-
----
-
-## ⚖️ Legal & Evidence Notice
-
-CASTÚO-SYSTEM™ is a technology project. Documentation describes technical architecture, engineering evidence, internal controls, and regulatory-readiness work. It does not constitute legal advice, regulatory certification, conformity assessment, accounting valuation, investment advice, or a guarantee of commercial performance.
-
----
-
-## 🔗 Connect
-
-- 🌐 [CASTÚO-SYSTEM™](https://castuo-system.es/)
-- 🔬 [ORCID](https://orcid.0009-0007-3489-0565)
-- 💼 [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/)
-
-> *The goal is not to make the system look certain. The goal is to make its evidence inspectable.*
-
-**Build · Validate · Observe · Document · Evolve**
+**Build · Secure · Measure · Evidence · Scale**
