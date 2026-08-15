@@ -14,15 +14,24 @@ Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure wher
 
 ---
 
-## ⚡ Current Position (EvOS v13.0)
+## ⚡ Current Position (EvOS v13.0 — Baseline Frozen)
 
-| Status | Level | Key Metrics |
+| Maturity Status | Level | Scope & Meaning |
 | :--- | :---: | :--- |
-| **E1 — Internally Verified** | **CURRENT** | 12 / 12 assurance tests passing |
-| **E2 — Review-Ready** | **READY** | G4 assurance execution stage |
-| **E3 — Independent Verification** | **PENDING** | €420k replacement-cost estimate |
+| **E1 — Internally Verified** | **VERIFIED** | Internal controls, CI/CD, and evidence depth |
+| **E2 — Review-Ready** | **READY** | Evidence package prepared for independent review |
+| **E3 — Independent Verification** | **PENDING** | No independent verification claimed |
 
-*These are internal engineering/evidence indicators. They are not certifications, legal opinions, accounting measurements, or independent audit results.*
+*These states describe the current evidence maturity of the relevant artifacts. They do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented scope.*
+
+---
+
+## 🎯 Next External Milestone: E3-001 — Independent Review & Reproduction
+
+The next maturity step is deliberately narrow and reproducible rather than another documentation iteration:
+- **Scope**: Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 adversarial assurance tests.
+- **Criteria**: Deterministic handling of unsupported claims, expired passports, evidence/hash manipulation, gate thresholds, and below-target benchmark blocking (e.g., 82.4% < 85.0%).
+- **Outcome**: Documented independent review report (findings, execution environment, commands, and final conclusion).
 
 ---
 
@@ -54,7 +63,7 @@ CLAIM BLOCKED
 
 **Reproduction:** [`test_benchmark_below_target.py`](https://github.com/Traky12/castuo-evolution/blob/main/tests/assurance/test_benchmark_below_target.py)
 
-The system is designed to reject an unsupported positive claim rather than reinterpret or promote a below-target result. This is a deliberate design property of the EvOS assurance layer.
+The system is designed to reject an unsupported positive claim rather than reinterpret or promote a below-target result.
 
 ---
 
@@ -86,7 +95,7 @@ The AI governance layer provides a canonical structure for AI system inventory, 
 
 ---
 
-## 💶 Technology Asset Evidence
+## 💶 Technology Asset Evidence (Separate Domain)
 
 ### Indicative technology-asset replacement-cost estimate: **€420,000**
 
@@ -94,7 +103,7 @@ Basis:
 - asset inventory · engineering effort · architecture · integration · testing · security · governance · replacement-cost methodology
 
 ### Important Distinction
-`€420,000` is **not** presented as market value, fair value, accounting value, enterprise valuation, or independent appraisal. It is an indicative replacement-cost estimate supported by a documented reconstruction methodology. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
+`€420,000` is **not** presented as market value, fair value, accounting value, enterprise valuation, or independent appraisal. It is an indicative replacement-cost estimate supported by a documented reconstruction methodology. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md). An independent valuation may be obtained where required for specific financial or legal purposes.
 
 ---
 
@@ -126,7 +135,7 @@ The ecosystem follows a designed narrative: **Governance → Core → Assurance 
 
 ## ⚠️ Known Limitations
 
-- Independent E3 verification: **pending**.
+- Independent E3 verification: **pending** (next milestone: E3-001).
 - Regulatory applicability: **system-specific**.
 - Legal conformity: **not claimed**.
 - €420,000 estimate: **replacement-cost basis**.
