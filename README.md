@@ -43,6 +43,16 @@ Readiness is separated into registered and versioned agents, tools behind a gate
 
 The control-plane contracts are documented in [`MULTIAGENT_GOVERNANCE_CONTRACT.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/MULTIAGENT_GOVERNANCE_CONTRACT.md), [`FEDERATED_NODE_OPERATING_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/FEDERATED_NODE_OPERATING_MODEL.md) and [`G-AI-FED-001-DRY-RUN-SPEC.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/G-AI-FED-001-DRY-RUN-SPEC.md).
 
+## Organizational readiness and scaling
+
+The current architecture is founder-led and particularly strong in systems architecture, governance, evidence engineering, responsible AI, integration, Edge/IoT and DevSecOps. The main scaling risk is the concentration of critical functions in one person, not the absence of a coherent technical direction.
+
+The priority capabilities to add or validate are B2B commercial and go-to-market, operational agronomy, offensive cybersecurity and independent review, UX and product design, data engineering and MLOps, legal and technology regulation, and finance. These are capability targets, not claims of current staffing or contracted services. Each future contributor must have bounded scope, owner, access policy, deliverable, review and dated evidence.
+
+The next strategic increment is execution: documentation → dry run → evidence → review → pilot → limited operation → federation. Additional architecture will not be treated as progress unless it produces a measurable capability or evidence package.
+
+The model is documented in [`ORGANIZATIONAL_CAPABILITY_AND_SCALING_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/ORGANIZATIONAL_CAPABILITY_AND_SCALING_MODEL.md).
+
 ## Technology sovereignty and auditable robotics
 
 CASTÚO-SYSTEM uses a layered sovereignty model covering ownership, internal capability, third-party dependency, substitution and continuity. The practical layers are data sovereignty, computational sovereignty, model sovereignty, operational sovereignty and institutional sovereignty. The objective is to keep decisions, evidence, recovery and provider exit paths governable; it is not a claim that every component is manufactured or operated internally.
