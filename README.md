@@ -245,13 +245,13 @@ Problem → Capability → Pilot → Evidence → KPI → Economic Outcome → E
 ## ⚠️ Known Limitations
 
 Evidence-first engineering also means making limitations visible:
-- Independent E3 verification is still pending.
-- Regulatory applicability is assessed per system and intended purpose.
-- No blanket AI Act certification claim is made.
-- The €420,000 figure is a replacement-cost estimate, not an independent market valuation.
-- Deployment readiness remains context-dependent.
-- Benchmark results below target remain visible and block the associated claim.
-- External validation and real-world evidence continue to mature.
+- Independent E3 verification: **pending**.
+- Regulatory applicability: **system-specific**.
+- Legal conformity: **not claimed**.
+- €420,000 valuation: **replacement-cost estimate**.
+- Independent valuation: **pending**.
+- Production readiness: **context-dependent**.
+- Real-world external evidence: **continuing**.
 
 ---
 
