@@ -1,0 +1,13 @@
+schema: castuo.evidence.v1
+capability_id: "OFFLINE-004"
+repository: "Traky12/Traky12"
+commit_or_tag: "PENDING"
+environment: "PENDING"
+protocol_ref: "pilot-protocol.md"
+results_ref: "results.md"
+artifact_sha256: []
+reviewer: "PENDING"
+review_date: "PENDING"
+classification: "PUBLIC"
+restricted_data_location: "PENDING"
+status: "DOCUMENTED"

@@ -1,0 +1,20 @@
+# Provenance record — complete with real values before promotion
+schema: castuo.evidence.v1
+capability_id: "CAP-XXX"
+repository: "owner/repository"
+commit_or_tag: "PENDING"
+environment: "PENDING"
+protocol_ref: "pilot-protocol.md"
+results_ref: "results.md"
+artifact_refs: []
+artifact_sha256: []
+reviewer: "PENDING"
+review_date: "PENDING"
+classification: "PUBLIC"
+restricted_data_location: "PENDING"
+status: "DOCUMENTED"
+reassessment_triggers:
+  - model_or_provider_change
+  - environment_change
+  - key_or_credential_change
+  - material_schema_change

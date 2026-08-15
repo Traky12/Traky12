@@ -3,9 +3,9 @@ name: AI Local / RAG Offline (Assistance Layer)
 version: 1.0.0
 maturity_level: N5
 target_maturity: N6
-evidence_state: VALIDATED
+evidence_state: DOCUMENTED
 access_level: PUBLIC
-coverage: FULL
+coverage: PARTIAL
 tags:
 - edge
 - iot

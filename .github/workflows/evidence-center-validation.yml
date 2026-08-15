@@ -1,0 +1,49 @@
+name: Evidence Center validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'evidence-center/**'
+      - '.github/workflows/evidence-center-validation.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'evidence-center/**'
+      - '.github/workflows/evidence-center-validation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-evidence-center:
+    name: Validate evidence dossiers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install validation dependency
+        run: python3 -m pip install --disable-pip-version-check --quiet pyyaml
+
+      - name: Reject tracked private material
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-files | grep -E '(^|/)(\.env|\.env\.|.*\.pem$|.*\.key$|id_rsa|credentials\.json)$'; then
+            echo 'Private environment or key-like file is tracked.'
+            exit 1
+          fi
+
+      - name: Scan high-risk secret patterns
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=$(git ls-files 'evidence-center/**' || true)
+          if [ -n "$files" ] && grep -nE '(AKIA[0-9A-Z]{16}|-----BEGIN (RSA|EC|OPENSSH|PRIVATE) KEY-----|ghp_[A-Za-z0-9]{30,}|sk-[A-Za-z0-9]{30,})' $files; then
+            echo 'High-risk secret pattern detected.'
+            exit 1
+          fi
+
+      - name: Validate dossiers and provenance
+        run: python3 evidence-center/validate_evidence_center.py

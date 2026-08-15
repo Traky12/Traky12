@@ -75,7 +75,7 @@ Security is treated as an operational boundary rather than a marketing statement
 | Supply chain | Dependency scanning, SBOM and release blocking for critical issues |
 | Continuity | Encrypted backups, restoration exercises and documented RPO/RTO |
 
-“Encrypted” does not mean anonymous, certified or risk-free. The actual state of a control is the state supported by its implementation and evidence. A local or simulated GaiaChain transaction identifier is not described as a public blockchain confirmation; external anchoring remains a scoped Gate deliverable.
+“Encrypted” does not mean anonymous, certified or risk-free. The actual state of a control is the state supported by its implementation and evidence. A local or simulated GaiaChain transaction identifier is not described as a public blockchain confirmation; external anchoring remains a scoped Gate deliverable. The public [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center) applies the same rule to capability dossiers: a template is not a pilot, a pilot is not continuous operation, and a hash is not a certification.
 
 ## Public evidence baseline and next milestone
 
@@ -98,9 +98,10 @@ FAILURE → DELETE
 1. [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) — control plane, governance, evidence and Gates.
 2. [`Castuo-system`](https://github.com/Traky12/Castuo-system) — core platform and business logic.
 3. [`goldfish`](https://github.com/Traky12/goldfish) — security hardening, CI/CD and assurance engineering.
-4. [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) — offline-first agricultural edge and IoT plane.
-5. [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) — resilient field operations and local continuity.
-6. [`Cast-o`](https://github.com/Traky12/Cast-o) — test automation and performance tooling.
+4. [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center) — N3–N6 dossiers, provenance, KPIs, security checks and promotion Gates.
+5. [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) — offline-first agricultural edge and IoT plane.
+6. [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) — resilient field operations and local continuity.
+7. [`Cast-o`](https://github.com/Traky12/Cast-o) — test automation and performance tooling.
 
 ## Economic and project boundary
 

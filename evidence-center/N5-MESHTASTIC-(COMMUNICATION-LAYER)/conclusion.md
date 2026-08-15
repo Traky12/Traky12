@@ -10,5 +10,10 @@ ID: OFFLINE-004 | # Conclusión y Promoción de Madurez
 *Qué falta para que esta capacidad sea considerada "Operational" (N6).*
 
 ---
-**Aprobado por:** Gregorio Jiménez Bodes
-**Fecha:** 2026-08-04
+**Revisión:** PENDIENTE — no promoción de madurez sin evidencia completa.
+**Fecha de revisión:** PENDIENTE
+
+
+## Estado actual
+
+La plantilla o el dossier contiene campos pendientes; el estado publicado permanece en `DOCUMENTED` hasta completar provenance, datos reales, hashes y revisión.

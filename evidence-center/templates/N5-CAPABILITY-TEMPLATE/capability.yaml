@@ -4,9 +4,9 @@ name: "Nombre de la Capacidad"
 version: "1.0.0"
 maturity_level: "N5"
 target_maturity: "N6"
-evidence_state: "VALIDATED"
+evidence_state: "DOCUMENTED"
 access_level: "PUBLIC" # PUBLIC, PARTNER, RESTRICTED, NA
-coverage: "FULL" # FULL, PARTIAL, NONE
+coverage: "PARTIAL" # FULL, PARTIAL, NONE
 tags:
   - edge
   - iot
