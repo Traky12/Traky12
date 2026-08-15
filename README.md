@@ -4,7 +4,7 @@
 
 **Founder and lead architect of CASTÚO-SYSTEM™**
 
-Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure where usability, security, operational state and public claims remain traceable and verifiable.
+Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure through privately controlled service boundaries where usability, security, operational state and public claims remain traceable and verifiable.
 
 > `NO CLAIM WITHOUT PROVENANCE`
 >
@@ -30,6 +30,26 @@ Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure
 | Physical infrastructure | Future and conditioned on G1–G5 | Technical, commercial, financial and documentary evidence at each Gate |
 
 The immediate objective is not to add complexity. It is to convert a technically mature architecture into a **simple user journey, an independently inspectable evidence package and a first measured commercial operation**.
+
+## Private-cloud service model
+
+CASTÚO-SYSTEM is being organised around a privately controlled cloud service per critical domain rather than a single opaque deployment. The target service map separates governance, core API, web experience, evidence, private data, security, observability, edge relay, private AI, private CI and encrypted recovery. Each service has its own owner, data boundary, credentials, deployment record, health checks, rollback path and Evidence Center dossier.
+
+| Domain | Private service identity | Repository | Current state |
+|---|---|---|---|
+| Governance | `control.castuo-system.es` | [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) | Documented target; not declared provisioned |
+| Core API | `api.castuo-system.es` | [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Documented target; not declared operational |
+| Web application | `app.castuo-system.es` | [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Documented target; not declared operational |
+| Evidence | `evidence.castuo-system.es` | [`Traky12`](https://github.com/Traky12/Traky12) | Documented target; dossier promotion pending |
+| Data | `data.castuo-system.es` | [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Private data boundary designed; provisioning pending |
+| Security | `security.castuo-system.es` | [`goldfish`](https://github.com/Traky12/goldfish) | Controls and remediation path documented |
+| Observability | `observe.castuo-system.es` | [`goldfish`](https://github.com/Traky12/goldfish) | Target service; dashboards and SLA evidence pending |
+| Edge / IoT | `edge.castuo-system.es` | [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Offline-first target; field evidence pending |
+| Private AI | `ai.castuo-system.es` | [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Governed target; model and runtime evidence pending |
+| Private CI | `ci.castuo-system.es` | [`Cast-o`](https://github.com/Traky12/Cast-o) | Target private runner; runner provisioning pending |
+| Recovery | `backup.castuo-system.es` | [`goldfish`](https://github.com/Traky12/goldfish) | Encrypted recovery target; restore exercise pending |
+
+The authoritative architecture and catalog are maintained in [`PRIVATE_CLOUD_TARGET_ARCHITECTURE.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/PRIVATE_CLOUD_TARGET_ARCHITECTURE.md) and [`private-cloud-service-catalog.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/private-cloud-service-catalog.yaml). A hostname in this table is a planned service identity until DNS, private endpoint, deployment digest, health result and access boundary are evidenced.
 
 ## CI/CD transparency and operational truth
 
@@ -166,7 +186,7 @@ No public profile statement should be read as a claim that funding has been rece
 
 ## Limitations
 
-Independent E3 verification remains pending. Regulatory applicability is system-specific. Legal conformity and certification are not claimed. Real-world external evidence is continuing. Production readiness is context-dependent and must always be read together with the declared scope, environment, metrics and evidence. The current CI remediation addresses reproducible workflow and contract failures; it does not by itself close the independent-review, commercial-pilot, runtime-observability or vulnerability-remediation Gates.
+Independent E3 verification remains pending. Regulatory applicability is system-specific. Legal conformity and certification are not claimed. Real-world external evidence is continuing. Production readiness is context-dependent and must always be read together with the declared scope, environment, metrics and evidence. The private-cloud service map is currently a governed target architecture; it does not by itself prove provisioning, DNS, continuous operation, SLA or private-runner availability. The current CI remediation addresses reproducible workflow and contract failures; it does not by itself close the independent-review, commercial-pilot, runtime-observability, private-cloud provisioning or vulnerability-remediation Gates.
 
 ## Connect
 
