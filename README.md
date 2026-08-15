@@ -18,6 +18,21 @@ Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure wher
 
 CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline (`evos-v13.0/`). The documentation layer is now frozen for the current maturity cycle; further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
 
+### Ecosystem Transition Policy
+```text
+EVOS v13.0 (FROZEN BASELINE)
+    ↓
+Exact Commit / Tag (Cryptographically Identified)
+    ↓
+E3-001 — INDEPENDENT REVIEW & REPRODUCTION (Bundle under external-validation/E3-001/)
+    ↓
+THIRD-PARTY EXECUTION (Raw results, discrepancies, findings, remediation, re-test)
+    ↓
+E3 — INDEPENDENTLY VERIFIED (Scope-Bound)
+    ↓
+REAL-WORLD PILOT → OPERATIONAL KPIs → ECONOMIC OUTCOME → CUSTOMER / CONTRACT → SCALABLE CAPABILITY
+```
+
 | Maturity Status | Status | Scope & Meaning |
 | :--- | :---: | :--- |
 | **E1 — Internally Verified** | **CURRENT** | Relevant controls, tests, and evidence artifacts have been verified within the project's own engineering, CI/CD, and evidence-governance processes, within the documented scope. |
@@ -26,27 +41,17 @@ CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baselin
 
 *These maturity states apply to the defined evidence scope and do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented artifacts.*
 
-### Cryptographic Baseline Properties
-- **Cryptographic identification:** IMPLEMENTED (`evos-v13.0/MANIFEST.sha256`, `evos-v13.0/BASELINE.yaml`)
-- **Cryptographic immutability:** NOT CLAIMED UNTIL VERIFIED
-- **Immutable release:** PENDING
-- **Signed tag:** PENDING
-- **External anchor:** PENDING
-
-*Cryptographic identification (hashing artifacts for verification) is distinct from cryptographic immutability (guaranteeing unalterability across distributed networks).*
-
 ---
 
 ## 🎯 Next External Milestone: E3-001 — Independent Review & Reproduction
 
-The first external validation milestone is deliberately narrow and reproducible:
-- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 automated adversarial tests covering 6 adversarial control categories (manifest defined under [`E3-001 Manifest`](https://github.com/Traky12/castuo-evolution/tree/main/external-validation/E3-001)).
-- **Criteria:** Deterministic handling of unsupported claims, expired passports, evidence/hash integrity, gate-threshold enforcement, and below-target benchmark blocking (e.g. `82.4% < 85.0%`).
-- **Minimum review record:** Reviewer identity or organization, reviewed commit/tag, execution environment, commands executed, raw test results, discrepancies, remediation actions, re-test results, and conclusion.
-- **Evidence integrity rule:** Negative results, discrepancies, failures, and incidents form part of the evidence record (`FAILURE ≠ DELETE` → `FAILURE → FINDING → REMEDIATION → RE-TEST`). Unfavorable results will not be silently replaced.
+The first external validation milestone is structured as a reproducible evidence bundle (`external-validation/E3-001/`):
+- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 automated adversarial tests covering 6 control categories.
+- **Protocol:** Defined under [`Review Protocol`](https://github.com/Traky12/castuo-evolution/blob/main/external-validation/E3-001/REVIEW-PROTOCOL.yaml).
+- **Evidence Integrity Rule:** Negative results, discrepancies, failures, and incidents form part of the evidence record (`FAILURE ≠ DELETE` → `FAILURE → FINDING → REMEDIATION → RE-TEST`). Unfavorable results will not be silently replaced.
 - **Outcome:** An independently produced review report documenting the examined scope and observed results.
 
-*E3 status will only be assigned to the specific scope actually examined and supported by independent evidence. E3 is not inferred from internal test success, documentation readiness, or the existence of an external-review package.*
+*E3 status will only be assigned to the specific scope actually examined and supported by independent evidence.*
 
 ---
 
@@ -112,34 +117,7 @@ The system is designed to reject an unsupported positive claim rather than promo
 
 The next engineering stage is the progressive integration of:
 ```text
-COMP
-  ↓
-Capability Contract
-  ↓
-Implementation
-  ↓
-CI/CD
-  ↓
-Assurance Gate
-  ↓
-Runtime Policy
-  ↓
-AI / Agents
-  ↓
-Edge / IoT
-  ↓
-Observed Outcome
-  ↓
-Evidence / Provenance
-  ↓
-Claim
-  ↓
-External Review
-  ↓
-E3
-  ↓
-Reassessment / Drift
-  ↺
+COMP → Capability Contract → Implementation → CI/CD → Assurance Gate → Runtime Policy → AI / Agents → Edge / IoT → Observed Outcome → Evidence / Provenance → Claim → External Review → E3 → Reassessment / Drift ↺
 ```
 
 *Target architecture: this is a forward-looking engineering design. It must not be interpreted as a claim that every component is already fully integrated, production-ready, or independently validated.*
@@ -158,15 +136,7 @@ Reassessment / Drift
 
 This figure represents an indicative replacement-cost estimate based on documented reconstruction methodology and asset evidence.
 
-It is **not** presented as:
-- market value
-- fair value
-- accounting value
-- enterprise valuation
-- investment valuation
-- independent appraisal
-
-An independent valuation may be obtained where required for a specific financial, accounting, legal, transaction, or expert-report purpose. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
+It is **not** presented as market value, fair value, accounting value, enterprise valuation, investment valuation, or independent appraisal. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
 
 *Economic evidence is maintained as a separate domain and is not mingled with E1/E2/E3 evidence maturity levels.*
 
@@ -204,7 +174,7 @@ CASTÚO-SYSTEM™ is a technology project. Documentation describes technical arc
 ## 🔗 Connect
 
 - 🌐 [CASTÚO-SYSTEM™](https://castuo-system.es/)
-- 🔬 [ORCID](https://orcid.org/0009-0007-3489-0565)
+- 🔬 [ORCID](https://orcid.0009-0007-3489-0565)
 - 💼 [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/)
 
 > *The goal is not to make the system look certain. The goal is to make its evidence inspectable.*
