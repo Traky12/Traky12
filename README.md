@@ -14,30 +14,34 @@ Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure wher
 
 ---
 
-## ⚡ Current Position (EvOS v13.0 — Baseline Frozen)
+## ⚡ EvOS v13.0 — Public Evidence Baseline Frozen
 
-| Maturity Status | Level | Scope & Meaning |
+CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline. The documentation layer is now frozen for the current maturity cycle; further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
+
+| Maturity Status | Status | Meaning |
 | :--- | :---: | :--- |
-| **E1 — Internally Verified** | **VERIFIED** | Internal controls, CI/CD, and evidence depth |
-| **E2 — Review-Ready** | **READY** | Evidence package prepared for independent review |
-| **E3 — Independent Verification** | **PENDING** | No independent verification claimed |
+| **E1 — Internally Verified** | **CURRENT** | Relevant controls, tests, and evidence artifacts verified through the project's own engineering and CI/CD processes. |
+| **E2 — Review-Ready** | **READY** | Independent review package prepared and available for third-party inspection. |
+| **E3 — Independent Verification** | **PENDING** | No external verification claimed. |
 
-*These states describe the current evidence maturity of the relevant artifacts. They do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented scope.*
+*These maturity states apply to the defined evidence scope and do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented artifacts.*
 
 ---
 
 ## 🎯 Next External Milestone: E3-001 — Independent Review & Reproduction
 
-The next maturity step is deliberately narrow and reproducible rather than another documentation iteration:
+The first external validation milestone is deliberately narrow and reproducible:
 - **Scope**: Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 adversarial assurance tests.
-- **Criteria**: Deterministic handling of unsupported claims, expired passports, evidence/hash manipulation, gate thresholds, and below-target benchmark blocking (e.g., 82.4% < 85.0%).
-- **Outcome**: Documented independent review report (findings, execution environment, commands, and final conclusion).
+- **Criteria**: Deterministic handling of unsupported claims, expired passports, evidence/hash integrity, and below-target benchmark blocking (e.g., 82.4% < 85.0%).
+- **Outcome**: Independently produced report documenting findings, execution environment, and final conclusion.
+
+*E3 status will only be assigned to the specific scope actually examined and supported by independent evidence.*
 
 ---
 
 ## 🧭 CASTÚO-SYSTEM™ at a Glance
 
-CASTÚO-SYSTEM™ is a federated technology ecosystem built around an **Evidence Operating System (EvOS)**. Its purpose is not only to build software, but to make technical decisions, system states, claims, and validation results traceable, reproducible, and governable.
+CASTÚO-SYSTEM™ is a federated technology ecosystem built around an **Evidence Operating System (EvOS)**. Its purpose is to make technical decisions, system states, claims, and validation results traceable and governable.
 
 ```text
 Regulation → Control → Capability → Implementation → Test → Evidence → Provenance → Passport → Gate → Decision → Claim → Publication
@@ -47,7 +51,7 @@ Regulation → Control → Capability → Implementation → Test → Evidence �
 
 ## 🛡️ Evidence-First Engineering
 
-CASTÚO-SYSTEM™ is designed around a simple rule: *A system should be able to show why a claim is true — and when it is not justified, it should refuse to make the claim.* The assurance layer therefore uses fail-closed controls.
+CASTÚO-SYSTEM™ is designed around a simple rule: *A system should be able to show why a claim is true — and when it is not justified, it should refuse to make the claim.*
 
 ### Example: Unsupported Performance Claim
 - Target benchmark = `85.0%`
@@ -63,20 +67,18 @@ CLAIM BLOCKED
 
 **Reproduction:** [`test_benchmark_below_target.py`](https://github.com/Traky12/castuo-evolution/blob/main/tests/assurance/test_benchmark_below_target.py)
 
-The system is designed to reject an unsupported positive claim rather than reinterpret or promote a below-target result.
+The system is designed to reject an unsupported positive claim rather than promote a below-target result.
 
 ---
 
 ## 🤖 AI Governance & Assurance
-
-The AI governance layer provides a canonical structure for AI system inventory, risk classification, data provenance, human oversight, validation benchmarks, and fail-closed assurance gates.
 
 - **Technical readiness:** IMPLEMENTED
 - **Applicability assessment:** ACTIVE
 - **Legal conformity:** NOT CLAIMED
 - **Independent certification:** NOT CLAIMED
 
-*The system deliberately distinguishes technical readiness from legal conformity and certification.*
+*The system deliberately distinguishes technical readiness from regulatory applicability, legal conformity and certification.*
 
 ---
 
@@ -91,7 +93,17 @@ The AI governance layer provides a canonical structure for AI system inventory, 
 4. **COMP / Capability Architecture**  
    Executable capability registry, governance rules, and capability-integrity controls for implementation traceability. — [`Evidence`](https://github.com/Traky12/castuo-evolution/blob/main/governance/registry/repository-registry.yaml)
 5. **Offline-First Edge & IoT Systems**  
-   Resilient telemetry synchronization and field-oriented infrastructure for environments with unreliable connectivity. — [`Agro-Edge`](https://github.com/Traky12/castuo-agro-edge)
+   Resilient telemetry synchronization and field-oriented infrastructure for agricultural resilience. — [`Agro-Edge`](https://github.com/Traky12/castuo-agro-edge)
+
+---
+
+## 🚀 Capability-Controlled Runtime Architecture (Target Design)
+
+The next engineering stage is the progressive integration of:
+```text
+COMP → EvOS Evidence Graph → Assurance Engine → CI/CD Promotion Gates → Runtime Policy Enforcement → AI / Agents → Edge / IoT → Observed Outcome ↺ Evidence
+```
+*This architecture is a target engineering design, not a claim that every component is already fully implemented or independently validated.*
 
 ---
 
@@ -103,13 +115,11 @@ Basis:
 - asset inventory · engineering effort · architecture · integration · testing · security · governance · replacement-cost methodology
 
 ### Important Distinction
-`€420,000` is **not** presented as market value, fair value, accounting value, enterprise valuation, or independent appraisal. It is an indicative replacement-cost estimate supported by a documented reconstruction methodology. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md). An independent valuation may be obtained where required for specific financial or legal purposes.
+`€420,000` is **not** presented as market value, fair value, accounting value, enterprise valuation, or independent appraisal. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
 
 ---
 
 ## 🚀 Strategic Repositories
-
-The ecosystem follows a designed narrative: **Governance → Core → Assurance → Edge → Field → Tooling**
 
 1. [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) — **GOVERNANCE**: Control plane and evidence SSOT.
 2. [`Castuo-system`](https://github.com/Traky12/Castuo-system) — **CORE**: Platform backend and business logic.
@@ -120,26 +130,13 @@ The ecosystem follows a designed narrative: **Governance → Core → Assurance 
 
 ---
 
-## 🔬 Evidence Portfolio
-
-| Domain | Canonical source | State | Demonstrates | Does NOT Demonstrate |
-| :--- | :--- | :---: | :--- | :--- |
-| **Architecture** | `repository-registry.yaml` | E1 | Canonical ecosystem inventory | Commercial viability |
-| **Technical evidence** | `sev/SEV-000.yaml` | E1 | Master evidence index | External audit sign-off |
-| **AI assurance** | `ai_assurance_gate.py` | E1 | Fail-closed control logic | Total security guarantees |
-| **External review** | `external-validation/` | E2-ready | Review package for inspection | Completed audit (E3) |
-| **Economic basis** | `asset-reconstruction-report.md` | E2-ready | Replacement-cost methodology | Market valuation |
-| **Regulatory posture** | `regulatory-applicability-register.yaml` | Under review | AI Act readiness assessment | Legal certification |
-
----
-
 ## ⚠️ Known Limitations
 
 - Independent E3 verification: **pending** (next milestone: E3-001).
 - Regulatory applicability: **system-specific**.
 - Legal conformity: **not claimed**.
 - €420,000 estimate: **replacement-cost basis**.
-- Independent valuation: **not claimed**; obtained only when required for specific financial/legal use.
+- Independent valuation: **not claimed**; obtained only when required for specific purposes.
 - Production readiness: **context-dependent**.
 - Real-world external evidence: **continuing**.
 
