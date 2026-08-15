@@ -63,6 +63,20 @@ Future robotic or physical-control capabilities are governed through `observe â†
 
 The current state remains architectural and documentary. No operational robotics, industrial semiconductor manufacturing, autonomous actuation or federated production capability is claimed.
 
+## What the customer actually gets
+
+The customer-facing value is intentionally simple:
+
+| Value layer | What it means |
+|---|---|
+| Digital core | SaaS, traceability and operational workflows |
+| Edge | Offline-first sensing and local continuity |
+| Evidence | Verifiable operational and compliance reporting |
+
+The current public evidence demonstrates architecture and engineering scope. Customer, paid-pilot, recurring-revenue and continuous-operation claims require separate dated evidence.
+
+The multisector target architecture is documented in [`MULTISECTOR_FEDERATED_PLATFORM_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/MULTISECTOR_FEDERATED_PLATFORM_MODEL.md). Sector, tenant, satellite and federation capabilities remain scoped until a module, use case, owner, tests and evidence exist.
+
 ## Private-cloud service model
 
 CASTÃšO-SYSTEM is being organised around privately controlled service boundaries rather than a single opaque deployment. The target service map separates governance, core API, web experience, evidence, private data, security, observability, edge relay, private AI, private CI and encrypted recovery. Each service has its own owner, data boundary, credentials, deployment record, health checks, rollback path and Evidence Center dossier.
