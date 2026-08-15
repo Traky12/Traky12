@@ -135,7 +135,7 @@ The core assurance evidence is publicly inspectable:
 git clone https://github.com/Traky12/castuo-evolution
 cd castuo-evolution
 
-pytest tests/assurance/ -q
+python3 -m unittest discover tests/assurance/
 
 # Then inspect:
 cat sev/SEV-000.yaml
