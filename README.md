@@ -110,43 +110,14 @@ CASTÚO-SYSTEM™ maintains a technical applicability and readiness framework fo
 
 ---
 
-## 🧪 Assurance Evidence
+## 🌍 Real-World Validation
 
-### 12 / 12 adversarial assurance tests passing (`tests/assurance/`)
+CASTÚO-SYSTEM™ is designed for environments where systems cannot assume perfect infrastructure (offline operation, resilient synchronization, traceable state, observable infrastructure, human oversight, controlled automation, evidence-backed decisions).
 
-The assurance suite covers failure scenarios including:
-- unsupported claims
-- stale or expired passports
-- insufficient assurance gates
-- benchmark results below target
-- evidence/hash manipulation
-- model-change reassessment
-- provenance failures
-
-*The objective is simple: A missing, stale, or insufficient evidence chain should block the corresponding claim.*
-
----
-
-## 🔎 Verify It Yourself
-
-The core assurance evidence is publicly inspectable:
-
-```bash
-git clone https://github.com/Traky12/castuo-evolution
-cd castuo-evolution
-
-python3 -m unittest discover tests/assurance/
-
-# Then inspect:
-cat sev/SEV-000.yaml
-cat governance/ai/ai-system-registry.yaml
-cat governance/ai/ai-validation-registry.yaml
-cat governance/ai/ai_assurance_gate.py
-cat governance/ai/PASS-AI-001.yaml
-ls external-validation/
+### Validation Progression
+```text
+Problem → Capability → Pilot → Evidence → KPI → Economic Outcome → External Validation → Scalable Capability
 ```
-
-The public evidence index provides the canonical map: [`Public Evidence Index`](https://github.com/Traky12/castuo-evolution/blob/main/docs/public-evidence-index.md)
 
 ---
 
@@ -166,46 +137,20 @@ Basis:
 - replacement-cost methodology
 
 ### Important Distinction
-`€420,000` is **not** presented as:
-- market value
-- fair value
-- accounting value
-- enterprise valuation
-- independent appraisal
-
-It is an indicative replacement-cost estimate supported by a documented reconstruction methodology and evidence inventory. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md) for sensitivity analysis (conservative, base, expansive scenarios).
+`€420,000` is **not** presented as market value, fair value, accounting value, enterprise valuation, or independent appraisal. It is an indicative replacement-cost estimate supported by a documented reconstruction methodology and evidence inventory. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
 
 ---
 
-## 🌍 Real-World Validation
+## 🛠️ Selected Engineering Work
 
-CASTÚO-SYSTEM™ is designed for environments where systems cannot assume perfect infrastructure (offline operation, resilient synchronization, traceable state, observable infrastructure, human oversight, controlled automation, evidence-backed decisions).
-
-### Validation Progression
-```text
-Problem → Capability → Pilot → Evidence → KPI → Economic Outcome → External Validation → Scalable Capability
-```
-
----
-
-## 🧭 Ecosystem Architecture
-
-```text
-                         Traky12
-                            │
-                    CONTROL PLANE
-                  castuo-evolution
-                            │
-        ┌───────────────────┼───────────────────┐
-        │                   │                   │
-     CORE                ASSURANCE           TOOLING
- CASTÚO-SYSTEM           GOLDfish             Cast-o
-        │                   │                   │
-        ├─────────────┬─────┴─────┬─────────────┤
-        │             │           │             │
-      EDGE         OFFLINE     CTAEX PILOT    OTHER
-   Agro/IoT        FIELD       VALIDATION     REPOSITORIES
-```
+1. **Evidence Control Plane (`castuo-evolution`)**  
+   Federated control plane implementing canonical repositories, capability graphs, and fail-closed assurance gates. — [`Repository`](https://github.com/Traky12/castuo-evolution) | **Evidence:** `sev/SEV-000.yaml`
+2. **AI Assurance Gate & Adversarial Suite (`ai_assurance_gate.py`)**  
+   Deterministic fail-closed validation blocking unbacked or sub-target claims. — [`Source`](https://github.com/Traky12/castuo-evolution/blob/main/governance/ai/ai_assurance_gate.py) | **Evidence:** 12/12 passing unit tests in `tests/assurance/`
+3. **Security Hardening & Vulnerability Remediation (`goldfish`)**  
+   Automated dependency auditing, security controls, and vulnerability remediation. — [`Repository`](https://github.com/Traky12/goldfish) | **Evidence:** Security logs & Trivy integration
+4. **Offline-First Edge Telemetry (`castuo-agro-edge`)**  
+   Edge computing and telemetry classification for agricultural resilience under unreliable connectivity. — [`Repository`](https://github.com/Traky12/castuo-agro-edge) | **Evidence:** Edge benchmark registry
 
 ---
 
