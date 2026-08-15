@@ -36,6 +36,7 @@ The immediate objective is not to add complexity. It is to convert a technically
 - Understand the project: [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
 - Review the evolution model: [`castuo-evolution`](https://github.com/Traky12/castuo-evolution)
 - Inspect scoped public evidence: [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- Review the N6 model: [`KPI registry`](https://github.com/Traky12/castuo-evolution/blob/main/data/n6-kpi-registry.yaml) and [`pilot dossier template`](https://github.com/Traky12/Traky12/tree/main/evidence-center/templates/COMMERCIAL-PILOT-DOSSIER)
 - Follow the technical chronology: [`EVOLUTION_TIMELINE_PUBLIC.md`](EVOLUTION_TIMELINE_PUBLIC.md)
 - Contact the founder: [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
 
@@ -111,6 +112,8 @@ The architecture is stronger than its current external market evidence. That is 
 | E3-001 | Independent reproduction within a declared scope | Pending |
 | Commercial pilot | Signed scope, paid pilot or equivalent contractual evidence | Not publicly claimed |
 | Operational result | Measured result in a real operating environment with owner and baseline | Pending |
+
+The KPI definitions, periodic Gate report generator and first commercial pilot dossier template are maintained in the private control plane and exposed publicly only through their scoped, redacted evidence surfaces.
 
 Until these Gates close, the profile presents technical capability and governance discipline, not commercial validation. Once they close, the same evidence chain will make the commercial claim stronger rather than merely louder.
 
