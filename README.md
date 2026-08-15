@@ -27,7 +27,7 @@ CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baselin
 *These maturity states apply to the defined evidence scope and do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented artifacts.*
 
 ### Cryptographic Baseline Properties
-- **Cryptographic identification:** IMPLEMENTED (`evos-v13.0/MANIFEST.sha256`)
+- **Cryptographic identification:** IMPLEMENTED (`evos-v13.0/MANIFEST.sha256`, `evos-v13.0/BASELINE.yaml`)
 - **Cryptographic immutability:** NOT CLAIMED UNTIL VERIFIED
 - **Immutable release:** PENDING
 - **Signed tag:** PENDING
@@ -43,6 +43,7 @@ The first external validation milestone is deliberately narrow and reproducible:
 - **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 automated adversarial tests covering 6 adversarial control categories (manifest defined under [`E3-001 Manifest`](https://github.com/Traky12/castuo-evolution/tree/main/external-validation/E3-001)).
 - **Criteria:** Deterministic handling of unsupported claims, expired passports, evidence/hash integrity, gate-threshold enforcement, and below-target benchmark blocking (e.g. `82.4% < 85.0%`).
 - **Minimum review record:** Reviewer identity or organization, reviewed commit/tag, execution environment, commands executed, raw test results, discrepancies, remediation actions, re-test results, and conclusion.
+- **Evidence integrity rule:** Negative results, discrepancies, failures, and incidents form part of the evidence record (`FAILURE ≠ DELETE` → `FAILURE → FINDING → REMEDIATION → RE-TEST`). Unfavorable results will not be silently replaced.
 - **Outcome:** An independently produced review report documenting the examined scope and observed results.
 
 *E3 status will only be assigned to the specific scope actually examined and supported by independent evidence. E3 is not inferred from internal test success, documentation readiness, or the existence of an external-review package.*
@@ -113,21 +114,32 @@ The next engineering stage is the progressive integration of:
 ```text
 COMP
   ↓
-EvOS Evidence Graph
+Capability Contract
   ↓
-Assurance Engine
+Implementation
   ↓
-CI/CD Promotion Gates
+CI/CD
   ↓
-Runtime Policy Enforcement
+Assurance Gate
+  ↓
+Runtime Policy
   ↓
 AI / Agents
   ↓
 Edge / IoT
   ↓
 Observed Outcome
+  ↓
+Evidence / Provenance
+  ↓
+Claim
+  ↓
+External Review
+  ↓
+E3
+  ↓
+Reassessment / Drift
   ↺
-Evidence / Provenance / Reassessment
 ```
 
 *Target architecture: this is a forward-looking engineering design. It must not be interpreted as a claim that every component is already fully integrated, production-ready, or independently validated.*
