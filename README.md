@@ -14,9 +14,9 @@ Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure wher
 
 ---
 
-## ⚡ EvOS v13.0 — Public Evidence Baseline Frozen (Cryptographically Identified)
+## ⚡ EvOS v13.0 — Public Evidence Baseline Frozen
 
-CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline. The documentation layer is now frozen and cryptographically anchored (`evos-v13.0/` manifest); further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
+CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline (`evos-v13.0/`). The documentation layer is now frozen for the current maturity cycle; further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
 
 | Maturity Status | Status | Scope & Meaning |
 | :--- | :---: | :--- |
@@ -26,12 +26,21 @@ CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baselin
 
 *These maturity states apply to the defined evidence scope and do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented artifacts.*
 
+### Cryptographic Baseline Properties
+- **Cryptographic identification:** IMPLEMENTED (`evos-v13.0/MANIFEST.sha256`)
+- **Cryptographic immutability:** NOT CLAIMED UNTIL VERIFIED
+- **Immutable release:** PENDING
+- **Signed tag:** PENDING
+- **External anchor:** PENDING
+
+*Cryptographic identification (hashing artifacts for verification) is distinct from cryptographic immutability (guaranteeing unalterability across distributed networks).*
+
 ---
 
 ## 🎯 Next External Milestone: E3-001 — Independent Review & Reproduction
 
 The first external validation milestone is deliberately narrow and reproducible:
-- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 adversarial assurance tests (manifest defined under [`E3-001 Manifest`](https://github.com/Traky12/castuo-evolution/tree/main/external-validation/E3-001)).
+- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 automated adversarial tests covering 6 adversarial control categories (manifest defined under [`E3-001 Manifest`](https://github.com/Traky12/castuo-evolution/tree/main/external-validation/E3-001)).
 - **Criteria:** Deterministic handling of unsupported claims, expired passports, evidence/hash integrity, gate-threshold enforcement, and below-target benchmark blocking (e.g. `82.4% < 85.0%`).
 - **Minimum review record:** Reviewer identity or organization, reviewed commit/tag, execution environment, commands executed, raw test results, discrepancies, remediation actions, re-test results, and conclusion.
 - **Outcome:** An independently produced review report documenting the examined scope and observed results.
@@ -88,7 +97,7 @@ The system is designed to reject an unsupported positive claim rather than promo
 1. **Evidence Control Plane (`castuo-evolution`)**  
    Federated control plane implementing canonical evidence roots, provenance controls, and documentation-drift guardrails. — [`Repository`](https://github.com/Traky12/castuo-evolution)
 2. **AI Assurance Gate & Adversarial Suite**  
-   Deterministic fail-closed validation blocking unbacked or sub-target claims via 12/12 passing unit tests. — [`Source`](https://github.com/Traky12/castuo-evolution/blob/main/governance/ai/ai_assurance_gate.py)
+   Deterministic fail-closed validation blocking unbacked or sub-target claims via 12 automated adversarial tests across 6 control categories. — [`Source`](https://github.com/Traky12/castuo-evolution/blob/main/governance/ai/ai_assurance_gate.py)
 3. **Security Hardening & CI/CD Gates (`goldfish`)**  
    Merge gates, dependency hardening, secrets governance, and automated vulnerability remediation. — [`Repository`](https://github.com/Traky12/goldfish)
 4. **COMP / Capability Architecture**  
@@ -146,6 +155,8 @@ It is **not** presented as:
 - independent appraisal
 
 An independent valuation may be obtained where required for a specific financial, accounting, legal, transaction, or expert-report purpose. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
+
+*Economic evidence is maintained as a separate domain and is not mingled with E1/E2/E3 evidence maturity levels.*
 
 ---
 
