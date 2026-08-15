@@ -14,9 +14,9 @@ Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure wher
 
 ---
 
-## ⚡ EvOS v13.0 — Public Evidence Baseline Frozen
+## ⚡ EvOS v13.0 — Public Evidence Baseline Frozen (Cryptographically Identified)
 
-CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline. The documentation layer is now frozen for the current maturity cycle; further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
+CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline. The documentation layer is now frozen and cryptographically anchored (`evos-v13.0/` manifest); further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
 
 | Maturity Status | Status | Scope & Meaning |
 | :--- | :---: | :--- |
