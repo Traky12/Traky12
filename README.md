@@ -31,6 +31,20 @@ Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure
 
 The immediate objective is not to add complexity. It is to convert a technically mature architecture into a **simple user journey, an independently inspectable evidence package and a first measured commercial operation**.
 
+## CI/CD transparency and operational truth
+
+The Actions layer is treated as evidence, not decoration. A green static check proves only the scope of that check; it does not prove production operation, customer adoption, regulatory conformity or commercial traction. External-service checks that require credentials, deployed infrastructure or a paid pilot are explicitly separated from reproducible repository checks and remain pending until their evidence is attached.
+
+| Plane | Public interpretation | Promotion condition |
+|---|---|---|
+| Repository hygiene | Secret-pattern, path and documentation checks run in GitHub Actions | Successful run on the promoted commit |
+| Unit and contract tests | Reproducible tests for the declared code scope | Test report, environment and commit recorded |
+| Security assurance | Dependency, static and filesystem findings are reviewed | Findings triaged; critical blockers closed or formally accepted |
+| Cloud and runtime | Not inferred from a local or CI-only check | Dated deployment, owner, logs, metrics and rollback evidence |
+| Commercial operation | Not inferred from a workflow, repository or contact | Signed scope, paid pilot or equivalent documentary evidence |
+
+The public profile therefore links to repositories and evidence dossiers rather than displaying unsupported “production-ready”, certification or customer claims. A failed run remains a finding to remediate; it is never deleted or reclassified as success without a new verified execution.
+
 ## Where to start
 
 - Understand the project: [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
@@ -152,7 +166,7 @@ No public profile statement should be read as a claim that funding has been rece
 
 ## Limitations
 
-Independent E3 verification remains pending. Regulatory applicability is system-specific. Legal conformity and certification are not claimed. Real-world external evidence is continuing. Production readiness is context-dependent and must always be read together with the declared scope, environment, metrics and evidence.
+Independent E3 verification remains pending. Regulatory applicability is system-specific. Legal conformity and certification are not claimed. Real-world external evidence is continuing. Production readiness is context-dependent and must always be read together with the declared scope, environment, metrics and evidence. The current CI remediation addresses reproducible workflow and contract failures; it does not by itself close the independent-review, commercial-pilot, runtime-observability or vulnerability-remediation Gates.
 
 ## Connect
 
