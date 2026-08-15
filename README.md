@@ -33,9 +33,13 @@ The immediate objective is not to add complexity. It is to convert a technically
 
 ## Private-cloud service model
 
-CASTÚO-SYSTEM is being organised around a privately controlled cloud service per critical domain rather than a single opaque deployment. The target service map separates governance, core API, web experience, evidence, private data, security, observability, edge relay, private AI, private CI and encrypted recovery. Each service has its own owner, data boundary, credentials, deployment record, health checks, rollback path and Evidence Center dossier.
+CASTÚO-SYSTEM is being organised around privately controlled service boundaries rather than a single opaque deployment. The target service map separates governance, core API, web experience, evidence, private data, security, observability, edge relay, private AI, private CI and encrypted recovery. Each service has its own owner, data boundary, credentials, deployment record, health checks, rollback path and Evidence Center dossier.
 
-| Domain | Private service identity | Repository | Current state |
+> The service identities below are **governed target identities**. They are not DNS or operational claims unless the corresponding deployment and evidence package is published.
+
+The first private-cloud provision is intentionally limited to five blocks: control plane; identity and gateway; core API and web; data and evidence; observability and backup. AI, Edge, private CI and separate security services are later splits conditioned by real workload, risk or evidence.
+
+| Domain | Target service identity | Repository | Current state |
 |---|---|---|---|
 | Governance | `control.castuo-system.es` | [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) | Documented target; not declared provisioned |
 | Core API | `api.castuo-system.es` | [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Documented target; not declared operational |
@@ -49,7 +53,7 @@ CASTÚO-SYSTEM is being organised around a privately controlled cloud service pe
 | Private CI | `ci.castuo-system.es` | [`Cast-o`](https://github.com/Traky12/Cast-o) | Target private runner; runner provisioning pending |
 | Recovery | `backup.castuo-system.es` | [`goldfish`](https://github.com/Traky12/goldfish) | Encrypted recovery target; restore exercise pending |
 
-The authoritative architecture and catalog are maintained in [`PRIVATE_CLOUD_TARGET_ARCHITECTURE.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/PRIVATE_CLOUD_TARGET_ARCHITECTURE.md) and [`private-cloud-service-catalog.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/private-cloud-service-catalog.yaml). A hostname in this table is a planned service identity until DNS, private endpoint, deployment digest, health result and access boundary are evidenced.
+The authoritative architecture and catalog are maintained in [`PRIVATE_CLOUD_TARGET_ARCHITECTURE.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/PRIVATE_CLOUD_TARGET_ARCHITECTURE.md) and [`private-cloud-service-catalog.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/private-cloud-service-catalog.yaml). The correct general status is: **Private-cloud target architecture documented; infrastructure provisioning pending.**
 
 ## CI/CD transparency and operational truth
 
