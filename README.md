@@ -31,11 +31,12 @@ CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baselin
 ## 🎯 Next External Milestone: E3-001 — Independent Review & Reproduction
 
 The first external validation milestone is deliberately narrow and reproducible:
-- **Scope**: Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 adversarial assurance tests.
-- **Criteria**: Deterministic handling of unsupported claims, expired passports, evidence/hash integrity, and below-target benchmark blocking (e.g., 82.4% < 85.0%).
-- **Outcome**: Independently produced report documenting findings, execution environment, and final conclusion.
+- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 adversarial assurance tests.
+- **Criteria:** Deterministic handling of unsupported claims, expired passports, evidence/hash integrity, gate-threshold enforcement, and below-target benchmark blocking (e.g. `82.4% < 85.0%`).
+- **Minimum review record:** Reviewer identity or organization, reviewed commit/tag, execution environment, commands executed, raw test results, discrepancies, remediation actions, re-test results, and conclusion.
+- **Outcome:** An independently produced review report documenting the examined scope and observed results.
 
-*E3 status will only be assigned to the specific scope actually examined and supported by independent evidence.*
+*E3 status will only be assigned to the specific scope actually examined and supported by independent evidence. E3 is not inferred from internal test success, documentation readiness, or the existence of an external-review package.*
 
 ---
 
@@ -97,25 +98,54 @@ The system is designed to reject an unsupported positive claim rather than promo
 
 ---
 
-## 🚀 Capability-Controlled Runtime Architecture (Target Design)
+## 🚀 Capability-Controlled Runtime Architecture — Target Design
 
 The next engineering stage is the progressive integration of:
 ```text
-COMP → EvOS Evidence Graph → Assurance Engine → CI/CD Promotion Gates → Runtime Policy Enforcement → AI / Agents → Edge / IoT → Observed Outcome ↺ Evidence
+COMP
+  ↓
+EvOS Evidence Graph
+  ↓
+Assurance Engine
+  ↓
+CI/CD Promotion Gates
+  ↓
+Runtime Policy Enforcement
+  ↓
+AI / Agents
+  ↓
+Edge / IoT
+  ↓
+Observed Outcome
+  ↺
+Evidence / Provenance / Reassessment
 ```
-*This architecture is a target engineering design, not a claim that every component is already fully implemented or independently validated.*
+
+*Target architecture: this is a forward-looking engineering design. It must not be interpreted as a claim that every component is already fully integrated, production-ready, or independently validated.*
+
+### Design Principles
+- **NO EXECUTION WITHOUT POLICY**
+- **NO PROMOTION WITHOUT ASSURANCE**
+- **NO CLAIM WITHOUT PROVENANCE**
+- **NO DRIFT WITHOUT REASSESSMENT**
 
 ---
 
-## 💶 Technology Asset Evidence (Separate Domain)
+## 💶 Economic Evidence — Separate Domain
 
 ### Indicative technology-asset replacement-cost estimate: **€420,000**
 
-Basis:
-- asset inventory · engineering effort · architecture · integration · testing · security · governance · replacement-cost methodology
+This figure represents an indicative replacement-cost estimate based on documented reconstruction methodology and asset evidence.
 
-### Important Distinction
-`€420,000` is **not** presented as market value, fair value, accounting value, enterprise valuation, or independent appraisal. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md). An independent valuation may be obtained where required for specific financial or legal purposes.
+It is **not** presented as:
+- market value
+- fair value
+- accounting value
+- enterprise valuation
+- investment valuation
+- independent appraisal
+
+An independent valuation may be obtained where required for a specific financial, accounting, legal, transaction, or expert-report purpose. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
 
 ---
 
