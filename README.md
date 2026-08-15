@@ -47,7 +47,9 @@ The control-plane contracts are documented in [`MULTIAGENT_GOVERNANCE_CONTRACT.m
 
 The current architecture is founder-led and particularly strong in systems architecture, governance, evidence engineering, responsible AI, integration, Edge/IoT and DevSecOps. The main scaling risk is the concentration of critical functions in one person, not the absence of a coherent technical direction.
 
-The priority capabilities to add or validate are B2B commercial and go-to-market, operational agronomy, offensive cybersecurity and independent review, UX and product design, data engineering and MLOps, legal and technology regulation, and finance. These are capability targets, not claims of current staffing or contracted services. Each future contributor must have bounded scope, owner, access policy, deliverable, review and dated evidence.
+The priority capabilities to add or validate are private infrastructure and reproducible operation, independent cybersecurity, operational agronomy, B2B commercial execution and the first measured pilot. The next tier is UX and product, Data Engineering/MLOps, technology regulation and finance. These are capability targets, not claims of current staffing or contracted services.
+
+The public state distinction is `planned ≠ contracted ≠ implemented ≠ validated`. Each future contributor must have a responsible owner, bounded scope, permissions, decision rights, deliverable, review, dated evidence and revocation path.
 
 The next strategic increment is execution: documentation → dry run → evidence → review → pilot → limited operation → federation. Additional architecture will not be treated as progress unless it produces a measurable capability or evidence package.
 
