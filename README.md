@@ -31,6 +31,26 @@ Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure
 
 The immediate objective is not to add complexity. It is to convert a technically mature architecture into a **simple user journey, an independently inspectable evidence package and a first measured commercial operation**.
 
+## Multi-agent, audited and federated direction
+
+CASTÚO-SYSTEM is being prepared for governed multi-agent operation across private-cloud and offline-first edge environments. The current public state is architectural and documentary; it does not claim that the multi-agent runtime, private AI, federated nodes, independent review or continuous operation are already operational.
+
+The first governed objective is `G-AI-FED-001 — Governed Multi-Agent Dry Run`: two specialised agents, a coordinator without physical permissions, three bounded tools, default deny, reproducible execution, evidence envelopes, revocation, offline simulation, negative tests and human review for sensitive actions. Physical and financial actions remain outside the first Gate.
+
+The promotion rule is `scope + owner + version + tests + evidence + reviewer + date + rollback`. A green CI result alone does not demonstrate production, adoption, certification, autonomy or federation.
+
+Readiness is separated into registered and versioned agents, tools behind a gateway, default-deny policy, human approval for sensitive actions, execution evidence, independent node identity and idempotent offline synchronisation. The runtime, federated nodes and production operation remain pending. Federation will not be claimed until a second real node, verified identity, tested exchange and synchronisation evidence exist.
+
+The control-plane contracts are documented in [`MULTIAGENT_GOVERNANCE_CONTRACT.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/MULTIAGENT_GOVERNANCE_CONTRACT.md), [`FEDERATED_NODE_OPERATING_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/FEDERATED_NODE_OPERATING_MODEL.md) and [`G-AI-FED-001-DRY-RUN-SPEC.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/G-AI-FED-001-DRY-RUN-SPEC.md).
+
+## Technology sovereignty and auditable robotics
+
+CASTÚO-SYSTEM uses a layered sovereignty model covering ownership, internal capability, third-party dependency, substitution and continuity. The practical layers are data sovereignty, computational sovereignty, model sovereignty, operational sovereignty and institutional sovereignty. The objective is to keep decisions, evidence, recovery and provider exit paths governable; it is not a claim that every component is manufactured or operated internally.
+
+Future robotic or physical-control capabilities are governed through `observe → recommend → pending approval → bounded action → telemetry → safe stop → review`. Connectivity loss, revoked identity, stale approval, invalid telemetry, replay or an out-of-range command must deny or enter a safe state. References to immersion lithography, EUV, semiconductor manufacturing or advanced robotics are strategic context only, not CASTÚO-SYSTEM industrial production, ownership or certification claims.
+
+The current state remains architectural and documentary. No operational robotics, industrial semiconductor manufacturing, autonomous actuation or federated production capability is claimed.
+
 ## Private-cloud service model
 
 CASTÚO-SYSTEM is being organised around privately controlled service boundaries rather than a single opaque deployment. The target service map separates governance, core API, web experience, evidence, private data, security, observability, edge relay, private AI, private CI and encrypted recovery. Each service has its own owner, data boundary, credentials, deployment record, health checks, rollback path and Evidence Center dossier.
@@ -42,6 +62,7 @@ The first private-cloud provision is intentionally limited to five blocks: contr
 | Domain | Target service identity | Repository | Current state |
 |---|---|---|---|
 | Governance | `control.castuo-system.es` | [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) | Documented target; not declared provisioned |
+| Identity + gateway | `identity.castuo-system.es` | [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Documented target; not declared provisioned |
 | Core API | `api.castuo-system.es` | [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Documented target; not declared operational |
 | Web application | `app.castuo-system.es` | [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Documented target; not declared operational |
 | Evidence | `evidence.castuo-system.es` | [`Traky12`](https://github.com/Traky12/Traky12) | Documented target; dossier promotion pending |
