@@ -21,7 +21,7 @@ CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baselin
 | Maturity Status | Status | Scope & Meaning |
 | :--- | :---: | :--- |
 | **E1 — Internally Verified** | **CURRENT** | Relevant controls, tests, and evidence artifacts have been verified within the project's own engineering, CI/CD, and evidence-governance processes, within the documented scope. |
-| **E2 — Review-Ready** | **READY** | Independent review package prepared and available for third-party inspection. |
+| **E2 — Review-Ready** | **READY** | Independent review package prepared and available for third-party inspection (`external-validation/`). |
 | **E3 — Independent Verification** | **PENDING** | No external verification claimed. |
 
 *These maturity states apply to the defined evidence scope and do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented artifacts.*
@@ -31,7 +31,7 @@ CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baselin
 ## 🎯 Next External Milestone: E3-001 — Independent Review & Reproduction
 
 The first external validation milestone is deliberately narrow and reproducible:
-- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 adversarial assurance tests.
+- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 adversarial assurance tests (manifest defined under [`E3-001 Manifest`](https://github.com/Traky12/castuo-evolution/tree/main/external-validation/E3-001)).
 - **Criteria:** Deterministic handling of unsupported claims, expired passports, evidence/hash integrity, gate-threshold enforcement, and below-target benchmark blocking (e.g. `82.4% < 85.0%`).
 - **Minimum review record:** Reviewer identity or organization, reviewed commit/tag, execution environment, commands executed, raw test results, discrepancies, remediation actions, re-test results, and conclusion.
 - **Outcome:** An independently produced review report documenting the examined scope and observed results.
