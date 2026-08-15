@@ -75,7 +75,7 @@ Security is treated as an operational boundary rather than a marketing statement
 | Supply chain | Dependency scanning, SBOM and release blocking for critical issues |
 | Continuity | Encrypted backups, restoration exercises and documented RPO/RTO |
 
-“Encrypted” does not mean anonymous, certified or risk-free. The actual state of a control is the state supported by its implementation and evidence. A local or simulated GaiaChain transaction identifier is not described as a public blockchain confirmation; external anchoring remains a scoped Gate deliverable. The public [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center) applies the same rule to capability dossiers: a template is not a pilot, a pilot is not continuous operation, and a hash is not a certification.
+“Encrypted” does not mean anonymous, certified or risk-free. The actual state of a control is the state supported by its implementation and evidence. A local or simulated GaiaChain transaction identifier is not described as a public blockchain confirmation; external anchoring remains a scoped Gate deliverable. The public [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center) applies the same rule to capability dossiers: a template is not a pilot, a pilot is not continuous operation, and a hash is not a certification. The complete repository scope and governance boundaries are recorded in the [`Architecture Governance Matrix`](https://github.com/Traky12/castuo-evolution/blob/main/docs/ARCHITECTURE_GOVERNANCE_MATRIX.md).
 
 ## Public evidence baseline and next milestone
 
