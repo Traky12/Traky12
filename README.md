@@ -18,7 +18,7 @@ Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure
 
 CASTÚO-SYSTEM™ is evolving from a technically developed core toward a **usable, evidence-driven and security-first rural technology ecosystem**. The current engineering priority is not to claim that every future component is already operational; it is to make each capability progressively easier to use, safer to scale and more defensible through reproducible evidence.
 
-The public evolution plan is documented in [`CASTUO_EVOLUTION_2026.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO_EVOLUTION_2026.md), with the security and encryption operating model in [`SECURITY_ENCRYPTION_OPERATING_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/SECURITY_ENCRYPTION_OPERATING_MODEL.md).
+The public evolution plan is documented in [`CASTUO_EVOLUTION_2026.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO_EVOLUTION_2026.md), with the security and encryption operating model in [`SECURITY_ENCRYPTION_OPERATING_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/SECURITY_ENCRYPTION_OPERATING_MODEL.md). The control-plane/runtime boundaries, canonical evidence envelope and GaiaChain limits are defined in the [`SOVEREIGN_ORCHESTRATION_CONTRACT.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/SOVEREIGN_ORCHESTRATION_CONTRACT.md) and tracked through the [`ORCHESTRATION_ROADMAP_2026.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/ORCHESTRATION_ROADMAP_2026.md).
 
 ```text
 Usability → Capability → Implementation → Test → Security Gate
@@ -75,7 +75,7 @@ Security is treated as an operational boundary rather than a marketing statement
 | Supply chain | Dependency scanning, SBOM and release blocking for critical issues |
 | Continuity | Encrypted backups, restoration exercises and documented RPO/RTO |
 
-“Encrypted” does not mean anonymous, certified or risk-free. The actual state of a control is the state supported by its implementation and evidence.
+“Encrypted” does not mean anonymous, certified or risk-free. The actual state of a control is the state supported by its implementation and evidence. A local or simulated GaiaChain transaction identifier is not described as a public blockchain confirmation; external anchoring remains a scoped Gate deliverable.
 
 ## Public evidence baseline and next milestone
 
