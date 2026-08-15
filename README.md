@@ -14,6 +14,31 @@ Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure
 
 ---
 
+## In one sentence
+
+**CASTÚO-SYSTEM™ is a modular rural digitalisation platform combining SaaS, Edge/IoT, traceability and agro-environmental operations. Fase 1 consolidates the digital core and validates it with real users before any physical infrastructure is committed.**
+
+## Current state at a glance
+
+| Area | Current status | What would upgrade the claim |
+|---|---|---|
+| Digital core | Developed within the declared scope | Scope-bound external review and reproducible release evidence |
+| Edge/IoT | In development and pilot preparation | Field protocol, baseline, KPIs and raw results |
+| Evidence Center | Public framework with scoped dossiers | Completed provenance and dossier-specific promotion Gates |
+| Independent review | E3-001 pending | Independent reproduction report with findings and re-test |
+| Commercial traction | No recurring customers or paid contracts publicly claimed | Signed LOI, paid pilot, invoice/cobro or recurring customer evidence |
+| Physical infrastructure | Future and conditioned on G1–G5 | Technical, commercial, financial and documentary evidence at each Gate |
+
+The immediate objective is not to add complexity. It is to convert a technically mature architecture into a **simple user journey, an independently inspectable evidence package and a first measured commercial operation**.
+
+## Where to start
+
+- Understand the project: [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
+- Review the evolution model: [`castuo-evolution`](https://github.com/Traky12/castuo-evolution)
+- Inspect scoped public evidence: [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- Follow the technical chronology: [`EVOLUTION_TIMELINE_PUBLIC.md`](EVOLUTION_TIMELINE_PUBLIC.md)
+- Contact the founder: [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
+
 ## CASTÚO-SYSTEM™ · 2026 evolution
 
 CASTÚO-SYSTEM™ is evolving from a technically developed core toward a **usable, evidence-driven and security-first rural technology ecosystem**. The current engineering priority is not to claim that every future component is already operational; it is to make each capability progressively easier to use, safer to scale and more defensible through reproducible evidence.
@@ -59,23 +84,35 @@ The ecosystem separates four scaling planes:
 
 The system does not promote a physical or expensive expansion merely because it is technically attractive. It uses G1–G5 Gates to require technical, commercial, financial and documentary evidence before the next stage.
 
-## Security and encryption by default
+## Security control model and evidence status
 
 Security is treated as an operational boundary rather than a marketing statement. The public model is documented in the [security and encryption operating model](https://github.com/Traky12/castuo-evolution/blob/main/docs/SECURITY_ENCRYPTION_OPERATING_MODEL.md).
 
-| Control | Public position |
-|---|---|
-| Secrets | No production secret belongs in Git; examples are non-functional |
-| Identity | OIDC with pinned algorithms when configured; local development is not production |
-| Authorisation | RBAC, minimum privilege and fail-closed role mapping |
-| API | Input validation, explicit CORS, rate limits and safe errors |
-| Data | TLS in transit, encryption at rest and minimisation by tenant |
-| IoT | Device identity, credential rotation and replay protection |
-| Evidence | Commit, artifact hash, reviewer and scope; negative findings are retained |
-| Supply chain | Dependency scanning, SBOM and release blocking for critical issues |
-| Continuity | Encrypted backups, restoration exercises and documented RPO/RTO |
+| Control | Declared model | Evidence status |
+|---|---|---|
+| Secrets | No production secret belongs in Git; examples are non-functional | Repository scans applied; provider rotation remains operational responsibility |
+| Identity | OIDC with pinned algorithms when configured; local development is not production | Environment-specific implementation evidence required |
+| Authorisation | RBAC, minimum privilege and fail-closed role mapping | Scope and runtime evidence required |
+| API | Input validation, explicit CORS, rate limits and safe errors | Release-specific verification required |
+| Data | TLS in transit, encryption at rest and minimisation by tenant | Environment-specific evidence required |
+| IoT | Device identity, credential rotation and replay protection | Pilot evidence required |
+| Evidence | Commit, artifact hash, reviewer and scope; negative findings are retained | Framework implemented; dossier promotion remains scoped |
+| Supply chain | Dependency scanning, SBOM and release blocking for critical issues | Release-specific evidence and remediation required |
+| Continuity | Encrypted backups, restoration exercises and documented RPO/RTO | Restoration exercise pending per environment |
 
 “Encrypted” does not mean anonymous, certified or risk-free. The actual state of a control is the state supported by its implementation and evidence. A local or simulated GaiaChain transaction identifier is not described as a public blockchain confirmation; external anchoring remains a scoped Gate deliverable. The public [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center) applies the same rule to capability dossiers: a template is not a pilot, a pilot is not continuous operation, and a hash is not a certification. The complete repository scope and governance boundaries are recorded in the [`Architecture Governance Matrix`](https://github.com/Traky12/castuo-evolution/blob/main/docs/ARCHITECTURE_GOVERNANCE_MATRIX.md).
+
+## The next proof triangle
+
+The architecture is stronger than its current external market evidence. That is not hidden; it defines the next three Gates:
+
+| Gate | Evidence sought | Current status |
+|---|---|---|
+| E3-001 | Independent reproduction within a declared scope | Pending |
+| Commercial pilot | Signed scope, paid pilot or equivalent contractual evidence | Not publicly claimed |
+| Operational result | Measured result in a real operating environment with owner and baseline | Pending |
+
+Until these Gates close, the profile presents technical capability and governance discipline, not commercial validation. Once they close, the same evidence chain will make the commercial claim stronger rather than merely louder.
 
 ## Public evidence baseline and next milestone
 
@@ -98,7 +135,7 @@ FAILURE → DELETE
 1. [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) — control plane, governance, evidence and Gates.
 2. [`Castuo-system`](https://github.com/Traky12/Castuo-system) — core platform and business logic.
 3. [`goldfish`](https://github.com/Traky12/goldfish) — security hardening, CI/CD and assurance engineering.
-4. [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center) — N3–N6 dossiers, provenance, KPIs, security checks and promotion Gates.
+4. [`Evidence Center`](https://github.com/Traky12/Traky12/tree/main/evidence-center) — framework and scoped dossiers for N3–N6 evaluation, provenance, KPIs, security checks and promotion Gates.
 5. [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) — offline-first agricultural edge and IoT plane.
 6. [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) — resilient field operations and local continuity.
 7. [`Cast-o`](https://github.com/Traky12/Cast-o) — test automation and performance tooling.
