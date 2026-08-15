@@ -18,9 +18,9 @@ Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure wher
 
 CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline. The documentation layer is now frozen for the current maturity cycle; further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
 
-| Maturity Status | Status | Meaning |
+| Maturity Status | Status | Scope & Meaning |
 | :--- | :---: | :--- |
-| **E1 — Internally Verified** | **CURRENT** | Relevant controls, tests, and evidence artifacts verified through the project's own engineering and CI/CD processes. |
+| **E1 — Internally Verified** | **CURRENT** | Relevant controls, tests, and evidence artifacts have been verified within the project's own engineering, CI/CD, and evidence-governance processes, within the documented scope. |
 | **E2 — Review-Ready** | **READY** | Independent review package prepared and available for third-party inspection. |
 | **E3 — Independent Verification** | **PENDING** | No external verification claimed. |
 
@@ -78,7 +78,7 @@ The system is designed to reject an unsupported positive claim rather than promo
 - **Legal conformity:** NOT CLAIMED
 - **Independent certification:** NOT CLAIMED
 
-*The system deliberately distinguishes technical readiness from regulatory applicability, legal conformity and certification.*
+*The system deliberately distinguishes technical readiness from regulatory applicability, legal conformity, and certification.*
 
 ---
 
@@ -115,7 +115,7 @@ Basis:
 - asset inventory · engineering effort · architecture · integration · testing · security · governance · replacement-cost methodology
 
 ### Important Distinction
-`€420,000` is **not** presented as market value, fair value, accounting value, enterprise valuation, or independent appraisal. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
+`€420,000` is **not** presented as market value, fair value, accounting value, enterprise valuation, or independent appraisal. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md). An independent valuation may be obtained where required for specific financial or legal purposes.
 
 ---
 
