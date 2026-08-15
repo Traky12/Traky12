@@ -182,15 +182,32 @@ FAILURE → DELETE
 6. [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) — resilient field operations and local continuity.
 7. [`Cast-o`](https://github.com/Traky12/Cast-o) — test automation and performance tooling.
 
-## Economic and project boundary
+## Promoter, project and financial boundary
 
-The indicative **€420,000 replacement-cost estimate** is a technical reconstruction estimate, not market value, accounting value, investment valuation or independent appraisal. The PIE PLUS business plan and financial model maintain a separate boundary between the existing technical asset, Phase 1 financing needs and future infrastructure conditioned by Gates.
+CASTÚO-SYSTEM is a rural and industrial technology project associated with Membro, Cáceres, within the declared PIE PLUS planning context. Phase 1 is the only currently financable phase in the submitted planning boundary; later growth phases remain conditioned by Gates, evidence and financing.
 
-No public profile statement should be read as a claim that funding has been received, a customer contract exists, a certification has been obtained, or a future physical phase is already committed.
+| Item | Public interpretation | Status |
+|---|---|---|
+| Project context | Rural and industrial technology initiative associated with Membro, Cáceres | Documented context; formal domicile or fiscal registration not claimed |
+| Phase 1 | First financable planning phase | Financial model and business plan boundary |
+| Technical asset | **€420,000** replacement-cost estimate | Technical reconstruction estimate; not cash, market value, accounting value or independent appraisal |
+| Initial treasury | €0 until documentary evidence establishes otherwise | No available cash is claimed |
+| Phase 1 financing | €165,000 prudent; €180,000 central; €195,000 ceiling | Pending until grant, financing or effective receipt is documented |
+| Employment | Planned structure and projected hiring | Not declared as employment already created |
+| Pilots and customers | Objectives and validation targets | Not publicly claimed as signed, paid or recurring customers |
+| GitHub evidence | Technical execution, code, controls and traceability | Not evidence of sales, revenue, financing or customer traction |
+
+The official financial workbook remains the authoritative source for figures. A requested, pending or undecided grant is not available cash. The PIE PLUS award is not counted as available financing until granted and actually received. Historical expenditure is not new Phase 1 budget, and compensable VAT is not presented as cash available. Technical evidence and financial accounting remain separate.
+
+The public profile must preserve the distinction:
+
+> Existing code does not by itself equal validated technology, a customer, income or continuous operation.
+
+No public profile statement should be read as a claim that funding has been received, a customer contract exists, a pilot has been paid, a certification has been obtained, a formal domicile or company incorporation is complete, or a future physical phase is already committed.
 
 ## Limitations
 
-Independent E3 verification remains pending. Regulatory applicability is system-specific. Legal conformity and certification are not claimed. Real-world external evidence is continuing. Production readiness is context-dependent and must always be read together with the declared scope, environment, metrics and evidence. The private-cloud service map is currently a governed target architecture; it does not by itself prove provisioning, DNS, continuous operation, SLA or private-runner availability. The current CI remediation addresses reproducible workflow and contract failures; it does not by itself close the independent-review, commercial-pilot, runtime-observability, private-cloud provisioning or vulnerability-remediation Gates.
+Independent E3 verification remains pending. Regulatory applicability is system-specific. Legal conformity and certification are not claimed. Real-world external evidence is continuing. Production readiness is context-dependent and must always be read together with the declared scope, environment, metrics and evidence. The correct general private-cloud status is: **Private-cloud target architecture documented; infrastructure provisioning pending.** The service map does not prove DNS, endpoints, continuous operation, SLA, private-runner availability, private AI, backup restoration or independent validation. The current CI remediation addresses reproducible workflow and contract failures; it does not by itself close the independent-review, commercial-pilot, runtime-observability, private-cloud provisioning or vulnerability-remediation Gates.
 
 ## Connect
 
