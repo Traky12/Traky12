@@ -134,6 +134,8 @@ The control plane governs the state. Repositories implement declared roles. Evid
 
 - [Public operating model](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
 - [Repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+- [CASTÚO information index](docs/CASTUO_INFORMATION_INDEX.md)
+- [Índice de información — ES](docs/CASTUO_INFORMATION_INDEX.es.md)
 - [Evidence Center](evidence-center/README.md)
 - [Current GitHub integration status](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md)
 - [Integration blockers and check scope](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_BLOCKERS_2026-08-16.md)
