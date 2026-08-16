@@ -69,6 +69,8 @@ La fuente principal en inglés es [`README.md`](README.md). La documentación de
 - [Evidence Center](evidence-center/README.md)
 - [Estado actual de integraciones GitHub](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md)
 - [Bloqueadores y alcance de checks](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_BLOCKERS_2026-08-16.md)
+- [Auditoría candidata de consolidación GitHub](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/GITHUB_CONSOLIDATION_STATUS_2026-08-16.md)
+- [Límites de checks remotos — rama candidata](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md)
 - [Contribuir](CONTRIBUTING.md)
 - [Política de seguridad](SECURITY.md)
 - [Frontera pública de claims — EN](PUBLIC_CLAIM_BOUNDARY.md)

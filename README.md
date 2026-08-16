@@ -144,6 +144,8 @@ The control plane governs the state. Repositories implement declared roles. Evid
 - [Evidence Center](evidence-center/README.md)
 - [Current GitHub integration status](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md)
 - [Integration blockers and check scope](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_BLOCKERS_2026-08-16.md)
+- [Candidate GitHub consolidation audit](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/GITHUB_CONSOLIDATION_STATUS_2026-08-16.md)
+- [Remote PR check boundaries — candidate branch](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
 - [English public claim boundary](PUBLIC_CLAIM_BOUNDARY.md)
