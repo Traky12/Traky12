@@ -28,7 +28,7 @@ The public state is generated from `castuo-evolution/data/control-plane-status.y
 | Local conformance | `14/14 PASS LOCAL` |
 | Remote conformance | `0/14` — `PENDING` |
 | Remote publication | `14 PENDING` |
-| Environment | `STAGING` |
+| Environment | `STAGING-CANDIDATE` |
 | Security baseline | `PENDING` |
 | Staging execution | `PENDING` |
 | Human review | `PENDING` |
@@ -37,7 +37,7 @@ The public state is generated from `castuo-evolution/data/control-plane-status.y
 | Independent E3 | `PENDING` |
 | Federation | `PENDING` |
 
-**Evidence basis:** `castuo-evolution` · commit `70b7c57` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
+**Evidence basis:** `castuo-evolution` · commit `ac43ea5dc4ef3518151719c47983c0841325dbd2` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
 
 The public profile projects the control plane and does not decide state. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 <!-- CASTUO:STATE:END -->
