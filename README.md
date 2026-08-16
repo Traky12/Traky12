@@ -1,3 +1,9 @@
+<!-- CASTUO:BRAND:START -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo" width="520" />
+</p>
+<!-- CASTUO:BRAND:END -->
+
 # CASTÚO-SYSTEM™
 
 ### Systems Architect · Evidence Engineer · AI Governance & Assurance
