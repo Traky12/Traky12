@@ -16,7 +16,19 @@ Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure
 
 ## In one sentence
 
-**CASTÚO-SYSTEM™ is a modular rural digitalisation platform combining SaaS, Edge/IoT, traceability and agro-environmental operations. Fase 1 consolidates the digital core and validates it with real users before any physical infrastructure is committed.**
+**CASTÚO-SYSTEM™ is a documented and evolving evidence-driven rural digital infrastructure platform combining SaaS, Edge/IoT, traceability, governed AI and resilient operations. Fase 1 consolidates the digital core and validates it with real users before any physical infrastructure is committed.**
+
+## What the customer gets first
+
+The first value proposition is deliberately simpler than the underlying architecture: **offline-first operational continuity, traceability and verifiable evidence for rural and distributed operations with irregular connectivity**. The customer-facing layers are:
+
+| Layer | Customer value |
+|---|---|
+| Digital core | SaaS, traceability and operational workflows |
+| Edge | Offline-first sensing and local continuity |
+| Evidence | Verifiable operational and compliance reporting |
+
+The technical architecture, governance, AI, federation and sovereignty layers exist to make this value safer and more traceable; they are not substitutes for a customer problem, a usable workflow or measured evidence.
 
 ## Current state at a glance
 
