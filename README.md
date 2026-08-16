@@ -30,6 +30,16 @@ The first value proposition is deliberately simpler than the underlying architec
 
 The technical architecture, governance, AI, federation and sovereignty layers exist to make this value safer and more traceable; they are not substitutes for a customer problem, a usable workflow or measured evidence.
 
+The complete capability-to-operation chain is:
+
+```text
+Problem → Field workflow → Capability → Implementation → Test
+→ Evidence → Review → Pilot → Payment → Operation
+→ Repeatability → Federation
+```
+
+This chain is also the evidence order for the profile. Repository activity may signal sustained engineering work, but the stronger evidentiary hierarchy is `contributions < architecture < implementation < tests < evidence < reproducibility < external review`. Contributions do not prove production, customers, billing, continuous operation or recurring revenue.
+
 ## Current state at a glance
 
 | Area | Current status | What would upgrade the claim |
@@ -63,7 +73,7 @@ The priority capabilities to add or validate are private infrastructure and repr
 
 The public state distinction is `planned ≠ contracted ≠ implemented ≠ validated`. Each future contributor must have a responsible owner, bounded scope, permissions, decision rights, deliverable, review, dated evidence and revocation path. Initial scaling should use the promoter nucleus, Gate-bound specialists, deliverable-based collaborators, independent review and variable commercial support rather than assuming permanent staffing or committed expenditure.
 
-The next strategic increment is execution: documentation → dry run → evidence → review → pilot → limited operation → federation. Additional architecture will not be treated as progress unless it produces a measurable capability or evidence package.
+The next strategic increment is execution: `E3-001 → first pilot → measured operational result → first payment or renewal → second comparable delivery → repeatable operation → second tenant → federation`. Additional architecture will not be treated as progress unless it produces a measurable capability or evidence package.
 
 The model is documented in [`ORGANIZATIONAL_CAPABILITY_AND_SCALING_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/ORGANIZATIONAL_CAPABILITY_AND_SCALING_MODEL.md).
 
