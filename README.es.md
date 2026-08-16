@@ -58,7 +58,8 @@ La fuente principal en inglés es [`README.md`](README.md). La documentación de
 
 ## Navegación pública
 
-- [Modelo operativo público](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
+- [Modelo operativo público — ES](docs/CASTUO_PUBLIC_OPERATING_MODEL.es.md)
+- [Public operating model — EN](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
 - [Mapa público de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Evidence Center](evidence-center/README.md)
 - [Contribuir](CONTRIBUTING.md)
