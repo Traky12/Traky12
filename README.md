@@ -1,6 +1,8 @@
 <!-- CASTUO:BRAND:START -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo" width="520" />
+  <a href="https://github.com/Traky12/Traky12/blob/brand/castuo-system-identity-20260816/assets/brand/brand-manifest.yaml">
+    <img src="https://raw.githubusercontent.com/Traky12/Traky12/brand/castuo-system-identity-20260816/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo — IDENTITY_ONLY" width="520" />
+  </a>
 </p>
 <!-- CASTUO:BRAND:END -->
 
