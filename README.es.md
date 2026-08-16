@@ -47,6 +47,9 @@ E3-001 → FIRST PAID PROOF → MEASURED CUSTOMER RESULT
 
 La fuente principal en inglés es [`README.md`](README.md). La documentación detallada de evidencia, seguridad, Proof Pack y finanzas permanece en el repositorio de evolución.
 
+- [Configuración segura del token de auditoría](docs/GITHUB_ACTIONS_CASTUO_AUDIT_TOKEN.md)
+- [Frontera pública de claims](PUBLIC_CLAIM_BOUNDARY.md)
+
 <!-- CASTUO:STATE:START -->
 ## Estado actual del ecosistema
 

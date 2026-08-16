@@ -115,6 +115,8 @@ The control plane governs the state. Repositories implement declared roles. Evid
 ## Public evidence and links
 
 - [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- [GitHub Actions audit-token setup](docs/GITHUB_ACTIONS_CASTUO_AUDIT_TOKEN.md)
+- [Public claim boundary](PUBLIC_CLAIM_BOUNDARY.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [Public repository list](https://github.com/Traky12?tab=repositories)
