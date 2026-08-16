@@ -46,3 +46,29 @@ E3-001 → FIRST PAID PROOF → MEASURED CUSTOMER RESULT
 ```
 
 La fuente principal en inglés es [`README.md`](README.md). La documentación detallada de evidencia, seguridad, Proof Pack y finanzas permanece en el repositorio de evolución.
+
+<!-- CASTUO:STATE:START -->
+## Estado actual del ecosistema
+
+**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+
+El estado público se genera desde `castuo-evolution/data/control-plane-status.yaml`.
+
+| Dimensión | Estado público actual |
+|---|---|
+| Conformance local | `14/14 PASS LOCAL` |
+| Conformance remoto | `0/14` — `PENDING` |
+| Publicación remota | `14 PENDING` |
+| Entorno | `STAGING-CANDIDATE` |
+| Baseline de seguridad | `PENDING` |
+| Ejecución de staging | `PENDING` |
+| Revisión humana | `PENDING` |
+| Producción | `NOT_CLAIMED` |
+| Validación comercial | `NOT_CLAIMED` |
+| E3 independiente | `PENDING` |
+| Federación | `PENDING` |
+
+**Base de evidencia:** `castuo-evolution` · commit `6ccff6700c266defac0b2f11a77ef81c085d28cd` · scope `local checkout set of 14 repositories` · evidencia `evidence/local-conformance-2026-08-16/summary.json` · review `PENDING`.
+
+El perfil público proyecta el control plane y no decide el estado. Bloqueador: `remote_publication_conformance_security_evidence_staging_review_pending`. La evidencia local no implica publicación remota, producción, certificación, resultado de cliente, operación continua ni federación.
+<!-- CASTUO:STATE:END -->

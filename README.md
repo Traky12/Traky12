@@ -21,12 +21,14 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 
 **GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
 
+The public state is generated from `castuo-evolution/data/control-plane-status.yaml`.
+
 | Dimension | Current public status |
 |---|---|
 | Local conformance | `14/14 PASS LOCAL` |
 | Remote conformance | `0/14` — `PENDING` |
 | Remote publication | `14 PENDING` |
-| Environment | `STAGING` |
+| Environment | `STAGING-CANDIDATE` |
 | Security baseline | `PENDING` |
 | Staging execution | `PENDING` |
 | Human review | `PENDING` |
@@ -35,9 +37,9 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 | Independent E3 | `PENDING` |
 | Federation | `PENDING` |
 
-**Evidence basis:** `castuo-evolution` · commit `70b7c57` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
+**Evidence basis:** `castuo-evolution` · commit `6ccff6700c266defac0b2f11a77ef81c085d28cd` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
 
-The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
+The public profile projects the control plane and does not decide state. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 <!-- CASTUO:STATE:END -->
 
 ## Customer wedge
