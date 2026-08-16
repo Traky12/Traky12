@@ -32,6 +32,10 @@ Every promoted public claim requires, at minimum:
 
 A local conformance PASS is not remote conformance, staging execution, production evidence or commercial evidence.
 
+## Brand identity boundary
+
+The CASTÚO-SYSTEM logo and other approved brand assets are identity-only surfaces. They identify the ecosystem and its documentation; they do not prove production, certification, customer adoption, revenue, legal compliance, operational readiness, security maturity, staging execution or federation. Brand assets must be versioned through `assets/brand/brand-manifest.yaml`, checked against `assets/brand/checksums.sha256` and reviewed independently from any promotion gate.
+
 ## Public state vocabulary
 
 The public profile uses the control-plane vocabulary only:
