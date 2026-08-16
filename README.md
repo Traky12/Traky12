@@ -31,6 +31,12 @@ Create organisation → connect a source → register an operation
 
 The first operational problem is continuity and evidence under irregular connectivity. The technical architecture exists to make that workflow safer and more traceable; it does not replace the workflow or measured customer value.
 
+## Current ecosystem state
+
+**GREEN-STAGING-CANDIDATE — evidence-scoped**
+
+The CASTÚO-SYSTEM ecosystem is being prepared for coordinated staging validation across governance, core, assurance, CI, edge and offline field components. This is a bounded candidate state, not a claim of production, customer validation, certification, continuous operation or independent verification. The current remote audit remains blocked on repository metadata completion.
+
 ## Current evidence status
 
 | Area | Public status | Next evidence |
