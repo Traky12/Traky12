@@ -20,7 +20,7 @@ Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure
 
 ## What the customer gets first
 
-The first value proposition is deliberately simpler than the underlying architecture: **offline-first operational continuity, traceability and verifiable evidence for rural and distributed operations with irregular connectivity**. The customer-facing layers are:
+The first value proposition is deliberately simpler than the underlying architecture: **offline-first operational continuity, traceability and verifiable evidence for rural and distributed operations with irregular connectivity**. The strategic differentiator under test is **vendor-independent evidence continuity**: preserving identity, provenance, policy, integrity, review and claim history across declared heterogeneous providers or environments. The customer-facing layers are:
 
 | Layer | Customer value |
 |---|---|
@@ -85,7 +85,7 @@ Digital twins are governed representations of assets, operations, evidence, secu
 
 The security target is not a claim of perfect protection. It is a fail-closed and recoverable loop: detect suspicious activity, contain affected assets, preserve forensic evidence, eradicate through an approved trusted replacement or rebuild, recover, verify with re-scan and re-test, and learn through updated controls. Malware, trojan and virus detection or removal will only be claimed after implementation, test, review and dated operational evidence.
 
-The strategy is documented in [`SOVEREIGN_TRACEABILITY_TWIN_SECURITY_STRATEGY.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/SOVEREIGN_TRACEABILITY_TWIN_SECURITY_STRATEGY.md), [`digital-twin-registry.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/digital-twin-registry.yaml) and [`security-detection-response-controls.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/security-detection-response-controls.yaml). The integrated controls remain **DOCUMENTED** until instrumentation, reproducible tests, independent review, recovery evidence and bounded pilot evidence exist. A stale twin, missing provenance, absent rollback or unverified tenant boundary blocks promotion.
+The strategy is documented in [`SOVEREIGN_TRACEABILITY_TWIN_SECURITY_STRATEGY.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/SOVEREIGN_TRACEABILITY_TWIN_SECURITY_STRATEGY.md), [`digital-twin-registry.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/digital-twin-registry.yaml) and [`security-detection-response-controls.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/security-detection-response-controls.yaml). The bounded competitive proof plan is [`DIFFERENTIATION_PROOF_PACK.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/DIFFERENTIATION_PROOF_PACK.md); portability, offline continuity and recovery remain hypotheses pending implementation, tests, review and pilot evidence. The integrated controls remain **DOCUMENTED** until instrumentation, reproducible tests, independent review, recovery evidence and bounded pilot evidence exist. A stale twin, missing provenance, absent rollback or unverified tenant boundary blocks promotion.
 
 ## Technology sovereignty and auditable robotics
 
