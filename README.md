@@ -152,3 +152,13 @@ This profile does not claim production operation, autonomous authority, federati
 The official PIE PLUS workbook remains authoritative for financial figures. Technical assets, architecture, code, planning scenarios and repository activity are not cash, market value, accounting value, income, funding, contract or customer result.
 
 > The objective is not to make CASTÚO look certain. It is to make its evidence inspectable, its use understandable and its evolution safe.
+
+<!-- CASTUO-PUBLIC-INTEGRATION:START -->
+## CASTÚO-SYSTEM public integration
+
+**Repository role:** Public profile / portal.
+
+Superficie pública; no fuente de verdad operativa. The public reference surface is governed by the [Traky12 profile](https://github.com/Traky12/Traky12) and the [castuo-evolution control plane](https://github.com/Traky12/castuo-evolution). Current ecosystem status is documented in the [integration status](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md) and [blocker register](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_BLOCKERS_2026-08-16.md).
+
+> Identity is not evidence. Repository activity is not operational truth. No production, certification, legal-compliance, customer, revenue, continuous-operation or federation claim is implied by this README block.
+<!-- CASTUO-PUBLIC-INTEGRATION:END -->
