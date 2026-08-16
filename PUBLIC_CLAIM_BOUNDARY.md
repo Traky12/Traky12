@@ -65,3 +65,17 @@ Current global state remains:
 ```text
 GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION BLOCKED
 ```
+
+## Jurisdiction-aware governance boundary
+
+The public profile may describe jurisdiction-aware AI governance as a `TARGET` architecture with evidence-scoped contracts, policy profiles, data boundaries and promotion Gates.
+
+The profile must not claim global legal compliance, automatic compliance with EU, China, Japan, Korea or any other jurisdiction, authorized cross-border transfer, local operation in a jurisdiction, certification or legal advice without jurisdiction-specific scope, versioned rule source, evidence and competent review.
+
+The public wording remains:
+
+```text
+jurisdiction-aware governance: TARGET
+jurisdiction legal compliance: NOT_CLAIMED
+cross-border execution: NOT_CLAIMED
+```

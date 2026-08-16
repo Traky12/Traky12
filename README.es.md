@@ -35,7 +35,7 @@ El estado público se genera desde `castuo-evolution/data/control-plane-status.y
 | E3 independiente | `PENDING` |
 | Federación | `PENDING` |
 
-**Base de evidencia:** `castuo-evolution` · commit `ac43ea5dc4ef3518151719c47983c0841325dbd2` · scope `local checkout set of 14 repositories` · evidencia `evidence/local-conformance-2026-08-16/summary.json` · review `PENDING`.
+**Base de evidencia:** `castuo-evolution` · commit `74e615c97e7283567a36a1ad0dc9c4657aafcb5a` · scope `local checkout set of 14 repositories` · evidencia `evidence/local-conformance-2026-08-16/summary.json` · review `PENDING`.
 
 El perfil público proyecta el control plane y no decide el estado. Bloqueador: `remote_publication_conformance_security_evidence_staging_review_pending`. La evidencia local no implica publicación remota, producción, certificación, resultado de cliente, operación continua ni federación.
 <!-- CASTUO:STATE:END -->
