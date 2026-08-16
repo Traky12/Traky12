@@ -136,6 +136,8 @@ The control plane governs the state. Repositories implement declared roles. Evid
 - [Repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [CASTÚO information index](docs/CASTUO_INFORMATION_INDEX.md)
 - [CASTÚO transfer matrix](docs/CASTUO_TRANSFER_MATRIX.md)
+- [CASTÚO strategy integration register](docs/CASTUO_STRATEGY_INTEGRATION_REGISTER.md)
+- [Registro estratégico — ES](docs/CASTUO_STRATEGY_INTEGRATION_REGISTER.es.md)
 - [Índice de información — ES](docs/CASTUO_INFORMATION_INDEX.es.md)
 - [Evidence Center](evidence-center/README.md)
 - [Current GitHub integration status](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md)
