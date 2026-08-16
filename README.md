@@ -28,7 +28,7 @@ The first value proposition is deliberately simpler than the underlying architec
 | Edge | Offline-first sensing and local continuity |
 | Evidence | Verifiable operational and compliance reporting |
 
-The technical architecture, governance, AI, federation and sovereignty layers exist to make this value safer and more traceable; they are not substitutes for a customer problem, a usable workflow or measured evidence.
+The technical architecture, governance, AI, federation and sovereignty layers exist to make this value safer and more traceable; they are not substitutes for a customer problem, a usable workflow or measured evidence. The target security posture adds encrypted provenance, tenant-scoped keys, tamper-evident evidence, digital twins and a bounded response loop: `detect → contain → preserve evidence → eradicate → recover → verify → learn`. Production detection coverage, automated remediation and independent security validation remain pending separate Gates.
 
 The complete capability-to-operation chain is:
 
@@ -76,6 +76,16 @@ The public state distinction is `planned ≠ contracted ≠ implemented ≠ vali
 The next strategic increment is execution: `E3-001 → first pilot → measured operational result → first payment or renewal → second comparable delivery → repeatable operation → second tenant → federation`. Additional architecture will not be treated as progress unless it produces a measurable capability or evidence package.
 
 The model is documented in [`ORGANIZATIONAL_CAPABILITY_AND_SCALING_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/ORGANIZATIONAL_CAPABILITY_AND_SCALING_MODEL.md).
+
+## Sovereign traceability, digital twins and auditable security
+
+CASTÚO-SYSTEM is extending its evidence model in four directions: vertical traceability through a capability stack; horizontal traceability across repositories, tenants, services and devices; transversal traceability across security, privacy, finance, legal, usability and operations; and temporal traceability across changes, incidents, synchronisation and recovery.
+
+Digital twins are governed representations of assets, operations, evidence, security posture and tenants. They are not automatically live replicas or ground truth. Every twin update requires source, freshness, confidence, policy decision, correlation ID and integrity protection. Stale or conflicting twin data must trigger reassessment or quarantine and review.
+
+The security target is not a claim of perfect protection. It is a fail-closed and recoverable loop: detect suspicious activity, contain affected assets, preserve forensic evidence, eradicate through an approved trusted replacement or rebuild, recover, verify with re-scan and re-test, and learn through updated controls. Malware, trojan and virus detection or removal will only be claimed after implementation, test, review and dated operational evidence.
+
+The strategy is documented in [`SOVEREIGN_TRACEABILITY_TWIN_SECURITY_STRATEGY.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/SOVEREIGN_TRACEABILITY_TWIN_SECURITY_STRATEGY.md), [`digital-twin-registry.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/digital-twin-registry.yaml) and [`security-detection-response-controls.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/security-detection-response-controls.yaml).
 
 ## Technology sovereignty and auditable robotics
 
