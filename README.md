@@ -49,7 +49,7 @@ The current architecture is founder-led and particularly strong in systems archi
 
 The priority capabilities to add or validate are private infrastructure and reproducible operation, independent cybersecurity, operational agronomy, B2B commercial execution and the first measured pilot. The next tier is UX and product, Data Engineering/MLOps, technology regulation and finance. These are capability targets, not claims of current staffing or contracted services.
 
-The public state distinction is `planned ≠ contracted ≠ implemented ≠ validated`. Each future contributor must have a responsible owner, bounded scope, permissions, decision rights, deliverable, review, dated evidence and revocation path.
+The public state distinction is `planned ≠ contracted ≠ implemented ≠ validated`. Each future contributor must have a responsible owner, bounded scope, permissions, decision rights, deliverable, review, dated evidence and revocation path. Initial scaling should use the promoter nucleus, Gate-bound specialists, deliverable-based collaborators, independent review and variable commercial support rather than assuming permanent staffing or committed expenditure.
 
 The next strategic increment is execution: documentation → dry run → evidence → review → pilot → limited operation → federation. Additional architecture will not be treated as progress unless it produces a measurable capability or evidence package.
 
@@ -89,11 +89,15 @@ The progressive offer sequence is:
 
 Field Continuity or Evidence Operations precedes the Governed AI Assistant. The agent follows stable data, permissions and evidence; it does not replace them.
 
-The initial funnel is a target register, not achieved traction: 30 accounts identified, 15 interviews, 5 qualified problems, 3 proposals, 1 pilot, 1 measured result and 1 conversion or renewal. A non-paid engagement is labelled **pre-commercial pilot** and is not represented as paid traction.
+The initial funnel is a target register, not achieved traction: 30 accounts identified, 15 interviews, 5 qualified problems, 3 proposals, 1 pilot, 1 measured result and 1 conversion or renewal. A non-paid engagement is labelled **PRE-COMMERCIAL PILOT** and is not represented as paid traction.
+
+The public evidence model separates three categories: **objectives** are intended targets; **observed results** are dated outcomes from a defined execution or pilot; and **published claims** are bounded statements approved after the required review and Gate. The commercial promotion sequence is `DOCUMENTED → IMPLEMENTED → TESTED → REVIEW_READY → PILOTED → PAID → OPERATIONAL → REPEATABLE → FEDERATED`. `PAID` and `REPEATABLE` are not inferred from a pilot or a successful workflow.
+
+The proof triangle required for a stronger business claim is **independent review + measured pilot result + payment or renewal**. The current public state does not claim that this triangle has been completed.
 
 The customer should experience a simple path — create organisation, add user, connect source, register operation, work through connectivity loss, synchronise, review evidence and generate a report — without needing to understand agents, federation or the control plane.
 
-The multisector target architecture is documented in [`MULTISECTOR_FEDERATED_PLATFORM_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/MULTISECTOR_FEDERATED_PLATFORM_MODEL.md). Sector, tenant, satellite and federation capabilities remain scoped until a module, use case, owner, tests and evidence exist.
+The multisector target architecture is documented in [`MULTISECTOR_FEDERATED_PLATFORM_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/MULTISECTOR_FEDERATED_PLATFORM_MODEL.md). Sector, tenant, satellite and federation capabilities remain scoped until a module, use case, owner, tests and evidence exist. The commercial promotion rules are maintained in [`COMMERCIAL_PROMOTION_STATE_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/COMMERCIAL_PROMOTION_STATE_MODEL.md).
 
 ## Private-cloud service model
 
@@ -255,11 +259,11 @@ FAILURE → DELETE
 
 ## Promoter, project and financial boundary
 
-CASTÚO-SYSTEM is a rural and industrial technology project associated with Membro, Cáceres, within the declared PIE PLUS planning context. Phase 1 is the only currently financable phase in the submitted planning boundary; later growth phases remain conditioned by Gates, evidence and financing.
+CASTÚO-SYSTEM is a rural and industrial technology project associated with Membrío, Cáceres, within the declared PIE PLUS planning context. Phase 1 is the only currently financable phase in the submitted planning boundary; later growth phases remain conditioned by Gates, evidence and financing.
 
 | Item | Public interpretation | Status |
 |---|---|---|
-| Project context | Rural and industrial technology initiative associated with Membro, Cáceres | Documented context; formal domicile or fiscal registration not claimed |
+| Project context | Rural and industrial technology initiative associated with Membrío, Cáceres | Documented context; formal domicile or fiscal registration not claimed |
 | Phase 1 | First financable planning phase | Financial model and business plan boundary |
 | Technical asset | **€420,000** replacement-cost estimate | Technical reconstruction estimate; not cash, market value, accounting value or independent appraisal |
 | Initial treasury | €0 until documentary evidence establishes otherwise | No available cash is claimed |
