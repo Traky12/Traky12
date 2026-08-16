@@ -75,6 +75,24 @@ The customer-facing value is intentionally simple:
 
 The current public evidence demonstrates architecture and engineering scope. Customer, paid-pilot, recurring-revenue and continuous-operation claims require separate dated evidence.
 
+### First commercial wedge
+
+The first customer-facing offer is **CASTÚO Evidence-Ready Field Operations** for agro-rural and distributed operations with irregular connectivity. It is intentionally narrower than the multisector target: continuity, traceability and verifiable evidence for installations and holdings that need to continue operating when connectivity or central systems are unavailable.
+
+The progressive offer sequence is:
+
+| Offer | Customer value | Current public state |
+|---|---|---|
+| **Field Continuity** | Local capture, offline queue, idempotent synchronisation, conflict handling, recovery and traceability | Documented capability direction; field evidence pending |
+| **Evidence Operations** | Identity, permissions, operation logs, reports, hashes, review and export | Documented governance direction; dossier promotion pending |
+| **Governed AI Assistant** | One bounded agent, three read tools, default deny, human approval, replay, revocation and execution evidence | G-AI-FED-001 dry run pending; not a production AI claim |
+
+Field Continuity or Evidence Operations precedes the Governed AI Assistant. The agent follows stable data, permissions and evidence; it does not replace them.
+
+The initial funnel is a target register, not achieved traction: 30 accounts identified, 15 interviews, 5 qualified problems, 3 proposals, 1 pilot, 1 measured result and 1 conversion or renewal. A non-paid engagement is labelled **pre-commercial pilot** and is not represented as paid traction.
+
+The customer should experience a simple path — create organisation, add user, connect source, register operation, work through connectivity loss, synchronise, review evidence and generate a report — without needing to understand agents, federation or the control plane.
+
 The multisector target architecture is documented in [`MULTISECTOR_FEDERATED_PLATFORM_MODEL.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/MULTISECTOR_FEDERATED_PLATFORM_MODEL.md). Sector, tenant, satellite and federation capabilities remain scoped until a module, use case, owner, tests and evidence exist.
 
 ## Private-cloud service model
@@ -115,6 +133,12 @@ The Actions layer is treated as evidence, not decoration. A green static check p
 | Commercial operation | Not inferred from a workflow, repository or contact | Signed scope, paid pilot or equivalent documentary evidence |
 
 The public profile therefore links to repositories and evidence dossiers rather than displaying unsupported “production-ready”, certification or customer claims. A failed run remains a finding to remediate; it is never deleted or reclassified as success without a new verified execution.
+
+### Evidence and traction dashboard
+
+The control plane tracks traction, product, operation, evidence and finance metrics in [`commercial-traction-dashboard.yaml`](https://github.com/Traky12/castuo-evolution/blob/main/data/commercial-traction-dashboard.yaml). These are definitions and execution targets until dated source evidence exists. In particular, target accounts, interviews, proposals and pilots do not become customers, revenue or recurring contracts by being listed.
+
+The 12-month execution path is documented in [`COMMERCIAL_WEDGE_AND_12_MONTH_EXECUTION_PLAN.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/COMMERCIAL_WEDGE_AND_12_MONTH_EXECUTION_PLAN.md): first select and qualify the problem; then build and test the minimum workflow; execute and measure one bounded pilot; convert the result into continuity; reuse the module with a second customer; and only then evaluate a second sector, second tenant or federation.
 
 ## Where to start
 
