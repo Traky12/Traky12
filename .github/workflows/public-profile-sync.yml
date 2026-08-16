@@ -6,6 +6,14 @@ on:
     - cron: '17 * * * *'
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'README.es.md'
+      - 'PUBLIC_CLAIM_BOUNDARY.md'
+      - 'SECURITY.md'
+      - '.github/workflows/public-profile-sync.yml'
 
 permissions:
   contents: write
@@ -21,21 +29,31 @@ jobs:
           repository: Traky12/castuo-evolution
           token: ${{ secrets.CASTUO_CONTROL_PLANE_TOKEN || github.token }}
           path: _control-plane
-      - name: Generate bounded public state
+      - name: Generate bounded bilingual public state
         run: |
           python3 _control-plane/scripts/generate_public_profile.py \
             --status _control-plane/data/control-plane-status.yaml \
-            --readme README.md
+            --readme README.md \
+            --readme-es README.es.md
+      - name: Validate public claim boundary and security policy
+        run: |
+          test -f PUBLIC_CLAIM_BOUNDARY.md
+          test -f SECURITY.md
+          grep -q 'GREEN-STAGING-CANDIDATE' README.md
+          grep -q 'GREEN-STAGING-CANDIDATE' README.es.md
+          grep -q 'NOT_CLAIMED' README.md
+          grep -q 'NOT_CLAIMED' README.es.md
       - name: Check generated diff
         run: git diff --check
       - name: Commit generated state
+        if: github.event_name != 'pull_request'
         run: |
-          if git diff --quiet -- README.md; then
+          if git diff --quiet -- README.md README.es.md; then
             echo 'No public state change.'
           else
             git config user.name 'castuo-control-plane[bot]'
             git config user.email 'castuo-control-plane[bot]@users.noreply.github.com'
-            git add README.md
-            git commit -m 'docs: sync public state from control plane'
+            git add README.md README.es.md
+            git commit -m 'docs: sync bilingual public state from control plane'
             git push
           fi

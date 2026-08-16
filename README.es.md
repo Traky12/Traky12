@@ -1,48 +1,131 @@
 # CASTÚO-SYSTEM™
 
-## Identidad
+### Systems Architect · Evidence Engineer · AI Governance & Assurance
 
-**Systems Architect · Evidence Engineer · AI Governance & Assurance**
+**Fundador y arquitecto principal de CASTÚO-SYSTEM™**
 
-Construyo CASTÚO-SYSTEM: una capa de evidencia y recuperación para operaciones rurales y distribuidas resilientes.
+> **NO CLAIM WITHOUT PROVENANCE**
+>
+> **NO AI DEPLOYMENT WITHOUT ASSURANCE**
+>
+> **NO SCALE WITHOUT SECURITY AND OBSERVABILITY**
 
-## Qué es CASTÚO
+CASTÚO-SYSTEM es una dirección de infraestructura basada en evidencia para operaciones rurales y distribuidas resilientes. La primera propuesta comercial es **CASTÚO Evidence-Ready Field Operations**: continuidad offline-first, trazabilidad y evidencia revisable para workflows con conectividad irregular.
 
-**CASTÚO Evidence-Ready Field Operations** proporciona continuidad, trazabilidad y evidencia operacional verificable para workflows rurales y distribuidos que trabajan con conectividad irregular.
+## Estado público actual
 
-La primera unidad comercial está limitada a:
+<!-- CASTUO:STATE:START -->
+## Estado actual del ecosistema
+
+**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+
+El estado público se genera desde `castuo-evolution/data/control-plane-status.yaml`.
+
+| Dimensión | Estado público actual |
+|---|---|
+| Conformance local | `14/14 PASS LOCAL` |
+| Conformance remoto | `0/14` — `PENDING` |
+| Publicación remota | `14 PENDING` |
+| Entorno | `STAGING-CANDIDATE` |
+| Baseline de seguridad | `PENDING` |
+| Ejecución de staging | `PENDING` |
+| Revisión humana | `PENDING` |
+| Producción | `NOT_CLAIMED` |
+| Validación comercial | `NOT_CLAIMED` |
+| E3 independiente | `PENDING` |
+| Federación | `PENDING` |
+
+**Base de evidencia:** `castuo-evolution` · commit `74e615c97e7283567a36a1ad0dc9c4657aafcb5a` · scope `local checkout set of 14 repositories` · evidencia `evidence/local-conformance-2026-08-16/summary.json` · review `PENDING`.
+
+El perfil público proyecta el control plane y no decide el estado. Bloqueador: `remote_publication_conformance_security_evidence_staging_review_pending`. La evidencia local no implica publicación remota, producción, certificación, resultado de cliente, operación continua ni federación.
+<!-- CASTUO:STATE:END -->
+
+## Propuesta inicial
 
 ```text
-1 workflow + 1 tenant + 1 scope + 1 ejecución
-+ 1 paquete de evidencia + 1 escenario de recuperación
-+ 1 revisión + 1 informe
+Problema → Workflow de campo → Capacidad → Implementación
+→ Test → Evidencia → Review → Piloto → Pago → Operación
+→ Repetibilidad → Federación
 ```
 
-La oferta progresa mediante **Continuity Assessment → Evidence Proof → Recovery Proof → Bounded Field Pilot → Continuity Service**.
-
-## Qué existe ahora
-
-El Proof Pack de referencia ha ejecutado `PASS_WITHIN_DECLARED_SCOPE`, con `claims_promoted = false`. La reproducción independiente E3-001, la validación comercial y el resultado de cliente siguen pendientes. La contribución externa permanece en `CANDIDATE / NOT_SUBMITTED`.
-
-La secuencia demostrable es:
+El recorrido inicial está acotado a:
 
 ```text
-crear workflow → perder conectividad → continuar localmente
-→ almacenar eventos → sincronizar → recuperar → reproducir
-→ revisar evidencia → exportar informe
+crear organización → registrar operación → continuar sin conectividad
+→ sincronizar → revisar evidencia → exportar informe
 ```
 
-## Estado y límites
+Esta página no afirma que el recorrido sea una operación productiva o comercial completada. Los resultados medidos, pagos, renovaciones y operación continua requieren evidencia separada.
 
-La arquitectura de SaaS, Edge/IoT, IA gobernada, federación, soberanía, gemelos digitales y private cloud se presenta como soporte o dirección condicionada, no como productos independientes ni como capacidades productivas universalmente validadas.
+## Frontera semántica pública
 
-No se afirma interoperabilidad universal, recuperación garantizada, operación productiva, superioridad general, alianza externa, ingresos, clientes o certificación sin evidencia específica.
+| Etiqueta | Significado |
+|---|---|
+| `CURRENT` | Respaldado por el scope y la evidencia declarados del control plane |
+| `TARGET` | Capacidad o perfil objetivo; no es verdad operacional actual |
+| `EXPERIMENTAL` | Trabajo de laboratorio, piloto o integración acotado; no producción |
+| `PENDING` | Evidencia, ejecución o revisión todavía pendiente |
+| `NOT_CLAIMED` | Fuera de los claims autorizados por la evidencia actual |
 
-## Próximos pasos
+Un commit, issue, README, badge o workflow verde no demuestra producción, adopción de clientes, certificación, autonomía, federación, ingresos recurrentes ni operación continua.
+
+## Cadena de evidencia
 
 ```text
-E3-001 → FIRST PAID PROOF → MEASURED CUSTOMER RESULT
-→ SECOND COMPARABLE DELIVERY → REPEATABILITY
+Claim → Evidence → Execution → Hash → Reproduction
+→ Independent review → Gate → Promotion / rollback
 ```
 
-La fuente principal en inglés es [`README.md`](README.md). La documentación detallada de evidencia, seguridad, Proof Pack y finanzas permanece en el repositorio de evolución.
+El control plane gobierna el estado. Los repositorios implementan roles declarados. Los Evidence Packs demuestran resultados acotados. El perfil resume y enlaza; no decide.
+
+## Mapa de repositorios
+
+| Repositorio | Rol público | Frontera |
+|---|---|---|
+| `castuo-evolution` | Governance control plane | SSOT de vocabulario, Gates, evidencia y promoción |
+| `Castuo-system` | Core platform | Implementación y ejecución acotada; producción no reclamada |
+| `goldfish` | Assurance y recovery | Seguridad, recuperación y preservación de evidencia |
+| [`Cast-o`](https://github.com/Traky12/Cast-o) | CI y validación | Tests, provenance y release evidence |
+| [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge / IoT | Continuidad offline y sincronización |
+| [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Field application | Workflow local, recuperación y exportación de evidencia |
+| `ctaex-iot-pilot` | Laboratorio | Validación IoT; claims de campo excluidos |
+| `agrovision-360` | Experimental | Investigación acotada de visión agro |
+| `castuo-360-v5.3` | Workspace | Experiencia integrada; workspace ≠ production |
+| `-Prueba-final` | Sandbox experimental | Experimentos de integración |
+| `n8n` | Upstream / fork | Integración de workflows; upstream ≠ capacidad propietaria |
+| `openclaw` | Upstream / fork | Integración de assistant; upstream ≠ capacidad propietaria |
+| `desktop-tutorial` | Training / support | Formación de contribución y gobernanza |
+
+## Gates actuales
+
+| Gate | Estado | Próxima evidencia |
+|---|---|---|
+| Conformance local | `14/14 PASS LOCAL` | Artefactos por repositorio |
+| Publicación remota | `PENDING` | Revisión y merge de PRs |
+| Conformance remoto | `PENDING` | Workflow sobre heads remotos fusionados |
+| Security baseline | `PENDING` | Secretos, dependencias, SBOM y permisos |
+| Tests | `PENDING` | Tests propios y negativos |
+| Evidence | `PENDING` | Manifests, hashes y envelopes |
+| Staging execution | `PENDING` | Vertical slice core-to-field |
+| Human review | `PENDING` | Decisión fechada y acotada |
+| GREEN-STAGING | `BLOCKED` | Todos los Gates anteriores |
+
+## Boundary de claims
+
+Consulta [`PUBLIC_CLAIM_BOUNDARY.md`](PUBLIC_CLAIM_BOUNDARY.md) para conocer qué puede afirmarse, qué no puede afirmarse y qué requisitos tiene cualquier promoción pública. La política de seguridad está en [`SECURITY.md`](SECURITY.md).
+
+## Enlaces
+
+- [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- [Mapa público](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+- [Cast-o validation](https://github.com/Traky12/Cast-o)
+- [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
+- [Repositorio público](https://github.com/Traky12?tab=repositories)
+- [ORCID](https://orcid.org/0009-0007-3489-0565)
+- [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
+
+## No reclamado
+
+Este perfil no reclama producción, autoridad autónoma, federación, certificación, validación independiente, conformidad regulatoria, clientes de pago, ingresos recurrentes, private cloud provisionado, robótica operacional ni interoperabilidad universal.
+
+El workbook oficial PIE PLUS sigue siendo la fuente autoritativa para cifras financieras. La arquitectura, el código, los activos técnicos y la actividad de repositorio no son efectivo, valoración, ingreso, financiación, contrato ni resultado de cliente.
