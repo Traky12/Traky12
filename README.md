@@ -102,6 +102,7 @@ The official PIE PLUS workbook remains authoritative for financial figures. The 
 
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
 - [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [Public repository list](https://github.com/Traky12?tab=repositories)
 - [ORCID](https://orcid.org/0009-0007-3489-0565)

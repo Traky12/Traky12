@@ -1,0 +1,65 @@
+standard: CASTUO-REPOSITORY-STANDARD-V1.0
+status: PUBLIC_MAP
+semantic_owner: castuo-evolution
+repositories:
+  - name: Traky12
+    class: PROFILE
+    question: What is CASTÚO and where should a visitor start?
+    claims_blocked: [control_plane_authority, production, certification]
+  - name: castuo-evolution
+    class: GOV
+    question: What may CASTÚO claim, under which Gate and with what evidence?
+    visibility: private
+  - name: Castuo-system
+    class: CORE
+    question: What is implemented in the core platform?
+    visibility: private
+  - name: goldfish
+    class: ASSURANCE
+    question: How are security, recovery and assurance controls tested?
+    visibility: private
+  - name: Cast-o
+    class: CI
+    question: Can a declared repository or artifact be reproduced and checked?
+  - name: Evidence Center
+    class: EVIDENCE
+    question: What evidence package exists for a declared claim?
+  - name: castuo-agro-edge
+    class: EDGE
+    question: How does edge telemetry and continuity work under unreliable connectivity?
+  - name: castuo-offline-field-operations
+    class: FIELD
+    question: How does a field operator continue work without cloud access?
+  - name: castuo-360-v5.3
+    class: PILOT
+    question: Which integrated application or pilot surface is being tested?
+    visibility: private
+  - name: ctaex-iot-pilot
+    class: PILOT
+    question: What is the declared CTAEX IoT validation scope?
+    visibility: private
+  - name: agrovision-360
+    class: PILOT
+    question: What architecture-governance boundary applies to this experiment?
+    visibility: private
+  - name: -Prueba-final
+    class: EXPERIMENTAL
+    question: What is the current ecosystem integration experiment?
+    visibility: private
+  - name: n8n
+    class: UPSTREAM
+    question: Which upstream workflow automation capability is integrated?
+    provenance_required: true
+  - name: openclaw
+    class: UPSTREAM
+    question: Which upstream assistant capability is integrated or evaluated?
+    provenance_required: true
+  - name: desktop-tutorial
+    class: SUPPORT
+    question: What local tooling or onboarding support exists?
+    visibility: private
+rules:
+  repository_activity_is_not_operational_truth: true
+  profile_is_not_control_plane: true
+  upstream_is_not_proprietary_capability: true
+  one_primary_question_per_repository: true
