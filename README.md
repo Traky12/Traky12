@@ -4,7 +4,7 @@
 
 **Founder and lead architect of CASTÚO-SYSTEM™**
 
-Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure through privately controlled service boundaries where usability, security, operational state and public claims remain traceable and verifiable.
+Building CASTÚO-SYSTEM: an evidence and recovery layer for resilient rural and distributed operations. The first commercial wedge is **CASTÚO Evidence-Ready Field Operations**: continuity, traceability and verifiable operational evidence for workflows operating with irregular connectivity. AI, Edge/IoT, federation and sovereignty remain enabling architecture, not separate products.
 
 > `NO CLAIM WITHOUT PROVENANCE`
 >
@@ -16,7 +16,9 @@ Building evidence-driven AI, Edge/IoT and resilient rural digital infrastructure
 
 ## In one sentence
 
-**CASTÚO-SYSTEM™ is a documented and evolving evidence-driven rural digital infrastructure platform combining SaaS, Edge/IoT, traceability, governed AI and resilient operations. Fase 1 consolidates the digital core and validates it with real users before any physical infrastructure is committed.**
+**Construyo CASTÚO-SYSTEM: una capa de evidencia y recuperación para operaciones rurales y distribuidas resilientes.**
+
+**CASTÚO-SYSTEM™ is a documented and evolving evidence and recovery layer for resilient rural and distributed operations.** Fase 1 starts with one declared workflow, one test tenant, one scope and one verifiable Evidence Passport; broader federation and private-cloud architecture remain future or conditional capabilities.
 
 ## What the customer gets first
 
