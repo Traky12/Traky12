@@ -1,0 +1,35 @@
+id: CASTUO-REPOSITORY-TRAKY12
+name: Traky12
+class: PROFILE
+visibility: PUBLIC
+owner: Traky12
+parent_system: CASTUO-SYSTEM
+lifecycle: ACTIVE
+scope: public profile and evidence entry point
+repository: Traky12
+purpose: public profile and evidence entry point
+environment: STAGING
+implementation_state: CANDIDATE
+assurance_level: L0_CONTRACT_DEFINED
+evidence_state: EVIDENCE_PENDING
+security_state: EVIDENCE_PENDING
+promotion_state: PROMOTION_BLOCKED
+current_state: CANDIDATE
+production_claim: NOT_CLAIMED
+claims_allowed:
+  - documented public repository role within declared scope
+claims_blocked:
+  - production
+  - certification
+  - independent_validation
+  - autonomous_authority
+  - commercial_validation
+  - federation
+dependencies: []
+relationships:
+  upstream: []
+  downstream: [castuo-evolution, Evidence Center]
+  peers: []
+upstream: []
+downstream: [castuo-evolution, Evidence Center]
+metadata_source: CASTUO-REPOSITORY-STANDARD-V1.0
