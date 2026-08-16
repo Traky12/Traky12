@@ -56,6 +56,16 @@ La fuente principal en inglés es [`README.md`](README.md). La documentación de
 - [Configuración segura del token de auditoría](docs/GITHUB_ACTIONS_CASTUO_AUDIT_TOKEN.md)
 - [Frontera pública de claims](PUBLIC_CLAIM_BOUNDARY.md)
 
+## Navegación pública
+
+- [Modelo operativo público](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
+- [Mapa público de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+- [Evidence Center](evidence-center/README.md)
+- [Contribuir](CONTRIBUTING.md)
+- [Política de seguridad](SECURITY.md)
+- [Frontera pública de claims — EN](PUBLIC_CLAIM_BOUNDARY.md)
+- [Frontera pública de claims — ES](PUBLIC_CLAIM_BOUNDARY.es.md)
+
 <!-- CASTUO:STATE:START -->
 ## Estado actual del ecosistema
 

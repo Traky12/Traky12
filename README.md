@@ -130,6 +130,16 @@ The control plane governs the state. Repositories implement declared roles. Evid
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
 - [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
 
+## Public navigation
+
+- [Public operating model](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
+- [Repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+- [Evidence Center](evidence-center/README.md)
+- [Contributing](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [English public claim boundary](PUBLIC_CLAIM_BOUNDARY.md)
+- [Spanish public claim boundary](PUBLIC_CLAIM_BOUNDARY.es.md)
+
 ## Not claimed
 
 This profile does not claim production operation, autonomous authority, federation, certification, independent validation, regulatory conformity, paid customer traction, recurring revenue, private-cloud provisioning, operational robotics, semiconductor manufacturing or universal interoperability.
