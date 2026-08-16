@@ -62,6 +62,7 @@ La fuente principal en inglés es [`README.md`](README.md). La documentación de
 - [Public operating model — EN](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
 - [Mapa público de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Índice de información — ES](docs/CASTUO_INFORMATION_INDEX.es.md)
+- [Matriz de transferencia CASTÚO](docs/CASTUO_TRANSFER_MATRIX.md)
 - [CASTÚO information index — EN](docs/CASTUO_INFORMATION_INDEX.md)
 - [Evidence Center](evidence-center/README.md)
 - [Estado actual de integraciones GitHub](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md)
