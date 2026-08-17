@@ -1,0 +1,127 @@
+schema_version: "1.0"
+updated_at: "2026-08-17"
+manager_repository: https://github.com/Traky12/Traky12
+core_project: https://github.com/Traky12/Castuo-system
+control_plane: https://github.com/Traky12/castuo-evolution
+source_of_truth_policy: "No duplicar implementación; catalogar y enlazar la fuente canónica."
+repositories:
+  - name: Castuo-system
+    url: https://github.com/Traky12/Castuo-system
+    visibility: private
+    role: core-platform
+    status: current
+    owner: core-platform
+    canonical_for: [core-api, orchestration, evidence-integration]
+    dashboard: https://github.com/Traky12/Castuo-system/tree/main/progress-dashboard
+    evidence_boundary: "Execution scope only; production not claimed."
+  - name: castuo-evolution
+    url: https://github.com/Traky12/castuo-evolution
+    visibility: private
+    role: governance-control-plane
+    status: current
+    owner: governance
+    canonical_for: [vocabulary, gates, evidence, promotion-state]
+  - name: Cast-o
+    url: https://github.com/Traky12/Cast-o
+    visibility: public
+    role: assurance-tooling
+    status: current
+    owner: assurance
+    canonical_for: [tests, provenance, release-evidence]
+  - name: castuo-agro-edge
+    url: https://github.com/Traky12/castuo-agro-edge
+    visibility: public
+    role: edge-iot
+    status: implemented-scoped
+    owner: edge
+    canonical_for: [offline-buffer, mqtt-gateway, device-evidence]
+  - name: castuo-offline-field-operations
+    url: https://github.com/Traky12/castuo-offline-field-operations
+    visibility: public
+    role: field-operations
+    status: designed-scoped
+    owner: field-operations
+    canonical_for: [local-workflow, recovery, evidence-export]
+  - name: Traky12
+    url: https://github.com/Traky12/Traky12
+    visibility: public
+    role: ecosystem-manager
+    status: current
+    owner: ecosystem
+    canonical_for: [public-map, profile-boundary, management-index]
+  - name: n8n
+    url: https://github.com/Traky12/n8n
+    visibility: public
+    role: upstream-fork
+    status: governed-experimental
+    owner: integrations
+    canonical_for: []
+    boundary: "Upstream capability is not CASTÚO proprietary evidence."
+  - name: openclaw
+    url: https://github.com/Traky12/openclaw
+    visibility: public
+    role: upstream-fork
+    status: governed-experimental
+    owner: integrations
+    canonical_for: []
+    boundary: "Upstream capability is not CASTÚO proprietary evidence."
+  - name: goldfish
+    url: https://github.com/Traky12/goldfish
+    visibility: private
+    role: assurance-recovery
+    status: pending-inspection
+    owner: assurance
+    canonical_for: [security, recovery, evidence-preservation]
+  - name: ctaex-iot-pilot
+    url: https://github.com/Traky12/ctaex-iot-pilot
+    visibility: private-or-unlisted
+    role: laboratory-pilot
+    status: experimental
+    owner: pilots
+    canonical_for: [iot-connectivity-loss-validation]
+  - name: agrovision-360
+    url: https://github.com/Traky12/agrovision-360
+    visibility: private-or-unlisted
+    role: experimental-vision
+    status: experimental
+    owner: research
+    canonical_for: [agro-vision-research, drift-evidence]
+  - name: castuo-360-v5.3
+    url: https://github.com/Traky12/castuo-360-v5.3
+    visibility: private-or-unlisted
+    role: integrated-workspace
+    status: workspace
+    owner: product
+    canonical_for: []
+  - name: -Prueba-final
+    url: https://github.com/Traky12/-Prueba-final
+    visibility: private-or-unlisted
+    role: experimental-sandbox
+    status: experimental
+    owner: experiments
+    canonical_for: []
+  - name: castuo-strategy-knowledge-base
+    url: https://github.com/Traky12/castuo-strategy-knowledge-base
+    visibility: private-or-unlisted
+    role: strategy-knowledge-base
+    status: pending-canonicality-decision
+    owner: strategy
+    canonical_for: [strategy-decisions]
+  - name: copia-de-cast-o-system-strategy-knowledge-base
+    url: https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base
+    visibility: private-or-unlisted
+    role: strategy-copy
+    status: archive-or-sync-decision
+    owner: strategy
+    canonical_for: []
+  - name: desktop-tutorial
+    url: https://github.com/Traky12/desktop-tutorial
+    visibility: private-or-unlisted
+    role: training-support
+    status: pending-inspection
+    owner: enablement
+    canonical_for: [contribution-training]
+policy:
+  - "A missing repository in the profile API is not treated as transferred."
+  - "A public README or green local test does not prove production operation."
+  - "Promotion requires commit-linked evidence, scope, limitations and review."

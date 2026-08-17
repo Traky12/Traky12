@@ -40,6 +40,17 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 <!-- CASTUO:STATE:END -->
 
+## Ecosystem management layer
+
+The profile now has a versioned management layer in [`management/`](management/). It catalogs the ecosystem, identifies each repository's role and canonical responsibility, and links the complete engineering plan to the core project.
+
+- [Ecosystem manager](management/README.md)
+- [Repository catalog](management/repository-catalog.yaml)
+- [Evolution plan and continuity docs](management/evolution/)
+- [Core progress dashboard](https://github.com/Traky12/Castuo-system/tree/main/progress-dashboard)
+
+The manager is an index and governance surface. It does not replace the canonical implementation or promote evidence beyond its declared scope.
+
 ## Customer wedge
 
 ```text
