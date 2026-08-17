@@ -52,3 +52,6 @@ La siguiente iteración ya no trata los conectores como una intención puramente
 El control `pnpm security:scan` y las pruebas de seguridad comprueban que no aparezcan claves, tokens o contraseñas en los roots gobernados. La plataforma SaaS sigue en `SECURITY_HOLD` hasta que se conecte un vault real, se implementen adaptadores con timeout, rate limit, allowlist de dominios, rotación, revocación y pruebas de permisos.
 
 El contrato `CASTUO-QUANTUM-DECISION-V1` fija fórmula, entrada, resultado esperado y límites. Su fixture se reproduce con Vitest y mantiene `NO_CLAIM`; el laboratorio no genera evidencia de campo ni habilita promoción G0–G7.
+
+
+El flujo `connectors.request` pasa ahora obligatoriamente por `SecurityHoldVaultAdapter` con `AbortSignal.timeout(5000)`. Sin proveedor real, la operación falla cerrado con `SECURITY_HOLD` y deja un evento de auditoría rechazado. La prueba del boundary valida el timeout y el bloqueo; esto evita presentar la creación de un intent como una conexión SaaS ya operativa.
