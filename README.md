@@ -153,6 +153,21 @@ The control plane governs the state. Repositories implement declared roles. Evid
 - [English public claim boundary](PUBLIC_CLAIM_BOUNDARY.md)
 - [Spanish public claim boundary](PUBLIC_CLAIM_BOUNDARY.es.md)
 
+## CASTÚO processed integration register
+
+The material processed across Manus and GitHub is organized by role rather than copied indiscriminately into the profile. The profile is the public portal; `castuo-evolution` is the governance control plane; `Castuo-system` is the core implementation; `Cast-o` validates conformance; `goldfish` provides assurance and recovery; and the edge, field, pilot, laboratory and upstream repositories remain bounded by their declared scopes.
+
+| Processed artifact | Canonical location | Meaning |
+|---|---|---|
+| Frozen semantic baseline | [`CASTUO-REPOSITORY-STANDARD-V1.0`](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO-REPOSITORY-STANDARD-V1.0.md) | Common vocabulary and state semantics |
+| Core transition map | [`Castuo-system` transition map](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_ECOSYSTEM_CANONICAL_TRANSITION.md) | Core role, dependencies and evidence boundary |
+| Governance reference | [`Core implementation reference`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/CASTUO_CORE_IMPLEMENTATION_REFERENCE.md) | Control plane ↔ core relation |
+| Manus transfer record | [`Manus artifact catalog`](docs/CASTUO_MANUS_ARTIFACT_CATALOG_2026-08-16.md) | Public artifacts, references and exclusions |
+| Searchable strategy surface | CASTÚO Strategy Knowledge Base *(Manus project; public deployment pending)* | Search and navigation; not operational evidence |
+| Remote check boundary | [`REMOTE_PR_CHECK_STATUS`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md) | Visible checks and upstream limitations |
+
+The transition remains governed by `CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING EXECUTION → REVIEW → GREEN-STAGING`. A local PASS, a brand asset, a README, a commit or an open PR does not close a promotion gate. The present public state remains `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED`.
+
 ## Not claimed
 
 This profile does not claim production operation, autonomous authority, federation, certification, independent validation, regulatory conformity, paid customer traction, recurring revenue, private-cloud provisioning, operational robotics, semiconductor manufacturing or universal interoperability.
