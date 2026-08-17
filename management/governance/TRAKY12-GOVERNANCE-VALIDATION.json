@@ -5,6 +5,18 @@
   "allUnique": true,
   "checks": [
     {
+      "repo": "Cast-o",
+      "url": "https://github.com/Traky12/Cast-o/pull/15",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260817",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/Cast-o/pull/15"
+      }
+    },
+    {
       "repo": "Traky12",
       "url": "https://github.com/Traky12/Traky12/pull/8",
       "unique": true,
@@ -146,18 +158,6 @@
         "headRefName": "docs/castuo-governed-readme-20260817",
         "state": "OPEN",
         "url": "https://github.com/Traky12/castuo-360-v5.3/pull/5"
-      }
-    },
-    {
-      "repo": "Cast-o",
-      "url": "https://github.com/Traky12/Cast-o/pull/15",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/Cast-o/pull/15"
       }
     },
     {
