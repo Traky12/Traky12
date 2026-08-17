@@ -166,7 +166,7 @@ The material processed across Manus and GitHub is organized by role rather than 
 | Searchable strategy surface | CASTÚO Strategy Knowledge Base *(Manus project; public deployment pending)* | Search and navigation; not operational evidence |
 | Remote check boundary | [`REMOTE_PR_CHECK_STATUS`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md) | Visible checks and upstream limitations |
 
-The transition remains governed by `CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING EXECUTION → REVIEW → GREEN-STAGING`. A local PASS, a brand asset, a README, a commit or an open PR does not close a promotion gate. The present public state remains `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED`.
+The transition remains governed by `CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING EXECUTION → REVIEW → GREEN-STAGING`. A local PASS, a README, a commit, an open PR or an identity asset does not close a promotion gate. The present public state remains `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED`.
 
 ## Not claimed
 

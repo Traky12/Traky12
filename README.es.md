@@ -91,7 +91,7 @@ El material procesado en Manus y GitHub se organiza por función y no se copia i
 | Superficie estratégica searchable | Knowledge Base CASTÚO *(proyecto Manus; publicación pública pendiente)* | Búsqueda y navegación; no evidencia operativa |
 | Frontera de checks remotos | [`REMOTE_PR_CHECK_STATUS`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md) | Checks visibles y límites upstream |
 
-La transición se gobierna mediante `CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING EXECUTION → REVIEW → GREEN-STAGING`. Un PASS local, una marca, un README, un commit o un PR abierto no cierra un gate de promoción. El estado público actual permanece `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED`.
+La transición se gobierna mediante `CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING EXECUTION → REVIEW → GREEN-STAGING`. Un PASS local, un README, un commit, un PR abierto o un recurso de identidad no cierra un gate de promoción. El estado público actual permanece `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED`.
 
 <!-- CASTUO:STATE:START -->
 ## Estado actual del ecosistema
