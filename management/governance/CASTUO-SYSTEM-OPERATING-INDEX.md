@@ -43,17 +43,23 @@ La semántica de la matriz competitiva es normativa: `1D` significa declaración
 
 El registro `OPEN-EXTERNAL-GATES.md` es la fuente operativa para vault, GitHub `security_events`, alertas remotas, restore de producción, diagnóstico remoto, assurance externa y validación field/económica.
 
+## Recuperación y continuidad de commits
+
+El estado recuperable se reconstruye desde tres fuentes independientes: checkpoints del dashboard, commits y ramas PR remotos, y artefactos contractuales locales. La auditoría actual conserva HEAD local `cb02a49`, la PR `Traky12/Castuo-system#347` con README, índice y gates, y los artefactos de inventario, validación y trazabilidad. Una tarea no se considera perdida hasta comparar estas tres fuentes.
+
+La política de continuidad exige que cada cambio documental se publique mediante una rama y PR idempotente, que los checkpoints incluyan la lista de gates y que `todo.md` conserve las tareas abiertas. Nunca se usa `git reset --hard` para resolver divergencias; se restaura desde un checkpoint identificable o se reconstruye mediante una nueva PR.
+
 ## Plan evolutivo y tareas
 
 | Fase | Resultado | Evidencia actual |
 |---|---|---|
 | Foundation | Repositorios, contratos, dashboard y límites | Dashboard checkpoint `a08bf249` |
-| Secure platform | Connectors, auth, audit, rotation, revocation | 59 tests y secret/dependency gates locales |
+| Secure platform | Connectors, auth, audit, rotation, revocation | 60 tests y secret/dependency gates locales |
 | Evidence system | Passports, public index, assurance roadmap, S-001 | Artefactos persistidos y contratos tipados |
 | Competitive system | Matrix, scoring, passports, reproducibility benchmark | 17 records; 10 fuentes primarias; 14 README PRs |
 | External promotion | GitHub remote zero, vault real, E3/N5 | Bloqueado hasta autorización/evidencia requerida |
 
-El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entrada, salida, criterio de cierre, evidencia y rollback. No se elimina una tarea histórica: se marca como completada o se mantiene explícitamente bloqueada.
+El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entrada, salida, criterio de cierre, evidencia y rollback. No se elimina una tarea histórica: se marca como completada o se mantiene explícitamente bloqueada. Las tareas pendientes de GitHub Security and quality, proveedor vault, restore/diagnóstico remoto y validación externa siguen siendo trabajo operativo y no evidencia de producción.
 
 ## Trazabilidad y repositorios
 
@@ -66,6 +72,7 @@ El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entra
 | `OPEN-EXTERNAL-GATES.md` | Bloqueos operativos y criterios de salida |
 | `Competitive Capability Passports` | Estado de capability, provenance, madurez y claims prohibidos |
 | `S-001 benchmark` | Protocolo reproducible y boundary P2→E3→N5 |
+| `CASTUO-RECOVERY-MANIFEST.json` | HEAD, checkpoint, hashes de artefactos críticos, PR gobernadas y claim boundary sin secretos |
 
 ## Estado GitHub
 
@@ -77,4 +84,4 @@ No se autoriza afirmar que CASTÚO-SYSTEM es mejor que Palantir, Microsoft o IBM
 
 ## Checkpoint operativo
 
-La versión restaurable actual del dashboard es `a08bf249`. Los artefactos gobernados se sincronizaron en Castuo-system con commits `41b05fd` y en Traky12 management con `33f94b4`. Estos identificadores describen estados de código/documentación, no evidencia de campo ni aprobación externa.
+La versión restaurable actual del dashboard es `cb02a49` en git local y el checkpoint web `cb02a495`; `a08bf249` queda como checkpoint anterior de la actualización integral de README. Los artefactos gobernados se sincronizaron en Castuo-system con la PR #347 y en Traky12 management con la rama `feature/ecosystem-management-layer`. Estos identificadores describen estados de código/documentación, no evidencia de campo ni aprobación externa.
