@@ -84,6 +84,30 @@ The current public baseline describes work performed within declared scopes. It 
 
 Publicly scoped areas include agro-technology, IoT and Edge systems, AI-assisted systems, digital traceability and distributed operations. Each area remains subject to its own evidence and promotion boundary.
 
+### Innovation and Incubation
+
+Publicly referenced contexts may include CTAEX / FoodLab, startup and incubation work, pilot-oriented validation and cross-disciplinary technical learning. These references remain context statements unless a dated public source establishes a specific outcome.
+
+### Technical Architecture
+
+Scope includes enterprise software architecture, open-source integration, CI/CD and repository governance, security and recovery design, and documentation systems. Implementation and operational claims remain repository- and evidence-specific.
+
+### Governance and Standards
+
+Scope includes AI governance, risk management, claim boundaries, evidence architecture, publication discipline and compliance-oriented documentation. Regulatory conformity is not claimed by this profile.
+
+### Business Development
+
+Scope includes business planning, financial structuring, commercial-validation framing, strategic documentation and funding-oriented preparation. The profile does not claim funding, customers, invoices, revenue or paid operation without separate public evidence and review.
+
+### Education and Training
+
+Relevant professional certifications, technical courses and structured learning may be listed only when an authorised public source is available. No credential or certification is claimed here without that source.
+
+### Publications and Identifiers
+
+Public technical documentation, repositories, presentations and identifiers are linked only when intentionally published and verified. See the Evidence Center for provenance and scope.
+
 ## Repository Roles
 
 | Repository | Public role | Boundary |

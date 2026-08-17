@@ -24,3 +24,20 @@ contract → validation → execution → review → promotion
 ```
 
 A public index or link is not itself execution evidence. Raw customer data, private logs, credentials, tax records, contracts and payment records remain outside this public repository unless specifically authorised and redacted.
+
+
+## Experience, objectives and public evidence
+
+The profile distinguishes professional scope, research and prototyping, innovation or incubation context, architecture work, governance work, business preparation, education and public identifiers. These categories are not interchangeable with operational evidence.
+
+| Record type | Meaning | Public treatment |
+|---|---|---|
+| `VERIFIED` | A dated source or test supports the declared statement within scope | May be presented with provenance |
+| `DOCUMENTED` | A contract, plan, architecture or policy exists | Must not be presented as execution |
+| `TARGET` | Intended future capability, pilot or promotion | Must be labelled as target |
+| `PENDING` | Required execution, evidence or review is incomplete | Must remain visible as pending |
+| `NOT_CLAIMED` | Deliberately outside the authorised claim boundary | Must not be inferred from activity |
+
+Public release controls are linked from the control plane: `PUBLIC_RELEASE_STATUS`, `PUBLIC_RELEASE_GATE`, `PUBLIC_DATA_BOUNDARY`, `IP_AND_LICENSE_BOUNDARY`, `REGULATORY_CLAIM_BOUNDARY` and `FRESHNESS_POLICY`. Human approval remains separate from technical validation.
+
+The public Evidence Center excludes secrets, credentials, private infrastructure details, unnecessary personal data, customer identity, tax records, bank details, private contracts, raw logs and unverified operational evidence. It is an index of proof surfaces, not proof that every listed objective has been completed.

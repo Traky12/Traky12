@@ -27,3 +27,23 @@ CLAIM → CAPABILITY → IMPLEMENTATION → TEST → EVIDENCE → REVIEW → GAT
 ## Public exclusions
 
 This matrix does not publish secrets, credentials, customer identity, tax identifiers, bank details, private contracts, raw operational logs or unverified claims. Identity, documentation, evidence, execution, review and promotion remain separate dimensions.
+
+
+## Professional scope and objective boundary
+
+Professional descriptions in the profile are public scope statements. They are not independent employment verification, customer references, financial results or certification records unless a dated public source is linked.
+
+| Area | Public classification | Evidence rule | Current state |
+|---|---|---|---|
+| Systems architecture | Professional scope and CASTÚO work | Repository documentation and dated architectural artifacts | `DOCUMENTED / EVIDENCE-SCOPED` |
+| AI governance and assurance | Capability and governance scope | Contracts, policy registries, tests and review records | `DOCUMENTED / TESTED_LOCAL` |
+| Edge / IoT and field systems | Architecture and bounded project scope | Repository-specific implementation and declared fixtures | `EVIDENCE-SCOPED` |
+| Security and recovery | Assurance capability | Cast-o/goldfish tests, findings and re-test records | `TESTED_LOCAL / REVIEW_REQUIRED` |
+| Agro-tech, CTAEX / FoodLab and incubation | Research, prototyping or pilot context | Public source or permission-specific project record required | `TARGET / PENDING` unless linked |
+| Business development and funding preparation | Planning and preparation activity | Public plan only; no funding, customer or revenue claim without evidence | `DOCUMENTED / NOT_CLAIMED` |
+| Education and training | Learning or structured training scope | Named credential may be published only with an authorised public source | `NOT_CLAIMED` unless linked |
+| Publications and identifiers | Public links intentionally published by the owner | Link verification and ownership/context review | `PUBLIC / SCOPE-REVIEWED` |
+
+Objectives such as a paid pilot, commercial operation, E3 review, remote deployment, federation or recurring revenue remain targets until their own evidence, review and promotion gates are complete.
+
+> **Experience statement ≠ project existence ≠ implementation ≠ test ≠ customer result ≠ legal conformity.**
