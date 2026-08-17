@@ -12,6 +12,12 @@ export type CompetitiveCapabilityPassport = {
   capabilityStates: Record<CompetitiveCapability, BinaryState>;
   allowedClaims: readonly string[];
   forbiddenClaims: readonly string[];
+  reproducibility: {
+    benchmarkId: "S-001";
+    gates: readonly ["P2", "E3", "N5"];
+    claimBoundary: string;
+    competitiveAdvantage: "NOT_ASSESSED" | "EVIDENCE_REQUIRED" | "BLOCKED";
+  };
   limitations: string;
   nextVerification: string;
 };
@@ -35,6 +41,12 @@ export function createCompetitivePassport(record: CompetitiveRecord): Competitiv
     capabilityStates: record.capabilities,
     allowedClaims: ["vendor-declared capability within the cited source boundary"],
     forbiddenClaims,
+    reproducibility: {
+      benchmarkId: "S-001",
+      gates: ["P2", "E3", "N5"],
+      claimBoundary: "Only a measured S-001 pilot result after N5; no general superiority claim.",
+      competitiveAdvantage: "NOT_ASSESSED",
+    },
     limitations: record.limitation,
     nextVerification: record.evidenceStatus === "ATTACHMENT_HYPOTHESIS" ? "Locate and archive a primary source before scoring any capability." : "Independent validation or integration evidence required before N4+ maturity.",
   };
