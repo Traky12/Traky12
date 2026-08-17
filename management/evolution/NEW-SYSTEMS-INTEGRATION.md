@@ -38,3 +38,8 @@ La integración del dashboard añade dos superficies gobernadas. **Secure Connec
 | CASTÚO SaaS Platform | SECURITY HOLD | sin secretos en frontend | adaptadores backend + vault |
 
 La implementación en `Castuo-system/progress-dashboard` y la especificación `docs/evolution/SECURE-CONNECTORS-AND-QUANTUM-LAB.md` constituyen la referencia técnica para futuras iteraciones.
+
+
+### Quantum visual readout
+
+La interfaz ahora representa el `Evidence budget`, la `heuristic confidence` y los factores ponderados de continuidad, assurance y recursos mediante barras y un gráfico horizontal. Estas lecturas son deterministas y sirven sólo para explorar trade-offs; no equivalen a evidencia de campo, probabilidad calibrada, runtime cuántico ni permiso de promoción. La etiqueta `LOCAL READOUT / NO CLAIM` debe permanecer visible en cualquier futura adaptación del laboratorio.
