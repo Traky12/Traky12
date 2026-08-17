@@ -105,3 +105,39 @@ El Evidence Center no prueba por sí mismo financiación recibida, clientes cont
 
 ---
 **Gobernanza de Evidencia para Infraestructura Digital Rural · Build · Validate · Preserve · Reassess.**
+
+## Public navigation and authority boundary
+
+This Evidence Center is a reviewer-first public navigation layer. The `castuo-evolution` control plane remains authoritative; this repository is a read-model and evidence index, not an operational authority.
+
+```text
+CAPABILITY → CLAIM → TEST → EXECUTION → ARTIFACT → HASH
+→ REVIEW → GATE → PROMOTION
+```
+
+A public record may establish only the scope stated by its source, commit, artifact, hash, environment and review status. Public visibility is not official promotion.
+
+## Disclosure levels
+
+| Level | Publication rule |
+|---|---|
+| `PUBLIC` | Authorised public summary, manifest, scope or review state. |
+| `INTERNAL` | Excluded from the public profile and index. |
+| `CONFIDENTIAL` | Protected commercial, personal or technical material. |
+| `RESTRICTED` | Secrets, credentials, private endpoints and sensitive operational evidence. |
+
+The public surface excludes raw logs, customer identity, contracts, tax or bank records, private infrastructure topology and unverified operational evidence.
+
+## Current public state
+
+`EVIDENCE-SCOPED · STAGING-CANDIDATE · PROMOTION-BLOCKED`
+
+The current state is generated from the control plane and must not be manually upgraded in this README. Production, recurring revenue, customer traction, certification, regulatory conformity and continuous operation remain `NOT_CLAIMED` unless separately evidenced and reviewed.
+
+- [Public state](../docs/governance/CASTUO_PUBLIC_STATE.yaml)
+- [Public Proof Matrix](../CASTUO_PROOF_MATRIX.md)
+- [Public Operating Boundary](../CASTUO_OPERATING_BOUNDARY.md)
+- [Evidence Center Index](../docs/evidence/CASTUO_EVIDENCE_CENTER_INDEX.md)
+- [Public Knowledge & Evidence Index](https://castuo-system.es/)
+
+`Identity != Documentation != Evidence != Execution != Review != Promotion`
