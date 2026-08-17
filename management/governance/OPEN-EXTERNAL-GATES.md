@@ -25,3 +25,18 @@ La consulta remota de Security and quality, los checks y annotations de GitHub c
 ### Diagnóstico GitHub actualizado
 
 La sesión `Traky12` está autenticada, pero la consulta `GET /repos/Traky12/castuo-strategy-knowledge-base/secret-scanning/alerts` respondió `HTTP 403 Forbidden`. GitHub declara `X-Accepted-OAuth-Scopes: public_repo, repo, security_events` y la sesión no está autorizada para ese alcance. El token no se registra ni se expone; el gate permanece abierto hasta completar autorización mediante OAuth o navegador y repetir la lectura remota.
+
+## Confirmación integral posterior a la integración narrativa y soberana
+
+La validación local y documental más reciente registra **14/14 README/PRs válidas**, ausencia de faltantes y claims prohibidos, **62 tests verdes**, TypeScript correcto, secret scan sin credenciales con forma de secreto, dependency scan local con 0 advisories, SBOM generado, governance validado y build de producción correcto. Esta confirmación no equivale a cero alertas remotas en GitHub ni a evidencia de producción.
+
+| Gate | Estado actual | Criterio de cierre no cumplido |
+|---|---|---|
+| GitHub Security and quality remoto | `BLOCKED / NOT_VERIFIED` | Sesión autenticada con `security_events` y consulta reproducible de ambas ramas principales |
+| Vulnerabilidades remotas | `PENDING` | Verificación remota de 0 alertas; el scan local no sustituye Dependabot/GitHub |
+| SaaS vault | `SECURITY_HOLD` | Proveedor aprobado, backend-only, rotación, revocación, doble aprobación y prueba de permisos |
+| Assurance remoto | `PENDING` | Checks, logs y annotations accesibles con redacción y permisos mínimos |
+| Restore/diagnóstico | `EVIDENCE_REQUIRED` | Prueba efímera real de backup/restore y diagnóstico remoto reproducible |
+| Field/economic evidence | `EVIDENCE_REQUIRED` | Piloto medido, revisión independiente y evidencia económica autorizada |
+
+No se promueve ningún claim de producción, seguridad remota cero, validación de campo, certificación, adopción o resultado económico mientras estos criterios no estén cerrados con evidencia fechada y trazable.
