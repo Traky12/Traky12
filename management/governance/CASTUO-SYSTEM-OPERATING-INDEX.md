@@ -79,6 +79,7 @@ El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entra
 | `CASTUO-COMMIT-GOVERNANCE-POLICY.json` | Política ejecutable de commits, PRs, ownership, checks, claims y rollback |
 | `CASTUO-MATURITY-ACCELERATION-PROGRAM.md` | Roadmap G0→N6, frentes P0/P1/P2/E3/G-COMM, S-001, KPI, ECR y Promotion Debt |
 | `CASTUO-PUBLIC-NARRATIVE-AND-WEDGE.md` | Posicionamiento canónico, título profesional, wedge Evidence-Ready Field Operations y secuencia de confianza |
+| `CASTUO-OSS-REPUTATION-STRATEGY.md` | Reputación OSS basada en contribuciones reales, colaboración, comunidad, documentación y tracción orgánica |
 
 ## Estado GitHub
 
