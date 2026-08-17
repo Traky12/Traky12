@@ -29,3 +29,9 @@ The four SLO definitions in `shared/p1Governance.ts` are targets, not historical
 ## Exit criteria
 
 P1 observability is marked implemented because metrics, redacted traces, alert conditions and reproducible failure tests exist in the governed codebase. It does not imply production availability, field validation or independent review. Those claims remain blocked by the P0/P2 gates and must be evidenced separately.
+
+## Evidence and Trust Passport data policy
+
+The passport data policy is defined in `shared/passportDataPolicy.ts`. Public passports may expose stable identifiers, scoped evidence references, limitations and explicit forbidden claims. Credentials, access tokens, email addresses and provider payloads are classified as `SECRET_OR_PII` and are not allowed in public passports. The contract test verifies both the deny-list and the requirement to use references rather than inline evidence payloads.
+
+The passport template now enforces explicit `sensitivity`, `provenance`, `audience`, `retention` and `redaction` fields. `validateEvidenceTrustPassport` rejects incomplete or non-redacted artifacts, and `server/assurance.contract.test.ts` validates the actual JSON template rather than only an isolated policy list. This closes the schema-level P1 requirement while preserving default-deny claim status.
