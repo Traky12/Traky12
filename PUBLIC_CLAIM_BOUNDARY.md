@@ -83,3 +83,17 @@ jurisdiction-aware governance: TARGET
 jurisdiction legal compliance: NOT_CLAIMED
 cross-border execution: NOT_CLAIMED
 ```
+
+## Legal, confidentiality and publication boundary
+
+Public documentation must contain only information authorised for public release. Secrets, credentials, access tokens, private endpoints, internal filesystem paths, personal data not necessary for the public profile, unverified operational evidence and protected customer or pilot information must remain outside public repositories.
+
+This boundary is a governance control, not legal advice and not a certification of regulatory compliance. Jurisdiction-specific legal conclusions require a competent human reviewer and a declared source, version, scope and date. Public wording must use `NOT_CLAIMED` whenever those conditions are absent.
+
+A public summary of documentation transfer may describe the authorised scope, canonical index, provenance links, review status and promotion blockers. It must not imply that transfer, publication, a commit, a pull request or a local check constitutes operational evidence, production, certification, customer traction, revenue, continuous operation or legal compliance.
+
+Before publication, each change must pass a confidentiality review and preserve the distinction:
+
+```text
+Identity != Documentation != Evidence != Execution != Review != Promotion
+```
