@@ -75,6 +75,7 @@ El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entra
 | `CASTUO-RECOVERY-MANIFEST.json` | HEAD, checkpoint, hashes de artefactos críticos, PR gobernadas y claim boundary sin secretos |
 | `TRAKY12-PR-STATUS-AUDIT.json` | Estado de 14 PRs, base/head, revisión, mergeability, checks visibles y límites de permisos |
 | `EXTERNAL-GATE-EXECUTION-PACK.md` | Procedimientos seguros, evidencia requerida y rollback para gates externos |
+| `CASTUO-SOVEREIGN-REFERENCE-ARCHITECTURE.md` | Jerarquía de autoridad, ownership, soberanía de datos, commit lineage y rollback |
 
 ## Estado GitHub
 
