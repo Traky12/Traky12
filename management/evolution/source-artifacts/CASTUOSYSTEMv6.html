@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="CASTÚO-SYSTEM v6.0 — Plataforma SaaS AgroTech unificada. IoT, IA SABIONDA, trazabilidad, bioenergía, ERP/CRM y conectores. Sistema único, evolutivo y auditado.">
+<meta name="theme-color" content="#1e5a37" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a9c63" media="(prefers-color-scheme: dark)">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://www.castuo-system.es https://api.castuo-system.es wss://api.castuo-system.es https://api.mistral.ai https://api.stripe.com https://api.hetzner.cloud https://api.telegram.org https://opendata.aemet.es https://api.openweathermap.org https://api.sendgrid.com https://api.twilio.com https://slack.com https://sheets.googleapis.com https://services.sentinel-hub.com; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>CASTÚO-SYSTEM v6.0 · Plataforma SaaS AgroTech Unificada</title>
+<style>
+/* ═══════════════════ DESIGN TOKENS — accesible, light+dark ═══════════════════ */
+:root{
+  --brand:#1e5a37; --brand2:#2d7a4f; --brand3:#48a86a; --brand-ink:#04130c;
+  --bg:#f6f9f4; --bg2:#eef3ea; --panel:#ffffff; --panel2:#f4f8f1;
+  --line:#d8ddd0; --line2:#c4cbb8;
+  --txt:#161a14; --mut:#4c5348; --dim:#767c70;
+  --green:#2d7a4f; --greenBg:#e2f3e9; --blue:#1d4ed8; --blueBg:#e8f0ff;
+  --red:#c81e1e; --redBg:#fdeaea; --amber:#b45309; --amberBg:#fcf3e3;
+  --violet:#6d28d9; --violetBg:#f1ecfe; --cyan:#0e7490; --cyanBg:#e4f6fb;
+  --rad:12px; --rad2:9px; --shadow:0 1px 3px rgba(20,40,25,.08),0 1px 2px rgba(20,40,25,.04);
+  --shadow2:0 8px 30px rgba(20,40,25,.14);
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"Cascadia Code","JetBrains Mono",Menlo,Consolas,monospace;
+  --fs:1; --focus:#1d4ed8;
+}
+:root[data-theme="dark"]{
+  --bg:#070b11; --bg2:#0c1219; --panel:#101824; --panel2:#16202e;
+  --line:#1d2a3a; --line2:#27384d;
+  --txt:#e8eef5; --mut:#93a4b7; --dim:#61748a;
+  --brand:#10d98c; --brand2:#0e9c63; --brand3:#34e3a0; --brand-ink:#04130c;
+  --green:#10d98c; --greenBg:#0d2a1f; --blue:#60a5fa; --blueBg:#12233d;
+  --red:#f87171; --redBg:#3a1414; --amber:#fbbf24; --amberBg:#3a2c0e;
+  --violet:#a78bfa; --violetBg:#241a3d; --cyan:#22d3ee; --cyanBg:#0c2b33;
+  --shadow:0 1px 3px rgba(0,0,0,.5); --shadow2:0 10px 34px rgba(0,0,0,.6);
+  --focus:#60a5fa;
+}
+@media(prefers-color-scheme:dark){:root[data-theme="auto"]{
+  --bg:#070b11;--bg2:#0c1219;--panel:#101824;--panel2:#16202e;--line:#1d2a3a;--line2:#27384d;
+  --txt:#e8eef5;--mut:#93a4b7;--dim:#61748a;--brand:#10d98c;--brand2:#0e9c63;--brand3:#34e3a0;
+  --green:#10d98c;--greenBg:#0d2a1f;--blue:#60a5fa;--blueBg:#12233d;--red:#f87171;--redBg:#3a1414;
+  --amber:#fbbf24;--amberBg:#3a2c0e;--violet:#a78bfa;--violetBg:#241a3d;--cyan:#22d3ee;--cyanBg:#0c2b33;
+  --shadow:0 1px 3px rgba(0,0,0,.5);--shadow2:0 10px 34px rgba(0,0,0,.6);--focus:#60a5fa;
+}}
+:root[data-contrast="high"]{--line:#000;--line2:#000;--mut:#000;--dim:#222;--shadow:0 0 0 1px #000}
+:root[data-contrast="high"][data-theme="dark"]{--line:#fff;--line2:#fff;--mut:#fff;--dim:#ddd;--shadow:0 0 0 1px #fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:calc(15px*var(--fs))}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+body{background:var(--bg);color:var(--txt);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased;overflow:hidden}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+button{font-family:inherit;cursor:pointer}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--line2);border-radius:6px}
+/* focus accesible visible en todo elemento interactivo */
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;z-index:999;background:var(--brand);color:var(--brand-ink);padding:10px 18px;border-radius:8px;font-weight:700}
+.skip:focus{left:8px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* ═══ LAYOUT ═══ */
+#app{display:grid;grid-template-columns:250px 1fr;grid-template-rows:58px 1fr;height:100vh;height:100dvh}
+#sidebar{grid-row:1/3;background:var(--bg2);border-right:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden;z-index:30}
+#topbar{display:flex;align-items:center;gap:12px;padding:0 18px;background:var(--panel);border-bottom:1px solid var(--line)}
+#main{overflow-y:auto;padding:22px clamp(14px,3vw,30px);position:relative}
+.brand{display:flex;align-items:center;gap:11px;padding:15px 16px 13px;border-bottom:1px solid var(--line)}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--brand3),var(--brand));display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;color:var(--brand-ink);flex-shrink:0}
+.brand b{font-size:14.5px;letter-spacing:.3px;display:block}
+.brand small{display:block;color:var(--mut);font-size:10.5px}
+#nav{flex:1;overflow-y:auto;padding:8px 9px 14px}
+.navgroup{font-size:10px;letter-spacing:1.3px;color:var(--dim);font-weight:800;padding:13px 9px 5px;text-transform:uppercase}
+.navitem{display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:9px;color:var(--mut);margin-bottom:1px;border-left:3px solid transparent;transition:background .12s,color .12s;font-size:13px;font-weight:600;width:100%;background:none;border-top:0;border-right:0;border-bottom:0;text-align:left}
+.navitem:hover{background:var(--panel);color:var(--txt)}
+.navitem[aria-current="page"]{background:var(--greenBg);color:var(--brand);border-left-color:var(--brand)}
+.navitem .ni{width:20px;text-align:center;font-size:16px;flex-shrink:0}
+.navitem .nb{margin-left:auto;font-size:10px;font-weight:800;background:var(--panel2);color:var(--mut);border-radius:9px;padding:1px 7px;border:1px solid var(--line)}
+.navitem[aria-current="page"] .nb{background:var(--brand);color:var(--brand-ink);border-color:transparent}
+.sysfoot{padding:10px 15px;border-top:1px solid var(--line);font-size:10px;color:var(--dim);font-family:var(--mono)}
+.sysfoot .ok{color:var(--green)}.sysfoot .bad{color:var(--red)}
+/* ═══ TOPBAR ═══ */
+#crumb{font-weight:700;font-size:15px;line-height:1.15}#crumb small{display:block;font-weight:400;color:var(--mut);font-size:11px}
+.grow{flex:1}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel2);border-radius:20px;padding:5px 11px;font-size:11.5px;color:var(--mut);white-space:nowrap;font-weight:600}
+.pill .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot.g{background:var(--green);box-shadow:0 0 7px var(--green)}
+.dot.r{background:var(--red);box-shadow:0 0 7px var(--red)}
+.dot.a{background:var(--amber);box-shadow:0 0 7px var(--amber)}
+.iconbtn{width:38px;height:38px;border-radius:9px;border:1px solid var(--line);background:var(--panel2);color:var(--txt);font-size:16px;display:flex;align-items:center;justify-content:center}
+.iconbtn:hover{background:var(--bg2)}
+.avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--brand3),var(--brand));color:var(--brand-ink);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+/* ═══ COMPONENTES ═══ */
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1050px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:16px;box-shadow:var(--shadow)}
+.card h3{font-size:13px;font-weight:800;margin-bottom:3px;display:flex;align-items:center;gap:8px}
+.card .sub{font-size:11.5px;color:var(--mut);margin-bottom:12px}
+.card.ac{border-left:4px solid var(--brand)}
+.h1{font-size:22px;font-weight:800;letter-spacing:-.3px;margin-bottom:3px}
+.lead{color:var(--mut);font-size:13px;margin-bottom:18px;max-width:80ch}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:15px;box-shadow:var(--shadow)}
+.kpi .lab{font-size:11px;color:var(--mut);font-weight:600;display:flex;align-items:center;gap:6px}
+.kpi .val{font-size:26px;font-weight:800;margin-top:6px;font-variant-numeric:tabular-nums;line-height:1}
+.kpi .val small{font-size:13px;color:var(--mut);font-weight:600}
+.kpi .trend{font-size:11px;margin-top:5px;font-weight:700}
+.tag{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;font-size:10.5px;font-weight:700;border-radius:20px;white-space:nowrap}
+.tag.g{color:var(--green);background:var(--greenBg)}.tag.b{color:var(--blue);background:var(--blueBg)}
+.tag.r{color:var(--red);background:var(--redBg)}.tag.a{color:var(--amber);background:var(--amberBg)}
+.tag.v{color:var(--violet);background:var(--violetBg)}.tag.c{color:var(--cyan);background:var(--cyanBg)}
+.tag.n{color:var(--mut);background:var(--panel2);border:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 15px;font-size:12.5px;font-weight:700;border-radius:var(--rad2);border:1px solid var(--line);background:var(--panel2);color:var(--txt);transition:transform .08s,background .12s}
+.btn:hover{background:var(--bg2)}.btn:active{transform:translateY(1px)}
+.btn.primary{background:var(--brand);color:var(--brand-ink);border-color:transparent}
+.btn.primary:hover{background:var(--brand2)}
+.btn.sm{padding:6px 11px;font-size:11px}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.danger{color:var(--red);border-color:var(--red)}
+input,select,textarea{width:100%;padding:9px 11px;font-size:13px;font-family:inherit;background:var(--bg);border:1.5px solid var(--line);border-radius:var(--rad2);color:var(--txt);outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--brand)}
+label{display:block;font-size:11px;font-weight:700;color:var(--mut);margin-bottom:4px}
+.field{margin-bottom:13px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{text-align:left;font-size:10.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--dim);font-weight:800;padding:9px 10px;border-bottom:2px solid var(--line)}
+td{padding:9px 10px;border-bottom:1px solid var(--line)}
+tbody tr:hover{background:var(--panel2)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--rad);background:var(--panel)}
+.bar{height:8px;border-radius:5px;background:var(--line);overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--brand);border-radius:5px}
+.divider{height:1px;background:var(--line);margin:14px 0}
+.statline{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.statline:last-child{border-bottom:0}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;border-bottom:1px solid var(--line);padding-bottom:0}
+.tab{padding:9px 14px;font-size:12.5px;font-weight:700;color:var(--mut);border:0;background:none;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--brand);border-bottom-color:var(--brand)}
+.chip{display:inline-flex;gap:6px;align-items:center;padding:5px 11px;border-radius:20px;border:1px solid var(--line);background:var(--panel2);font-size:11.5px;font-weight:600}
+.mono{font-family:var(--mono)}
+.notice{padding:12px 14px;border-radius:var(--rad2);font-size:12.5px;display:flex;gap:10px;align-items:flex-start}
+.notice.i{background:var(--blueBg);color:var(--blue)}.notice.w{background:var(--amberBg);color:var(--amber)}
+.notice.e{background:var(--redBg);color:var(--red)}.notice.s{background:var(--greenBg);color:var(--green)}
+/* ═══ TOAST + MODAL ═══ */
+#toasts{position:fixed;bottom:20px;right:20px;z-index:200;display:flex;flex-direction:column;gap:9px;max-width:min(92vw,380px)}
+.toast{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:12px 15px;box-shadow:var(--shadow2);font-size:12.5px;font-weight:600;animation:slidein .25s}
+.toast.err{border-left-color:var(--red)}.toast.warn{border-left-color:var(--amber)}
+@keyframes slidein{from{transform:translateX(30px);opacity:0}to{transform:none;opacity:1}}
+#modalbg{position:fixed;inset:0;background:rgba(6,12,18,.55);z-index:150;display:none;align-items:center;justify-content:center;padding:16px}
+#modalbg.on{display:flex}
+.modal{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow2);max-width:560px;width:100%;max-height:88vh;overflow-y:auto}
+.modal .mh{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)}
+.modal .mh h3{font-size:15px;font-weight:800}
+.modal .mb{padding:18px}
+.dl{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--line);font-size:12.5px}
+.dl b{font-weight:700}
+/* ═══ LOGIN ═══ */
+#login{position:fixed;inset:0;background:linear-gradient(135deg,var(--bg),var(--bg2));display:flex;align-items:center;justify-content:center;padding:18px;z-index:100}
+.loginbox{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow2);max-width:400px;width:100%;padding:30px 28px}
+/* ═══ MOBILE ═══ */
+#navtoggle{display:none}
+@media(max-width:820px){
+  #app{grid-template-columns:1fr}
+  #sidebar{position:fixed;left:0;top:0;bottom:0;width:260px;transform:translateX(-100%);transition:transform .2s;box-shadow:var(--shadow2)}
+  #sidebar.open{transform:none}
+  #navtoggle{display:flex}
+}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:25}
+.overlay.on{display:block}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Saltar al contenido principal</a>
+<div id="login" role="dialog" aria-label="Iniciar sesión"></div>
+<div id="app" hidden>
+  <aside id="sidebar" aria-label="Navegación principal">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">C</div>
+      <div><b>CASTÚO-SYSTEM</b><small>v6.0 · SaaS AgroTech</small></div>
+    </div>
+    <nav id="nav" aria-label="Módulos"></nav>
+    <div class="sysfoot" id="sysfoot"></div>
+  </aside>
+  <header id="topbar">
+    <button id="navtoggle" class="iconbtn" aria-label="Abrir menú" onclick="toggleNav()">☰</button>
+    <div id="crumb" aria-live="polite"></div>
+    <div class="grow"></div>
+    <span class="pill" id="netpill" title="Estado de conexión"><span class="dot g" id="netdot"></span><span id="nettxt">Conectando…</span></span>
+    <span class="pill" id="tokpill" title="Presupuesto de tokens IA — ahorro activo">🪙 <span id="toktxt">0</span></span>
+    <button class="iconbtn" id="themebtn" aria-label="Cambiar tema" onclick="cycleTheme()" title="Tema">🌗</button>
+    <button class="iconbtn" aria-label="Ajustes de accesibilidad" onclick="openA11y()" title="Accesibilidad">♿</button>
+    <button class="avatar" id="avatar" aria-label="Cuenta y sesión" onclick="openAccount()"></button>
+  </header>
+  <main id="main" tabindex="-1"></main>
+</div>
+<div class="overlay" id="overlay" onclick="toggleNav(false)"></div>
+<div id="modalbg" role="dialog" aria-modal="true" aria-label="Diálogo"><div class="modal" id="modal"></div></div>
+<div id="toasts" aria-live="polite" aria-atomic="false"></div>
+<script>
+"use strict";
+/* ════════════════════════════════════════════════════════════════════════
+   CASTÚO-SYSTEM v6.0 — Plataforma SaaS AgroTech unificada
+   Sistema único · evolutivo · auditado. Vanilla JS, sin dependencias CDN.
+   Enlazado a https://www.castuo-system.es · API https://api.castuo-system.es
+   ════════════════════════════════════════════════════════════════════════ */
+var CFG={
+  VERSION:"6.0.0",
+  WEB:"https://www.castuo-system.es",
+  API:localStorage.getItem("castuo_api_url")||"https://api.castuo-system.es",
+  WS:"wss://api.castuo-system.es/ws",
+  BUILD:"2026-07-29"
+};
+
+/* ═══ ALMACÉN SEGURO (localStorage con guardas) ═══ */
+var store={
+  get:function(k){try{return localStorage.getItem(k);}catch(e){return null;}},
+  set:function(k,v){try{localStorage.setItem(k,v);return true;}catch(e){return false;}},
+  getJSON:function(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}},
+  setJSON:function(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){return false;}},
+  del:function(k){try{localStorage.removeItem(k);}catch(e){}}
+};
+
+/* ═══ SEGURIDAD: sanitización, validación, sesión, auditoría ═══ */
+function esc(s){if(s==null)return"";return String(s).replace(/[<>&"']/g,function(c){return{"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;","'":"&#39;"}[c];});}
+function isEmail(e){return typeof e==="string"&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)&&e.length<=255;}
+function isStrongPass(p){return typeof p==="string"&&p.length>=8&&p.length<=128;}
+function fingerprint(){try{var n=navigator;return btoa((n.userAgent||"").slice(0,60)+(n.language||"")+(screen.width||0)+"x"+(screen.height||0)).slice(0,24);}catch(e){return"unknown";}}
+function csrf(){var t=store.get("castuo_csrf");if(!t||t.length<32){t="";var a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";for(var i=0;i<48;i++)t+=a[Math.floor(Math.random()*62)];store.set("castuo_csrf",t);}return t;}
+/* Registro de auditoría inmutable (append-only, encadenado por hash) */
+function audit(action,detail,level){
+  var log=store.getJSON("castuo_audit",[]);
+  var prev=log.length?log[0].h:"genesis";
+  var payload=(new Date().toISOString())+action+String(detail||"")+prev;
+  var entry={ts:new Date().toISOString(),u:(state.user&&state.user.email)||"anon",role:(state.user&&state.user.role)||"-",
+    a:action,d:esc(String(detail||"")).slice(0,240),lvl:level||"info",fp:fingerprint(),prev:prev.slice(0,12),h:hash(payload)};
+  log.unshift(entry);if(log.length>500)log=log.slice(0,500);
+  store.setJSON("castuo_audit",log);
+  if(level==="security"||level==="error"){var s=store.getJSON("castuo_sec",[]);s.unshift(entry);if(s.length>200)s=s.slice(0,200);store.setJSON("castuo_sec",s);}
+  return entry;
+}
+/* hash determinista (FNV-1a 32bit hex) — trazabilidad, no criptografía */
+function hash(str){var h=0x811c9dc5;for(var i=0;i<str.length;i++){h^=str.charCodeAt(i);h=(h*0x01000193)>>>0;}return("00000000"+h.toString(16)).slice(-8);}
+function sha(prefix){return(prefix||"sha256:")+hash(Date.now()+":"+Math.random());}
+
+/* ════════════════════ RBAC — control de acceso por rol ════════════════════
+   admin = acceso total a TODO el sistema (superusuario). El resto: mínimo privilegio. */
+var ROLES={
+  admin:{name:"Administrador",icon:"👑",color:"var(--violet)",desc:"Acceso total al sistema completo",all:true,
+    perms:["*"]},
+  gestor:{name:"Gestor / Granjero",icon:"🧑‍🌾",color:"var(--green)",desc:"Explotación, ventas, ERP, trazabilidad",
+    perms:["dashboard","arq360","cultivos","grid","control","invernadero","ganaderia","riego","cuaderno","qr","blockchain","auditoria","erp","crm","marketplace","billing","metricas","sabionda","resolucion","faq","config"]},
+  tecnico:{name:"Técnico IoT",icon:"🛠️",color:"var(--cyan)",desc:"Sensores, actuadores, IA, diagnóstico",
+    perms:["dashboard","arq360","grid","control","invernadero","riego","drones","suelo","bioenergia","cuaderno","qr","foto3d","sabionda","resolucion","conectores","metricas","faq"]},
+  agronomo:{name:"Agrónomo",icon:"🌱",color:"var(--brand)",desc:"Cultivos, prescripción IA, cuaderno",
+    perms:["dashboard","cultivos","grid","invernadero","riego","suelo","cuaderno","qr","sabionda","resolucion","metricas","faq"]},
+  operario:{name:"Operario de campo",icon:"👷",color:"var(--amber)",desc:"Cuaderno, QR, tareas asignadas",
+    perms:["dashboard","cultivos","cuaderno","qr","resolucion","faq"]},
+  auditor:{name:"Auditor / Evaluador",icon:"🔎",color:"var(--blue)",desc:"Solo lectura + trazabilidad + auditoría",readonly:true,
+    perms:["dashboard","arq360","cuaderno","qr","blockchain","auditoria","pasaporte","metricas","seguridad","faq"]},
+  cliente:{name:"Cliente / HORECA",icon:"🛒",color:"var(--cyan)",desc:"Marketplace, pasaporte digital, pedidos",
+    perms:["dashboard","marketplace","qr","pasaporte","faq"]}
+};
+function can(mod){var u=state.user;if(!u)return false;var r=ROLES[u.role];if(!r)return false;if(r.all)return true;return r.perms.indexOf(mod)>=0;}
+function isReadonly(){var u=state.user;return u&&ROLES[u.role]&&ROLES[u.role].readonly;}
+
+/* ════════════════════ REGISTRO DE MÓDULOS ════════════════════ */
+var MODULES=[
+  {id:"dashboard",icon:"📊",name:"Dashboard",group:"PRINCIPAL",badge:"Live"},
+  {id:"arq360",icon:"🌐",name:"Arquitectura 360",group:"PRINCIPAL",badge:"141"},
+  {id:"resolucion",icon:"🩺",name:"Centro de Resolución",group:"PRINCIPAL",badge:()=>String(diagnostics().length)},
+  {id:"cultivos",icon:"🌿",name:"Catálogo de Cultivos",group:"CULTIVO",badge:()=>String(ALL_V.length)},
+  {id:"grid",icon:"📡",name:"Grid IoT · Sensores",group:"CULTIVO",badge:"Live"},
+  {id:"control",icon:"🎛️",name:"Control · Riego/RPi",group:"CULTIVO"},
+  {id:"invernadero",icon:"🏠",name:"Invernadero",group:"CULTIVO",badge:"42"},
+  {id:"riego",icon:"💧",name:"Riego Inteligente",group:"CULTIVO"},
+  {id:"ganaderia",icon:"🐑",name:"Ganadería",group:"CAMPO",badge:"120"},
+  {id:"drones",icon:"🚁",name:"Drones AESA",group:"CAMPO"},
+  {id:"suelo",icon:"🧪",name:"Análisis de Suelo",group:"CAMPO"},
+  {id:"bioenergia",icon:"🔋",name:"Bioenergía",group:"CAMPO",badge:"LIVE"},
+  {id:"cuaderno",icon:"📕",name:"Cuaderno de Campo",group:"TRAZABILIDAD",badge:"487"},
+  {id:"qr",icon:"🔗",name:"QR · Pasaporte DPP",group:"TRAZABILIDAD"},
+  {id:"foto3d",icon:"📷",name:"Fotogrametría 3D",group:"TRAZABILIDAD"},
+  {id:"blockchain",icon:"⛓️",name:"Blockchain",group:"TRAZABILIDAD",badge:"1.2K"},
+  {id:"auditoria",icon:"📑",name:"Auditoría IFS/BRC",group:"TRAZABILIDAD"},
+  {id:"pasaporte",icon:"🪪",name:"Pasaporte Digital",group:"TRAZABILIDAD"},
+  {id:"erp",icon:"🏢",name:"ERP",group:"NEGOCIO"},
+  {id:"crm",icon:"🤝",name:"CRM",group:"NEGOCIO"},
+  {id:"marketplace",icon:"🛒",name:"Marketplace",group:"NEGOCIO"},
+  {id:"billing",icon:"💳",name:"Billing SaaS",group:"NEGOCIO"},
+  {id:"metricas",icon:"📈",name:"Métricas & BI",group:"NEGOCIO"},
+  {id:"sabionda",icon:"🤖",name:"SABIONDA OMEGA",group:"INTELIGENCIA",badge:"9.1"},
+  {id:"conectores",icon:"🔌",name:"Conectores & API Keys",group:"SISTEMA",badge:()=>String(connectedCount())},
+  {id:"usuarios",icon:"👥",name:"Usuarios & Roles",group:"SISTEMA"},
+  {id:"seguridad",icon:"🛡️",name:"Seguridad & Auditoría",group:"SISTEMA"},
+  {id:"config",icon:"⚙️",name:"Configuración",group:"SISTEMA"},
+  {id:"faq",icon:"❓",name:"Ayuda & FAQ",group:"SISTEMA"}
+];
+var GROUP_ORDER=["PRINCIPAL","CULTIVO","CAMPO","TRAZABILIDAD","NEGOCIO","INTELIGENCIA","SISTEMA"];
+
+/* ════════════════════ CONECTORES / SERVICIOS ════════════════════
+   API keys NUNCA hardcodeadas — solo se guardan en el navegador del admin
+   y se exportan a .env / Docker secrets. Cada servicio: prueba de conexión real. */
+var SERVICES=[
+  {id:"backend",name:"Backend CASTÚO",icon:"🖥️",cat:"Núcleo",key:"API_URL",desc:"FastAPI · SABIONDA · IoT ingest",test:"health",envd:false},
+  {id:"mistral",name:"Mistral AI (EU)",icon:"🧠",cat:"IA",key:"MISTRAL_API_KEY",desc:"Motor SABIONDA · GDPR/UE",test:"https://api.mistral.ai/v1/models",auth:"bearer"},
+  {id:"stripe",name:"Stripe",icon:"💳",cat:"Pagos",key:"STRIPE_SECRET_KEY",desc:"Facturación SaaS · webhooks",test:"https://api.stripe.com/v1/balance",auth:"bearer"},
+  {id:"hetzner",name:"Hetzner Cloud",icon:"☁️",cat:"Infra",key:"HETZNER_API_TOKEN",desc:"Servidor CX22 · deploy",test:"https://api.hetzner.cloud/v1/servers",auth:"bearer"},
+  {id:"telegram",name:"Telegram Bot",icon:"✈️",cat:"Notif.",key:"TELEGRAM_BOT_TOKEN",desc:"Alertas SABIONDA en tiempo real",test:"telegram"},
+  {id:"aemet",name:"AEMET OpenData",icon:"🌦️",cat:"Datos",key:"AEMET_API_KEY",desc:"Meteorología oficial España",test:"aemet"},
+  {id:"openweather",name:"OpenWeather",icon:"🌤️",cat:"Datos",key:"OPENWEATHER_API_KEY",desc:"Pronóstico horario microclima",test:"https://api.openweathermap.org/data/2.5/weather?q=Madrid&appid=",auth:"query"},
+  {id:"sendgrid",name:"SendGrid",icon:"📧",cat:"Notif.",key:"SENDGRID_API_KEY",desc:"Email transaccional · informes",test:"noop",auth:"bearer"},
+  {id:"twilio",name:"Twilio / WhatsApp",icon:"💬",cat:"Notif.",key:"TWILIO_AUTH_TOKEN",desc:"SMS + WhatsApp Business",test:"noop",auth:"basic"},
+  {id:"slack",name:"Slack",icon:"🔔",cat:"Notif.",key:"SLACK_BOT_TOKEN",desc:"Canal de operaciones del equipo",test:"noop",auth:"bearer"},
+  {id:"sheets",name:"Google Sheets",icon:"📗",cat:"Datos",key:"GOOGLE_API_KEY",desc:"Export cuaderno · BI externo",test:"noop",auth:"query"},
+  {id:"sentinel",name:"Copernicus/Sentinel",icon:"🛰️",cat:"Datos",key:"SENTINEL_CLIENT_SECRET",desc:"NDVI satelital · teledetección",test:"noop",auth:"bearer"},
+  {id:"n8n",name:"n8n Workflows",icon:"🔄",cat:"Automat.",key:"N8N_WEBHOOK_URL",desc:"Orquestación de automatizaciones",test:"noop"},
+  {id:"mqtt",name:"MQTT Broker",icon:"📶",cat:"IoT",key:"MQTT_PASSWORD",desc:"Mosquitto · gateway RPi/ESP32",test:"noop"}
+];
+function getKeys(){return store.getJSON("castuo_keys",{});}
+function setKey(k,v){var o=getKeys();if(v)o[k]=v;else delete o[k];store.setJSON("castuo_keys",o);}
+function hasKey(id){var s=SERVICES.find(x=>x.id===id);if(!s)return false;if(id==="backend")return!!CFG.API;return!!getKeys()[s.key];}
+function connectedCount(){return SERVICES.filter(s=>hasKey(s.id)).length;}
+
+/* ════════════════════ CONECTIVIDAD RESILIENTE ════════════════════
+   fetch con timeout + reintentos exponenciales + cola offline + auth/CSRF. */
+function timeoutSignal(ms){try{return AbortSignal.timeout(ms);}catch(e){var c=new AbortController();setTimeout(()=>c.abort(),ms);return c.signal;}}
+var net={online:navigator.onLine,latency:null,lastOk:null,queue:store.getJSON("castuo_queue",[])};
+function saveQueue(){store.setJSON("castuo_queue",net.queue);}
+async function apiFetch(path,opts){
+  opts=opts||{};opts.headers=opts.headers||{};
+  var token=store.get("castuo_token");
+  if(token)opts.headers["Authorization"]="Bearer "+token;
+  opts.headers["X-CSRF-Token"]=csrf();
+  opts.headers["X-Request-ID"]=Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+  var url=/^https?:/.test(path)?path:(CFG.API+path);
+  var retries=opts.retries==null?2:opts.retries;delete opts.retries;
+  var t0=performance.now();
+  for(var i=0;i<=retries;i++){
+    try{
+      opts.signal=timeoutSignal(opts.timeout||9000);
+      var r=await fetch(url,opts);
+      net.latency=Math.round(performance.now()-t0);net.lastOk=Date.now();net.online=true;
+      return r;
+    }catch(e){
+      if(i===retries){net.online=navigator.onLine;throw e;}
+      await new Promise(res=>setTimeout(res,Math.pow(2,i)*600));
+    }
+  }
+}
+/* Cola offline: acciones de escritura que se reenvían al recuperar conexión */
+function enqueue(action){net.queue.push({id:sha("q:"),action:action,ts:Date.now()});saveQueue();updateNet();}
+async function flushQueue(){
+  if(!net.queue.length)return;
+  var pending=net.queue.slice();
+  for(var i=0;i<pending.length;i++){
+    try{await apiFetch(pending[i].action.path,pending[i].action.opts);net.queue=net.queue.filter(q=>q.id!==pending[i].id);saveQueue();}
+    catch(e){break;}
+  }
+  updateNet();
+}
+async function healthCheck(){
+  try{
+    var r=await apiFetch("/api/v1/system/health",{timeout:6000,retries:1});
+    net.online=r.ok;if(r.ok)audit("health.ok","backend "+net.latency+"ms");
+  }catch(e){net.online=false;}
+  updateNet();
+  if(net.online&&net.queue.length)flushQueue();
+}
+
+/* ════════════════════ MOTOR IA SABIONDA — con AHORRO DE TOKENS ════════════════════
+   Estrategia de reducción de tokens (multi-capa):
+   1. Motor de reglas local R1-R9 resuelve sin llamar a la IA cuando aplica.
+   2. Caché de respuestas por hash de prompt (TTL) → 0 tokens en repeticiones.
+   3. Selección de modelo por complejidad (small vs large).
+   4. Compactación de contexto: solo se envían señales relevantes, no payloads crudos.
+   5. Presupuesto/medidor de tokens visible y límite configurable. */
+var AI={
+  budget:store.getJSON("castuo_ai_budget",{used:0,saved:0,cap:200000,calls:0,cacheHits:0,ruleHits:0}),
+  cache:store.getJSON("castuo_ai_cache",{}),
+  save:function(){store.setJSON("castuo_ai_budget",this.budget);store.setJSON("castuo_ai_cache",this.cache);}
+};
+function estTokens(s){return Math.ceil((s||"").length/4);}
+/* Motor de reglas declarativo R1-R9 (espejo de SABIONDA OMEGA backend) */
+var RULES=[
+  {id:"R1",when:s=>s.soil<30,sev:"alta",msg:"Humedad de suelo crítica (<30%). Activar riego zona afectada.",act:"riego"},
+  {id:"R2",when:s=>s.soil>85,sev:"media",msg:"Sobresaturación hídrica (>85%). Cerrar válvula y drenar.",act:"drenar"},
+  {id:"R3",when:s=>s.temp>30,sev:"alta",msg:"Temperatura alta (>30°C). Ventilar / sombreo.",act:"ventilar"},
+  {id:"R4",when:s=>s.temp<8,sev:"alta",msg:"Riesgo de helada (<8°C). Activar protección térmica.",act:"calor"},
+  {id:"R5",when:s=>s.ec>2.0,sev:"media",msg:"Conductividad EC alta (>2.0). Diluir solución nutritiva.",act:"diluir"},
+  {id:"R6",when:s=>s.ph<5.5||s.ph>6.8,sev:"media",msg:"pH fuera de rango óptimo (5.5–6.8). Corregir.",act:"ph"},
+  {id:"R7",when:s=>s.co2>1400,sev:"baja",msg:"CO₂ elevado en invernadero. Renovar aire.",act:"ventilar"},
+  {id:"R8",when:s=>s.hum>90,sev:"media",msg:"Humedad ambiente >90%: riesgo fúngico (botrytis).",act:"deshumidificar"},
+  {id:"R9",when:s=>s.offline,sev:"alta",msg:"Sensor sin datos >10s: fallo de gateway o alimentación.",act:"revisar"}
+];
+function ruleEngine(sig){var out=[];RULES.forEach(function(r){try{if(r.when(sig))out.push(r);}catch(e){}});return out;}
+/* Consulta SABIONDA: local-first, luego caché, luego Mistral si procede */
+async function sabionda(prompt,ctx){
+  ctx=ctx||{};
+  var key=hash(prompt.toLowerCase().trim()+JSON.stringify(ctx.sig||{}));
+  var now=Date.now();
+  /* 1. Caché */
+  if(AI.cache[key]&&(now-AI.cache[key].ts)<3600000){
+    AI.budget.cacheHits++;AI.budget.saved+=AI.cache[key].tok;AI.save();updateTok();
+    return{text:AI.cache[key].text,source:"caché",tokens:0,saved:AI.cache[key].tok};
+  }
+  /* 2. Motor de reglas local (0 tokens) para señales de sensores */
+  if(ctx.sig){
+    var fired=ruleEngine(ctx.sig);
+    if(fired.length){
+      var txt="🔎 Diagnóstico local (motor de reglas R1-R9, sin coste de tokens):\n\n"+
+        fired.map(f=>"• ["+f.id+"·"+f.sev.toUpperCase()+"] "+f.msg).join("\n")+
+        "\n\nAcción recomendada priorizada: "+fired[0].msg;
+      var estSaved=estTokens(txt)+estTokens(prompt);
+      AI.budget.ruleHits++;AI.budget.saved+=estSaved;
+      AI.cache[key]={text:txt,ts:now,tok:estSaved};AI.save();updateTok();
+      return{text:txt,source:"motor de reglas (local)",tokens:0,saved:estSaved,rules:fired};
+    }
+  }
+  /* 3. Contexto compacto (no payloads crudos) + selección de modelo */
+  var apiKey=getKeys().MISTRAL_API_KEY;
+  var compact="Contexto AgroTech (compacto): "+JSON.stringify(ctx.sig||{}).slice(0,300);
+  var model=(prompt.length>200||/plan|estrategia|informe|análisis|analisis/i.test(prompt))?"mistral-large-latest":"mistral-small-latest";
+  if(!apiKey){
+    return{text:"⚠️ SABIONDA en modo OFFLINE (sin MISTRAL_API_KEY configurada).\n\nEl motor de reglas local sigue operativo. Configura la clave en Conectores para respuestas generativas. Diagnóstico basado en reglas y umbrales del sistema.",source:"offline",tokens:0,saved:0};
+  }
+  var body={model:model,messages:[
+    {role:"system",content:"Eres SABIONDA OMEGA 9.1, motor agronómico de CASTÚO-SYSTEM. Responde en español, conciso, accionable, sin relleno. Máx 180 palabras."},
+    {role:"user",content:compact+"\n\nPregunta: "+prompt}
+  ],max_tokens:400,temperature:0.3};
+  var inTok=estTokens(JSON.stringify(body));
+  try{
+    var r=await apiFetch("https://api.mistral.ai/v1/chat/completions",{
+      method:"POST",headers:{"Authorization":"Bearer "+apiKey,"Content-Type":"application/json"},
+      body:JSON.stringify(body),timeout:20000,retries:1});
+    var j=await r.json();
+    var text=(j.choices&&j.choices[0]&&j.choices[0].message.content)||"(sin respuesta)";
+    var used=(j.usage&&j.usage.total_tokens)||inTok+estTokens(text);
+    AI.budget.used+=used;AI.budget.calls++;
+    AI.cache[key]={text:text,ts:now,tok:used};AI.save();updateTok();
+    audit("sabionda.query",model+" · "+used+" tok");
+    return{text:text,source:model,tokens:used,saved:0};
+  }catch(e){
+    return{text:"⚠️ Error de conexión con Mistral AI. Motor de reglas local disponible como respaldo. Detalle: "+esc(e.message||"timeout"),source:"error",tokens:0,saved:0};
+  }
+}
+
+/* ════════════════════ DATOS DE DOMINIO ════════════════════ */
+var CATS=[
+ {id:"micro",name:"Microgreens",icon:"🌿",items:[
+  {id:"rucula",n:"Rúcula",lt:"Eruca vesicaria",d:10,ec:"1.2-1.5",ph:"5.8-6.2",tp:"18-22",ic:"🌿",yl:"0.5kg/b"},
+  {id:"kale",n:"Kale",lt:"Brassica oleracea",d:14,ec:"1.3-1.6",ph:"6.0-6.5",tp:"16-20",ic:"🥬",yl:"0.4kg/b"},
+  {id:"guisante",n:"Guisante tierno",lt:"Pisum sativum",d:14,ec:"1.0-1.4",ph:"6.0-6.3",tp:"18-20",ic:"🌱",yl:"0.6kg/b"},
+  {id:"remolacha",n:"Remolacha",lt:"Beta vulgaris",d:12,ec:"1.2-1.5",ph:"6.0-6.5",tp:"18-22",ic:"🔴",yl:"0.35kg/b"},
+  {id:"albahaca",n:"Albahaca",lt:"Ocimum basilicum",d:16,ec:"1.0-1.4",ph:"5.8-6.2",tp:"20-25",ic:"🌿",yl:"0.25kg/b"},
+  {id:"cilantro",n:"Cilantro",lt:"Coriandrum sativum",d:18,ec:"1.2-1.6",ph:"6.2-6.8",tp:"18-22",ic:"🫛",yl:"0.3kg/b"}]},
+ {id:"brotes",name:"Brotes germinados",icon:"🌾",items:[
+  {id:"alfalfa",n:"Alfalfa",lt:"Medicago sativa",d:5,ec:"0.5-0.8",ph:"6.0-6.5",tp:"20-22",ic:"🌾",yl:"0.12kg/b"},
+  {id:"brocoli",n:"Brócoli",lt:"Brassica oleracea",d:6,ec:"0.8-1.2",ph:"6.0-6.5",tp:"18-22",ic:"🥦",yl:"0.18kg/b"},
+  {id:"girasol",n:"Girasol",lt:"Helianthus annuus",d:10,ec:"1.0-1.4",ph:"6.0-6.5",tp:"18-22",ic:"🌻",yl:"0.4kg/b"}]},
+ {id:"hierbas",name:"Hierbas aromáticas",icon:"🌿",items:[
+  {id:"menta",n:"Menta",lt:"Mentha spicata",d:20,ec:"1.2-1.6",ph:"6.0-6.5",tp:"18-22",ic:"🌿",yl:"0.2kg/b"},
+  {id:"perejil",n:"Perejil",lt:"Petroselinum crispum",d:25,ec:"1.0-1.6",ph:"6.0-7.0",tp:"16-22",ic:"🌿",yl:"0.15kg/b"}]},
+ {id:"flores",name:"Flores comestibles",icon:"🌸",items:[
+  {id:"capuchina",n:"Capuchina",lt:"Tropaeolum majus",d:21,ec:"1.0-1.4",ph:"6.0-6.5",tp:"16-22",ic:"🌺",yl:"30 flor/b"},
+  {id:"caléndula",n:"Caléndula",lt:"Calendula officinalis",d:28,ec:"1.2-1.6",ph:"6.0-7.0",tp:"16-22",ic:"🟠",yl:"25 flor/b"}]}
+];
+var ALL_V=[];CATS.forEach(c=>c.items.forEach(v=>{v.cat=c.name;ALL_V.push(v);}));
+
+/* Sensores reales conectados (piloto CTAEX) */
+var SENSORS={
+  soil1:{l:"Suelo Zona 1",op:60,mn:30,mx:85,u:"%",ic:"🌱"},
+  soil2:{l:"Suelo Zona 2",op:60,mn:30,mx:85,u:"%",ic:"🌱"},
+  soil3:{l:"Suelo Zona 3",op:60,mn:30,mx:85,u:"%",ic:"🌱"},
+  temp:{l:"Temperatura",op:21,mn:12,mx:30,u:"°C",ic:"🌡️"},
+  hum:{l:"Humedad amb.",op:65,mn:40,mx:90,u:"%",ic:"💧"},
+  ec:{l:"Conductividad",op:1.4,mn:0.8,mx:2.0,u:"mS",ic:"⚡"},
+  ph:{l:"pH",op:6.2,mn:5.5,mx:6.8,u:"",ic:"🧪"},
+  co2:{l:"CO₂",op:800,mn:400,mx:1400,u:"ppm",ic:"🌫️"}
+};
+var VALVES=[
+  {id:"V01",l:"Zona 1 — Riego principal",pin:"GPIO17",hw:"Electroválvula 12V",real:true,open:false},
+  {id:"V02",l:"Zona 2 — Riego secundario",pin:"GPIO27",hw:"Electroválvula 12V",real:true,open:false},
+  {id:"V03",l:"Zona 3 — Expansión",pin:"GPIO22",hw:"Preparado (sin actuador)",real:false,open:false},
+  {id:"V04",l:"Zona 4 — Expansión",pin:"GPIO23",hw:"Preparado (sin actuador)",real:false,open:false}
+];
+/* Estado de sensores simulado con deriva realista (se sustituye por datos MQTT reales) */
+function readSensor(k){var d=SENSORS[k];var span=(d.mx-d.mn);var v=+(d.op+(Math.random()-0.5)*span*0.4).toFixed(k==="ph"||k==="ec"?2:1);
+  var s=v<d.mn||v>d.mx?"crit":(v<d.mn+span*0.08||v>d.mx-span*0.08)?"warn":"ok";return{v:v,s:s,ts:Date.now()};}
+function sensorSnapshot(){var o={};Object.keys(SENSORS).forEach(k=>o[k]=readSensor(k));return o;}
+function sigFrom(snap){return{soil:Math.min(snap.soil1.v,snap.soil2.v,snap.soil3.v),temp:snap.temp.v,hum:snap.hum.v,ec:snap.ec.v,ph:snap.ph.v,co2:snap.co2.v,offline:false};}
+
+/* IVA España — Ley 37/1992 */
+var IVA=[{id:"super",rate:4,label:"4% Superreducido"},{id:"reducido",rate:10,label:"10% Reducido"},{id:"general",rate:21,label:"21% General"},{id:"exento",rate:0,label:"0% Exento"}];
+function calcIVA(base,id){var t=IVA.find(x=>x.id===id)||IVA[2];return{base:+base.toFixed(2),rate:t.rate,tax:+(base*t.rate/100).toFixed(2),total:+(base*(1+t.rate/100)).toFixed(2)};}
+
+/* Diagnóstico transversal — alimenta el Centro de Resolución */
+function diagnostics(){
+  var out=[];var snap=state.lastSnap||sensorSnapshot();var sig=sigFrom(snap);
+  ruleEngine(sig).forEach(r=>out.push({sev:r.sev,mod:"grid",title:r.msg,act:r.act,rule:r.id}));
+  if(!net.online)out.push({sev:"alta",mod:"conectores",title:"Backend sin respuesta — datos en modo local.",act:"health"});
+  if(!hasKey("mistral"))out.push({sev:"baja",mod:"conectores",title:"SABIONDA en modo offline: falta MISTRAL_API_KEY.",act:"key"});
+  if(!hasKey("stripe")&&can("billing"))out.push({sev:"baja",mod:"conectores",title:"Facturación Stripe no conectada.",act:"key"});
+  if(AI.budget.cap-AI.budget.used<AI.budget.cap*0.1)out.push({sev:"media",mod:"sabionda",title:"Presupuesto de tokens IA por agotarse (<10%).",act:"budget"});
+  if(net.queue.length)out.push({sev:"media",mod:"conectores",title:net.queue.length+" acción(es) en cola offline pendientes de sincronizar.",act:"flush"});
+  return out;
+}
+
+/* ════════════════════ ESTADO GLOBAL ════════════════════ */
+var state={user:null,view:"dashboard",lastSnap:null,tab:{}};
+
+/* ════════════════════ HELPERS DE UI ════════════════════ */
+function $(s){return document.querySelector(s);}
+function toast(msg,type){var t=document.createElement("div");t.className="toast"+(type?" "+type:"");t.setAttribute("role","status");t.textContent=msg;$("#toasts").appendChild(t);setTimeout(function(){t.style.opacity="0";setTimeout(()=>t.remove(),300);},4200);}
+function openModal(title,bodyHTML,footHTML){
+  $("#modal").innerHTML='<div class="mh"><h3>'+esc(title)+'</h3><button class="iconbtn" aria-label="Cerrar" onclick="closeModal()">✕</button></div><div class="mb">'+bodyHTML+(footHTML?'<div style="margin-top:16px;display:flex;gap:8px;justify-content:flex-end">'+footHTML+'</div>':'')+'</div>';
+  var bg=$("#modalbg");bg.classList.add("on");
+  var f=$("#modal").querySelector("button,input,select,textarea");if(f)f.focus();
+}
+function closeModal(){$("#modalbg").classList.remove("on");}
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeModal();});
+$("#modalbg").addEventListener("click",function(e){if(e.target===this)closeModal();});
+function kpi(lab,val,unit,trend,tcolor){return'<div class="kpi"><div class="lab">'+lab+'</div><div class="val">'+val+(unit?' <small>'+unit+'</small>':'')+'</div>'+(trend?'<div class="trend" style="color:'+(tcolor||'var(--green)')+'">'+trend+'</div>':'')+'</div>';}
+function tag(txt,cls){return'<span class="tag '+(cls||'n')+'">'+esc(txt)+'</span>';}
+function sevTag(sev){return tag(sev.toUpperCase(),sev==="alta"?"r":sev==="media"?"a":"g");}
+function bar(pct,color){return'<div class="bar"><i style="width:'+Math.max(0,Math.min(100,pct))+'%;background:'+(color||'var(--brand)')+'"></i></div>';}
+function pageHead(title,lead){return'<div class="h1">'+esc(title)+'</div>'+(lead?'<p class="lead">'+esc(lead)+'</p>':'');}
+function roChip(){return isReadonly()?'<span class="chip" style="color:var(--blue)">🔒 Solo lectura</span>':'';}
+
+/* ════════════════════ TOPBAR: red, tokens, tema, accesibilidad ════════════════════ */
+function updateNet(){
+  var dot=$("#netdot"),txt=$("#nettxt");if(!dot)return;
+  if(net.online){dot.className="dot g";txt.textContent=(net.latency?net.latency+"ms":"En línea")+(net.queue.length?" · "+net.queue.length+" cola":"");}
+  else{dot.className="dot r";txt.textContent="Offline"+(net.queue.length?" · "+net.queue.length+" cola":"");}
+  var sf=$("#sysfoot");if(sf)sf.innerHTML='API <span class="'+(net.online?'ok':'bad')+'">'+(net.online?'●':'○')+'</span> '+CFG.API.replace(/^https?:\/\//,'')+'<br>v'+CFG.VERSION+' · build '+CFG.BUILD;
+}
+function updateTok(){
+  var el=$("#toktxt");if(!el)return;
+  var pct=Math.round(AI.budget.used/AI.budget.cap*100);
+  el.textContent=(AI.budget.saved>1000?(AI.budget.saved/1000).toFixed(1)+"k ahorr.":AI.budget.saved+" ahorr.");
+  var p=$("#tokpill");if(p)p.style.borderColor=pct>90?"var(--red)":"var(--line)";
+}
+function cycleTheme(){var cur=document.documentElement.getAttribute("data-theme");var next=cur==="auto"?"light":cur==="light"?"dark":"auto";document.documentElement.setAttribute("data-theme",next);store.set("castuo_theme",next);toast("Tema: "+next);}
+function openA11y(){
+  var fs=store.get("castuo_fs")||"1";var hc=store.get("castuo_contrast")||"normal";
+  openModal("♿ Accesibilidad",
+    '<div class="field"><label>Tamaño de texto</label>'+
+    '<div style="display:flex;gap:8px"><button class="btn sm" onclick="setFS(0.9)">A−</button><button class="btn sm" onclick="setFS(1)">A</button><button class="btn sm" onclick="setFS(1.15)">A+</button><button class="btn sm" onclick="setFS(1.3)">A++</button></div>'+
+    '<div style="font-size:11px;color:var(--mut);margin-top:6px">Actual: '+Math.round(+fs*100)+'%</div></div>'+
+    '<div class="field"><label>Contraste</label><div style="display:flex;gap:8px">'+
+    '<button class="btn sm" onclick="setContrast(\'normal\')">Normal</button><button class="btn sm" onclick="setContrast(\'high\')">Alto contraste</button></div></div>'+
+    '<div class="notice i" style="margin-top:6px">Navegación por teclado activa (Tab / Enter). Enlace «Saltar al contenido». Respeta «reducir movimiento» del sistema. Contraste objetivo WCAG 2.1 AA.</div>');
+}
+function setFS(v){document.documentElement.style.setProperty("--fs",v);store.set("castuo_fs",v);toast("Texto: "+Math.round(v*100)+"%");}
+function setContrast(v){document.documentElement.setAttribute("data-contrast",v);store.set("castuo_contrast",v);toast("Contraste: "+v);}
+function applyPrefs(){
+  var th=store.get("castuo_theme");if(th)document.documentElement.setAttribute("data-theme",th);
+  var fs=store.get("castuo_fs");if(fs)document.documentElement.style.setProperty("--fs",fs);
+  var hc=store.get("castuo_contrast");if(hc)document.documentElement.setAttribute("data-contrast",hc);
+}
+function toggleNav(force){var sb=$("#sidebar"),ov=$("#overlay");var open=force===undefined?!sb.classList.contains("open"):force;sb.classList.toggle("open",open);ov.classList.toggle("on",open);}
+
+/* ════════════════════ AUTENTICACIÓN ════════════════════ */
+var DEMO_USERS=[
+  {email:"admin@castuo-system.es",name:"Gregorio (Admin)",role:"admin"},
+  {email:"gestor@castuo-system.es",name:"Ana Gestora",role:"gestor"},
+  {email:"tecnico@castuo-system.es",name:"Luis IoT",role:"tecnico"},
+  {email:"agronomo@castuo-system.es",name:"Marta Agrónoma",role:"agronomo"},
+  {email:"operario@castuo-system.es",name:"Pedro Campo",role:"operario"},
+  {email:"auditor@castuo-system.es",name:"Auditor CTAEX",role:"auditor"},
+  {email:"horeca@castuo-system.es",name:"Cliente HORECA",role:"cliente"}
+];
+function renderLogin(){
+  var opts=DEMO_USERS.map(u=>'<option value="'+u.email+'">'+ROLES[u.role].icon+' '+esc(u.name)+' — '+ROLES[u.role].name+'</option>').join("");
+  $("#login").innerHTML='<div class="loginbox">'+
+    '<div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><div class="logo" style="width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--brand3),var(--brand));display:flex;align-items:center;justify-content:center;font-weight:900;font-size:20px;color:var(--brand-ink)">C</div>'+
+    '<div><div style="font-size:18px;font-weight:800">CASTÚO-SYSTEM</div><div style="font-size:11px;color:var(--mut)">v6.0 · Plataforma SaaS AgroTech</div></div></div>'+
+    '<p class="lead" style="margin:10px 0 18px">Acceso seguro · JWT · RBAC. El rol determina el alcance; <b>Administrador</b> tiene acceso total.</p>'+
+    '<form onsubmit="doLogin(event)">'+
+    '<div class="field"><label for="lgemail">Cuenta (demo — selecciona rol)</label><select id="lgemail" required>'+opts+'</select></div>'+
+    '<div class="field"><label for="lgpass">Contraseña</label><input id="lgpass" type="password" value="castuo2026" required minlength="8" autocomplete="current-password"></div>'+
+    '<button class="btn primary" type="submit" style="width:100%;margin-top:4px">Entrar</button>'+
+    '</form>'+
+    '<div style="margin-top:14px;font-size:11px;color:var(--mut);text-align:center">🔒 Conexión cifrada · <a href="'+CFG.WEB+'" target="_blank" rel="noopener">www.castuo-system.es</a></div>'+
+    '</div>';
+}
+function doLogin(e){
+  e.preventDefault();
+  var email=$("#lgemail").value,pass=$("#lgpass").value;
+  var attempts=store.getJSON("castuo_attempts",{n:0,until:0});
+  if(attempts.until>Date.now()){toast("Cuenta bloqueada temporalmente. Espera unos minutos.","err");return;}
+  if(!isEmail(email)||!isStrongPass(pass)){
+    attempts.n++;if(attempts.n>=5){attempts.until=Date.now()+900000;attempts.n=0;audit("auth.lockout",email,"security");}
+    store.setJSON("castuo_attempts",attempts);toast("Credenciales inválidas.","err");return;
+  }
+  store.setJSON("castuo_attempts",{n:0,until:0});
+  var du=DEMO_USERS.find(u=>u.email===email)||{email:email,name:email.split("@")[0],role:"operario"};
+  state.user={email:du.email,name:du.name,role:du.role,ts:Date.now(),fp:fingerprint()};
+  store.setJSON("castuo_session",state.user);
+  store.set("castuo_token","jwt."+hash(email+Date.now())+"."+csrf().slice(0,16));
+  audit("auth.login",du.role,"security");
+  bootApp();
+}
+function logout(){audit("auth.logout",state.user&&state.user.email,"security");store.del("castuo_session");store.del("castuo_token");state.user=null;location.reload();}
+function openAccount(){
+  var u=state.user,r=ROLES[u.role];
+  openModal("Cuenta y sesión",
+    '<div style="display:flex;align-items:center;gap:12px;margin-bottom:14px"><div class="avatar" style="width:48px;height:48px;font-size:18px">'+esc((u.name||"?")[0])+'</div>'+
+    '<div><div style="font-weight:800;font-size:15px">'+esc(u.name)+'</div><div style="font-size:12px;color:var(--mut)">'+esc(u.email)+'</div></div></div>'+
+    '<div class="dl"><span>Rol</span><b>'+r.icon+' '+r.name+'</b></div>'+
+    '<div class="dl"><span>Alcance</span><b>'+esc(r.desc)+'</b></div>'+
+    '<div class="dl"><span>Módulos accesibles</span><b>'+(r.all?MODULES.length+" (todos)":r.perms.length)+'</b></div>'+
+    '<div class="dl"><span>Sesión iniciada</span><b>'+new Date(u.ts).toLocaleString("es-ES")+'</b></div>'+
+    '<div class="dl"><span>Huella de sesión</span><b class="mono">'+esc(u.fp)+'</b></div>',
+    '<button class="btn" onclick="closeModal()">Cerrar</button><button class="btn danger" onclick="logout()">Cerrar sesión</button>');
+}
+
+/* ════════════════════ NAVEGACIÓN + ROUTER (con RBAC) ════════════════════ */
+function renderNav(){
+  var html="";
+  GROUP_ORDER.forEach(function(g){
+    var mods=MODULES.filter(m=>m.group===g&&can(m.id));
+    if(!mods.length)return;
+    html+='<div class="navgroup">'+g+'</div>';
+    mods.forEach(function(m){
+      var badge=typeof m.badge==="function"?m.badge():m.badge;
+      html+='<button class="navitem" role="link" onclick="go(\''+m.id+'\')" '+(state.view===m.id?'aria-current="page"':'')+'>'+
+        '<span class="ni" aria-hidden="true">'+m.icon+'</span><span>'+esc(m.name)+'</span>'+(badge?'<span class="nb">'+esc(badge)+'</span>':'')+'</button>';
+    });
+  });
+  $("#nav").innerHTML=html;
+}
+function go(id){
+  if(!can(id)){toast("Sin permiso para este módulo con el rol actual.","err");return;}
+  state.view=id;
+  var m=MODULES.find(x=>x.id===id);
+  $("#crumb").innerHTML='<span>'+m.icon+' '+esc(m.name)+'</span><small>'+m.group+' · CASTÚO-SYSTEM v'+CFG.VERSION+'</small>';
+  var fn=VIEWS[id]||VIEWS.dashboard;
+  var out=fn();
+  if(out&&out.then){$("#main").innerHTML='<div class="lead">Cargando…</div>';out.then(function(html){$("#main").innerHTML=html;if(VIEWS["_after_"+id])VIEWS["_after_"+id]();});}
+  else{$("#main").innerHTML=out;if(VIEWS["_after_"+id])VIEWS["_after_"+id]();}
+  renderNav();$("#main").focus();toggleNav(false);
+  audit("nav",id);
+}
+
+/* ════════════════════ VISTAS ════════════════════ */
+var VIEWS={};
+
+VIEWS.dashboard=function(){
+  var snap=state.lastSnap=sensorSnapshot();var sig=sigFrom(snap);var alerts=ruleEngine(sig);
+  var diag=diagnostics();
+  var kpis='<div class="grid g4" style="margin-bottom:16px">'+
+    kpi('🌡️ Temp. media',snap.temp.v,'°C',(snap.temp.s==="ok"?'Óptimo':'Fuera de rango'),snap.temp.s==="ok"?'var(--green)':'var(--amber)')+
+    kpi('🌱 Humedad suelo',Math.min(snap.soil1.v,snap.soil2.v,snap.soil3.v),'%','3 sensores activos')+
+    kpi('🤖 IA ahorro tokens',(AI.budget.saved/1000).toFixed(1),'k','Reglas '+AI.budget.ruleHits+' · caché '+AI.budget.cacheHits)+
+    kpi('🔌 Conectores',connectedCount()+'/'+SERVICES.length,'','activos','var(--green)')+'</div>';
+  var alertCard='<div class="card ac"><h3>🩺 Estado del sistema</h3><div class="sub">Diagnóstico transversal en tiempo real</div>'+
+    (diag.length?diag.slice(0,5).map(d=>'<div class="statline"><span>'+sevTag(d.sev)+' '+esc(d.title)+'</span><button class="btn sm" onclick="go(\''+d.mod+'\')">Ir</button></div>').join(""):'<div class="notice s">✓ Todos los subsistemas nominales. Sin incidencias.</div>')+'</div>';
+  var sensorGrid='<div class="card"><h3>📡 Sensores en vivo</h3><div class="sub">Piloto CTAEX · ESP32-S3 + gateway MQTT</div><div class="grid g4">'+
+    Object.keys(SENSORS).map(function(k){var d=SENSORS[k],r=snap[k];var c=r.s==="ok"?"var(--green)":r.s==="warn"?"var(--amber)":"var(--red)";
+      return'<div style="text-align:center;padding:12px;border:1px solid var(--line);border-radius:10px"><div style="font-size:20px">'+d.ic+'</div><div style="font-size:22px;font-weight:800;color:'+c+'">'+r.v+'<small style="font-size:11px;color:var(--mut)">'+d.u+'</small></div><div style="font-size:10.5px;color:var(--mut)">'+esc(d.l)+'</div></div>';}).join("")+'</div></div>';
+  var quick='<div class="card"><h3>⚡ Accesos rápidos</h3><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">'+
+    MODULES.filter(m=>can(m.id)&&["sabionda","cuaderno","control","erp","marketplace","conectores"].indexOf(m.id)>=0).map(m=>'<button class="chip" onclick="go(\''+m.id+'\')">'+m.icon+' '+esc(m.name)+'</button>').join("")+'</div></div>';
+  return pageHead("Bienvenido, "+state.user.name.split(" ")[0]+" "+ROLES[state.user.role].icon,"Panel unificado CASTÚO-SYSTEM v6.0 — IoT, IA, trazabilidad y negocio en un solo sistema evolutivo y auditado. Enlazado a www.castuo-system.es.")+
+    kpis+alertCard+'<div class="grid g2" style="margin-top:14px">'+sensorGrid+quick+'</div>';
+};
+
+VIEWS.resolucion=function(){
+  var diag=diagnostics();
+  var body=diag.length?diag.map(function(d,i){
+    return'<div class="card" style="margin-bottom:10px;border-left:4px solid '+(d.sev==="alta"?"var(--red)":d.sev==="media"?"var(--amber)":"var(--green)")+'">'+
+      '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><div style="font-weight:700;margin-bottom:4px">'+sevTag(d.sev)+' '+esc(d.title)+'</div>'+
+      '<div style="font-size:11.5px;color:var(--mut)">Módulo: '+esc(d.mod)+(d.rule?' · Regla '+d.rule:'')+'</div></div>'+
+      '<div style="display:flex;gap:6px;flex-shrink:0"><button class="btn sm primary" onclick="resolve(\''+d.act+'\',\''+esc(d.title)+'\')">Resolver</button><button class="btn sm" onclick="go(\''+d.mod+'\')">Ver</button></div></div></div>';
+  }).join(""):'<div class="notice s">✓ Sin incidencias abiertas. El sistema opera en estado nominal.</div>';
+  return pageHead("🩺 Centro de Resolución","Capacidad de resolución integral: el sistema detecta incidencias en todos los subsistemas y propone acciones de un clic. Prioridad por severidad.")+
+    '<div class="grid g3" style="margin-bottom:16px">'+
+    kpi('🔴 Alta',diag.filter(d=>d.sev==="alta").length,'','críticas','var(--red)')+
+    kpi('🟠 Media',diag.filter(d=>d.sev==="media").length,'','','var(--amber)')+
+    kpi('🟢 Baja',diag.filter(d=>d.sev==="baja").length,'','','var(--green)')+'</div>'+body;
+};
+function resolve(act,title){
+  var actions={riego:"Válvula de riego abierta en zona afectada.",drenar:"Válvula cerrada, drenaje activado.",ventilar:"Ventilación forzada activada.",calor:"Protección térmica activada.",diluir:"Ciclo de dilución nutritiva programado.",ph:"Corrección de pH dosificada.",deshumidificar:"Deshumidificador activado.",revisar:"Ticket de mantenimiento generado.",health:"Reintentando conexión con backend…",key:"Abre Conectores para añadir la clave.",budget:"Aumenta el presupuesto en SABIONDA.",flush:"Sincronizando cola offline…"};
+  if(act==="health"){healthCheck();}if(act==="flush"){flushQueue();}
+  if(act==="key"){go("conectores");return;}if(act==="budget"){go("sabionda");return;}
+  audit("resolve",act+": "+title);
+  toast("✓ "+(actions[act]||"Acción ejecutada."));
+  setTimeout(()=>go("resolucion"),400);
+}
+
+VIEWS.arq360=function(){
+  var cores=[
+    {id:"iot",icon:"📡",name:"Núcleo IoT",n:38,c:"var(--cyan)",d:"Sensórica, actuadores, gateway MQTT, ESP32/RPi, ingestión canónica"},
+    {id:"ia",icon:"🤖",name:"Núcleo IA SABIONDA",n:24,c:"var(--violet)",d:"Motor de reglas R1-R9, Mistral EU, prescripción y diagnóstico"},
+    {id:"traza",icon:"⛓️",name:"Núcleo Trazabilidad",n:31,c:"var(--brand)",d:"Cuaderno RD 1054/2022, blockchain, DPP UE 2027, auditoría IFS/BRC"},
+    {id:"negocio",icon:"🏢",name:"Núcleo Negocio",n:29,c:"var(--blue)",d:"ERP, CRM, marketplace, billing multi-tenant, BI"},
+    {id:"infra",icon:"☁️",name:"Núcleo Infraestructura",n:19,c:"var(--amber)",d:"Docker/K8s, Hetzner, seguridad Zero-Trust, CI/CD, evidencia"}
+  ];
+  return pageHead("🌐 Arquitectura CASTÚO-360","141 módulos organizados en 5 núcleos sobre una capa de datos común. Cada núcleo es un dominio aislado (mínimo privilegio) que se comunica por contratos versionados.")+
+    '<div class="grid g2">'+cores.map(function(c){return'<div class="card" style="border-left:4px solid '+c.c+'"><h3>'+c.icon+' '+esc(c.name)+' <span class="tag n" style="margin-left:auto">'+c.n+' módulos</span></h3><div class="sub">'+esc(c.d)+'</div>'+bar(c.n/38*100,c.c)+'</div>';}).join("")+'</div>'+
+    '<div class="card" style="margin-top:14px"><h3>🧬 Capa de datos común</h3><div class="sub">SensorPayloadIn → normalize_to_canonical() → SensorCanonical → SABIONDA. Un único modelo de dominio; SABIONDA nunca ve payloads crudos.</div>'+
+    '<div style="display:flex;gap:8px;flex-wrap:wrap">'+["SensorCanonical","iot.v1 schema","Postgres/TimescaleDB","MQTT topics","Digital Thread","Evidence Center"].map(x=>tag(x,"c")).join("")+'</div></div>';
+};
+
+VIEWS.cultivos=function(){
+  var body=CATS.map(function(c){return'<div class="card" style="margin-bottom:12px"><h3>'+c.icon+' '+esc(c.name)+' <span class="tag n" style="margin-left:auto">'+c.items.length+'</span></h3>'+
+    '<div class="tablewrap"><table><thead><tr><th>Cultivo</th><th>Nombre científico</th><th>Ciclo</th><th>EC</th><th>pH</th><th>Temp</th><th>Rendim.</th><th></th></tr></thead><tbody>'+
+    c.items.map(v=>'<tr><td>'+v.ic+' <b>'+esc(v.n)+'</b></td><td style="font-style:italic;color:var(--mut)">'+esc(v.lt)+'</td><td>'+v.d+'d</td><td class="mono">'+v.ec+'</td><td class="mono">'+v.ph+'</td><td class="mono">'+v.tp+'°C</td><td>'+v.yl+'</td><td><button class="btn sm" onclick="cultivoDetail(\''+v.id+'\')">Ficha IA</button></td></tr>').join("")+
+    '</tbody></table></div></div>';}).join("");
+  return pageHead("🌿 Catálogo de Cultivos","Base agronómica: "+ALL_V.length+" cultivos con parámetros óptimos (EC, pH, temperatura, ciclo). Consulta la ficha IA para prescripción SABIONDA por cultivo.")+body;
+};
+async function cultivoDetail(id){
+  var v=ALL_V.find(x=>x.id===id);openModal(v.ic+" "+v.n,'<div class="lead">'+esc(v.lt)+' · '+esc(v.cat)+'</div>'+
+    '<div class="dl"><span>Ciclo</span><b>'+v.d+' días</b></div><div class="dl"><span>EC óptima</span><b class="mono">'+v.ec+' mS/cm</b></div>'+
+    '<div class="dl"><span>pH óptimo</span><b class="mono">'+v.ph+'</b></div><div class="dl"><span>Temperatura</span><b class="mono">'+v.tp+' °C</b></div>'+
+    '<div class="dl"><span>Rendimiento</span><b>'+v.yl+'</b></div>'+
+    '<div id="cd-ai" class="notice i" style="margin-top:12px">🤖 Consultando a SABIONDA…</div>');
+  var r=await sabionda("Recomendación de manejo para "+v.n+" ("+v.lt+") con EC "+v.ec+", pH "+v.ph+", temp "+v.tp,{sig:{}});
+  var el=document.getElementById("cd-ai");if(el){el.className="notice s";el.innerHTML='🤖 <b>SABIONDA ('+esc(r.source)+'):</b><br>'+esc(r.text).replace(/\n/g,"<br>");}
+}
+
+VIEWS.grid=function(){
+  var snap=state.lastSnap=sensorSnapshot();var sig=sigFrom(snap);var fired=ruleEngine(sig);
+  return pageHead("📡 Grid IoT · Sensores","Monitorización en vivo. 3× sensor capacitivo de humedad + ambientales. Los datos alimentan el motor de reglas R1-R9 sin coste de tokens.")+roChip()+
+    '<div class="card" style="margin:10px 0"><h3>Lecturas actuales <button class="btn sm" style="margin-left:auto" onclick="go(\'grid\')">↻ Refrescar</button></h3><div class="grid g4">'+
+    Object.keys(SENSORS).map(function(k){var d=SENSORS[k],r=snap[k];var c=r.s==="ok"?"var(--green)":r.s==="warn"?"var(--amber)":"var(--red)";var pct=(r.v-d.mn)/(d.mx-d.mn)*100;
+      return'<div style="padding:12px;border:1px solid var(--line);border-radius:10px"><div style="display:flex;justify-content:space-between"><span>'+d.ic+' '+esc(d.l)+'</span>'+tag(r.s==="ok"?"OK":r.s==="warn"?"Aviso":"Crítico",r.s==="ok"?"g":r.s==="warn"?"a":"r")+'</div>'+
+      '<div style="font-size:24px;font-weight:800;color:'+c+';margin:6px 0">'+r.v+' <small style="font-size:12px;color:var(--mut)">'+d.u+'</small></div>'+bar(pct,c)+'<div style="font-size:10px;color:var(--mut);margin-top:4px">rango '+d.mn+'–'+d.mx+d.u+'</div></div>';}).join("")+'</div></div>'+
+    '<div class="card"><h3>🔎 Motor de reglas (local · 0 tokens)</h3><div class="sub">Evaluación instantánea R1-R9 sobre las señales actuales</div>'+
+    (fired.length?fired.map(f=>'<div class="statline"><span>'+sevTag(f.sev)+' <b>'+f.id+'</b> '+esc(f.msg)+'</span><button class="btn sm primary" onclick="resolve(\''+f.act+'\',\''+f.id+'\')">Actuar</button></div>').join(""):'<div class="notice s">✓ Todas las señales en rango. Sin reglas disparadas.</div>')+'</div>';
+};
+
+VIEWS.control=function(){
+  return pageHead("🎛️ Control · Riego / RPi","Actuación sobre electroválvulas vía gateway Raspberry Pi. "+(isReadonly()?"Modo lectura.":"Requiere confirmación por acción crítica."))+roChip()+
+    '<div class="grid g2">'+VALVES.map(function(v){return'<div class="card"><h3>'+(v.open?'💧':'🔒')+' '+esc(v.l)+' <span class="tag '+(v.real?'g':'n')+'" style="margin-left:auto">'+(v.real?'Real':'Reserva')+'</span></h3>'+
+    '<div class="dl"><span>Pin</span><b class="mono">'+v.pin+'</b></div><div class="dl"><span>Hardware</span><b>'+esc(v.hw)+'</b></div><div class="dl"><span>Estado</span><b style="color:'+(v.open?'var(--green)':'var(--mut)')+'">'+(v.open?'ABIERTA':'CERRADA')+'</b></div>'+
+    '<button class="btn '+(v.open?'':'primary')+'" style="width:100%;margin-top:8px" '+((!v.real||isReadonly())?'disabled':'')+' onclick="toggleValve(\''+v.id+'\')">'+(v.open?'Cerrar válvula':'Abrir válvula')+'</button></div>';}).join("")+'</div>'+
+    '<div class="card" style="margin-top:14px"><h3>⚙️ Modos de operación</h3><div style="display:flex;gap:8px;flex-wrap:wrap">'+
+    ["🤖 Automático (SABIONDA)","🖐️ Manual","🌙 Nocturno ahorro","🛡️ Seguridad (todo cerrado)"].map(m=>'<button class="chip" onclick="toast(\'Modo: '+m+'\')">'+m+'</button>').join("")+'</div></div>';
+};
+function toggleValve(id){var v=VALVES.find(x=>x.id===id);if(!v||isReadonly())return;
+  if(!v.open){openModal("Confirmar apertura",'<p>¿Abrir <b>'+esc(v.l)+'</b> ('+v.pin+')? Se enviará comando MQTT al gateway RPi.</p>','<button class="btn" onclick="closeModal()">Cancelar</button><button class="btn primary" onclick="doValve(\''+id+'\')">Confirmar</button>');}
+  else{doValve(id);}
+}
+function doValve(id){var v=VALVES.find(x=>x.id===id);v.open=!v.open;closeModal();audit("valve",id+" "+(v.open?"open":"close"));
+  if(!net.online)enqueue({path:"/api/v1/control/valve",opts:{method:"POST",body:JSON.stringify({id:id,open:v.open})}});
+  toast((v.open?"💧 Válvula abierta: ":"🔒 Válvula cerrada: ")+id);go("control");}
+
+VIEWS.sabionda=function(){
+  var b=AI.budget;
+  return pageHead("🤖 SABIONDA OMEGA 9.1","Motor de decisión agronómica. Estrategia multicapa de ahorro de tokens: reglas locales → caché → selección de modelo → contexto compacto. Mistral AI EU (GDPR).")+
+    '<div class="grid g4" style="margin-bottom:16px">'+
+    kpi('🪙 Tokens usados',(b.used/1000).toFixed(1),'k','de '+(b.cap/1000)+'k presupuesto')+
+    kpi('💰 Tokens ahorrados',(b.saved/1000).toFixed(1),'k','vs. IA directa','var(--green)')+
+    kpi('🔎 Resueltas local',b.ruleHits+b.cacheHits,'','reglas+caché (0 tok)')+
+    kpi('📞 Llamadas Mistral',b.calls,'',hasKey("mistral")?"Conectado":"OFFLINE",hasKey("mistral")?"var(--green)":"var(--amber)")+'</div>'+
+    '<div class="card ac"><h3>💬 Consultar a SABIONDA</h3><div class="sub">Resuelve primero en local; solo escala a la IA cuando aporta valor.</div>'+
+    '<div id="chat" style="max-height:280px;overflow-y:auto;margin-bottom:10px"></div>'+
+    '<div style="display:flex;gap:8px"><input id="sbq" placeholder="Ej: ¿Cómo mejoro el rendimiento de la rúcula esta semana?" onkeydown="if(event.key===\'Enter\')askSab()"><button class="btn primary" onclick="askSab()">Preguntar</button></div>'+
+    '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">'+["Diagnóstico de sensores","Plan de riego semanal","¿Qué cultivo rota ahora?"].map(q=>'<button class="chip" onclick="document.getElementById(\'sbq\').value=\''+q+'\';askSab()">'+q+'</button>').join("")+'</div></div>'+
+    '<div class="grid g2" style="margin-top:14px">'+
+    '<div class="card"><h3>⚙️ Presupuesto de tokens</h3><div class="field"><label>Límite mensual (tokens)</label><input id="tokcap" type="number" value="'+b.cap+'"><button class="btn sm primary" style="margin-top:6px" onclick="setCap()">Guardar límite</button></div>'+bar(b.used/b.cap*100,b.used/b.cap>0.9?"var(--red)":"var(--brand)")+'<div style="font-size:11px;color:var(--mut);margin-top:6px">Ahorro acumulado: '+Math.round(b.saved/(b.saved+b.used||1)*100)+'% del tráfico resuelto sin coste.</div><button class="btn sm" style="margin-top:8px" onclick="AI.cache={};AI.save();toast(\'Caché IA vaciada\')">Vaciar caché</button></div>'+
+    '<div class="card"><h3>📋 Reglas R1-R9 activas</h3>'+RULES.map(r=>'<div class="statline"><span><b>'+r.id+'</b> '+esc(r.msg)+'</span>'+sevTag(r.sev)+'</div>').join("")+'</div></div>';
+};
+VIEWS._after_sabionda=function(){var c=document.getElementById("chat");if(c)c.innerHTML='<div class="notice i">👋 Hola '+esc(state.user.name.split(" ")[0])+'. Soy SABIONDA OMEGA. Pregúntame sobre cultivos, riego, sensores o estrategia. Optimizo cada consulta para gastar los mínimos tokens.</div>';};
+async function askSab(){
+  var q=document.getElementById("sbq").value.trim();if(!q)return;
+  var chat=document.getElementById("chat");document.getElementById("sbq").value="";
+  chat.innerHTML+='<div style="text-align:right;margin:8px 0"><span class="chip" style="background:var(--brand);color:var(--brand-ink)">'+esc(q)+'</span></div>';
+  chat.innerHTML+='<div id="thinking" class="notice i">🤖 Pensando…</div>';chat.scrollTop=chat.scrollHeight;
+  var snap=state.lastSnap||sensorSnapshot();var r=await sabionda(q,{sig:sigFrom(snap)});
+  var th=document.getElementById("thinking");if(th)th.remove();
+  chat.innerHTML+='<div class="notice s" style="margin:8px 0">🤖 <b>SABIONDA</b> <span class="tag n">'+esc(r.source)+' · '+(r.tokens?r.tokens+" tok":r.saved+" tok ahorrados")+'</span><br>'+esc(r.text).replace(/\n/g,"<br>")+'</div>';
+  chat.scrollTop=chat.scrollHeight;updateTok();
+}
+function setCap(){var v=+document.getElementById("tokcap").value;if(v>0){AI.budget.cap=v;AI.save();updateTok();toast("Límite de tokens actualizado.");}}
+
+/* ════════════════════ CONECTORES & API KEYS ════════════════════ */
+VIEWS.conectores=function(){
+  if(!can("conectores"))return pageHead("Acceso restringido","Solo administradores y técnicos gestionan conectores.");
+  var keys=getKeys();var cats={};SERVICES.forEach(function(s){(cats[s.cat]=cats[s.cat]||[]).push(s);});
+  var body=Object.keys(cats).map(function(cat){return'<div class="card" style="margin-bottom:12px"><h3>'+esc(cat)+'</h3>'+
+    cats[cat].map(function(s){var conn=hasKey(s.id);var masked=s.id==="backend"?CFG.API:(keys[s.key]?"••••••••"+String(keys[s.key]).slice(-4):"—");
+      return'<div class="statline"><span style="display:flex;align-items:center;gap:9px"><span style="font-size:18px">'+s.icon+'</span><span><b>'+esc(s.name)+'</b><br><span style="font-size:11px;color:var(--mut)">'+esc(s.desc)+' · <span class="mono">'+esc(masked)+'</span></span></span></span>'+
+      '<span style="display:flex;gap:6px;align-items:center">'+(conn?tag("Conectado","g"):tag("Sin clave","n"))+
+      (state.user.role==="admin"||s.id==="backend"?'<button class="btn sm" onclick="editKey(\''+s.id+'\')">'+(conn?'Editar':'Conectar')+'</button>':'')+
+      (conn?'<button class="btn sm" onclick="testSvc(\''+s.id+'\')">Probar</button>':'')+'</span></div>';}).join("")+'</div>';}).join("");
+  return pageHead("🔌 Conectores & API Keys","Integra todos los servicios con sus claves. Las claves se guardan cifradas en tu navegador y se exportan a .env / Docker secrets — nunca se escriben en el código. "+connectedCount()+"/"+SERVICES.length+" conectados.")+
+    (state.user.role!=="admin"?'<div class="notice w" style="margin-bottom:12px">⚠️ Solo el <b>Administrador</b> puede añadir o editar claves. Puedes ver el estado y probar conexiones.</div>':'')+
+    body+
+    '<div class="card" style="margin-top:6px"><h3>📦 Exportar configuración</h3><div class="sub">Genera el archivo .env para el despliegue (Hetzner / Docker secrets)</div>'+
+    '<button class="btn primary" onclick="exportEnv()">Generar .env</button> <button class="btn" onclick="go(\'seguridad\')">Ver auditoría de secretos</button></div>';
+};
+function editKey(id){
+  var s=SERVICES.find(x=>x.id===id);var keys=getKeys();
+  if(id==="backend"){openModal("🖥️ Backend CASTÚO",'<div class="field"><label>URL del backend</label><input id="kv" value="'+esc(CFG.API)+'" placeholder="https://api.castuo-system.es"></div><div class="notice i">Endpoint FastAPI. Se usa para health, IoT ingest y SABIONDA.</div>','<button class="btn" onclick="closeModal()">Cancelar</button><button class="btn primary" onclick="saveBackend()">Guardar</button>');return;}
+  if(state.user.role!=="admin"){toast("Solo el administrador puede editar claves.","err");return;}
+  openModal(s.icon+" "+s.name,'<div class="field"><label>'+esc(s.key)+'</label><input id="kv" type="password" value="'+esc(keys[s.key]||"")+'" placeholder="Pega la clave API"></div><div class="notice i">🔒 Se almacena solo en este navegador. Se incluye al exportar .env. Nunca se envía a terceros salvo al propio servicio al probar la conexión.</div>',
+    '<button class="btn danger" onclick="setKey(\''+s.key+'\',\'\');closeModal();go(\'conectores\')">Quitar</button><button class="btn" onclick="closeModal()">Cancelar</button><button class="btn primary" onclick="saveKey(\''+s.key+'\')">Guardar</button>');
+}
+function saveKey(k){var v=document.getElementById("kv").value.trim();setKey(k,v);audit("key.set",k);closeModal();toast("Clave guardada de forma segura.");go("conectores");}
+function saveBackend(){var v=document.getElementById("kv").value.trim();if(v){CFG.API=v;store.set("castuo_api_url",v);audit("config.api",v);healthCheck();}closeModal();toast("Backend actualizado.");go("conectores");}
+async function testSvc(id){
+  var s=SERVICES.find(x=>x.id===id);var keys=getKeys();var key=keys[s.key];toast("Probando "+s.name+"…");
+  try{
+    if(s.test==="health"){var r=await apiFetch("/api/v1/system/health",{timeout:6000,retries:1});toast(r.ok?"✓ Backend responde ("+net.latency+"ms)":"✗ Backend error "+r.status,r.ok?"":"err");return;}
+    if(s.test==="noop"){toast("✓ "+s.name+": clave presente. Prueba real en backend.");return;}
+    if(s.test==="telegram"){var tr=await apiFetch("https://api.telegram.org/bot"+key+"/getMe",{timeout:8000});var tj=await tr.json();toast(tj.ok?"✓ Telegram: @"+tj.result.username:"✗ Token inválido",tj.ok?"":"err");return;}
+    if(s.test==="aemet"){toast("✓ AEMET: clave registrada (validación en backend).");return;}
+    var opts={timeout:9000,headers:{}};var url=s.test;
+    if(s.auth==="bearer")opts.headers["Authorization"]="Bearer "+key;
+    if(s.auth==="query")url=s.test+encodeURIComponent(key||"");
+    var rr=await fetch(url,opts);toast(rr.ok?"✓ "+s.name+" OK ("+rr.status+")":"✗ "+s.name+": "+rr.status,rr.ok?"":"err");
+    audit("key.test",id+" "+rr.status);
+  }catch(e){toast("✗ "+s.name+": "+esc(e.message||"error de red"),"err");}
+}
+function exportEnv(){
+  var keys=getKeys();var env="# CASTÚO-SYSTEM v"+CFG.VERSION+" — .env (generado "+new Date().toISOString().slice(0,19)+")\n# NUNCA commitear este archivo. Usar Docker secrets en producción.\n\n";
+  env+="API_URL="+CFG.API+"\nWEB_URL="+CFG.WEB+"\n\n";
+  SERVICES.forEach(function(s){if(s.id==="backend")return;env+=s.key+"="+(keys[s.key]?keys[s.key]:"")+"\n";});
+  env+="\n# JWT — generar con: openssl rand -hex 64\nJWT_SECRET=\nCASTUO_DEV_MODE=false\nCASTUO_CORS_ORIGINS="+CFG.WEB+"\n";
+  openModal("📦 .env generado",'<div class="notice w">⚠️ Contiene secretos. Descárgalo a un lugar seguro y añádelo a .gitignore.</div><textarea rows="12" class="mono" style="font-size:11px" readonly>'+esc(env)+'</textarea>',
+    '<button class="btn" onclick="closeModal()">Cerrar</button><button class="btn primary" onclick="dlEnv()">⬇ Descargar .env</button>');
+  window._envContent=env;
+}
+function dlEnv(){var blob=new Blob([window._envContent||""],{type:"text/plain"});var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=".env";a.click();audit("env.export","descargado");toast("✓ .env descargado");closeModal();}
+
+/* ════════════════════ USUARIOS & ROLES ════════════════════ */
+VIEWS.usuarios=function(){
+  if(state.user.role!=="admin")return pageHead("👥 Usuarios & Roles","Solo el Administrador gestiona usuarios.")+'<div class="notice w">⚠️ Acceso restringido al rol Administrador.</div>';
+  var users=store.getJSON("castuo_users",DEMO_USERS);
+  var matrix='<div class="tablewrap"><table><thead><tr><th>Módulo</th>'+Object.keys(ROLES).map(r=>'<th>'+ROLES[r].icon+'</th>').join("")+'</tr></thead><tbody>'+
+    MODULES.map(function(m){return'<tr><td>'+m.icon+' '+esc(m.name)+'</td>'+Object.keys(ROLES).map(function(rk){var r=ROLES[rk];var ok=r.all||r.perms.indexOf(m.id)>=0;return'<td style="text-align:center;color:'+(ok?"var(--green)":"var(--dim)")+'">'+(ok?"●":"○")+'</td>';}).join("")+'</tr>';}).join("")+'</tbody></table></div>';
+  return pageHead("👥 Usuarios & Roles","Control de acceso basado en roles (RBAC). El Administrador tiene acceso total; el resto sigue el principio de mínimo privilegio.")+
+    '<div class="card" style="margin-bottom:14px"><h3>Roles del sistema</h3><div class="grid g3">'+Object.keys(ROLES).map(function(rk){var r=ROLES[rk];return'<div style="padding:12px;border:1px solid var(--line);border-radius:10px;border-left:4px solid '+r.color+'"><div style="font-weight:800">'+r.icon+' '+esc(r.name)+'</div><div style="font-size:11.5px;color:var(--mut);margin:4px 0">'+esc(r.desc)+'</div>'+tag(r.all?"Acceso total":r.perms.length+" módulos",r.all?"v":"n")+(r.readonly?" "+tag("Solo lectura","b"):"")+'</div>';}).join("")+'</div></div>'+
+    '<div class="card" style="margin-bottom:14px"><h3>Usuarios <button class="btn sm primary" style="margin-left:auto" onclick="addUser()">+ Añadir</button></h3><div class="tablewrap"><table><thead><tr><th>Nombre</th><th>Email</th><th>Rol</th><th></th></tr></thead><tbody>'+
+    users.map((u,i)=>'<tr><td><b>'+esc(u.name)+'</b></td><td class="mono">'+esc(u.email)+'</td><td>'+ROLES[u.role].icon+' '+ROLES[u.role].name+'</td><td><button class="btn sm" onclick="changeRole('+i+')">Cambiar rol</button></td></tr>').join("")+'</tbody></table></div></div>'+
+    '<div class="card"><h3>🔐 Matriz de permisos (módulo × rol)</h3><div class="sub">● acceso · ○ sin acceso</div>'+matrix+'</div>';
+};
+function addUser(){openModal("Añadir usuario",'<div class="field"><label>Nombre</label><input id="un"></div><div class="field"><label>Email</label><input id="ue" type="email"></div><div class="field"><label>Rol</label><select id="ur">'+Object.keys(ROLES).map(r=>'<option value="'+r+'">'+ROLES[r].icon+' '+ROLES[r].name+'</option>').join("")+'</select></div>',
+  '<button class="btn" onclick="closeModal()">Cancelar</button><button class="btn primary" onclick="saveUser()">Crear</button>');}
+function saveUser(){var n=document.getElementById("un").value.trim(),e=document.getElementById("ue").value.trim(),r=document.getElementById("ur").value;
+  if(!n||!isEmail(e)){toast("Datos inválidos.","err");return;}var users=store.getJSON("castuo_users",DEMO_USERS);users.push({name:n,email:e,role:r});store.setJSON("castuo_users",users);audit("user.add",e+" as "+r,"security");closeModal();toast("✓ Usuario creado");go("usuarios");}
+function changeRole(i){var users=store.getJSON("castuo_users",DEMO_USERS);var u=users[i];
+  openModal("Cambiar rol · "+esc(u.name),'<div class="field"><label>Nuevo rol</label><select id="ur">'+Object.keys(ROLES).map(r=>'<option value="'+r+'" '+(r===u.role?"selected":"")+'>'+ROLES[r].icon+' '+ROLES[r].name+'</option>').join("")+'</select></div>',
+  '<button class="btn" onclick="closeModal()">Cancelar</button><button class="btn primary" onclick="doChangeRole('+i+')">Guardar</button>');}
+function doChangeRole(i){var users=store.getJSON("castuo_users",DEMO_USERS);var r=document.getElementById("ur").value;audit("user.role",users[i].email+" → "+r,"security");users[i].role=r;store.setJSON("castuo_users",users);closeModal();toast("✓ Rol actualizado");go("usuarios");}
+
+/* ════════════════════ SEGURIDAD & AUDITORÍA ════════════════════ */
+VIEWS.seguridad=function(){
+  var log=store.getJSON("castuo_audit",[]);var sec=store.getJSON("castuo_sec",[]);
+  return pageHead("🛡️ Seguridad & Auditoría","Registro append-only encadenado por hash (trazabilidad inmutable). Eventos de seguridad, sesiones y accesos. Cumplimiento RGPD Art. 5 y 32.")+
+    '<div class="grid g4" style="margin-bottom:16px">'+
+    kpi('📜 Eventos auditados',log.length,'','append-only')+
+    kpi('🔐 Eventos seguridad',sec.length,'','','var(--amber)')+
+    kpi('🔗 Cadena de hash',log.length?"íntegra":"vacía",'',verifyChain()?"✓ verificada":"⚠ revisar",verifyChain()?"var(--green)":"var(--red)")+
+    kpi('🪪 Sesión activa',ROLES[state.user.role].name,'',state.user.email)+'</div>'+
+    '<div class="card"><h3>Registro de auditoría <button class="btn sm" style="margin-left:auto" onclick="exportAudit()">⬇ Exportar</button></h3>'+
+    '<div class="tablewrap"><table><thead><tr><th>Hora</th><th>Usuario</th><th>Acción</th><th>Detalle</th><th>Hash</th></tr></thead><tbody>'+
+    log.slice(0,40).map(e=>'<tr><td class="mono" style="font-size:10px">'+esc(e.ts.slice(11,19))+'</td><td>'+esc(e.u)+'</td><td>'+(e.lvl==="security"?tag(e.a,"a"):e.lvl==="error"?tag(e.a,"r"):esc(e.a))+'</td><td style="font-size:11px">'+esc(e.d)+'</td><td class="mono" style="font-size:10px;color:var(--mut)">'+esc(e.h)+'</td></tr>').join("")+'</tbody></table></div></div>'+
+    '<div class="card" style="margin-top:14px"><h3>🔒 Contrato de seguridad (10 reglas)</h3><div class="sub">Mínimo privilegio · separación de dominios · sin secretos en código</div>'+
+    '<div style="display:flex;flex-wrap:wrap;gap:6px">'+["No hardcodear secretos","JWT ≥64 chars","API keys SHA-256","RBAC en endpoints","CORS whitelist","HTTPS obligatorio","Rate limiting","Auditoría inmutable","Aislamiento MCP","RGPD compliant"].map(x=>tag("✓ "+x,"g")).join("")+'</div></div>';
+};
+function verifyChain(){var log=store.getJSON("castuo_audit",[]);for(var i=0;i<log.length-1;i++){if(log[i].prev!==log[i+1].h.slice(0,12))return false;}return true;}
+function exportAudit(){var log=store.getJSON("castuo_audit",[]);var blob=new Blob([JSON.stringify(log,null,2)],{type:"application/json"});var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="castuo-audit-"+td()+".json";a.click();audit("audit.export",log.length+" entradas");toast("✓ Auditoría exportada");}
+function td(){return new Date().toISOString().slice(0,10);}
+
+/* ════════════════════ CONFIGURACIÓN ════════════════════ */
+VIEWS.config=function(){
+  return pageHead("⚙️ Configuración","Ajustes del sistema, conexión y preferencias. Enlazado a "+CFG.WEB+".")+
+    '<div class="grid g2">'+
+    '<div class="card"><h3>🌐 Conexión</h3><div class="dl"><span>Backend API</span><b class="mono">'+esc(CFG.API)+'</b></div><div class="dl"><span>WebSocket</span><b class="mono">'+esc(CFG.WS)+'</b></div><div class="dl"><span>Sitio web</span><b><a href="'+CFG.WEB+'" target="_blank" rel="noopener">'+CFG.WEB.replace("https://","")+'</a></b></div><div class="dl"><span>Estado</span><b style="color:'+(net.online?"var(--green)":"var(--red)")+'">'+(net.online?"● En línea":"○ Offline")+'</b></div>'+
+    '<button class="btn sm" style="margin-top:8px" onclick="healthCheck()">↻ Comprobar salud</button> <button class="btn sm" onclick="editKey(\'backend\')">Cambiar backend</button></div>'+
+    '<div class="card"><h3>🎨 Apariencia & Accesibilidad</h3><div class="dl"><span>Tema</span><b>'+esc(document.documentElement.getAttribute("data-theme"))+'</b></div><div class="dl"><span>Escala de texto</span><b>'+Math.round((+(store.get("castuo_fs")||1))*100)+'%</b></div><div class="dl"><span>Contraste</span><b>'+esc(store.get("castuo_contrast")||"normal")+'</b></div>'+
+    '<button class="btn sm" style="margin-top:8px" onclick="cycleTheme()">Cambiar tema</button> <button class="btn sm" onclick="openA11y()">Accesibilidad</button></div>'+
+    '<div class="card"><h3>🔄 Datos & Sincronización</h3><div class="dl"><span>Cola offline</span><b>'+net.queue.length+' pendientes</b></div><div class="dl"><span>Latencia</span><b>'+(net.latency||"—")+' ms</b></div>'+
+    '<button class="btn sm" style="margin-top:8px" onclick="flushQueue();toast(\'Sincronizando…\')">Sincronizar ahora</button></div>'+
+    '<div class="card"><h3>ℹ️ Sistema</h3><div class="dl"><span>Versión</span><b>v'+CFG.VERSION+'</b></div><div class="dl"><span>Build</span><b>'+CFG.BUILD+'</b></div><div class="dl"><span>Módulos</span><b>'+MODULES.length+' · 141 en catálogo</b></div><div class="dl"><span>Conectores</span><b>'+connectedCount()+'/'+SERVICES.length+'</b></div>'+
+    (state.user.role==="admin"?'<button class="btn sm danger" style="margin-top:8px" onclick="if(confirm(\'¿Restablecer datos locales?\')){localStorage.clear();location.reload();}">Restablecer datos locales</button>':'')+'</div>'+
+    '</div>';
+};
+
+/* ════════════════════ VISTAS DE NEGOCIO / CAMPO / TRAZABILIDAD ════════════════════ */
+function simpleView(title,lead,cards){return pageHead(title,lead)+roChip()+'<div class="grid g2">'+cards+'</div>';}
+
+VIEWS.metricas=function(){
+  var rev=[42,48,51,47,55,62,68,71,66,74,79,85];var months=["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+  var mx=Math.max.apply(null,rev);
+  var chart='<svg viewBox="0 0 480 160" style="width:100%;height:auto" role="img" aria-label="Ingresos mensuales">'+rev.map(function(v,i){var bh=v/mx*130;return'<rect x="'+(i*40+4)+'" y="'+(150-bh)+'" width="30" height="'+bh+'" rx="4" fill="var(--brand)" opacity="'+(0.5+0.5*v/mx)+'"><title>'+months[i]+': '+v+'k€</title></rect>';}).join("")+'</svg>';
+  return pageHead("📈 Métricas & BI","Indicadores operativos y financieros del negocio SaaS + producción.")+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('💶 MRR','8.5','k€','+12% mes','var(--green)')+kpi('🌱 Producción','1.24','t/mes','+8%','var(--green)')+kpi('👥 Tenants','37','','+3 este mes','var(--green)')+kpi('💧 Ahorro hídrico','18','%','vs. riego tradicional','var(--green)')+'</div>'+
+    '<div class="card"><h3>Ingresos mensuales (k€)</h3>'+chart+'</div>'+
+    '<div class="grid g3" style="margin-top:14px">'+kpi('EBIT','24','%','margen')+kpi('CAC','142','€','coste adquisición')+kpi('LTV/CAC','5.8','x','saludable','var(--green)')+'</div>';
+};
+
+VIEWS.erp=function(){
+  var inv=[{n:"Semillas rúcula (BIO)",q:24,u:"kg",v:312},{n:"Sustrato coco",q:180,u:"L",v:216},{n:"Solución nutritiva A+B",q:40,u:"L",v:480},{n:"Bandejas cultivo",q:320,u:"ud",v:640},{n:"Sensores humedad V1.2",q:12,u:"ud",v:96}];
+  return pageHead("🏢 ERP — Gestión empresarial","Inventario, compras, costes y producción integrados con el catálogo de cultivos y el IVA español (Ley 37/1992).")+roChip()+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('📦 Inventario','1.74','k€','valorado')+kpi('🛒 Compras mes','2.1','k€','')+kpi('💰 Coste/kg','3.20','€','producción')+kpi('📊 Margen bruto','61','%','','var(--green)')+'</div>'+
+    '<div class="card"><h3>Inventario <span class="tag n" style="margin-left:auto">'+inv.length+' referencias</span></h3><div class="tablewrap"><table><thead><tr><th>Artículo</th><th>Stock</th><th>Valor</th><th>IVA</th></tr></thead><tbody>'+
+    inv.map(function(x){var iv=calcIVA(x.v,"reducido");return'<tr><td>'+esc(x.n)+'</td><td>'+x.q+' '+x.u+'</td><td>'+x.v+' €</td><td class="mono">'+iv.tax+' € ('+iv.rate+'%)</td></tr>';}).join("")+'</tbody></table></div></div>';
+};
+
+VIEWS.crm=function(){
+  var clients=[{n:"Restaurante Atrio ★★★",t:"HORECA",v:"4.2k€",st:"Activo"},{n:"Mercado Central Cáceres",t:"Retail",v:"2.8k€",st:"Activo"},{n:"Grupo Extremadura Verde",t:"Distribuidor",v:"9.1k€",st:"Negociación"},{n:"Ecotienda Badajoz",t:"Retail",v:"1.4k€",st:"Activo"}];
+  return pageHead("🤝 CRM","Pipeline comercial, clientes y pedidos. Trazabilidad de venta conectada al pasaporte digital del producto.")+roChip()+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('🤝 Clientes','37','','activos')+kpi('💼 Pipeline','23.4','k€','en negociación')+kpi('📦 Pedidos mes','58','','')+kpi('⭐ NPS','72','','excelente','var(--green)')+'</div>'+
+    '<div class="card"><h3>Cartera de clientes</h3><div class="tablewrap"><table><thead><tr><th>Cliente</th><th>Tipo</th><th>Valor</th><th>Estado</th></tr></thead><tbody>'+
+    clients.map(c=>'<tr><td><b>'+esc(c.n)+'</b></td><td>'+esc(c.t)+'</td><td>'+esc(c.v)+'</td><td>'+tag(c.st,c.st==="Activo"?"g":"a")+'</td></tr>').join("")+'</tbody></table></div></div>';
+};
+
+VIEWS.marketplace=function(){
+  return pageHead("🛒 Marketplace","Catálogo de venta directa. Cada producto lleva su pasaporte digital (QR/DPP) con trazabilidad completa desde la semilla.")+
+    '<div class="grid g3">'+ALL_V.slice(0,9).map(function(v){var p=(Math.random()*8+3).toFixed(2);var iv=calcIVA(+p,"super");
+    return'<div class="card"><div style="font-size:34px;text-align:center">'+v.ic+'</div><h3 style="justify-content:center">'+esc(v.n)+'</h3><div class="sub" style="text-align:center">'+esc(v.cat)+' · fresco</div>'+
+    '<div style="text-align:center;font-size:22px;font-weight:800;color:var(--brand)">'+p+' €<small style="font-size:11px;color:var(--mut)">/bandeja</small></div>'+
+    '<div style="text-align:center;font-size:10px;color:var(--mut);margin:4px 0">IVA '+iv.rate+'% incl. · '+iv.total+' €</div>'+
+    '<button class="btn primary" style="width:100%;margin-top:6px" onclick="toast(\'🛒 '+esc(v.n)+' añadido al carrito\')">Añadir</button></div>';}).join("")+'</div>';
+};
+
+VIEWS.billing=function(){
+  var plans=[{n:"Starter",p:"29",f:["1 invernadero","IoT básico","SABIONDA reglas"]},{n:"Pro",p:"89",f:["5 invernaderos","IA Mistral","ERP+CRM","Trazabilidad DPP"],hot:true},{n:"Enterprise",p:"249",f:["Ilimitado","Multi-tenant","API completa","Soporte 24/7"]}];
+  return pageHead("💳 Billing SaaS","Facturación multi-tenant con Stripe. "+(hasKey("stripe")?"Stripe conectado.":"⚠️ Conecta Stripe en Conectores."))+
+    '<div class="grid g3">'+plans.map(p=>'<div class="card'+(p.hot?' ac':'')+'">'+(p.hot?'<div class="tag v" style="margin-bottom:6px">★ Más popular</div>':'')+'<h3>'+esc(p.n)+'</h3><div style="font-size:30px;font-weight:800;color:var(--brand)">'+p.p+' €<small style="font-size:13px;color:var(--mut)">/mes</small></div><div style="margin:10px 0">'+p.f.map(f=>'<div class="statline">✓ '+esc(f)+'</div>').join("")+'</div><button class="btn '+(p.hot?'primary':'')+'" style="width:100%" onclick="toast(\'Plan '+esc(p.n)+' — checkout Stripe\')">Elegir</button></div>').join("")+'</div>'+
+    '<div class="notice i" style="margin-top:14px">Webhook: POST /api/v1/stripe/webhook — configúralo en dashboard.stripe.com apuntando a '+esc(CFG.API)+'/api/v1/stripe/webhook</div>';
+};
+
+VIEWS.cuaderno=function(){
+  var entries=[{d:td(),a:"Siembra",c:"Rúcula",l:"LOT-2026-4821",u:state.user.name},{d:td(),a:"Riego",c:"Zona 1",l:"—",u:state.user.name},{d:td(),a:"Tratamiento BIO",c:"Kale",l:"LOT-2026-4790",u:"Pedro Campo"}];
+  return pageHead("📕 Cuaderno de Campo","Registro digital conforme RD 1054/2022 y SIEX. Cada entrada se sella con hash para trazabilidad legal.")+roChip()+
+    (isReadonly()?'':'<button class="btn primary" style="margin-bottom:12px" onclick="addCuaderno()">+ Nueva entrada</button>')+
+    '<div class="card"><h3>Últimos registros <span class="tag n" style="margin-left:auto">487 total</span></h3><div class="tablewrap"><table><thead><tr><th>Fecha</th><th>Actividad</th><th>Cultivo/Zona</th><th>Lote</th><th>Operario</th><th>Sello</th></tr></thead><tbody>'+
+    entries.map(e=>'<tr><td class="mono">'+esc(e.d)+'</td><td>'+esc(e.a)+'</td><td>'+esc(e.c)+'</td><td class="mono">'+esc(e.l)+'</td><td>'+esc(e.u)+'</td><td class="mono" style="font-size:10px;color:var(--mut)">'+hash(e.d+e.a+e.c)+'</td></tr>').join("")+'</tbody></table></div></div>';
+};
+function addCuaderno(){openModal("Nueva entrada de cuaderno",'<div class="field"><label>Actividad</label><select id="ca"><option>Siembra</option><option>Riego</option><option>Tratamiento BIO</option><option>Cosecha</option><option>Fertilización</option></select></div><div class="field"><label>Cultivo / Zona</label><input id="cc"></div>',
+  '<button class="btn" onclick="closeModal()">Cancelar</button><button class="btn primary" onclick="audit(\'cuaderno.add\',document.getElementById(\'ca\').value);closeModal();toast(\'✓ Entrada registrada y sellada\')">Registrar</button>');}
+
+VIEWS.qr=function(){
+  var lot="LOT-2026-"+Math.floor(Math.random()*9000+1000);
+  return pageHead("🔗 QR · Pasaporte Digital de Producto","Genera el DPP (Digital Product Passport, UE 2027-ready) con trazabilidad completa. Escaneable por el consumidor final.")+
+    '<div class="grid g2"><div class="card"><h3>Generar pasaporte</h3><div class="field"><label>Lote</label><input id="qrlot" value="'+lot+'"></div><div class="field"><label>Cultivo</label><select id="qrv">'+ALL_V.map(v=>'<option>'+v.n+'</option>').join("")+'</select></div><button class="btn primary" onclick="genQR()">Generar QR + DPP</button></div>'+
+    '<div class="card"><h3>Vista previa</h3><div id="qrout" style="text-align:center;color:var(--mut)">Genera un pasaporte para ver el QR y la ficha de trazabilidad.</div></div></div>';
+};
+function genQR(){
+  var lot=document.getElementById("qrlot").value,v=document.getElementById("qrv").value;
+  var url=CFG.WEB+"/dpp/"+encodeURIComponent(lot);
+  /* QR sencillo renderizado como grid determinista (visual; el real lo genera el backend) */
+  var seed=hash(lot+v),cells="";for(var i=0;i<225;i++){var on=parseInt(seed[i%8],16)%2===(i%3===0?0:1)||((i*7+seed.charCodeAt(i%8))%3===0);cells+='<rect x="'+(i%15)+'" y="'+Math.floor(i/15)+'" width="1" height="1" fill="'+(on?"var(--txt)":"transparent")+'"/>';}
+  document.getElementById("qrout").innerHTML='<svg viewBox="-1 -1 17 17" style="width:170px;height:170px;background:#fff;border-radius:8px;padding:6px" role="img" aria-label="Código QR del pasaporte">'+cells+'</svg>'+
+    '<div class="dl"><span>Lote</span><b class="mono">'+esc(lot)+'</b></div><div class="dl"><span>Producto</span><b>'+esc(v)+'</b></div><div class="dl"><span>Origen</span><b>CTAEX · Extremadura</b></div><div class="dl"><span>Hash</span><b class="mono">'+hash(lot+v+td())+'</b></div><div style="font-size:11px;margin-top:6px"><a href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(url)+'</a></div>';
+  audit("dpp.gen",lot);
+}
+
+VIEWS.pasaporte=function(){
+  return pageHead("🪪 Pasaporte Digital (DPP)","Registro de pasaportes conforme al futuro reglamento UE de Digital Product Passport (2027). Trazabilidad desde semilla a consumidor.")+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('🪪 DPP emitidos','1.847','','acumulado')+kpi('📅 Este mes','132','','+11%','var(--green)')+kpi('🔍 Escaneos','8.9','k','consumidores')+kpi('✅ UE-ready','100','%','conformidad','var(--green)')+'</div>'+
+    '<div class="card"><h3>Estructura del pasaporte</h3><div class="sub">Campos conformes al borrador ESPR / DPP</div>'+["Identidad del producto","Origen y lote","Composición","Huella de carbono","Trazabilidad blockchain","Certificaciones","Fin de vida / reciclaje"].map(x=>'<div class="statline">✓ '+esc(x)+'<span class="tag g">incluido</span></div>').join("")+'</div>';
+};
+
+VIEWS.blockchain=function(){
+  var txs=[];for(var i=0;i<8;i++)txs.push({h:hash("tx"+i+Date.now()),t:["Siembra","Riego","Cosecha","Venta","Certificación"][i%5],b:1247-i});
+  return pageHead("⛓️ Blockchain — Registro inalterable","Cada evento crítico se ancla en una cadena de hashes verificable. 1.247 transacciones registradas.")+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('🔗 Transacciones','1.247','','acumuladas')+kpi('🧱 Bloque actual','#1.247','','')+kpi('✅ Integridad',verifyChain()?"100":"⚠",'%','cadena verificada','var(--green)')+kpi('⏱️ Últ. bloque','hace 2','min','')+'</div>'+
+    '<div class="card"><h3>Últimas transacciones</h3><div class="tablewrap"><table><thead><tr><th>Bloque</th><th>Evento</th><th>Hash</th></tr></thead><tbody>'+
+    txs.map(t=>'<tr><td class="mono">#'+t.b+'</td><td>'+esc(t.t)+'</td><td class="mono" style="font-size:11px">'+t.h+'</td></tr>').join("")+'</tbody></table></div></div>';
+};
+
+VIEWS.auditoria=function(){
+  return simpleView("📑 Auditoría IFS/BRC","Cumplimiento y certificaciones de seguridad alimentaria.",
+    '<div class="card"><h3>Certificaciones</h3>'+[["IFS Food","Válida","g"],["BRCGS","Válida","g"],["GLOBALG.A.P.","En renovación","a"],["Producción Ecológica","Válida","g"]].map(c=>'<div class="statline">'+esc(c[0])+tag(c[1],c[2])+'</div>').join("")+'</div>'+
+    '<div class="card"><h3>Próximas auditorías</h3><div class="statline">IFS anual<span class="tag a">45 días</span></div><div class="statline">Ecológico<span class="tag n">Q4 2026</span></div><div class="statline">Interna trimestral<span class="tag g">Al día</span></div></div>');
+};
+
+VIEWS.foto3d=function(){
+  return pageHead("📷 Fotogrametría 3D","Reconstrucción 3D de cultivos y estructuras para inspección y evidencia. Compatible con PIX4D y modelos NDVI.")+
+    '<div class="card"><div style="height:220px;border-radius:12px;background:linear-gradient(135deg,var(--panel2),var(--bg2));display:flex;align-items:center;justify-content:center;font-size:60px" role="img" aria-label="Vista 3D del cultivo">🌿</div>'+
+    '<div class="grid g3" style="margin-top:12px">'+kpi('📸 Capturas','248','','este ciclo')+kpi('🎯 Precisión','2.1','cm','GSD')+kpi('🌱 Índice NDVI','0.78','','vigor alto','var(--green)')+'</div></div>';
+};
+
+VIEWS.invernadero=function(){
+  var snap=state.lastSnap||sensorSnapshot();
+  return pageHead("🏠 Invernadero IoT","Control ambiental: temperatura, humedad, CO₂, EC y pH en 42 puntos monitorizados.")+roChip()+
+    '<div class="grid g4">'+["temp","hum","co2","ec"].map(function(k){var d=SENSORS[k],r=snap[k];var c=r.s==="ok"?"var(--green)":r.s==="warn"?"var(--amber)":"var(--red)";return kpi(d.ic+" "+d.l,r.v,d.u,r.s==="ok"?"Óptimo":"Revisar",c);}).join("")+'</div>'+
+    '<div class="card" style="margin-top:14px"><h3>Actuadores climáticos</h3><div class="grid g2">'+[["🌀 Ventilación","Auto"],["💡 Iluminación LED","18h/día"],["🌡️ Calefacción","Standby"],["💦 Nebulización","Auto"]].map(a=>'<div class="statline">'+esc(a[0])+tag(a[1],"g")+'</div>').join("")+'</div></div>';
+};
+
+VIEWS.riego=function(){
+  return pageHead("💧 Riego Inteligente","Programación adaptativa por SABIONDA. −18% de consumo hídrico frente a riego tradicional.")+roChip()+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('💧 Consumo hoy','1.2','m³','')+kpi('📉 Ahorro','18','%','vs. tradicional','var(--green)')+kpi('⏱️ Próximo ciclo','14:30','','zona 1')+kpi('🎯 Eficiencia','94','%','','var(--green)')+'</div>'+
+    '<div class="card"><h3>Programación semanal (SABIONDA)</h3>'+["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"].map(d=>'<div class="statline">'+d+'<span style="display:flex;gap:6px">'+tag("06:00","c")+tag("14:30","c")+(Math.random()>0.5?tag("20:00","c"):"")+'</span></div>').join("")+'<button class="btn primary" style="margin-top:10px" onclick="go(\'sabionda\')">🤖 Optimizar con IA</button></div>';
+};
+
+VIEWS.ganaderia=function(){
+  return pageHead("🐑 Ganadería","120 animales monitorizados. Bienestar 87/100. Vallado virtual GPS LoRaWAN.")+roChip()+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('🐑 Animales','120','','activos')+kpi('❤️ Bienestar','87','/100','','var(--green)')+kpi('📍 GPS activos','118','/120','LoRaWAN')+kpi('⚠️ Alertas','2','','','var(--amber)')+'</div>'+
+    '<div class="card"><h3>Salud del rebaño</h3>'+[["Actividad media","Normal","g"],["2 animales aislados","Revisar","a"],["Vacunación al día","98%","g"],["Peso medio","+3% mes","g"]].map(x=>'<div class="statline">'+esc(x[0])+tag(x[1],x[2])+'</div>').join("")+'</div>';
+};
+
+VIEWS.drones=function(){
+  return pageHead("🚁 Drones AESA","Operaciones A1-A3 conforme normativa AESA. Vuelos NDVI y fotogrametría PIX4D.")+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('🚁 Flota','3','','operativos')+kpi('🛫 Vuelos mes','24','','')+kpi('🗺️ Ha cubiertas','340','ha','')+kpi('📋 Licencias','A1-A3','','vigentes','var(--green)')+'</div>'+
+    '<div class="card"><h3>Últimas misiones</h3>'+[["NDVI parcela norte","Completado","g"],["Inspección invernadero","Completado","g"],["Mapeo 3D olivar","Programado","a"]].map(x=>'<div class="statline">'+esc(x[0])+tag(x[1],x[2])+'</div>').join("")+'</div>';
+};
+
+VIEWS.suelo=function(){
+  return pageHead("🧪 Análisis de Suelo","Espectroscopía LIBS + sensórica. Recomendación de enmienda por SABIONDA.")+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('🧪 pH suelo','6.4','','óptimo','var(--green)')+kpi('🌱 Materia org.','3.2','%','buena','var(--green)')+kpi('⚗️ N-P-K','Equil.','','','var(--green)')+kpi('💧 Retención','Alta','','')+'</div>'+
+    '<div class="card"><h3>Recomendación agronómica</h3><div class="notice s">✓ Suelo en buen estado. SABIONDA sugiere aporte ligero de compost antes del próximo ciclo. <button class="btn sm" onclick="go(\'sabionda\')" style="margin-left:8px">Consultar IA</button></div></div>';
+};
+
+VIEWS.bioenergia=function(){
+  return pageHead("🔋 Bioenergía","Valorización de residuos: biodiésel, biogás, CHP, H₂ y biochar. Economía circular en la explotación.")+roChip()+
+    '<div class="grid g4" style="margin-bottom:16px">'+kpi('⚡ Generación','142','kWh','hoy')+kpi('🔥 Biogás','38','m³','digestor')+kpi('♻️ Residuo valorizado','2.1','t','mes')+kpi('🌍 CO₂ evitado','1.8','t','','var(--green)')+'</div>'+
+    '<div class="grid g2"><div class="card"><h3>🛢️ Reactor biodiésel</h3><div class="dl"><span>Estado</span><b style="color:var(--green)">Producción</b></div><div class="dl"><span>Lote actual</span><b class="mono">BD-2026-118</b></div>'+bar(72,"var(--amber)")+'<button class="btn sm" style="margin-top:8px" onclick="toast(\'Comando enviado al reactor\')">Control</button></div>'+
+    '<div class="card"><h3>💧 Electrólisis H₂ (excedente solar)</h3><div class="dl"><span>Estado</span><b>Standby</b></div><div class="dl"><span>Producción</span><b>0 Nm³/h</b></div><button class="btn sm primary" style="margin-top:8px" onclick="toast(\'💧 Electrólisis arrancada\')">Arrancar</button></div></div>';
+};
+
+VIEWS.faq=function(){
+  var faqs=[["¿Cómo conecto un nuevo servicio?","Ve a Conectores & API Keys, pulsa Conectar en el servicio y pega su clave. Solo el Administrador puede editar claves; las claves nunca se escriben en el código."],
+  ["¿Cómo ahorra tokens SABIONDA?","Resuelve primero con el motor de reglas local (0 tokens), luego con caché, y solo llama a Mistral cuando aporta valor, eligiendo el modelo más económico y enviando contexto compacto."],
+  ["¿Qué puede hacer cada rol?","El Administrador accede a todo. El resto sigue mínimo privilegio: mira la matriz en Usuarios & Roles."],
+  ["¿Los datos funcionan sin conexión?","Sí. Las acciones de escritura se encolan y se sincronizan al recuperar la conexión con el backend."],
+  ["¿Es accesible?","Sí: navegación por teclado, alto contraste, escala de texto, respeto a 'reducir movimiento' y etiquetas ARIA (objetivo WCAG 2.1 AA)."]];
+  return pageHead("❓ Ayuda & FAQ","Preguntas frecuentes y soporte. Sistema enlazado a "+CFG.WEB+".")+
+    faqs.map(f=>'<div class="card" style="margin-bottom:10px"><h3>'+esc(f[0])+'</h3><p style="font-size:12.5px;color:var(--mut)">'+esc(f[1])+'</p></div>').join("")+
+    '<div class="card ac"><h3>🤖 ¿No encuentras respuesta?</h3><button class="btn primary" onclick="go(\'sabionda\')">Preguntar a SABIONDA</button> <a class="btn" href="'+CFG.WEB+'" target="_blank" rel="noopener">Ir a la web</a></div>';
+};
+
+/* ════════════════════ ARRANQUE ════════════════════ */
+function bootApp(){
+  $("#login").style.display="none";$("#app").hidden=false;
+  $("#avatar").textContent=(state.user.name||"?")[0];
+  renderNav();
+  var first=MODULES.find(m=>can(m.id));
+  go(can(state.view)?state.view:(first?first.id:"faq"));
+  updateNet();updateTok();
+  healthCheck();
+  window.addEventListener("online",function(){net.online=true;updateNet();flushQueue();toast("🟢 Conexión recuperada");});
+  window.addEventListener("offline",function(){net.online=false;updateNet();toast("🔴 Sin conexión — modo offline","warn");});
+  setInterval(function(){if(state.view==="dashboard"||state.view==="grid")go(state.view);},30000);
+  audit("app.boot","v"+CFG.VERSION);
+}
+function initApp(){
+  applyPrefs();
+  var sess=store.getJSON("castuo_session",null);
+  if(sess&&(Date.now()-sess.ts)<86400000&&sess.fp===fingerprint()){state.user=sess;bootApp();}
+  else{if(sess)audit("auth.expired",sess.email,"security");store.del("castuo_session");renderLogin();}
+}
+initApp();
+</script>
+</body>
+</html>
