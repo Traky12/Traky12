@@ -119,3 +119,15 @@ El estado público se genera desde `castuo-evolution/data/control-plane-status.y
 
 El perfil público proyecta el control plane y no decide el estado. Bloqueador: `remote_publication_conformance_security_evidence_staging_review_pending`. La evidencia local no implica publicación remota, producción, certificación, resultado de cliente, operación continua ni federación.
 <!-- CASTUO:STATE:END -->
+
+<!-- CASTUO:ECOSYSTEM-INTEGRATION:START -->
+## Integración del ecosistema CASTÚO-SYSTEM
+
+**Rol declarado:** portal público del ecosistema y superficie de claims.
+
+Este perfil se conecta con [Castuo-system](https://github.com/Traky12/Castuo-system) como core y con [castuo-evolution](https://github.com/Traky12/castuo-evolution) como control plane. La actividad de un repositorio no equivale a verdad operativa.
+
+**Estado acotado:** GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED. Identidad, implementación, pruebas, evidencia, revisión y promoción son dimensiones separadas.
+
+**Límite de claims:** este README no afirma producción, certificación, cumplimiento legal, validación independiente, clientes, ingresos, operación continua, autoridad autónoma ni federación sin evidencia con alcance, artefactos reproducibles y revisión atribuible.
+<!-- CASTUO:ECOSYSTEM-INTEGRATION:END -->
