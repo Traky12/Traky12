@@ -35,3 +35,7 @@ P1 observability is marked implemented because metrics, redacted traces, alert c
 The passport data policy is defined in `shared/passportDataPolicy.ts`. Public passports may expose stable identifiers, scoped evidence references, limitations and explicit forbidden claims. Credentials, access tokens, email addresses and provider payloads are classified as `SECRET_OR_PII` and are not allowed in public passports. The contract test verifies both the deny-list and the requirement to use references rather than inline evidence payloads.
 
 The passport template now enforces explicit `sensitivity`, `provenance`, `audience`, `retention` and `redaction` fields. `validateEvidenceTrustPassport` rejects incomplete or non-redacted artifacts, and `server/assurance.contract.test.ts` validates the actual JSON template rather than only an isolated policy list. This closes the schema-level P1 requirement while preserving default-deny claim status.
+
+## Backup and restore boundary
+
+`server/backupRestore.ts` provides a local integrity contract using a SHA-256 checksum, a versioned envelope and an accepted/rejected audit result. The tests cover a successful round trip and tamper rejection. This is not yet a production restore proof: the P1 exit remains pending until an ephemeral environment restore, checksum comparison and authenticated remote diagnostic path are executed.
