@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { publicIndexMeta, publicRecords } from "../shared/publicIndex";
+import { publicIndexCrossReferences, publicIndexMeta, publicRecords } from "../shared/publicIndex";
 
 describe("Public Knowledge & Evidence Index contract", () => {
   it("keeps the public read-model bounded and non-authoritative", () => {
@@ -17,5 +17,13 @@ describe("Public Knowledge & Evidence Index contract", () => {
     expect(serialized).not.toContain("production validated");
     expect(publicRecords.some((record) => record.state === "BLOCKED")).toBe(true);
     expect(publicRecords.some((record) => record.state === "EVIDENCE-SCOPED")).toBe(true);
+    expect(publicIndexCrossReferences).toHaveLength(4);
+    expect(publicIndexCrossReferences.map((reference) => reference.id)).toEqual([
+      "SAAS-BOUNDARY",
+      "EVIDENCE-PASSPORT",
+      "TRUST-PASSPORT",
+      "GATES-NEGATIVE",
+    ]);
+    expect(JSON.stringify(publicIndexCrossReferences).toLowerCase()).not.toMatch(/api[_-]?key|bearer|password|secret|token/);
   });
 });
