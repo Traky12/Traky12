@@ -23,3 +23,7 @@ This is a compatibility control, not a suppression: the advisory remains represe
 The registry is intentionally split between local evidence and remotely authenticated evidence; local green status cannot be promoted to a remote claim without the corresponding GitHub readout.
 
 <!-- controls: dependency-scan=0; secret-scan=0; sbom=generated; express-path-to-regexp=0.1.13 -->
+
+## Vault provider selection gate
+
+The provider-neutral `SecurityHoldVaultAdapter` remains active. `shared/vaultProviderGate.ts` records four supported candidate providers and requires owner plus security-reviewer approval before selection. Every candidate is backend-only, least-privilege, auditable, timeout-bounded and fail-closed. No provider is activated and no secret is requested until the approved platform and its environment contract are explicitly supplied.
