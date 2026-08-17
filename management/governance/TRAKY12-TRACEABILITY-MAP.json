@@ -1,0 +1,160 @@
+{
+  "schema": "CastuoTraceabilityMap/v1",
+  "profile": "Traky12",
+  "claimBoundary": "Repository metadata and README text are governance references, not proof of operational maturity.",
+  "fields": {
+    "repository": "GitHub repository URL",
+    "passport": "Capability passport or bounded repository reference",
+    "source": "Primary source, local contract, README metadata or upstream boundary",
+    "gate": "P0/P1/P2 or E3/N5 promotion gate",
+    "checkpoint": "Restorable dashboard version or README PR branch",
+    "sensitivity": "Repository data sensitivity classification",
+    "evidenceStatus": "Evidence-scoped status, never a marketing claim"
+  },
+  "records": [
+    {
+      "repository": "Traky12/Traky12",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PUBLIC_OPERATIONAL",
+      "evidenceStatus": "EVIDENCE_SCOPED_PUBLIC_BASELINE"
+    },
+    {
+      "repository": "Traky12/Castuo-system",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_TEMPLATE",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "repository": "Traky12/copia-de-cast-o-system-strategy-knowledge-base",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "GOVERNED_STATUS_PENDING"
+    },
+    {
+      "repository": "Traky12/castuo-strategy-knowledge-base",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "GOVERNED_STATUS_PENDING"
+    },
+    {
+      "repository": "Traky12/castuo-evolution",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "repository": "Traky12/agrovision-360",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "repository description; verification required",
+      "gate": "P0/P1",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "UNVERIFIED_EXPERIMENTAL"
+    },
+    {
+      "repository": "Traky12/openclaw",
+      "passport": "UPSTREAM-FORK",
+      "source": "upstream repository; no local claim",
+      "gate": "BLOCKED",
+      "checkpoint": "not modified",
+      "sensitivity": "EXTERNAL_FORK",
+      "evidenceStatus": "EXTERNAL_UPSTREAM_SURFACE"
+    },
+    {
+      "repository": "Traky12/n8n",
+      "passport": "UPSTREAM-FORK",
+      "source": "upstream repository; no local claim",
+      "gate": "BLOCKED",
+      "checkpoint": "not modified",
+      "sensitivity": "EXTERNAL_FORK",
+      "evidenceStatus": "EXTERNAL_UPSTREAM_SURFACE"
+    },
+    {
+      "repository": "Traky12/goldfish",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_TEMPLATE",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "repository": "Traky12/desktop-tutorial",
+      "passport": "REPO-DESKTOP-TUTORIAL",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "GOVERNED_STATUS_PENDING"
+    },
+    {
+      "repository": "Traky12/ctaex-iot-pilot",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "pilot protocol; field claims bounded",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "EVIDENCE_SCOPED_PILOT"
+    },
+    {
+      "repository": "Traky12/castuo-offline-field-operations",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PUBLIC_OPERATIONAL",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "repository": "Traky12/castuo-agro-edge",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PUBLIC_OPERATIONAL",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "repository": "Traky12/castuo-360-v5.3",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "repository": "Traky12/Cast-o",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "README block, local contracts and governed inventory",
+      "gate": "P0/P1/P2→E3→N5",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PUBLIC_OPERATIONAL",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "repository": "Traky12/-Prueba-final",
+      "passport": "CPP-COMP-CASTUO",
+      "source": "repository description; verification required",
+      "gate": "P0/P1",
+      "checkpoint": "README PR branch docs/castuo-governed-readme-20260817; dashboard checkpoint 1082664b",
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "UNVERIFIED_EXPERIMENTAL"
+    }
+  ]
+}
