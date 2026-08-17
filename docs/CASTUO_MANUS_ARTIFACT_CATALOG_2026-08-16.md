@@ -33,10 +33,10 @@ El siguiente material no se copia intencionadamente al perfil público: inventar
 
 ## Current implementation / Implementación actual
 
-The transfer is carried by the protected profile PR [`Traky12/Traky12#5`](https://github.com/Traky12/Traky12/pull/5). The latest published head is commit `809e112`, which includes the logo integration, bilingual navigation, transfer matrix, artifact catalog navigation and the links to the candidate control-plane reports.
+The transfer is carried by the protected profile PR [`Traky12/Traky12#5`](https://github.com/Traky12/Traky12/pull/5). The latest published head is commit `2e55f61`, which includes the logo integration, bilingual navigation, transfer matrix, artifact catalog navigation and the links to the candidate control-plane reports.
 The PR remains `REVIEW_REQUIRED` / `BLOCKED`; `main` has not been modified by an automatic merge.
 
-La transferencia se realiza mediante el PR protegido [`Traky12/Traky12#5`](https://github.com/Traky12/Traky12/pull/5). El último head publicado es el commit `809e112`, que incluye la integración del logotipo, la navegación bilingüe, la matriz de transferencia, la navegación del catálogo y los enlaces a los informes candidatos del control plane.
+La transferencia se realiza mediante el PR protegido [`Traky12/Traky12#5`](https://github.com/Traky12/Traky12/pull/5). El último head publicado es el commit `2e55f61`, que incluye la integración del logotipo, la navegación bilingüe, la matriz de transferencia, la navegación del catálogo y los enlaces a los informes candidatos del control plane.
 El PR continúa `REVIEW_REQUIRED` / `BLOCKED`; `main` no ha sido modificado mediante merge automático.
 
 > **Identity is not evidence. Repository activity is not operational truth. No claim without provenance.**
