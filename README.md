@@ -137,6 +137,7 @@ The control plane governs the state. Repositories implement declared roles. Evid
 - [Public operating model](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
 - [Repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Castuo-system canonical transition map](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_ECOSYSTEM_CANONICAL_TRANSITION.md)
+- [Castuo-system core remaining work](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_CORE_REMAINING_WORK.md)
 - [CASTÚO information index](docs/CASTUO_INFORMATION_INDEX.md)
 - [CASTÚO transfer matrix](docs/CASTUO_TRANSFER_MATRIX.md)
 - [Manus artifact catalog and transfer boundaries](docs/CASTUO_MANUS_ARTIFACT_CATALOG_2026-08-16.md)

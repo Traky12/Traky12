@@ -62,6 +62,7 @@ La fuente principal en inglés es [`README.md`](README.md). La documentación de
 - [Public operating model — EN](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
 - [Mapa público de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Mapa canónico de transición de Castuo-system](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_ECOSYSTEM_CANONICAL_TRANSITION.md)
+- [Tareas pendientes del core Castuo-system](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_CORE_REMAINING_WORK.md)
 - [Índice de información — ES](docs/CASTUO_INFORMATION_INDEX.es.md)
 - [Matriz de transferencia CASTÚO](docs/CASTUO_TRANSFER_MATRIX.md)
 - [Catálogo de artefactos Manus y límites de transferencia](docs/CASTUO_MANUS_ARTIFACT_CATALOG_2026-08-16.md)
