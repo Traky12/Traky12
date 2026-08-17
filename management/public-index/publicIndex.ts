@@ -26,9 +26,29 @@ export type PublicRecord = {
   limitation: string;
 };
 
+export const portfolioUnits = [
+  { id: "Traky12", role: "ECOSYSTEM MANAGER", boundary: "public navigation" },
+  { id: "castuo-evolution", role: "GOVERNANCE CONTROL PLANE", boundary: "vocabulary, gates and evidence policy" },
+  { id: "Castuo-system", role: "CORE PLATFORM", boundary: "implementation; production not claimed" },
+  { id: "goldfish", role: "ASSURANCE AND RECOVERY", boundary: "security, recovery and preservation" },
+  { id: "Cast-o", role: "CI AND VALIDATION", boundary: "conformance and reproducibility" },
+  { id: "castuo-agro-edge", role: "EDGE / IOT", boundary: "offline continuity and synchronization" },
+  { id: "castuo-offline-field-operations", role: "FIELD APPLICATION", boundary: "local workflow and evidence export" },
+  { id: "castuo-360-v5.3", role: "INTEGRATED WORKSPACE", boundary: "workspace; not production evidence" },
+  { id: "ctaex-iot-pilot", role: "LABORATORY PILOT", boundary: "connectivity-loss validation" },
+  { id: "agrovision-360", role: "EXPERIMENTAL RESEARCH", boundary: "bounded agro-vision and drift work" },
+  { id: "-Prueba-final", role: "EXPERIMENTAL SANDBOX", boundary: "integration experiments only" },
+  { id: "n8n", role: "UPSTREAM / FORK", boundary: "upstream integration; not proprietary evidence" },
+  { id: "openclaw", role: "UPSTREAM / FORK", boundary: "bounded assistant integration" },
+  { id: "desktop-tutorial", role: "TRAINING / SUPPORT", boundary: "repeatable contribution training" },
+  { id: "castuo-strategy-knowledge-base", role: "STRATEGY KNOWLEDGE BASE", boundary: "security and quality remediation tracked" },
+  { id: "copia-de-cast-o-system-strategy-knowledge-base", role: "STRATEGY COPY", boundary: "duplicate boundary and security parity" },
+] as const;
+
 export const publicIndexMeta = {
   version: "1.0",
   snapshot: "2026-08-17",
+  portfolioUnits: portfolioUnits.length,
   indexedSurfaces: 14,
   publicRecords: 29,
   authority: "PORTFOLIO CONTROL PLANE",

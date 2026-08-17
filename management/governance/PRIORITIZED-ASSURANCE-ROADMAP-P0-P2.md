@@ -38,3 +38,22 @@ This matrix turns the systematic reinforcement review into governed work. **P0 i
 ## Decision sequence
 
 The sequence is deliberate. Close P0 security and remote diagnosis first; stabilize asset classification; then implement P1 identity, runtime observability, evidence hygiene and restore; only afterward pursue P2 independence, external review, field and commercial evidence. Until P0 closes, affected systems remain `PROMOTION-BLOCKED` and the dashboard must display the reason rather than infer readiness.
+
+## Expected result registry
+
+The matrix uses `exit` for the gate condition and the following registry for the **expected result** delivered by each work item.
+
+| ID | Expected result |
+|---|---|
+| P0-CI-REMOTE | Remote workflow failures expose reproducible run, job and annotation evidence without secret disclosure. |
+| P0-SAAS-BOUNDARY | The browser contains no provider key or execution path; backend/vault owns provider calls. |
+| P0-CLASSIFICATION | Audits distinguish 16 portfolio units, 29 public records and 14 indexed surfaces. |
+| P0-SUPPLY-CHAIN | Source scan, dependency audit and SBOM are reproducible locally, with remote status separated. |
+| P1-REPO-SENSITIVITY | Every repository has an owner, sensitivity class, data boundary and minimum gate. |
+| P1-IDENTITY | Every API action is owner/role/scope checked and auditable. |
+| P1-OBSERVABILITY | Runtime health is represented by metrics, SLOs, traces and reproducible alerts. |
+| P1-RESTORE | A fresh environment can restore a verified backup and produce checksum evidence. |
+| P1-REMOTE-ASSURANCE | Remote diagnostics become a governed, repeatable capability rather than manual inspection. |
+| P2-VENDOR | A second implementation passes the same contract and substitution suite. |
+| P2-FIELD | Field evidence contains metrics, incidents, continuity data and independent review. |
+| P2-COMMERCIAL | Commercial claims are backed by authorized KPI, payment, delivery and repeatability evidence. |
