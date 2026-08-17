@@ -76,6 +76,7 @@ El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entra
 | `TRAKY12-PR-STATUS-AUDIT.json` | Estado de 14 PRs, base/head, revisión, mergeability, checks visibles y límites de permisos |
 | `EXTERNAL-GATE-EXECUTION-PACK.md` | Procedimientos seguros, evidencia requerida y rollback para gates externos |
 | `CASTUO-SOVEREIGN-REFERENCE-ARCHITECTURE.md` | Jerarquía de autoridad, ownership, soberanía de datos, commit lineage y rollback |
+| `CASTUO-COMMIT-GOVERNANCE-POLICY.json` | Política ejecutable de commits, PRs, ownership, checks, claims y rollback |
 
 ## Estado GitHub
 
