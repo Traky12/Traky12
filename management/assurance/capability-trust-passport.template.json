@@ -1,0 +1,25 @@
+{
+  "capability": "",
+  "contract": "",
+  "implementation": [],
+  "evidence": [],
+  "security": {
+    "status": "PENDING",
+    "references": []
+  },
+  "reproducibility": {
+    "status": "PENDING",
+    "test": "",
+    "source_commit": ""
+  },
+  "independent_review": {
+    "status": "PENDING",
+    "reviewer": "",
+    "reviewed_at": ""
+  },
+  "operational_scope": "",
+  "known_limitations": [],
+  "current_gate": "GATE-R1",
+  "allowed_claims": [],
+  "forbidden_claims": []
+}
