@@ -1,133 +1,123 @@
 <!-- CASTUO:BRAND:START -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo" width="520" />
+  <a href="https://github.com/Traky12/Traky12/blob/brand/castuo-system-identity-20260816/assets/brand/brand-manifest.yaml">
+    <img src="https://raw.githubusercontent.com/Traky12/Traky12/brand/castuo-system-identity-20260816/assets/brand/castuo-system-logo-horizontal.jpg" alt="Logotipo oficial de CASTÚO-SYSTEM — solo identidad" width="520" />
+  </a>
 </p>
 <!-- CASTUO:BRAND:END -->
 
 # CASTÚO-SYSTEM™
 
-## Identidad
+### Systems Architect · Evidence Engineer · AI Governance & Assurance
 
-**Systems Architect · Evidence Engineer · AI Governance & Assurance**
+**Fundador y arquitecto principal de CASTÚO-SYSTEM™**
 
-Construyo CASTÚO-SYSTEM: una capa de evidencia y recuperación para operaciones rurales y distribuidas resilientes.
+> **NO CLAIM WITHOUT PROVENANCE**<br>
+> **NO AI DEPLOYMENT WITHOUT ASSURANCE**<br>
+> **NO SCALE WITHOUT SECURITY AND OBSERVABILITY**
 
-## Qué es CASTÚO
+CASTÚO-SYSTEM es una dirección de infraestructura basada en evidencia para operaciones rurales y distribuidas resilientes. La superficie pública se limita intencionadamente a identidad, alcance profesional declarado, gobernanza, mapa de capacidades, evidencia acotada y gates de promoción.
 
-**CASTÚO Evidence-Ready Field Operations** proporciona continuidad, trazabilidad y evidencia operacional verificable para workflows rurales y distribuidos que trabajan con conectividad irregular.
+La IA, Edge/IoT, federación, soberanía y private cloud son arquitectura habilitadora o capacidades objetivo salvo que exista evidencia separada. La arquitectura es más avanzada que la evidencia externa de mercado disponible; este perfil no convierte esa diferencia en un claim.
 
-La primera unidad comercial está limitada a:
+## Estado público
 
-```text
-1 workflow + 1 tenant + 1 scope + 1 ejecución
-+ 1 paquete de evidencia + 1 escenario de recuperación
-+ 1 revisión + 1 informe
-```
+**Estado público principal:** `EVIDENCE-SCOPED · STAGING-CANDIDATE · PROMOTION-BLOCKED`
 
-La oferta progresa mediante **Continuity Assessment → Evidence Proof → Recovery Proof → Bounded Field Pilot → Continuity Service**.
+El estado siguiente se genera desde el control plane canónico; no es una afirmación operativa redactada manualmente.
 
-## Qué existe ahora
-
-El Proof Pack de referencia ha ejecutado `PASS_WITHIN_DECLARED_SCOPE`, con `claims_promoted = false`. La reproducción independiente E3-001, la validación comercial y el resultado de cliente siguen pendientes. La contribución externa permanece en `CANDIDATE / NOT_SUBMITTED`.
-
-La secuencia demostrable es:
-
-```text
-crear workflow → perder conectividad → continuar localmente
-→ almacenar eventos → sincronizar → recuperar → reproducir
-→ revisar evidencia → exportar informe
-```
-
-## Estado y límites
-
-La arquitectura de SaaS, Edge/IoT, IA gobernada, federación, soberanía, gemelos digitales y private cloud se presenta como soporte o dirección condicionada, no como productos independientes ni como capacidades productivas universalmente validadas.
-
-No se afirma interoperabilidad universal, recuperación garantizada, operación productiva, superioridad general, alianza externa, ingresos, clientes o certificación sin evidencia específica.
-
-## Próximos pasos
-
-```text
-E3-001 → FIRST PAID PROOF → MEASURED CUSTOMER RESULT
-→ SECOND COMPARABLE DELIVERY → REPEATABILITY
-```
-
-La fuente principal en inglés es [`README.md`](README.md). La documentación detallada de evidencia, seguridad, Proof Pack y finanzas permanece en el repositorio de evolución.
-
-- [Configuración segura del token de auditoría](docs/GITHUB_ACTIONS_CASTUO_AUDIT_TOKEN.md)
-- [Frontera pública de claims](PUBLIC_CLAIM_BOUNDARY.md)
-
-## Navegación pública
-
-- [Modelo operativo público — ES](docs/CASTUO_PUBLIC_OPERATING_MODEL.es.md)
-- [Public operating model — EN](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
-- [Mapa público de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
-- [Mapa canónico de transición de Castuo-system](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_ECOSYSTEM_CANONICAL_TRANSITION.md)
-- [Tareas pendientes del core Castuo-system](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_CORE_REMAINING_WORK.md)
-- [Índice de información — ES](docs/CASTUO_INFORMATION_INDEX.es.md)
-- [Matriz de transferencia CASTÚO](docs/CASTUO_TRANSFER_MATRIX.md)
-- [Catálogo de artefactos Manus y límites de transferencia](docs/CASTUO_MANUS_ARTIFACT_CATALOG_2026-08-16.md)
-- [Registro de integración estratégica — ES](docs/CASTUO_STRATEGY_INTEGRATION_REGISTER.es.md)
-- [CASTÚO strategy integration register — EN](docs/CASTUO_STRATEGY_INTEGRATION_REGISTER.md)
-- [CASTÚO information index — EN](docs/CASTUO_INFORMATION_INDEX.md)
-- [Evidence Center](evidence-center/README.md)
-- [Estado actual de integraciones GitHub](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md)
-- [Bloqueadores y alcance de checks](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_BLOCKERS_2026-08-16.md)
-- [Auditoría candidata de consolidación GitHub](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/GITHUB_CONSOLIDATION_STATUS_2026-08-16.md)
-- [Límites de checks remotos — rama candidata](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md)
-- [Contribuir](CONTRIBUTING.md)
-- [Política de seguridad](SECURITY.md)
-- [Frontera pública de claims — EN](PUBLIC_CLAIM_BOUNDARY.md)
-- [Frontera pública de claims — ES](PUBLIC_CLAIM_BOUNDARY.es.md)
-
-## Registro de integración procesada CASTÚO
-
-El material procesado en Manus y GitHub se organiza por función y no se copia indiscriminadamente al perfil. El perfil es el portal público; `castuo-evolution` es el control plane de gobernanza; `Castuo-system` es la implementación core; `Cast-o` valida conformance; `goldfish` proporciona assurance y recuperación; y los repositorios edge, field, piloto, laboratorio y upstream permanecen acotados por sus alcances declarados.
-
-| Artefacto procesado | Ubicación canónica | Significado |
-|---|---|---|
-| Baseline semántico congelado | [`CASTUO-REPOSITORY-STANDARD-V1.0`](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO-REPOSITORY-STANDARD-V1.0.md) | Vocabulario y estados comunes |
-| Mapa de transición del core | [`Mapa de Castuo-system`](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_ECOSYSTEM_CANONICAL_TRANSITION.md) | Rol core, dependencias y frontera de evidencia |
-| Referencia de gobernanza | [`Referencia de implementación core`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/CASTUO_CORE_IMPLEMENTATION_REFERENCE.md) | Relación control plane ↔ core |
-| Registro de transferencia Manus | [`Catálogo de artefactos Manus`](docs/CASTUO_MANUS_ARTIFACT_CATALOG_2026-08-16.md) | Artefactos públicos, referencias y exclusiones |
-| Superficie estratégica searchable | Knowledge Base CASTÚO *(proyecto Manus; publicación pública pendiente)* | Búsqueda y navegación; no evidencia operativa |
-| Frontera de checks remotos | [`REMOTE_PR_CHECK_STATUS`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md) | Checks visibles y límites upstream |
-
-La transición se gobierna mediante `CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING EXECUTION → REVIEW → GREEN-STAGING`. Un PASS local, un README, un commit, un PR abierto o un recurso de identidad no cierra un gate de promoción. El estado público actual permanece `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED`.
-
-<!-- CASTUO:STATE:START -->
-## Estado actual del ecosistema
-
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
-
-El estado público se genera desde `castuo-evolution/data/control-plane-status.yaml`.
-
-| Dimensión | Estado público actual |
+| Dimensión | Estado público |
 |---|---|
-| Conformance local | `14/14 PASS LOCAL` |
-| Conformance remoto | `0/14` — `PENDING` |
-| Publicación remota | `14 PENDING` |
-| Entorno | `STAGING-CANDIDATE` |
-| Baseline de seguridad | `PENDING` |
-| Ejecución de staging | `PENDING` |
-| Revisión humana | `PENDING` |
-| Producción | `NOT_CLAIMED` |
-| Validación comercial | `NOT_CLAIMED` |
-| E3 independiente | `PENDING` |
-| Federación | `PENDING` |
+| Revisión fuente | [`castuo-evolution@e8a86adb`](https://github.com/Traky12/castuo-evolution/tree/chore/refresh-integration-status-20260816) |
+| Generado en | `2026-08-17T02:56:40Z` |
+| Alcance | `PUBLIC_ONLY` |
+| Arquitectura | `CURRENT / EVIDENCE-SCOPED` |
+| Implementación local | `IMPLEMENTED_LOCAL` donde existe evidencia |
+| Conformance local | `14/14 PASS LOCAL` dentro del alcance declarado |
+| Revisión independiente | `PENDING` |
+| Estado operativo | `NOT_CLAIMED` |
+| Estado comercial | `DOCUMENTED` — no se afirma operación remunerada |
+| Conformidad regulatoria | `NOT_CLAIMED` |
 
-**Base de evidencia:** `castuo-evolution` · commit `6ccff6700c266defac0b2f11a77ef81c085d28cd` · scope `local checkout set of 14 repositories` · evidencia `evidence/local-conformance-2026-08-16/summary.json` · review `PENDING`.
+Un PASS local, la actividad de un repositorio, un README, un commit, un pull request o un recurso de identidad no demuestran producción, certificación, tracción de clientes, ingresos ni operación continua.
 
-El perfil público proyecta el control plane y no decide el estado. Bloqueador: `remote_publication_conformance_security_evidence_staging_review_pending`. La evidencia local no implica publicación remota, producción, certificación, resultado de cliente, operación continua ni federación.
-<!-- CASTUO:STATE:END -->
+## Qué puede inspeccionarse
 
-<!-- CASTUO:ECOSYSTEM-INTEGRATION:START -->
-## Integración del ecosistema CASTÚO-SYSTEM
+El registro público expone actualmente gobernanza de repositorios y límites de claims, un marco de conformance local, manifests y hashes de evidencia, gates trazables, tooling de CI/CD y validación, diseño acotado de workflows Edge/offline y controles documentados de seguridad, recuperación y revisión. Cada afirmación queda limitada por su fuente, alcance y estado de revisión.
 
-**Rol declarado:** portal público del ecosistema y superficie de claims.
+## Evidence of Practice / Evidencia de práctica
 
-Este perfil se conecta con [Castuo-system](https://github.com/Traky12/Castuo-system) como core y con [castuo-evolution](https://github.com/Traky12/castuo-evolution) como control plane. La actividad de un repositorio no equivale a verdad operativa.
+La descripción profesional anterior se apoya en superficies de trabajo inspeccionables y no se presenta como una acreditación externa. Entre ellas se encuentran arquitectura de sistemas, contratos de gobernanza, controles de repositorios y CI/CD, ingeniería de evidencia, documentación de seguridad y recuperación, diseño Edge/IoT acotado y validación local reproducible. Estas superficies demuestran práctica declarada dentro de un alcance; no certifican por sí mismas la condición profesional, la conformidad regulatoria ni la madurez operativa.
 
-**Estado acotado:** GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED. Identidad, implementación, pruebas, evidencia, revisión y promoción son dimensiones separadas.
+## Engagements / Encargos acotados
 
-**Límite de claims:** este README no afirma producción, certificación, cumplimiento legal, validación independiente, clientes, ingresos, operación continua, autoridad autónoma ni federación sin evidencia con alcance, artefactos reproducibles y revisión atribuible.
-<!-- CASTUO:ECOSYSTEM-INTEGRATION:END -->
+CASTÚO-SYSTEM se orienta hacia encargos limitados y preparados para evidencia destinados a organizaciones con problemas de continuidad y trazabilidad:
+
+1. **Continuity Assessment** — alcance del riesgo y del workflow.
+2. **Evidence Proof** — un envelope de ejecución acotado con hashes y criterios de aceptación.
+3. **Recovery Proof** — un fallo declarado y una recuperación reproducible.
+4. **Bounded Field Pilot** — un workflow, tenant, alcance y ejecución medida.
+5. **Continuity Service** — operación repetible únicamente después de revisión, aceptación y acuerdo comercial separado.
+
+Cada encargo debe definir `scope · owner · deliverable · KPI · evidence · acceptance criterion`. No se afirma públicamente un piloto pagado, cliente, factura, renovación ni ingreso recurrente.
+
+## Evidence Center
+
+Este perfil es un read-model público. `castuo-evolution` sigue siendo la fuente canónica de gobernanza; Evidence Center contiene la capa de trazabilidad. La evidencia establece qué ocurrió, mientras que la revisión y los gates de promoción determinan qué puede afirmarse.
+
+- [Estado público generado](docs/governance/CASTUO_PUBLIC_STATE.yaml)
+- [Experiencia profesional — ES](EXPERIENCE.es.md)
+- [Professional Experience — EN](EXPERIENCE.md)
+- [Matriz de evidencia — ES](CASTUO_PROOF_MATRIX.es.md)
+- [Proof Matrix — EN](CASTUO_PROOF_MATRIX.md)
+- [Frontera operativa — ES](CASTUO_OPERATING_BOUNDARY.es.md)
+- [Operating Boundary — EN](CASTUO_OPERATING_BOUNDARY.md)
+- [Índice Evidence Center](docs/evidence/CASTUO_EVIDENCE_CENTER_INDEX.md)
+- [Public Claim Boundary](PUBLIC_CLAIM_BOUNDARY.md)
+- [Mapa de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+- [Cambios verificados recientes](docs/governance/CASTUO_RECENT_VERIFIED_CHANGES_2026-08-17.md)
+- [Gates de promoción](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/STAGING_PROMOTION_CHECKLIST_14_REPOSITORIES.md)
+- [Public Knowledge & Evidence Index](https://castuo-system.es/)
+
+## Niveles de publicación
+
+Solo los siguientes niveles pertenecen al perfil público:
+
+| Nivel | Significado |
+|---|---|
+| `PUBLIC` | Información autorizada, pública y limitada por alcance. |
+| `PUBLIC-SUMMARY` | Resumen seguro que apunta a una fuente pública canónica. |
+| `REVIEW-ONLY` | Material que requiere revisión humana antes de publicarse. |
+| `PRIVATE` | Información no pública de proyecto, cliente, finanzas, infraestructura o identidad. |
+| `RESTRICTED` | Secretos, credenciales, evidencia sensible, logs brutos o datos operativos protegidos. |
+
+El README publica únicamente `PUBLIC` y `PUBLIC-SUMMARY`. El material `REVIEW-ONLY`, `PRIVATE` y `RESTRICTED` queda excluido.
+
+## Roles de los repositorios
+
+| Repositorio | Rol público | Frontera |
+|---|---|---|
+| `castuo-evolution` | Control plane de gobernanza | Vocabulario canónico, gates y política de release. |
+| `Castuo-system` | Plataforma core | Implementación y ejecución acotada; producción no afirmada. |
+| `goldfish` | Assurance y recuperación | Seguridad, recuperación y preservación de evidencia. |
+| `Cast-o` | CI y validación | Tests y procedencia; los tests no demuestran operación por sí solos. |
+| `castuo-agro-edge` | Edge / IoT | Continuidad offline y sincronización. |
+| `castuo-offline-field-operations` | Aplicación de campo | Workflows acotados y exportación de evidencia. |
+| `n8n` / `openclaw` | Integraciones upstream | La capacidad upstream no es automáticamente propiedad de CASTÚO. |
+
+## Lo que no se afirma
+
+Este perfil no afirma operación productiva, servicio comercial continuo, conformidad certificada, validación independiente E3, ingresos recurrentes, tracción de clientes, interoperabilidad universal, recuperación garantizada, autoridad autónoma ni federación a escala. Esos claims requieren evidencia separada, alcance, reproducibilidad, revisión atribuible y promoción.
+
+> Este perfil tiene finalidad informativa pública. No constituye certificación, garantía, oferta comercial, opinión jurídica ni declaración de cumplimiento.
+
+## Enlaces públicos
+
+- [Sitio oficial](https://castuo-system.es/)
+- [Repositorios públicos](https://github.com/Traky12?tab=repositories)
+- [ORCID](https://orcid.org/0009-0007-3489-0565)
+- [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
+- [English / versión inglesa](README.md)
+- [Evidence Center](evidence-center/README.md)
+
+`Identity != Documentation != Evidence != Execution != Review != Promotion`

@@ -16,123 +16,104 @@
 > **NO AI DEPLOYMENT WITHOUT ASSURANCE**<br>
 > **NO SCALE WITHOUT SECURITY AND OBSERVABILITY**
 
-CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. Its public surface is intentionally scoped to identity, governance, capability mapping, bounded evidence and promotion gates.
+CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. The public surface is intentionally limited to identity, declared professional scope, governance, capability mapping, bounded evidence and promotion gates.
 
-AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture and target capabilities unless explicitly evidenced otherwise.
+AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture or target capabilities unless separately evidenced. The architecture is stronger than its current external market evidence; this profile does not turn that gap into a claim.
 
-## Public State
+## Public status
 
-Generated from: [`castuo-evolution@214ebbd`](https://github.com/Traky12/castuo-evolution/tree/chore/refresh-integration-status-20260816)<br>
-Generated at: `2026-08-17T02:21:50Z`<br>
-Scope: `PUBLIC ONLY`<br>
-State: `EVIDENCE-SCOPED · STAGING-CANDIDATE · PROMOTION-BLOCKED`
+**Primary public state:** `EVIDENCE-SCOPED · STAGING-CANDIDATE · PROMOTION-BLOCKED`
 
-| Layer | Status |
+The state below is generated from the canonical control plane, not written as an operational assertion.
+
+| Dimension | Public status |
 |---|---|
-| Brand | `CURRENT` |
+| Source revision | [`castuo-evolution@e8a86adb`](https://github.com/Traky12/castuo-evolution/tree/chore/refresh-integration-status-20260816) |
+| Generated at | `2026-08-17T02:56:40Z` |
+| Scope | `PUBLIC_ONLY` |
 | Architecture | `CURRENT / EVIDENCE-SCOPED` |
 | Local implementation | `IMPLEMENTED_LOCAL` where evidenced |
-| Remote operation | `NOT CLAIMED` |
-| Production | `NOT CLAIMED` |
-| Commercial operation | `NOT CLAIMED` |
-| Federation | `TARGET` |
-| Regulatory conformity | `NOT CLAIMED` |
+| Local conformance | `14/14 PASS LOCAL` within declared repository-standard scope |
+| Independent review | `PENDING` |
+| Operational state | `NOT_CLAIMED` |
+| Commercial state | `DOCUMENTED` — paid operation not claimed |
+| Regulatory conformity | `NOT_CLAIMED` |
 
-Local conformance: `14/14 PASS LOCAL` *(repository-standard checks in local scope only; not certification, production or remote execution).*
+A local pass, repository activity, README, commit, pull request or identity asset does not establish production, certification, customer traction, revenue or continuous operation.
 
-## What is verifiable now
+## What can be inspected
 
-The public record supports repository governance and claim boundaries, a local conformance framework, evidence manifests and hashes, traceable gates, CI/CD and validation tooling, bounded Edge/offline architecture, field workflow design, and documented security, recovery and review controls.
+The public record currently exposes repository governance and claim boundaries, a local conformance framework, evidence manifests and hashes, traceable gates, CI/CD and validation tooling, bounded Edge/offline workflow design, and documented security, recovery and review controls. Each statement remains limited by its source, scope and review status.
 
-## What is not claimed
+## Evidence of practice
 
-This profile does not claim production operation, continuous commercial service, certified compliance, independent E3 validation, recurring revenue, customer traction or federation at scale. These require separate evidence, scope, review and promotion gates.
+The professional description above is supported by inspectable work surfaces rather than treated as an external credential. Examples include systems architecture, governance contracts, repository and CI/CD controls, evidence engineering, security and recovery documentation, bounded Edge/IoT design, and reproducible local validation. These surfaces demonstrate declared practice within scope; they do not by themselves certify professional status, regulatory compliance or operational maturity.
+
+## Engagements
+
+CASTÚO-SYSTEM is being shaped toward bounded, evidence-ready engagements for organizations facing continuity and traceability problems:
+
+1. **Continuity Assessment** — scoped risk and workflow boundary.
+2. **Evidence Proof** — one bounded execution envelope with hashes and acceptance criteria.
+3. **Recovery Proof** — one declared failure and reproducible recovery path.
+4. **Bounded Field Pilot** — one workflow, tenant, scope and measured execution.
+5. **Continuity Service** — repeatable operation only after review, acceptance and a separate commercial agreement.
+
+Each engagement must define `scope · owner · deliverable · KPI · evidence · acceptance criterion`. No paid pilot, customer, invoice, renewal or recurring revenue is publicly claimed here.
 
 ## Evidence Center
 
-This profile is a public read-model. The control plane remains authoritative. Evidence establishes what happened; review determines what may be claimed.
+This profile is a public read-model. `castuo-evolution` remains the canonical governance source; Evidence Center contains the traceability layer. Evidence establishes what happened, while review and promotion gates determine what may be claimed.
 
-- [Current public state](docs/governance/CASTUO_PUBLIC_STATE.yaml)
-- [Public Proof Matrix](docs/governance/CASTUO_PROOF_MATRIX.md)
-- [Operating boundary](docs/governance/CASTUO_OPERATING_BOUNDARY.md)
-- [Evidence Center](docs/evidence/CASTUO_EVIDENCE_CENTER_INDEX.md)
+- [Generated public state](docs/governance/CASTUO_PUBLIC_STATE.yaml)
+- [Proof Matrix](docs/governance/CASTUO_PROOF_MATRIX.md)
+- [Operating Boundary](docs/governance/CASTUO_OPERATING_BOUNDARY.md)
+- [Evidence Center index](docs/evidence/CASTUO_EVIDENCE_CENTER_INDEX.md)
+- [Public Claim Boundary](PUBLIC_CLAIM_BOUNDARY.md)
 - [Repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Recent verified changes](docs/governance/CASTUO_RECENT_VERIFIED_CHANGES_2026-08-17.md)
 - [Promotion gates](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/STAGING_PROMOTION_CHECKLIST_14_REPOSITORIES.md)
-
-## Public Knowledge & Evidence Index
-
-The public website is a human-readable projection, not a second source of truth. The canonical governance source is `castuo-evolution`; the public release is snapshot-scoped and subject to privacy, security, IP/licensing, claims, link, freshness and human-review gates.
-
 - [Public Knowledge & Evidence Index](https://castuo-system.es/)
-- [Public release status](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/public/PUBLIC_RELEASE_STATUS.yaml)
-- [Public release gate](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/public/PUBLIC_RELEASE_GATE.md)
-- [Public data boundary](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/public/PUBLIC_DATA_BOUNDARY.md)
-- [IP and licensing boundary](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/public/IP_AND_LICENSE_BOUNDARY.md)
-- [Regulatory claim boundary](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/public/REGULATORY_CLAIM_BOUNDARY.md)
-- [Freshness policy](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/public/FRESHNESS_POLICY.md)
 
-## Professional Experience
+## Publication levels
 
-### CASTÚO-SYSTEM — Founder and Lead Architect
+Only the following levels belong on the public profile:
 
-Scope includes systems architecture, AI integration and governance, Edge/IoT design, security and assurance, evidence-driven documentation, and governance boundary management.
+| Level | Meaning |
+|---|---|
+| `PUBLIC` | Explicitly authorised, public and scope-limited information. |
+| `PUBLIC-SUMMARY` | Safe summary pointing to a canonical public source. |
+| `REVIEW-ONLY` | Material requiring human review before any publication. |
+| `PRIVATE` | Non-public project, client, financial, infrastructure or personal information. |
+| `RESTRICTED` | Secrets, credentials, sensitive evidence, raw logs or protected operational data. |
 
-The current public baseline describes work performed within declared scopes. It does not by itself establish customer contracts, invoices, production service, recurring revenue or legal conformity.
+The README publishes only `PUBLIC` and `PUBLIC-SUMMARY`. `REVIEW-ONLY`, `PRIVATE` and `RESTRICTED` material is excluded.
 
-### Research and Prototyping
-
-Publicly scoped areas include agro-technology, IoT and Edge systems, AI-assisted systems, digital traceability and distributed operations. Each area remains subject to its own evidence and promotion boundary.
-
-### Innovation and Incubation
-
-Publicly referenced contexts may include CTAEX / FoodLab, startup and incubation work, pilot-oriented validation and cross-disciplinary technical learning. These references remain context statements unless a dated public source establishes a specific outcome.
-
-### Technical Architecture
-
-Scope includes enterprise software architecture, open-source integration, CI/CD and repository governance, security and recovery design, and documentation systems. Implementation and operational claims remain repository- and evidence-specific.
-
-### Governance and Standards
-
-Scope includes AI governance, risk management, claim boundaries, evidence architecture, publication discipline and compliance-oriented documentation. Regulatory conformity is not claimed by this profile.
-
-### Business Development
-
-Scope includes business planning, financial structuring, commercial-validation framing, strategic documentation and funding-oriented preparation. The profile does not claim funding, customers, invoices, revenue or paid operation without separate public evidence and review.
-
-### Education and Training
-
-Relevant professional certifications, technical courses and structured learning may be listed only when an authorised public source is available. No credential or certification is claimed here without that source.
-
-### Publications and Identifiers
-
-Public technical documentation, repositories, presentations and identifiers are linked only when intentionally published and verified. See the Evidence Center for provenance and scope.
-
-## Repository Roles
+## Repository roles
 
 | Repository | Public role | Boundary |
 |---|---|---|
-| `castuo-evolution` | Governance control plane | Canonical vocabulary, gates and public-release policy |
-| `Castuo-system` | Core platform | Implementation and bounded execution; production not claimed |
-| `goldfish` | Assurance and recovery | Security, recovery and evidence preservation |
-| `Cast-o` | CI and validation | Tests and provenance; tests do not prove operation alone |
-| `castuo-agro-edge` | Edge / IoT | Offline continuity and synchronization |
-| `castuo-offline-field-operations` | Field application | Bounded workflows and evidence export |
-| `n8n` / `openclaw` | Upstream integrations | Upstream capability is not automatically CASTÚO-owned |
+| `castuo-evolution` | Governance control plane | Canonical vocabulary, gates and release policy. |
+| `Castuo-system` | Core platform | Implementation and bounded execution; production not claimed. |
+| `goldfish` | Assurance and recovery | Security, recovery and evidence preservation. |
+| `Cast-o` | CI and validation | Tests and provenance; tests do not prove operation alone. |
+| `castuo-agro-edge` | Edge / IoT | Offline continuity and synchronisation. |
+| `castuo-offline-field-operations` | Field application | Bounded workflows and evidence export. |
+| `n8n` / `openclaw` | Upstream integrations | Upstream capability is not automatically CASTÚO-owned. |
 
-## Public Profile Note
+## What is not claimed
 
-This profile publishes only public and authorised information. It excludes secrets, credentials, private infrastructure details, unnecessary personal data, customer information and unverified operational evidence.
+This profile does not claim production operation, continuous commercial service, certified compliance, independent E3 validation, recurring revenue, customer traction, universal interoperability, guaranteed recovery, autonomous authority or federation at scale. Those claims require separate evidence, scope, reproducibility, attributable review and promotion.
 
-> This profile is for public informational purposes only. It does not constitute a certification, warranty, commercial offer, or legal/compliance statement.
+> This profile is for public informational purposes only. It is not a certification, warranty, commercial offer, legal opinion or compliance statement.
 
-## Public Links
+## Public links
 
 - [Official site](https://castuo-system.es/)
 - [Public repositories](https://github.com/Traky12?tab=repositories)
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
 - [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
-- [Evidence Center](evidence-center/README.md)
-- [Public Claim Boundary](PUBLIC_CLAIM_BOUNDARY.md)
+- [English / English source](README.md)
+- [Versión española](README.es.md)
 
 `Identity != Documentation != Evidence != Execution != Review != Promotion`

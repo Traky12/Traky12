@@ -7,8 +7,9 @@ This index is the public navigation layer for bounded assurance. It helps a revi
 | Section | Public source | Interpretation |
 |---|---|---|
 | Current state | [`CASTUO_PUBLIC_STATE.yaml`](../governance/CASTUO_PUBLIC_STATE.yaml) | Generated state with source SHA, scope and timestamp |
-| Proof Matrix | [`CASTUO_PROOF_MATRIX.md`](../governance/CASTUO_PROOF_MATRIX.md) | Capability-to-state mapping |
-| Operating boundary | [`CASTUO_OPERATING_BOUNDARY.md`](../governance/CASTUO_OPERATING_BOUNDARY.md) | State definitions and non-promotion rules |
+| Professional experience | [`EXPERIENCE.md`](../../EXPERIENCE.md) · [`ES`](../../EXPERIENCE.es.md) | Declared practice scope, not external accreditation |
+| Proof Matrix | [`CASTUO_PROOF_MATRIX.md`](../../CASTUO_PROOF_MATRIX.md) · [`ES`](../../CASTUO_PROOF_MATRIX.es.md) | Capability-to-state mapping |
+| Operating boundary | [`CASTUO_OPERATING_BOUNDARY.md`](../../CASTUO_OPERATING_BOUNDARY.md) · [`ES`](../../CASTUO_OPERATING_BOUNDARY.es.md) | State definitions and non-promotion rules |
 | Repository map | [`CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md`](../CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) | Public role and boundary of each repository |
 | Pilot scope | [`PILOT-001 public scope`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/pilot/PILOT-001_PUBLIC_SCOPE.md) | Bounded customer-pilot template |
 | Commercial gates | [`G0–G8 commercial gates`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/commercial/COMMERCIAL_READINESS_GATES_G0_G8.md) | Technical-to-commercial promotion model |
@@ -40,4 +41,4 @@ The profile distinguishes professional scope, research and prototyping, innovati
 
 Public release controls are linked from the control plane: `PUBLIC_RELEASE_STATUS`, `PUBLIC_RELEASE_GATE`, `PUBLIC_DATA_BOUNDARY`, `IP_AND_LICENSE_BOUNDARY`, `REGULATORY_CLAIM_BOUNDARY` and `FRESHNESS_POLICY`. Human approval remains separate from technical validation.
 
-The public Evidence Center excludes secrets, credentials, private infrastructure details, unnecessary personal data, customer identity, tax records, bank details, private contracts, raw logs and unverified operational evidence. It is an index of proof surfaces, not proof that every listed objective has been completed.
+The public Evidence Center excludes secrets, credentials, private infrastructure details, unnecessary personal data, customer identity, tax records, bank details, private contracts, raw logs and unverified operational evidence. It is an index of proof surfaces, not proof that every listed objective has been completed. The profile publishes only `PUBLIC` and `PUBLIC-SUMMARY`; `REVIEW-ONLY`, `PRIVATE` and `RESTRICTED` material remains excluded.
