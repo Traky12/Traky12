@@ -43,3 +43,12 @@ La implementación en `Castuo-system/progress-dashboard` y la especificación `d
 ### Quantum visual readout
 
 La interfaz ahora representa el `Evidence budget`, la `heuristic confidence` y los factores ponderados de continuidad, assurance y recursos mediante barras y un gráfico horizontal. Estas lecturas son deterministas y sirven sólo para explorar trade-offs; no equivalen a evidencia de campo, probabilidad calibrada, runtime cuántico ni permiso de promoción. La etiqueta `LOCAL READOUT / NO CLAIM` debe permanecer visible en cualquier futura adaptación del laboratorio.
+
+
+## Backend boundary y contrato reproducible — 2026-08-17
+
+La siguiente iteración ya no trata los conectores como una intención puramente visual. El dashboard full-stack exige sesión y expone procedimientos protegidos para `connect`, `rotate` y `revoke`. El backend aplica una allowlist (`mistral`, `stripe`, `telegram`, `aemet`), scopes mínimos y referencias `vault://castuo/<connector>`. Persiste intents y eventos de auditoría redactados, pero no credenciales ni payloads de proveedor.
+
+El control `pnpm security:scan` y las pruebas de seguridad comprueban que no aparezcan claves, tokens o contraseñas en los roots gobernados. La plataforma SaaS sigue en `SECURITY_HOLD` hasta que se conecte un vault real, se implementen adaptadores con timeout, rate limit, allowlist de dominios, rotación, revocación y pruebas de permisos.
+
+El contrato `CASTUO-QUANTUM-DECISION-V1` fija fórmula, entrada, resultado esperado y límites. Su fixture se reproduce con Vitest y mantiene `NO_CLAIM`; el laboratorio no genera evidencia de campo ni habilita promoción G0–G7.
