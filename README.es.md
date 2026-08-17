@@ -78,6 +78,21 @@ La fuente principal en inglés es [`README.md`](README.md). La documentación de
 - [Frontera pública de claims — EN](PUBLIC_CLAIM_BOUNDARY.md)
 - [Frontera pública de claims — ES](PUBLIC_CLAIM_BOUNDARY.es.md)
 
+## Registro de integración procesada CASTÚO
+
+El material procesado en Manus y GitHub se organiza por función y no se copia indiscriminadamente al perfil. El perfil es el portal público; `castuo-evolution` es el control plane de gobernanza; `Castuo-system` es la implementación core; `Cast-o` valida conformance; `goldfish` proporciona assurance y recuperación; y los repositorios edge, field, piloto, laboratorio y upstream permanecen acotados por sus alcances declarados.
+
+| Artefacto procesado | Ubicación canónica | Significado |
+|---|---|---|
+| Baseline semántico congelado | [`CASTUO-REPOSITORY-STANDARD-V1.0`](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO-REPOSITORY-STANDARD-V1.0.md) | Vocabulario y estados comunes |
+| Mapa de transición del core | [`Mapa de Castuo-system`](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_ECOSYSTEM_CANONICAL_TRANSITION.md) | Rol core, dependencias y frontera de evidencia |
+| Referencia de gobernanza | [`Referencia de implementación core`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/CASTUO_CORE_IMPLEMENTATION_REFERENCE.md) | Relación control plane ↔ core |
+| Registro de transferencia Manus | [`Catálogo de artefactos Manus`](docs/CASTUO_MANUS_ARTIFACT_CATALOG_2026-08-16.md) | Artefactos públicos, referencias y exclusiones |
+| Superficie estratégica searchable | Knowledge Base CASTÚO *(proyecto Manus; publicación pública pendiente)* | Búsqueda y navegación; no evidencia operativa |
+| Frontera de checks remotos | [`REMOTE_PR_CHECK_STATUS`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md) | Checks visibles y límites upstream |
+
+La transición se gobierna mediante `CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING EXECUTION → REVIEW → GREEN-STAGING`. Un PASS local, una marca, un README, un commit o un PR abierto no cierra un gate de promoción. El estado público actual permanece `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED`.
+
 <!-- CASTUO:STATE:START -->
 ## Estado actual del ecosistema
 
