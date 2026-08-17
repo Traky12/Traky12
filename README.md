@@ -25,17 +25,15 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 ## Current ecosystem state
 
 <!-- CASTUO:STATE:START -->
-## Current ecosystem state
+**STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED**
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
-
-The public state is generated from `castuo-evolution/data/control-plane-status.yaml`.
+**Public state generated from:** `Traky12/castuo-evolution@214ebbd` · generated `2026-08-17T02:21:50Z` · scope `canonical_control_plane_candidate`.
 
 | Dimension | Current public status |
 |---|---|
-| Local conformance | `14/14 PASS LOCAL` |
-| Remote conformance | `0/14` — `PENDING` |
-| Remote publication | `14 PENDING` |
+| Local conformance | `14/14 PASS LOCAL` — repository-standard checks on declared local checkout set only |
+| Remote conformance | `PENDING_OR_SCOPE_LIMITED` |
+| Remote publication | `PENDING` |
 | Environment | `STAGING-CANDIDATE` |
 | Security baseline | `PENDING` |
 | Staging execution | `PENDING` |
@@ -43,11 +41,9 @@ The public state is generated from `castuo-evolution/data/control-plane-status.y
 | Production | `NOT_CLAIMED` |
 | Commercial validation | `NOT_CLAIMED` |
 | Independent E3 | `PENDING` |
-| Federation | `PENDING` |
+| Federation | `NOT_CLAIMED` |
 
-**Evidence basis:** `castuo-evolution` · commit `6ccff6700c266defac0b2f11a77ef81c085d28cd` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
-
-The public profile projects the control plane and does not decide state. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
+**Does not imply:** remote execution, production readiness, security certification, commercial validation or independent review. The profile projects the control plane and does not decide state. `Identity != Evidence != Execution != Review != Promotion`.
 <!-- CASTUO:STATE:END -->
 
 ## Customer wedge
@@ -78,6 +74,34 @@ The public profile does not claim that this journey is a completed production or
 | `NOT_CLAIMED` | Explicitly outside the claims authorised by current evidence |
 
 A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
+
+## Operating boundary
+
+CASTÚO-SYSTEM currently distinguishes four independent states:
+
+| Layer | Public state |
+|---|---|
+| Brand | `CURRENT` |
+| Architecture | `CURRENT / EVIDENCE-SCOPED` |
+| Technical implementation | `IMPLEMENTED_LOCAL / TESTED` where evidenced |
+| Remote production | `NOT_CLAIMED` |
+| Commercial operation | `NOT_CLAIMED` |
+| Federation | `TARGET` |
+| Regulatory conformity | `NOT_CLAIMED` |
+
+`DOCUMENTED` describes a specification, `IMPLEMENTED_LOCAL` describes code in the declared scope, `TESTED` describes a bounded test, and `OPERATIONAL` requires remote service, owner, access control, observability, backup/restore, rollback and dated evidence. No capability is promoted from documentation, code presence, local tests or repository activity alone.
+
+## What CASTÚO can demonstrate today
+
+The public record can demonstrate evidence-oriented repository governance, capability-oriented architecture, local conformance checks, CI/CD and validation tooling, edge/offline architecture, evidence manifests and hashes, negative assurance testing, security and recovery controls, and governance gates with explicit promotion semantics.
+
+It does not yet demonstrate continuous production operation, recurring paid customers, independent E3 review, repeatable commercial deployment, a production SLA or federated operation at scale. These remain `PENDING`, `TARGET` or `NOT_CLAIMED` according to the Proof Matrix.
+
+## Proof Matrix and Evidence Center
+
+The canonical assurance path is [`CASTUO_PROOF_MATRIX.md`](docs/governance/CASTUO_PROOF_MATRIX.md), which maps `Capability → Implementation → Test → Evidence → Review → Gate → State`. The operating rules are in [`CASTUO_OPERATING_BOUNDARY.md`](docs/governance/CASTUO_OPERATING_BOUNDARY.md), and the public navigation index is [`CASTUO_EVIDENCE_CENTER_INDEX.md`](docs/evidence/CASTUO_EVIDENCE_CENTER_INDEX.md).
+
+Recent verified changes are recorded in [`CASTUO_RECENT_VERIFIED_CHANGES_2026-08-17.md`](docs/governance/CASTUO_RECENT_VERIFIED_CHANGES_2026-08-17.md). Activity demonstrates work performed in a declared scope; activity is not evidence of maturity.
 
 ## Evidence chain
 
