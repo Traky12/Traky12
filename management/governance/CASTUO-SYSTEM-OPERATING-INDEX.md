@@ -73,6 +73,7 @@ El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entra
 | `Competitive Capability Passports` | Estado de capability, provenance, madurez y claims prohibidos |
 | `S-001 benchmark` | Protocolo reproducible y boundary P2→E3→N5 |
 | `CASTUO-RECOVERY-MANIFEST.json` | HEAD, checkpoint, hashes de artefactos críticos, PR gobernadas y claim boundary sin secretos |
+| `TRAKY12-PR-STATUS-AUDIT.json` | Estado de 14 PRs, base/head, revisión, mergeability, checks visibles y límites de permisos |
 
 ## Estado GitHub
 
