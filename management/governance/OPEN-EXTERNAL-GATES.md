@@ -15,3 +15,9 @@ Este registro consolida los controles que no deben marcarse como cerrados con ev
 | Field/economic validation | Pilot owner / commercial reviewer | Field KPIs, failure condition, economic evidence and independent review | Pilot and commercial approval | N5 promotion only after evidence package is complete | Return to P2 and invalidate competitive advantage |
 
 The dashboard and passports must continue to expose these states as `BLOCKED`, `SECURITY_HOLD`, `EVIDENCE_REQUIRED` or `NOT_VERIFIED` until the exact exit criteria are met. No credential, token or personal information belongs in this document.
+
+## Confirmación operativa 2026-08-17
+
+La superficie documental gobernada fue revalidada contra GitHub: 14/14 ramas PR contienen un único bloque, el índice `CASTUO-SYSTEM-OPERATING-INDEX.md`, los límites de claims y la trazabilidad esperada; 16/16 repositorios permanecen inventariados y 2 forks continúan excluidos. La validación local del dashboard mantiene 59 tests, TypeScript sin errores, secret scan pasado, dependency scan con 0 advisories locales, SBOM y build correctos. Las PRs siguen abiertas y no se modificó directamente ninguna rama `main`.
+
+La consulta remota de Security and quality, los checks y annotations de GitHub continúa sin cierre porque la sesión actual devuelve 403 por falta de autorización `security_events`. La selección de proveedor vault real, el restore de producción, el diagnóstico remoto, la revisión independiente, el piloto de campo y la evidencia económica continúan en `SECURITY_HOLD`, `EVIDENCE_REQUIRED` o `NOT_VERIFIED` según corresponda. Esta confirmación no promueve ningún claim ni convierte evidencia local en evidencia de producción.
