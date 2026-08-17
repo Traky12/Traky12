@@ -1,0 +1,370 @@
+{
+  "schema": "CompetitiveCapabilityPassport/v1",
+  "generatedAt": "2026-08-17",
+  "claimPolicy": "A passport records bounded capability evidence; it does not certify market position or superiority.",
+  "passports": [
+    {
+      "passportId": "CPP-COMP-CREDO",
+      "competitorId": "COMP-CREDO",
+      "name": "Credo AI",
+      "segment": "AI_GOVERNANCE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-CREDO-SDK-2026"
+        ],
+        "evidenceStatus": "PRIMARY_SOURCE"
+      },
+      "capabilityStates": {
+        "governanceInventory": 1,
+        "evidenceProvenance": "?",
+        "runtimeObservability": "?",
+        "offlineField": "?",
+        "vendorIndependence": "?",
+        "leastPrivilege": "?",
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "Official SDK article supports inventory and workflow integration; field/offline and claim-gate equivalence are not demonstrated.",
+      "nextVerification": "Independent validation or integration evidence required before N4+ maturity."
+    },
+    {
+      "passportId": "CPP-COMP-IBM",
+      "competitorId": "COMP-IBM",
+      "name": "IBM watsonx.governance",
+      "segment": "AI_GOVERNANCE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-IBM-GOV-2026"
+        ],
+        "evidenceStatus": "PRIMARY_SOURCE"
+      },
+      "capabilityStates": {
+        "governanceInventory": 1,
+        "evidenceProvenance": 1,
+        "runtimeObservability": 1,
+        "offlineField": "?",
+        "vendorIndependence": 1,
+        "leastPrivilege": "?",
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "Official documentation supports factsheets, evaluation, monitoring and third-party model governance; offline field operation and claim authorization are not demonstrated.",
+      "nextVerification": "Independent validation or integration evidence required before N4+ maturity."
+    },
+    {
+      "passportId": "CPP-COMP-FIDDLER",
+      "competitorId": "COMP-FIDDLER",
+      "name": "Fiddler AI",
+      "segment": "ASSURANCE_EVIDENCE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-FIDDLER-HOME-2026"
+        ],
+        "evidenceStatus": "PRIMARY_SOURCE"
+      },
+      "capabilityStates": {
+        "governanceInventory": 1,
+        "evidenceProvenance": "?",
+        "runtimeObservability": 1,
+        "offlineField": "?",
+        "vendorIndependence": 1,
+        "leastPrivilege": "?",
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "Official product page supports observe/evaluate/enforce and provider breadth; independent evidence of field continuity and CASTÚO-style claim authorization is absent.",
+      "nextVerification": "Independent validation or integration evidence required before N4+ maturity."
+    },
+    {
+      "passportId": "CPP-COMP-MICROSOFT",
+      "competitorId": "COMP-MICROSOFT",
+      "name": "Microsoft Purview",
+      "segment": "AI_GOVERNANCE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-MICROSOFT-PURVIEW-2026"
+        ],
+        "evidenceStatus": "PRIMARY_SOURCE"
+      },
+      "capabilityStates": {
+        "governanceInventory": 1,
+        "evidenceProvenance": "?",
+        "runtimeObservability": 1,
+        "offlineField": "?",
+        "vendorIndependence": "?",
+        "leastPrivilege": 1,
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "Official documentation supports classification, DLP, audit, retention and AI activity controls; offline field evidence generation is not demonstrated.",
+      "nextVerification": "Independent validation or integration evidence required before N4+ maturity."
+    },
+    {
+      "passportId": "CPP-COMP-SERVICENOW",
+      "competitorId": "COMP-SERVICENOW",
+      "name": "ServiceNow AI Control Tower",
+      "segment": "CONTROL_PLANE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-SNOW-ACT-2026"
+        ],
+        "evidenceStatus": "PRIMARY_SOURCE"
+      },
+      "capabilityStates": {
+        "governanceInventory": 1,
+        "evidenceProvenance": "?",
+        "runtimeObservability": 1,
+        "offlineField": "?",
+        "vendorIndependence": 1,
+        "leastPrivilege": 1,
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "Official release supports discovery, observation, governance, security, integrations and measurement; independent validation and offline field operation remain unknown.",
+      "nextVerification": "Independent validation or integration evidence required before N4+ maturity."
+    },
+    {
+      "passportId": "CPP-COMP-PALANTIR",
+      "competitorId": "COMP-PALANTIR",
+      "name": "Palantir Foundry Ontology",
+      "segment": "CONTROL_PLANE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-PAL-ONTOLOGY-2026"
+        ],
+        "evidenceStatus": "PRIMARY_SOURCE"
+      },
+      "capabilityStates": {
+        "governanceInventory": "?",
+        "evidenceProvenance": "?",
+        "runtimeObservability": "?",
+        "offlineField": "?",
+        "vendorIndependence": 1,
+        "leastPrivilege": 1,
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "Official documentation supports operational ontology, actions, functions and granular governance; claim authorization, offline field and evidence passport equivalence are not demonstrated.",
+      "nextVerification": "Independent validation or integration evidence required before N4+ maturity."
+    },
+    {
+      "passportId": "CPP-COMP-VIDIMUS-HYP",
+      "competitorId": "COMP-VIDIMUS-HYP",
+      "name": "Vidimus",
+      "segment": "ASSURANCE_EVIDENCE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-ATTACHMENTS-2026"
+        ],
+        "evidenceStatus": "ATTACHMENT_HYPOTHESIS"
+      },
+      "capabilityStates": {
+        "governanceInventory": "?",
+        "evidenceProvenance": "?",
+        "runtimeObservability": "?",
+        "offlineField": "?",
+        "vendorIndependence": "?",
+        "leastPrivilege": "?",
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "User-provided description only; requires primary-source verification before any binary cell becomes demonstrated.",
+      "nextVerification": "Locate and archive a primary source before scoring any capability."
+    },
+    {
+      "passportId": "CPP-COMP-HYDRUS-HYP",
+      "competitorId": "COMP-HYDRUS-HYP",
+      "name": "Hydrus",
+      "segment": "ASSURANCE_EVIDENCE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-ATTACHMENTS-2026"
+        ],
+        "evidenceStatus": "ATTACHMENT_HYPOTHESIS"
+      },
+      "capabilityStates": {
+        "governanceInventory": "?",
+        "evidenceProvenance": "?",
+        "runtimeObservability": "?",
+        "offlineField": "?",
+        "vendorIndependence": "?",
+        "leastPrivilege": "?",
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "User-provided description only; requires primary-source verification before competitive use.",
+      "nextVerification": "Locate and archive a primary source before scoring any capability."
+    },
+    {
+      "passportId": "CPP-COMP-PRAXEDO-HYP",
+      "competitorId": "COMP-PRAXEDO-HYP",
+      "name": "Praxedo",
+      "segment": "FIELD_EDGE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-ATTACHMENTS-2026"
+        ],
+        "evidenceStatus": "ATTACHMENT_HYPOTHESIS"
+      },
+      "capabilityStates": {
+        "governanceInventory": "?",
+        "evidenceProvenance": "?",
+        "runtimeObservability": "?",
+        "offlineField": "?",
+        "vendorIndependence": "?",
+        "leastPrivilege": "?",
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "User-provided description only; requires primary-source verification of offline sync, field evidence and integrations.",
+      "nextVerification": "Locate and archive a primary source before scoring any capability."
+    },
+    {
+      "passportId": "CPP-COMP-NOMADIA-HYP",
+      "competitorId": "COMP-NOMADIA-HYP",
+      "name": "Nomadia",
+      "segment": "FIELD_EDGE",
+      "maturity": "UNVERIFIED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-ATTACHMENTS-2026"
+        ],
+        "evidenceStatus": "ATTACHMENT_HYPOTHESIS"
+      },
+      "capabilityStates": {
+        "governanceInventory": "?",
+        "evidenceProvenance": "?",
+        "runtimeObservability": "?",
+        "offlineField": "?",
+        "vendorIndependence": "?",
+        "leastPrivilege": "?",
+        "claimGates": "?"
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "User-provided description only; usage figures and capability claims are not treated as verified.",
+      "nextVerification": "Locate and archive a primary source before scoring any capability."
+    },
+    {
+      "passportId": "CPP-COMP-CASTUO",
+      "competitorId": "COMP-CASTUO",
+      "name": "CASTÚO-SYSTEM",
+      "segment": "CONTROL_PLANE",
+      "maturity": "N3_IMPLEMENTED",
+      "provenance": {
+        "sourceIds": [
+          "SRC-ATTACHMENTS-2026"
+        ],
+        "evidenceStatus": "LOCAL_IMPLEMENTATION"
+      },
+      "capabilityStates": {
+        "governanceInventory": 1,
+        "evidenceProvenance": 1,
+        "runtimeObservability": 1,
+        "offlineField": "?",
+        "vendorIndependence": "?",
+        "leastPrivilege": 1,
+        "claimGates": 1
+      },
+      "allowedClaims": [
+        "vendor-declared capability within the cited source boundary"
+      ],
+      "forbiddenClaims": [
+        "market leadership without independent market evidence",
+        "production outcome without signed operational evidence",
+        "superiority over CASTÚO from a vendor description alone",
+        "security or compliance certification without an auditable certificate"
+      ],
+      "limitations": "Local contracts and tests support several controls; N5/N6, field validation, commercial evidence and remote assurance remain unclaimed.",
+      "nextVerification": "Independent validation or integration evidence required before N4+ maturity."
+    }
+  ]
+}
