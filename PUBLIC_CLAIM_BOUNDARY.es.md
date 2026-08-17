@@ -39,3 +39,17 @@ jurisdiction-aware governance: TARGET
 jurisdiction legal compliance: NOT_CLAIMED
 cross-border execution: NOT_CLAIMED
 ```
+
+## Límite legal, de confidencialidad y publicación
+
+La documentación pública debe contener únicamente información autorizada para publicación. Los secretos, credenciales, tokens de acceso, endpoints privados, rutas internas del sistema de archivos, datos personales no necesarios para el perfil público, evidencia operativa no verificada y datos protegidos de clientes o pilotos deben permanecer fuera de los repositorios públicos.
+
+Este límite es un control de gobernanza, no asesoramiento jurídico ni certificación de cumplimiento normativo. Las conclusiones jurídicas jurisdiccionales requieren revisión humana competente y una fuente, versión, alcance y fecha declarados. La redacción pública debe utilizar `NOT_CLAIMED` cuando falte cualquiera de esas condiciones.
+
+Un resumen público de transferencia documental puede describir el alcance autorizado, el índice canónico, los enlaces de procedencia, el estado de revisión y los bloqueadores de promoción. No debe implicar que una transferencia, publicación, commit, pull request o check local constituya evidencia operacional, producción, certificación, tracción de clientes, ingresos, operación continua o cumplimiento legal.
+
+Antes de publicar, cada cambio debe pasar una revisión de confidencialidad y preservar la distinción:
+
+```text
+Identidad != Documentación != Evidencia != Ejecución != Revisión != Promoción
+```
