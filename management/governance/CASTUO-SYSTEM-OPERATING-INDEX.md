@@ -77,6 +77,7 @@ El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entra
 | `EXTERNAL-GATE-EXECUTION-PACK.md` | Procedimientos seguros, evidencia requerida y rollback para gates externos |
 | `CASTUO-SOVEREIGN-REFERENCE-ARCHITECTURE.md` | Jerarquía de autoridad, ownership, soberanía de datos, commit lineage y rollback |
 | `CASTUO-COMMIT-GOVERNANCE-POLICY.json` | Política ejecutable de commits, PRs, ownership, checks, claims y rollback |
+| `CASTUO-MATURITY-ACCELERATION-PROGRAM.md` | Roadmap G0→N6, frentes P0/P1/P2/E3/G-COMM, S-001, KPI, ECR y Promotion Debt |
 
 ## Estado GitHub
 
