@@ -62,6 +62,14 @@ CASTÚO-SYSTEM se orienta hacia encargos limitados y preparados para evidencia d
 
 Cada encargo debe definir `scope · owner · deliverable · KPI · evidence · acceptance criterion`. No se afirma públicamente un piloto pagado, cliente, factura, renovación ni ingreso recurrente.
 
+## Modelo público de conocimiento
+
+Este perfil es un read-model público. `castuo-evolution` mantiene la autoridad sobre semántica, claims, clasificación de evidencia y promoción. Los registros públicos pueden ser `canonical`, `derived`, `candidate`, `public` o `target`; aparecer aquí nunca concede autoridad.
+
+- [Contratos canónicos y responsabilidades acotadas](https://github.com/Traky12/castuo-evolution/blob/commercial-path-control-plane/docs/governance/architecture-contracts.md)
+- [CASTUO-EVIDENCE-CONTRACT-V1](https://github.com/Traky12/castuo-evolution/blob/commercial-path-control-plane/docs/contracts/CASTUO-EVIDENCE-CONTRACT-V1.md)
+- [Objetivo de vertical slice VSI-001](https://github.com/Traky12/castuo-evolution/blob/commercial-path-control-plane/docs/vsi/VSI-001_VERTICAL_SLICE_INTEGRATION.md)
+
 ## Evidence Center
 
 Este perfil es un read-model público. `castuo-evolution` sigue siendo la fuente canónica de gobernanza; Evidence Center contiene la capa de trazabilidad. La evidencia establece qué ocurrió, mientras que la revisión y los gates de promoción determinan qué puede afirmarse.

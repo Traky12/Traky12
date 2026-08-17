@@ -61,6 +61,14 @@ CASTÚO-SYSTEM is being shaped toward bounded, evidence-ready engagements for or
 
 Each engagement must define `scope · owner · deliverable · KPI · evidence · acceptance criterion`. No paid pilot, customer, invoice, renewal or recurring revenue is publicly claimed here.
 
+## Public knowledge model
+
+This profile is a public read-model. `castuo-evolution` remains authoritative for semantics, claims, evidence classification and promotion. Public records may be `canonical`, `derived`, `candidate`, `public` or `target`; appearing here never grants authority.
+
+- [Canonical contracts and bounded responsibilities](https://github.com/Traky12/castuo-evolution/blob/commercial-path-control-plane/docs/governance/architecture-contracts.md)
+- [CASTUO-EVIDENCE-CONTRACT-V1](https://github.com/Traky12/castuo-evolution/blob/commercial-path-control-plane/docs/contracts/CASTUO-EVIDENCE-CONTRACT-V1.md)
+- [VSI-001 vertical slice target](https://github.com/Traky12/castuo-evolution/blob/commercial-path-control-plane/docs/vsi/VSI-001_VERTICAL_SLICE_INTEGRATION.md)
+
 ## Evidence Center
 
 This profile is a public read-model. `castuo-evolution` remains the canonical governance source; Evidence Center contains the traceability layer. Evidence establishes what happened, while review and promotion gates determine what may be claimed.
