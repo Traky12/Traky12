@@ -3,14 +3,40 @@
   "branch": "docs/castuo-governed-readme-20260817",
   "markerStart": "<!-- CASTUO-GOVERNED-README-BLOCK:START -->",
   "markerEnd": "<!-- CASTUO-GOVERNED-README-BLOCK:END -->",
+  "summary": {
+    "writableRepositories": 14,
+    "pullRequestsOpen": 14,
+    "mainBranchesModifiedDirectly": 0
+  },
   "results": [
+    {
+      "repo": "Cast-o",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260817",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260817",
+        "number": 15,
+        "url": "https://github.com/Traky12/Cast-o/pull/15"
+      }
+    },
     {
       "repo": "Traky12",
       "status": "PR_OPEN",
       "branch": "docs/castuo-governed-readme-20260817",
       "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260817",
         "number": 8,
         "url": "https://github.com/Traky12/Traky12/pull/8"
+      }
+    },
+    {
+      "repo": "Castuo-system",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260817",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260817",
+        "number": 347,
+        "url": "https://github.com/Traky12/Castuo-system/pull/347"
       }
     },
     {
@@ -122,32 +148,6 @@
         "number": 3,
         "url": "https://github.com/Traky12/-Prueba-final/pull/3"
       }
-    },
-    {
-      "repo": "Cast-o",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 15,
-        "url": "https://github.com/Traky12/Cast-o/pull/15"
-      }
-    },
-    {
-      "repo": "Castuo-system",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 347,
-        "url": "https://github.com/Traky12/Castuo-system/pull/347"
-      }
     }
-  ],
-  "summary": {
-    "writableRepositories": 14,
-    "pullRequestsOpen": 14,
-    "forksExcluded": 2,
-    "mainBranchesModifiedDirectly": 0
-  }
+  ]
 }
