@@ -106,3 +106,19 @@ La decisión de mayor impacto es seleccionar el proveedor vault real y su modelo
 [2]: quantum/quantum-contract-v1.json "Quantum Decision Lab Contract v1"
 [3]: quantum/evidence-pack-v1.md "Quantum Evidence Pack v1"
 [4]: ../todo.md "Project TODO and evolution history"
+
+
+## 12. Mapa operativo por gate
+
+| Gate | Responsable primario | Entradas | Salidas verificables | Criterio de rollback |
+|---|---|---|---|---|
+| G0 Baseline | Maintainer del repositorio | Fuente, fixture, versión y scope | Baseline reproducible y `todo.md` actualizado | Restaurar último checkpoint si el baseline no compila |
+| G1 Contract | Owner de arquitectura | Schema, router, threat model | Contrato tipado, migración revisada y pruebas unitarias | Revertir schema/procedure al contrato anterior sin ejecutar migración destructiva |
+| G2 Review | Reviewer independiente | PR, diff, security scan y evidencia | Aprobación de alcance, permisos y límites | Bloquear merge y volver a estado `PENDING_REVIEW` |
+| G3 Runtime | Operador de plataforma | Logs redactados, métricas, timeout y rollback | Ejecución reproducible y SLO declarado | Activar `SECURITY_HOLD`, revocar versión activa y restaurar checkpoint |
+| G4 Field | Responsable de piloto | Entorno, dispositivos, conectividad y runbook | Paquete de campo firmado, limitaciones y revisión | Detener piloto, conservar logs y volver a última versión aprobada |
+| G5–G7 Promotion | Consejo de evidencia | Passport, revisión independiente, claims y riesgos | Decisión de promoción o retención | Retirar claim, marcar `BLOCKED` y revocar acceso operativo |
+
+El owner de un recurso no se infiere del actor que inicia una petición. Se almacena explícitamente en `connector_permission_grants.ownerUserId`. Un usuario sólo puede utilizar un grant si coinciden usuario, owner, conector, acción y expiración; los administradores conservan capacidad operativa dentro de la allowlist. La auditoría consultable se limita a los eventos propios, salvo administradores.
+
+El dashboard consulta intents, grants, versiones y eventos de auditoría desde tRPC y muestra únicamente conteos, estados, request ids y resultados redactados. Los estados estáticos de catálogo continúan describiendo el alcance inicial, pero la lectura operativa de Secure Connectors se obtiene del backend y se mantiene vacía cuando no existe sesión.
