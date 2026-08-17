@@ -2,13 +2,13 @@
 
 ## Estado del estudio
 
-Este documento es una **línea base verificable**, no una afirmación de superioridad competitiva. La matriz utiliza `1` para capacidad respaldada por una fuente o implementación documentada, `0` para capacidad comprobablemente ausente, `?` para capacidad no verificable y `N/A` para una comparación no aplicable. Las hipótesis procedentes de los adjuntos del usuario permanecen separadas de las fuentes primarias.
+Este documento es una **línea base verificable**, no una afirmación de superioridad competitiva. La matriz utiliza `1` para capacidad respaldada por una fuente o implementación documentada, `0` para capacidad comprobablemente ausente, `?` para capacidad no verificable y `N/A` para una comparación no aplicable. La versión actual contiene 17 registros y siete ejes de capacidad. Las hipótesis procedentes de los adjuntos del usuario permanecen separadas de las fuentes primarias.
 
 > La puntuación de proximidad funcional no equivale a cuota de mercado, valoración financiera, número de clientes ni resultado operativo.
 
 ## Fuente primaria y límites
 
-Las fuentes primarias consultadas en esta iteración fueron Credo AI, IBM watsonx.governance, Fiddler AI, Microsoft Purview, ServiceNow AI Control Tower y Palantir Ontology. Los competidores europeos Vidimus, Hydrus, AKIOUD AI, Nyx AI, Modulos, EAB Compliance, Nomadia, Praxedo, Euridium y KairoNull quedan en estado `ATTACHMENT_HYPOTHESIS` hasta verificar sus propias fuentes oficiales.
+Las fuentes primarias consultadas en esta iteración fueron Credo AI, IBM watsonx.governance, Fiddler AI, Microsoft Purview, ServiceNow AI Control Tower, Palantir Ontology, Vidimus, Hydrus, Praxedo y Nomadia. AKIOUD AI, Nyx AI, Modulos, EAB Compliance, Euridium y KairoNull permanecen en estado `ATTACHMENT_HYPOTHESIS` hasta verificar sus propias fuentes oficiales.
 
 La página oficial de Credo AI revisada describe un SDK que gestiona use cases, modelos y vendors, con configuración por variables de entorno, health checks y métricas de sistema. IBM describe factsheets, evaluación, monitoreo de drift/calidad/seguridad, alertas y gobierno de modelos de terceros. Fiddler describe observabilidad, evaluación y enforcement entre creación y producción, además de guardrails inline y soporte multi-proveedor. Microsoft Purview documenta clasificación, DLP, auditoría, retención y controles sobre uso de IA. ServiceNow describe descubrimiento, observación, governance, seguridad, medición, integraciones enterprise y controles de least privilege. Palantir describe una Ontology operacional con objetos, links, acciones, funciones y gobernanza granular.
 
@@ -24,11 +24,17 @@ Estas afirmaciones son capacidades declaradas por los proveedores. No demuestran
 | Microsoft Purview | 1 | ? | 1 | ? | ? | 1 | ? | Fuente primaria |
 | ServiceNow AI Control Tower | 1 | ? | 1 | ? | 1 | 1 | ? | Fuente primaria |
 | Palantir Foundry Ontology | ? | ? | ? | ? | 1 | 1 | ? | Fuente primaria |
-| Vidimus | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
-| Hydrus | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
-| Praxedo | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
-| Nomadia | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
 | CASTÚO-SYSTEM | 1 | 1 | 1 | ? | ? | 1 | 1 | Implementación local; N5/N6 no declarados |
+| Vidimus | 1 | 1 | 1 | ? | 1 | ? | 1 | Fuente primaria |
+| Hydrus | 1 | 1 | ? | ? | ? | ? | 1 | Fuente primaria |
+| Praxedo | ? | ? | 1 | ? | ? | 1 | ? | Fuente primaria |
+| Nomadia | ? | 1 | 1 | 1 | ? | 1 | ? | Fuente primaria |
+| AKIOUD AI | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
+| Nyx AI | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
+| Modulos | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
+| EAB Compliance | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
+| Euridium | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
+| KairoNull | ? | ? | ? | ? | ? | ? | ? | Hipótesis del adjunto |
 
 ## Lectura estratégica
 
@@ -61,4 +67,9 @@ No existe un ranking universal. El dashboard debe mostrar al menos cuatro escena
 
 ## Competitive Capability Passports
 
-Cada registro de la matriz dispone ahora de un passport persistido en `competitive-capability-passports.json` y de un constructor tipado en `shared/competitivePassport.ts`. El passport fija el identificador del competidor, segmento, madurez, fuentes, estados binarios, claim permitido, claims prohibidos, limitaciones y siguiente paso de verificación. Los registros basados en los adjuntos conservan `UNVERIFIED`; CASTÚO se limita a `N3_IMPLEMENTED` por la evidencia local disponible. Las pruebas contractuales impiden que una hipótesis se presente como fuente primaria o que un proveedor sea descrito como superior sin evidencia independiente.
+Cada registro de la matriz dispone ahora de un passport persistido en `competitive-capability-passports.json`; actualmente son 17 passports y de un constructor tipado en `shared/competitivePassport.ts`. El passport fija el identificador del competidor, segmento, madurez, fuentes, estados binarios, claim permitido, claims prohibidos, limitaciones y siguiente paso de verificación. Los registros basados en los adjuntos conservan `UNVERIFIED`; CASTÚO se limita a `N3_IMPLEMENTED` por la evidencia local disponible. Las pruebas contractuales impiden que una hipótesis se presente como fuente primaria o que un proveedor sea descrito como superior sin evidencia independiente.
+
+[7]: https://www.vidimus.fr/ "Vidimus independent agent assurance"
+[8]: https://hydrus.ai/ "Hydrus audit evidence platform"
+[9]: https://www.praxedo.com/product-tour/a-central-hub-for-your-field-techs/ "Praxedo field technician hub"
+[10]: https://www.nomadia.com/en/resources/blog/what-is-the-best-field-service-management-tool-in-2026-and-why/ "Nomadia field service overview"
