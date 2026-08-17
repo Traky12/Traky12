@@ -39,3 +39,8 @@ The passport template now enforces explicit `sensitivity`, `provenance`, `audien
 ## Backup and restore boundary
 
 `server/backupRestore.ts` provides a local integrity contract using a SHA-256 checksum, a versioned envelope and an accepted/rejected audit result. The tests cover a successful round trip and tamper rejection. This is not yet a production restore proof: the P1 exit remains pending until an ephemeral environment restore, checksum comparison and authenticated remote diagnostic path are executed.
+
+
+## Local smoke and redacted diagnostics
+
+A reproducible filesystem smoke test now writes a bounded backup payload, calculates a SHA-256 checksum, validates the checksum, restores the payload and compares it byte-for-byte with the source. The smoke test emits no secrets and explicitly reports that production restore remains unverified. A redacted diagnostic contract exposes only gate states, local test count, validation timestamp and claim boundary; forbidden field names are policy metadata, not values. Remote assurance and production infrastructure remain outside this local evidence boundary.
