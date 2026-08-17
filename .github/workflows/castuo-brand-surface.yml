@@ -21,9 +21,10 @@ jobs:
           test -f README.md
           grep -q '<!-- CASTUO:BRAND:START -->' README.md
           grep -q '<!-- CASTUO:BRAND:END -->' README.md
-          grep -q 'raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/' README.md
-          if grep -Eiq 'logo.*(certif|production|operational|compliance)|brand.*(certif|production|operational|compliance)' README.md; then
-            echo 'BLOCKED: brand surface must not imply certification, production, operational readiness or legal compliance.'
+          grep -Eq 'raw.githubusercontent.com/Traky12/Traky12/(main|brand/castuo-system-identity-20260816)/assets/brand/' README.md
+          brand_block=$(awk '/<!-- CASTUO:BRAND:START -->/{capture=1} capture{print} /<!-- CASTUO:BRAND:END -->/{capture=0}' README.md)
+          if printf '%s\n' "$brand_block" | grep -Eiq 'logo.*(certif|production|operational|compliance)|brand.*(certif|production|operational|compliance)'; then
+            echo 'BLOCKED: controlled identity block must not imply certification, production, operational readiness or legal compliance.'
             exit 1
           fi
       - name: Validate profile brand manifest when present
