@@ -54,7 +54,7 @@ La política de continuidad exige que cada cambio documental se publique mediant
 | Fase | Resultado | Evidencia actual |
 |---|---|---|
 | Foundation | Repositorios, contratos, dashboard y límites | Dashboard checkpoint `a08bf249` |
-| Secure platform | Connectors, auth, audit, rotation, revocation | 62 tests verdes y secret/dependency gates locales |
+| Secure platform | Connectors, auth, audit, rotation, revocation | 62 tests verdes, secret scan sin hallazgos, dependency scan 0 advisories y SBOM local generado |
 | Evidence system | Passports, public index, assurance roadmap, S-001 | Artefactos persistidos y contratos tipados |
 | Competitive system | Matrix, scoring, passports, reproducibility benchmark | 17 records; 10 fuentes primarias; 14 README PRs |
 | External promotion | GitHub remote zero, vault real, E3/N5 | Bloqueado hasta autorización/evidencia requerida |
@@ -77,6 +77,7 @@ El backlog vivo se mantiene en `todo.md`. Cada tarea debe conservar owner, entra
 | `EXTERNAL-GATE-EXECUTION-PACK.md` | Procedimientos seguros, evidencia requerida y rollback para gates externos |
 | `CASTUO-SOVEREIGN-REFERENCE-ARCHITECTURE.md` | Jerarquía de autoridad, ownership, soberanía de datos, commit lineage y rollback |
 | `CASTUO-COMMIT-GOVERNANCE-POLICY.json` | Política ejecutable de commits, PRs, ownership, checks, claims y rollback |
+| `CASTUO-COMMIT-LINEAGE.md` | Ledger reproducible de todos los commits locales integrados en el bloque README gobernado |
 | `CASTUO-MATURITY-ACCELERATION-PROGRAM.md` | Roadmap G0→N6, frentes P0/P1/P2/E3/G-COMM, S-001, KPI, ECR y Promotion Debt |
 | `CASTUO-PUBLIC-NARRATIVE-AND-WEDGE.md` | Posicionamiento canónico, título profesional, wedge Evidence-Ready Field Operations y secuencia de confianza |
 | `CASTUO-OSS-REPUTATION-STRATEGY.md` | Reputación OSS basada en contribuciones reales, colaboración, comunidad, documentación y tracción orgánica |
@@ -92,4 +93,4 @@ No se autoriza afirmar que CASTÚO-SYSTEM es mejor que Palantir, Microsoft o IBM
 
 ## Checkpoint operativo
 
-La versión restaurable actual del dashboard es el checkpoint web `be1938b2`; `cb02a49` y `cb02a495` quedan como referencias anteriores de continuidad. La validación local más reciente registra 28 archivos de prueba, 62 tests verdes, TypeScript correcto y build correcto. Los artefactos gobernados se sincronizaron en Castuo-system con la PR #347 y en Traky12 management con la rama `feature/ecosystem-management-layer`. El diagnóstico GitHub del 2026-08-18 mantiene `BLOCKED / NOT_VERIFIED` por falta de `security_events`. Estos identificadores describen estados de código/documentación, no evidencia de campo ni aprobación externa.
+La versión restaurable actual del dashboard es el checkpoint web `be1938b2`; `cb02a49` y `cb02a495` quedan como referencias anteriores de continuidad. La validación local más reciente registra 28 archivos de prueba y 62 tests verdes, TypeScript correcto, build correcto, secret scan sin hallazgos, dependency scan con 0 advisories y SBOM local generado. El dashboard se verificó visualmente en viewport de escritorio. Los artefactos gobernados se sincronizaron en Castuo-system con la PR #347 y en Traky12 management con la rama `feature/ecosystem-management-layer`. El diagnóstico GitHub del 2026-08-18 mantiene `BLOCKED / NOT_VERIFIED` por falta de `security_events`. Estos identificadores describen estados de código/documentación, no evidencia de campo ni aprobación externa.
