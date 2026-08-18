@@ -90,3 +90,7 @@ La auditoría de lectura queda en `GITHUB-ECOSYSTEM-AUDIT-2026-08-18.md`; el reg
 ## Governance gap P0 — main protection — 2026-08-18
 
 The evolved control-plane role makes change authority a first-class gate. The target control is `PR REQUIRED → REVIEW REQUIRED → STATUS CHECKS → CODEOWNERS → NO FORCE-PUSH → NO DELETE`. This is a required governance outcome, not evidence that the setting is enabled. The actual repository configuration must be verified through GitHub settings/API and recorded with timestamp, owner and rollback.
+
+### Main protection read-only verification — 2026-08-18
+
+GitHub API read-only verification reports one required pull-request approval and stale-review dismissal for `Traky12/Castuo-system/main` and `Traky12/Cast-o/main`. It reports no required status checks, no administrator enforcement and no restrictions in the protection object. This partial observation strengthens the P0 governance gap but does not prove or close the full target control.
