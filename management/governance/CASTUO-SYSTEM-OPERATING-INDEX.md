@@ -152,3 +152,7 @@ El paquete accionable `CASTUO-EXTERNAL-GATE-EXECUTION-PACK.md` consolida entrada
 ## GitHub ecosystem audit and committee register — 2026-08-18
 
 `GITHUB-ECOSYSTEM-AUDIT-2026-08-18.md` registra el inventario de 14 repositorios propios autorizados, PRs, issues, protección de main y límites del scope remoto. `GITHUB-COMMITTEE-ISSUE-PR-REGISTER-2026-08-18.md` contiene los borradores de comités, issues y PRs; son preparatorios y no representan publicaciones remotas ni aprobaciones. La publicación queda sujeta a confirmación, revisión y ramas protegidas.
+
+## Capability evolution from files 24/25 — 2026-08-18
+
+`CASTUO-CAPABILITY-EVOLUTION-2026-08-18.md` is the canonical update for the dashboard role and capability state. It records `GOVERNED_CONTROL_AND_OBSERVABILITY_SURFACE`, `CAP-INCIDENT-001`, the COMP metamodel, six capability packs, Evidence Graph replay, local validation snapshot and the P0 main-protection governance gap. The distinction remains strict: `Displayed ≠ Executed`, local validation ≠ remote conformance, and capability pack ≠ operational capability. The current snapshot is 101 tests green, TypeScript/build pass, secret scan pass, dependency scan 0 advisories and SBOM 88 direct components; external gates remain pending or not claimed.
