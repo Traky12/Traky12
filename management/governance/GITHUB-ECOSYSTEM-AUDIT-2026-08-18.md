@@ -65,3 +65,7 @@ The inventory was captured through GitHub CLI read-only queries on 2026-08-18. C
 ## Remote actions completed in this iteration
 
 The following governed comments were published without direct writes to protected main branches: Castuo-system issue #307 (`https://github.com/Traky12/Castuo-system/issues/307#issuecomment-5323442340`), Cast-o issue #12 (`https://github.com/Traky12/Cast-o/issues/12#issuecomment-5323443919`), Traky12 issue #1 (`https://github.com/Traky12/Traky12/issues/1#issuecomment-5323445517`), Castuo-system PR #348 (`https://github.com/Traky12/Castuo-system/pull/348#issuecomment-5323447169`), Traky12 PR #10 (`https://github.com/Traky12/Traky12/pull/10#issuecomment-5323447226`) and Cast-o PR #16 (`https://github.com/Traky12/Cast-o/pull/16#issuecomment-5323447309`). These comments document owners, evidence scope, exit criteria and rollback; they do not close any external gate.
+
+## Remote security endpoint verification — 2026-08-18
+
+A read-only probe was executed against `code-scanning/alerts`, `secret-scanning/alerts` and `dependabot/alerts` for `Traky12/Castuo-system` and `Traky12/Cast-o`. All six endpoints returned `HTTP/2.0 403 Forbidden`. No alert count was inferred, no token was recorded and no remote mutation was attempted. The remote Security and quality gate therefore remains `BLOCKED / NOT_VERIFIED` pending an authorized `security_events`-capable session.
