@@ -46,3 +46,7 @@ No se promueve ningún claim de producción, seguridad remota cero, validación 
 La sesión `Traky12` continúa autenticada mediante `GH_TOKEN`, pero `GET /repos/Traky12/castuo-strategy-knowledge-base/secret-scanning/alerts` respondió `HTTP 403 Forbidden` a las 00:02:44 UTC. GitHub indica que el endpoint acepta `secret_scanning_alerts=read` y los scopes `public_repo`, `repo` o `security_events`, mientras que la sesión activa no presenta el alcance necesario. El token se mantuvo redactado y no se almacenó.
 
 El gate permanece `BLOCKED / NOT_VERIFIED`. No se puede afirmar `0` remoto, corregir vulnerabilidades remotas con certeza ni actualizar evidencia de seguridad hasta completar la autorización y repetir las consultas en ambas ramas principales.
+
+## Reintento de lectura remota — 2026-08-18
+
+A las 00:30 UTC se reintentó la lectura de `secret-scanning/alerts` para `Traky12/copia-de-cast-o-system-strategy-knowledge-base` y `Traky12/castuo-strategy-knowledge-base`. Ambos endpoints respondieron `HTTP 403`. La sesión sigue autenticada, pero no ofrece el permiso requerido; no se obtuvo ningún conteo de alertas y el estado remoto continúa `BLOCKED / NOT_VERIFIED`.
