@@ -5,135 +5,15 @@
   "allUnique": true,
   "checks": [
     {
-      "repo": "copia-de-cast-o-system-strategy-knowledge-base",
-      "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base/pull/4",
+      "repo": "Traky12",
+      "url": "https://github.com/Traky12/Traky12/pull/10",
       "unique": true,
       "ok": true,
       "state": {
         "baseRefName": "main",
         "headRefName": "docs/castuo-governed-readme-20260818",
         "state": "OPEN",
-        "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base/pull/4"
-      }
-    },
-    {
-      "repo": "castuo-strategy-knowledge-base",
-      "url": "https://github.com/Traky12/castuo-strategy-knowledge-base/pull/5",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/castuo-strategy-knowledge-base/pull/5"
-      }
-    },
-    {
-      "repo": "castuo-evolution",
-      "url": "https://github.com/Traky12/castuo-evolution/pull/22",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/castuo-evolution/pull/22"
-      }
-    },
-    {
-      "repo": "agrovision-360",
-      "url": "https://github.com/Traky12/agrovision-360/pull/4",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/agrovision-360/pull/4"
-      }
-    },
-    {
-      "repo": "goldfish",
-      "url": "https://github.com/Traky12/goldfish/pull/46",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/goldfish/pull/46"
-      }
-    },
-    {
-      "repo": "desktop-tutorial",
-      "url": "https://github.com/Traky12/desktop-tutorial/pull/4",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/desktop-tutorial/pull/4"
-      }
-    },
-    {
-      "repo": "ctaex-iot-pilot",
-      "url": "https://github.com/Traky12/ctaex-iot-pilot/pull/4",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/ctaex-iot-pilot/pull/4"
-      }
-    },
-    {
-      "repo": "castuo-offline-field-operations",
-      "url": "https://github.com/Traky12/castuo-offline-field-operations/pull/5",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/castuo-offline-field-operations/pull/5"
-      }
-    },
-    {
-      "repo": "castuo-agro-edge",
-      "url": "https://github.com/Traky12/castuo-agro-edge/pull/6",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/castuo-agro-edge/pull/6"
-      }
-    },
-    {
-      "repo": "castuo-360-v5.3",
-      "url": "https://github.com/Traky12/castuo-360-v5.3/pull/6",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/castuo-360-v5.3/pull/6"
-      }
-    },
-    {
-      "repo": "-Prueba-final",
-      "url": "https://github.com/Traky12/-Prueba-final/pull/4",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/-Prueba-final/pull/4"
+        "url": "https://github.com/Traky12/Traky12/pull/10"
       }
     },
     {
@@ -149,18 +29,6 @@
       }
     },
     {
-      "repo": "Traky12",
-      "url": "https://github.com/Traky12/Traky12/pull/10",
-      "unique": true,
-      "ok": true,
-      "state": {
-        "baseRefName": "main",
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "state": "OPEN",
-        "url": "https://github.com/Traky12/Traky12/pull/10"
-      }
-    },
-    {
       "repo": "Cast-o",
       "url": "https://github.com/Traky12/Cast-o/pull/16",
       "unique": true,
@@ -170,6 +38,138 @@
         "headRefName": "docs/castuo-governed-readme-20260818",
         "state": "OPEN",
         "url": "https://github.com/Traky12/Cast-o/pull/16"
+      }
+    },
+    {
+      "repo": "-Prueba-final",
+      "url": "https://github.com/Traky12/-Prueba-final/pull/4",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/-Prueba-final/pull/4"
+      }
+    },
+    {
+      "repo": "castuo-360-v5.3",
+      "url": "https://github.com/Traky12/castuo-360-v5.3/pull/6",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/castuo-360-v5.3/pull/6"
+      }
+    },
+    {
+      "repo": "castuo-agro-edge",
+      "url": "https://github.com/Traky12/castuo-agro-edge/pull/6",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/castuo-agro-edge/pull/6"
+      }
+    },
+    {
+      "repo": "castuo-offline-field-operations",
+      "url": "https://github.com/Traky12/castuo-offline-field-operations/pull/5",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/castuo-offline-field-operations/pull/5"
+      }
+    },
+    {
+      "repo": "ctaex-iot-pilot",
+      "url": "https://github.com/Traky12/ctaex-iot-pilot/pull/4",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/ctaex-iot-pilot/pull/4"
+      }
+    },
+    {
+      "repo": "desktop-tutorial",
+      "url": "https://github.com/Traky12/desktop-tutorial/pull/4",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/desktop-tutorial/pull/4"
+      }
+    },
+    {
+      "repo": "goldfish",
+      "url": "https://github.com/Traky12/goldfish/pull/46",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/goldfish/pull/46"
+      }
+    },
+    {
+      "repo": "agrovision-360",
+      "url": "https://github.com/Traky12/agrovision-360/pull/4",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/agrovision-360/pull/4"
+      }
+    },
+    {
+      "repo": "castuo-evolution",
+      "url": "https://github.com/Traky12/castuo-evolution/pull/22",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/castuo-evolution/pull/22"
+      }
+    },
+    {
+      "repo": "castuo-strategy-knowledge-base",
+      "url": "https://github.com/Traky12/castuo-strategy-knowledge-base/pull/5",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/castuo-strategy-knowledge-base/pull/5"
+      }
+    },
+    {
+      "repo": "copia-de-cast-o-system-strategy-knowledge-base",
+      "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base/pull/4",
+      "unique": true,
+      "ok": true,
+      "state": {
+        "baseRefName": "main",
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "state": "OPEN",
+        "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base/pull/4"
       }
     }
   ]
