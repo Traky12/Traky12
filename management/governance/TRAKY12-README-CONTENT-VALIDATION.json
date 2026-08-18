@@ -4,18 +4,6 @@
   "allPassed": true,
   "checks": [
     {
-      "repo": "Cast-o",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "89dfa54578549b734acc8e96b88c6a4cd0527f36"
-    },
-    {
       "repo": "copia-de-cast-o-system-strategy-knowledge-base",
       "branch": "docs/castuo-governed-readme-20260818",
       "markerCounts": {
@@ -25,7 +13,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "4efe62d284fd96601b5a42bf487083ecc414844a"
+      "sha": "79f154049e0700ef247bf74f562fa9751ed3d357"
     },
     {
       "repo": "castuo-strategy-knowledge-base",
@@ -37,7 +25,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "4efe62d284fd96601b5a42bf487083ecc414844a"
+      "sha": "79f154049e0700ef247bf74f562fa9751ed3d357"
     },
     {
       "repo": "castuo-evolution",
@@ -49,7 +37,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "e6281d90a3a5d068191a900900433c88bb1b304d"
+      "sha": "34be7d5cb1a4d07c05ebdf5aeed9c3996b83d308"
     },
     {
       "repo": "agrovision-360",
@@ -61,7 +49,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "d0c7137c7ebd4493b44944b553b5085e234f2542"
+      "sha": "064180f768f9dffcdc946e47717e53c682a15d10"
     },
     {
       "repo": "goldfish",
@@ -73,7 +61,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "aa1ce207faeb29bad10f141327face1560a53725"
+      "sha": "e5e5d2bbfbaf156d038cefb930c2ad6327f66c82"
     },
     {
       "repo": "desktop-tutorial",
@@ -85,7 +73,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "cdae22487aaf6a521dd6bccf585c50254cacb746"
+      "sha": "017f14ea21885cc615d5a2753a481235131ae120"
     },
     {
       "repo": "ctaex-iot-pilot",
@@ -97,7 +85,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "43938964350024db4ca22be3b0cf570c762b2f19"
+      "sha": "e0af433871f2778cc9ada5f3c9ee69d890cb2ba9"
     },
     {
       "repo": "castuo-offline-field-operations",
@@ -109,7 +97,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "f0b49f2aa308b4811fa8efb3cc5f9983d6d9f652"
+      "sha": "2f948ec185ff058c2266a8a647166ea563565b7a"
     },
     {
       "repo": "castuo-agro-edge",
@@ -121,7 +109,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "89a3a3eac6198753ecc00ef6ec98d73e2abaef38"
+      "sha": "5a1e0eb7cac847e23a5eb3f30f62d79200eacffc"
     },
     {
       "repo": "castuo-360-v5.3",
@@ -133,7 +121,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "c1db55a702cc73fd4e22166ae5821aaa170415cc"
+      "sha": "b6ddfb89d7e17aac0bd59427673570f72f5aeabc"
     },
     {
       "repo": "-Prueba-final",
@@ -145,7 +133,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "460aa56c15c2d195eba07cfdcf8606d2793dd979"
+      "sha": "35e8d0fb8bf4c4ffdb58530c7ead92ed6c83e768"
     },
     {
       "repo": "Castuo-system",
@@ -157,7 +145,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "7d69b6ac1304e90891e9a6ef11477e2d3760a351"
+      "sha": "39da30a64fd7499a90c663a983f123815e9728c0"
     },
     {
       "repo": "Traky12",
@@ -169,7 +157,19 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "0ecd0d0d6e66934f30f90985b1ac9889864f0b15"
+      "sha": "a8a51397dbdac44b9a1d0deb7e377658a1c91c90"
+    },
+    {
+      "repo": "Cast-o",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "535ef8e3e1b129004f91701ad494270e14eea293"
     }
   ]
 }
