@@ -10,6 +10,36 @@
   },
   "results": [
     {
+      "repo": "Traky12",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 10,
+        "url": "https://github.com/Traky12/Traky12/pull/10"
+      }
+    },
+    {
+      "repo": "Castuo-system",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 348,
+        "url": "https://github.com/Traky12/Castuo-system/pull/348"
+      }
+    },
+    {
+      "repo": "Cast-o",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 16,
+        "url": "https://github.com/Traky12/Cast-o/pull/16"
+      }
+    },
+    {
       "repo": "copia-de-cast-o-system-strategy-knowledge-base",
       "status": "PR_OPEN",
       "branch": "docs/castuo-governed-readme-20260818",
@@ -117,36 +147,6 @@
         "headRefName": "docs/castuo-governed-readme-20260818",
         "number": 4,
         "url": "https://github.com/Traky12/-Prueba-final/pull/4"
-      }
-    },
-    {
-      "repo": "Castuo-system",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 348,
-        "url": "https://github.com/Traky12/Castuo-system/pull/348"
-      }
-    },
-    {
-      "repo": "Traky12",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 10,
-        "url": "https://github.com/Traky12/Traky12/pull/10"
-      }
-    },
-    {
-      "repo": "Cast-o",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 16,
-        "url": "https://github.com/Traky12/Cast-o/pull/16"
       }
     }
   ]
