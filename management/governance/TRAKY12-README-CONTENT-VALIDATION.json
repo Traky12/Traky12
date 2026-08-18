@@ -40,7 +40,7 @@
       "sha": "3e20edcc21c61a83cf415801964bbd75253bcde7"
     },
     {
-      "repo": "-Prueba-final",
+      "repo": "copia-de-cast-o-system-strategy-knowledge-base",
       "branch": "docs/castuo-governed-readme-20260818",
       "markerCounts": {
         "start": 1,
@@ -49,103 +49,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "af7d86876ea7637f6060eccd5ceafb01f194ec7a"
-    },
-    {
-      "repo": "castuo-360-v5.3",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "7685291ed3e13149ede7780c6b78c5277c314756"
-    },
-    {
-      "repo": "castuo-agro-edge",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "9de8d645456b64b8c314c125af865328766fe205"
-    },
-    {
-      "repo": "castuo-offline-field-operations",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "24b5bcf80c2591971cd6a2484b4fdfb8e06ff87b"
-    },
-    {
-      "repo": "ctaex-iot-pilot",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "538a85de5b1751b4dd6bac25ad075f615defa755"
-    },
-    {
-      "repo": "desktop-tutorial",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "4430b40ce29e28bb102a1bf9c6a84fc9fd69249e"
-    },
-    {
-      "repo": "goldfish",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "f198b9793ac15155b166438871fe75a0842a1ffe"
-    },
-    {
-      "repo": "agrovision-360",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "545372986a980b35ab1e0dc207a25a9356b606bd"
-    },
-    {
-      "repo": "castuo-evolution",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "markerCounts": {
-        "start": 1,
-        "end": 1
-      },
-      "missing": [],
-      "forbidden": [],
-      "ok": true,
-      "sha": "a75c55222a55a12936a04006ec1dbc92435ae3ff"
+      "sha": "6796229a526f6f19eb72a068356b5f37f0bfc0d9"
     },
     {
       "repo": "castuo-strategy-knowledge-base",
@@ -160,7 +64,7 @@
       "sha": "6796229a526f6f19eb72a068356b5f37f0bfc0d9"
     },
     {
-      "repo": "copia-de-cast-o-system-strategy-knowledge-base",
+      "repo": "castuo-evolution",
       "branch": "docs/castuo-governed-readme-20260818",
       "markerCounts": {
         "start": 1,
@@ -169,7 +73,103 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "6796229a526f6f19eb72a068356b5f37f0bfc0d9"
+      "sha": "a75c55222a55a12936a04006ec1dbc92435ae3ff"
+    },
+    {
+      "repo": "agrovision-360",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "545372986a980b35ab1e0dc207a25a9356b606bd"
+    },
+    {
+      "repo": "goldfish",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "f198b9793ac15155b166438871fe75a0842a1ffe"
+    },
+    {
+      "repo": "desktop-tutorial",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "4430b40ce29e28bb102a1bf9c6a84fc9fd69249e"
+    },
+    {
+      "repo": "ctaex-iot-pilot",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "538a85de5b1751b4dd6bac25ad075f615defa755"
+    },
+    {
+      "repo": "castuo-offline-field-operations",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "24b5bcf80c2591971cd6a2484b4fdfb8e06ff87b"
+    },
+    {
+      "repo": "castuo-agro-edge",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "9de8d645456b64b8c314c125af865328766fe205"
+    },
+    {
+      "repo": "castuo-360-v5.3",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "7685291ed3e13149ede7780c6b78c5277c314756"
+    },
+    {
+      "repo": "-Prueba-final",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "markerCounts": {
+        "start": 1,
+        "end": 1
+      },
+      "missing": [],
+      "forbidden": [],
+      "ok": true,
+      "sha": "af7d86876ea7637f6060eccd5ceafb01f194ec7a"
     }
   ]
 }
