@@ -171,3 +171,10 @@ El paquete accionable `CASTUO-EXTERNAL-GATE-EXECUTION-PACK.md` consolida entrada
 `CASTUO-SESSION-REGISTER-2026-08-18.md` conserva la información procesada en la sesión, sus decisiones, artefactos, validaciones y límites. Se añadió `shared/securityAssurance.ts` como capa superior al Sovereign Control Plane: evalúa integridad de sesión, nonce/replay, expiración, backend boundary, redacción, alcance de evidencia y claim firewall con política fail-closed. El panel `SecurityAssuranceLayerPanel` sólo expone un readout local y redactado: `LOCAL ASSURANCE READOUT / NO PRODUCTION CLAIM`.
 
 La capa no cierra Security and quality remoto, no selecciona un proveedor Vault y no convierte tests locales en evidencia de producción. GitHub `security_events`, Vault real, assurance independiente, field/economic evidence, restore real y federation continúan en los estados externos previamente registrados.
+
+
+## Política del prompt maestro 28 — 2026-08-18
+
+`CASTUO-MASTER-PROMPT-POLICY-2026-08-18.md` normaliza `pasted_content_28.txt` como política operativa gobernada. Mantiene el wedge `CASTÚO Evidence-Ready Field Operations`, los estados `CURRENT/TARGET/EXPERIMENTAL/PENDING/NOT_CLAIMED`, qualifiers scope-bound, la prioridad P0/P1/P2, la separación entre controles internos y valor externo y el cuello de botella `B04 = remotely verifiable CI = 0`. El baseline conservador queda en `B01–B03 = 1`, `B04–B12 = 0`, `B13–B15 = 1`, valor externo `3/12`, Promotion Debt `9` y Critical Debt `1`, sujetos a los artefactos binarios autoritativos.
+
+El dashboard muestra ahora esta política mediante `MasterPromptGovernancePanel`. La superficie comunica primero el wedge, después la evidencia y los bloqueos; cualquier porcentaje se interpreta como coverage etiquetada y no como madurez global. El prompt maestro no cambia los estados externos: GitHub remoto, Vault, field, assurance independiente, comercial, restore y federation permanecen sin promoción.
