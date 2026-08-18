@@ -164,3 +164,10 @@ El paquete accionable `CASTUO-EXTERNAL-GATE-EXECUTION-PACK.md` consolida entrada
 ## Public profile cleanup — 2026-08-18
 
 `CASTUO-PUBLIC-PROFILE-CLEANUP-2026-08-18.md` defines the governed cleanup for the public Traky12 profile: one identity treatment, bilingual entry points, clean pinned repositories, explicit public links, `14 REPOSITORIES PENDING`, removal of GitHub UI residue and preservation of all non-claim boundaries. It is a PR specification, not a merged-profile claim.
+
+
+## Registro de sesión y Security Assurance Layer — 2026-08-18
+
+`CASTUO-SESSION-REGISTER-2026-08-18.md` conserva la información procesada en la sesión, sus decisiones, artefactos, validaciones y límites. Se añadió `shared/securityAssurance.ts` como capa superior al Sovereign Control Plane: evalúa integridad de sesión, nonce/replay, expiración, backend boundary, redacción, alcance de evidencia y claim firewall con política fail-closed. El panel `SecurityAssuranceLayerPanel` sólo expone un readout local y redactado: `LOCAL ASSURANCE READOUT / NO PRODUCTION CLAIM`.
+
+La capa no cierra Security and quality remoto, no selecciona un proveedor Vault y no convierte tests locales en evidencia de producción. GitHub `security_events`, Vault real, assurance independiente, field/economic evidence, restore real y federation continúan en los estados externos previamente registrados.
