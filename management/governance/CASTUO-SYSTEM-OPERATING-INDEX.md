@@ -178,3 +178,10 @@ La capa no cierra Security and quality remoto, no selecciona un proveedor Vault 
 `CASTUO-MASTER-PROMPT-POLICY-2026-08-18.md` normaliza `pasted_content_28.txt` como política operativa gobernada. Mantiene el wedge `CASTÚO Evidence-Ready Field Operations`, los estados `CURRENT/TARGET/EXPERIMENTAL/PENDING/NOT_CLAIMED`, qualifiers scope-bound, la prioridad P0/P1/P2, la separación entre controles internos y valor externo y el cuello de botella `B04 = remotely verifiable CI = 0`. El baseline conservador queda en `B01–B03 = 1`, `B04–B12 = 0`, `B13–B15 = 1`, valor externo `3/12`, Promotion Debt `9` y Critical Debt `1`, sujetos a los artefactos binarios autoritativos.
 
 El dashboard muestra ahora esta política mediante `MasterPromptGovernancePanel`. La superficie comunica primero el wedge, después la evidencia y los bloqueos; cualquier porcentaje se interpreta como coverage etiquetada y no como madurez global. El prompt maestro no cambia los estados externos: GitHub remoto, Vault, field, assurance independiente, comercial, restore y federation permanecen sin promoción.
+
+
+## Reparación de integridad operativa — 2026-08-18
+
+La auditoría local detectó una divergencia entre 91 commits Git y 67 entradas en el ledger/proyección. Se regeneraron `CASTUO-COMMIT-LINEAGE.md`, `shared/lineageData.ts` y el bloque README gobernado desde el historial Git autoritativo; ahora reproducen 91 SHAs y 14 PRs. El contrato `shared/operationalIntegrity.ts` añade validación fail-closed de `COMMIT → PR → ARTIFACT → EVIDENCE → GATE → CLAIM`, con owner, timestamp, SHA, estado, evidencia, gate, claim boundary y rollback obligatorios. El readout queda `LOCAL OPERATIONAL INTEGRITY / NO PRODUCTION CLAIM` y los estados `PENDING/BLOCKED` producen `REVIEW_REQUIRED`.
+
+La reparación es local y no modifica la interpretación de GitHub Security and quality, Vault, assurance independiente, field evidence, economic evidence, restore real ni federation. Esos cierres permanecen externos y no verificados.
