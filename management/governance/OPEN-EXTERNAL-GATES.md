@@ -94,3 +94,9 @@ The evolved control-plane role makes change authority a first-class gate. The ta
 ### Main protection read-only verification — 2026-08-18
 
 GitHub API read-only verification reports one required pull-request approval and stale-review dismissal for `Traky12/Castuo-system/main` and `Traky12/Cast-o/main`. It reports no required status checks, no administrator enforcement and no restrictions in the protection object. This partial observation strengthens the P0 governance gap but does not prove or close the full target control.
+
+## External closure state matrix — 2026-08-18
+
+The canonical closure matrix is [`CASTUO-EXTERNAL-CLOSURE-STATE-2026-08-18.md`](./CASTUO-EXTERNAL-CLOSURE-STATE-2026-08-18.md). It keeps the nine unresolved closures separated by evidence source, required input, owner and rollback: remote zero findings, Security and quality access, residual remediation, GitHub authorization, Vault provider, remote assurance, production restore, field validation and commercial/federation evidence.
+
+The decision rule is conjunctive: no closure is valid without the required input, reproducible verification, linked evidence, owner decision and rollback. `403 ≠ zero alerts`, `Vault-first ≠ approved provider`, and local green results do not close remote gates.
