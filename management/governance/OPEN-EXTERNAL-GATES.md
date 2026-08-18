@@ -50,3 +50,39 @@ El gate permanece `BLOCKED / NOT_VERIFIED`. No se puede afirmar `0` remoto, corr
 ## Reintento de lectura remota — 2026-08-18
 
 A las 00:30 UTC se reintentó la lectura de `secret-scanning/alerts` para `Traky12/copia-de-cast-o-system-strategy-knowledge-base` y `Traky12/castuo-strategy-knowledge-base`. Ambos endpoints respondieron `HTTP 403`. La sesión sigue autenticada, pero no ofrece el permiso requerido; no se obtuvo ningún conteo de alertas y el estado remoto continúa `BLOCKED / NOT_VERIFIED`.
+
+## Continuidad posterior al Ledger Explorer — 2026-08-18
+
+La iteración local `3803b849` incorpora el Ledger Explorer con búsqueda y filtros de commits/PRs, panel interactivo y exportación PDF del estado filtrado. La validación local registra 66 tests verdes, TypeScript correcto, build correcto, secret scan sin hallazgos, dependency scan local con 0 advisories, SBOM de 88 componentes y render responsive verificado. El ledger actual contiene 60 commits y las 14 superficies README permanecen validadas mediante PRs gobernadas.
+
+Esta evidencia es local y documental. No altera los gates remotos: GitHub Security and quality continúa `BLOCKED / NOT_VERIFIED` por `security_events`, el vault real continúa `SECURITY_HOLD`, y restore/diagnóstico, assurance independiente y evidencia field/economic continúan `EVIDENCE_REQUIRED`.
+
+## Binary promotion mapping — 2026-08-18
+
+The Binary Value Rule maps the external gates to explicit promotion conditions. `B04` remains `0` while GitHub remote CI and Security and quality cannot be read with the required authorization; `B05` remains `0` without independent replay; `B07` remains `0` without runtime metrics, alerts and SLO evidence; `B10` remains `0` until a real vault provider is approved and backend-only rotation/revocation is verified; `B08`, `B09`, `B11` and `B12` remain `0` without field, vendor, commercial and transferability evidence. The rollback boundary is to keep the dashboard and passports at `BLOCKED`, `SECURITY_HOLD`, `EVIDENCE_REQUIRED` or `NOT_VERIFIED`; no binary is promoted by document volume or average score.
+
+## Binary bottleneck extension — 2026-08-18
+
+`B04 / Remote verification` es el Binary Bottleneck actual. La deuda de promoción externa es `9` (`B04–B12` en cero), mientras que la deuda crítica inmediata es `1` porque sólo B04 bloquea el siguiente salto. `B13–B15` están cerrados como controles internos (`3/3`) y no reducen la deuda externa ni autorizan claims de operación, campo, seguridad externa, negocio o ventaja competitiva.
+
+## Unified strategy mapping — 2026-08-18
+
+La estrategia unificada confirma que la siguiente ganancia de valor no proviene de más superficie, sino del cierre de binarios externos. `B04` sigue siendo el primer cuello de botella; después deben cerrarse `B05`, `B07`, `B10`, `B06`, `B08`, `B09`, `B11` y `B12` con evidencia específica. Los principios de provenance, assurance para IA y seguridad/observabilidad antes de escalar quedan como límites normativos para cualquier promoción futura.
+
+## Sovereign Control Plane mapping — 2026-08-18
+
+La nueva arquitectura común añade contratos para Binary Security Envelope, soberanía de datos, Evidence Graph, Digital Twin, ledger, incidentes/recovery y federación. Estos contratos fortalecen G1/G2/G3/G4/G6 localmente, pero no sustituyen los criterios externos de GitHub Security and quality, Vault real, runtime, revisión independiente, restore, field, comercial o federación.
+
+La validación local posterior registra 75 tests verdes, secret scan sin credenciales, dependency scan con `advisories=0` y SBOM de 88 componentes directos. El dashboard conserva `BLOCKED / NOT_VERIFIED`, `SECURITY_HOLD` y `EVIDENCE_REQUIRED` donde los criterios de salida aún dependen de autorización, proveedor, infraestructura o revisión externa.
+
+## Restore readiness local — 2026-08-18
+
+`shared/restoreReadiness.ts` y sus pruebas contractuales verifican localmente schema, checkpoint, hashes críticos, ventana de rollback y divergencia de manifest. El resultado está limitado a `LOCAL RESTORE READINESS / NO PRODUCTION RESTORE CLAIM`. El gate de producción sólo podrá cerrarse mediante restore efímero real, checksum, auditoría y revisión en infraestructura aislada.
+
+## Execution pack
+
+`CASTUO-EXTERNAL-GATE-EXECUTION-PACK.md` contiene la matriz accionable para los gates remotos, Vault, assurance, field, commercial, restore y federation. Incluye entradas necesarias, verificación, evidencia esperada, owner y rollback. Es un paquete preparatorio y no altera los estados actuales ni contiene secretos.
+
+## GitHub ecosystem audit and governance register — 2026-08-18
+
+La auditoría de lectura queda en `GITHUB-ECOSYSTEM-AUDIT-2026-08-18.md`; el registro de borradores de comités, issues y PRs queda en `GITHUB-COMMITTEE-ISSUE-PR-REGISTER-2026-08-18.md`. Ambos documentos son preparatorios: no crean publicaciones remotas, no contienen tokens y no convierten la falta de `security_events` en evidencia de cero alertas.
