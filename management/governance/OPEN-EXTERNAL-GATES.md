@@ -86,3 +86,7 @@ La validación local posterior registra 75 tests verdes, secret scan sin credenc
 ## GitHub ecosystem audit and governance register — 2026-08-18
 
 La auditoría de lectura queda en `GITHUB-ECOSYSTEM-AUDIT-2026-08-18.md`; el registro de borradores de comités, issues y PRs queda en `GITHUB-COMMITTEE-ISSUE-PR-REGISTER-2026-08-18.md`. Ambos documentos son preparatorios: no crean publicaciones remotas, no contienen tokens y no convierten la falta de `security_events` en evidencia de cero alertas.
+
+## Governance gap P0 — main protection — 2026-08-18
+
+The evolved control-plane role makes change authority a first-class gate. The target control is `PR REQUIRED → REVIEW REQUIRED → STATUS CHECKS → CODEOWNERS → NO FORCE-PUSH → NO DELETE`. This is a required governance outcome, not evidence that the setting is enabled. The actual repository configuration must be verified through GitHub settings/API and recorded with timestamp, owner and rollback.
