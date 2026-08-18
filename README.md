@@ -17,7 +17,6 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 ## Current ecosystem state
 
 <!-- CASTUO:STATE:START -->
-## Current ecosystem state
 
 **GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
 
