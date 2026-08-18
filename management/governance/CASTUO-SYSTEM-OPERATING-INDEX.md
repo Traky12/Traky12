@@ -54,7 +54,7 @@ La política de continuidad exige que cada cambio documental se publique mediant
 | Fase | Resultado | Evidencia actual |
 |---|---|---|
 | Foundation | Repositorios, contratos, dashboard y límites | Dashboard checkpoint `a08bf249` |
-| Secure platform | Connectors, auth, audit, rotation, revocation | 60 tests y secret/dependency gates locales |
+| Secure platform | Connectors, auth, audit, rotation, revocation | 62 tests verdes y secret/dependency gates locales |
 | Evidence system | Passports, public index, assurance roadmap, S-001 | Artefactos persistidos y contratos tipados |
 | Competitive system | Matrix, scoring, passports, reproducibility benchmark | 17 records; 10 fuentes primarias; 14 README PRs |
 | External promotion | GitHub remote zero, vault real, E3/N5 | Bloqueado hasta autorización/evidencia requerida |
@@ -92,4 +92,4 @@ No se autoriza afirmar que CASTÚO-SYSTEM es mejor que Palantir, Microsoft o IBM
 
 ## Checkpoint operativo
 
-La versión restaurable actual del dashboard es `cb02a49` en git local y el checkpoint web `cb02a495`; `a08bf249` queda como checkpoint anterior de la actualización integral de README. Los artefactos gobernados se sincronizaron en Castuo-system con la PR #347 y en Traky12 management con la rama `feature/ecosystem-management-layer`. Estos identificadores describen estados de código/documentación, no evidencia de campo ni aprobación externa.
+La versión restaurable actual del dashboard es el checkpoint web `be1938b2`; `cb02a49` y `cb02a495` quedan como referencias anteriores de continuidad. La validación local más reciente registra 28 archivos de prueba, 62 tests verdes, TypeScript correcto y build correcto. Los artefactos gobernados se sincronizaron en Castuo-system con la PR #347 y en Traky12 management con la rama `feature/ecosystem-management-layer`. El diagnóstico GitHub del 2026-08-18 mantiene `BLOCKED / NOT_VERIFIED` por falta de `security_events`. Estos identificadores describen estados de código/documentación, no evidencia de campo ni aprobación externa.
