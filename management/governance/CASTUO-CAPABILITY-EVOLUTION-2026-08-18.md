@@ -97,3 +97,7 @@ INCIDENT FLOW ≠ PRODUCTION INCIDENT RESPONSE
 GOVERNANCE MODEL ≠ CERTIFICATION
 REPOSITORY ACTIVITY ≠ CUSTOMER VALIDATION
 ```
+
+## Main protection verification snapshot
+
+A read-only GitHub API check on 2026-08-18 confirms that `Traky12/Castuo-system/main` and `Traky12/Cast-o/main` require one pull-request approval and dismiss stale reviews. The response reports no required status checks, no enabled administrator enforcement and no restrictions in the returned protection object. This is partial configuration evidence only; it does not close the governance gap. The target remains PR, review, status checks, CODEOWNERS, no force-push and no branch deletion.
