@@ -1,6 +1,6 @@
 {
   "profile": "Traky12",
-  "branch": "docs/castuo-governed-readme-20260817",
+  "branch": "docs/castuo-governed-readme-20260818",
   "markerStart": "<!-- CASTUO-GOVERNED-README-BLOCK:START -->",
   "markerEnd": "<!-- CASTUO-GOVERNED-README-BLOCK:END -->",
   "summary": {
@@ -10,143 +10,143 @@
   },
   "results": [
     {
-      "repo": "Cast-o",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 15,
-        "url": "https://github.com/Traky12/Cast-o/pull/15"
-      }
-    },
-    {
-      "repo": "Traky12",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 8,
-        "url": "https://github.com/Traky12/Traky12/pull/8"
-      }
-    },
-    {
-      "repo": "Castuo-system",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 347,
-        "url": "https://github.com/Traky12/Castuo-system/pull/347"
-      }
-    },
-    {
       "repo": "copia-de-cast-o-system-strategy-knowledge-base",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 3,
-        "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base/pull/3"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 4,
+        "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base/pull/4"
       }
     },
     {
       "repo": "castuo-strategy-knowledge-base",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 4,
-        "url": "https://github.com/Traky12/castuo-strategy-knowledge-base/pull/4"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 5,
+        "url": "https://github.com/Traky12/castuo-strategy-knowledge-base/pull/5"
       }
     },
     {
       "repo": "castuo-evolution",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 21,
-        "url": "https://github.com/Traky12/castuo-evolution/pull/21"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 22,
+        "url": "https://github.com/Traky12/castuo-evolution/pull/22"
       }
     },
     {
       "repo": "agrovision-360",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 3,
-        "url": "https://github.com/Traky12/agrovision-360/pull/3"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 4,
+        "url": "https://github.com/Traky12/agrovision-360/pull/4"
       }
     },
     {
       "repo": "goldfish",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 45,
-        "url": "https://github.com/Traky12/goldfish/pull/45"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 46,
+        "url": "https://github.com/Traky12/goldfish/pull/46"
       }
     },
     {
       "repo": "desktop-tutorial",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 3,
-        "url": "https://github.com/Traky12/desktop-tutorial/pull/3"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 4,
+        "url": "https://github.com/Traky12/desktop-tutorial/pull/4"
       }
     },
     {
       "repo": "ctaex-iot-pilot",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 3,
-        "url": "https://github.com/Traky12/ctaex-iot-pilot/pull/3"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 4,
+        "url": "https://github.com/Traky12/ctaex-iot-pilot/pull/4"
       }
     },
     {
       "repo": "castuo-offline-field-operations",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 4,
-        "url": "https://github.com/Traky12/castuo-offline-field-operations/pull/4"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 5,
+        "url": "https://github.com/Traky12/castuo-offline-field-operations/pull/5"
       }
     },
     {
       "repo": "castuo-agro-edge",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 5,
-        "url": "https://github.com/Traky12/castuo-agro-edge/pull/5"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 6,
+        "url": "https://github.com/Traky12/castuo-agro-edge/pull/6"
       }
     },
     {
       "repo": "castuo-360-v5.3",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 5,
-        "url": "https://github.com/Traky12/castuo-360-v5.3/pull/5"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 6,
+        "url": "https://github.com/Traky12/castuo-360-v5.3/pull/6"
       }
     },
     {
       "repo": "-Prueba-final",
       "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260817",
+      "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260817",
-        "number": 3,
-        "url": "https://github.com/Traky12/-Prueba-final/pull/3"
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 4,
+        "url": "https://github.com/Traky12/-Prueba-final/pull/4"
+      }
+    },
+    {
+      "repo": "Castuo-system",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 348,
+        "url": "https://github.com/Traky12/Castuo-system/pull/348"
+      }
+    },
+    {
+      "repo": "Traky12",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 10,
+        "url": "https://github.com/Traky12/Traky12/pull/10"
+      }
+    },
+    {
+      "repo": "Cast-o",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 16,
+        "url": "https://github.com/Traky12/Cast-o/pull/16"
       }
     }
   ]
