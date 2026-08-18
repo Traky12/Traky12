@@ -40,93 +40,13 @@
       }
     },
     {
-      "repo": "copia-de-cast-o-system-strategy-knowledge-base",
+      "repo": "-Prueba-final",
       "status": "PR_OPEN",
       "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
         "headRefName": "docs/castuo-governed-readme-20260818",
         "number": 4,
-        "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base/pull/4"
-      }
-    },
-    {
-      "repo": "castuo-strategy-knowledge-base",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 5,
-        "url": "https://github.com/Traky12/castuo-strategy-knowledge-base/pull/5"
-      }
-    },
-    {
-      "repo": "castuo-evolution",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 22,
-        "url": "https://github.com/Traky12/castuo-evolution/pull/22"
-      }
-    },
-    {
-      "repo": "agrovision-360",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 4,
-        "url": "https://github.com/Traky12/agrovision-360/pull/4"
-      }
-    },
-    {
-      "repo": "goldfish",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 46,
-        "url": "https://github.com/Traky12/goldfish/pull/46"
-      }
-    },
-    {
-      "repo": "desktop-tutorial",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 4,
-        "url": "https://github.com/Traky12/desktop-tutorial/pull/4"
-      }
-    },
-    {
-      "repo": "ctaex-iot-pilot",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 4,
-        "url": "https://github.com/Traky12/ctaex-iot-pilot/pull/4"
-      }
-    },
-    {
-      "repo": "castuo-offline-field-operations",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 5,
-        "url": "https://github.com/Traky12/castuo-offline-field-operations/pull/5"
-      }
-    },
-    {
-      "repo": "castuo-agro-edge",
-      "status": "PR_OPEN",
-      "branch": "docs/castuo-governed-readme-20260818",
-      "pr": {
-        "headRefName": "docs/castuo-governed-readme-20260818",
-        "number": 6,
-        "url": "https://github.com/Traky12/castuo-agro-edge/pull/6"
+        "url": "https://github.com/Traky12/-Prueba-final/pull/4"
       }
     },
     {
@@ -140,13 +60,93 @@
       }
     },
     {
-      "repo": "-Prueba-final",
+      "repo": "castuo-agro-edge",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 6,
+        "url": "https://github.com/Traky12/castuo-agro-edge/pull/6"
+      }
+    },
+    {
+      "repo": "castuo-offline-field-operations",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 5,
+        "url": "https://github.com/Traky12/castuo-offline-field-operations/pull/5"
+      }
+    },
+    {
+      "repo": "ctaex-iot-pilot",
       "status": "PR_OPEN",
       "branch": "docs/castuo-governed-readme-20260818",
       "pr": {
         "headRefName": "docs/castuo-governed-readme-20260818",
         "number": 4,
-        "url": "https://github.com/Traky12/-Prueba-final/pull/4"
+        "url": "https://github.com/Traky12/ctaex-iot-pilot/pull/4"
+      }
+    },
+    {
+      "repo": "desktop-tutorial",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 4,
+        "url": "https://github.com/Traky12/desktop-tutorial/pull/4"
+      }
+    },
+    {
+      "repo": "goldfish",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 46,
+        "url": "https://github.com/Traky12/goldfish/pull/46"
+      }
+    },
+    {
+      "repo": "agrovision-360",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 4,
+        "url": "https://github.com/Traky12/agrovision-360/pull/4"
+      }
+    },
+    {
+      "repo": "castuo-evolution",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 22,
+        "url": "https://github.com/Traky12/castuo-evolution/pull/22"
+      }
+    },
+    {
+      "repo": "castuo-strategy-knowledge-base",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 5,
+        "url": "https://github.com/Traky12/castuo-strategy-knowledge-base/pull/5"
+      }
+    },
+    {
+      "repo": "copia-de-cast-o-system-strategy-knowledge-base",
+      "status": "PR_OPEN",
+      "branch": "docs/castuo-governed-readme-20260818",
+      "pr": {
+        "headRefName": "docs/castuo-governed-readme-20260818",
+        "number": 4,
+        "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base/pull/4"
       }
     }
   ]
