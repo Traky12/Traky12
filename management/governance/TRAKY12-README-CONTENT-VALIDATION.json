@@ -13,7 +13,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "04929ad15416c25b9ae9de8066fb3c2b484fb6c0"
+      "sha": "8c3cb7bc3d60a1c6fd4d45648235ba13e3527497"
     },
     {
       "repo": "Castuo-system",
@@ -25,7 +25,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "fec84c3f7a98ed5f5a3303a7a04ba01b8b5a647d"
+      "sha": "c6191d2d93c93452cd5c8f9865fc6dfe97570347"
     },
     {
       "repo": "Cast-o",
@@ -37,7 +37,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "54b2776a7bb602062413c882bb88e07171878f17"
+      "sha": "3e20edcc21c61a83cf415801964bbd75253bcde7"
     },
     {
       "repo": "-Prueba-final",
@@ -49,7 +49,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "1349909abd9ab70ddcf01d5b220c512a8aefb0f7"
+      "sha": "af7d86876ea7637f6060eccd5ceafb01f194ec7a"
     },
     {
       "repo": "castuo-360-v5.3",
@@ -61,7 +61,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "0974d86d879a0d258358a97ebe0f427eb301e829"
+      "sha": "7685291ed3e13149ede7780c6b78c5277c314756"
     },
     {
       "repo": "castuo-agro-edge",
@@ -73,7 +73,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "44ded3c066fcfdf1cc6cd18d57630ad0f1c8ae9e"
+      "sha": "9de8d645456b64b8c314c125af865328766fe205"
     },
     {
       "repo": "castuo-offline-field-operations",
@@ -85,7 +85,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "f634339668ff9be3c0929184880458c2c02dff2f"
+      "sha": "24b5bcf80c2591971cd6a2484b4fdfb8e06ff87b"
     },
     {
       "repo": "ctaex-iot-pilot",
@@ -97,7 +97,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "2f39cda2d186613bee7c37222fc8f5b3bfb5f4ea"
+      "sha": "538a85de5b1751b4dd6bac25ad075f615defa755"
     },
     {
       "repo": "desktop-tutorial",
@@ -109,7 +109,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "d8c34d134b62ba53abd37301afbc85967d524562"
+      "sha": "4430b40ce29e28bb102a1bf9c6a84fc9fd69249e"
     },
     {
       "repo": "goldfish",
@@ -121,7 +121,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "6ee061f8e2288b3da868976b887c47a3eb7ff2e2"
+      "sha": "f198b9793ac15155b166438871fe75a0842a1ffe"
     },
     {
       "repo": "agrovision-360",
@@ -133,7 +133,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "7abf9e21993fc26084b399f3b3ff0b78e7487314"
+      "sha": "545372986a980b35ab1e0dc207a25a9356b606bd"
     },
     {
       "repo": "castuo-evolution",
@@ -145,7 +145,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "10eba9735aafabbda3ffebf7c498ced829267d2f"
+      "sha": "a75c55222a55a12936a04006ec1dbc92435ae3ff"
     },
     {
       "repo": "castuo-strategy-knowledge-base",
@@ -157,7 +157,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "142da14613e12c82bbd1175e9299e065c7d1bb75"
+      "sha": "6796229a526f6f19eb72a068356b5f37f0bfc0d9"
     },
     {
       "repo": "copia-de-cast-o-system-strategy-knowledge-base",
@@ -169,7 +169,7 @@
       "missing": [],
       "forbidden": [],
       "ok": true,
-      "sha": "142da14613e12c82bbd1175e9299e065c7d1bb75"
+      "sha": "6796229a526f6f19eb72a068356b5f37f0bfc0d9"
     }
   ]
 }
