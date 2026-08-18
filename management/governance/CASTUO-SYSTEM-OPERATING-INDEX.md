@@ -156,3 +156,11 @@ El paquete accionable `CASTUO-EXTERNAL-GATE-EXECUTION-PACK.md` consolida entrada
 ## Capability evolution from files 24/25 — 2026-08-18
 
 `CASTUO-CAPABILITY-EVOLUTION-2026-08-18.md` is the canonical update for the dashboard role and capability state. It records `GOVERNED_CONTROL_AND_OBSERVABILITY_SURFACE`, `CAP-INCIDENT-001`, the COMP metamodel, six capability packs, Evidence Graph replay, local validation snapshot and the P0 main-protection governance gap. The distinction remains strict: `Displayed ≠ Executed`, local validation ≠ remote conformance, and capability pack ≠ operational capability. The current snapshot is 101 tests green, TypeScript/build pass, secret scan pass, dependency scan 0 advisories and SBOM 88 direct components; external gates remain pending or not claimed.
+
+## External closure state — 2026-08-18
+
+`CASTUO-EXTERNAL-CLOSURE-STATE-2026-08-18.md` consolidates the nine remaining closures, available evidence, required inputs, owners, decisions and rollback boundaries. It records the six remote security endpoints returning HTTP 403, the partial main-protection observation, provider-neutral Vault `SECURITY_HOLD`, local restore readiness and the absence of field/commercial/federation claims.
+
+## Public profile cleanup — 2026-08-18
+
+`CASTUO-PUBLIC-PROFILE-CLEANUP-2026-08-18.md` defines the governed cleanup for the public Traky12 profile: one identity treatment, bilingual entry points, clean pinned repositories, explicit public links, `14 REPOSITORIES PENDING`, removal of GitHub UI residue and preservation of all non-claim boundaries. It is a PR specification, not a merged-profile claim.
