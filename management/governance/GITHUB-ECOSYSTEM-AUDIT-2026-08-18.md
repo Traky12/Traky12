@@ -61,3 +61,7 @@ This audit used read-only GitHub metadata. It does not verify the remote `Securi
 ## Provenance
 
 The inventory was captured through GitHub CLI read-only queries on 2026-08-18. Counts are point-in-time and must be refreshed before any merge, closure or promotion decision.
+
+## Remote actions completed in this iteration
+
+The following governed comments were published without direct writes to protected main branches: Castuo-system issue #307 (`https://github.com/Traky12/Castuo-system/issues/307#issuecomment-5323442340`), Cast-o issue #12 (`https://github.com/Traky12/Cast-o/issues/12#issuecomment-5323443919`), Traky12 issue #1 (`https://github.com/Traky12/Traky12/issues/1#issuecomment-5323445517`), Castuo-system PR #348 (`https://github.com/Traky12/Castuo-system/pull/348#issuecomment-5323447169`), Traky12 PR #10 (`https://github.com/Traky12/Traky12/pull/10#issuecomment-5323447226`) and Cast-o PR #16 (`https://github.com/Traky12/Cast-o/pull/16#issuecomment-5323447309`). These comments document owners, evidence scope, exit criteria and rollback; they do not close any external gate.
