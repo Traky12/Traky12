@@ -93,4 +93,62 @@ No se autoriza afirmar que CASTÚO-SYSTEM es mejor que Palantir, Microsoft o IBM
 
 ## Checkpoint operativo
 
-La versión restaurable actual del dashboard es el checkpoint web `be1938b2`; `cb02a49` y `cb02a495` quedan como referencias anteriores de continuidad. La validación local más reciente registra 28 archivos de prueba y 62 tests verdes, TypeScript correcto, build correcto, secret scan sin hallazgos, dependency scan con 0 advisories y SBOM local generado. El dashboard se verificó visualmente en viewport de escritorio. Los artefactos gobernados se sincronizaron en Castuo-system con la PR #347 y en Traky12 management con la rama `feature/ecosystem-management-layer`. El diagnóstico GitHub del 2026-08-18 mantiene `BLOCKED / NOT_VERIFIED` por falta de `security_events`. Estos identificadores describen estados de código/documentación, no evidencia de campo ni aprobación externa.
+La versión restaurable actual del dashboard es el checkpoint web `3803b849`; `be1938b2`, `0a7e510b` y `adc86618` quedan como referencias anteriores de continuidad. La validación local más reciente registra 30 archivos de prueba y 66 tests verdes, TypeScript correcto, build correcto, secret scan sin hallazgos, dependency scan con 0 advisories y SBOM local de 88 componentes. El dashboard se verificó visualmente en viewport de escritorio y móvil. Los artefactos gobernados se sincronizaron en Castuo-system con la PR #347 y en Traky12 management con la rama `docs/castuo-governed-readme-20260818`; el ledger contiene 60 commits y las 14 PRs README permanecen validadas. El diagnóstico GitHub del 2026-08-18 mantiene `BLOCKED / NOT_VERIFIED` por falta de `security_events`. Estos identificadores describen estados de código/documentación, no evidencia de campo ni aprobación externa.
+
+## Reauditoría integral y Ledger Explorer — 2026-08-18
+
+La reauditoría de `todo.md` separó los pendientes en tres clases: controles locales completados, gates externos bloqueados y tareas dependientes de aprobación. El dashboard incorpora Ledger Explorer con búsqueda por SHA/mensaje/repositorio/PR, filtros por estado y rama, panel interactivo de historial y exportación PDF evidence-scoped del ledger/README.
+
+El lineage actual contiene 60 commits en `CASTUO-COMMIT-LINEAGE.md`, `shared/lineageData.ts` y el bloque README gobernado. Las 14 PRs README están abiertas en la rama gobernada, con validación 14/14, marcadores únicos, 60 SHA y ausencia de claims prohibidos. El checkpoint restaurable más reciente es `3803b849`; la validación local registra 66 tests verdes, TypeScript, build, secret scan, dependency scan 0 advisories, SBOM de 88 componentes y render responsive correcto.
+
+Los gates remotos no cambian: GitHub Security and quality permanece `BLOCKED / NOT_VERIFIED` por `security_events`; el proveedor vault real permanece `SECURITY_HOLD`; restore/diagnóstico remoto y assurance field/económica permanecen `EVIDENCE_REQUIRED`. Ningún estado local se interpreta como evidencia de producción.
+
+## Binary Value Rule v1.0 — 2026-08-18
+
+CASTÚO incorpora una regla binaria de promoción anti-autoengaño. Cada condición vale `0` o `1`; sólo puede valer `1` con evidencia primaria, trazable y reproducible dentro del alcance declarado. El estado conservador actual es **3/12**: B01 arquitectura definida, B02 capacidad implementada y B03 test reproducible local. B04–B12 permanecen en `0` hasta cerrar verificabilidad remota, reproducción independiente, runtime, observabilidad, vault, campo, independencia de proveedor y evidencia comercial.
+
+La secuencia crítica es `B04 → B05 → B07 → B10 → B06 → B08 → B09 → B11 → B12`. Los niveles A–E no se promocionan por promedio: cada binario crítico del nivel debe estar en `1`. El contrato tipado se encuentra en `shared/binaryValueRule.ts`, el panel en `client/src/components/BinaryValueRulePanel.tsx`, las pruebas en `server/binaryValueRule.contract.test.ts` y la especificación canónica en `docs/governance/CASTUO-BINARY-VALUE-RULE.md`.
+
+## Binary Bottleneck and Promotion Debt v1.1 — 2026-08-18
+
+La regla binaria se extiende con dos scopes. El valor externo sigue siendo `B01–B12 = 3/12`; los controles internos `B13–B15 = 3/3` cubren change lineage reproducible, identidad profesional inequívoca y portfolio coherente con límites de claims visibles. Los tres controles internos mejoran la gobernanza, pero no se suman al valor tecnológico externo.
+
+El **Binary Bottleneck** es el primer binario obligatorio que permanece en `0`; el cuello de botella actual es `B04 / Remote verification`. **Promotion Debt** cuenta los ceros externos obligatorios de la ruta (`9`) y **Critical Promotion Debt** cuenta el bloqueo inmediato (`1`). No hay promoción parcial por porcentaje, número de commits, tests, README o densidad documental. El contrato tipado y sus pruebas están en `shared/binaryValueRule.ts` y `server/binaryValueRule.contract.test.ts`.
+
+## Unified strategy and binary progression — 2026-08-18
+
+La estrategia unificada define CASTÚO-SYSTEM como un sistema de operaciones rurales distribuidas con gobernanza de evidencia, assurance, edge y field operations. Sus tres principios operativos son: `no claim without provenance`, `no AI deployment without assurance` y `no scale without security and observability`.
+
+El portfolio gobernado separa superficie pública, control plane, CI/evidence, seguridad/recuperación, edge, operaciones offline-first y núcleo privado. La escalera de valor exige cerrar binarios en orden: existencia (`B01–B03`), verificabilidad (`B04–B05`), operación (`B06–B07+B10`), campo (`B08–B09`) y negocio (`B11–B12`). El estado externo permanece en `3/12`; `B13–B15 = 3/3` son controles internos y no se suman a valor tecnológico. La especificación completa está en `docs/governance/CASTUO-UNIFIED-STRATEGY-AND-BINARY-PROGRESSION.md`.
+
+## Official SaaS identity — 2026-08-18
+
+La marca oficial de CASTÚO se centraliza mediante `client/src/components/BrandLogo.tsx` y `/manus-storage/pasted_file_tFeqhx_Capturadepantallalogotipo_f0a36c2b.png`. La cobertura incluye sidebar, topbar, autenticación, footer, favicon, metadata social y contexto de exportación gobernada. La identidad visual mejora coherencia y accesibilidad, pero no modifica los scopes de evidencia ni convierte actividad documental en valor externo.
+
+## Sovereign Control Plane v1 — 2026-08-18
+
+CASTÚO-SYSTEM queda formalizado como una infraestructura soberana común de control, confianza, datos y evidencia. Educación, biotech, drónica, robótica, medicina y No-GNSS son dominios gobernados que heredan la misma trust architecture y no implementan seguridad paralela.
+
+La fórmula de decisión obligatoria es `ALLOW = I ∧ A ∧ G ∧ D ∧ T ∧ E ∧ R`: identidad, autorización, integridad criptográfica, política del dato, confianza del dispositivo, evidencia y recuperación. Los binarios no sustituyen a la criptografía; el ledger no sustituye al backend; el Digital Twin no es evidencia de campo; y GaiaChain/Trazalia no se presentan como cifrado ni como seguridad total.
+
+Contratos canónicos añadidos: `CASTUO-SOVEREIGN-CONTROL-PLANE-REFERENCE-ARCHITECTURE.md`, `CASTUO-CAPABILITY-CONTRACT.yaml`, `CASTUO-BINARY-SECURITY-ENVELOPE.yaml`, `CASTUO-DATA-SOVEREIGNTY-POLICY.yaml`, `CASTUO-EVIDENCE-GRAPH-CONTRACT.yaml`, `CASTUO-DIGITAL-TWIN-CONTRACT.yaml`, `CASTUO-LEDGER-ANCHOR-POLICY.yaml`, `CASTUO-INCIDENT-RECOVERY-CONTRACT.yaml` y `CASTUO-REPOSITORY-FEDERATION-CONTRACT.yaml`.
+
+La secuencia de incidentes queda especificada como `detect → identity/signature/replay check → policy → deny/quarantine → preserve → alert → rollback/recover → review`. La federación permanece posterior a replay, recovery, interoperabilidad y revisión independiente. La validación local de esta iteración registra 33 archivos de prueba y 75 tests verdes; los gates remotos, Vault real, field evidence, assurance y producción mantienen sus límites anteriores.
+
+El plan ejecutable completo queda persistido en `CASTUO-SOVEREIGN-IMPLEMENTATION-PLAN.md`. La matriz local posterior a la primera implementación registra secret scan sin credenciales, dependency scan con `advisories=0` y SBOM de 88 componentes directos. Estos resultados son locales y no sustituyen la verificación remota de GitHub ni la assurance externa.
+
+La preparación local de restore queda trazada en `shared/restoreReadiness.ts` y `server/restoreReadiness.contract.test.ts`: comprueba manifest, hashes, checkpoint y rollback window, pero mantiene `LOCAL RESTORE READINESS / NO PRODUCTION RESTORE CLAIM` hasta que exista una restauración efímera real revisada.
+
+## Master Architecture Decision and capability packs — 2026-08-18
+
+Los documentos maestros 22/23 consolidan la definición canónica: CASTÚO-SYSTEM es un **Sovereign Evidence & Trust Control Plane for distributed intelligent systems**. `castuo-evolution` mantiene autoridad y gobernanza; `Castuo-system` ejecuta el core; `castuo-progress-dashboard` observa y gestiona; `goldfish` concentra security/recovery/assurance; `Cast-o` concentra CI/release evidence; `castuo-agro-edge` y `castuo-offline-field-operations` operan la fabric edge/offline; y `Traky12` publica un read-model limitado.
+
+Se añadieron `CASTUO-MASTER-ARCHITECTURE-DECISION.md`, `CASTUO-CAPABILITY-PACKS.yaml` y `CASTUO-COMP-METAMODEL.yaml`. Los seis dominios comienzan como capability packs heredando identidad, data policy, criptografía, evidence, audit, recovery y binary gate. No se abre un repositorio vertical sin una frontera independiente de ownership, lifecycle, seguridad, despliegue o cumplimiento.
+
+`CAP-INCIDENT-001` queda implementado localmente como Incident Fabric: una condición inválida se convierte en `DENY → QUARANTINE → INCIDENT-ID → EVIDENCE-HASH → RECOVERY → REVIEW`, con nonce/replay, bloqueo de escritura, recovery y preservación de evidencia. Validación local de esta integración: 38 archivos de prueba y 95 tests verdes; gates externos permanecen sin promoción.
+
+El paquete accionable `CASTUO-EXTERNAL-GATE-EXECUTION-PACK.md` consolida entradas, verificaciones, evidencia esperada, owner y rollback para GitHub remoto, Vault, assurance, field, commercial, restore y federation. El documento es preparatorio: no contiene secretos ni cierra gates externos.
+
+## GitHub ecosystem audit and committee register — 2026-08-18
+
+`GITHUB-ECOSYSTEM-AUDIT-2026-08-18.md` registra el inventario de 14 repositorios propios autorizados, PRs, issues, protección de main y límites del scope remoto. `GITHUB-COMMITTEE-ISSUE-PR-REGISTER-2026-08-18.md` contiene los borradores de comités, issues y PRs; son preparatorios y no representan publicaciones remotas ni aprobaciones. La publicación queda sujeta a confirmación, revisión y ramas protegidas.
