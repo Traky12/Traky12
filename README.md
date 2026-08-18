@@ -14,9 +14,9 @@ CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rura
 
 AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture. They are not separate products or claims of current production operation.
 
-## Current ecosystem state
 
 <!-- CASTUO:STATE:START -->
+
 ## Current ecosystem state
 
 **GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
