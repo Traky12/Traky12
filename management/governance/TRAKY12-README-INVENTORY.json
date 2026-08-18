@@ -1,0 +1,250 @@
+{
+  "generatedAt": "2026-08-17T20:47:44.871Z",
+  "profile": "Traky12",
+  "classificationRules": {
+    "sensitivity": "EXTERNAL_FORK for forks; PRIVATE_TEMPLATE for private templates; PRIVATE_CONTROL_PLANE for other private repos; PUBLIC_OPERATIONAL for public non-forks.",
+    "evidenceStatus": "Derived conservatively from repository description, visibility and fork state; classification is governance metadata, not proof of capability."
+  },
+  "inventory": [
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "CASTÚO-SYSTEM public baseline: evidence-ready field operations, AI governance, assurance and resilient distributed systems.",
+      "isFork": false,
+      "isPrivate": false,
+      "isTemplate": false,
+      "name": "Traky12",
+      "url": "https://github.com/Traky12/Traky12",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PUBLIC_OPERATIONAL",
+      "evidenceStatus": "EVIDENCE_SCOPED_PUBLIC_BASELINE"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Core CASTÚO-SYSTEM platform for private-cloud API, web, offline and AI-assisted rural operations; status remains evidence-scoped.",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": true,
+      "name": "Castuo-system",
+      "url": "https://github.com/Traky12/Castuo-system",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_TEMPLATE",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Searchable knowledge base for the CASTÚO-SYSTEM strategy integration register, with filters, canonical sources, status boundaries and bilingual public navigation. · Construido con Manus",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": false,
+      "name": "copia-de-cast-o-system-strategy-knowledge-base",
+      "url": "https://github.com/Traky12/copia-de-cast-o-system-strategy-knowledge-base",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "GOVERNED_STATUS_PENDING"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Searchable knowledge base for the CASTÚO-SYSTEM strategy integration register, with filters, canonical sources, status boundaries and bilingual public navigation. · Construido con Manus",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": false,
+      "name": "castuo-strategy-knowledge-base",
+      "url": "https://github.com/Traky12/castuo-strategy-knowledge-base",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "GOVERNED_STATUS_PENDING"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Governance control plane for CASTÚO-SYSTEM private-cloud service boundaries, evidence, security and Gate decisions.",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": false,
+      "name": "castuo-evolution",
+      "url": "https://github.com/Traky12/castuo-evolution",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Experimental agro-vision service workspace for the CASTÚO-SYSTEM private-cloud target architecture.",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": false,
+      "name": "agrovision-360",
+      "url": "https://github.com/Traky12/agrovision-360",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "UNVERIFIED_EXPERIMENTAL"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "isFork": true,
+      "isPrivate": false,
+      "isTemplate": false,
+      "name": "openclaw",
+      "url": "https://github.com/Traky12/openclaw",
+      "readme": "README.md",
+      "writableSurface": false,
+      "sensitivity": "EXTERNAL_FORK",
+      "evidenceStatus": "EXTERNAL_UPSTREAM_SURFACE"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "isFork": true,
+      "isPrivate": false,
+      "isTemplate": false,
+      "name": "n8n",
+      "url": "https://github.com/Traky12/n8n",
+      "readme": "README.md",
+      "writableSurface": false,
+      "sensitivity": "EXTERNAL_FORK",
+      "evidenceStatus": "EXTERNAL_UPSTREAM_SURFACE"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Security, observability, recovery and assurance tooling for CASTÚO-SYSTEM private-cloud services.",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": true,
+      "name": "goldfish",
+      "url": "https://github.com/Traky12/goldfish",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_TEMPLATE",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "GitHub Desktop tutorial repository",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": false,
+      "name": "desktop-tutorial",
+      "url": "https://github.com/Traky12/desktop-tutorial",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "GOVERNED_STATUS_PENDING"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Laboratory pilot environment for LoRaWAN/IoT control with private-cloud integration; field claims remain evidence-scoped.",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": false,
+      "name": "ctaex-iot-pilot",
+      "url": "https://github.com/Traky12/ctaex-iot-pilot",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "EVIDENCE_SCOPED_PILOT"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Offline-first field service for CASTÚO-SYSTEM private-cloud integration, resilient communications and evidence-driven operations.",
+      "isFork": false,
+      "isPrivate": false,
+      "isTemplate": false,
+      "name": "castuo-offline-field-operations",
+      "url": "https://github.com/Traky12/castuo-offline-field-operations",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PUBLIC_OPERATIONAL",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Offline-first rural edge service for CASTÚO-SYSTEM private-cloud integration, MQTT gateway and device evidence.",
+      "isFork": false,
+      "isPrivate": false,
+      "isTemplate": false,
+      "name": "castuo-agro-edge",
+      "url": "https://github.com/Traky12/castuo-agro-edge",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PUBLIC_OPERATIONAL",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Private-cloud application workspace for CASTÚO-SYSTEM; deployment and operational state remain evidence-scoped.",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": false,
+      "name": "castuo-360-v5.3",
+      "url": "https://github.com/Traky12/castuo-360-v5.3",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Private CI and test automation toolkit for CASTÚO-SYSTEM: unit, integration, E2E and release evidence.",
+      "isFork": false,
+      "isPrivate": false,
+      "isTemplate": true,
+      "name": "Cast-o",
+      "url": "https://github.com/Traky12/Cast-o",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PUBLIC_OPERATIONAL",
+      "evidenceStatus": "LOCAL_IMPLEMENTATION_EVIDENCE_SCOPED"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Experimental integration workspace; endpoints and maturity claims remain unverified until evidence gates close.",
+      "isFork": false,
+      "isPrivate": true,
+      "isTemplate": false,
+      "name": "-Prueba-final",
+      "url": "https://github.com/Traky12/-Prueba-final",
+      "readme": "README.md",
+      "writableSurface": true,
+      "sensitivity": "PRIVATE_CONTROL_PLANE",
+      "evidenceStatus": "UNVERIFIED_EXPERIMENTAL"
+    }
+  ]
+}

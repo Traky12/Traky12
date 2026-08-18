@@ -1,0 +1,43 @@
+{
+  "schema": "castuo.recovery-manifest.v1",
+  "generatedAt": "2026-08-17T21:36:01.457Z",
+  "local": {
+    "head": "87236f6849a2dc56c20409d1bb2677334568fbff",
+    "checkpoint": "87236f68",
+    "workingTreeStatus": "\u001b[31mM\u001b[m todo.md\n\u001b[31m??\u001b[m scripts/generate-recovery-manifest.mjs"
+  },
+  "remote": {
+    "repository": "Traky12/Castuo-system",
+    "governedPullRequest": 347,
+    "branch": "docs/castuo-governed-readme-20260817",
+    "prUrl": "https://github.com/Traky12/Castuo-system/pull/347",
+    "mergeState": "REVIEW_REQUIRED / EXTERNAL GATES OPEN"
+  },
+  "integration": {
+    "writableRepositories": 14,
+    "pullRequestsOpen": 14,
+    "mainBranchesModifiedDirectly": 0,
+    "readmeChecked": 14,
+    "readmePassed": 14
+  },
+  "criticalFiles": {
+    "todo.md": "776acb455eeb6ada8a5268652d2856e0f229e0951015d2ba963808fe8b52baa1",
+    "docs/governance/CASTUO-SYSTEM-OPERATING-INDEX.md": "2847cfae5aa763ce480d7ce464fdb7991426579825139dfaee2035c0aae5acf0",
+    "docs/governance/OPEN-EXTERNAL-GATES.md": "e1b4780c7ae529d4a244024de369999f100115df14e11d8ccc42863809b5634a",
+    "docs/governance/TRAKY12-README-GOVERNED-BLOCK.md": "ba0decabea2b341eaa9eac3727c64522522693208353b58dda7e7d11053e80df",
+    "docs/governance/TRAKY12-README-INVENTORY.json": "2ba308b5c6a0b1c4c3ef124ad869fc58ce60f4d4068d08737688064a99b331e3",
+    "docs/governance/TRAKY12-TRACEABILITY-MAP.json": "8aa4b0248d1c00891aa2ceb702669280b1e1fec858a9c984723657d770587292",
+    "docs/governance/TRAKY12-README-SYNC-RESULT.json": "75b7cd6c99b964e2991a1179104892e8b6c7a95ec280e3e4726d0afa78fb1abe",
+    "docs/governance/TRAKY12-README-CONTENT-VALIDATION.json": "7dc0bafedccf4f6371eb2753e9a0ec03c192261a0371cdef596d932100ef04fb",
+    "client/src/App.tsx": "ecc1957470d07d180ecf9d30238b721c6f3c5691c2158294cd995953e699c3e2",
+    "scripts/validate-traky12-readme-content.mjs": "8cde42870d3524bafba68b2c86ff0ca27366645d80e6ae0a937b1880d0f1446f",
+    "server/traky12ReadmeContent.contract.test.ts": "d31dbde9cd60fb7fe31013ec3d8e076335008c329500ea8f8f4bde7c8d7b6a79"
+  },
+  "claimBoundary": "LOCAL_AND_DOCUMENTARY_EVIDENCE_ONLY / NO_PRODUCTION_CLAIM",
+  "prohibitedData": [
+    "tokens",
+    "credentials",
+    "PII",
+    "secret values"
+  ]
+}

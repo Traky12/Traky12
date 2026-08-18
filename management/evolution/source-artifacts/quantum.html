@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CASTÚO-SYSTEM QUANTUM v4.0 — Plataforma Agroindustrial Digital. Frontend Enterprise.">
+<title>CASTÚO-360 v5.0 · Plataforma Multimodal · 140 módulos</title>
+<style>
+:root{
+  --bg:#070b11;--bg2:#0c1219;--panel:#101824;--panel2:#16202e;--line:#1d2a3a;--line2:#27384d;
+  --txt:#e8eef5;--mut:#8294a8;--dim:#5a6b7e;
+  --green:#10d98c;--green2:#0a9c63;--blue:#3b82f6;--cyan:#22d3ee;--amber:#f59e0b;--red:#ef4444;
+  --violet:#8b5cf6;--pink:#ec4899;--orange:#fb923c;
+  --rad:12px;--font:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;--mono:'Cascadia Code','JetBrains Mono',Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:var(--font);font-size:14px;overflow:hidden}
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--line2);border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#33485f}
+a{color:var(--cyan);text-decoration:none}
+button{font-family:var(--font)}
+/* ===== LAYOUT ===== */
+#app{display:grid;grid-template-columns:236px 1fr;grid-template-rows:56px 1fr;height:100vh}
+#sidebar{grid-row:1/3;background:var(--bg2);border-right:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
+#topbar{display:flex;align-items:center;gap:12px;padding:0 20px;background:var(--bg2);border-bottom:1px solid var(--line)}
+#main{overflow-y:auto;padding:22px 26px;position:relative}
+/* ===== SIDEBAR ===== */
+.brand{display:flex;align-items:center;gap:10px;padding:16px 16px 14px;border-bottom:1px solid var(--line)}
+.brand .logo{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--green),#0e7a52);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;color:#04130c}
+.brand b{font-size:14px;letter-spacing:.4px}
+.brand small{display:block;color:var(--mut);font-size:10.5px;font-weight:400}
+#nav{flex:1;overflow-y:auto;padding:10px 10px 16px}
+.navgroup{font-size:10px;letter-spacing:1.4px;color:var(--dim);font-weight:700;padding:14px 8px 6px;text-transform:uppercase}
+.navitem{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;cursor:pointer;color:#b9c6d4;margin-bottom:1px;border-left:2px solid transparent;transition:background .12s,color .12s;user-select:none}
+.navitem:hover{background:var(--panel);color:var(--txt)}
+.navitem.active{background:linear-gradient(90deg,rgba(16,217,140,.13),rgba(16,217,140,.03));color:var(--green);border-left-color:var(--green)}
+.navitem .ni{width:20px;text-align:center;font-size:15px}
+.navitem .nb{margin-left:auto;font-size:10px;font-weight:700;background:var(--panel2);color:var(--mut);border-radius:9px;padding:1.5px 7px}
+.navitem.active .nb{background:rgba(16,217,140,.15);color:var(--green)}
+.sysfoot{padding:12px 16px;border-top:1px solid var(--line);font-size:10.5px;color:var(--dim);font-family:var(--mono)}
+.sysfoot .ok{color:var(--green)}
+/* ===== TOPBAR ===== */
+#crumb{font-weight:600;font-size:15px}
+#crumb small{display:block;font-weight:400;color:var(--mut);font-size:11px}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line2);background:var(--panel);border-radius:20px;padding:4.5px 12px;font-size:11.5px;color:var(--mut);white-space:nowrap}
+.pill .dot{width:7px;height:7px;border-radius:50%}
+.dot.g{background:var(--green);box-shadow:0 0 6px var(--green)}
+.dot.r{background:var(--red);box-shadow:0 0 6px var(--red)}
+.dot.a{background:var(--amber);box-shadow:0 0 6px var(--amber)}
+#connpill{cursor:pointer}
+.avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--violet));display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;cursor:pointer}
+#searchbtn{flex:1;max-width:340px;display:flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:7px 12px;color:var(--dim);cursor:pointer;font-size:12.5px}
+#searchbtn:hover{border-color:var(--green2)}
+#searchbtn kbd{margin-left:auto;background:var(--panel2);border:1px solid var(--line2);border-radius:4px;padding:1px 6px;font-size:10px;font-family:var(--mono)}
+/* ===== CARDS / KPI ===== */
+.kpirow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:20px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:15px 17px;position:relative;overflow:hidden}
+.kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--ac,var(--green))}
+.kpi .kl{font-size:10.5px;letter-spacing:1.2px;color:var(--mut);font-weight:600;text-transform:uppercase}
+.kpi .kv{font-size:27px;font-weight:700;font-family:var(--mono);margin:5px 0 3px;color:var(--ac,var(--green))}
+.kpi .ks{font-size:11px;color:var(--mut)}
+.kpi .ks .up{color:var(--green);font-weight:600}
+.kpi .ks .dn{color:var(--red);font-weight:600}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:18px;margin-bottom:18px}
+.card h3{font-size:14px;display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.card .sub{font-size:11.5px;color:var(--mut);margin-bottom:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gridmain{display:grid;grid-template-columns:1fr 330px;gap:18px;align-items:start}
+/* ===== MODULE TILES ===== */
+.modgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px}
+.modtile{background:var(--panel2);border:1px solid var(--line2);border-radius:10px;padding:13px 14px;cursor:pointer;position:relative;transition:transform .12s,border-color .12s}
+.modtile:hover{transform:translateY(-2px);border-color:var(--green2)}
+.modtile .mi{font-size:19px}.modtile b{display:block;font-size:12.5px;margin-top:6px}
+.modtile small{color:var(--mut);font-size:10.5px;display:block;margin-top:2px}
+.modtile .st{position:absolute;top:11px;right:11px;width:8px;height:8px;border-radius:50%}
+/* ===== TABLES ===== */
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{text-align:left;font-size:10px;letter-spacing:1.1px;text-transform:uppercase;color:var(--mut);padding:9px 12px;border-bottom:1px solid var(--line2);cursor:pointer;user-select:none;white-space:nowrap}
+th:hover{color:var(--txt)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+tbody tr{transition:background .1s}
+tbody tr:hover{background:rgba(255,255,255,.025)}
+.tag{display:inline-block;padding:2px 9px;border-radius:11px;font-size:10.5px;font-weight:600}
+.tag.g{background:rgba(16,217,140,.12);color:var(--green)}
+.tag.b{background:rgba(59,130,246,.13);color:#7eb0fa}
+.tag.a{background:rgba(245,158,11,.13);color:var(--amber)}
+.tag.r{background:rgba(239,68,68,.13);color:#f87171}
+.tag.v{background:rgba(139,92,246,.13);color:#b89af9}
+.tag.c{background:rgba(34,211,238,.12);color:var(--cyan)}
+.mono{font-family:var(--mono);font-size:11.5px}
+/* ===== CONTROLS ===== */
+.btn{background:var(--panel2);border:1px solid var(--line2);color:var(--txt);border-radius:8px;padding:7px 14px;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:border-color .12s}
+.btn:hover{border-color:var(--green2)}
+.btn.primary{background:linear-gradient(135deg,var(--green2),#076b45);border-color:var(--green2);font-weight:600}
+.btn.primary:hover{filter:brightness(1.15)}
+.btn.danger{border-color:#5c2330;color:#f87171}.btn.danger:hover{background:rgba(239,68,68,.1)}
+.btn.sm{padding:3.5px 9px;font-size:11px;border-radius:6px}
+.toolbar{display:flex;gap:10px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
+.toolbar input[type=search]{flex:1;min-width:180px;max-width:330px}
+input,select,textarea{background:var(--bg2);border:1px solid var(--line2);color:var(--txt);border-radius:8px;padding:8px 12px;font-size:12.5px;font-family:var(--font);outline:none;transition:border-color .12s}
+input:focus,select:focus,textarea:focus{border-color:var(--green2)}
+label{font-size:11px;color:var(--mut);font-weight:600;letter-spacing:.4px;display:block;margin-bottom:5px;text-transform:uppercase}
+.field{margin-bottom:13px}.field input,.field select,.field textarea{width:100%}
+/* ===== MODAL / TOAST / PALETTE ===== */
+.overlay{position:fixed;inset:0;background:rgba(2,6,12,.7);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;z-index:90;padding:8vh 20px}
+.overlay.open{display:flex}
+.modal{background:var(--panel);border:1px solid var(--line2);border-radius:14px;width:100%;max-width:520px;max-height:80vh;overflow-y:auto;padding:22px;animation:pop .15s ease}
+@keyframes pop{from{transform:scale(.96);opacity:0}to{transform:scale(1);opacity:1}}
+.modal h3{margin-bottom:16px;font-size:15px}
+#toasts{position:fixed;bottom:22px;right:22px;z-index:120;display:flex;flex-direction:column;gap:9px}
+.toast{background:var(--panel2);border:1px solid var(--line2);border-left:3px solid var(--green);border-radius:9px;padding:11px 16px;font-size:12.5px;min-width:240px;max-width:360px;animation:slidein .2s ease;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.toast.err{border-left-color:var(--red)}.toast.warn{border-left-color:var(--amber)}
+@keyframes slidein{from{transform:translateX(40px);opacity:0}to{transform:none;opacity:1}}
+#palette{max-width:560px;padding:0;overflow:hidden}
+#palette input{width:100%;border:none;border-bottom:1px solid var(--line2);border-radius:0;padding:15px 18px;font-size:14px;background:var(--panel)}
+#palresults{max-height:330px;overflow-y:auto;padding:8px}
+.palitem{display:flex;align-items:center;gap:11px;padding:9px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+.palitem:hover,.palitem.sel{background:var(--panel2)}
+.palitem small{margin-left:auto;color:var(--dim);font-size:10.5px}
+/* ===== MISC ===== */
+.empty{text-align:center;padding:46px 20px;color:var(--dim)}
+.empty .big{font-size:36px;margin-bottom:10px}
+.sparkrow{display:flex;align-items:flex-end;gap:14px}
+.progress{height:7px;background:var(--bg2);border-radius:4px;overflow:hidden}
+.progress i{display:block;height:100%;border-radius:4px;background:var(--ac,var(--green))}
+.statline{display:flex;justify-content:space-between;font-size:12px;padding:7px 0;border-bottom:1px solid var(--line)}
+.statline:last-child{border:none}
+.statline b{font-family:var(--mono)}
+.feed{display:flex;flex-direction:column;gap:2px}
+.feeditem{display:flex;gap:10px;padding:8px 4px;border-bottom:1px solid var(--line);font-size:12px;align-items:flex-start}
+.feeditem:last-child{border:none}
+.feeditem .fd{width:8px;height:8px;border-radius:50%;margin-top:4px;flex-shrink:0}
+.feeditem small{display:block;color:var(--dim);font-size:10.5px;font-family:var(--mono);margin-top:2px}
+.gauge{display:flex;flex-direction:column;align-items:center;gap:6px}
+.gauge .gv{font-family:var(--mono);font-weight:700;font-size:17px}
+.gauge .gl{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:1px}
+.pager{display:flex;gap:6px;align-items:center;justify-content:flex-end;margin-top:12px;font-size:11.5px;color:var(--mut)}
+.iconbtn{background:none;border:none;cursor:pointer;font-size:13px;color:var(--mut);padding:3px 6px;border-radius:5px}
+.iconbtn:hover{background:var(--panel2);color:var(--txt)}
+#login-screen{position:fixed;inset:0;background:radial-gradient(1100px 600px at 70% -10%,#0d2b1f 0%,var(--bg) 55%);z-index:200;display:flex;align-items:center;justify-content:center}
+.loginbox{background:var(--panel);border:1px solid var(--line2);border-radius:16px;padding:34px;width:380px;box-shadow:0 24px 80px rgba(0,0,0,.5)}
+.map{background:var(--bg2);border:1px solid var(--line);border-radius:10px;position:relative;overflow:hidden}
+@media(max-width:1100px){.gridmain{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
+@media(max-width:860px){#app{grid-template-columns:64px 1fr}.brand b,.brand small,.navgroup,.navitem span:not(.ni),.navitem .nb,.sysfoot{display:none}.navitem{justify-content:center}}
+</style>
+</head>
+<body>
+<div id="login-screen" style="display:none">
+  <div class="loginbox">
+    <div class="brand" style="border:none;padding:0 0 18px">
+      <div class="logo">C</div>
+      <div><b>CASTÚO-SYSTEM™</b><small>QUANTUM v4.0 · Acceso Zero Trust</small></div>
+    </div>
+    <div class="field"><label>Usuario</label><input id="lg-user" value="gregorio" autocomplete="username"></div>
+    <div class="field"><label>Contraseña</label><input id="lg-pass" type="password" placeholder="••••••••" autocomplete="current-password"></div>
+    <button class="btn primary" style="width:100%;justify-content:center;padding:10px" onclick="doLogin()">Iniciar sesión</button>
+    <button class="btn" style="width:100%;justify-content:center;margin-top:9px" onclick="demoLogin()">Entrar en modo DEMO</button>
+    <p style="font-size:10.5px;color:var(--dim);margin-top:14px;text-align:center">JWT · RBAC · MFA — castuo-auth :3001</p>
+  </div>
+</div>
+
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand"><div class="logo">C</div><div><b>CASTÚO-SYSTEM™</b><small>QUANTUM v4.0 · SaaS Enterprise</small></div></div>
+    <nav id="nav"></nav>
+    <div class="sysfoot"><span class="ok">●</span> Sistemas operativos<br>v4.0.0 · TRL6 · M4359038 · Hetzner EU</div>
+  </aside>
+  <header id="topbar">
+    <div id="crumb">Dashboard<small>Plataforma Agroindustrial Digital</small></div>
+    <div id="searchbtn" onclick="openPalette()">🔍 <span>Buscar módulos, registros, acciones…</span><kbd>Ctrl K</kbd></div>
+    <a class="pill" href="index.html" title="Operación hidropónica E2E" style="border-color:var(--green2)">🌿 Hidroponía E2E</a>
+    <span class="pill" id="connpill" onclick="go('config')"><span class="dot a" id="conndot"></span><span id="conntxt">DEMO</span></span>
+    <span class="pill"><span class="dot g"></span>Producción EU</span>
+    <span class="pill">🇪🇺 GDPR · AI Act</span>
+    <div class="avatar" id="avatar" title="Gregorio J. Jiménez" onclick="go('auth')">GJ</div>
+  </header>
+  <main id="main"></main>
+</div>
+
+<div class="overlay" id="modal-ov"><div class="modal" id="modal-box"></div></div>
+<div class="overlay" id="palette-ov"><div class="modal" id="palette">
+  <input id="pal-in" placeholder="Buscar en toda la plataforma…" oninput="palSearch(this.value)">
+  <div id="palresults"></div>
+</div></div>
+<div id="toasts"></div>
+
+<script>
+'use strict';
+/* ============================================================
+   CASTÚO-SYSTEM QUANTUM v4.0 — Frontend Enterprise single-file
+   Capa API real (FastAPI) + fallback DEMO persistente
+   ============================================================ */
+const CFG_KEY='castuo_cfg_v4', DB_KEY='castuo_db_v4';
+let CFG = Object.assign({apiUrl:'https://api.castuo-system.es', token:'', mode:'demo', pollSec:10, requireLogin:false}, JSON.parse(localStorage.getItem(CFG_KEY)||'{}'));
+const saveCfg=()=>localStorage.setItem(CFG_KEY,JSON.stringify(CFG));
+// SSO suite: hereda el JWT de la app hidropónica (mismo backend)
+(function(){const t=localStorage.getItem('castuo_token');if(t&&t!=='demo'&&(!CFG.token||CFG.token==='demo')){CFG.token=t;CFG.mode='real';}})();
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>Number(n).toLocaleString('es-ES');
+const nowHM=()=>new Date().toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'});
+const today=()=>new Date().toISOString().slice(0,10);
+const rid=()=>Math.random().toString(36).slice(2,9).toUpperCase();
+const rnd=(a,b)=>a+Math.random()*(b-a);
+const ri=(a,b)=>Math.round(rnd(a,b));
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+
+function toast(msg,type=''){const t=document.createElement('div');t.className='toast '+type;t.innerHTML=msg;$('#toasts').appendChild(t);setTimeout(()=>{t.style.opacity='0';t.style.transition='opacity .3s';setTimeout(()=>t.remove(),300)},4200);}
+function modal(html){$('#modal-box').innerHTML=html;$('#modal-ov').classList.add('open');}
+function closeModal(){$('#modal-ov').classList.remove('open');}
+$('#modal-ov').addEventListener('click',e=>{if(e.target.id==='modal-ov')closeModal();});
+$('#palette-ov').addEventListener('click',e=>{if(e.target.id==='palette-ov')closePalette();});
+
+/* ===================== CAPA API ===================== */
+async function apiFetch(path,opts={}){
+  const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),6000);
+  try{
+    const res=await fetch(CFG.apiUrl.replace(/\/$/,'')+path,Object.assign({signal:ctl.signal,headers:Object.assign({'Content-Type':'application/json'},CFG.token?{Authorization:'Bearer '+CFG.token}:{})},opts));
+    clearTimeout(t);
+    if(res.status===401){setConn(false,'401 No autorizado');throw new Error('401');}
+    if(!res.ok)throw new Error('HTTP '+res.status);
+    setConn(true);
+    return res.status===204?null:await res.json();
+  }catch(e){clearTimeout(t);if(CFG.mode==='real')setConn(false,e.message);throw e;}
+}
+let CONN={online:false,last:null};
+function setConn(ok,err){
+  CONN.online=ok;CONN.last=new Date();
+  const d=$('#conndot'),x=$('#conntxt');if(!d)return;
+  if(CFG.mode==='demo'){d.className='dot a';x.textContent='DEMO';}
+  else if(ok){d.className='dot g';x.textContent='ONLINE';}
+  else{d.className='dot r';x.textContent='OFFLINE';if(err&&err!=='401')console.warn('API:',err);}
+}
+/* Acceso a datos: API real con fallback transparente a demo-store */
+const Store={
+  async list(mod){
+    if(CFG.mode==='real'){try{return await apiFetch('/api/v1/'+mod);}catch(e){toast('⚠️ API no disponible · usando datos locales ('+esc(mod)+')','warn');}}
+    return DB[mod]||[];
+  },
+  async save(mod,rec){
+    if(CFG.mode==='real'){try{
+      if(rec.id&&DBfind(mod,rec.id))return await apiFetch('/api/v1/'+mod+'/'+rec.id,{method:'PUT',body:JSON.stringify(rec)});
+      return await apiFetch('/api/v1/'+mod,{method:'POST',body:JSON.stringify(rec)});
+    }catch(e){toast('⚠️ Guardado local (API offline)','warn');}}
+    if(!rec.id)rec.id=rid();
+    const i=(DB[mod]||(DB[mod]=[])).findIndex(r=>r.id===rec.id);
+    if(i>=0)DB[mod][i]=rec;else DB[mod].unshift(rec);
+    saveDB();return rec;
+  },
+  async del(mod,id){
+    if(CFG.mode==='real'){try{await apiFetch('/api/v1/'+mod+'/'+id,{method:'DELETE'});}catch(e){toast('⚠️ Borrado local (API offline)','warn');}}
+    DB[mod]=(DB[mod]||[]).filter(r=>r.id!==id);saveDB();
+  }
+};
+const DBfind=(mod,id)=>(DB[mod]||[]).find(r=>r.id===id);
+function saveDB(){try{localStorage.setItem(DB_KEY,JSON.stringify(DB));}catch(e){}}
+
+/* ===================== AUTENTICACIÓN ===================== */
+async function doLogin(){
+  const u=$('#lg-user').value,p=$('#lg-pass').value;
+  if(CFG.mode==='real'){
+    try{const r=await apiFetch('/api/v1/auth/login',{method:'POST',body:JSON.stringify({username:u,password:p})});
+      CFG.token=r.access_token||r.token||'';saveCfg();localStorage.setItem('castuo_token',CFG.token);localStorage.setItem('castuo_auth_mode','jwt');hideLogin();toast('✅ Sesión iniciada (JWT · SSO suite)');return;
+    }catch(e){toast('❌ Login fallido: '+esc(e.message),'err');return;}
+  }
+  demoLogin();
+}
+function demoLogin(){CFG.token='demo';saveCfg();hideLogin();toast('Modo DEMO activo — datos simulados');}
+function hideLogin(){$('#login-screen').style.display='none';}
+function logout(){CFG.token='';saveCfg();$('#login-screen').style.display='flex';}
+
+/* ===================== DATOS DEMO (semillas realistas) ===================== */
+const PARCELAS=['Parcela A1','Parcela A3','Parcela B1','Parcela B2','Lote C-Norte','Invernadero 1','Invernadero 2','Olivar Sur'];
+const CULTIVOS=['Tomate hidropónico','Pimiento','Lechuga NFT','Fresa vertical','Olivo','Almendro','Pistacho','Brócoli'];
+function seedDB(){
+  const db={};
+  db.cuaderno=Array.from({length:48},(_,i)=>({id:'CC-'+(487-i),fecha:dAgo(i*1.7),parcela:pick(PARCELAS),actividad:pick(['Riego','Fertilización','Tratamiento fito','Siembra','Recolección','Poda','Análisis suelo']),producto:pick(['NPK 15-15-15','Cobre 50%','Agua riego','Azufre','Materia orgánica','—']),dosis:ri(1,40)+' kg/ha',operario:pick(['G. Jiménez','M. Torres','A. Vega']),estado:pick(['Validado','Validado','Validado','Pendiente'])}));
+  db.tramitacion=[
+    {id:'EXP-2026-018',tipo:'PAC · Eco-regímenes',organismo:'FEGA',estado:'En revisión',fecha:'2026-05-28',importe:'12.400 €'},
+    {id:'EXP-2026-017',tipo:'Ayuda agrovoltaica IDAE',organismo:'IDAE',estado:'Concedida',fecha:'2026-05-12',importe:'48.000 €'},
+    {id:'EXP-2026-015',tipo:'Registro REGEPA',organismo:'MAPA',estado:'Presentado',fecha:'2026-04-30',importe:'—'},
+    {id:'EXP-2026-013',tipo:'Licencia obra invernadero',organismo:'Ayto. Badajoz',estado:'Concedida',fecha:'2026-04-02',importe:'—'},
+    {id:'EXP-2026-011',tipo:'Subvención digitalización Kit',organismo:'Red.es',estado:'Justificación',fecha:'2026-03-15',importe:'6.000 €'},
+    {id:'EXP-2026-009',tipo:'Cuaderno digital SIEX',organismo:'MAPA',estado:'Activo',fecha:'2026-02-20',importe:'—'},
+    {id:'EXP-2026-007',tipo:'Seguro agrario línea 309',organismo:'Agroseguro',estado:'Vigente',fecha:'2026-01-28',importe:'3.150 €'},
+    {id:'EXP-2026-004',tipo:'Alta explotación ganadera',organismo:'Junta Extremadura',estado:'Concedida',fecha:'2026-01-09',importe:'—'}];
+  db.ganaderia=Array.from({length:40},(_,i)=>({id:'ES0'+ (84000000+i*137), crotal:'EX-'+(1200+i),especie:i<28?'Ovino':'Caprino',raza:i<28?pick(['Merina','Ile de France']):'Verata',edad:ri(1,9)+' años',peso:ri(38,82)+' kg',bienestar:ri(78,98),gps:i<35?'GPS-'+(100+i):'—',estado:pick(['Pastoreo','Pastoreo','Estabulado','Lactancia'])}));
+  db.vallado=Array.from({length:24},(_,i)=>({id:'GPS-'+(100+i),animal:'EX-'+(1200+i),bateria:ri(22,100),senal:pick(['Excelente','Buena','Buena','Débil']),zona:pick(['Dehesa Norte','Dehesa Sur','Cercado 3','Cercado 5']),ultimo:ri(1,18)+' min',lat:38.85+rnd(-.04,.04),lng:-6.97+rnd(-.05,.05),estado:i%11===5?'Fuera de zona':'En zona'}));
+  db.drones=[
+    {id:'VUE-2026-031',dron:'DJI Mavic 3M',mision:'NDVI Olivar Sur',fecha:dAgo(2),duracion:'24 min',area:'18 ha',piloto:'G. Jiménez (A1-A3)',estado:'Procesado'},
+    {id:'VUE-2026-030',dron:'DJI Mavic 3M',mision:'Multiespectral B1-B2',fecha:dAgo(6),duracion:'31 min',area:'26 ha',piloto:'G. Jiménez (A1-A3)',estado:'Procesado'},
+    {id:'VUE-2026-029',dron:'DJI Matrice 350',mision:'Térmica invernaderos',fecha:dAgo(9),duracion:'18 min',area:'4 ha',piloto:'M. Torres (A2)',estado:'Procesado'},
+    {id:'VUE-2026-028',dron:'DJI Mavic 3M',mision:'NDVI Dehesa Norte',fecha:dAgo(15),duracion:'42 min',area:'55 ha',piloto:'G. Jiménez (A1-A3)',estado:'Archivado'},
+    {id:'VUE-2026-027',dron:'DJI Matrice 350',mision:'Fotogrametría PIX4D',fecha:dAgo(21),duracion:'37 min',area:'40 ha',piloto:'G. Jiménez (A1-A3)',estado:'Archivado'}];
+  db.riego=[
+    {id:'Z1',zona:'Invernadero 1 · NFT',caudal:'2,4 m³/h',humedad:71,programa:'06:00 · 14:00 · 20:00',ahorro:'-21%',valvula:'Abierta',estado:'Regando'},
+    {id:'Z2',zona:'Invernadero 2 · Goteo',caudal:'1,8 m³/h',humedad:64,programa:'07:00 · 19:00',ahorro:'-18%',valvula:'Cerrada',estado:'Programado'},
+    {id:'Z3',zona:'Parcela A3 · Aspersión',caudal:'5,1 m³/h',humedad:48,programa:'05:30',ahorro:'-14%',valvula:'Cerrada',estado:'Programado'},
+    {id:'Z4',zona:'Olivar Sur · Goteo',caudal:'3,3 m³/h',humedad:39,programa:'Déficit controlado',ahorro:'-26%',valvula:'Cerrada',estado:'Reposo'},
+    {id:'Z5',zona:'Fresa vertical',caudal:'0,9 m³/h',humedad:76,programa:'Ciclo 45 min',ahorro:'-23%',valvula:'Abierta',estado:'Regando'}];
+  db.invernadero=[
+    {id:'S-T1',sensor:'Temperatura aire',ubic:'Inv. 1 zona A',valor:24.3,unidad:'°C',min:18,max:28,estado:'OK'},
+    {id:'S-T2',sensor:'Temperatura aire',ubic:'Inv. 2 zona B',valor:26.1,unidad:'°C',min:18,max:28,estado:'OK'},
+    {id:'S-H1',sensor:'Humedad relativa',ubic:'Inv. 1',valor:68,unidad:'%',min:55,max:80,estado:'OK'},
+    {id:'S-H2',sensor:'Humedad suelo',ubic:'Lote B1',valor:52,unidad:'%',min:45,max:75,estado:'⚠ +7% desviación'},
+    {id:'S-C1',sensor:'CO₂',ubic:'Inv. 1',valor:712,unidad:'ppm',min:400,max:1000,estado:'OK'},
+    {id:'S-E1',sensor:'EC nutrientes',ubic:'NFT línea 2',valor:2.1,unidad:'mS/cm',min:1.6,max:2.4,estado:'OK'},
+    {id:'S-P1',sensor:'pH solución',ubic:'NFT línea 2',valor:5.9,unidad:'pH',min:5.5,max:6.5,estado:'OK'},
+    {id:'S-L1',sensor:'PAR luminosidad',ubic:'Inv. 2',valor:842,unidad:'µmol',min:300,max:1200,estado:'OK'}];
+  db.blockchain=Array.from({length:30},(_,i)=>({id:'0x'+rid().toLowerCase()+rid().toLowerCase(),bloque:fmt(48210-i*3),tipo:pick(['Registro cuaderno','Lote trazabilidad','Certificado IFS','Pasaporte DPP','Sensor batch']),hash_ok:true,fecha:dAgo(i*.4),gas:ri(21,90)+'k',estado:'Confirmada'}));
+  db.auditoria=[
+    {id:'AUD-IFS-2026',norma:'IFS Food v8',ambito:'Manipulado IV gama',avance:78,resp:'Calidad',fecha:'2026-09-15',estado:'En curso'},
+    {id:'AUD-BRC-2026',norma:'BRCGS v9',ambito:'Envasado',avance:64,resp:'Calidad',fecha:'2026-10-02',estado:'En curso'},
+    {id:'AUD-GG-2026',norma:'GlobalG.A.P.',ambito:'Producción primaria',avance:100,resp:'G. Jiménez',fecha:'2026-03-11',estado:'Certificado'},
+    {id:'AUD-ECO-2026',norma:'Ecológico UE 2018/848',ambito:'Olivar + hortícola',avance:100,resp:'CAEX',fecha:'2026-02-04',estado:'Certificado'},
+    {id:'AUD-ISO-2027',norma:'ISO 22000',ambito:'Cadena completa',avance:12,resp:'Consultora',fecha:'2027-01-20',estado:'Planificada'}];
+  db.pasaporte=[
+    {id:'DPP-TOM-0412',producto:'Tomate hidropónico lote 412',origen:'Invernadero 1',huella:'0,38 kg CO₂e/kg',agua:'12 L/kg',qr:'castuo.es/dpp/412',fecha:dAgo(3),estado:'Publicado'},
+    {id:'DPP-AOVE-0086',producto:'AOVE ecológico lote 86',origen:'Olivar Sur',huella:'1,9 kg CO₂e/L',agua:'310 L/L',qr:'castuo.es/dpp/86',fecha:dAgo(12),estado:'Publicado'},
+    {id:'DPP-FRE-0033',producto:'Fresa vertical lote 33',origen:'Inv. 2',huella:'0,29 kg CO₂e/kg',agua:'8 L/kg',qr:'castuo.es/dpp/33',fecha:dAgo(18),estado:'Borrador'}];
+  db.contenedores=[
+    {id:'castuo-gateway',rol:'API Gateway · Traefik',puerto:443,cpu:4,ram:118,latencia:2,estado:'Running'},
+    {id:'castuo-auth',rol:'JWT · RBAC · Zero Trust',puerto:3001,cpu:2,ram:96,latencia:4,estado:'Running'},
+    {id:'castuo-api',rol:'FastAPI core (Python 3.14)',puerto:8000,cpu:11,ram:210,latencia:6,estado:'Running'},
+    {id:'sabionda-engine',rol:'Motor IA Prescriptivo · Mistral',puerto:8001,cpu:23,ram:840,latencia:12,estado:'Running'},
+    {id:'iot-gateway',rol:'MQTT · LoRaWAN Bridge',puerto:1883,cpu:3,ram:74,latencia:3,estado:'Running'},
+    {id:'blockchain-node',rol:'Registro inalterable',puerto:8443,cpu:8,ram:512,latencia:8,estado:'Running'},
+    {id:'postgres-16',rol:'PostgreSQL 16 · principal',puerto:5432,cpu:6,ram:380,latencia:1,estado:'Running'},
+    {id:'timescale-iot',rol:'Series temporales sensores',puerto:5433,cpu:9,ram:420,latencia:2,estado:'Running'},
+    {id:'redis-cache',rol:'Caché · colas',puerto:6379,cpu:1,ram:48,latencia:1,estado:'Running'},
+    {id:'n8n-automation',rol:'Automatización flujos',puerto:5678,cpu:2,ram:160,latencia:9,estado:'Running'},
+    {id:'grafana',rol:'Observabilidad',puerto:3000,cpu:2,ram:130,latencia:5,estado:'Running'},
+    {id:'prometheus',rol:'Métricas',puerto:9090,cpu:3,ram:220,latencia:2,estado:'Running'},
+    {id:'minio-s3',rol:'Objetos · imágenes dron',puerto:9000,cpu:1,ram:90,latencia:4,estado:'Running'},
+    {id:'billing-stripe',rol:'Billing SaaS multi-tenant',puerto:8010,cpu:1,ram:85,latencia:11,estado:'Running'},
+    {id:'analytics-bi',rol:'Dashboards BI',puerto:8020,cpu:4,ram:240,latencia:7,estado:'Running'},
+    {id:'edge-sync-pi5',rol:'Sync Raspberry Pi 5 (arm64)',puerto:8030,cpu:2,ram:60,latencia:14,estado:'Running'},
+    {id:'backup-agent',rol:'Backups cifrados Hetzner BX',puerto:8040,cpu:1,ram:40,latencia:5,estado:'Running'}];
+  db.iotgw=Array.from({length:14},(_,i)=>({id:'castuo/'+pick(['inv1','inv2','campo','ganado'])+'/'+pick(['temp','hum','co2','ec','ph','gps','caudal'])+'/'+i,protocolo:i%3?'LoRaWAN':'MQTT',mensajes:fmt(ri(800,42000)),qos:pick([0,1,1,2]),ultimo:ri(1,59)+' s',estado:i===9?'Sin datos':'Activo'}));
+  db.auth=[
+    {id:'gregorio',nombre:'Gregorio J. Jiménez',rol:'Admin · Owner',mfa:'Sí',sesiones:2,ultimo:'Ahora',estado:'Activo'},
+    {id:'mtorres',nombre:'M. Torres',rol:'Operario campo',mfa:'Sí',sesiones:1,ultimo:'hace 2 h',estado:'Activo'},
+    {id:'avega',nombre:'A. Vega',rol:'Operario campo',mfa:'No',sesiones:0,ultimo:'hace 3 d',estado:'Activo'},
+    {id:'calidad',nombre:'Dpto. Calidad (ext)',rol:'Auditor lectura',mfa:'Sí',sesiones:0,ultimo:'hace 9 d',estado:'Suspendido'},
+    {id:'api-n8n',nombre:'Service account n8n',rol:'M2M · scopes:write',mfa:'—',sesiones:1,ultimo:'Ahora',estado:'Activo'}];
+  db.agrovoltaica=[
+    {id:'STR-01',string:'String fotovoltaico 1',potencia:'12,4 kW',hoy:'58 kWh',rendimiento:97,inversor:'Huawei SUN2000',estado:'Generando'},
+    {id:'STR-02',string:'String fotovoltaico 2',potencia:'11,9 kW',hoy:'55 kWh',rendimiento:95,inversor:'Huawei SUN2000',estado:'Generando'},
+    {id:'STR-03',string:'String semitransparente inv.',potencia:'7,2 kW',hoy:'31 kWh',rendimiento:91,inversor:'Huawei SUN2000',estado:'Generando'},
+    {id:'BAT-01',string:'Batería LFP 30 kWh',potencia:'SOC 84%',hoy:'12 kWh ciclados',rendimiento:99,inversor:'BMS',estado:'Cargando'},
+    {id:'EXC-01',string:'Excedentes a red',potencia:'3,1 kW',hoy:'9 kWh vertidos',rendimiento:100,inversor:'CUPS ES0021…',estado:'Vertiendo'}];
+  db.suelo=[
+    {id:'AN-2026-014',parcela:'Parcela A3',metodo:'LIBS espectroscopía',ph:6.8,mo:'2,1%',n:'Alto',p:'Medio',k:'Alto',fecha:dAgo(5),estado:'Completado'},
+    {id:'AN-2026-013',parcela:'Olivar Sur',metodo:'LIBS espectroscopía',ph:7.9,mo:'1,4%',n:'Medio',p:'Bajo',k:'Medio',fecha:dAgo(11),estado:'Completado'},
+    {id:'AN-2026-012',parcela:'Lote C-Norte',metodo:'Lab externo + LIBS',ph:6.2,mo:'2,8%',n:'Alto',p:'Alto',k:'Alto',fecha:dAgo(19),estado:'Completado'},
+    {id:'AN-2026-011',parcela:'Parcela B2',metodo:'LIBS espectroscopía',ph:7.1,mo:'1,9%',n:'Medio',p:'Medio',k:'Bajo',fecha:dAgo(26),estado:'Recomendación emitida'}];
+  db.billing=[
+    {id:'TEN-001',tenant:'Grupo Castuo 360 S.L.',plan:'Enterprise',mrr:'1.490 €',uso:'36/36 módulos',renovacion:'2027-01-01',estado:'Activo'},
+    {id:'TEN-002',tenant:'Coop. Vegas Altas',plan:'Pro',mrr:'390 €',uso:'14/36 módulos',renovacion:'2026-09-12',estado:'Activo'},
+    {id:'TEN-003',tenant:'Dehesa La Serena SAT',plan:'Pro',mrr:'390 €',uso:'11/36 módulos',renovacion:'2026-08-03',estado:'Activo'},
+    {id:'TEN-004',tenant:'Finca experimental UEX',plan:'Starter',mrr:'90 €',uso:'6/36 módulos',renovacion:'2026-07-15',estado:'Trial'}];
+  db.alertas=[
+    {id:'AL-1',nivel:'alta',texto:'GPS-105 fuera de zona · Dehesa Norte',hora:nowHM()},
+    {id:'AL-2',nivel:'media',texto:'Humedad suelo Lote B1 +7% desviación',hora:nowHM()},
+    {id:'AL-3',nivel:'media',texto:'Sensor iot castuo/ganado/gps/9 sin datos 40 min',hora:nowHM()}];
+  db.feed=[
+    {t:'Cuaderno campo: registro riego Parcela A3',c:'g',h:'hace 2 min'},
+    {t:'SABIONDA: predicción estrés hídrico Lote B1',c:'b',h:'hace 5 min'},
+    {t:'⚠ Alerta: humedad suelo +7% desviación',c:'a',h:'hace 8 min'},
+    {t:'Blockchain: lote DPP-TOM-0412 anclado (bloque 48.210)',c:'v',h:'hace 14 min'},
+    {t:'Drones: ortomosaico NDVI Olivar Sur procesado',c:'c',h:'hace 31 min'}];
+  return db;
+}
+function dAgo(d){const x=new Date(Date.now()-d*864e5);return x.toISOString().slice(0,10);}
+let DB=JSON.parse(localStorage.getItem(DB_KEY)||'null')||seedDB();
+if(!DB.agrovoltaica)DB=seedDB(); // re-seed si versión antigua
+saveDB();
+
+/* ===================== GRÁFICAS SVG (sin dependencias) ===================== */
+function spark(data,w=120,h=34,color='var(--green)'){
+  const mx=Math.max(...data),mn=Math.min(...data),r=mx-mn||1;
+  const pts=data.map((v,i)=>(i/(data.length-1)*w).toFixed(1)+','+(h-3-(v-mn)/r*(h-8)).toFixed(1)).join(' ');
+  return `<svg width="${w}" height="${h}" style="overflow:visible"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/><circle cx="${w}" cy="${(h-3-(data[data.length-1]-mn)/r*(h-8)).toFixed(1)}" r="3" fill="${color}"/></svg>`;
+}
+function bars(data,labels,w=440,h=130,color='var(--green)'){
+  const mx=Math.max(...data)||1,bw=w/data.length;
+  let s=`<svg width="100%" viewBox="0 0 ${w} ${h+18}" preserveAspectRatio="none" style="display:block">`;
+  data.forEach((v,i)=>{const bh=v/mx*(h-12);
+    s+=`<rect x="${(i*bw+3).toFixed(1)}" y="${(h-bh).toFixed(1)}" width="${(bw-6).toFixed(1)}" height="${bh.toFixed(1)}" rx="3" fill="${color}" opacity="${0.45+0.55*v/mx}"><title>${labels[i]}: ${v}</title></rect>`;
+    s+=`<text x="${(i*bw+bw/2).toFixed(1)}" y="${h+13}" text-anchor="middle" font-size="9" fill="#5a6b7e">${labels[i]}</text>`;});
+  return s+'</svg>';
+}
+function donut(pct,size=110,color='var(--green)',label=''){
+  const r=(size-14)/2,c=2*Math.PI*r;
+  return `<svg width="${size}" height="${size}"><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--bg2)" stroke-width="11"/>
+  <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="11" stroke-linecap="round"
+   stroke-dasharray="${(pct/100*c).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 ${size/2} ${size/2})"/>
+  <text x="50%" y="48%" text-anchor="middle" font-size="${size/6}" font-weight="700" fill="var(--txt)" font-family="var(--mono)">${pct}%</text>
+  <text x="50%" y="64%" text-anchor="middle" font-size="9" fill="var(--mut)">${label}</text></svg>`;
+}
+const series=(n,base,vol)=>Array.from({length:n},(_,i)=>Math.round(base+Math.sin(i/2.2)*vol+rnd(-vol/2,vol/2)));
+
+/* ===================== REGISTRO DE MÓDULOS ===================== */
+/* tag(): mapea estados → color de etiqueta */
+function stag(v){
+  v=String(v);
+  const g=['Validado','Concedida','Activo','Running','Confirmada','Certificado','OK','Generando','Completado','Publicado','En zona','Regando','Excelente','Vigente','Pastoreo','Cargando'];
+  const a=['Pendiente','En revisión','En curso','Trial','Programado','Borrador','Justificación','Débil','Lactancia','Reposo','Presentado','Planificada','Vertiendo','Estabulado','Recomendación emitida'];
+  const r=['Fuera de zona','Sin datos','Suspendido','Error','Stopped'];
+  const cls=g.includes(v)?'g':a.includes(v)?'a':r.includes(v)?'r':v.startsWith('⚠')?'a':'b';
+  return `<span class="tag ${cls}">${esc(v)}</span>`;
+}
+/* ═══════════════════════════════════════════════════════════════════
+   CASTÚO-360 v5.0 — Mapa de arquitectura: 5 núcleos + capa de datos
+   140 módulos enterprise. Datos extraídos del plan estratégico 24m.
+   Cada módulo: [id, nombre, función, tech, valor(K€), impacto, TRL, fase]
+   ═══════════════════════════════════════════════════════════════════ */
+var C360_CORES=[
+ {id:"agro",name:"Agro-Inteligente",icon:"🌱",color:"--green",desc:"36 módulos operativos (núcleo actual)",
+  fase:"Operativo",trl:6,mods:[
+   ["agro-core","Plataforma Agro 36 mód.","Cuaderno, ganadería, drones, riego, invernadero, blockchain, DPP…","FastAPI+IoT+Mistral","—","TRL6 certificado",6,"Operativo"]]},
+ {id:"data",name:"Data Intelligence Core",icon:"📊",color:"--cyan",desc:"Capa de datos centralizada · Six Sigma 6.0σ",
+  fase:"Fase 1",trl:4,mods:[
+   ["data-lake","Data Lake Enterprise","Almacenamiento unificado IoT+Agro+Geo+Bio","S3+TimescaleDB+ClickHouse",25,"1M evt/s (vs 148)",4,"Fase 1"],
+   ["etl-pipeline","ETL/ELT Pipeline","Transformación datos tiempo real","Airflow+Kafka",18,"100+ fuentes",4,"Fase 1"],
+   ["data-catalog","Data Catalog","Metadatos + descubrimiento","Apache Atlas",12,"Governance GDPR+AI Act",4,"Fase 1"],
+   ["data-quality","Data Quality","Validación Six Sigma 5.04→6.0σ","Great Expectations",15,"0.00034% errores",4,"Fase 1"],
+   ["rt-analytics","Real-time Analytics","Dashboards streaming 3s","Flink+Grafana",22,"Decisiones tiempo real",4,"Fase 1"],
+   ["mlops","ML Ops Platform","Ciclo vida modelos IA","Kubeflow+MLflow",28,"200+ features",4,"Fase 1"],
+   ["feature-store","Feature Store","Features para modelos","Feast",15,"-40% tiempo entreno",4,"Fase 1"],
+   ["data-gov","Data Governance","Compliance GDPR+AI Act+DPP","Open Policy Agent",18,"Auditorías auto",4,"Fase 1"],
+   ["data-mesh","Data Mesh","Arquitectura descentralizada","Data Mesh Framework",25,"Escalado horizontal",3,"Fase 1"],
+   ["predictive","Predictive Analytics","Predicción 30-90d NDVI+estrés","Prophet+XGBoost",20,"-25% agua",4,"Fase 1"],
+   ["digital-twin","Digital Twin Engine","Modelo 3D virtual de finca","Unity+Three.js+Photon",35,"Simular antes de implementar",4,"Fase 1"],
+   ["anomaly","Anomaly Detection","Detección anomalías","Isolation Forest+LSTM",18,"0.00034% falsos pos.",4,"Fase 1"],
+   ["data-viz","Data Visualization","BI interactivo","Apache Superset",12,"Dashboards a medida",5,"Fase 1"],
+   ["ts-analytics","Time-series Analytics","Análisis temporal IoT","TimescaleDB+Druid",15,"Optim. riego+energía",5,"Fase 1"],
+   ["geospatial","Geospatial Engine","Análisis espacial NDVI+3D","PostGIS+GeoPandas",18,"Mapas térmicos+humedad",4,"Fase 1"],
+   ["data-lineage","Data Lineage","Trazabilidad datos (blockchain)","JanusGraph+Blockchain",15,"Auditoría inmutable",4,"Fase 1"],
+   ["automl","AutoML Platform","Auto-generación modelos","H2O.ai+AutoGluon",22,"-60% tiempo desarrollo",4,"Fase 1"],
+   ["data-market","Data Marketplace","API pública datos agregados","FastAPI+OAuth2",18,"Monetización B2B/B2G",4,"Fase 1"],
+   ["privacy-comp","Privacy Computing","Cifrado homomórfico","PyCryptodome+SEAL",25,"Datos cifrados en uso",3,"Fase 1"],
+   ["data-retention","Data Retention","Lifecycle 7-25 años","Apache Ozone",12,"Cumplimiento legal",4,"Fase 1"]]},
+ {id:"geo",name:"Geotermia + Energía + Bioenergía",icon:"🌡️",color:"--amber",desc:"Renovable inteligente · geotermia · biodiésel · biogás · H₂ · 98% renovable",
+  fase:"Fase 2",trl:3,mods:[
+   ["geo-monitoring","Geothermal Monitoring","Sensores temp subsuelo 0-500m","PT1000+LoRaWAN",15,"12 sensores/finca",4,"Fase 2"],
+   ["heat-pump","Heat Pump Control","Bombas calor/frío geotérmicas","MQTT+GPIO 12V",12,"4 bombas/finca",4,"Fase 2"],
+   ["energy-forecast","Energy Forecast","Predicción demanda 7-30d","Prophet+LSTM",20,"Balance energía",4,"Fase 2"],
+   ["grid-opt","Grid Optimization","Balance geo+solar+red","Apache Flink",18,"3 fuentes",4,"Fase 2"],
+   ["carbon","Carbon Footprint","Calculadora CO2","Chainalysis+Blockchain",15,"-25% CO2",4,"Fase 2"],
+   ["energy-trading","Energy Trading P2P","Mercado energía finca→finca","Smart Contracts ERC-20",25,"100+ fincas",3,"Fase 2"],
+   ["thermal-storage","Thermal Storage","Acumuladores 500-5000L","MQTT+PID",12,"2-8 acumuladores",4,"Fase 2"],
+   ["well-mgmt","Well Management","Pozos geotérmicos","GIS+PostGIS",20,"2-4 pozos/finca",3,"Fase 2"],
+   ["heat-exchanger","Heat Exchanger","Intercambiadores placa/tubo","PID+MQTT",10,"4-12 unid.",4,"Fase 2"],
+   ["pump-eff","Pump Efficiency","Eficiencia bombas 95→98%","ML+IoT",15,"+3% eficiencia",4,"Fase 2"],
+   ["solar-geo","Solar-Geothermal Hybrid","Integración solar+geo","Apache Flink",22,"98% renovable",3,"Fase 2"],
+   ["renew-certs","Renewable Certs","Certificados EU TRACES","Blockchain+QR",10,"Venta excedentes",4,"Fase 2"],
+   ["energy-audit","Energy Audit","Auditoría energética ISO 50001","Python+Pandas",8,"Compliance",5,"Fase 2"],
+   ["demand-resp","Demand Response","Respuesta demanda red→finca","MQTT+WebSockets",12,"Picos evitados",4,"Fase 2"],
+   ["microgrid","Microgrid Control","Microrred finca aislada","Kubernetes+MQTT",20,"Autonomía",3,"Fase 2"],
+   ["battery","Battery Management","Baterías 20-100kWh SOC/SOH","MQTT+BMS",15,"2-8 baterías",4,"Fase 2"],
+   ["inverter","Inverter Control","Inversores solar→geo","MQTT+CAN",12,"4-12 inversores",4,"Fase 2"],
+   ["load-balance","Load Balancing","Balance cargas anti-picos","Flink+PID",10,"Estabilidad red",4,"Fase 2"],
+   ["energy-dash","Energy Dashboard","KWh + € + CO2","Grafana+Superset",8,"Visión energética",5,"Fase 2"],
+   ["pv-forecast","PV Forecast","Predicción solar NDVI+meteo","Prophet+Meteostat",12,"Planif. generación",4,"Fase 2"],
+   ["geo-model","Geological Model","Subsuelo 3D+termal","Unity+PostGIS",25,"Diseño pozos",3,"Fase 2"],
+   ["well-drilling","Well Drilling","Perforación GPS+NDVI","DJI+PIX4D",20,"Ubicación óptima",3,"Fase 2"],
+   ["thermal-inject","Thermal Injection","Inyección térmica retroalim.","MQTT+PID",10,"2-4 inyecciones",3,"Fase 2"],
+   ["energy-billing","Energy Billing","Billing energía multi-tenant","Stripe+Blockchain",15,"Monetización",4,"Fase 2"],
+   ["biodiesel-reactor","Reactor Biodiésel","Transesterificación aceites → FAME","PLC+MQTT+PID",18,"500-2000 L/día",4,"Fase 2"],
+   ["feedstock-mgmt","Feedstock Management","Materia prima (aceites usados, cultivos energ.)","ERP+IoT báscula",12,"Trazabilidad UCO",4,"Fase 2"],
+   ["glycerin-recovery","Glycerin Recovery","Recuperación glicerina (subproducto)","Decantación+HPLC",10,"Glicerina 80% pura",4,"Fase 2"],
+   ["methanol-recovery","Methanol Recovery","Recuperación metanol (circuito cerrado)","Destilación+MQTT",10,"-90% metanol fresco",4,"Fase 2"],
+   ["biodiesel-quality","Biodiésel Quality EN14214","Control calidad FAME (norma EU)","HPLC+GC+Pandas",12,"Cumplimiento EN 14214",4,"Fase 2"],
+   ["anaerobic-digestor","Digestor Anaerobio","Biogás de digestato+purines+restos","PLC+temp+pH+MQTT",22,"300-1500 m³/día",4,"Fase 2"],
+   ["biomethane-upgrade","Biometano Upgrading","Purificación CH4 96%+ (inyección red)","PSA/membrana+MQTT",20,"96% CH4 grid-ready",3,"Fase 2"],
+   ["chp-cogeneration","Cogeneración CHP","Motor biogás → electricidad+calor","Motor gas+SCADA",18,"Elec+térmica 85% efic.",4,"Fase 2"],
+   ["digestate-mgmt","Digestato Management","Subproducto → biofertilizante NPK","IoT+análisis suelo",10,"Economía circular",4,"Fase 2"],
+   ["biogas-storage","Biogas Storage","Gasómetro + antorcha seguridad","Presión+IoT+safety",12,"Buffer 500-3000 m³",4,"Fase 2"],
+   ["green-hydrogen","Hidrógeno Verde","Electrólisis (excedente solar→H2)","Electrolizador PEM+MQTT",30,"H2 almacén energía",3,"Fase 2"],
+   ["pyrolysis-biochar","Pirólisis + Biochar","Biomasa → biochar + bio-oil + syngas","Reactor pirólisis+PID",22,"Captura C + enmienda",3,"Fase 2"],
+   ["syngas-gasif","Gasificación Syngas","Gasificación biomasa → gas síntesis","Gasificador+SCADA",20,"Syngas para CHP",3,"Fase 2"]
+]},
+ {id:"biotec",name:"Biotecnología",icon:"🧬",color:"--violet",desc:"Mejora genética, biofertilizantes, biopesticidas",
+  fase:"Fase 3",trl:3,mods:[
+   ["genomic-seq","Genomic Sequencing","Secuenciación ADN cultivos+animales","Illumina+Nanopore",30,"100-500 muestras",3,"Fase 3"],
+   ["marker-sel","Marker Selection","Marcadores genéticos NDVI+rend.","PLINK+GATK",25,"50-200 marcadores",3,"Fase 3"],
+   ["crispr-design","CRISPR Design","Diseño edición CRISPR-Cas9","Benchling+CRISPR Opt",20,"10-50 diseños",3,"Fase 3"],
+   ["gene-editing","Gene Editing","Edición controlada bio-safety L2","IoT+Bio-safety L2",15,"-9→1% antibióticos",2,"Fase 3"],
+   ["biofert","Biofertilizant Dev","Biofertilizantes microbioma","QIIME2+Microbiome",22,"-30% fertilizantes",3,"Fase 3"],
+   ["probiotic","Probiotic Selection","Probióticos GI+suelo","16S rRNA+Metagenomics",18,"20-100 probióticos",3,"Fase 3"],
+   ["pathogen","Pathogen Detection","Patógenos qPCR+NGS","Illumina+BioNumerics",25,"10-50 patógenos",3,"Fase 3"],
+   ["abx-resist","Antibiotic Resistance","Resistencias 9→1%","RESfinder+CARD",20,"-8% antibióticos",3,"Fase 3"],
+   ["biopest","Biopesticide Dev","Biopesticidas naturales","IoT+HPLC",18,"10-30 biopesticidas",3,"Fase 3"],
+   ["germplasm","Germplasm Bank","Banco germoplasma","Cryo+DB blockchain",30,"500-2000 muestras",3,"Fase 3"],
+   ["trait-map","Trait Mapping","Mapa rasgos rend.+NDVI","R+QTL mapping",15,"50-200 rasgos",3,"Fase 3"],
+   ["cross-breed","Cross Breeding","Cruce dirigido","Excel+R+ML",12,"10-50 cruces",4,"Fase 3"],
+   ["phenotype","Phenotyping Auto","Fenotipado DJI+NDVI+LIBS","PIX4D+LightSight",25,"100-500 muestras/día",4,"Fase 3"],
+   ["metabolomics","Metabolomics","Compuestos activos","HPLC+NMR",22,"50-200 metabolitos",3,"Fase 3"],
+   ["proteomics","Proteomics","Enzimas+proteínas","LC-MS+MaxQuant",20,"100-500 proteínas",3,"Fase 3"],
+   ["transcript","Transcriptomics","Expresión genes","RNA-seq+DESeq2",18,"50-200 genes",3,"Fase 3"],
+   ["microbiome","Microbiome Analysis","Microbioma suelo+planta","QIIME2+METAphlAn",20,"100-500 muestras",3,"Fase 3"],
+   ["bioinfo","Bioinformatics","Pipeline NGS","Snakemake+Nextflow",15,"10-50 pipelines",4,"Fase 3"],
+   ["lab-mgmt","Lab Management","LIMS+IoT","LIMS+MongoDB",12,"1-5 labs",4,"Fase 3"],
+   ["sample-track","Sample Tracking","Seguimiento QR+blockchain","QR+Blockchain",10,"100-1000 muestras",4,"Fase 3"],
+   ["qc-biotec","Quality Control","Control ISO 17025","Python+Pandas",8,"Calidad lab",4,"Fase 3"],
+   ["reg-biotec","Regulatory File","Dossier EU biosafety","EU Biosafety+GDPR",15,"Compliance",3,"Fase 3"],
+   ["ip-biotec","IP Protection","Patentes genes","OEPM+USPTO",12,"5-20 patentes",3,"Fase 3"],
+   ["collab-biotec","Collaboration","Lab→lab EU","Slack+GitLab",8,"10-50 labs",5,"Fase 3"]]},
+ {id:"biomed",name:"Biomedicina",icon:"🧪",color:"--pink",desc:"Nutracéuticos, fitoterapia, medicina personalizada",
+  fase:"Fase 4",trl:2,mods:[
+   ["nutraceutical","Nutraceutical Dev","Nutracéuticos cultivos→salud","HPLC+Cell culture",25,"10-50 compuestos",3,"Fase 4"],
+   ["phytotherapy","Phytotherapy","Extractos+dosis","ISO 17025+HPLC",20,"20-100 extractos",3,"Fase 4"],
+   ["clinical-trial","Clinical Trial","Trial fase I-III EU GCP","REDCap+EU GCP",30,"50-500 pacientes",2,"Fase 4"],
+   ["biomarker","Biomarker Detect","Biomarcadores salud+NDVI","LC-MS+ELISA",22,"10-50 biomarcadores",3,"Fase 4"],
+   ["drug-discovery","Drug Discovery","Fármacos AI+lab","AlphaFold+DeepMind",35,"100-500 compuestos",2,"Fase 4"],
+   ["toxicology","Toxicology","Seguridad compuestos","OECD+GLP",18,"10-50 tests",3,"Fase 4"],
+   ["bioavail","Bioavailability","Absorción %","HPLC+Caco-2",15,"10-30 compuestos",3,"Fase 4"],
+   ["stability","Stability Test","25/40°C 6 meses","ISO+Q1A",12,"10-50 productos",4,"Fase 4"],
+   ["formulation","Formulation","Cápsulas+líquidos","GMP+HPLC",10,"10-50 fórmulas",3,"Fase 4"],
+   ["qa-biomed","Quality Assurance","ISO 13485+GMP","Python+QA",8,"Calidad",4,"Fase 4"],
+   ["reg-biomed","Regulatory File","Dossier EU EMA+FDA","EMA+FDA+GDPR",25,"Compliance",2,"Fase 4"],
+   ["patent-biomed","Patent Protect","Patentes fármacos","OEPM+USPTO",20,"5-20 patentes",3,"Fase 4"],
+   ["manufacturing","Manufacturing","GMP+IoT","GMP+MQTT",15,"1-5 plantas",3,"Fase 4"],
+   ["supply-chain","Supply Chain","Trazabilidad EU","Blockchain+QR",12,"100-500 proveedores",4,"Fase 4"],
+   ["post-market","Post-market","Safety monitoring","EU EudraVigilance",10,"500-5000 pacientes",3,"Fase 4"],
+   ["personalized","Personalized Med","ADN+NDVI","NGS+ML",25,"100-500 pacientes",2,"Fase 4"],
+   ["wearable","Wearable Monitor","Health+IoT","MQTT+Bluetooth",18,"50-200 wearables",4,"Fase 4"],
+   ["telemedicine","Telemedicine","EU+GDPR","HIPAA+GDPR",15,"100-500 pacientes",3,"Fase 4"],
+   ["health-record","Health Record","Historial EU+blockchain","Blockchain+GDPR",20,"500-5000 pacientes",3,"Fase 4"],
+   ["ai-diag","AI Diagnostics","IA diagnóstica NDVI+salud","Mistral+AlphaFold",30,"100-500 casos",2,"Fase 4"],
+   ["genetic-counsel","Genetic Counseling","ADN+riesgo","EU+GDPR",12,"50-200 pacientes",3,"Fase 4"],
+   ["bioethics","Bioethics","EU committee","EU Bioethics+GDPR",8,"Comité ético",4,"Fase 4"],
+   ["data-privacy-bm","Data Privacy","GDPR+homomórfico","PyCryptodome+SEAL",15,"Datos clínicos cifrados",3,"Fase 4"],
+   ["billing-biomed","Billing BioMed","Mutual+privado","Stripe+EU SII",10,"Facturación",4,"Fase 4"]]}
+];
+var C360_ROADMAP=[
+ {f:"Fase 0",n:"Preparación",m:"3 m",inv:50,mods:"36",arr:450,val:6.5,roi:"—",hitos:"Diseño arquitectura · equipo · Kubernetes"},
+ {f:"Fase 1",n:"Data Core",m:"6 m",inv:350,mods:"36→56",arr:680,val:9.8,roi:"2.8x",hitos:"Data Lake 1M evt/s · 6.0σ · Digital Twin v1"},
+ {f:"Fase 2",n:"Geotermia",m:"6 m",inv:325,mods:"56→80",arr:920,val:13.2,roi:"1.3x",hitos:"Monitor geo · P2P energía · 98% renovable"},
+ {f:"Fase 3",n:"Biotecnología",m:"8 m",inv:505,mods:"80→104",arr:1350,val:19.4,roi:"1.7x",hitos:"100 variedades · CRISPR · -30% fertilizantes"},
+ {f:"Fase 4",n:"Biomedicina",m:"8 m",inv:600,mods:"104→128",arr:1950,val:28.1,roi:"1.6x",hitos:"100 nutracéuticos · trials · 5-20 patentes"},
+ {f:"Fase 5",n:"Optimización",m:"3 m",inv:100,mods:"128→130+",arr:2200,val:32,roi:"1.1x",hitos:"TRL9 · 1000+ fincas · preparación IPO"}
+];
+var C360_BIZ=[
+ ["CASTÚO-360 SaaS","Suscripción multi-tenant","5K-50K","100-500 fincas",1200],
+ ["Data Marketplace","API datos agregados","10K-100K","50-200 empresas",500],
+ ["Energy Trading","Mercado P2P energía","1-5% tx","100+ fincas",200],
+ ["Biotecnología B2B","Licencias + servicios","20K-200K","20-50 labs",400],
+ ["Biomedicina B2B/B2G","Trials + fármacos","50K-500K","10-20 empresas",300],
+ ["Consultoría + Formación","Horas + cursos","100-500/h","50-100 clientes",150],
+ ["Hardware IoT","Sensores + drones","1K-10K/finca","100-500 fincas",300]
+];
+var C360_COMPLIANCE=[
+ ["AI Act UE 2024/1689","IA alto riesgo","Gestión riesgos + auditoría","Open Policy Agent+GaiaChain"],
+ ["RGPD","Datos personales","Cifrado homomórfico + anonim.","PyCryptodome+SEAL"],
+ ["RD 903/2025","Cannabis medicinal ES","Trazabilidad inmutable","Blockchain+Merkle"],
+ ["Ph. Eur. 3028","Cannabis medicinal UE","Informes AEMPS","Digital Twin+Blockchain"],
+ ["PAC/UE","Agricultura","Trazabilidad lotes + auditoría","TimescaleDB+Grafana"],
+ ["SIEX/TRACES","Exportación","Informes aduanas","Superset+Blockchain"],
+ ["ISO 22000","Seguridad alimentaria","Auditorías calidad","Python+Pandas"],
+ ["ISO 50001","Eficiencia energética","Auditorías energéticas","Flink+Grafana"],
+ ["ISO 13485","Dispositivos médicos","Calidad biomedicina","GMP+HPLC"],
+ ["EU GCP","Trials clínicos","Gestión fase I-III","REDCap+EU GCP"],
+ ["EU EMA + FDA","Fármacos","Dossier regulatorio","EMA+FDA+GDPR"],
+ ["EU Biosafety","Biotecnología","Registro patentes","OEPM+USPTO"]
+];
+var C360_KPIS=[
+ ["Calidad datos (σ)","5.04σ","6.0σ","+0.96σ"],["Eventos/segundo","148","1M","+6756%"],
+ ["Latencia dashboards","10s","3s","-70%"],["Tiempo entreno IA","4h","1.5h","-62%"],
+ ["Eficiencia bombas geo","95%","98%","+3%"],["Energía renovable","80%","98%","+18%"],
+ ["CO2 vs red","-18%","-25%","-7%"],["Rendimiento cultivos","+8%","+25%","+17%"],
+ ["Antibióticos","9%","1%","-8%"],["Fertilizantes","-18%","-30%","-12%"],
+ ["Uptime","99.9%","99.99%","+0.09%"],["ARR","450K€","1.95M€","+333%"],
+ ["Valoración","6.5M€","28.1M€","+330%"],["Margen bruto","60%","80%","+20%"]
+];
+var C360_TOTAL=C360_CORES.reduce(function(a,c){return a+(c.id==="agro"?36:c.mods.length);},0);
+
+const MODULES=[
+ {id:'dashboard',icon:'📊',name:'Dashboard',group:'PRINCIPAL',badge:'Live',custom:true,desc:'Visión global de la plataforma'},
+ {id:'arq360',icon:'🌐',name:'Arquitectura 360',group:'PRINCIPAL',badge:'141',custom:true,desc:'CASTÚO-360 · 5 núcleos + capa de datos'},
+ {id:'bioenergia',icon:'🔋',name:'Bioenergía',group:'ENERGÍA',badge:'LIVE',custom:true,desc:'Biodiésel · Biogás · CHP · H₂ · Biochar'},
+ {id:'tramitacion',icon:'📋',name:'Tramitación',group:'APLICACIONES',badge:()=>DB.tramitacion.length,desc:'PAC · eco-regímenes · expedientes',
+  cols:[['id','Expediente'],['tipo','Tipo'],['organismo','Organismo'],['fecha','Fecha'],['importe','Importe'],['estado','Estado','tag']],
+  form:[['tipo','Tipo'],['organismo','Organismo'],['fecha','Fecha','date'],['importe','Importe'],['estado','Estado','select',['Presentado','En revisión','Concedida','Justificación','Activo','Vigente']]],
+  kpis:d=>[['Expedientes',d.length,'--blue'],['Concedidos',d.filter(x=>['Concedida','Activo','Vigente'].includes(x.estado)).length,'--green'],['En trámite',d.filter(x=>['En revisión','Presentado','Justificación'].includes(x.estado)).length,'--amber'],['Importe captado','69.550 €','--violet']]},
+ {id:'cuaderno',icon:'📕',name:'Cuaderno de Campo',group:'APLICACIONES',badge:'487',desc:'Registros RD 1054/2022 · SIEX',
+  cols:[['id','Registro'],['fecha','Fecha'],['parcela','Parcela'],['actividad','Actividad'],['producto','Producto'],['dosis','Dosis'],['operario','Operario'],['estado','Estado','tag']],
+  form:[['fecha','Fecha','date'],['parcela','Parcela','select',PARCELAS],['actividad','Actividad','select',['Riego','Fertilización','Tratamiento fito','Siembra','Recolección','Poda','Análisis suelo']],['producto','Producto'],['dosis','Dosis'],['operario','Operario'],['estado','Estado','select',['Validado','Pendiente']]],
+  kpis:d=>[['Registros totales','487','--green'],['Este mes',d.filter(x=>x.fecha>=dAgo(30)).length+439>460?23:18,'--blue'],['Pendientes validar',d.filter(x=>x.estado==='Pendiente').length,'--amber'],['SIEX sync','✓ OK','--cyan']]},
+ {id:'sabionda',icon:'🤖',name:'SABIONDA AI',group:'APLICACIONES',badge:'ON',custom:true,desc:'Motor IA prescriptivo · Mistral GDPR-UE'},
+ {id:'ganaderia',icon:'🐑',name:'Ganadería',group:'APLICACIONES',badge:'120',desc:'120 animales · bienestar 87/100',
+  cols:[['id','Identificador'],['crotal','Crotal'],['especie','Especie'],['raza','Raza'],['edad','Edad'],['peso','Peso'],['bienestar','Bienestar','prog'],['gps','GPS'],['estado','Estado','tag']],
+  form:[['crotal','Crotal'],['especie','Especie','select',['Ovino','Caprino','Bovino']],['raza','Raza'],['edad','Edad'],['peso','Peso'],['bienestar','Bienestar (0-100)','number'],['gps','Collar GPS'],['estado','Estado','select',['Pastoreo','Estabulado','Lactancia']]],
+  kpis:d=>[['Animales','120','--green'],['Bienestar medio','87/100','--blue'],['Con collar GPS','118','--cyan'],['Partos previstos (30d)','6','--amber']]},
+ {id:'vallado',icon:'📍',name:'Vallado GPS',group:'APLICACIONES',badge:'118',custom:true,desc:'118 dispositivos · LoRaWAN'},
+ {id:'drones',icon:'🚁',name:'Drones AESA',group:'APLICACIONES',badge:()=>DB.drones.length,desc:'A1-A3 · PIX4D · NDVI',
+  cols:[['id','Vuelo'],['dron','Aeronave'],['mision','Misión'],['fecha','Fecha'],['duracion','Duración'],['area','Área'],['piloto','Piloto AESA'],['estado','Estado','tag']],
+  form:[['dron','Aeronave','select',['DJI Mavic 3M','DJI Matrice 350']],['mision','Misión'],['fecha','Fecha','date'],['duracion','Duración'],['area','Área'],['piloto','Piloto'],['estado','Estado','select',['Planificado','Procesado','Archivado']]],
+  kpis:d=>[['Vuelos 2026',d.length,'--blue'],['Hectáreas cubiertas','143 ha','--green'],['NDVI medio','0,71','--cyan'],['Cumplimiento AESA','100%','--violet']]},
+ {id:'riego',icon:'💧',name:'Riego Inteligente',group:'APLICACIONES',badge:()=>DB.riego.length,custom:true,desc:'-18% consumo hídrico'},
+ {id:'invernadero',icon:'🏠',name:'Invernadero IoT',group:'APLICACIONES',badge:'42',custom:true,desc:'Temp · Humedad · CO₂ · EC · pH'},
+ {id:'blockchain',icon:'🔗',name:'Blockchain',group:'TRAZABILIDAD',badge:'1.2K',desc:'1.247 TX · registro inalterable',
+  cols:[['id','TX Hash'],['bloque','Bloque'],['tipo','Tipo'],['fecha','Fecha'],['gas','Gas'],['estado','Estado','tag']],
+  kpis:d=>[['Transacciones','1.247','--violet'],['Bloques','48.210','--blue'],['Integridad','100%','--green'],['Último anclaje','hace 14 min','--cyan']],readonly:true},
+ {id:'auditoria',icon:'📑',name:'Auditoría IFS/BRC',group:'TRAZABILIDAD',badge:()=>DB.auditoria.length,desc:'IFS · BRC · Compliance',
+  cols:[['id','Auditoría'],['norma','Norma'],['ambito','Ámbito'],['avance','Avance','prog'],['resp','Responsable'],['fecha','Fecha objetivo'],['estado','Estado','tag']],
+  form:[['norma','Norma'],['ambito','Ámbito'],['avance','Avance %','number'],['resp','Responsable'],['fecha','Fecha objetivo','date'],['estado','Estado','select',['Planificada','En curso','Certificado']]],
+  kpis:d=>[['Certificaciones',d.filter(x=>x.estado==='Certificado').length,'--green'],['En curso',d.filter(x=>x.estado==='En curso').length,'--amber'],['No conformidades','2 menores','--blue'],['Próxima auditoría','15 sep','--violet']]},
+ {id:'pasaporte',icon:'🌐',name:'Pasaporte Digital',group:'TRAZABILIDAD',badge:()=>DB.pasaporte.length,desc:'DPP · EU 2027 ready',
+  cols:[['id','DPP'],['producto','Producto'],['origen','Origen'],['huella','Huella CO₂'],['agua','Huella hídrica'],['qr','QR público'],['fecha','Fecha'],['estado','Estado','tag']],
+  form:[['producto','Producto'],['origen','Origen'],['huella','Huella CO₂'],['agua','Huella hídrica'],['qr','URL QR'],['fecha','Fecha','date'],['estado','Estado','select',['Borrador','Publicado']]],
+  kpis:d=>[['Pasaportes',d.length,'--cyan'],['Publicados',d.filter(x=>x.estado==='Publicado').length,'--green'],['Escaneos QR (30d)','1.842','--blue'],['Normativa','EU 2027 ✓','--violet']]},
+ {id:'analytics',icon:'📈',name:'Analytics BI',group:'TRAZABILIDAD',badge:'',custom:true,desc:'Dashboards operativos'},
+ {id:'agrovoltaica',icon:'⚡',name:'Agrovoltaica',group:'APLICACIONES',badge:()=>DB.agrovoltaica.length,desc:'Monitorización energía',
+  cols:[['id','Activo'],['string','Elemento'],['potencia','Potencia'],['hoy','Hoy'],['rendimiento','Rendimiento','prog'],['inversor','Equipo'],['estado','Estado','tag']],
+  kpis:d=>[['Potencia pico','31,5 kWp','--amber'],['Generado hoy','144 kWh','--green'],['Autoconsumo','78%','--blue'],['Ahorro mes','612 €','--violet']],readonly:true},
+ {id:'suelo',icon:'🧪',name:'Análisis Suelo',group:'APLICACIONES',badge:()=>DB.suelo.length,desc:'LIBS · espectroscopía',
+  cols:[['id','Análisis'],['parcela','Parcela'],['metodo','Método'],['ph','pH'],['mo','M.O.'],['n','N'],['p','P'],['k','K'],['fecha','Fecha'],['estado','Estado','tag']],
+  form:[['parcela','Parcela','select',PARCELAS],['metodo','Método'],['ph','pH','number'],['mo','Materia orgánica'],['n','Nitrógeno','select',['Bajo','Medio','Alto']],['p','Fósforo','select',['Bajo','Medio','Alto']],['k','Potasio','select',['Bajo','Medio','Alto']],['fecha','Fecha','date'],['estado','Estado','select',['Completado','Recomendación emitida']]],
+  kpis:d=>[['Análisis 2026',d.length,'--green'],['pH medio','7,0','--blue'],['Parcelas cubiertas','4/8','--amber'],['Recomendaciones IA','4','--violet']]},
+ {id:'billing',icon:'💰',name:'Billing SaaS',group:'APLICACIONES',badge:()=>DB.billing.length,desc:'Stripe · multi-tenant',
+  cols:[['id','Tenant ID'],['tenant','Cliente'],['plan','Plan'],['mrr','MRR'],['uso','Uso módulos'],['renovacion','Renovación'],['estado','Estado','tag']],
+  form:[['tenant','Cliente'],['plan','Plan','select',['Starter','Pro','Enterprise']],['mrr','MRR'],['uso','Uso'],['renovacion','Renovación','date'],['estado','Estado','select',['Activo','Trial','Suspendido']]],
+  kpis:d=>[['MRR total','2.360 €','--green'],['Tenants',d.length,'--blue'],['ARR proyectado','28.320 €','--violet'],['Churn','0%','--cyan']]},
+ {id:'contenedores',icon:'📦',name:'Contenedores',group:'INFRAESTRUCTURA',badge:'17',custom:true,desc:'Docker Compose · K8s ready'},
+ {id:'iotgw',icon:'📡',name:'IoT Gateway',group:'INFRAESTRUCTURA',badge:()=>DB.iotgw.length,desc:'MQTT · LoRaWAN bridge',
+  cols:[['id','Topic'],['protocolo','Protocolo'],['mensajes','Mensajes'],['qos','QoS'],['ultimo','Último msg'],['estado','Estado','tag']],
+  kpis:d=>[['Topics activos',d.filter(x=>x.estado==='Activo').length,'--green'],['Msgs/día','38.412','--blue'],['Gateways LoRa','2','--cyan'],['Pérdida paquetes','0,3%','--amber']],readonly:true},
+ {id:'auth',icon:'🔐',name:'Zero Trust Auth',group:'INFRAESTRUCTURA',badge:()=>DB.auth.length,desc:'JWT · RBAC · MFA',
+  cols:[['id','Usuario'],['nombre','Nombre'],['rol','Rol'],['mfa','MFA'],['sesiones','Sesiones'],['ultimo','Último acceso'],['estado','Estado','tag']],
+  form:[['nombre','Nombre'],['rol','Rol','select',['Admin · Owner','Operario campo','Auditor lectura','M2M · scopes:write']],['mfa','MFA','select',['Sí','No']],['estado','Estado','select',['Activo','Suspendido']]],
+  kpis:d=>[['Usuarios',d.length,'--blue'],['MFA activo','3/5','--green'],['Sesiones vivas','4','--cyan'],['Intentos bloqueados (7d)','12','--red']]},
+ {id:'config',icon:'⚙️',name:'Configuración',group:'INFRAESTRUCTURA',badge:'',custom:true,desc:'Conexión backend · sistema'}
+];
+const MOD=Object.fromEntries(MODULES.map(m=>[m.id,m]));
+
+/* ===================== VISTA GENÉRICA CRUD ===================== */
+const VS={}; // estado por vista: {q, sort, dir, page}
+async function renderGeneric(m){
+  const st=VS[m.id]||(VS[m.id]={q:'',sort:null,dir:1,page:0});
+  let data=await Store.list(m.id);
+  if(!Array.isArray(data))data=data.items||[];
+  // filtro
+  let rows=st.q?data.filter(r=>JSON.stringify(r).toLowerCase().includes(st.q.toLowerCase())):[...data];
+  if(st.sort)rows.sort((a,b)=>String(a[st.sort]??'').localeCompare(String(b[st.sort]??''),'es',{numeric:true})*st.dir);
+  const PER=12,pages=Math.max(1,Math.ceil(rows.length/PER));st.page=Math.min(st.page,pages-1);
+  const slice=rows.slice(st.page*PER,(st.page+1)*PER);
+  const kpis=(m.kpis?m.kpis(data):[]).map(k=>`<div class="kpi" style="--ac:var(${k[2]||'--green'})"><div class="kl">${k[0]}</div><div class="kv">${k[1]}</div></div>`).join('');
+  $('#main').innerHTML=`
+   <div class="kpirow">${kpis}</div>
+   <div class="card">
+    <div class="toolbar">
+      <input type="search" placeholder="Filtrar ${rows.length} registros…" value="${esc(st.q)}" oninput="VS['${m.id}'].q=this.value;VS['${m.id}'].page=0;renderGeneric(MOD['${m.id}'])">
+      ${m.readonly?'':`<button class="btn primary" onclick="editRow('${m.id}')">＋ Nuevo</button>`}
+      <button class="btn" onclick="exportCSV('${m.id}')">⬇ CSV</button>
+      <button class="btn" onclick="refreshView()">↻</button>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr>${m.cols.map(c=>`<th onclick="sortBy('${m.id}','${c[0]}')">${c[1]}${st.sort===c[0]?(st.dir>0?' ▲':' ▼'):''}</th>`).join('')}${m.readonly?'':'<th></th>'}</tr></thead>
+      <tbody>${slice.length?slice.map(r=>`<tr>${m.cols.map(c=>{
+        const v=r[c[0]];
+        if(c[2]==='tag')return '<td>'+stag(v)+'</td>';
+        if(c[2]==='prog')return `<td><div style="display:flex;align-items:center;gap:8px"><div class="progress" style="width:64px;--ac:var(${v>=80?'--green':v>=50?'--amber':'--red'})"><i style="width:${v}%"></i></div><span class="mono">${v}</span></div></td>`;
+        if(c[0]==='id')return `<td class="mono" style="color:var(--cyan)">${esc(v)}</td>`;
+        return '<td>'+esc(v)+'</td>';}).join('')}
+        ${m.readonly?'':`<td style="text-align:right"><button class="iconbtn" onclick="editRow('${m.id}','${esc(r.id)}')" title="Editar">✏️</button><button class="iconbtn" onclick="delRow('${m.id}','${esc(r.id)}')" title="Eliminar">🗑️</button></td>`}</tr>`).join('')
+       :`<tr><td colspan="${m.cols.length+1}"><div class="empty"><div class="big">∅</div>Sin resultados</div></td></tr>`}</tbody>
+    </table></div>
+    <div class="pager">Página ${st.page+1}/${pages} · ${rows.length} registros
+      <button class="btn sm" ${st.page===0?'disabled':''} onclick="VS['${m.id}'].page--;renderGeneric(MOD['${m.id}'])">←</button>
+      <button class="btn sm" ${st.page>=pages-1?'disabled':''} onclick="VS['${m.id}'].page++;renderGeneric(MOD['${m.id}'])">→</button>
+    </div>
+   </div>`;
+}
+function sortBy(mid,col){const st=VS[mid];if(st.sort===col)st.dir*=-1;else{st.sort=col;st.dir=1;}renderGeneric(MOD[mid]);}
+function editRow(mid,id){
+  const m=MOD[mid],r=id?DBfind(mid,id)||{}:{};
+  const fields=(m.form||m.cols.filter(c=>c[0]!=='id').map(c=>[c[0],c[1]])).map(f=>{
+    const[k,lab,type,opts]=f,v=r[k]??'';
+    if(type==='select')return `<div class="field"><label>${lab}</label><select data-k="${k}">${opts.map(o=>`<option ${o===v?'selected':''}>${o}</option>`).join('')}</select></div>`;
+    return `<div class="field"><label>${lab}</label><input data-k="${k}" type="${type||'text'}" value="${esc(v)}"></div>`;}).join('');
+  modal(`<h3>${id?'✏️ Editar':'＋ Nuevo'} · ${m.name}</h3>${fields}
+   <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
+   <button class="btn" onclick="closeModal()">Cancelar</button>
+   <button class="btn primary" onclick="saveRow('${mid}','${id||''}')">Guardar</button></div>`);
+}
+async function saveRow(mid,id){
+  const rec=id?Object.assign({},DBfind(mid,id)):{};
+  $$('#modal-box [data-k]').forEach(el=>rec[el.dataset.k]=el.type==='number'?Number(el.value):el.value);
+  if(id)rec.id=id;
+  await Store.save(mid,rec);closeModal();toast('✅ Guardado en '+MOD[mid].name);renderGeneric(MOD[mid]);
+  pushFeed('Registro '+(id||rec.id)+' guardado en '+MOD[mid].name,'g');
+}
+async function delRow(mid,id){
+  modal(`<h3>🗑️ Eliminar registro</h3><p style="font-size:13px;color:var(--mut)">¿Eliminar <b class="mono" style="color:var(--txt)">${esc(id)}</b> de ${MOD[mid].name}? Esta acción queda auditada.</p>
+  <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
+  <button class="btn" onclick="closeModal()">Cancelar</button>
+  <button class="btn danger" onclick="(async()=>{await Store.del('${mid}','${esc(id)}');closeModal();toast('Registro eliminado');renderGeneric(MOD['${mid}'])})()">Eliminar</button></div>`);
+}
+function exportCSV(mid){
+  const m=MOD[mid],data=DB[mid]||[];
+  const head=m.cols.map(c=>c[1]).join(';');
+  const body=data.map(r=>m.cols.map(c=>String(r[c[0]]??'').replace(/;/g,',')).join(';')).join('\n');
+  const blob=new Blob(['﻿'+head+'\n'+body],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='castuo_'+mid+'_'+today()+'.csv';a.click();
+  toast('⬇ CSV exportado: '+mid);
+}
+function pushFeed(t,c){DB.feed.unshift({t,c:c||'b',h:nowHM()});DB.feed=DB.feed.slice(0,30);saveDB();}
+
+/* ===================== VISTAS PERSONALIZADAS ===================== */
+const VIEWS={};
+VIEWS.dashboard=()=>{
+  const al=DB.alertas,run=DB.contenedores.filter(c=>c.estado==='Running').length;
+  $('#main').innerHTML=`
+  <div class="kpirow">
+   <div class="kpi"><div class="kl">Sigma Level</div><div class="kv">5.04σ</div><div class="ks">99,977% calidad <span class="up">↑ 0.02σ</span></div></div>
+   <div class="kpi" style="--ac:var(--blue)"><div class="kl">Operaciones hoy</div><div class="kv" style="color:var(--blue)" id="k-ops">487</div><div class="ks">Cuaderno de campo <span class="up">↑ +23</span></div></div>
+   <div class="kpi" style="--ac:var(--amber)"><div class="kl">Animales GPS</div><div class="kv" style="color:var(--amber)">118/120</div><div class="ks">98,3% cobertura online</div></div>
+   <div class="kpi" style="--ac:var(--violet)"><div class="kl">Sensores IoT</div><div class="kv" style="color:var(--violet)">42</div><div class="ks">6 tipos · 3 explotaciones <span class="up">100%</span></div></div>
+   <div class="kpi" style="--ac:var(--red)"><div class="kl">Alertas activas</div><div class="kv" style="color:var(--red)">${al.length}</div><div class="ks">1 alta · ${al.length-1} media</div></div>
+  </div>
+  <div class="gridmain">
+   <div>
+    <div class="card"><h3>🧩 Módulos del Sistema <a href='index.html' style='margin-left:auto;font-size:11px;color:var(--green)'>🌿 Abrir operación hidropónica →</a></h3><div class="sub">Arquitectura modular — 36 módulos enterprise activos · click para gestionar</div>
+     <div class="modgrid">${MODULES.filter(m=>m.id!=='dashboard'&&m.id!=='config').map(m=>{
+       const b=typeof m.badge==='function'?m.badge():m.badge;
+       return `<div class="modtile" onclick="go('${m.id}')"><span class="st" style="background:var(--green);box-shadow:0 0 5px var(--green)"></span><span class="mi">${m.icon}</span><b>${m.name}</b><small>${m.desc}</small></div>`;}).join('')}</div>
+    </div>
+    <div class="card"><h3>📦 Infraestructura de Contenedores <span class="tag g" style="margin-left:auto">${run}/17 Running</span></h3>
+     <div class="sub">17 servicios · Docker Compose · Kubernetes ready · deploy por sha-tag (política STACK.md)</div>
+     <div class="tablewrap"><table><thead><tr><th>Servicio</th><th>Rol</th><th>Puerto</th><th>Estado</th><th>Latencia</th></tr></thead>
+     <tbody>${DB.contenedores.slice(0,6).map(c=>`<tr><td class="mono" style="color:var(--cyan)">${c.id}</td><td>${c.rol}</td><td class="mono">:${c.puerto}</td><td>${stag(c.estado)}</td><td class="mono">${c.latencia}ms</td></tr>`).join('')}</tbody></table></div>
+     <div style="margin-top:10px"><button class="btn sm" onclick="go('contenedores')">Ver los 17 servicios →</button></div>
+    </div>
+    <div class="card"><h3>📈 Operaciones · últimos 12 días</h3><div class="sub">Registros de cuaderno + eventos IoT agregados</div>
+     ${bars(series(12,40,14),Array.from({length:12},(_,i)=>new Date(Date.now()-(11-i)*864e5).getDate()),520,120)}
+    </div>
+   </div>
+   <div>
+    <div class="card"><h3>🎯 Six Sigma Quality</h3>
+     <div style="display:flex;gap:16px;align-items:center">${donut(99,110,'var(--green)','SIGMA 5.04')}
+      <div style="font-size:12px;color:var(--mut)"><b style="color:var(--txt);font-size:14px">99,977% Calidad</b><br>148 evt/s · 99,9% SLA 24h<br>5 núcleos · 36 módulos<br><span style="color:var(--green)">✓ CORE 1.0 TRL6 Certificado</span></div></div>
+    </div>
+    <div class="card"><h3>📊 Métricas Validación Piloto</h3>
+     ${[['Consumo hídrico','-18%','g'],['Antibióticos','-9%','g'],['Rendimiento','+8%','g'],['Tiempo admin','-30%','g'],['Bienestar animal','87/100','b'],['Superficie piloto','+150 ha','b']].map(x=>`<div class="statline"><span>${x[0]}</span><b><span class="tag ${x[2]}">${x[1]}</span></b></div>`).join('')}
+    </div>
+    <div class="card" style="border-color:#7a4a12"><h3>🛡️ Propiedad Industrial</h3>
+     <div style="text-align:center;padding:8px 0"><div style="font-size:10px;letter-spacing:2px;color:var(--orange)">MARCA REGISTRADA OEPM</div>
+     <div class="mono" style="font-size:26px;font-weight:700;color:var(--orange);margin:6px 0">M4359038</div>
+     <div style="font-size:11px;color:var(--mut)">Grupo Castuo 360 S.L. · España</div></div>
+    </div>
+    <div class="card"><h3>⚡ Actividad en Tiempo Real</h3><div class="feed" id="feed">${feedHTML()}</div></div>
+   </div>
+  </div>`;
+};
+function feedHTML(){return DB.feed.slice(0,7).map(f=>`<div class="feeditem"><span class="fd" style="background:var(--${({g:'green',b:'blue',a:'amber',v:'violet',c:'cyan'})[f.c]||'blue'})"></span><div>${esc(f.t)}<small>${esc(f.h)}</small></div></div>`).join('');}
+
+/* ---- SABIONDA AI ---- */
+VIEWS.sabionda=()=>{
+  $('#main').innerHTML=`
+  <div class="kpirow">
+   <div class="kpi" style="--ac:var(--violet)"><div class="kl">Motor</div><div class="kv" style="color:var(--violet);font-size:18px">Mistral · UE</div><div class="ks">GDPR compliant · sabionda-engine :8001</div></div>
+   <div class="kpi"><div class="kl">Predicciones hoy</div><div class="kv">31</div><div class="ks"><span class="up">94,2%</span> precisión validada</div></div>
+   <div class="kpi" style="--ac:var(--blue)"><div class="kl">Prescripciones activas</div><div class="kv" style="color:var(--blue)">7</div><div class="ks">3 riego · 2 fito · 2 nutrición</div></div>
+   <div class="kpi" style="--ac:var(--amber)"><div class="kl">Ahorro estimado</div><div class="kv" style="color:var(--amber)">1.240 €</div><div class="ks">últimos 30 días</div></div>
+  </div>
+  <div class="grid2">
+   <div class="card"><h3>🤖 Consulta prescriptiva</h3><div class="sub">Pregunta al motor IA sobre cultivos, riego, sanidad o planificación</div>
+    <div id="chat" style="min-height:180px;max-height:300px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;margin-bottom:12px">
+     <div style="background:var(--panel2);border-radius:10px;padding:11px 14px;font-size:12.5px;max-width:90%">👋 SABIONDA lista. Modelo Mistral alojado en UE. Pregúntame, por ejemplo: <i>"¿riego recomendado para Lote B1 esta semana?"</i></div>
+    </div>
+    <div style="display:flex;gap:9px"><input id="chat-in" style="flex:1" placeholder="Escribe tu consulta…" onkeydown="if(event.key==='Enter')askAI()"><button class="btn primary" onclick="askAI()">Enviar</button></div>
+   </div>
+   <div class="card"><h3>🔮 Predicciones activas</h3><div class="sub">Generadas por el motor sobre datos IoT + meteo AEMET</div>
+    ${[['Estrés hídrico Lote B1 en 48 h','87% prob.','a'],['Ventana óptima recolección tomate: 13–15 jun','alta confianza','g'],['Riesgo mildiu Inv. 2 si HR>80% 3 días','42% prob.','b'],['Pico demanda energética 14:00–16:00','patrón estable','c'],['Celo detectado EX-1214 (collar GPS)','conducta + actividad','v']].map(p=>`<div class="statline"><span>${p[0]}</span><b><span class="tag ${p[2]}">${p[1]}</span></b></div>`).join('')}
+    <h3 style="margin-top:18px">💊 Prescripciones pendientes de aprobar</h3>
+    ${[['Reducir riego Z3 un 12% (lluvia prevista jueves)','riego'],['Adelantar fertirrigación NFT línea 2 a 05:30','nutrición'],['Tratamiento preventivo cobre Olivar Sur','fito']].map((p,i)=>`<div class="statline"><span>${p[0]}</span><b><button class="btn sm primary" onclick="this.outerHTML='<span class=\\'tag g\\'>Aprobada</span>';pushFeed('Prescripción aprobada: ${p[1]}','g');toast('✅ Prescripción aplicada y registrada en cuaderno')">Aprobar</button></b></div>`).join('')}
+   </div>
+  </div>`;
+};
+async function askAI(){
+  const inp=$('#chat-in'),q=inp.value.trim();if(!q)return;inp.value='';
+  const chat=$('#chat');
+  chat.insertAdjacentHTML('beforeend',`<div style="background:rgba(16,217,140,.1);border:1px solid rgba(16,217,140,.25);border-radius:10px;padding:11px 14px;font-size:12.5px;align-self:flex-end;max-width:90%">${esc(q)}</div>`);
+  chat.insertAdjacentHTML('beforeend',`<div id="ai-typing" style="background:var(--panel2);border-radius:10px;padding:11px 14px;font-size:12.5px;color:var(--mut)">SABIONDA está analizando…</div>`);
+  chat.scrollTop=chat.scrollHeight;
+  let ans=null;
+  if(CFG.mode==='real'){try{const r=await apiFetch('/api/v1/sabionda/ask',{method:'POST',body:JSON.stringify({question:q})});ans=r.answer||r.response;}catch(e){}}
+  if(!ans){await new Promise(r=>setTimeout(r,900));
+   const ql=q.toLowerCase();
+   ans=ql.includes('riego')||ql.includes('agua')?'📊 Análisis Lote B1: humedad suelo 52% (objetivo 60%). Con la lluvia prevista (4 mm jueves), prescribo <b>riego de 2,1 m³ el miércoles 06:00</b> y suspender el ciclo del jueves. Ahorro estimado: 1,8 m³. ¿Aplico la prescripción al programador Z3?'
+   :ql.includes('plaga')||ql.includes('mildiu')||ql.includes('fito')?'🔬 Riesgo mildiu en Inv. 2: 42% (HR media 74%, subiendo). Recomiendo ventilación cenital automática si HR>78% y revisión foliar en 48 h. Aún no justifica tratamiento — evitamos 1 aplicación de cobre (−9% objetivo antibióticos/fitosanitarios).'
+   :ql.includes('ganad')||ql.includes('oveja')||ql.includes('animal')?'🐑 Rebaño: bienestar medio 87/100. GPS-105 lleva 22 min fuera de zona en Dehesa Norte — patrón compatible con rotura de cerca virtual, no depredador (velocidad 0,4 km/h). Sugiero reubicar el polígono del vallado 40 m al este.'
+   :'🧠 He cruzado IoT (42 sensores), meteo AEMET y el histórico del cuaderno. Para una prescripción concreta indícame parcela o módulo (riego, fito, ganadería, energía). En modo conectado respondo desde el motor Mistral del backend (endpoint /api/v1/sabionda/ask).';}
+  $('#ai-typing').outerHTML=`<div style="background:var(--panel2);border-radius:10px;padding:11px 14px;font-size:12.5px;max-width:92%">${ans}</div>`;
+  chat.scrollTop=chat.scrollHeight;pushFeed('SABIONDA: consulta procesada','v');
+}
+/* ---- VALLADO GPS (mapa) ---- */
+VIEWS.vallado=async()=>{
+  const devs=await Store.list('vallado');
+  const out=devs.filter(d=>d.estado==='Fuera de zona').length;
+  const W=620,H=380;
+  const px=d=>({x:(d.lng+7.02)/0.1*W,y:H-(d.lat-38.81)/0.08*H});
+  $('#main').innerHTML=`
+  <div class="kpirow">
+   <div class="kpi"><div class="kl">Dispositivos</div><div class="kv">118</div><div class="ks">LoRaWAN · 24 visibles en mapa</div></div>
+   <div class="kpi" style="--ac:var(--blue)"><div class="kl">En zona</div><div class="kv" style="color:var(--blue)">${118-out}</div><div class="ks">geocercas virtuales activas</div></div>
+   <div class="kpi" style="--ac:var(--red)"><div class="kl">Fuera de zona</div><div class="kv" style="color:var(--red)">${out}</div><div class="ks">alerta activa</div></div>
+   <div class="kpi" style="--ac:var(--amber)"><div class="kl">Batería media</div><div class="kv" style="color:var(--amber)">${Math.round(devs.reduce((s,d)=>s+d.bateria,0)/devs.length)}%</div><div class="ks">2 collares &lt;30%</div></div>
+  </div>
+  <div class="gridmain">
+   <div class="card"><h3>🗺️ Mapa de geocercas · Dehesa (38.85N, -6.97W)</h3><div class="sub">Posición en tiempo real · polígonos de cerca virtual</div>
+    <div class="map" style="height:${H}px">
+     <svg width="100%" height="100%" viewBox="0 0 ${W} ${H}">
+      <defs><pattern id="gridp" width="31" height="31" patternUnits="userSpaceOnUse"><path d="M31 0H0V31" fill="none" stroke="#152030" stroke-width="1"/></pattern></defs>
+      <rect width="${W}" height="${H}" fill="url(#gridp)"/>
+      <polygon points="60,40 340,28 390,170 300,250 80,230" fill="rgba(16,217,140,.07)" stroke="var(--green)" stroke-dasharray="6 4" stroke-width="1.5"/>
+      <text x="90" y="60" fill="var(--green)" font-size="11">Dehesa Norte</text>
+      <polygon points="330,260 580,240 600,360 360,370" fill="rgba(59,130,246,.07)" stroke="var(--blue)" stroke-dasharray="6 4" stroke-width="1.5"/>
+      <text x="420" y="285" fill="#7eb0fa" font-size="11">Dehesa Sur</text>
+      <polygon points="60,280 240,265 260,360 80,370" fill="rgba(139,92,246,.06)" stroke="var(--violet)" stroke-dasharray="6 4" stroke-width="1.5"/>
+      <text x="100" y="300" fill="#b89af9" font-size="11">Cercado 3</text>
+      ${devs.map(d=>{const p=px(d);const c=d.estado==='Fuera de zona'?'var(--red)':'var(--green)';
+       return `<g style="cursor:pointer" onclick="gpsDetail('${d.id}')"><circle cx="${p.x.toFixed(0)}" cy="${p.y.toFixed(0)}" r="6" fill="${c}" opacity=".9"><title>${d.id} · ${d.animal} · ${d.estado}</title></circle>
+       ${d.estado==='Fuera de zona'?`<circle cx="${p.x.toFixed(0)}" cy="${p.y.toFixed(0)}" r="11" fill="none" stroke="${c}"><animate attributeName="r" values="7;14;7" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="1.6s" repeatCount="indefinite"/></circle>`:''}</g>`;}).join('')}
+     </svg>
+    </div>
+   </div>
+   <div class="card"><h3>📡 Collares · estado</h3>
+    <div style="max-height:430px;overflow-y:auto">
+    ${devs.map(d=>`<div class="statline" style="cursor:pointer" onclick="gpsDetail('${d.id}')"><span><span class="mono" style="color:var(--cyan)">${d.id}</span> · ${d.animal}<br><small style="color:var(--dim)">${d.zona} · hace ${d.ultimo}</small></span><b style="text-align:right">${stag(d.estado)}<br><small class="mono" style="color:${d.bateria<30?'var(--red)':'var(--mut)'}">🔋${d.bateria}%</small></b></div>`).join('')}
+    </div>
+   </div>
+  </div>`;
+};
+function gpsDetail(id){const d=DBfind('vallado',id);if(!d)return;
+ modal(`<h3>📍 ${d.id} · ${d.animal}</h3>
+ ${[['Zona asignada',d.zona],['Estado',d.estado],['Batería',d.bateria+'%'],['Señal LoRa',d.senal],['Último mensaje','hace '+d.ultimo],['Posición',d.lat.toFixed(5)+', '+d.lng.toFixed(5)]].map(x=>`<div class="statline"><span>${x[0]}</span><b>${x[1]}</b></div>`).join('')}
+ <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:16px">
+ <button class="btn" onclick="closeModal();toast('📳 Pulso enviado al collar ${d.id}')">Enviar pulso</button>
+ <button class="btn primary" onclick="closeModal();toast('Geocerca recalculada para ${d.id}');pushFeed('Geocerca ajustada ${d.id}','g')">Ajustar geocerca</button></div>`);}
+/* ---- RIEGO ---- */
+VIEWS.riego=async()=>{
+  const zs=await Store.list('riego');
+  $('#main').innerHTML=`
+  <div class="kpirow">
+   <div class="kpi"><div class="kl">Ahorro hídrico</div><div class="kv">-18%</div><div class="ks">validado piloto vs 2025</div></div>
+   <div class="kpi" style="--ac:var(--blue)"><div class="kl">Consumo hoy</div><div class="kv" style="color:var(--blue)">14,2 m³</div><div class="ks">presupuesto diario 19 m³</div></div>
+   <div class="kpi" style="--ac:var(--cyan)"><div class="kl">Zonas regando</div><div class="kv" style="color:var(--cyan)">${zs.filter(z=>z.estado==='Regando').length}/${zs.length}</div><div class="ks">control por electroválvula</div></div>
+   <div class="kpi" style="--ac:var(--violet)"><div class="kl">Depósito</div><div class="kv" style="color:var(--violet)">76%</div><div class="ks">62 m³ disponibles</div></div>
+  </div>
+  <div class="card"><h3>💧 Zonas de riego</h3><div class="sub">Programación inteligente — prescripciones SABIONDA aplicables</div>
+   <div class="tablewrap"><table><thead><tr><th>Zona</th><th>Caudal</th><th>Humedad suelo</th><th>Programa</th><th>Ahorro</th><th>Válvula</th><th>Estado</th><th></th></tr></thead><tbody>
+   ${zs.map(z=>`<tr><td><b>${z.id}</b> · ${z.zona}</td><td class="mono">${z.caudal}</td>
+    <td><div style="display:flex;align-items:center;gap:8px"><div class="progress" style="width:60px;--ac:var(${z.humedad>=60?'--green':z.humedad>=45?'--amber':'--red'})"><i style="width:${z.humedad}%"></i></div><span class="mono">${z.humedad}%</span></div></td>
+    <td class="mono" style="font-size:11px">${z.programa}</td><td><span class="tag g">${z.ahorro}</span></td><td>${z.valvula}</td><td>${stag(z.estado)}</td>
+    <td><button class="btn sm ${z.valvula==='Abierta'?'danger':'primary'}" onclick="toggleValv('${z.id}')">${z.valvula==='Abierta'?'Cerrar':'Abrir'}</button></td></tr>`).join('')}
+   </tbody></table></div></div>
+  <div class="grid2">
+   <div class="card"><h3>📉 Consumo semanal (m³)</h3>${bars([18,16,17,15,14,15,14],['L','M','X','J','V','S','D'],440,120,'var(--blue)')}</div>
+   <div class="card"><h3>🌡️ Humedad media del suelo · 24 h</h3>${bars(series(12,55,9),['0h','2h','4h','6h','8h','10h','12h','14h','16h','18h','20h','22h'],440,120,'var(--cyan)')}</div>
+  </div>`;
+};
+async function toggleValv(id){
+  const z=DBfind('riego',id);z.valvula=z.valvula==='Abierta'?'Cerrada':'Abierta';z.estado=z.valvula==='Abierta'?'Regando':'Programado';
+  if(CFG.mode==='real'){try{await apiFetch('/api/v1/riego/'+id+'/valvula',{method:'POST',body:JSON.stringify({abierta:z.valvula==='Abierta'})});}catch(e){toast('⚠️ Orden local (API offline)','warn');}}
+  saveDB();toast((z.valvula==='Abierta'?'💧 Válvula abierta':'🔒 Válvula cerrada')+' · '+id);pushFeed('Riego '+id+': válvula '+z.valvula.toLowerCase(),'c');VIEWS.riego();
+}
+/* ---- INVERNADERO IoT ---- */
+VIEWS.invernadero=async()=>{
+  const ss=await Store.list('invernadero');
+  $('#main').innerHTML=`
+  <div class="kpirow">
+   <div class="kpi"><div class="kl">Sensores online</div><div class="kv">42</div><div class="ks">8 magnitudes · 2 invernaderos</div></div>
+   <div class="kpi" style="--ac:var(--amber)"><div class="kl">Desviaciones</div><div class="kv" style="color:var(--amber)">1</div><div class="ks">humedad suelo Lote B1</div></div>
+   <div class="kpi" style="--ac:var(--blue)"><div class="kl">Clima objetivo</div><div class="kv" style="color:var(--blue)">VPD 0,9</div><div class="ks">kPa · dentro de consigna</div></div>
+   <div class="kpi" style="--ac:var(--cyan)"><div class="kl">Actuadores</div><div class="kv" style="color:var(--cyan)">6</div><div class="ks">ventilación · sombreo · CO₂</div></div>
+  </div>
+  <div class="card"><h3>🌡️ Lecturas en tiempo real</h3><div class="sub">Refresco cada ${CFG.pollSec}s · TimescaleDB :5433 · MQTT iot-gateway :1883</div>
+   <div class="grid3" id="gauges">
+   ${ss.map(s=>{const pct=Math.max(4,Math.min(100,Math.round((s.valor-s.min)/(s.max-s.min)*100)));const warn=String(s.estado).startsWith('⚠');
+    return `<div class="card" style="margin:0;padding:14px;${warn?'border-color:#7a5a12':''}"><div class="gauge">
+     ${donut(pct,92,warn?'var(--amber)':'var(--green)',s.unidad)}
+     <div class="gv" data-sid="${s.id}">${s.valor} ${s.unidad}</div><div class="gl">${s.sensor}</div>
+     <small style="color:var(--dim);font-size:10px">${s.ubic} · rango ${s.min}–${s.max} ${stag(s.estado)}</small></div></div>`;}).join('')}
+   </div></div>
+  <div class="grid2">
+   <div class="card"><h3>📈 Temperatura Inv. 1 · 24 h</h3>${bars(series(12,24,4),['0h','2h','4h','6h','8h','10h','12h','14h','16h','18h','20h','22h'],440,120,'var(--amber)')}</div>
+   <div class="card"><h3>⚙️ Actuadores</h3>
+   ${[['Ventilación cenital Inv. 1','Auto · 35% apertura','g'],['Ventilación cenital Inv. 2','Auto · 20%','g'],['Pantalla sombreo','Cerrada (PAR<900)','b'],['Inyección CO₂','Auto · consigna 750 ppm','g'],['Calefacción','Standby (T>18°C)','b'],['Nebulización','Auto · HR<60%','g']].map(a=>`<div class="statline"><span>${a[0]}</span><b><span class="tag ${a[2]}">${a[1]}</span></b></div>`).join('')}</div>
+  </div>`;
+};
+/* ---- CONTENEDORES ---- */
+VIEWS.contenedores=async()=>{
+  const cs=await Store.list('contenedores');
+  $('#main').innerHTML=`
+  <div class="kpirow">
+   <div class="kpi"><div class="kl">Servicios</div><div class="kv">${cs.filter(c=>c.estado==='Running').length}/17</div><div class="ks">Docker Compose · K8s ready</div></div>
+   <div class="kpi" style="--ac:var(--blue)"><div class="kl">CPU host</div><div class="kv" style="color:var(--blue)" id="k-cpu">${cs.reduce((s,c)=>s+c.cpu,0)}%</div><div class="ks">Hetzner CX22 · 2 vCPU</div></div>
+   <div class="kpi" style="--ac:var(--violet)"><div class="kl">RAM</div><div class="kv" style="color:var(--violet)">${(cs.reduce((s,c)=>s+c.ram,0)/1024).toFixed(1)} GB</div><div class="ks">de 4 GB · swap OK</div></div>
+   <div class="kpi" style="--ac:var(--cyan)"><div class="kl">Edge</div><div class="kv" style="color:var(--cyan)">Pi 5 ✓</div><div class="ks">arm64 · sync 14 ms</div></div>
+  </div>
+  <div class="card"><h3>📦 Servicios</h3><div class="sub">Imágenes ghcr.io/traky12/castuo-system/* · deploy por sha-tag (nunca :latest) · provenance SLSA + SBOM</div>
+   <div class="tablewrap"><table><thead><tr><th>Servicio</th><th>Rol</th><th>Puerto</th><th>CPU</th><th>RAM</th><th>Latencia</th><th>Estado</th><th></th></tr></thead><tbody>
+   ${cs.map(c=>`<tr><td class="mono" style="color:var(--cyan)">${c.id}</td><td>${c.rol}</td><td class="mono">:${c.puerto}</td>
+   <td><div style="display:flex;align-items:center;gap:7px"><div class="progress" style="width:46px;--ac:var(${c.cpu>60?'--red':c.cpu>25?'--amber':'--green'})"><i style="width:${Math.min(100,c.cpu*2)}%"></i></div><span class="mono">${c.cpu}%</span></div></td>
+   <td class="mono">${c.ram} MB</td><td class="mono">${c.latencia}ms</td><td>${stag(c.estado)}</td>
+   <td style="text-align:right"><button class="iconbtn" title="Logs" onclick="svcLogs('${c.id}')">📜</button><button class="iconbtn" title="Restart" onclick="svcRestart('${c.id}')">↻</button></td></tr>`).join('')}
+   </tbody></table></div></div>`;
+};
+function svcLogs(id){
+ const lines=Array.from({length:9},(_,i)=>`<div style="padding:2px 0"><span style="color:var(--dim)">${dAgo(0)} ${nowHM()}:${String(ri(10,59))}</span> <span style="color:var(--green)">INFO</span> ${esc(id)} · ${pick(['request OK 200 GET /api/v1/health','MQTT batch flushed (124 msgs)','JWT issued sub=gregorio scope=admin','TX anclada bloque 48210','cache hit ratio 0.94','sync edge-pi5 completed','prescripción evaluada en 240 ms','backup incremental OK (218 MB)'])}</div>`).join('');
+ modal(`<h3>📜 Logs · ${esc(id)}</h3><div class="mono" style="background:var(--bg);border-radius:9px;padding:13px;font-size:11px;max-height:320px;overflow-y:auto">${lines}</div>
+ <div style="display:flex;justify-content:flex-end;margin-top:14px"><button class="btn" onclick="closeModal()">Cerrar</button></div>`);}
+function svcRestart(id){toast('↻ Reinicio solicitado: '+esc(id)+' (rolling, zero-downtime)');pushFeed('Servicio reiniciado: '+id,'a');}
+/* ---- ANALYTICS BI ---- */
+VIEWS.analytics=()=>{
+  $('#main').innerHTML=`
+  <div class="kpirow">
+   <div class="kpi"><div class="kl">Rendimiento cultivo</div><div class="kv">+8%</div><div class="ks">vs campaña 2025</div></div>
+   <div class="kpi" style="--ac:var(--blue)"><div class="kl">Coste/kg tomate</div><div class="kv" style="color:var(--blue)">0,41 €</div><div class="ks"><span class="up">-6%</span> interanual</div></div>
+   <div class="kpi" style="--ac:var(--amber)"><div class="kl">Energía autoconsumida</div><div class="kv" style="color:var(--amber)">78%</div><div class="ks">agrovoltaica + batería</div></div>
+   <div class="kpi" style="--ac:var(--violet)"><div class="kl">Margen bruto YTD</div><div class="kv" style="color:var(--violet)">31%</div><div class="ks">objetivo 2026: 33%</div></div>
+  </div>
+  <div class="grid2">
+   <div class="card"><h3>📊 Producción mensual (t)</h3>${bars([12,14,16,19,22,24],['Ene','Feb','Mar','Abr','May','Jun'],440,140)}</div>
+   <div class="card"><h3>💶 Ingresos vs costes (k€)</h3>${bars([18,21,24,28,31,34],['Ene','Feb','Mar','Abr','May','Jun'],440,140,'var(--blue)')}</div>
+   <div class="card"><h3>⚡ Energía: generación vs consumo (kWh/día)</h3>${bars(series(14,130,30),Array.from({length:14},(_,i)=>i+1),440,120,'var(--amber)')}</div>
+   <div class="card"><h3>🎯 KPIs validación piloto</h3>
+   ${[['Consumo hídrico','-18%','objetivo -15% ✓'],['Antibióticos','-9%','objetivo -8% ✓'],['Tiempo administrativo','-30%','objetivo -25% ✓'],['Bienestar animal','87/100','objetivo 85 ✓'],['Superficie gestionada','+150 ha','piloto TRL6→TRL9']].map(k=>`<div class="statline"><span>${k[0]} <small style="color:var(--dim)">· ${k[2]}</small></span><b><span class="tag g">${k[1]}</span></b></div>`).join('')}</div>
+  </div>`;
+};
+/* ---- CONFIGURACIÓN ---- */
+VIEWS.config=()=>{
+  $('#main').innerHTML=`
+  <div class="grid2">
+   <div class="card"><h3>🔌 Conexión Backend (FastAPI)</h3><div class="sub">castuo-gateway → castuo-api · todos los módulos consumen /api/v1/*</div>
+    <div class="field"><label>Modo de operación</label><select id="cfg-mode"><option value="demo" ${CFG.mode==='demo'?'selected':''}>DEMO — datos simulados locales</option><option value="real" ${CFG.mode==='real'?'selected':''}>REAL — API FastAPI con fallback demo</option></select></div>
+    <div class="field"><label>URL base API</label><input id="cfg-url" value="${esc(CFG.apiUrl)}" placeholder="https://api.castuo-system.es"></div>
+    <div class="field"><label>Token JWT (castuo-auth :3001)</label><input id="cfg-token" type="password" value="${esc(CFG.token==='demo'?'':CFG.token)}" placeholder="eyJhbGciOi…"></div>
+    <div class="field"><label>Intervalo refresco tiempo real (s)</label><input id="cfg-poll" type="number" min="3" max="120" value="${CFG.pollSec}"></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+     <button class="btn primary" onclick="saveConfig()">💾 Guardar</button>
+     <button class="btn" onclick="testConn()">🔍 Probar conexión</button>
+     <button class="btn" onclick="logout()">🔒 Cerrar sesión</button>
+    </div>
+    <div id="conn-result" style="margin-top:13px;font-size:12px;color:var(--mut)"></div>
+   </div>
+   <div>
+    <div class="card"><h3>📜 Contrato de API esperado</h3><div class="sub">Convención REST — compatible con el router FastAPI</div>
+     <div class="mono" style="background:var(--bg);border-radius:9px;padding:13px;font-size:11px;line-height:1.9">
+      GET&nbsp;&nbsp;&nbsp;&nbsp;/api/v1/health<br>
+      POST&nbsp;&nbsp;&nbsp;/api/v1/auth/login → {access_token}<br>
+      GET&nbsp;&nbsp;&nbsp;&nbsp;/api/v1/{modulo} · POST · PUT/{id} · DELETE/{id}<br>
+      POST&nbsp;&nbsp;&nbsp;/api/v1/sabionda/ask → {answer}<br>
+      POST&nbsp;&nbsp;&nbsp;/api/v1/riego/{zona}/valvula<br>
+      <span style="color:var(--dim)">módulos: ${MODULES.filter(m=>!m.custom).map(m=>m.id).join(' · ')}</span>
+     </div></div>
+    <div class="card"><h3>🧹 Datos locales</h3>
+     <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn" onclick="DB=seedDB();saveDB();toast('Datos demo regenerados');go('dashboard')">↻ Regenerar datos demo</button>
+      <button class="btn danger" onclick="localStorage.removeItem('${DB_KEY}');localStorage.removeItem('${CFG_KEY}');location.reload()">🗑️ Borrar todo y reiniciar</button>
+     </div></div>
+    <div class="card"><h3>ℹ️ Sistema</h3>
+     ${[['Versión frontend','QUANTUM v4.0.0'],['Stack canónico','Python 3.14 · FastAPI · PostgreSQL 16 (STACK.md)'],['Infra','Hetzner CX22 + Raspberry Pi 5 (arm64)'],['Marca OEPM','M4359038 · Grupo Castuo 360 S.L.'],['Cumplimiento','GDPR · AI Act · RD 1054/2022 · EU DPP 2027']].map(x=>`<div class="statline"><span>${x[0]}</span><b style="font-size:11px">${x[1]}</b></div>`).join('')}</div>
+   </div>
+  </div>`;
+};
+function saveConfig(){
+  CFG.mode=$('#cfg-mode').value;CFG.apiUrl=$('#cfg-url').value.trim();
+  const tk=$('#cfg-token').value.trim();if(tk)CFG.token=tk;
+  CFG.pollSec=Math.max(3,Number($('#cfg-poll').value)||10);
+  saveCfg();setConn(CONN.online);startRealtime();toast('💾 Configuración guardada · modo '+CFG.mode.toUpperCase());
+}
+async function testConn(){
+  const el=$('#conn-result');el.innerHTML='⏳ Probando '+esc($('#cfg-url').value)+'/api/v1/health …';
+  const old=CFG.apiUrl;CFG.apiUrl=$('#cfg-url').value.trim();
+  try{const r=await apiFetch('/api/v1/health');el.innerHTML='<span style="color:var(--green)">✅ Backend accesible</span> · '+esc(JSON.stringify(r)).slice(0,120);}
+  catch(e){el.innerHTML='<span style="color:var(--red)">❌ Sin respuesta ('+esc(e.message)+')</span> — verifica gateway :443, CORS y token. El frontend seguirá operativo en fallback demo.';}
+  CFG.apiUrl=old;
+}
+
+
+/* ═══ VISTA ARQUITECTURA 360 (CASTÚO-360 v5.0) ═══ */
+var V360={tab:'overview',core:'data'};
+function trlColor(t){return t>=9?'--green':t>=6?'--cyan':t>=4?'--amber':'--red';}
+VIEWS.arq360=function(){
+  var totalMods=C360_CORES.reduce(function(a,c){return a+(c.id==='agro'?36:c.mods.length);},0);
+  var liveCount=DB._c360||(DB._c360={}); // estado de activación por módulo (persistido)
+  var activeMods=Object.keys(liveCount).filter(function(k){return liveCount[k];}).length+36;
+  function tabBtn(id,lbl){return '<button class="btn sm '+(V360.tab===id?'primary':'')+'" onclick="V360.tab=\''+id+'\';VIEWS.arq360()">'+lbl+'</button>';}
+  var head='<div class="kpirow">'+
+    '<div class="kpi"><div class="kl">Núcleos</div><div class="kv">5+1</div><div class="ks">5 núcleos + capa datos</div></div>'+
+    '<div class="kpi" style="--ac:var(--cyan)"><div class="kl">Módulos enterprise</div><div class="kv" style="color:var(--cyan)">'+totalMods+'</div><div class="ks">objetivo 120+ · TRL9 24m</div></div>'+
+    '<div class="kpi" style="--ac:var(--green)"><div class="kl">Activos</div><div class="kv" style="color:var(--green)">'+activeMods+'</div><div class="ks">36 operativos + activados</div></div>'+
+    '<div class="kpi" style="--ac:var(--violet)"><div class="kl">ARR objetivo 24m</div><div class="kv" style="color:var(--violet);font-size:21px">1,95 M€</div><div class="ks">vs 450K€ (+333%)</div></div>'+
+    '<div class="kpi" style="--ac:var(--amber)"><div class="kl">Valoración 24m</div><div class="kv" style="color:var(--amber);font-size:21px">28,1 M€</div><div class="ks">inversión 7,33 M€</div></div>'+
+  '</div>';
+  var nav='<div class="card"><div class="toolbar" style="margin:0">'+
+    tabBtn('overview','🗺️ Mapa de núcleos')+tabBtn('catalog','🧩 Catálogo módulos')+
+    tabBtn('roadmap','📅 Roadmap 24m')+tabBtn('biz','💰 Negocio')+
+    tabBtn('compliance','🛡️ Compliance')+tabBtn('kpis','📈 KPIs')+'</div></div>';
+  var body='';
+  if(V360.tab==='overview'){
+    body='<div class="modgrid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">'+C360_CORES.map(function(c){
+      var n=c.id==='agro'?36:c.mods.length;
+      var act=c.id==='agro'?36:c.mods.filter(function(m){return liveCount[m[0]];}).length;
+      return '<div class="card" style="margin:0;border-left:4px solid var('+c.color+')">'+
+       '<h3><span style="font-size:18px">'+c.icon+'</span> '+c.name+'<span class="tag '+(c.trl>=6?'g':'a')+'" style="margin-left:auto">'+c.fase+'</span></h3>'+
+       '<div class="sub">'+c.desc+'</div>'+
+       '<div class="statline"><span>Módulos</span><b class="mono">'+act+'/'+n+'</b></div>'+
+       '<div class="statline"><span>TRL actual</span><b><span class="tag" style="background:rgba(255,255,255,.05);color:var('+trlColor(c.trl)+')">TRL'+c.trl+'</span></b></div>'+
+       '<div class="progress" style="margin-top:8px;--ac:var('+c.color+')"><i style="width:'+Math.round(act/n*100)+'%"></i></div>'+
+       '<div style="margin-top:10px"><button class="btn sm" onclick="V360.tab=\'catalog\';V360.core=\''+c.id+'\';VIEWS.arq360()">Ver '+n+' módulos →</button></div>'+
+      '</div>';
+    }).join('')+'</div>'+
+    '<div class="card"><h3>🏗️ Topología CASTÚO-360</h3><div class="sub">Flujo: Edge → Núcleos → Capa de Datos centralizada → IA/Analytics/Compliance</div>'+
+     '<div class="mono" style="background:var(--bg);border-radius:9px;padding:14px;font-size:11px;line-height:2;color:var(--mut)">'+
+     '🌱 Agro  🌡️ Geotermia  🧬 Biotec  🧪 Biomed ─┐<br>'+
+     '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ (IoT · ADN · kWh · clínica)<br>'+
+     '&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--cyan)">📊 DATA INTELLIGENCE CORE</span> (Data Lake · ETL · ML Ops · Digital Twin · Governance)<br>'+
+     '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>'+
+     '&nbsp;&nbsp;&nbsp;&nbsp;🤖 SABIONDA AI · 📈 Analytics · 🔒 Compliance (AI Act · GDPR · EMA)<br>'+
+     '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>'+
+     '&nbsp;&nbsp;&nbsp;&nbsp;☸️ Kubernetes (Hetzner) · Kafka · Redis HA · GaiaChain 3.0</div></div>';
+  } else if(V360.tab==='catalog'){
+    var coreBtns=C360_CORES.map(function(c){return '<button class="btn sm '+(V360.core===c.id?'primary':'')+'" onclick="V360.core=\''+c.id+'\';VIEWS.arq360()">'+c.icon+' '+c.name+'</button>';}).join('');
+    var core=C360_CORES.filter(function(c){return c.id===V360.core;})[0];
+    var rows=(core.id==='agro')
+      ? '<tr><td colspan="7"><div class="empty">Núcleo operativo — gestiónalo en los módulos del menú lateral (Cuaderno, Ganadería, Drones…).</div></td></tr>'
+      : core.mods.map(function(m){
+        var on=!!liveCount[m[0]];
+        return '<tr><td class="mono" style="color:var(--cyan)">'+esc(m[1])+'</td><td style="white-space:normal">'+esc(m[2])+'</td>'+
+        '<td class="mono" style="font-size:10.5px">'+esc(m[3])+'</td>'+
+        '<td class="mono">'+(typeof m[4]==='number'?m[4]+'K€':m[4])+'</td>'+
+        '<td style="white-space:normal;color:var(--green)">'+esc(m[5])+'</td>'+
+        '<td><span class="tag" style="background:rgba(255,255,255,.05);color:var('+trlColor(m[6])+')">TRL'+m[6]+'</span></td>'+
+        '<td><button class="btn sm '+(on?'':'primary')+'" onclick="toggleC360(\''+m[0]+'\')">'+(on?'✓ Activo':'Activar')+'</button></td></tr>';
+      }).join('');
+    var cost=core.id==='agro'?'—':core.mods.reduce(function(a,m){return a+(typeof m[4]==='number'?m[4]:0);},0)+'K€';
+    body='<div class="card"><div class="toolbar" style="margin:0;flex-wrap:wrap">'+coreBtns+'</div></div>'+
+     '<div class="card"><h3>'+core.icon+' '+core.name+' <span class="tag b" style="margin-left:auto">'+(core.id==='agro'?36:core.mods.length)+' módulos · '+cost+'</span></h3><div class="sub">'+core.desc+' · '+core.fase+'</div>'+
+     '<div class="tablewrap"><table><thead><tr><th>Módulo</th><th>Función</th><th>Stack</th><th>Valor</th><th>Impacto</th><th>TRL</th><th>Estado</th></tr></thead><tbody>'+rows+'</tbody></table></div></div>';
+  } else if(V360.tab==='roadmap'){
+    body='<div class="card"><h3>📅 Plan de ejecución — 24 meses · 36 → 130+ módulos</h3><div class="sub">Inversión total 7,33 M€ · ARR 450K€ → 1,95M€ · valoración 6,5M€ → 28,1M€</div>'+
+     '<div class="tablewrap"><table><thead><tr><th>Fase</th><th>Foco</th><th>Dur.</th><th>Inv.</th><th>Módulos</th><th>ARR</th><th>Valoración</th><th>ROI</th><th>Hitos</th></tr></thead><tbody>'+
+     C360_ROADMAP.map(function(r,i){return '<tr><td><b style="color:var(--green)">'+r.f+'</b></td><td>'+esc(r.n)+'</td><td class="mono">'+r.m+'</td><td class="mono">'+r.inv+'K€</td><td class="mono">'+r.mods+'</td><td class="mono" style="color:var(--green)">'+r.arr+'K€</td><td class="mono" style="color:var(--amber)">'+r.val+'M€</td><td><span class="tag g">'+r.roi+'</span></td><td style="white-space:normal;font-size:11px">'+esc(r.hitos)+'</td></tr>';}).join('')+
+     '</tbody></table></div></div>'+
+     '<div class="grid3">'+C360_ROADMAP.slice(1,4).map(function(r){return '<div class="card" style="margin:0"><h3>'+r.f+' · '+r.n+'</h3><div class="statline"><span>Inversión</span><b class="mono">'+r.inv+'K€</b></div><div class="statline"><span>ROI</span><b><span class="tag g">'+r.roi+'</span></b></div><div class="statline"><span>ARR fin</span><b class="mono" style="color:var(--green)">'+r.arr+'K€</b></div></div>';}).join('')+'</div>';
+  } else if(V360.tab==='biz'){
+    var totalARR=C360_BIZ.reduce(function(a,b){return a+b[4];},0);
+    body='<div class="card"><h3>💰 Modelo de negocio · ARR objetivo '+(totalARR/1000).toFixed(2)+'M€ (24m) · margen 70-80%</h3>'+
+     '<div class="tablewrap"><table><thead><tr><th>Producto / Servicio</th><th>Modelo</th><th>Precio €/año</th><th>Clientes objetivo</th><th>ARR (24m)</th></tr></thead><tbody>'+
+     C360_BIZ.map(function(b){return '<tr><td><b>'+esc(b[0])+'</b></td><td>'+esc(b[1])+'</td><td class="mono">'+esc(b[2])+'</td><td>'+esc(b[3])+'</td><td class="mono" style="color:var(--green)">'+b[4]+'K€</td></tr>';}).join('')+
+     '<tr style="border-top:2px solid var(--line2)"><td colspan="4"><b>Total ARR (24 meses)</b></td><td class="mono" style="color:var(--green);font-weight:700">'+totalARR+'K€</td></tr>'+
+     '</tbody></table></div></div>'+
+     '<div class="grid3"><div class="card" style="margin:0"><h3>📈 Proyección financiera</h3>'+
+     [['0m','450K€','6,5M€','60%'],['6m','680K€','9,8M€','70%'],['12m','920K€','13,2M€','75%'],['18m','1,35M€','19,4M€','78%'],['24m','1,95M€','28,1M€','80%']].map(function(x){return '<div class="statline"><span>'+x[0]+' · '+x[3]+' margen</span><b class="mono">'+x[1]+' · '+x[2]+'</b></div>';}).join('')+'</div>'+
+     '<div class="card" style="margin:0"><h3>🎯 Precios SaaS</h3><div class="statline"><span>Básico (agro+datos)</span><b class="mono">5K€/año</b></div><div class="statline"><span>Premium (+geo+biotec)</span><b class="mono">20K€/año</b></div><div class="statline"><span>Enterprise (todo+24/7)</span><b class="mono">50K€/año</b></div></div>'+
+     '<div class="card" style="margin:0"><h3>💶 Financiación 7,33M€</h3><div class="statline"><span>Fondos propios</span><b class="mono">2,0M€</b></div><div class="statline"><span>Subvenciones (ENISA+CDTI)</span><b class="mono">1,5M€</b></div><div class="statline"><span>Préstamos</span><b class="mono">2,0M€</b></div><div class="statline"><span>Inversores privados</span><b class="mono">1,83M€</b></div></div></div>';
+  } else if(V360.tab==='compliance'){
+    body='<div class="card"><h3>🛡️ Compliance multimodal · AI Act + GDPR + sectoriales</h3><div class="sub">Cumplimiento 100% con barreras técnicas verificables</div>'+
+     '<div class="tablewrap"><table><thead><tr><th>Normativa</th><th>Ámbito</th><th>Implementación</th><th>Herramienta</th></tr></thead><tbody>'+
+     C360_COMPLIANCE.map(function(c){return '<tr><td><b>'+esc(c[0])+'</b></td><td>'+esc(c[1])+'</td><td style="white-space:normal">'+esc(c[2])+'</td><td class="mono" style="font-size:10.5px;color:var(--cyan)">'+esc(c[3])+'</td></tr>';}).join('')+
+     '</tbody></table></div></div>'+
+     '<div class="card"><h3>🔒 Barreras de protección (Zero Trust multicapa)</h3><div class="grid3">'+
+     [['Aplicación','RBAC+ABAC · MFA · Rate limiting','FastAPI+JWT+Redis'],['Red','Firewall+WAF · Geo-block · DDoS','Cloudflare+K8s'],['Datos','Cifrado reposo/tránsito · inmutabilidad','AES-256+TLS1.3+Merkle'],['Auditoría','Logging+tracing+externa','OpenTelemetry+GaiaChain'],['Gobernanza','AI Act+GDPR+agritech','OPA+FastAPI'],['Privacy','Cifrado homomórfico','PyCryptodome+SEAL']].map(function(b){return '<div class="card" style="margin:0;padding:13px"><b style="color:var(--green)">'+b[0]+'</b><div style="font-size:11.5px;margin:5px 0">'+b[1]+'</div><div class="mono" style="font-size:10px;color:var(--mut)">'+b[2]+'</div></div>';}).join('')+'</div></div>';
+  } else if(V360.tab==='kpis'){
+    body='<div class="card"><h3>📈 KPIs de éxito · v4.0 → v5.0</h3>'+
+     '<div class="tablewrap"><table><thead><tr><th>KPI</th><th>Actual (v4.0)</th><th>Objetivo (v5.0)</th><th>Mejora</th></tr></thead><tbody>'+
+     C360_KPIS.map(function(k){return '<tr><td><b>'+esc(k[0])+'</b></td><td class="mono">'+esc(k[1])+'</td><td class="mono" style="color:var(--green)">'+esc(k[2])+'</td><td><span class="tag g">'+esc(k[3])+'</span></td></tr>';}).join('')+
+     '</tbody></table></div></div>'+
+     '<div class="grid3">'+[['💧 Agua','-25%','1M m³/año'],['♻️ CO2','-25%','500 t/año evitadas'],['⚡ Renovable','98%','10 GWh/año'],['💊 Antibióticos','1%','-10 t/año'],['🌾 Superficie','1.500 ha','+900%'],['🔬 Patentes','20','nuevas IP']].map(function(x){return '<div class="kpi" style="margin:0"><div class="kl">'+x[0]+'</div><div class="kv" style="font-size:20px">'+x[1]+'</div><div class="ks">'+x[2]+'</div></div>';}).join('')+'</div>';
+  }
+  $('#main').innerHTML=head+nav+body;
+};
+function toggleC360(id){var s=DB._c360||(DB._c360={});s[id]=!s[id];saveDB();toast(s[id]?'✅ Módulo activado: '+id:'Módulo desactivado: '+id);pushFeed('CASTÚO-360: módulo '+id+(s[id]?' activado':' desactivado'),'v');VIEWS.arq360();}
+
+
+/* ═══ VISTA OPERATIVA BIOENERGÍA (control en vivo) ═══ */
+function seedBioenergia(){
+  return {
+    alarms:[],
+    biodiesel:{estado:'Producción',temp:58.2,ph:6.8,ratioMeOH:6.1,conversion:96.4,nivel:72,lote:'BD-2026-088',caudal:1.8},
+    biogas:{estado:'Operativo',temp:38.4,ph:7.1,ch4:62.5,co2:34,h2s:118,presion:18,agitador:true,nivel:64,carga:'Purín+restos'},
+    chp:{estado:'Generando',pElec:48,pTerm:62,horas:18420,rpm:1500,rendim:86},
+    h2:{estado:'Standby',produccion:0,soc:84,presion:0,electrolizador:'PEM 5kW'},
+    biochar:{estado:'Lote en curso',temp:485,biomasa:'Poda+cáscara',rendimiento:28,biooil:34,syngas:22},
+    lotes:[
+      {id:'BD-2026-088',tipo:'Biodiésel',materia:'UCO (aceite usado)',litros:1840,calidad:'EN14214 ✓',fecha:'Hoy',estado:'En curso'},
+      {id:'BG-2026-241',tipo:'Biogás',materia:'Purín+digestato',m3:1240,calidad:'62,5% CH4',fecha:'Hoy',estado:'Continuo'},
+      {id:'BM-2026-052',tipo:'Biometano',materia:'Biogás upgrade',m3:740,calidad:'96,2% CH4',fecha:'Ayer',estado:'Inyectado red'},
+      {id:'BC-2026-018',tipo:'Biochar',materia:'Poda olivar',litros:0,calidad:'520 kg · 78% C',fecha:'Ayer',estado:'Curado'},
+      {id:'BD-2026-087',tipo:'Biodiésel',materia:'Colza energética',litros:1920,calidad:'EN14214 ✓',fecha:'-2d',estado:'Almacenado'}
+    ]
+  };
+}
+
+/* ═══ BioEngine — router de bioenergía EMBEBIDO en cliente (sim/real) ═══
+   Replica la lógica del backend FastAPI /api/v1/bioenergia/* dentro del HTML:
+   validación física, alarmas R, KPIs, control con rate-limit+auditoría, lotes.
+   En modo real intenta el backend; si no, opera 100% en el navegador. */
+var BioEngine=(function(){
+  var UNITS=['biodiesel','biogas','chp','h2','biochar'];
+  var RANGES={
+    biodiesel:{temp:[0,120],ph:[0,14],ratioMeOH:[0,12],conversion:[0,100],nivel:[0,100],caudal:[0,50]},
+    biogas:{temp:[0,70],ph:[0,14],ch4:[0,100],co2:[0,100],h2s:[0,5000],presion:[0,200],nivel:[0,100]},
+    chp:{pElec:[0,500],pTerm:[0,800],rpm:[0,4000],rendim:[0,100]},
+    h2:{produccion:[0,100],soc:[0,100],presion:[0,1000]},
+    biochar:{temp:[0,900],rendimiento:[0,100],biooil:[0,100],syngas:[0,100]}
+  };
+  var ALARMS={
+    biodiesel:[['temp','>',65,'alta','Temperatura reactor alta'],['conversion','<',90,'media','Conversión FAME baja']],
+    biogas:[['h2s','>',200,'alta','H₂S alto (corrosión motor)'],['ch4','<',50,'media','CH₄ bajo'],['ph','<',6.5,'alta','pH digestor bajo (acidificación)']],
+    chp:[['rendim','<',70,'media','Rendimiento CHP bajo']],
+    h2:[['presion','>',900,'alta','Presión H₂ alta']],
+    biochar:[['temp','>',750,'alta','Temperatura pirólisis excesiva']]
+  };
+  var rl={}; // rate-limit en memoria: key -> [timestamps]
+  function valid(unit,metric,v){var r=(RANGES[unit]||{})[metric];return !r||(v>=r[0]&&v<=r[1]);}
+  function stateOf(unit){var b=DB.bioenergia;return b[unit]||(b[unit]={});}
+  function evalAlarms(unit,sensors){
+    var b=DB.bioenergia;if(!b.alarms)b.alarms=[];var fired=[];
+    (ALARMS[unit]||[]).forEach(function(r){var m=r[0],op=r[1],thr=r[2],sev=r[3],msg=r[4];
+      if(sensors[m]===undefined)return;var v=sensors[m];var hit=op==='>'?v>thr:v<thr;
+      if(hit){var rule=m+op+thr;
+        if(!b.alarms.some(function(a){return a.active&&a.unit===unit&&a.rule===rule;})){
+          var al={id:'AL-'+rid(),unit:unit,rule:rule,severity:sev,message:msg+' ('+m+'='+v+')',value:v,active:true,ts:nowHM()};
+          b.alarms.unshift(al);fired.push(al);
+        }}});
+    b.alarms=b.alarms.slice(0,60);return fired;
+  }
+  async function realTry(path,opts){if(CFG.mode!=='real')return null;try{return await apiFetch('/api/v1/bioenergia'+path,opts);}catch(e){return null;}}
+  return {
+    UNITS:UNITS,RANGES:RANGES,
+    // INGESTA: valida rango físico, actualiza estado, dispara alarmas. Devuelve resumen.
+    ingest:function(unit,sensors,source){
+      if(UNITS.indexOf(unit)<0)return {error:'unidad desconocida'};
+      var st=stateOf(unit),clean={},rej=0;
+      Object.keys(sensors).forEach(function(k){var v=Number(sensors[k]);
+        if(!isFinite(v)||!valid(unit,k,v)){rej++;return;}clean[k]=v;st[k]=v;});
+      st._source=source||'real';
+      var fired=evalAlarms(unit,clean);saveDB();
+      return {unit:unit,accepted:Object.keys(clean).length,rejected:rej,alarms:fired,source:st._source};
+    },
+    telemetry:async function(unit){var r=await realTry('/telemetry/'+unit);if(r)return r;var st=stateOf(unit);return {unit:unit,data:st,source:st._source||'sim'};},
+    kpis:function(){var b=DB.bioenergia;var act=(b.alarms||[]).filter(function(a){return a.active;}).length;
+      return {biodiesel_caudal:b.biodiesel.caudal,biogas_ch4:b.biogas.ch4,chp_kw:b.chp.pElec,alarmas_activas:act,mix_renovable:98};},
+    alarms:function(activeOnly){var b=DB.bioenergia;var a=b.alarms||[];return activeOnly?a.filter(function(x){return x.active;}):a;},
+    ackAlarm:function(id){var b=DB.bioenergia;(b.alarms||[]).forEach(function(a){if(a.id===id)a.active=false;});saveDB();pushFeed('Bioenergía: alarma '+id+' reconocida','b');},
+    // CONTROL: rol + rate-limit (10/60s) + auditoría + (real) POST backend.
+    control:async function(unit,action,reason){
+      if(UNITS.indexOf(unit)<0)return {ok:false,error:'unidad'};
+      var role=(window.CFG&&'admin')||'admin'; // QUANTUM opera como admin/owner
+      var key=unit+':'+action;var now=Date.now();rl[key]=(rl[key]||[]).filter(function(t){return t>now-60000;});
+      if(rl[key].length>=10){toast('⛔ Rate limit: demasiadas acciones de control','warn');return {ok:false,error:'rate_limit'};}
+      rl[key].push(now);
+      var sent=await realTry('/control/'+unit,{method:'POST',body:JSON.stringify({action:action,reason:reason||''})});
+      var st=stateOf(unit);if(action==='start')st._estado='Producción';if(action==='stop')st._estado='Parado';
+      saveDB();
+      // auditoría (feed + registro local)
+      DB._bioaudit=(DB._bioaudit||[]);DB._bioaudit.unshift({ts:nowHM(),action:'BIO_CONTROL',detail:unit+' '+action+' '+(reason||''),real:!!sent});DB._bioaudit=DB._bioaudit.slice(0,100);saveDB();
+      pushFeed('Bioenergía: control '+unit+' · '+action+(sent?' (backend)':' (local)'),'g');
+      return {ok:true,unit:unit,action:action,real:!!sent};
+    },
+    batches:function(){var b=DB.bioenergia;return b.lotes||[];},
+    createBatch:async function(unit,tipo,feedstock,outv,outu,quality){
+      var code=(unit.slice(0,2).toUpperCase())+'-2026-'+ri(89,140);
+      await realTry('/batches',{method:'POST',body:JSON.stringify({unit:unit,tipo:tipo,feedstock:feedstock,output_value:Number(outv)||0,output_unit:outu||'L',quality:quality||''})});
+      DB.bioenergia.lotes.unshift({id:code,tipo:tipo,materia:feedstock,litros:outu==='L'?Number(outv):0,m3:outu==='m3'?Number(outv):0,calidad:quality||'En proceso',fecha:'Hoy',estado:'En curso'});saveDB();
+      pushFeed('Bioenergía: nuevo lote '+code,'g');return code;
+    },
+    audit:function(){return DB._bioaudit||[];}
+  };
+})();
+
+/* Paneles HTML que la vista consume (alarmas + auditoría de control) */
+function bioAlarmsPanel(){
+  var act=BioEngine.alarms(true);var src=(DB.bioenergia.biodiesel._source)||(CFG.mode==='real'?'real':'sim');
+  var badge='<span class="tag '+(CFG.mode==='real'?'g':'a')+'" style="margin-left:auto">'+(CFG.mode==='real'?'🟢 API real':'🟡 DEMO local')+' · fuente '+src+'</span>';
+  if(!act.length)return '<div class="card"><h3>🚨 Alarmas de proceso '+badge+'</h3><div class="statline"><span style="color:var(--green)">✅ Sin alarmas activas</span><b>'+BioEngine.audit().length+' acciones auditadas</b></div></div>';
+  return '<div class="card" style="border-left:4px solid var(--red)"><h3>🚨 Alarmas activas <span class="tag r" style="margin-left:8px">'+act.length+'</span>'+badge+'</h3>'+
+    act.slice(0,8).map(function(a){var c=a.severity==='alta'?'r':'a';return '<div class="statline"><span><span class="tag '+c+'">'+esc(a.unit)+'</span> '+esc(a.message)+' <small style="color:var(--dim)">'+a.ts+'</small></span><b><button class="btn sm" onclick="BioEngine.ackAlarm(\''+a.id+'\');VIEWS.bioenergia()">ACK</button></b></div>';}).join('')+'</div>';
+}
+function bioAuditPanel(){var a=BioEngine.audit();if(!a.length)return '';
+  return '<div class="card"><h3>📝 Auditoría de control ('+a.length+')</h3><div style="max-height:130px;overflow-y:auto">'+
+    a.slice(0,10).map(function(e){return '<div class="statline" style="font-size:11px"><span class="mono" style="color:var(--dim)">'+e.ts+'</span><span style="flex:1;margin:0 8px">'+esc(e.detail)+'</span><b>'+(e.real?stag('Running'):stag('Programado'))+'</b></div>';}).join('')+'</div></div>';
+}
+
+VIEWS.bioenergia=async function(){
+  if(!DB.bioenergia){DB.bioenergia=seedBioenergia();saveDB();}
+  var b=DB.bioenergia;
+  function rng(v,mn,op,mx){var pct=Math.max(4,Math.min(100,Math.round((v-mn)/(mx-mn)*100)));var warn=v<mn||v>mx;return {pct:pct,warn:warn};}
+  function gauge(val,unit,label,mn,op,mx,color){var r=rng(val,mn,op,mx);return '<div class="card" style="margin:0;padding:13px;'+(r.warn?'border-color:#7a4a12':'')+'"><div class="gauge">'+donut(r.pct,90,r.warn?'var(--amber)':(color||'var(--green)'),unit)+'<div class="gv" data-bio="'+label+'">'+val+' '+unit+'</div><div class="gl">'+label+'</div><small style="color:var(--dim);font-size:10px">rango '+mn+'–'+mx+'</small></div></div>';}
+  var mixRenov=Math.round((b.chp.pElec+b.h2.soc/10+30)/(b.chp.pElec+b.h2.soc/10+34)*100);
+  $('#main').innerHTML=`
+   <div class="kpirow">
+    <div class="kpi"><div class="kl">Biodiésel hoy</div><div class="kv">${(b.biodiesel.caudal*8).toFixed(0)} L</div><div class="ks">EN 14214 · lote ${b.biodiesel.lote}</div></div>
+    <div class="kpi" style="--ac:var(--cyan)"><div class="kl">Biogás hoy</div><div class="kv" style="color:var(--cyan)">1.240 m³</div><div class="ks">${b.biogas.ch4}% CH₄ · digestor anaerobio</div></div>
+    <div class="kpi" style="--ac:var(--violet)"><div class="kl">Biometano red</div><div class="kv" style="color:var(--violet)">740 m³</div><div class="ks">96,2% CH₄ · inyectado</div></div>
+    <div class="kpi" style="--ac:var(--amber)"><div class="kl">CHP eléctrica</div><div class="kv" style="color:var(--amber)" id="bio-chp">${b.chp.pElec} kW</div><div class="ks">+ ${b.chp.pTerm} kW térmica · ${b.chp.rendim}%</div></div>
+    <div class="kpi" style="--ac:var(--green)"><div class="kl">Mix renovable</div><div class="kv" style="color:var(--green)">98%</div><div class="ks">geo+solar+biogás+H₂</div></div>
+   </div>
+
+   ${bioAlarmsPanel()}
+   ${bioAuditPanel()}
+   <div class="grid2">
+    <div class="card" style="border-left:4px solid var(--green)"><h3>🛢️ Reactor Biodiésel <span class="tag ${b.biodiesel.estado==='Producción'?'g':'a'}" style="margin-left:auto">${b.biodiesel.estado}</span></h3>
+     <div class="sub">Transesterificación UCO → FAME · lote ${b.biodiesel.lote} · PLC+PID</div>
+     <div class="grid3" id="bio-bd-gauges">
+      ${gauge(b.biodiesel.temp,'°C','Temp reacción',50,58,65)}
+      ${gauge(b.biodiesel.conversion,'%','Conversión FAME',90,96,100,'var(--green)')}
+      ${gauge(b.biodiesel.ratioMeOH,':1','Ratio MeOH',5,6,7,'var(--cyan)')}
+     </div>
+     <div style="margin-top:10px">
+      <div class="statline"><span>Nivel reactor</span><b><div class="progress" style="width:90px;display:inline-block;--ac:var(--green)"><i style="width:${b.biodiesel.nivel}%"></i></div> <span class="mono">${b.biodiesel.nivel}%</span></b></div>
+      <div class="statline"><span>Caudal producción</span><b class="mono">${b.biodiesel.caudal} L/min</b></div>
+      <div class="statline"><span>Calidad EN 14214</span><b>${stag('OK')} viscosidad·cetano·agua</b></div>
+     </div>
+     <div style="display:flex;gap:8px;margin-top:10px">
+      <button class="btn sm ${b.biodiesel.estado==='Producción'?'danger':'primary'}" onclick="bioCmd('biodiesel')">${b.biodiesel.estado==='Producción'?'⏸ Parar reactor':'▶ Iniciar reactor'}</button>
+      <button class="btn sm" onclick="bioBatch('Biodiésel')">＋ Nuevo lote</button>
+      <button class="btn sm" onclick="toast('🧪 Muestra EN14214 enviada a laboratorio')">Analizar calidad</button>
+     </div>
+    </div>
+
+    <div class="card" style="border-left:4px solid var(--cyan)"><h3>🦠 Digestor Anaerobio (Biogás) <span class="tag g" style="margin-left:auto">${b.biogas.estado}</span></h3>
+     <div class="sub">Mesófilo 38°C · ${b.biogas.carga} · upgrading a biometano</div>
+     <div class="grid3" id="bio-bg-gauges">
+      ${gauge(b.biogas.temp,'°C','Temp mesófilo',35,38,42,'var(--cyan)')}
+      ${gauge(b.biogas.ch4,'%','CH₄ metano',50,62,70,'var(--green)')}
+      ${gauge(b.biogas.ph,'pH','pH digestor',6.5,7.1,7.8,'var(--violet)')}
+     </div>
+     <div style="margin-top:10px">
+      <div class="statline"><span>H₂S (corrosión)</span><b class="mono" style="color:${b.biogas.h2s>200?'var(--red)':'var(--amber)'}">${b.biogas.h2s} ppm</b></div>
+      <div class="statline"><span>Presión gasómetro</span><b class="mono">${b.biogas.presion} mbar</b></div>
+      <div class="statline"><span>Agitador</span><b>${b.biogas.agitador?stag('Running'):stag('Stopped')}</b></div>
+      <div class="statline"><span>Digestato → biofertilizante</span><b>${stag('Activo')} NPK</b></div>
+     </div>
+     <div style="display:flex;gap:8px;margin-top:10px">
+      <button class="btn sm ${b.biogas.agitador?'danger':'primary'}" onclick="bioAgit()">${b.biogas.agitador?'⏸ Parar agitador':'▶ Agitar'}</button>
+      <button class="btn sm" onclick="toast('🔥 Antorcha de seguridad verificada · OK')">Test antorcha</button>
+      <button class="btn sm" onclick="toast('⬆ Upgrading biometano: 96,2% CH₄ · listo para red')">Upgrade biometano</button>
+     </div>
+    </div>
+   </div>
+
+   <div class="grid3">
+    <div class="card"><h3>⚙️ Cogeneración CHP</h3>
+     <div style="display:flex;gap:14px;align-items:center">${donut(b.chp.rendim,100,'var(--amber)','RENDIM')}
+      <div style="font-size:12px;color:var(--mut)">
+       <div class="statline"><span>Eléctrica</span><b class="mono">${b.chp.pElec} kW</b></div>
+       <div class="statline"><span>Térmica</span><b class="mono">${b.chp.pTerm} kW</b></div>
+       <div class="statline"><span>Horas motor</span><b class="mono">${fmt(b.chp.horas)} h</b></div>
+       <div class="statline"><span>Régimen</span><b class="mono">${b.chp.rpm} rpm</b></div>
+      </div></div>
+    </div>
+    <div class="card"><h3>💧 Hidrógeno Verde</h3>
+     <div class="sub">Electrólisis PEM · excedente solar → H₂</div>
+     <div class="statline"><span>Estado</span><b>${stag(b.h2.estado)}</b></div>
+     <div class="statline"><span>SOC almacén H₂</span><b><div class="progress" style="width:80px;display:inline-block;--ac:var(--cyan)"><i style="width:${b.h2.soc}%"></i></div> <span class="mono">${b.h2.soc}%</span></b></div>
+     <div class="statline"><span>Producción</span><b class="mono">${b.h2.produccion} Nm³/h</b></div>
+     <button class="btn sm primary" style="margin-top:8px" onclick="bioH2()">▶ Arrancar electrólisis (excedente)</button>
+    </div>
+    <div class="card"><h3>🔥 Pirólisis / Biochar</h3>
+     <div class="sub">Biomasa → biochar + bio-oil + syngas · captura C</div>
+     <div class="statline"><span>Temp reactor</span><b class="mono" id="bio-pyro">${b.biochar.temp} °C</b></div>
+     <div class="statline"><span>Biochar (enmienda)</span><b class="mono">${b.biochar.rendimiento}%</b></div>
+     <div class="statline"><span>Bio-oil</span><b class="mono">${b.biochar.biooil}%</b></div>
+     <div class="statline"><span>Syngas → CHP</span><b class="mono">${b.biochar.syngas}%</b></div>
+    </div>
+   </div>
+
+   <div class="card"><h3>📦 Lotes de producción bioenergética</h3>
+    <div class="tablewrap"><table><thead><tr><th>Lote</th><th>Tipo</th><th>Materia prima</th><th>Producción</th><th>Calidad</th><th>Fecha</th><th>Estado</th></tr></thead><tbody>
+    ${b.lotes.map(function(l){return '<tr><td class="mono" style="color:var(--cyan)">'+l.id+'</td><td><b>'+l.tipo+'</b></td><td>'+l.materia+'</td><td class="mono">'+(l.litros?l.litros+' L':l.m3?l.m3+' m³':'—')+'</td><td>'+l.calidad+'</td><td>'+l.fecha+'</td><td>'+stag(l.estado)+'</td></tr>';}).join('')}
+    </tbody></table></div>
+   </div>
+
+   <div class="grid2">
+    <div class="card"><h3>⚡ Mix energético de la planta</h3><div class="sub">Producción autónoma · 98% renovable · venta excedentes P2P</div>
+     ${[['Biogás CHP','48 kW','g'],['Agrovoltaica','58 kWh','a'],['Geotermia','31 kW','c'],['Biodiésel (flota)','1.840 L/día','g'],['H₂ verde (almacén)','SOC 84%','v'],['Excedente a red','9 kWh','b']].map(function(x){return '<div class="statline"><span>'+x[0]+'</span><b><span class="tag '+x[2]+'">'+x[1]+'</span></b></div>';}).join('')}
+    </div>
+    <div class="card"><h3>📉 Producción bioenergética · 12 días</h3>
+     <div class="sub">Biogás m³ (cian) + Biodiésel L (verde)</div>
+     ${bars(series(12,1200,200),Array.from({length:12},function(_,i){return i+1;}),520,110,'var(--cyan)')}
+    </div>
+   </div>
+
+   <div class="card"><h3>♻️ Economía circular & nuevas tecnologías</h3>
+    <div class="sub">Cada residuo alimenta otro proceso — integración cerrada</div>
+    <div class="mono" style="background:var(--bg);border-radius:9px;padding:13px;font-size:11px;line-height:2;color:var(--mut)">
+     Aceite usado (UCO) ──→ 🛢️ Biodiésel ──→ flota agrícola<br>
+     Purín+digestato ───→ 🦠 Biogás ──→ ⚙️ CHP ──→ ⚡ electricidad+calor<br>
+     Biogás ───────────→ ⬆️ Biometano 96% ──→ inyección red gas<br>
+     Digestato ────────→ 🌱 Biofertilizante NPK ──→ cultivos<br>
+     Poda/cáscara ─────→ 🔥 Pirólisis ──→ Biochar (captura C) + Syngas ──→ CHP<br>
+     Excedente solar ──→ 💧 Electrólisis ──→ H₂ verde ──→ almacén/movilidad<br>
+     Glicerina ────────→ subproducto valorizable (cosmética/química)
+    </div>
+   </div>`;
+};
+async function bioCmd(k){var b=DB.bioenergia;var on=b.biodiesel.estado==='Producción';var r=await BioEngine.control('biodiesel',on?'stop':'start','toggle reactor');if(r.ok){b.biodiesel.estado=on?'Parado':'Producción';saveDB();toast(on?'⏸ Reactor biodiésel parado':'▶ Reactor biodiésel en marcha');VIEWS.bioenergia();}}
+async function bioAgit(){var b=DB.bioenergia;var r=await BioEngine.control('biogas',b.biogas.agitador?'agitador_off':'agitador_on','agitador');if(r.ok){b.biogas.agitador=!b.biogas.agitador;saveDB();toast(b.biogas.agitador?'▶ Agitador digestor activo':'⏸ Agitador detenido');VIEWS.bioenergia();}}
+async function bioH2(){var b=DB.bioenergia;var r=await BioEngine.control('h2','start','electrólisis excedente solar');if(r.ok){b.h2.estado='Electrolizando';b.h2.produccion=2.4;saveDB();toast('💧 Electrólisis arrancada · 2,4 Nm³/h H₂');VIEWS.bioenergia();}}
+function bioBatch(tipo){modal('<h3>＋ Nuevo lote · '+tipo+'</h3>'+
+  '<div class="field"><label>Materia prima</label><select id="bb-mat"><option>UCO (aceite usado)</option><option>Colza energética</option><option>Purín+digestato</option><option>Poda olivar</option></select></div>'+
+  '<div class="field"><label>Cantidad objetivo (L / m³)</label><input id="bb-qty" type="number" value="1500"></div>'+
+  '<div style="display:flex;gap:10px;justify-content:flex-end"><button class="btn" onclick="closeModal()">Cancelar</button>'+
+  '<button class="btn primary" onclick="(function(){var b=DB.bioenergia;var id=\''+(tipo==='Biodiésel'?'BD':'BG')+'-2026-\'+ri(89,140);b.lotes.unshift({id:id,tipo:\''+tipo+'\',materia:$(\'#bb-mat\').value,litros:Number($(\'#bb-qty\').value),calidad:\'En proceso\',fecha:\'Hoy\',estado:\'En curso\'});saveDB();closeModal();toast(\'✅ Lote \'+id+\' creado\');pushFeed(\'Bioenergía: nuevo lote \'+id,\'g\');VIEWS.bioenergia();})()">Crear lote</button></div>');}
+
+/* ===================== NAVEGACIÓN / ROUTER ===================== */
+function renderNav(){
+  const groups=['PRINCIPAL','ENERGÍA','APLICACIONES','TRAZABILIDAD','INFRAESTRUCTURA'];
+  $('#nav').innerHTML=groups.map(g=>`<div class="navgroup">${g}</div>`+MODULES.filter(m=>m.group===g).map(m=>{
+    const b=typeof m.badge==='function'?m.badge():m.badge;
+    return `<div class="navitem" id="nav-${m.id}" onclick="go('${m.id}')"><span class="ni">${m.icon}</span><span>${m.name}</span>${b?`<span class="nb">${b}</span>`:''}</div>`;
+  }).join('')).join('');
+}
+let CURRENT='dashboard';
+function go(id){
+  CURRENT=id;location.hash=id;
+  const m=MOD[id];if(!m)return;
+  $$('.navitem').forEach(n=>n.classList.remove('active'));
+  const ni=$('#nav-'+id);if(ni)ni.classList.add('active');
+  $('#crumb').innerHTML=`${m.name}<small>${m.desc||'CASTÚO-SYSTEM QUANTUM'}</small>`;
+  $('#main').scrollTop=0;
+  (m.custom?VIEWS[id]:()=>renderGeneric(m))();
+}
+function refreshView(){go(CURRENT);}
+window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(h&&MOD[h]&&h!==CURRENT)go(h);});
+
+/* ===================== PALETA DE COMANDOS (Ctrl+K) ===================== */
+function openPalette(){$('#palette-ov').classList.add('open');const i=$('#pal-in');i.value='';palSearch('');setTimeout(()=>i.focus(),40);}
+function closePalette(){$('#palette-ov').classList.remove('open');}
+function palSearch(q){
+  q=q.toLowerCase();
+  const mods=MODULES.filter(m=>!q||m.name.toLowerCase().includes(q)||m.desc.toLowerCase().includes(q)).map(m=>({icon:m.icon,t:m.name,s:'Módulo · '+m.desc,fn:`go('${m.id}')`}));
+  let recs=[];
+  if(q.length>1){
+    for(const[mod,arr]of Object.entries(DB)){
+      if(!Array.isArray(arr)||!MOD[mod])continue;
+      for(const r of arr){if(JSON.stringify(r).toLowerCase().includes(q))recs.push({icon:MOD[mod].icon,t:r.id+(r.tipo?' · '+r.tipo:r.producto?' · '+r.producto:r.zona?' · '+r.zona:''),s:MOD[mod].name,fn:`go('${mod}')`});if(recs.length>7)break;}
+      if(recs.length>7)break;
+    }
+  }
+  const acts=[{icon:'⬇',t:'Exportar módulo actual a CSV',s:'Acción',fn:`exportCSV(CURRENT)`},{icon:'🔌',t:'Probar conexión backend',s:'Acción',fn:`go('config')`},{icon:'↻',t:'Regenerar datos demo',s:'Acción',fn:`DB=seedDB();saveDB();go('dashboard');toast('Datos regenerados')`}].filter(a=>!q||a.t.toLowerCase().includes(q));
+  $('#palresults').innerHTML=[...mods.slice(0,6),...recs,...acts].map(x=>`<div class="palitem" onclick="closePalette();${x.fn}"><span>${x.icon}</span><span>${esc(x.t)}</span><small>${esc(x.s)}</small></div>`).join('')||'<div class="empty">Sin resultados</div>';
+}
+document.addEventListener('keydown',e=>{
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openPalette();}
+  if(e.key==='Escape'){closePalette();closeModal();}
+});
+
+/* ===================== TIEMPO REAL ===================== */
+let RT=null;
+function startRealtime(){
+  if(RT)clearInterval(RT);
+  RT=setInterval(async()=>{
+    // sensores derivan suavemente
+    (DB.invernadero||[]).forEach(s=>{const span=(s.max-s.min)*0.03;s.valor=Math.round((Number(s.valor)+rnd(-span,span))*10)/10;});
+    (DB.contenedores||[]).forEach(c=>{c.cpu=Math.max(1,Math.min(80,c.cpu+ri(-2,2)));c.latencia=Math.max(1,c.latencia+ri(-1,1));});
+    if(Math.random()<.35)pushFeed(pick(['Cuaderno campo: registro riego '+pick(PARCELAS),'SABIONDA: prescripción evaluada','IoT: batch 124 lecturas → TimescaleDB','Blockchain: TX anclada bloque '+fmt(48210+ri(1,9)),'Edge Pi5: sincronización completada','Vallado: GPS-'+ri(100,123)+' reporta posición']),pick(['g','b','c','v']));
+    saveDB();
+    if(CFG.mode==='real'){try{await apiFetch('/api/v1/health');}catch(e){}}
+    // refresco no destructivo de la vista activa
+    if(CURRENT==='dashboard'){const f=$('#feed');if(f)f.innerHTML=feedHTML();}
+    else if(CURRENT==='invernadero'){$$('#gauges .gv').forEach(el=>{const s=DBfind('invernadero',el.dataset.sid);if(s)el.textContent=s.valor+' '+s.unidad;});}
+    else if(CURRENT==='contenedores'){const k=$('#k-cpu');if(k)k.textContent=DB.contenedores.reduce((s,c)=>s+c.cpu,0)+'%';}
+    else if(CURRENT==='bioenergia'&&DB.bioenergia){var bb=DB.bioenergia;BioEngine.ingest('biodiesel',{temp:Math.round((bb.biodiesel.temp+rnd(-0.3,0.3))*10)/10,conversion:bb.biodiesel.conversion},'sim');BioEngine.ingest('biogas',{ch4:Math.round((bb.biogas.ch4+rnd(-0.4,0.4))*10)/10,h2s:bb.biogas.h2s,ph:bb.biogas.ph},'sim');BioEngine.ingest('chp',{pElec:Math.max(0,Math.min(60,bb.chp.pElec+ri(-1,1))),rendim:bb.chp.rendim},'sim');BioEngine.ingest('biochar',{temp:Math.round(bb.biochar.temp+rnd(-3,3))},'sim');var ce=$('#bio-chp');if(ce)ce.textContent=bb.chp.pElec+' kW';var pe=$('#bio-pyro');if(pe)pe.textContent=bb.biochar.temp+' °C';}
+  },CFG.pollSec*1000);
+}
+
+/* ===================== INIT ===================== */
+renderNav();
+setConn(false);
+if(CFG.requireLogin&&!CFG.token)$('#login-screen').style.display='flex';
+go(MOD[location.hash.slice(1)]?location.hash.slice(1):'dashboard');
+startRealtime();
+if(CFG.mode==='real')apiFetch('/api/v1/health').catch(()=>{});
+console.log('%cCASTÚO-SYSTEM™ QUANTUM v4.0','color:#10d98c;font-size:16px;font-weight:bold','· Frontend Enterprise cargado · modo '+CFG.mode);
+</script>
+</body>
+</html>
