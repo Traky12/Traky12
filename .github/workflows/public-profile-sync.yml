@@ -6,6 +6,8 @@ on:
     - cron: '17 * * * *'
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: write
@@ -15,20 +17,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check pull request formatting
+        if: github.event_name == 'pull_request'
+        run: git diff --check
       - name: Checkout canonical control plane
+        if: github.event_name == 'push'
         uses: actions/checkout@v4
         with:
           repository: Traky12/castuo-evolution
           token: ${{ secrets.CASTUO_CONTROL_PLANE_TOKEN || github.token }}
           path: _control-plane
       - name: Generate bounded public state
+        if: github.event_name == 'push'
         run: |
           python3 _control-plane/scripts/generate_public_profile.py \
             --status _control-plane/data/control-plane-status.yaml \
             --readme README.md
       - name: Check generated diff
+        if: github.event_name == 'push'
         run: git diff --check
       - name: Commit generated state
+        if: github.event_name == 'push'
         run: |
           if git diff --quiet -- README.md; then
             echo 'No public state change.'
