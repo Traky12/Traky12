@@ -182,6 +182,7 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 - [Reviewer commands, conformance plan, Security Baseline and presentation deck](docs/CASTUO_REVIEWER_COMMANDS_CONFORMANCE_SECURITY_DECK.md)
 - [Code Owner, human review and remote conformance deck](docs/CASTUO_REVIEWER_CODEOWNER_CONFORMANCE_DECK.md)
 - [Reviewer package v2: commands, capability matrix, conformance and presentation](docs/CASTUO_REVIEWER_PACKAGE_V2.md)
+- [Profile review and desktop-tutorial conformance recovery deck](docs/CASTUO_PROFILE_REVIEW_DESKTOP_CONFORMANCE_DECK.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
