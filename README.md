@@ -149,6 +149,7 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 - [Public GitHub showcase plan](docs/CASTUO_PUBLIC_SHOWCASE_PLAN.md)
 - [GREEN-STAGING risk register](docs/CASTUO_STAGING_RISK_REGISTER.md)
 - [GREEN-STAGING security and improvement report](docs/CASTUO_GREEN_STAGING_SECURITY_REPORT.md)
+- [Promotion, PR and security report with presentation script](docs/CASTUO_PROMOTION_PR_SECURITY_PRESENTATION_REPORT.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
