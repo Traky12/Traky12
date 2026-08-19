@@ -6,11 +6,13 @@ on:
     paths:
       - 'evidence-center/**'
       - '.github/workflows/evidence-center-validation.yml'
+      - 'README.md'
   pull_request:
     branches: [main]
     paths:
       - 'evidence-center/**'
       - '.github/workflows/evidence-center-validation.yml'
+      - 'README.md'
 
 permissions:
   contents: read
