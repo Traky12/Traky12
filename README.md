@@ -69,6 +69,21 @@ The public profile does not claim that this journey is a completed production or
 
 A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
 
+## Capability envelope
+
+The capability registry is governed by `castuo-evolution` and distinguishes **capability**, **implementation**, **evidence**, **maturity** and **claim**. The following is the current public envelope; each item remains bounded by its evidence state.
+
+| Capability | Current boundary | State | Not claimed |
+|---|---|---|---|
+| Evidence-ready field operations | Offline-first local workflow, synchronization, reviewable evidence and report export | `CURRENT · EVIDENCE-SCOPED` | Production continuity, customer results, recurring operation |
+| Assurance and recovery | Security, observability, recovery and evidence preservation tooling | `CURRENT · EVIDENCE-SCOPED` | Independent certification, operational SLA, universal security assurance |
+| Offline-first edge / IoT | Bounded telemetry, local buffering and connectivity-loss validation | `EXPERIMENTAL · PENDING REVIEW` | Autonomous field operation, validated savings, production IoT service |
+| Workflow integration | Governed adapters and bounded orchestration using declared permissions | `EXPERIMENTAL · PENDING REVIEW` | Autonomous authority, privilege elevation, irreversible execution |
+| AI-assisted recommendations | Dry-run advisory and controlled report preparation under explicit policy | `EXPERIMENTAL · PENDING REVIEW` | Autonomous irrigation, production decisions, independent validation |
+| Federation and vendor exit | Target architecture for evidence portability and provider substitution | `TARGET · PENDING` | Verified federation, vendor exit, interoperable production network |
+
+Promotion requires typed evidence, negative tests, replay, recovery, human review and closure of the applicable gates. A documented capability or upstream integration is not automatically a CASTÚO proprietary production capability.
+
 ## Evidence chain
 
 ```text
