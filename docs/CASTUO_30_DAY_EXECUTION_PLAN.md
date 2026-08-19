@@ -14,7 +14,7 @@ GitHub credibility → technical proof → remote reproducibility → staging
 → independent review → pilot → paid result → repeatability
 ```
 
-The current state is `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED`. The target for the first campaign is:
+The profile/documentation surface is `GREEN-STAGING · EVIDENCE-SCOPED`. The full CASTÚO system remains `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED` until remote conformance, security baseline, S-001 staging execution and independent E3 are closed. **System promotion: `BLOCKED · EXTERNAL EVIDENCE REQUIRED`.** The target for the first campaign is:
 
 ```text
 14/14 REMOTE + SECURITY BASELINE PASS + S-001 REPLAYABLE + E3-001 INDEPENDENT

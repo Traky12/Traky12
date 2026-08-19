@@ -39,15 +39,19 @@ The public profile is governed by three principles:
 
 ## 3. Current ecosystem position
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+**GREEN-STAGING · EVIDENCE-SCOPED — PROFILE SURFACE**
+
+**System promotion:** `BLOCKED · EXTERNAL EVIDENCE REQUIRED`
+
+The profile surface, governed documentation and read-only validation workflows are green in staging scope. This does not close system-wide remote conformance, security, E3, field or commercial gates.
 
 | Dimension | Public status |
 |---|---|
 | Local conformance | `14/14 PASS LOCAL` |
 | Remote conformance | `0/14 · PENDING` |
-| Environment | `STAGING` |
-| Security baseline | `PENDING` |
-| Staging execution | `PENDING` |
+| Environment | `STAGING · GREEN FOR PROFILE SURFACE` |
+| Security baseline | `PENDING · profile checks pass; full baseline not closed` |
+| Staging execution | `GREEN · profile/documentation scope` |
 | Human review | `PENDING` |
 | Independent E3 | `PENDING` |
 | Production | `NOT_CLAIMED` |
@@ -190,7 +194,7 @@ The first wedge is CASTÚO Evidence-Ready Field Operations: offline-first contin
 
 ### Slide 2 — Current public status
 
-The public state is `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED`. Local conformance is `14/14 PASS LOCAL`; remote conformance, security, staging, human review, E3 and federation remain pending. Production and commercial validation are `NOT_CLAIMED`.
+The public profile surface is `GREEN-STAGING · EVIDENCE-SCOPED`. Local conformance is `14/14 PASS LOCAL`; system-wide remote conformance, security, human review, E3 and federation remain pending. Production and commercial validation are `NOT_CLAIMED`.
 
 ### Slide 3 — Bounded user journey
 
