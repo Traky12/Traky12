@@ -20,28 +20,31 @@ CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baselin
 
 ### Architecture & Public Evidence Flow
 ```text
-Traky12 (Profile)
+Traky12 (Profile & Architecture Boundary)
     ↓ presents
 castuo-evidence (Public Evidence Fabric & S-001A Proofs)
     ↓ demonstrates within scope
-castuo-evolution (Control Plane & EvOS v13.0 SSOT)
+castuo-evolution (Private Governance Control Plane & SSOT)
     ↓ governs
-Castuo-system (Core Platform Execution)
+Castuo-system (Private Platform Core & Execution)
 ```
 
-| Maturity Status | Status | Scope & Meaning |
-| :--- | :---: | :--- |
-| **E1 — Internally Verified** | **CURRENT** | Relevant controls, tests, and evidence artifacts have been verified within the project's own engineering, CI/CD, and evidence-governance processes, within the documented scope. |
-| **E2 — Review-Ready** | **READY** | Independent review package prepared and available for third-party inspection (`external-validation/`). |
-| **E3 — Independent Verification** | **PENDING** | No external verification claimed. |
+### 📊 Conformance & Evidence Metrics (Strictly Separated)
 
-*These maturity states apply to the defined evidence scope and do not constitute certification, legal conformity, independent audit opinion, or assurance beyond the documented artifacts.*
+| Scope | Metric | State |
+| :--- | :--- | :--- |
+| **Portfolio Local Conformance** | Repositories / Declared Checks | `14/14 PASS` |
+| **S-001A Public Evidence** | Local S-001A Checks | `13/13 PASS` |
+| **S-001A Public Evidence** | Remote Replay | `0/1 EXECUTED` |
+| **Evidence Maturity** | EvOS v13.0 Baseline | `LOCAL EVIDENCE BASELINE · EVIDENCE-SCOPED` |
+
+*Note: The portfolio local conformance and the S-001A evidence baseline represent different scopes and must not be combined or interpreted as the same check set.*
 
 ---
 
 ## 🧭 CASTÚO-SYSTEM™ Portfolio Hierarchy
 
-CASTÚO-SYSTEM™ is structured as a hierarchical portfolio of modular technical assets rather than independent products:
+CASTÚO-SYSTEM™ is structured as a hierarchical portfolio of modular technical assets:
 
 - **Platform Core (`Castuo-system`)**: Core backend engine and offline-first runtime logic.
 - **Governance Control Plane (`castuo-evolution`)**: Evidence graph, assurance gates, and policy SSOT.
