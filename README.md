@@ -145,6 +145,7 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 - [CASTÚO Security Baseline v1](docs/CASTUO_SECURITY_BASELINE_V1.md)
 - [S-001 vertical slice protocol](docs/S001_VERTICAL_SLICE_PROTOCOL.md)
 - [Consolidated dialogue record](docs/CASTUO_DIALOGUE_CONSOLIDATED_RECORD.md)
+- [Master progress protocol record](docs/CASTUO_MASTER_PROGRESS_PROTOCOL.md)
 - [Public GitHub showcase plan](docs/CASTUO_PUBLIC_SHOWCASE_PLAN.md)
 - [GREEN-STAGING risk register](docs/CASTUO_STAGING_RISK_REGISTER.md)
 - [GREEN-STAGING security and improvement report](docs/CASTUO_GREEN_STAGING_SECURITY_REPORT.md)
