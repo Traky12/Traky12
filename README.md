@@ -19,25 +19,27 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 <!-- CASTUO:STATE:START -->
 ## Current ecosystem state
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+**AUDIT-COMPLETE · PROMOTION-BLOCKED · EVIDENCE-SCOPED**
 
 | Dimension | Current public status |
 |---|---|
-| Local conformance | `14/14 PASS LOCAL` |
-| Remote conformance | `0/14` — `PENDING` |
-| Remote publication | `14 PENDING` |
-| Environment | `STAGING` |
-| Security baseline | `PENDING` |
-| Staging execution | `PENDING` |
+| Architecture inventory | `15 REPOSITORIES · 79 README · 116 WORKFLOWS` |
+| Local validation | `SELECTED CHECKS PASS LOCAL` |
+| Remote publication | `PR #20` and `PR #350` open; review and checks pending |
+| Security baseline | `SECURITY_HOLD` — GitHub reported 115 vulnerabilities in `Cast-o` (2 critical, 32 high, 60 moderate, 21 low) |
+| Staging branch | `BLOCKED` — branch protection not verified |
+| Production environment | `BLOCKED` — promotion and protected-branch policy not closed |
+| Code scanning | `SECURITY_HOLD` — not enabled or not accessible for `Castuo-system` |
+| Staging execution | `PENDING` — immutable artifact, smoke, replay and rollback evidence required |
 | Human review | `PENDING` |
-| Production | `NOT_CLAIMED` |
+| Production | `NOT_CLAIMED` — no deployment executed |
 | Commercial validation | `NOT_CLAIMED` |
 | Independent E3 | `PENDING` |
 | Federation | `PENDING` |
 
-**Evidence basis:** `castuo-evolution` · commit `70b7c57` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
+**Evidence basis:** local audit package in [`Castuo-system/docs/audit/2026-08-19/`](https://github.com/Traky12/Castuo-system/tree/audit/assurance-status-2026-08-19/docs/audit/2026-08-19), repair PR [`Cast-o#20`](https://github.com/Traky12/Cast-o/pull/20), assurance PR [`Castuo-system#350`](https://github.com/Traky12/Castuo-system/pull/350), and the canonical governance boundary in [`castuo-evolution`](https://github.com/Traky12/castuo-evolution). Review, remote conformance, security closure and staging evidence remain pending.
 
-The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
+The public profile is a projection of the canonical control plane. Blocker: `ci_security_vulnerability_branch_protection_staging_replay_rollback_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 <!-- CASTUO:STATE:END -->
 
 ## Customer wedge
@@ -78,6 +80,19 @@ Claim → Evidence → Execution → Hash → Reproduction
 
 The control plane governs the state. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
 
+## Published audit and repair work
+
+The current audit covers the CASTÚO architecture and its repository surfaces. The following table records what has been transferred to GitHub and what remains blocked.
+
+| Work item | GitHub location | State |
+|---|---|---|
+| CI, dependency and drift repair | [`Cast-o#20`](https://github.com/Traky12/Cast-o/pull/20) | `OPEN · CHECKS PENDING` |
+| Assurance status and promotion blockers | [`Castuo-system#350`](https://github.com/Traky12/Castuo-system/pull/350) | `OPEN · GATES BLOCKED` |
+| Final audit report and evidence indexes | [`Castuo-system/docs/audit/2026-08-19/`](https://github.com/Traky12/Castuo-system/tree/audit/assurance-status-2026-08-19/docs/audit/2026-08-19) | `TRANSFERRED · EVIDENCE-SCOPED` |
+| Core README assurance status | [`Castuo-system/README.md`](https://github.com/Traky12/Castuo-system/blob/audit/assurance-status-2026-08-19/README.md) | `TRANSFERRED · NO_CLAIM` |
+
+The profile intentionally does not claim that all pull requests are merged, all vulnerabilities are closed, staging is verified or production is deployed. Promotion requires closed security, CI, branch protection, evidence, replay, human review and rollback gates.
+
 ## Repository map
 
 | Repository | Public role | Boundary |
@@ -88,9 +103,12 @@ The control plane governs the state. Repositories implement declared roles. Evid
 | [`Cast-o`](https://github.com/Traky12/Cast-o) | CI and validation | Tests, provenance and release evidence |
 | [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge / IoT | Offline continuity and synchronization |
 | [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Field application | Local workflow, recovery and evidence export |
-| `ctaex-iot-pilot` | Laboratory | IoT and connectivity-loss validation; field claims excluded |
-| `agrovision-360` | Experimental | Bounded agro-vision research and drift evidence |
+| `agrovision-360` | Experimental | Bounded agro-vision research; production not claimed |
 | `castuo-360-v5.3` | Workspace | Integrated application experience; workspace ≠ production |
+| `ctaex-iot-pilot` | Laboratory | LoRaWAN/IoT pilot; field claims remain evidence-scoped |
+| `castuo-docs-portal` | Evidence portal | Documentation and traceability surface; operational claims pending |
+| `castuo-progress-dashboard` | Progress dashboard | Visual evidence and gate projection; not an authority source |
+| `castuo-strategy-knowledge-base` | Strategy register | Canonical sources and status boundaries; claims remain scoped |
 | `-Prueba-final` | Experimental sandbox | Integration experiments only |
 | `n8n` | Upstream / fork | Governed workflow integration; upstream capability ≠ CASTÚO proprietary capability |
 | `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
@@ -108,7 +126,8 @@ The control plane governs the state. Repositories implement declared roles. Evid
 | Evidence | `PENDING` | Typed manifests, hashes and execution envelopes |
 | Staging execution | `PENDING` | Bounded core-to-field vertical slice |
 | Human review | `PENDING` | Dated scope-bound decision |
-| GREEN-STAGING | `BLOCKED` | All previous gates complete |
+| `GREEN-STAGING` | `BLOCKED` | Security, CI, branch protection, evidence, replay, rollback and human review gates |
+| `PRODUCTION` | `BLOCKED` | Same immutable artifact promoted from verified staging; no direct deployment |
 
 ## Public evidence and links
 
