@@ -120,7 +120,9 @@ The current system-wide audit is bounded to the 2026-08-19 snapshot and remains 
 | Staging deployment | `BLOCKED` until missing target/secrets fail closed | [`deploy-staging.yml`](https://github.com/Traky12/Castuo-system/blob/main/.github/workflows/deploy-staging.yml) |
 | MQTT / IoT | `SECURITY_HOLD` until broker auth is replayed remotely | [`security-resilience-matrix.yaml`](https://github.com/Traky12/Castuo-system/blob/main/governance/security-resilience-matrix.yaml) |
 | Offline and provider exit | `TARGET / EVIDENCE_REQUIRED` | [`EVOLUTIONARY-RESILIENCE-STRATEGY-2026-08-19.md`](https://github.com/Traky12/Castuo-system/blob/main/docs/EVOLUTIONARY-RESILIENCE-STRATEGY-2026-08-19.md) |
-| GitHub governance | `BLOCKED` until checks, CODEOWNERS and security analysis are observable | [`CONSOLIDATION-REGISTRY.md`](https://github.com/Traky12/Castuo-system/blob/main/docs/CONSOLIDATION-REGISTRY.md) |
+| GitHub governance | `APPLIED_REMOTE / EVIDENCE_REQUIRED`; checks and CODEOWNERS are configured, run evidence remains pending | [`branch-protection-baseline.json`](https://github.com/Traky12/Castuo-system/blob/main/governance/branch-protection-baseline.json) |
+| Value multiplication | `INTEGRATED_LOCAL / PROMOTION_BLOCKED`; efficacy, connectivity, resilience and evidence are managed as one program | [`VALUE-MULTIPLICATION-PLAN-2026-08-19.md`](https://github.com/Traky12/Castuo-system/blob/main/docs/VALUE-MULTIPLICATION-PLAN-2026-08-19.md) |
+| Control register | `ACTIVE`; owners, risks, evidences, decisions and exceptions are versioned in the core | [`control-register.yaml`](https://github.com/Traky12/Castuo-system/blob/main/governance/control-register.yaml) |
 
 **Public claim boundary / Límite público:** local remediation is not production evidence. This profile does not claim secure staging, field continuity, independent review, vendor exit, federation, certification, customer results or N6/G10 maturity until the corresponding evidence envelope, replay and human gate are closed.
 
@@ -133,6 +135,10 @@ The current system-wide audit is bounded to the 2026-08-19 snapshot and remains 
 - [System-wide audit and findings](https://github.com/Traky12/Castuo-system/blob/main/docs/SYSTEM-AUDIT-2026-08-19.md)
 - [Evolutionary resilience strategy](https://github.com/Traky12/Castuo-system/blob/main/docs/EVOLUTIONARY-RESILIENCE-STRATEGY-2026-08-19.md)
 - [Security and resilience matrix](https://github.com/Traky12/Castuo-system/blob/main/governance/security-resilience-matrix.yaml)
+- [Value multiplication plan](https://github.com/Traky12/Castuo-system/blob/main/docs/VALUE-MULTIPLICATION-PLAN-2026-08-19.md)
+- [Control register](https://github.com/Traky12/Castuo-system/blob/main/governance/control-register.yaml)
+- [Evidence index](https://github.com/Traky12/Castuo-system/blob/main/governance/evidence-index.yaml)
+- [Release gates](https://github.com/Traky12/Castuo-system/blob/main/docs/RELEASE-GATES.md)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
 - [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
