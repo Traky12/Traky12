@@ -68,6 +68,21 @@ The capability registry distinguishes **capability**, **implementation**, **evid
 
 A documented capability or upstream integration is not automatically a CASTÚO proprietary production capability.
 
+## Technical capability matrix
+
+| Technical layer | Current capability | Evidence boundary | Next proof required |
+|---|---|---|---|
+| **Continuity runtime** | Local-first workflow execution, buffering during connectivity loss and synchronization after recovery | S-001A local evidence and bounded fixtures | Remote conformance and staging vertical slice |
+| **Evidence fabric** | Typed manifests, execution envelopes, SHA-256 hashes and replay-oriented packaging | Public S-001A record with real hashes | Foreign replay by a distinct operator and environment |
+| **Assurance and recovery** | Fail-closed promotion logic, negative scenarios, recovery checks and claim boundary | Local checks and repository-level artifacts | Security baseline, independent review and recovery exercise |
+| **Edge/IoT integration** | Bounded telemetry, local buffering and connectivity-loss validation | Experimental laboratory scope | Field result with named device/workflow and measurable KPI |
+| **Workflow orchestration** | Governed adapters and bounded execution with declared permissions | Experimental integration scope | Remote permission review, staging execution and rollback evidence |
+| **AI assistance** | Dry-run recommendations and controlled report preparation under policy | Experimental, advisory-only scope | Independent validation before any operational decision claim |
+| **Federation and vendor exit** | Portable evidence and provider-substitution target architecture | Target architecture only | Interoperability replay across providers or environments |
+| **Observability and operations** | Evidence-oriented reporting, review surfaces and promotion status | Staging-oriented documentation and local artifacts | Continuous staging run, incident exercise and operational readiness |
+
+This matrix describes **technical direction and bounded implementation**, not a claim that every listed layer is production-ready. The authoritative transition is always `evidence → review → gate → promotion`.
+
 ## Proof ladder
 
 ```text
@@ -97,6 +112,10 @@ Protected branches require human approval, Code Owner review, approval of the la
 Claim → Evidence → Execution → Hash → Reproduction
 → Independent review → Gate → Promotion / rollback
 ```
+
+### Capability maturity rule
+
+A capability may be labelled `CURRENT` only within the scope of its declared evidence. `EXPERIMENTAL` means that implementation or laboratory work exists but its operational boundary is not established. `TARGET` describes an intended architectural outcome. No label overrides a failed gate, missing replay, absent reviewer or missing recovery evidence.
 
 | Gate | Status | Required next evidence |
 |---|---|---|
