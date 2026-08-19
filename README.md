@@ -185,6 +185,7 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 - [Profile review and desktop-tutorial conformance recovery deck](docs/CASTUO_PROFILE_REVIEW_DESKTOP_CONFORMANCE_DECK.md)
 - [Complete task status — 2026-08-19](docs/CASTUO_COMPLETE_TASKS_STATUS_2026-08-19.md)
 - [Full GitHub modification record](docs/CASTUO_FULL_GITHUB_MODIFICATION.md)
+- [Competitive digital analysis — SimilarWeb scope and public capability matrix](docs/CASTUO_SIMILARWEB_COMPETITIVE_ANALYSIS_2026-08-19.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
