@@ -4,7 +4,8 @@
 **Protocol status:** `INTEGRATED · EVIDENCE-SCOPED`  
 **Surface status:** `GREEN-STAGING · EVIDENCE-SCOPED`  
 **System promotion:** `BLOCKED · EXTERNAL EVIDENCE REQUIRED`  
-**Latest profile head:** `d8cae74`  
+**Latest profile head:** `8fd4c0e`
+
 **Profile PR:** [#18][1]
 
 > This is the master progress record for the work completed in this dialogue. It separates implementation, local validation, evidence, maturity, human review and promotion. It does not convert documentation into production or independent proof.
@@ -113,7 +114,7 @@ The profile PR has no code conflict. Its remaining blockers are human approval, 
 | `git diff --check` | `PASS` |
 | Read-only workflow assertion | `PASS` |
 | Documentation/workflow trigger assertion | `PASS` |
-| Remote `Validate evidence dossiers` | `PASS` in [run 32283781735][2] |
+| Remote `Validate evidence dossiers` | `PASS` in [run 32284606336][2] |
 | GitHub Advanced Security alert APIs | `NOT VERIFIED · HTTP 403` |
 
 ## 9. Open gates and exact next actions
@@ -138,7 +139,7 @@ Technical assets, architecture, code, planning scenarios and repository activity
 ## 11. Canonical references
 
 [1]: https://github.com/Traky12/Traky12/pull/18 "Profile PR #18"  
-[2]: https://github.com/Traky12/Traky12/actions/runs/32283781735 "Latest completed evidence validation run"  
+[2]: https://github.com/Traky12/Traky12/actions/runs/32284606336 "Latest completed evidence validation run"
 [3]: https://github.com/Traky12/castuo-evidence/blob/master/evidence/local/EVID-EVT-0002.json "S-001A evidence record with real hashes"  
 [4]: https://github.com/Traky12/castuo-evidence/blob/master/docs/S001A_FOREIGN_REPLAY_PROTOCOL.md "S-001A foreign replay protocol"  
 [5]: https://github.com/Traky12/castuo-evolution/pull/26 "EvOS baseline and E3-001 PR"  
