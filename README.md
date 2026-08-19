@@ -85,6 +85,19 @@ A documented capability or upstream integration is not automatically a CASTÚO p
 | **Federation and vendor exit** | Portable evidence and provider-substitution target architecture | Target architecture only | Interoperability replay across providers or environments |
 | **Observability and operations** | Evidence-oriented reporting, review surfaces and promotion status | Staging-oriented documentation and local artifacts | Continuous staging run, incident exercise and operational readiness |
 
+### Public capability register
+
+| ID | Capability | Implementation | Evidence now | State | Next gate | Allowed claim |
+|---|---|---|---|---|---|---|
+| `CAP-001` | Offline continuity | `castuo-offline-field-operations` | Local tests and documentation | `IMPLEMENTED / VALIDATION PENDING` | Remote replay | Offline flow implemented within declared scope |
+| `CAP-002` | Edge/IoT buffering | `castuo-agro-edge` | Laboratory tests | `EXPERIMENTAL / LABORATORY` | Core integration | Experimental Edge runtime |
+| `CAP-003` | Reproducible evidence | `castuo-evidence` | Fixtures, real hashes and local replay | `CURRENT · LOCAL EVIDENCE` | Independent review | Bounded public evidence package |
+| `CAP-004` | Adversarial assurance | `Cast-o` | Harness and local tests | `CURRENT · VALIDATION PENDING` | Remote candidate execution | Automatable validation tooling |
+| `CAP-005` | Governance and promotion | `castuo-evolution` | States, gates and contracts | `CONTROL-PLANE DEFINED` | Remote evidence | Defined control plane |
+| `CAP-006` | Governed AI | Profile policy and limits | Declared boundaries | `TARGET / IMPLEMENTATION PENDING` | AI case with human review | Governed AI design |
+| `CAP-007` | Recovery | `goldfish` (private) | Private code; evidence required | `PRIVATE / EVIDENCE REQUIRED` | Restore test | Recovery layer in development |
+| `CAP-008` | Production operation | Private core | Insufficient public evidence | `NOT_CLAIMED` | Staging and pilot | No operational claim |
+
 This matrix describes **technical direction and bounded implementation**, not a claim that every listed layer is production-ready. The authoritative transition is always `evidence → review → gate → promotion`.
 
 ## Proof ladder
@@ -109,6 +122,22 @@ Only the local S-001A proof is currently closed. The next bounded KPI is `CONTIN
 | [`castuo-evolution` issue #9](https://github.com/Traky12/castuo-evolution/issues/9) | `OPEN` | Independent E3-001 review |
 
 Protected branches require human approval, Code Owner review, approval of the latest push and resolved conversations. No administrative bypass is used. A merged PR or successful local check does not change `1R`, `1V`, `1A` or the production claim boundary.
+
+## Live GitHub status — observed 2026-08-19
+
+The following table is a **point-in-time operational snapshot** obtained from GitHub CLI. `PASS` means the reported workflow concluded successfully; `REVIEW_REQUIRED`, `BLOCKED`, `BEHIND`, `PENDING` or `ACTION_REQUIRED` are not green promotion states. A restricted status-rollup response is recorded as `NOT_VERIFIED`, never as success.
+
+| Repository | Open PRs / merge state | Latest observed Actions state | Public interpretation |
+|---|---|---|---|
+| [`Traky12/Traky12`](https://github.com/Traky12/Traky12) | PR #18: `OPEN · MERGEABLE · REVIEW_REQUIRED` | `Validate evidence dossiers: PASS` | Profile surface green in scope; human review and `sync` protection remain |
+| [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) | PR #26 and #27: `OPEN · MERGEABLE · REVIEW_REQUIRED` | Status rollup `NOT_VERIFIED` in this session | Control-plane changes require human/Code Owner review; no remote conformance claim |
+| [`castuo-evidence`](https://github.com/Traky12/castuo-evidence) | PR #1 and #2: `MERGED` | Historical S-001A validation passed on the merged evidence work | Local/public evidence exists; foreign replay and independent review remain pending |
+| [`Cast-o`](https://github.com/Traky12/Cast-o) | Open PRs reported `BEHIND · REVIEW_REQUIRED` | Mixed: successful summary run plus `ACTION_REQUIRED` hardening run | Not green as a repository portfolio; review and failed/action-required paths remain |
+| [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Five open PRs reported `BLOCKED · REVIEW_REQUIRED` | `CASTÚO architecture surface check: SUCCESS` | Workflow surface passes, but PR governance blocks integration |
+| [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Five open PRs reported `BLOCKED · REVIEW_REQUIRED` | Architecture check and `CI Validation: SUCCESS` | Tests pass on observed runs; human review and field evidence remain |
+| [`desktop-tutorial`](https://github.com/Traky12/desktop-tutorial) | Five open PRs reported `BLOCKED · REVIEW_REQUIRED` | Latest observed conformance runs: `FAILURE` | Red state; repair required before any conformance claim |
+
+**Snapshot boundary:** this table does not claim that every repository is green, that all checks are required contexts, or that GitHub Advanced Security has no alerts. It must be refreshed before a promotion decision.
 
 ## Evidence and promotion gates
 
