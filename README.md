@@ -14,6 +14,10 @@ CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rura
 
 AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture. They are not separate products or claims of current production operation.
 
+> **Positioning:** CASTÚO-SYSTEM provides evidence-ready continuity for disconnected field operations.
+>
+> This positioning is a bounded hypothesis: offline continuity, evidence fabric, assurance/recovery, fail-closed gates and human review are documented in the public envelope, while remote evidence, production, commercial validation and market superiority remain unclaimed.
+
 ## Current position
 
 **GREEN-STAGING · EVIDENCE-SCOPED — PROFILE SURFACE**
@@ -186,6 +190,7 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 - [Complete task status — 2026-08-19](docs/CASTUO_COMPLETE_TASKS_STATUS_2026-08-19.md)
 - [Full GitHub modification record](docs/CASTUO_FULL_GITHUB_MODIFICATION.md)
 - [Competitive digital analysis — SimilarWeb scope and public capability matrix](docs/CASTUO_SIMILARWEB_COMPETITIVE_ANALYSIS_2026-08-19.md)
+- [Competitive positioning review — coverage, maturity and approved claims](docs/CASTUO_COMPETITIVE_POSITIONING_REVIEW.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
