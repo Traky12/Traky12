@@ -14,8 +14,6 @@ CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rura
 
 AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture. They are not separate products or claims of current production operation.
 
-## Current ecosystem state
-
 <!-- CASTUO:STATE:START -->
 ## Current ecosystem state
 
@@ -39,6 +37,19 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 
 The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 <!-- CASTUO:STATE:END -->
+
+## GitHub integration status
+
+| Surface | Current state | Public location |
+|---|---|---|
+| `castuo-evidence` PR #1 | `MERGED` | S-001A pipeline, stress, envelope and fail-closed gate |
+| `castuo-evidence` PR #2 | `MERGED` | Real S-001A hashes and foreign replay protocol |
+| `castuo-evolution` PR #26 | `OPEN · REVIEW_REQUIRED` | EvOS v13.0 baseline and E3-001 protocol |
+| `castuo-evolution` PR #27 | `OPEN · REVIEW_REQUIRED` | Capabilities, profiles, promotion gates and proof ladder |
+| `Traky12/Traky12` PR #18 | `OPEN · REVIEW_REQUIRED` | This evidence-scoped profile update |
+| `castuo-evolution` issue #9 | `OPEN` | Independent E3-001 review |
+
+The protected PRs require human approval, Code Owner review, approval of the latest push and resolved conversations. No administrative bypass is used. A merged PR or a successful local check does not change `1R`, `1V`, `1A` or the production claim boundary.
 
 ## Customer wedge
 
@@ -93,6 +104,18 @@ Claim → Evidence → Execution → Hash → Reproduction
 
 The control plane governs the state. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
 
+The current public S-001A package is available in [`castuo-evidence`](https://github.com/Traky12/castuo-evidence): [`EVID-EVT-0002.json`](https://github.com/Traky12/castuo-evidence/blob/master/evidence/local/EVID-EVT-0002.json) contains real fixture, input, output and evidence hashes; [`S001A_FOREIGN_REPLAY_PROTOCOL.md`](https://github.com/Traky12/castuo-evidence/blob/master/docs/S001A_FOREIGN_REPLAY_PROTOCOL.md) defines the clean-clone replay required to move `1R` from `NO` to `YES`. The package remains local-scoped and fail-closed.
+
+## Proof ladder
+
+```text
+S-001A local → public freeze → remote conformance → foreign replay
+→ independent E3 → staging vertical slice → field result
+→ paid pilot → repeatability → operational promotion
+```
+
+Only the local S-001A proof is currently closed. The control-plane proof ladder, KPI `CONTINUITY-001` and bounded vertical-slice definition are published in [PR #27](https://github.com/Traky12/castuo-evolution/pull/27) and remain subject to human review before merge.
+
 ## Repository map
 
 | Repository | Public role | Boundary |
@@ -127,9 +150,11 @@ The control plane governs the state. Repositories implement declared roles. Evid
 
 ## Public evidence and links
 
-- [Production promotion gate checklist](https://github.com/Traky12/castuo-evolution/blob/main/docs/PRODUCTION_PROMOTION_GATE_CHECKLIST.md)
-- [Promotion readiness assessment](https://github.com/Traky12/castuo-evolution/blob/main/evidence/promotion-readiness-2026-08-19.md)
-- [CASTÚO Proof Ladder](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO_PROOF_LADDER.md)
+- [Production promotion gate checklist — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/docs/PRODUCTION_PROMOTION_GATE_CHECKLIST.md)
+- [Promotion readiness assessment — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/evidence/promotion-readiness-2026-08-19.md)
+- [CASTÚO Proof Ladder — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/docs/CASTUO_PROOF_LADDER.md)
+- [E3-001 foreign replay issue](https://github.com/Traky12/castuo-evolution/issues/9)
+- [PR #26 security and E3 baseline](https://github.com/Traky12/castuo-evolution/pull/26)
 - [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
