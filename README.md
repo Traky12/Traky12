@@ -129,6 +129,7 @@ The control plane governs the state. Repositories implement declared roles. Evid
 
 - [Production promotion gate checklist](https://github.com/Traky12/castuo-evolution/blob/main/docs/PRODUCTION_PROMOTION_GATE_CHECKLIST.md)
 - [Promotion readiness assessment](https://github.com/Traky12/castuo-evolution/blob/main/evidence/promotion-readiness-2026-08-19.md)
+- [CASTÚO Proof Ladder](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO_PROOF_LADDER.md)
 - [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
