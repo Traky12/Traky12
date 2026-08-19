@@ -1,0 +1,12 @@
+# CODEOWNERS — CASTÚO-SYSTEM public profile
+# The repository owner is the initial accountable reviewer. Add a team
+# or independent reviewer here when the project establishes one.
+
+* @Traky12
+
+# Evidence and governance surfaces require explicit owner review.
+/evidence-center/ @Traky12
+/docs/ @Traky12
+/.github/ @Traky12
+/README.md @Traky12
+/README.es.md @Traky12
