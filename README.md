@@ -51,7 +51,7 @@ Problem → Workflow → Capability → Implementation → Test → Evidence
 → Review → Pilot → Payment → Operation → Repeatability → Federation
 ```
 
-The profile describes the direction and links to evidence. The control plane decides state; repositories implement declared roles; Evidence Packs demonstrate bounded results.
+The profile describes the direction and links to evidence. The control plane decides state; repositories implement declared roles; Evidence Packs demonstrate bounded results. The next execution campaign is governed by the [30-day evidence and commercial execution plan](docs/CASTUO_30_DAY_EXECUTION_PLAN.md), with dedicated [security baseline](docs/CASTUO_SECURITY_BASELINE_V1.md) and [S-001 vertical slice](docs/S001_VERTICAL_SLICE_PROTOCOL.md) protocols.
 
 ## Public capability envelope
 
@@ -137,6 +137,10 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 - [Production promotion gate checklist — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/docs/PRODUCTION_PROMOTION_GATE_CHECKLIST.md)
 - [Promotion readiness assessment — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/evidence/promotion-readiness-2026-08-19.md)
 - [CASTÚO Proof Ladder — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/docs/CASTUO_PROOF_LADDER.md)
+- [30-day evidence and commercial execution plan](docs/CASTUO_30_DAY_EXECUTION_PLAN.md)
+- [CASTÚO Security Baseline v1](docs/CASTUO_SECURITY_BASELINE_V1.md)
+- [S-001 vertical slice protocol](docs/S001_VERTICAL_SLICE_PROTOCOL.md)
+- [Consolidated dialogue record](docs/CASTUO_DIALOGUE_CONSOLIDATED_RECORD.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
