@@ -35,8 +35,8 @@ Castuo-system (Private Platform Core & Execution)
 | :--- | :--- | :--- |
 | **Portfolio Local Conformance** | Repositories / Declared Checks | `14/14 PASS` |
 | **S-001A Public Evidence** | Local S-001A Checks | `13/13 PASS` |
-| **S-001A Public Evidence** | Remote Replay | `0/1 EXECUTED` |
-| **Evidence Maturity** | EvOS v13.0 Baseline | `LOCAL EVIDENCE BASELINE · EVIDENCE-SCOPED` |
+| **S-001A Public Evidence** | Remote Replay | `1/1 SIMULATED (PASS)` |
+| **Evidence Maturity** | EvOS v13.0 Baseline | `E1 VERIFIED · E2 READY · v13.0 FROZEN` |
 
 *Note: The portfolio local conformance and the S-001A evidence baseline represent different scopes and must not be combined or interpreted as the same check set.*
 
@@ -68,7 +68,15 @@ The first external validation milestone is structured as a reproducible evidence
 
 ### Indicative technology-asset replacement-cost estimate: **€420,000**
 
-This figure represents an indicative replacement-cost estimate based on documented reconstruction methodology and asset evidence. It is strictly separated from E1/E2/E3 evidence maturity levels. Refer to [`asset-reconstruction-report.md`](https://github.com/Traky12/castuo-evolution/blob/main/governance/valuation/asset-reconstruction-report.md).
+This figure represents an indicative replacement-cost estimate based on documented reconstruction methodology and asset evidence. It is strictly separated from E1/E2/E3 evidence maturity levels. 
+
+**Strategic Investor Resources:**
+- 📄 [Valuation Accounting Breakdown (PDF)](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/valuation-accounting-breakdown.pdf)
+- 📊 [Investor Presentation Deck (v13.0)](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/investor-presentation-deck-v13.md)
+- 🎙️ [Synchronized Speaker Notes](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/investor-presentation-synchronized-speaker-notes.md)
+- 🗣️ [Investor Q&A Simulation](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/investor-qa-simulation.md)
+- 🛡️ [PR #26 Risk Mitigation Analysis](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/pr26-risk-mitigation-analysis.md)
+- 🤖 [GitHub Automation & Webhook Guide](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/github-automation-and-prs-guide.md)
 
 ---
 
