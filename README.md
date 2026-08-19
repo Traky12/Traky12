@@ -78,6 +78,7 @@ This profile is a public read-model. `castuo-evolution` remains the canonical go
 - [Operating Boundary](docs/governance/CASTUO_OPERATING_BOUNDARY.md)
 - [Evidence Center index](docs/evidence/CASTUO_EVIDENCE_CENTER_INDEX.md)
 - [Public Claim Boundary](PUBLIC_CLAIM_BOUNDARY.md)
+- [Ecosystem integration status — 2026-08-19](docs/CASTUO_ECOSYSTEM_INTEGRATION_STATUS_2026-08-19.md)
 - [Repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Recent verified changes](docs/governance/CASTUO_RECENT_VERIFIED_CHANGES_2026-08-17.md)
 - [Promotion gates](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/STAGING_PROMOTION_CHECKLIST_14_REPOSITORIES.md)
