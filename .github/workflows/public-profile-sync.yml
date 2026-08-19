@@ -8,7 +8,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   sync:
@@ -28,14 +28,14 @@ jobs:
             --readme README.md
       - name: Check generated diff
         run: git diff --check
-      - name: Commit generated state
+      - name: Enforce bounded generated state
+        shell: bash
         run: |
-          if git diff --quiet -- README.md; then
-            echo 'No public state change.'
-          else
-            git config user.name 'castuo-control-plane[bot]'
-            git config user.email 'castuo-control-plane[bot]@users.noreply.github.com'
-            git add README.md
-            git commit -m 'docs: sync public state from control plane'
-            git push
+          set -euo pipefail
+          if ! git diff --quiet -- README.md; then
+            echo 'Generated public state differs from the committed README.'
+            echo 'Open a reviewed PR to apply the generated change; this workflow never writes or pushes.'
+            git diff -- README.md
+            exit 1
           fi
+          echo 'Public state is synchronized with the canonical control plane.'

@@ -16,15 +16,19 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 
 ## Current position
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+**GREEN-STAGING · EVIDENCE-SCOPED — PROFILE SURFACE**
+
+**System promotion:** `BLOCKED · EXTERNAL EVIDENCE REQUIRED`
+
+The profile surface, governed documentation and read-only validation workflows are green in staging scope. This status does not upgrade the full CASTÚO system to production or close remote conformance, security, E3, field or commercial gates.
 
 | Dimension | Public status |
 |---|---|
 | Local conformance | `14/14 PASS LOCAL` |
 | Remote conformance | `0/14 · PENDING` |
-| Environment | `STAGING` |
-| Security baseline | `PENDING` |
-| Staging execution | `PENDING` |
+| Environment | `STAGING · GREEN FOR PROFILE SURFACE` |
+| Security baseline | `PENDING · profile checks pass; full baseline not closed` |
+| Staging execution | `GREEN · profile/documentation scope` |
 | Human review | `PENDING` |
 | Independent E3 | `PENDING` |
 | Production | `NOT_CLAIMED` |
@@ -142,6 +146,7 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 - [S-001 vertical slice protocol](docs/S001_VERTICAL_SLICE_PROTOCOL.md)
 - [Consolidated dialogue record](docs/CASTUO_DIALOGUE_CONSOLIDATED_RECORD.md)
 - [Public GitHub showcase plan](docs/CASTUO_PUBLIC_SHOWCASE_PLAN.md)
+- [GREEN-STAGING risk register](docs/CASTUO_STAGING_RISK_REGISTER.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
