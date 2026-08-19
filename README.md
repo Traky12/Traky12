@@ -139,6 +139,7 @@ The current system-wide audit is bounded to the 2026-08-19 snapshot and remains 
 - [Control register](https://github.com/Traky12/Castuo-system/blob/main/governance/control-register.yaml)
 - [Evidence index](https://github.com/Traky12/Castuo-system/blob/main/governance/evidence-index.yaml)
 - [Release gates](https://github.com/Traky12/Castuo-system/blob/main/docs/RELEASE-GATES.md)
+- [Ecosystem repair registry](https://github.com/Traky12/Castuo-system/blob/main/governance/ecosystem-repair-registry.yaml)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
 - [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
