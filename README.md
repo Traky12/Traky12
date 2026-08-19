@@ -134,9 +134,9 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 
 - [S-001A evidence record with real hashes](https://github.com/Traky12/castuo-evidence/blob/master/evidence/local/EVID-EVT-0002.json)
 - [S-001A foreign replay protocol](https://github.com/Traky12/castuo-evidence/blob/master/docs/S001A_FOREIGN_REPLAY_PROTOCOL.md)
-- [Production promotion gate checklist — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/docs/PRODUCTION_PROMOTION_GATE_CHECKLIST.md)
-- [Promotion readiness assessment — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/evidence/promotion-readiness-2026-08-19.md)
-- [CASTÚO Proof Ladder — PR #27](https://github.com/Traky12/castuo-evolution/blob/chore/align-capability-and-profile-registers/docs/CASTUO_PROOF_LADDER.md)
+- [Production promotion gate checklist — PR #27](https://github.com/Traky12/castuo-evolution/pull/27/files#diff-checklist)
+- [Promotion readiness assessment — PR #27](https://github.com/Traky12/castuo-evolution/pull/27/files#diff-readiness)
+- [CASTÚO Proof Ladder — PR #27](https://github.com/Traky12/castuo-evolution/pull/27/files#diff-proof-ladder)
 - [30-day evidence and commercial execution plan](docs/CASTUO_30_DAY_EXECUTION_PLAN.md)
 - [CASTÚO Security Baseline v1](docs/CASTUO_SECURITY_BASELINE_V1.md)
 - [S-001 vertical slice protocol](docs/S001_VERTICAL_SLICE_PROTOCOL.md)
