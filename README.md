@@ -51,7 +51,7 @@ Problem → Workflow → Capability → Implementation → Test → Evidence
 → Review → Pilot → Payment → Operation → Repeatability → Federation
 ```
 
-The profile describes the direction and links to evidence. The control plane decides state; repositories implement declared roles; Evidence Packs demonstrate bounded results. The next execution campaign is governed by the [30-day evidence and commercial execution plan](docs/CASTUO_30_DAY_EXECUTION_PLAN.md), with dedicated [security baseline](docs/CASTUO_SECURITY_BASELINE_V1.md) and [S-001 vertical slice](docs/S001_VERTICAL_SLICE_PROTOCOL.md) protocols.
+The profile describes the direction and links to evidence. The control plane decides state; repositories implement declared roles; Evidence Packs demonstrate bounded results. The public journey is organized by the [GitHub showcase plan](docs/CASTUO_PUBLIC_SHOWCASE_PLAN.md), while execution is governed by the [30-day evidence and commercial execution plan](docs/CASTUO_30_DAY_EXECUTION_PLAN.md), with dedicated [security baseline](docs/CASTUO_SECURITY_BASELINE_V1.md) and [S-001 vertical slice](docs/S001_VERTICAL_SLICE_PROTOCOL.md) protocols.
 
 ## Public capability envelope
 
@@ -141,6 +141,7 @@ Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION B
 - [CASTÚO Security Baseline v1](docs/CASTUO_SECURITY_BASELINE_V1.md)
 - [S-001 vertical slice protocol](docs/S001_VERTICAL_SLICE_PROTOCOL.md)
 - [Consolidated dialogue record](docs/CASTUO_DIALOGUE_CONSOLIDATED_RECORD.md)
+- [Public GitHub showcase plan](docs/CASTUO_PUBLIC_SHOWCASE_PLAN.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
