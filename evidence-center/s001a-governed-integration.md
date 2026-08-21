@@ -11,6 +11,10 @@ This page records the public integration boundary for the S-001A vertical slice 
 | Operational guide | [S001A review gate](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/docs/S001A_REVIEW_GATE.md) | Published on integration branch |
 | Staging workflow | [RLS-001 workflow](https://github.com/Traky12/Castuo-system/blob/docs/governed-evidence-boundary-2026-08/.github/workflows/rls-001-integration.yml) | Implemented; environment setup pending |
 
+## Capability index
+
+The detailed public capability matrix lives in [`castuo-evolution/docs/CASTUO_CAPABILITY_MATRIX.md`](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO_CAPABILITY_MATRIX.md). It is the shared navigation layer for governance, RLS-001, foreign replay, review, adapter validation and promotion authority. It is not a maturity or production certification.
+
 ## Evidence boundary
 
 The control plane contains an offline replay candidate runner, a hash-checked review gate, multiple-reviewer quorum support and an explicit Evidence Envelope v2 adapter. These mechanisms are locally tested within declared scope. They do not constitute foreign validation, independent review, production readiness, certification, customer adoption or commercial traction.
