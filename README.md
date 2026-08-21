@@ -78,6 +78,19 @@ Claim → Evidence → Execution → Hash → Reproduction
 
 The control plane governs the state. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
 
+## Governed evolution and evidence
+
+CASTÚO-EVOLUTION is moving from documented policy toward a reproducible chain of **policy → schema → validator → test matrix → evidence → promotion predicate**. The current implementation validates temporal authority, bounded artifact references, SHA-256 integrity, Ed25519 signatures and fail-closed promotion preconditions. These mechanisms demonstrate stronger governance of the decision process; they do not prove foreign replay, independent assurance, production operation or commercial traction.
+
+| Surface | Canonical role | Public boundary |
+|---|---|---|
+| [CASTÚO Evidence](https://github.com/Traky12/castuo-evidence) | Replayable S-001A fixtures, envelopes, hashes and validators | Evidence-scoped; production and field validation not claimed |
+| [Cast-o](https://github.com/Traky12/Cast-o) | Testing, failure injection and bounded-claim challenge | Assurance tooling; independent assurance pending |
+| [CASTÚO-SYSTEM core](https://github.com/Traky12/Castuo-system) | Core platform implementation | Private repository; implementation remains evidence-scoped |
+| [CASTÚO-EVOLUTION](https://github.com/Traky12/castuo-evolution) | Governance control plane and promotion state | Private repository; promotion remains fail-closed |
+
+**Current promotion boundary:** `oneD=true`, `oneR=false`, `oneV=false`, `oneA=false`, `promotion=BLOCKED`. The profile does not infer authorization from a green workflow, commit, badge or repository activity.
+
 ## Repository map
 
 | Repository | Public role | Boundary |
