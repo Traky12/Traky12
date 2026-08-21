@@ -111,6 +111,21 @@ Treat federation and commercial validation as independent tracks. Verify export/
 | Dependency Exit Record | Whether a critical dependency can be replaced | Provider A/B equivalence and continued operation |
 | Change Envelope | How a cross-repository change is traced | System-Change ID, commits, contracts, tests and evidence |
 
+## Operational artifacts
+
+The strategy is executable through versioned control-plane artifacts:
+
+| Artifact | Purpose |
+|---|---|
+| [`contract-registry.yaml`](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/data/architecture/contract-registry.yaml) | Critical producers, consumers, schema versions, owners, failure modes and next gates |
+| [`effectiveness-scorecard.yaml`](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/data/architecture/effectiveness-scorecard.yaml) | Denominator-safe effectiveness metrics and missing-data decisions |
+| [`resilience-scenarios.yaml`](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/data/architecture/resilience-scenarios.yaml) | Fault, decision, recovery, replay and promotion impact |
+| [`dependency-exit-matrix.yaml`](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/data/architecture/dependency-exit-matrix.yaml) | D0–D5 criticality, canonical contracts, substitution and continued operation |
+| [`system-change-envelope.yaml`](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/templates/system-change-envelope.yaml) | Requirement-to-promotion lineage with evidence, authority and rollback |
+| [`validate_architecture_strategy.py`](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/scripts/validate_architecture_strategy.py) | Fail-closed package validator |
+
+The package currently validates locally as `EVIDENCE_SCOPED`; it does not authorize production or establish independent verification.
+
 ## Operational scorecard
 
 The dashboard should report dimensions rather than one opaque score:
