@@ -127,3 +127,25 @@ This profile does not claim production operation, autonomous authority, federati
 The official PIE PLUS workbook remains authoritative for financial figures. Technical assets, architecture, code, planning scenarios and repository activity are not cash, market value, accounting value, income, funding, contract or customer result.
 
 > The objective is not to make CASTÚO look certain. It is to make its evidence inspectable, its use understandable and its evolution safe.
+
+
+## PIE PLUS v5.6 — documented project progress
+
+**Snapshot: 21 August 2026.** This section records the progress used to improve the PIE PLUS business plan and the official financial workbook. It is a documentation boundary, not a claim of commercial deployment.
+
+### What is documented
+
+- The project is being structured as a phased rural-innovation plan: a bounded first phase for SaaS, offline/edge continuity, evidence workflows, pilot validation and field support; later physical CAPEX remains gated by technical, commercial, financial and permitting evidence.
+- Public repositories associated with the CASTÚO-SYSTEM™ ecosystem include [Cast-o](https://github.com/Traky12/Cast-o), [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge), [castuo-offline-field-operations](https://github.com/Traky12/castuo-offline-field-operations), [castuo-e3-001](https://github.com/Traky12/castuo-e3-001) and the private laboratory repository [ctaex-iot-pilot](https://github.com/Traky12/ctaex-iot-pilot). Repository descriptions, branches and commits are public technical evidence of development activity; they are not customer, revenue, certification or independent-validation evidence.
+- The public development direction covers assurance and adversarial benchmarking, offline-first field operations, local buffering and synchronization, evidence-governed workflows, CI/CD and bounded promotion states.
+- The PIE PLUS financial plan uses a documented planning basis of €39,500 Year-1 revenue excluding VAT, 27.1% direct costs, 72.9% gross margin and staged personnel. These are **plan assumptions and model outputs**, not historical revenue or cash receipts.
+- The central Phase-1 financing envelope is €180,000, with €165,000 prudent and €195,000 ceiling scenarios. Financing is pending and is not treated as cash until formalized and disbursed.
+- The territorial LOI and land availability remain a negotiation process with the Municipality of Membrío and the Sierra de San Pedro Mancomunidad. No signed land-transfer agreement is claimed here.
+
+### Evidence boundary
+
+The profile does not claim paid pilots, 25 customers, recurring revenue, grants awarded, financing disbursed, signed LOIs, signed land agreements, certification, production operation, independent validation or physical CAPEX execution unless a dated, scope-bound artifact is linked. The official PIE PLUS workbook is authoritative for financial figures; repository activity is not an accounting asset, cash, income, funding, contract or customer result.
+
+### Next evidence gates
+
+The next promotion steps are: dated pilot or LOI evidence; a formalized institutional status for the land negotiation; financing or credit-line documentation; reproducible field-test evidence; independent review; and explicit technical, commercial, financial and permitting gates before any physical expansion.
