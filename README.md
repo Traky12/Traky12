@@ -19,14 +19,14 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 <!-- CASTUO:STATE:START -->
 ## Current ecosystem state
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+**PROMOTION-BLOCKED · EVIDENCE-SCOPED**
 
 | Dimension | Current public status |
 |---|---|
 | Local conformance | `14/14 PASS LOCAL` |
 | Remote conformance | `0/14` — `PENDING` |
 | Remote publication | `14 PENDING` |
-| Environment | `STAGING` |
+| Environment | `STAGING-CANDIDATE` |
 | Security baseline | `PENDING` |
 | Staging execution | `PENDING` |
 | Human review | `PENDING` |
@@ -39,6 +39,22 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 
 The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 <!-- CASTUO:STATE:END -->
+
+## S-001A governed integration
+
+The S-001A vertical slice is integrated across the public profile, the governance control plane and the core system through open pull requests. The control-plane integration is tracked in [castuo-evolution PR #31](https://github.com/Traky12/castuo-evolution/pull/31) at commit `a9ef3d4`; the core-system evidence boundary and RLS-001 workflow are tracked in [Castuo-system PR #363](https://github.com/Traky12/Castuo-system/pull/363) at commit `ecd81be`.
+
+| Control | Public state |
+|---|---|
+| Offline foreign-replay candidate runner | Implemented and locally tested within declared scope |
+| S-001A review gate and hash checks | Implemented; fail-closed |
+| Evidence Envelope v2 adapter | Implemented and schema-validated locally |
+| Real staging environment | `PENDING` — `staging-rls` requires administrative setup |
+| Independent E3-001 reproduction | `PENDING` |
+| Independent human review | `PENDING` |
+| Production or commercial promotion | `NOT_CLAIMED` |
+
+The public operating guide is [S001A_REVIEW_GATE.md](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/docs/S001A_REVIEW_GATE.md). A green local test or candidate replay does not establish foreign validation, independent review, production readiness, certification, customer adoption or commercial traction. The current assurance state remains `oneD=true`, `oneR=false`, `oneV=false`, `oneA=false`, `promotion=BLOCKED`.
 
 ## Customer wedge
 
@@ -95,6 +111,17 @@ The control plane governs the state. Repositories implement declared roles. Evid
 | `n8n` | Upstream / fork | Governed workflow integration; upstream capability ≠ CASTÚO proprietary capability |
 | `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
 | `desktop-tutorial` | Training / support | Repeatable contribution and governance training |
+
+## Architecture optimization and effectiveness
+
+The next evolution is governed by evidence yield rather than repository volume. CASTÚO is prioritising a small set of verifiable vertical slices: executable contracts, offline continuity, external replay, signed review, protected staging, provider exit and portable evidence.
+
+- [Architecture Optimization Strategy 2026](docs/CASTUO_ARCHITECTURE_OPTIMIZATION_STRATEGY_2026.md)
+- [Public E3-001 external verification protocol](https://github.com/Traky12/castuo-e3-001)
+- [Control-plane effectiveness roadmap](https://github.com/Traky12/castuo-evolution/blob/main/docs/ARCHITECTURE_EFFECTIVENESS_ROADMAP_2026.md)
+- [Live Field Signal Ledger](https://castuodash-pgzxukib.manus.space/)
+
+The strategy separates capability, implementation, evidence, maturity, authority, claim and promotion. Current external verification, field, commercial and production gates remain pending until their own evidence is independently inspectable.
 
 ## Current Gates
 
