@@ -19,14 +19,14 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 <!-- CASTUO:STATE:START -->
 ## Current ecosystem state
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+**PROMOTION-BLOCKED · EVIDENCE-SCOPED**
 
 | Dimension | Current public status |
 |---|---|
 | Local conformance | `14/14 PASS LOCAL` |
 | Remote conformance | `0/14` — `PENDING` |
 | Remote publication | `14 PENDING` |
-| Environment | `STAGING` |
+| Environment | `STAGING-CANDIDATE` |
 | Security baseline | `PENDING` |
 | Staging execution | `PENDING` |
 | Human review | `PENDING` |
