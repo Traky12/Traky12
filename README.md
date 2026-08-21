@@ -40,6 +40,22 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 <!-- CASTUO:STATE:END -->
 
+## S-001A governed integration
+
+The S-001A vertical slice is integrated across the public profile, the governance control plane and the core system through open pull requests. The control-plane integration is tracked in [castuo-evolution PR #31](https://github.com/Traky12/castuo-evolution/pull/31) at commit `a9ef3d4`; the core-system evidence boundary and RLS-001 workflow are tracked in [Castuo-system PR #363](https://github.com/Traky12/Castuo-system/pull/363) at commit `ecd81be`.
+
+| Control | Public state |
+|---|---|
+| Offline foreign-replay candidate runner | Implemented and locally tested within declared scope |
+| S-001A review gate and hash checks | Implemented; fail-closed |
+| Evidence Envelope v2 adapter | Implemented and schema-validated locally |
+| Real staging environment | `PENDING` — `staging-rls` requires administrative setup |
+| Independent E3-001 reproduction | `PENDING` |
+| Independent human review | `PENDING` |
+| Production or commercial promotion | `NOT_CLAIMED` |
+
+The public operating guide is [S001A_REVIEW_GATE.md](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/docs/S001A_REVIEW_GATE.md). A green local test or candidate replay does not establish foreign validation, independent review, production readiness, certification, customer adoption or commercial traction. The current assurance state remains `oneD=true`, `oneR=false`, `oneV=false`, `oneA=false`, `promotion=BLOCKED`.
+
 ## Customer wedge
 
 ```text
