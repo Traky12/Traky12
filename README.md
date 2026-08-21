@@ -112,6 +112,17 @@ The control plane governs the state. Repositories implement declared roles. Evid
 | `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
 | `desktop-tutorial` | Training / support | Repeatable contribution and governance training |
 
+## Architecture optimization and effectiveness
+
+The next evolution is governed by evidence yield rather than repository volume. CASTÚO is prioritising a small set of verifiable vertical slices: executable contracts, offline continuity, external replay, signed review, protected staging, provider exit and portable evidence.
+
+- [Architecture Optimization Strategy 2026](docs/CASTUO_ARCHITECTURE_OPTIMIZATION_STRATEGY_2026.md)
+- [Public E3-001 external verification protocol](https://github.com/Traky12/castuo-e3-001)
+- [Control-plane effectiveness roadmap](https://github.com/Traky12/castuo-evolution/blob/main/docs/ARCHITECTURE_EFFECTIVENESS_ROADMAP_2026.md)
+- [Live Field Signal Ledger](https://castuodash-pgzxukib.manus.space/)
+
+The strategy separates capability, implementation, evidence, maturity, authority, claim and promotion. Current external verification, field, commercial and production gates remain pending until their own evidence is independently inspectable.
+
 ## Current Gates
 
 | Gate | Status | Evidence needed next |

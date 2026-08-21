@@ -54,6 +54,19 @@ La arquitectura de SaaS, Edge/IoT, IA gobernada, federación, soberanía, gemelo
 
 No se afirma interoperabilidad universal, recuperación garantizada, operación productiva, superioridad general, alianza externa, ingresos, clientes o certificación sin evidencia específica.
 
+## Estrategia de optimización y efectividad
+
+La siguiente evolución se gobierna por rendimiento de evidencia, no por volumen de repositorios. CASTÚO prioriza cortes verticales verificables: contratos ejecutables, continuidad offline, replay externo, revisión firmada, staging protegido, salida de proveedores y evidencia portable.
+
+- [Estrategia de optimización arquitectónica 2026](docs/CASTUO_ARCHITECTURE_OPTIMIZATION_STRATEGY_2026.md)
+- [Protocolo público E3-001](https://github.com/Traky12/castuo-e3-001)
+- [Roadmap de efectividad del control plane](https://github.com/Traky12/castuo-evolution/blob/main/docs/ARCHITECTURE_EFFECTIVENESS_ROADMAP_2026.md)
+- [CASTÚO Field Signal Ledger](https://castuodash-pgzxukib.manus.space/)
+
+Las métricas internas son `Evidence Yield`, `Promotion Debt Burn`, `Replay Coverage`, `Recovery Closure`, `Contract Conformance`, `Dependency Exit Coverage` y `Claim Traceability`. Cada métrica exige denominador, ventana temporal, commits, referencias de evidencia y exclusiones explícitas.
+
+La estrategia separa capacidad, implementación, evidencia, madurez, autoridad, claim y promoción. La verificación externa, el campo, lo comercial y la producción siguen pendientes de sus propias pruebas independientes.
+
 ## Próximos pasos
 
 ```text
