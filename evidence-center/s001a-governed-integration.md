@@ -55,3 +55,14 @@ claim_boundary: EXTERNAL_VERIFICATION_PENDING
 ```
 
 See the [external verifiability runbook](https://github.com/Traky12/castuo-evolution/blob/main/docs/EXTERNAL_VERIFIABILITY_RUNBOOK.md) for the operator procedure. No private keys, tokens or environment values are published here.
+
+
+The public E3-001 protocol is now available at [`Traky12/castuo-e3-001`](https://github.com/Traky12/castuo-e3-001). Its public availability is intentionally distinct from acceptance for independent replay:
+
+```text
+protocol repository: AVAILABLE
+package acceptance for E3: NOT ACCEPTED
+oneR: false
+oneV: false
+promotion: BLOCKED
+```
