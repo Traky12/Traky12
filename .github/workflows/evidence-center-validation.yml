@@ -8,9 +8,6 @@ on:
       - '.github/workflows/evidence-center-validation.yml'
   pull_request:
     branches: [main]
-    paths:
-      - 'evidence-center/**'
-      - '.github/workflows/evidence-center-validation.yml'
 
 permissions:
   contents: read
