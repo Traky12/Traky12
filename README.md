@@ -19,7 +19,7 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 <!-- CASTUO:STATE:START -->
 ## Current ecosystem state
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+**PROMOTION-BLOCKED · EVIDENCE-SCOPED**
 
 | Dimension | Current public status |
 |---|---|
@@ -32,12 +32,14 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 | Human review | `PENDING` |
 | Production | `NOT_CLAIMED` |
 | Commercial validation | `NOT_CLAIMED` |
-| Independent E3 | `PENDING` |
+| Independent E3 | `PENDING` — package available, not accepted for E3 |
+| G2 | `BLOCKED` — external replay and signed human review pending |
+| Promotion | `BLOCKED` — `oneR=false`, `oneV=false`, `oneA=false` |
 | Federation | `PENDING` |
 
 **Evidence basis:** `castuo-evolution` · commit `70b7c57` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
 
-The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
+The public profile is a projection of the canonical control plane. Current blocker: `runner_external_bundle_signed_review_rls_staging_authority_pending`. The public dashboard is a read-only surface; it does not authorize promotion. Local evidence does not imply external verification, remote publication, production, certification, customer result, continuous operation or federation.
 <!-- CASTUO:STATE:END -->
 
 ## Customer wedge
@@ -83,7 +85,9 @@ The control plane governs the state. Repositories implement declared roles. Evid
 | Repository | Public role | Boundary |
 |---|---|---|
 | `castuo-evolution` | Governance control plane | SSOT for vocabulary, Gates, evidence and promotion state |
-| `Castuo-system` | Core platform | Implementation and bounded execution; production not claimed |
+| [`Castuo-system`](https://github.com/Traky12/Castuo-system) | Core platform | Implementation and bounded execution; production not claimed |
+| [`castuo-e3-001`](https://github.com/Traky12/castuo-e3-001) | External verification protocol | Public protocol and schemas; package acceptance requires an external runner |
+| [`CASTÚO Live Status Dashboard`](https://castuodash-pgzxukib.manus.space/) | Public status surface | Read-only projection; no authorization and no production claim |
 | `goldfish` | Assurance and recovery | Security, recovery and evidence preservation |
 | [`Cast-o`](https://github.com/Traky12/Cast-o) | CI and validation | Tests, provenance and release evidence |
 | [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge / IoT | Offline continuity and synchronization |
@@ -112,7 +116,17 @@ The control plane governs the state. Repositories implement declared roles. Evid
 
 ## Public evidence and links
 
+| Surface | Purpose | Current boundary |
+|---|---|---|
+| [CASTÚO Live Status Dashboard](https://castuodash-pgzxukib.manus.space/) | Live status, evidence ladder, E3-001 protocol and promotion timeline | Public read-only projection; snapshot may be rejected or absent |
+| [E3-001 External Verification Protocol](https://github.com/Traky12/castuo-e3-001) | Bundle schemas, preflight, signing and publication workflow | External replay only; no local candidate counts as independent verification |
+| [CASTÚO evolution control plane](https://github.com/Traky12/castuo-evolution) | Canonical contracts, gates, readiness and promotion state | `PROMOTION-BLOCKED` until all predicates pass |
+| [CASTÚO evidence repository](https://github.com/Traky12/castuo-evidence) | Evidence artifacts and integration boundary | Fixtures are not production or external evidence |
+
 - [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- [Live status dashboard](https://castuodash-pgzxukib.manus.space/)
+- [E3-001 protocol](https://github.com/Traky12/castuo-e3-001)
+- [S-001A / G2 readiness dossier](https://github.com/Traky12/castuo-evolution/blob/integration/connection-analysis-2026-08/docs/connection-analysis/S001A_G2_READINESS_2026-08-22.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [Public repository list](https://github.com/Traky12?tab=repositories)
