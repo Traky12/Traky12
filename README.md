@@ -14,6 +14,12 @@ CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rura
 
 AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture. They are not separate products or claims of current production operation.
 
+## CASTÚO 5-minute proof
+
+The target product journey is a bounded offline-first operation: create an organisation, register an operation, disconnect the network, continue locally, reconnect, synchronise, review evidence, export a report and verify the resulting Evidence Pack. The journey becomes a public proof only when a dated execution envelope, artifact hash, verifier result and reviewer are available. Until then it is a target demo, not a production or customer claim.
+
+**Primary product surface:** [castuo-product-experience](https://github.com/Traky12/castuo-product-experience) · **Core platform:** [Castuo-system](https://github.com/Traky12/Castuo-system) · **Field runtime:** [castuo-offline-field-operations](https://github.com/Traky12/castuo-offline-field-operations)
+
 ## Current ecosystem state
 
 <!-- CASTUO:STATE:START -->
@@ -78,6 +84,8 @@ Claim → Evidence → Execution → Hash → Reproduction
 
 The control plane governs the state. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
 
+The profile distinguishes capability from proof. `FOREIGN VERIFICATION`, `VENDOR EXIT`, `OFFLINE OPERATION`, `PRODUCT DEMO`, `CUSTOMER`, `PAID` and `COMMUNITY` remain capabilities or targets until their own evidence contracts pass.
+
 ## Repository map
 
 | Repository | Public role | Boundary |
@@ -95,6 +103,10 @@ The control plane governs the state. Repositories implement declared roles. Evid
 | `n8n` | Upstream / fork | Governed workflow integration; upstream capability ≠ CASTÚO proprietary capability |
 | `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
 | `desktop-tutorial` | Training / support | Repeatable contribution and governance training |
+
+## Stop condition for new governance surfaces
+
+No new governance repository or repetitive integration layer should be created until `EUVP-001`, `E3-001`, `SRD-001`, the five-minute product proof and the first external-user gate are all `PASS`. New work must produce a distinct capability or evidence artifact; otherwise it belongs in an existing canonical repository.
 
 ## Current Gates
 
