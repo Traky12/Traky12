@@ -127,7 +127,7 @@ Only the local S-001A proof is currently closed. The next bounded KPI is `CONTIN
 
 Protected branches require human approval, Code Owner review, approval of the latest push and resolved conversations. No administrative bypass is used. A merged PR or successful local check does not change `1R`, `1V`, `1A` or the production claim boundary.
 
-## Live GitHub status — observed 2026-08-19
+## Live GitHub status — historical snapshot observed 2026-08-19
 
 The following table is a **point-in-time operational snapshot** obtained from GitHub CLI. `PASS` means the reported workflow concluded successfully; `REVIEW_REQUIRED`, `BLOCKED`, `BEHIND`, `PENDING` or `ACTION_REQUIRED` are not green promotion states. A restricted status-rollup response is recorded as `NOT_VERIFIED`, never as success.
 
@@ -166,6 +166,20 @@ A capability may be labelled `CURRENT` only within the scope of its declared evi
 | Operational promotion | `BLOCKED` | All preceding gates plus authorized human `GO` |
 
 Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION BLOCKED`**.
+
+## Ecosystem synchronization snapshot — observed 2026-08-22
+
+The second deep audit propagated a repository-local record to the CASTÚO surfaces through protected branches and pull requests. This is documentation and traceability synchronization; it is not a merge, certification or production proof.
+
+| Surface | Current observed state | Canonical reference |
+|---|---|---|
+| System integration | `OPEN · MERGEABLE · BLOCKED` | [Castuo-system PR #358](https://github.com/Traky12/Castuo-system/pull/358) |
+| Profile integration | `OPEN · MERGEABLE · BLOCKED · REVIEW_REQUIRED` | [Traky12 PR #18](https://github.com/Traky12/Traky12/pull/18) |
+| Clean-reported sync PRs | `OPEN · MERGEABLE · CLEAN` where reported | [Global sync matrix](https://github.com/Traky12/Castuo-system/blob/docs/evidence-scoped-system-integration-2026-08-19/docs/CASTUO_ECOSYSTEM_SYNC_MATRIX_2026-08-22.md) |
+| Blocked-reported sync PRs | `OPEN · MERGEABLE · BLOCKED` where reported | [Deep-audit record](docs/CASTUO_DEEP_AUDIT_2026-08-22.md) |
+| Check observability | Required contexts are not elevated when the integration cannot read their details | `NOT_VERIFIED` |
+
+The current repository-local deep-audit record is [CASTUO_DEEP_AUDIT_2026-08-22.md](docs/CASTUO_DEEP_AUDIT_2026-08-22.md). The complete cross-repository synchronization record is [CASTUO_ECOSYSTEM_SYNC_MATRIX_2026-08-22.md](https://github.com/Traky12/Castuo-system/blob/docs/evidence-scoped-system-integration-2026-08-19/docs/CASTUO_ECOSYSTEM_SYNC_MATRIX_2026-08-22.md). A `CLEAN` or `MERGEABLE` value is not equivalent to human approval, Code Owner approval, successful required checks, independent review or production readiness.
 
 ## Public evidence
 
