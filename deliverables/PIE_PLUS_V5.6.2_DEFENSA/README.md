@@ -18,7 +18,7 @@ Las fuentes externas tienen funciones diferentes: CTAEX/FOODLAB se utiliza como 
 
 ## Cifras de referencia del modelo oficial
 
-Ingresos Año 1: 39.500,00 € sin IVA. Costes directos: 10.704,50 €. Margen bruto: 72,9 %. Personal reconocido en P&L: 52.566,67 €. Resultado antes de impuestos: −62.600,57 €. Punto de equilibrio: 143.396,18 € antes de intereses y 152.447,01 € incluyendo intereses. El escenario de financiación central es 180.000 €, condicionado a captación y desembolso; la caja propia inicial y la financiación cobrada permanecen en 0 € hasta que exista evidencia documental.
+Ingresos Año 1: 39.500,00 € sin IVA. Costes directos: 10.696,00 €. Margen bruto: 72,9 %. Personal reconocido en P&L: 52.566,67 €. Resultado antes de impuestos: −62.592,07 €. Punto de equilibrio: 143.396,18 € antes de intereses y 152.447,01 € incluyendo intereses. El escenario de financiación central es 180.000 €, condicionado a captación y desembolso; la caja propia inicial y la financiación cobrada permanecen en 0 € hasta que exista evidencia documental.
 
 ## Presentación oral
 

@@ -18,7 +18,7 @@ El guion oral se mantiene deliberadamente entre 7 y 10 minutos y sigue una únic
 
 La defensa utiliza cuatro respuestas de control: tecnología —implementado, verificado o pendiente—; negocio —lo que G1 debe demostrar—; dinero —financiación condicionada y no caja disponible—; y riesgo —Gates y decisiones reversibles—.
 
-Las cifras citadas en el guion son las del modelo oficial: 39.500,00 € de ingresos Año 1, 10.704,50 € de costes directos, 72,9 % de margen bruto, −62.600,57 € de resultado antes de impuestos, 143.396,18 € de punto de equilibrio antes de intereses y 52.566,67 € de personal reconocido.
+Las cifras citadas en el guion son las del modelo oficial: 39.500,00 € de ingresos Año 1, 10.696,00 € de costes directos, 72,9 % de margen bruto, −62.592,07 € de resultado antes de impuestos, 143.396,18 € de punto de equilibrio antes de intereses y 52.566,67 € de personal reconocido.
 
 ## Límite de cumplimiento
 

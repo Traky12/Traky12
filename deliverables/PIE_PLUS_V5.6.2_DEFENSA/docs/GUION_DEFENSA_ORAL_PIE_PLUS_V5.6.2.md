@@ -32,7 +32,7 @@ Es importante distinguir escenario y realidad. La caja propia inicial es de cero
 
 ### Diapositiva 5 — Modelo financiero — 60 segundos
 
-El Excel oficial refleja 39.500 euros de ingresos del Año 1 sin IVA y 10.704,50 euros de costes directos, lo que produce un margen bruto del 72,9 %.
+El Excel oficial refleja 39.500 euros de ingresos del Año 1 sin IVA y 10.696,00 euros de costes directos, lo que produce un margen bruto del 72,9 %.
 
 El resultado antes de impuestos es negativo, de menos 62.600,57 euros. No lo ocultamos porque forma parte de la lectura correcta del proyecto. El Año 1 no está diseñado para maximizar beneficio; está diseñado para reducir incertidumbre. La pérdida inicial es el coste de validación de producto, usuarios, pilotos, evidencia y capacidad comercial.
 
