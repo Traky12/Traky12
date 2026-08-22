@@ -5,12 +5,16 @@ on:
     branches: [main]
     paths:
       - 'evidence-center/**'
-      - '.github/workflows/evidence-center-validation.yml'
+      - 'docs/**'
+      - 'README.md'
+      - '.github/workflows/**'
   pull_request:
     branches: [main]
     paths:
       - 'evidence-center/**'
-      - '.github/workflows/evidence-center-validation.yml'
+      - 'docs/**'
+      - 'README.md'
+      - '.github/workflows/**'
 
 permissions:
   contents: read
@@ -39,11 +43,20 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          files=$(git ls-files 'evidence-center/**' || true)
+          files=$(git ls-files 'evidence-center/**' 'docs/**' 'README.md' '.github/workflows/**' || true)
           if [ -n "$files" ] && grep -nE '(AKIA[0-9A-Z]{16}|-----BEGIN (RSA|EC|OPENSSH|PRIVATE) KEY-----|ghp_[A-Za-z0-9]{30,}|sk-[A-Za-z0-9]{30,})' $files; then
             echo 'High-risk secret pattern detected.'
             exit 1
           fi
+
+      - name: Validate README claim boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'Technical capability matrix' README.md
+          grep -q 'PROMOTION BLOCKED' README.md
+          grep -q 'Not claimed' README.md
+          test "$(grep -c '^## Current position$' README.md)" -eq 1
 
       - name: Validate dossiers and provenance
         run: python3 evidence-center/validate_evidence_center.py

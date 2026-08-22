@@ -10,115 +10,221 @@
 >
 > **NO SCALE WITHOUT SECURITY AND OBSERVABILITY**
 
-CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. The first commercial wedge is **CASTÚO Evidence-Ready Field Operations**: offline-first continuity, traceability and reviewable evidence for workflows operating with irregular connectivity.
+CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. Its first bounded commercial wedge is **CASTÚO Evidence-Ready Field Operations**: offline-first continuity, traceability and reviewable evidence for workflows operating with irregular connectivity.
 
 AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture. They are not separate products or claims of current production operation.
 
-## Current ecosystem state
+> **Positioning:** CASTÚO-SYSTEM provides evidence-ready continuity for disconnected field operations.
+>
+> This positioning is a bounded hypothesis: offline continuity, evidence fabric, assurance/recovery, fail-closed gates and human review are documented in the public envelope, while remote evidence, production, commercial validation and market superiority remain unclaimed.
 
-<!-- CASTUO:STATE:START -->
-## Current ecosystem state
+## Current position
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+**GREEN-STAGING · EVIDENCE-SCOPED — PROFILE SURFACE**
 
-| Dimension | Current public status |
+**System promotion:** `BLOCKED · EXTERNAL EVIDENCE REQUIRED`
+
+The profile surface, governed documentation and read-only validation workflows are green in staging scope. This status does not upgrade the full CASTÚO system to production or close remote conformance, security, E3, field or commercial gates.
+
+| Dimension | Public status |
 |---|---|
 | Local conformance | `14/14 PASS LOCAL` |
-| Remote conformance | `0/14` — `PENDING` |
-| Remote publication | `14 PENDING` |
-| Environment | `STAGING` |
-| Security baseline | `PENDING` |
-| Staging execution | `PENDING` |
+| Remote conformance | `0/14 · PENDING` |
+| Environment | `STAGING · GREEN FOR PROFILE SURFACE` |
+| Security baseline | `PENDING · profile checks pass; full baseline not closed` |
+| Staging execution | `GREEN · profile/documentation scope` |
 | Human review | `PENDING` |
+| Independent E3 | `PENDING` |
 | Production | `NOT_CLAIMED` |
 | Commercial validation | `NOT_CLAIMED` |
-| Independent E3 | `PENDING` |
 | Federation | `PENDING` |
 
-**Evidence basis:** `castuo-evolution` · commit `70b7c57` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
+**Evidence basis:** `castuo-evolution` · commit `70b7c57` · local checkout scope covering 14 repositories · [local conformance summary](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json).
 
-The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
-<!-- CASTUO:STATE:END -->
+> Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 
-## Customer wedge
+## What I am building
 
-```text
-Problem → Field workflow → Capability → Implementation
-→ Test → Evidence → Review → Pilot → Payment → Operation
-→ Repeatability → Federation
-```
-
-The first user journey is intentionally bounded:
+The first user journey is intentionally small and testable:
 
 ```text
-Create organisation → register an operation → continue through connectivity loss
-→ synchronise → review evidence → export a report
+Create organisation → register operation → continue through connectivity loss
+→ synchronise → review evidence → export report
 ```
 
-The public profile does not claim that this journey is a completed production or commercial operation. Measured field results, payment, renewal and continuous operation require separate evidence.
+The intended progression is:
 
-## Public semantic boundary
+```text
+Problem → Workflow → Capability → Implementation → Test → Evidence
+→ Review → Pilot → Payment → Operation → Repeatability → Federation
+```
 
-| Label | Meaning in this profile |
-|---|---|
-| `CURRENT` | Presently supported by the declared control-plane scope and evidence basis |
-| `TARGET` | Intended capability or promotion profile, not current operational truth |
-| `EXPERIMENTAL` | Bounded laboratory, pilot or integration work; not production evidence |
-| `PENDING` | Required evidence, execution or review has not yet been completed |
-| `NOT_CLAIMED` | Explicitly outside the claims authorised by current evidence |
+The profile describes the direction and links to evidence. The control plane decides state; repositories implement declared roles; Evidence Packs demonstrate bounded results. The public journey is organized by the [GitHub showcase plan](docs/CASTUO_PUBLIC_SHOWCASE_PLAN.md), while execution is governed by the [30-day evidence and commercial execution plan](docs/CASTUO_30_DAY_EXECUTION_PLAN.md), with dedicated [security baseline](docs/CASTUO_SECURITY_BASELINE_V1.md) and [S-001 vertical slice](docs/S001_VERTICAL_SLICE_PROTOCOL.md) protocols.
 
-A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
+## Public capability envelope
 
-## Evidence chain
+The capability registry distinguishes **capability**, **implementation**, **evidence**, **maturity** and **claim**. The following is the current public envelope.
+
+| Capability | Evidence-scoped boundary | State | Explicitly not claimed |
+|---|---|---|---|
+| Evidence-ready field operations | Offline-first local workflow, synchronization, reviewable evidence and report export | `CURRENT` | Production continuity, customer results, recurring operation |
+| Assurance and recovery | Security, observability, recovery and evidence-preservation tooling | `CURRENT` | Independent certification, operational SLA, universal security assurance |
+| Offline-first Edge/IoT | Bounded telemetry, local buffering and connectivity-loss validation | `EXPERIMENTAL` | Autonomous field operation, validated savings, production IoT service |
+| Workflow integration | Governed adapters and bounded orchestration under declared permissions | `EXPERIMENTAL` | Autonomous authority, privilege elevation, irreversible execution |
+| AI-assisted recommendations | Dry-run advisory and controlled report preparation under explicit policy | `EXPERIMENTAL` | Autonomous irrigation, production decisions, independent validation |
+| Federation and vendor exit | Target architecture for evidence portability and provider substitution | `TARGET` | Verified federation, vendor exit, interoperable production network |
+
+A documented capability or upstream integration is not automatically a CASTÚO proprietary production capability.
+
+## Technical capability matrix
+
+| Technical layer | Current capability | Evidence boundary | Next proof required |
+|---|---|---|---|
+| **Continuity runtime** | Local-first workflow execution, buffering during connectivity loss and synchronization after recovery | S-001A local evidence and bounded fixtures | Remote conformance and staging vertical slice |
+| **Evidence fabric** | Typed manifests, execution envelopes, SHA-256 hashes and replay-oriented packaging | Public S-001A record with real hashes | Foreign replay by a distinct operator and environment |
+| **Assurance and recovery** | Fail-closed promotion logic, negative scenarios, recovery checks and claim boundary | Local checks and repository-level artifacts | Security baseline, independent review and recovery exercise |
+| **Edge/IoT integration** | Bounded telemetry, local buffering and connectivity-loss validation | Experimental laboratory scope | Field result with named device/workflow and measurable KPI |
+| **Workflow orchestration** | Governed adapters and bounded execution with declared permissions | Experimental integration scope | Remote permission review, staging execution and rollback evidence |
+| **AI assistance** | Dry-run recommendations and controlled report preparation under policy | Experimental, advisory-only scope | Independent validation before any operational decision claim |
+| **Federation and vendor exit** | Portable evidence and provider-substitution target architecture | Target architecture only | Interoperability replay across providers or environments |
+| **Observability and operations** | Evidence-oriented reporting, review surfaces and promotion status | Staging-oriented documentation and local artifacts | Continuous staging run, incident exercise and operational readiness |
+
+### Public capability register
+
+| ID | Capability | Implementation | Evidence now | State | Next gate | Allowed claim |
+|---|---|---|---|---|---|---|
+| `CAP-001` | Offline continuity | `castuo-offline-field-operations` | Local tests and documentation | `IMPLEMENTED / VALIDATION PENDING` | Remote replay | Offline flow implemented within declared scope |
+| `CAP-002` | Edge/IoT buffering | `castuo-agro-edge` | Laboratory tests | `EXPERIMENTAL / LABORATORY` | Core integration | Experimental Edge runtime |
+| `CAP-003` | Reproducible evidence | `castuo-evidence` | Fixtures, real hashes and local replay | `CURRENT · LOCAL EVIDENCE` | Independent review | Bounded public evidence package |
+| `CAP-004` | Adversarial assurance | `Cast-o` | Harness and local tests | `CURRENT · VALIDATION PENDING` | Remote candidate execution | Automatable validation tooling |
+| `CAP-005` | Governance and promotion | `castuo-evolution` | States, gates and contracts | `CONTROL-PLANE DEFINED` | Remote evidence | Defined control plane |
+| `CAP-006` | Governed AI | Profile policy and limits | Declared boundaries | `TARGET / IMPLEMENTATION PENDING` | AI case with human review | Governed AI design |
+| `CAP-007` | Recovery | `goldfish` (private) | Private code; evidence required | `PRIVATE / EVIDENCE REQUIRED` | Restore test | Recovery layer in development |
+| `CAP-008` | Production operation | Private core | Insufficient public evidence | `NOT_CLAIMED` | Staging and pilot | No operational claim |
+
+This matrix describes **technical direction and bounded implementation**, not a claim that every listed layer is production-ready. The authoritative transition is always `evidence → review → gate → promotion`.
+
+## Proof ladder
+
+```text
+S-001A local → public freeze → remote conformance → foreign replay
+→ independent E3 → staging vertical slice → field result
+→ paid pilot → repeatability → operational promotion
+```
+
+Only the local S-001A proof is currently closed. The next bounded KPI is `CONTINUITY-001`: preserve evidence through connectivity loss, restore service, synchronize and replay the result with zero evidence loss.
+
+## GitHub integration status
+
+| Surface | State | Role |
+|---|---|---|
+| [`castuo-evidence` PR #1](https://github.com/Traky12/castuo-evidence/pull/1) | `MERGED` | S-001A pipeline, stress, envelope and fail-closed gate |
+| [`castuo-evidence` PR #2](https://github.com/Traky12/castuo-evidence/pull/2) | `MERGED` | Real S-001A hashes and foreign replay protocol |
+| [`castuo-evolution` PR #26](https://github.com/Traky12/castuo-evolution/pull/26) | `OPEN · REVIEW_REQUIRED` | EvOS v13.0 baseline and E3-001 protocol |
+| [`castuo-evolution` PR #27](https://github.com/Traky12/castuo-evolution/pull/27) | `OPEN · REVIEW_REQUIRED` | Capabilities, profiles, promotion gates and proof ladder |
+| [`Traky12/Traky12` PR #18](https://github.com/Traky12/Traky12/pull/18) | `OPEN · REVIEW_REQUIRED` | This profile and its evidence-scoped public surface |
+| [`castuo-evolution` issue #9](https://github.com/Traky12/castuo-evolution/issues/9) | `OPEN` | Independent E3-001 review |
+
+Protected branches require human approval, Code Owner review, approval of the latest push and resolved conversations. No administrative bypass is used. A merged PR or successful local check does not change `1R`, `1V`, `1A` or the production claim boundary.
+
+## Live GitHub status — historical snapshot observed 2026-08-19
+
+The following table is a **point-in-time operational snapshot** obtained from GitHub CLI. `PASS` means the reported workflow concluded successfully; `REVIEW_REQUIRED`, `BLOCKED`, `BEHIND`, `PENDING` or `ACTION_REQUIRED` are not green promotion states. A restricted status-rollup response is recorded as `NOT_VERIFIED`, never as success.
+
+| Repository | Open PRs / merge state | Latest observed Actions state | Public interpretation |
+|---|---|---|---|
+| [`Traky12/Traky12`](https://github.com/Traky12/Traky12) | PR #18: `OPEN · MERGEABLE · REVIEW_REQUIRED` | `Validate evidence dossiers: PASS` | Profile surface green in scope; human review and `sync` protection remain |
+| [`castuo-evolution`](https://github.com/Traky12/castuo-evolution) | PR #26 and #27: `OPEN · MERGEABLE · REVIEW_REQUIRED` | Status rollup `NOT_VERIFIED` in this session | Control-plane changes require human/Code Owner review; no remote conformance claim |
+| [`castuo-evidence`](https://github.com/Traky12/castuo-evidence) | PR #1 and #2: `MERGED` | Historical S-001A validation passed on the merged evidence work | Local/public evidence exists; foreign replay and independent review remain pending |
+| [`Cast-o`](https://github.com/Traky12/Cast-o) | Open PRs reported `BEHIND · REVIEW_REQUIRED` | Mixed: successful summary run plus `ACTION_REQUIRED` hardening run | Not green as a repository portfolio; review and failed/action-required paths remain |
+| [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Five open PRs reported `BLOCKED · REVIEW_REQUIRED` | `CASTÚO architecture surface check: SUCCESS` | Workflow surface passes, but PR governance blocks integration |
+| [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Five open PRs reported `BLOCKED · REVIEW_REQUIRED` | Architecture check and `CI Validation: SUCCESS` | Tests pass on observed runs; human review and field evidence remain |
+| [`desktop-tutorial`](https://github.com/Traky12/desktop-tutorial) | Five open PRs reported `BLOCKED · REVIEW_REQUIRED` | Latest observed conformance runs: `FAILURE` | Red state; repair required before any conformance claim |
+
+**Snapshot boundary:** this table does not claim that every repository is green, that all checks are required contexts, or that GitHub Advanced Security has no alerts. It must be refreshed before a promotion decision.
+
+## Evidence and promotion gates
 
 ```text
 Claim → Evidence → Execution → Hash → Reproduction
 → Independent review → Gate → Promotion / rollback
 ```
 
-The control plane governs the state. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
+### Capability maturity rule
+
+A capability may be labelled `CURRENT` only within the scope of its declared evidence. `EXPERIMENTAL` means that implementation or laboratory work exists but its operational boundary is not established. `TARGET` describes an intended architectural outcome. No label overrides a failed gate, missing replay, absent reviewer or missing recovery evidence.
+
+| Gate | Status | Required next evidence |
+|---|---|---|
+| Local conformance | `PASS LOCAL` | Preserve per-repository artifacts |
+| Remote publication | `PENDING` | Human review and merge |
+| Remote conformance | `PENDING` | Workflows on merged remote heads |
+| Security baseline | `PENDING` | Secrets, dependencies, SBOM, permissions and review controls |
+| Typed evidence | `PENDING` | Manifests, hashes, negatives, recovery and replay envelopes |
+| Staging vertical slice | `PENDING` | Bounded core-to-field workflow |
+| Independent review | `PENDING` | Dated, scope-bound E3 decision |
+| Operational promotion | `BLOCKED` | All preceding gates plus authorized human `GO` |
+
+Current assurance boundary: **`1D YES · 1R NO · 1V NO · 1A NO → PROMOTION BLOCKED`**.
+
+## Ecosystem synchronization snapshot — observed 2026-08-22
+
+The second deep audit propagated a repository-local record to the CASTÚO surfaces through protected branches and pull requests. This is documentation and traceability synchronization; it is not a merge, certification or production proof.
+
+| Surface | Current observed state | Canonical reference |
+|---|---|---|
+| System integration | `OPEN · MERGEABLE · BLOCKED` | [Castuo-system PR #358](https://github.com/Traky12/Castuo-system/pull/358) |
+| Profile integration | `OPEN · MERGEABLE · BLOCKED · REVIEW_REQUIRED` | [Traky12 PR #18](https://github.com/Traky12/Traky12/pull/18) |
+| Clean-reported sync PRs | `OPEN · MERGEABLE · CLEAN` where reported | [Global sync matrix](https://github.com/Traky12/Castuo-system/blob/docs/evidence-scoped-system-integration-2026-08-19/docs/CASTUO_ECOSYSTEM_SYNC_MATRIX_2026-08-22.md) |
+| Blocked-reported sync PRs | `OPEN · MERGEABLE · BLOCKED` where reported | [Deep-audit record](docs/CASTUO_DEEP_AUDIT_2026-08-22.md) |
+| Check observability | Required contexts are not elevated when the integration cannot read their details | `NOT_VERIFIED` |
+
+The current repository-local deep-audit record is [CASTUO_DEEP_AUDIT_2026-08-22.md](docs/CASTUO_DEEP_AUDIT_2026-08-22.md). The complete cross-repository synchronization record is [CASTUO_ECOSYSTEM_SYNC_MATRIX_2026-08-22.md](https://github.com/Traky12/Castuo-system/blob/docs/evidence-scoped-system-integration-2026-08-19/docs/CASTUO_ECOSYSTEM_SYNC_MATRIX_2026-08-22.md). A `CLEAN` or `MERGEABLE` value is not equivalent to human approval, Code Owner approval, successful required checks, independent review or production readiness.
+
+## Public evidence
+
+- [S-001A evidence record with real hashes](https://github.com/Traky12/castuo-evidence/blob/master/evidence/local/EVID-EVT-0002.json)
+- [S-001A foreign replay protocol](https://github.com/Traky12/castuo-evidence/blob/master/docs/S001A_FOREIGN_REPLAY_PROTOCOL.md)
+- [Production promotion gate checklist — PR #27](https://github.com/Traky12/castuo-evolution/pull/27/files#diff-checklist)
+- [Promotion readiness assessment — PR #27](https://github.com/Traky12/castuo-evolution/pull/27/files#diff-readiness)
+- [CASTÚO Proof Ladder — PR #27](https://github.com/Traky12/castuo-evolution/pull/27/files#diff-proof-ladder)
+- [30-day evidence and commercial execution plan](docs/CASTUO_30_DAY_EXECUTION_PLAN.md)
+- [CASTÚO Security Baseline v1](docs/CASTUO_SECURITY_BASELINE_V1.md)
+- [S-001 vertical slice protocol](docs/S001_VERTICAL_SLICE_PROTOCOL.md)
+- [Consolidated dialogue record](docs/CASTUO_DIALOGUE_CONSOLIDATED_RECORD.md)
+- [Master progress protocol record](docs/CASTUO_MASTER_PROGRESS_PROTOCOL.md)
+- [Public GitHub showcase plan](docs/CASTUO_PUBLIC_SHOWCASE_PLAN.md)
+- [GREEN-STAGING risk register](docs/CASTUO_STAGING_RISK_REGISTER.md)
+- [GREEN-STAGING security and improvement report](docs/CASTUO_GREEN_STAGING_SECURITY_REPORT.md)
+- [Promotion, PR and security report with presentation script](docs/CASTUO_PROMOTION_PR_SECURITY_PRESENTATION_REPORT.md)
+- [Reviewer commands, conformance plan, Security Baseline and presentation deck](docs/CASTUO_REVIEWER_COMMANDS_CONFORMANCE_SECURITY_DECK.md)
+- [Code Owner, human review and remote conformance deck](docs/CASTUO_REVIEWER_CODEOWNER_CONFORMANCE_DECK.md)
+- [Reviewer package v2: commands, capability matrix, conformance and presentation](docs/CASTUO_REVIEWER_PACKAGE_V2.md)
+- [Profile review and desktop-tutorial conformance recovery deck](docs/CASTUO_PROFILE_REVIEW_DESKTOP_CONFORMANCE_DECK.md)
+- [Complete task status — 2026-08-19](docs/CASTUO_COMPLETE_TASKS_STATUS_2026-08-19.md)
+- [Full GitHub modification record](docs/CASTUO_FULL_GITHUB_MODIFICATION.md)
+- [Competitive digital analysis — SimilarWeb scope and public capability matrix](docs/CASTUO_SIMILARWEB_COMPETITIVE_ANALYSIS_2026-08-19.md)
+- [Competitive positioning review — coverage, maturity and approved claims](docs/CASTUO_COMPETITIVE_POSITIONING_REVIEW.md)
+- [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+- [Cast-o validation](https://github.com/Traky12/Cast-o)
+- [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
+- [ORCID](https://orcid.org/0009-0007-3489-0565)
+- [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
 
 ## Repository map
 
 | Repository | Public role | Boundary |
 |---|---|---|
-| `castuo-evolution` | Governance control plane | SSOT for vocabulary, Gates, evidence and promotion state |
-| `Castuo-system` | Core platform | Implementation and bounded execution; production not claimed |
+| `castuo-evolution` | Governance control plane | Vocabulary, gates, evidence and promotion state |
+| `Castuo-system` | Core platform | Bounded implementation; production not claimed |
 | `goldfish` | Assurance and recovery | Security, recovery and evidence preservation |
 | [`Cast-o`](https://github.com/Traky12/Cast-o) | CI and validation | Tests, provenance and release evidence |
-| [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge / IoT | Offline continuity and synchronization |
+| [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge/IoT | Offline continuity and synchronization |
 | [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Field application | Local workflow, recovery and evidence export |
-| `ctaex-iot-pilot` | Laboratory | IoT and connectivity-loss validation; field claims excluded |
+| `ctaex-iot-pilot` | Laboratory | Connectivity-loss validation; field claims excluded |
 | `agrovision-360` | Experimental | Bounded agro-vision research and drift evidence |
 | `castuo-360-v5.3` | Workspace | Integrated application experience; workspace ≠ production |
-| `-Prueba-final` | Experimental sandbox | Integration experiments only |
-| `n8n` | Upstream / fork | Governed workflow integration; upstream capability ≠ CASTÚO proprietary capability |
-| `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
-| `desktop-tutorial` | Training / support | Repeatable contribution and governance training |
-
-## Current Gates
-
-| Gate | Status | Evidence needed next |
-|---|---|---|
-| Local conformance | `14/14 PASS LOCAL` | Preserve per-repository artifacts |
-| Remote publication | `PENDING` | PR review and merge |
-| Remote conformance | `PENDING` | Workflow execution on merged remote heads |
-| Security baseline | `PENDING` | Secrets, dependencies, SBOM, permissions and review controls |
-| Tests | `PENDING` | Repository-specific and negative tests |
-| Evidence | `PENDING` | Typed manifests, hashes and execution envelopes |
-| Staging execution | `PENDING` | Bounded core-to-field vertical slice |
-| Human review | `PENDING` | Dated scope-bound decision |
-| GREEN-STAGING | `BLOCKED` | All previous gates complete |
-
-## Public evidence and links
-
-- [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
-- [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
-- [Cast-o validation](https://github.com/Traky12/Cast-o)
-- [Public repository list](https://github.com/Traky12?tab=repositories)
-- [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
-- [ORCID](https://orcid.org/0009-0007-3489-0565)
-- [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
+| `n8n` / `openclaw` | Upstream or fork | Governed integrations; upstream capability ≠ CASTÚO proprietary capability |
 
 ## Not claimed
 
@@ -127,3 +233,11 @@ This profile does not claim production operation, autonomous authority, federati
 The official PIE PLUS workbook remains authoritative for financial figures. Technical assets, architecture, code, planning scenarios and repository activity are not cash, market value, accounting value, income, funding, contract or customer result.
 
 > The objective is not to make CASTÚO look certain. It is to make its evidence inspectable, its use understandable and its evolution safe.
+
+## Contact
+
+For technical collaboration, evidence review or governed integration work, use the public repositories and issues linked above. Claims about production, customers or independent validation require the corresponding evidence record and review decision.
+
+## CASTÚO Deep Audit — 2026-08-22
+
+This repository received the second evidence-scoped ecosystem audit. The local audit record is [CASTUO_DEEP_AUDIT_2026-08-22.md](docs/CASTUO_DEEP_AUDIT_2026-08-22.md). This link records traceability only; it does not claim production readiness, certification, field validation or independent review.
