@@ -130,6 +130,8 @@ The control plane governs the state. Repositories implement declared roles. Evid
 - [Public snapshot review policy](docs/CASTUO_PUBLIC_SNAPSHOT_REVIEW_POLICY.md)
 - [Profile synchronization policy](docs/CASTUO_PROFILE_SYNC_POLICY.md)
 - [Snapshot review register](docs/CASTUO_SNAPSHOT_REVIEW_REGISTER.md)
+- [PR #25 human review request](docs/PR25_HUMAN_REVIEW_REQUEST.md)
+- [PR #25 independent review template](docs/PR25_INDEPENDENT_REVIEW_TEMPLATE.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [Public repository list](https://github.com/Traky12?tab=repositories)
