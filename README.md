@@ -127,6 +127,8 @@ The control plane governs the state. Repositories implement declared roles. Evid
 - [Live status dashboard](https://castuodash-pgzxukib.manus.space/)
 - [E3-001 protocol](https://github.com/Traky12/castuo-e3-001)
 - [S-001A / G2 readiness dossier](https://github.com/Traky12/castuo-e3-001/tree/main/docs)
+- [Public snapshot review policy](docs/CASTUO_PUBLIC_SNAPSHOT_REVIEW_POLICY.md)
+- [Profile synchronization policy](docs/CASTUO_PROFILE_SYNC_POLICY.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [Public repository list](https://github.com/Traky12?tab=repositories)
