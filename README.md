@@ -237,3 +237,7 @@ The official PIE PLUS workbook remains authoritative for financial figures. Tech
 ## Contact
 
 For technical collaboration, evidence review or governed integration work, use the public repositories and issues linked above. Claims about production, customers or independent validation require the corresponding evidence record and review decision.
+
+## CASTÚO Deep Audit — 2026-08-22
+
+This repository received the second evidence-scoped ecosystem audit. The local audit record is [CASTUO_DEEP_AUDIT_2026-08-22.md](docs/CASTUO_DEEP_AUDIT_2026-08-22.md). This link records traceability only; it does not claim production readiness, certification, field validation or independent review.
