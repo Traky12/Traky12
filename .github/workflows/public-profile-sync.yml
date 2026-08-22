@@ -6,13 +6,40 @@ on:
     - cron: '17 * * * *'
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   sync:
+    name: sync
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate public profile boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          grep -q 'PROMOTION-BLOCKED' README.md
+          grep -q 'EVIDENCE-SCOPED' README.md
+          grep -q 'oneR=false' README.md
+          grep -q 'oneV=false' README.md
+          grep -q 'oneA=false' README.md
+          if grep -RInE '(-----BEGIN (RSA|EC|OPENSSH|PRIVATE) KEY-----|ghp_[A-Za-z0-9]{30,}|CASTUO_SNAPSHOT_SIGNING_KEY_B64)' README.md docs; then
+            echo 'High-risk secret pattern detected.'
+            exit 1
+          fi
+
+  sync-control-plane:
+    name: sync-control-plane
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Checkout canonical control plane
@@ -28,6 +55,14 @@ jobs:
             --readme README.md
       - name: Check generated diff
         run: git diff --check
+      - name: Reject unsafe generated content
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -nE '(-----BEGIN (RSA|EC|OPENSSH|PRIVATE) KEY-----|ghp_[A-Za-z0-9]{30,}|CASTUO_SNAPSHOT_SIGNING_KEY_B64)' README.md; then
+            echo 'High-risk secret pattern detected.'
+            exit 1
+          fi
       - name: Commit generated state
         run: |
           if git diff --quiet -- README.md; then
