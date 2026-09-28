@@ -1,11 +1,10 @@
 name: Public profile state sync
 
+# DISABLED (P0, 2026-09-28): castuo-evolution is not the current authority
+# and this sync failed on every run since 2026-08-22 (Not Found: private repo).
+# Kept for history; manual dispatch only.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 * * * *'
-  push:
-    branches: [main]
 
 permissions:
   contents: write
