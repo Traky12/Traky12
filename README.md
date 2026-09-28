@@ -14,14 +14,23 @@ CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rura
 
 AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture. They are not separate products or claims of current production operation.
 
+## Authority and scope
+
+| Surface | Role |
+|---|---|
+| `Castuo-system` (private) | **Current canonical authority** for code, operational documentation and technical evolution |
+| `castuo-evolution` (private) | Prepared external surface. **Not** the current GitHub authority and **not** a synchronised source of truth (SSOT) |
+| This profile (`Traky12/Traky12`) | Public entry point and navigation index. It summarises and links; it decides nothing and grants no license |
+
+Public repositories are not open source by default: a repository is open source only where it contains a `LICENSE` file. Third-party forks (`n8n`, `openclaw`) remain the work of their upstream authors.
+
 ## Current ecosystem state
 
-<!-- CASTUO:STATE:START -->
-## Current ecosystem state
+**Snapshot dated 2026-08-16 — not updated since.** The automatic sync from `castuo-evolution` has failed on every run since 2026-08-22 and is disabled; this table is a static, historical record.
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED**
+**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED** (as of 2026-08-16)
 
-| Dimension | Current public status |
+| Dimension | Status (2026-08-16) |
 |---|---|
 | Local conformance | `14/14 PASS LOCAL` |
 | Remote conformance | `0/14` — `PENDING` |
@@ -35,10 +44,9 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 | Independent E3 | `PENDING` |
 | Federation | `PENDING` |
 
-**Evidence basis:** `castuo-evolution` · commit `70b7c57` · scope `local checkout set of 14 repositories` · [`evidence/local-conformance-2026-08-16/summary.json`](https://github.com/Traky12/castuo-evolution/blob/main/evidence/local-conformance-2026-08-16/summary.json) · review `PENDING`.
+**Evidence basis:** `castuo-evolution` (private repository — not publicly verifiable) · commit `70b7c57` · scope `local checkout set of 14 repositories` · file `evidence/local-conformance-2026-08-16/summary.json` · review `PENDING`.
 
-The public profile is a projection of the canonical control plane. Blocker: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
-<!-- CASTUO:STATE:END -->
+Blocker at that date: `remote_publication_conformance_security_evidence_staging_review_pending`. Local evidence does not imply remote publication, production, certification, customer result, continuous operation or federation.
 
 ## Customer wedge
 
@@ -61,13 +69,13 @@ The public profile does not claim that this journey is a completed production or
 
 | Label | Meaning in this profile |
 |---|---|
-| `CURRENT` | Presently supported by the declared control-plane scope and evidence basis |
-| `TARGET` | Intended capability or promotion profile, not current operational truth |
-| `EXPERIMENTAL` | Bounded laboratory, pilot or integration work; not production evidence |
-| `PENDING` | Required evidence, execution or review has not yet been completed |
-| `NOT_CLAIMED` | Explicitly outside the claims authorised by current evidence |
+| `CURRENT` | Implemented and verifiable: backed by a commit, test, result, artifact, hash or release |
+| `TARGET` | Approved objective, not implemented yet |
+| `EXPERIMENTAL` | Prototype or proof, not consolidated; not production evidence |
+| `PENDING` | Planned work, or evidence incomplete |
+| `NOT_CLAIMED` | Not implemented; must not be presented as a capability |
 
-A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
+Words such as "validated", "production", "federated", "complete", "secure" or "ready for…" require concrete evidence: commit, test, result, artifact, hash or release. A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
 
 ## Evidence chain
 
@@ -76,25 +84,27 @@ Claim → Evidence → Execution → Hash → Reproduction
 → Independent review → Gate → Promotion / rollback
 ```
 
-The control plane governs the state. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
+`Castuo-system` is the canonical authority. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
 
 ## Repository map
 
 | Repository | Public role | Boundary |
 |---|---|---|
-| `castuo-evolution` | Governance control plane | SSOT for vocabulary, Gates, evidence and promotion state |
-| `Castuo-system` | Core platform | Implementation and bounded execution; production not claimed |
+| `Castuo-system` | Core platform · **canonical authority** (private) | Code, operational documentation and technical evolution; production not claimed |
+| `castuo-evolution` | Prepared external surface (private) | Not the current GitHub authority nor a synchronised SSOT |
 | `goldfish` | Assurance and recovery | Security, recovery and evidence preservation |
-| [`Cast-o`](https://github.com/Traky12/Cast-o) | CI and validation | Tests, provenance and release evidence |
+| [`Cast-o`](https://github.com/Traky12/Cast-o) | CI and validation | Tests `CURRENT` (partial); performance benchmarking `TARGET`; license `PENDING` |
 | [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge / IoT | Offline continuity and synchronization |
-| [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Field application | Local workflow, recovery and evidence export |
+| [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Field application | Local workflow, recovery and evidence export; Apache-2.0 |
+| [`castuo-evidence`](https://github.com/Traky12/castuo-evidence) | Public evidence | Evidence packs; license `PENDING` |
+| [`castuo-e3-001`](https://github.com/Traky12/castuo-e3-001) | Public evidence / protocol | Reproduction protocol; MIT |
 | `ctaex-iot-pilot` | Laboratory | IoT and connectivity-loss validation; field claims excluded |
 | `agrovision-360` | Experimental | Bounded agro-vision research and drift evidence |
 | `castuo-360-v5.3` | Workspace | Integrated application experience; workspace ≠ production |
-| `-Prueba-final` | Experimental sandbox | Integration experiments only |
-| `n8n` | Upstream / fork | Governed workflow integration; upstream capability ≠ CASTÚO proprietary capability |
-| `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
-| `desktop-tutorial` | Training / support | Repeatable contribution and governance training |
+| `-Prueba-final` | Archived | Former integration sandbox; archived |
+| [`n8n`](https://github.com/Traky12/n8n) | Third-party fork | Upstream `n8n-io/n8n`; upstream capability ≠ CASTÚO proprietary capability |
+| `openclaw` | Third-party fork · archived | Upstream capability ≠ CASTÚO proprietary capability |
+| `desktop-tutorial` | Archived | GitHub tutorial repository; archived |
 
 ## Current Gates
 
@@ -113,6 +123,7 @@ The control plane governs the state. Repositories implement declared roles. Evid
 ## Public evidence and links
 
 - [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- [Security policy](SECURITY.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [Public repository list](https://github.com/Traky12?tab=repositories)

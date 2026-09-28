@@ -1,11 +1,17 @@
 name: Public profile state sync
 
+# DISABLED (P0, 2026-09-28) — TEMPORARY CONTAINMENT, NOT THE FINAL DESIGN.
+# castuo-evolution is not the current authority, and this sync failed on every
+# run since 2026-08-22 (Not Found: private repo), leaving a stale state block
+# presented as live. Manual dispatch only; do not re-enable the schedule until
+# a redesign provides ALL of:
+#   1. a public source, or controlled authenticated access (scoped token);
+#   2. a read test that fails the job loudly when the source is unreachable;
+#   3. content validation of the generated block before commit;
+#   4. failure monitoring and an alert on failed runs;
+#   5. a visible "last successful update" date in the README.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 * * * *'
-  push:
-    branches: [main]
 
 permissions:
   contents: write
