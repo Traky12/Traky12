@@ -45,4 +45,10 @@ E3-001 → FIRST PAID PROOF → MEASURED CUSTOMER RESULT
 → SECOND COMPARABLE DELIVERY → REPEATABILITY
 ```
 
-La fuente principal en inglés es [`README.md`](README.md). La documentación detallada de evidencia, seguridad, Proof Pack y finanzas permanece en el repositorio de evolución.
+## Autoridad y alcance
+
+- **`Castuo-system`** (privado) es la **autoridad canónica actual** del código, la documentación operativa y la evolución técnica.
+- **`castuo-evolution`** (privado) es una superficie externa preparada; **no** es la autoridad GitHub actual ni una fuente única de verdad (SSOT) sincronizada.
+- Este perfil es el punto de entrada público: resume y enlaza; no decide ni concede licencias. Un repositorio público solo es open source si contiene un archivo `LICENSE`.
+
+La fuente principal en inglés es [`README.md`](README.md). Política de seguridad: [`SECURITY.md`](SECURITY.md).
