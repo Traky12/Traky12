@@ -1,5 +1,12 @@
 # Gregorio Jiménez Bodes — Traky12
 
+> **⚠️ Superseded draft (branch `profile-hierarchy`, 2026-08-19).** This
+> branch is not the published profile; the canonical profile is the `main`
+> branch. It is kept for reference only. Corrected on 2026-09-28: the
+> valuation figure and links to private repositories were removed, and
+> `castuo-evolution` is no longer presented as the current authority or SSOT
+> (`Castuo-system` is the canonical authority).
+
 ### Systems Architect · Evidence Engineer · AI Governance & Assurance
 
 **Founder and lead architect of CASTÚO-SYSTEM™**
@@ -24,7 +31,7 @@ Traky12 (Profile & Architecture Boundary)
     ↓ presents
 castuo-evidence (Public Evidence Fabric & S-001A Proofs)
     ↓ demonstrates within scope
-castuo-evolution (Private Governance Control Plane & SSOT)
+castuo-evolution (private; prepared external surface — not the current authority nor a synchronised SSOT)
     ↓ governs
 Castuo-system (Private Platform Core & Execution)
 ```
@@ -47,7 +54,7 @@ Castuo-system (Private Platform Core & Execution)
 CASTÚO-SYSTEM™ is structured as a hierarchical portfolio of modular technical assets:
 
 - **Platform Core (`Castuo-system`)**: Core backend engine and offline-first runtime logic.
-- **Governance Control Plane (`castuo-evolution`)**: Evidence graph, assurance gates, and policy SSOT.
+- **`castuo-evolution`** (private): prepared external surface for governance material; not the current authority nor a synchronised SSOT. The canonical authority is `Castuo-system`.
 - **Evidence Fabric (`castuo-evidence`)**: Public evidence units, S-001A fixtures, schemas, and claim firewalls.
 - **Assurance & Benchmarking (`Cast-o`)**: Engineering automation and adversarial test harness.
 - **Public Capabilities (`castuo-agro-edge`, `castuo-offline-field-operations`)**: Edge IoT and resilient field synchronization.
@@ -59,24 +66,18 @@ CASTÚO-SYSTEM™ is structured as a hierarchical portfolio of modular technical
 
 The first external validation milestone is structured as a reproducible evidence bundle (`external-validation/E3-001/`):
 - **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 automated adversarial tests covering 6 control categories.
-- **Protocol:** Defined under [`Review Protocol`](https://github.com/Traky12/castuo-evolution/blob/main/external-validation/E3-001/REVIEW-PROTOCOL.yaml).
+- **Protocol:** Defined in the private `castuo-evolution` repository (not publicly verifiable; available under controlled review).
 - **Evidence Integrity Rule:** Negative results, discrepancies, failures, and incidents form part of the evidence record (`FAILURE ≠ DELETE` → `FAILURE → FINDING → REMEDIATION → RE-TEST`). Unfavorable results will not be silently replaced.
 
 ---
 
 ## 💶 Economic Evidence — Separate Domain
 
-### Indicative technology-asset replacement-cost estimate: **€420,000**
-
-This figure represents an indicative replacement-cost estimate based on documented reconstruction methodology and asset evidence. It is strictly separated from E1/E2/E3 evidence maturity levels. 
-
-**Strategic Investor Resources:**
-- 📄 [Valuation Accounting Breakdown (PDF)](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/valuation-accounting-breakdown.pdf)
-- 📊 [Investor Presentation Deck (v13.0)](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/investor-presentation-deck-v13.md)
-- 🎙️ [Synchronized Speaker Notes](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/investor-presentation-synchronized-speaker-notes.md)
-- 🗣️ [Investor Q&A Simulation](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/investor-qa-simulation.md)
-- 🛡️ [PR #26 Risk Mitigation Analysis](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/pr26-risk-mitigation-analysis.md)
-- 🤖 [GitHub Automation & Webhook Guide](https://github.com/Traky12/castuo-evolution/blob/evos-v13-freeze/docs/github-automation-and-prs-guide.md)
+Historical internal valuation reference — not independently audited, not
+legally validated, not a current valuation, and not suitable for capital
+contribution, investment, financing, or due-diligence claims. No figure is
+published here. Supporting material is kept privately and is not publicly
+verifiable.
 
 ---
 
