@@ -29,9 +29,9 @@ Public repositories are not open source by default: a repository is open source 
 The ecosystem remains in technical consolidation.
 
 Local engineering evidence has progressed across testing, bounded
-security controls and evidence preservation. Remote CI validation,
-promotion, merge and deployment remain pending while GitHub Actions
-account billing is being restored.
+security controls and evidence preservation. Some internal
+CI-dependent validations remain pending before promotion, merge and
+deployment. Public claims are limited accordingly.
 
 No production operation, field deployment, paid customer traction,
 continuous service, certification or federated authority is claimed.
@@ -106,27 +106,14 @@ Claim → Evidence → Execution → Hash → Reproduction
 |---|---|---|
 | `Castuo-system` | Core platform · **canonical authority** (private) | Code, operational documentation and technical evolution; production not claimed |
 | `castuo-evolution` | Experimental governance and evolution framework (private) | Not the current authority, a synchronised SSOT or a deployed control plane |
-| `goldfish` | Assurance and recovery | Security, recovery and evidence preservation |
 | [`Cast-o`](https://github.com/Traky12/Cast-o) | CI and validation | Tests `CURRENT` (partial); performance benchmarking `TARGET`; license `PENDING` |
 | [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge / IoT | Offline continuity and synchronization |
 | [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Field application | Local workflow, recovery and evidence export; Apache-2.0 |
 | [`castuo-evidence`](https://github.com/Traky12/castuo-evidence) | Public evidence | Evidence packs; license `PENDING` |
 | [`castuo-e3-001`](https://github.com/Traky12/castuo-e3-001) | Public evidence / protocol | Reproduction protocol; MIT |
-| `ctaex-iot-pilot` | Laboratory | IoT and connectivity-loss validation; field claims excluded |
-| `agrovision-360` | Experimental | Bounded agro-vision research and drift evidence |
-| `castuo-360-v5.3` | Workspace | Integrated application experience; workspace ≠ production |
-| `castuo-foreign-verifier` | Assurance tooling (private) | Portable evidence verifier; tooling, not an external audit |
-| `castuo-vendor-exit-lab` | Experimental (private) | Vendor-exit scenarios; vendor independence not claimed |
-| `castuo-progress-dashboard` · `castuo-live-status-dashboard` | Status visualisation (private) | Visualisation, not a primary source of truth |
-| `castuo-strategy-knowledge-base` | Strategy navigation (private) | Links to canonical sources; not a canonical source itself |
-| `castuo-product-experience` | Product-experience prototype (private) | Offline demo and pilot-intake flow; demo data, adoption not claimed |
-| `castuo-link` | Concept (private) | Territorial-node concept; no code yet |
-| `castuo-neurocompanion` | Specification stage (private) | No product claims |
-| `-Prueba-final` | Archived | Former integration sandbox; archived |
 | [`n8n`](https://github.com/Traky12/n8n) | Third-party fork | Upstream `n8n-io/n8n`; upstream capability ≠ CASTÚO proprietary capability |
-| `openclaw` | Third-party fork · archived | Upstream capability ≠ CASTÚO proprietary capability |
-| `desktop-tutorial` | Archived | GitHub tutorial repository; archived |
-| `castuo-digital-system` · `castuo-docs-portal` · `castuo-security-runbook-site` · `copia-de-cast-o-system-strategy-knowledge-base` | Archived | Historical reference only |
+
+Some internal, experimental, archived and pre-promotion work remains intentionally private and is not represented as a public product claim.
 
 ## Gates (historical, 2026-08-16)
 
