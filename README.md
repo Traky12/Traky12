@@ -10,7 +10,7 @@
 >
 > **NO SCALE WITHOUT SECURITY AND OBSERVABILITY**
 
-CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. The first commercial wedge is **CASTÚO Evidence-Ready Field Operations**: offline-first continuity, traceability and reviewable evidence for workflows operating with irregular connectivity.
+CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. The first commercial wedge is **CASTÚO Evidence-Ready Field Operations**: offline-first continuity, traceability and reviewable evidence for workflows operating with irregular connectivity. It is a validation objective, not a proven commercial product.
 
 AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture. They are not separate products or claims of current production operation.
 
@@ -18,17 +18,29 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 
 | Surface | Role |
 |---|---|
-| `Castuo-system` (private) | **Current canonical authority** for code, operational documentation and technical evolution |
-| `castuo-evolution` (private) | Prepared external surface. **Not** the current GitHub authority and **not** a synchronised source of truth (SSOT) |
+| `Castuo-system` (private) | **Current canonical authority** for code, operational documentation, technical decisions and governed evolution (`governance/`) |
+| `castuo-evolution` (private) | Experimental or prepared governance and evolution framework. **Not** the current authority, **not** a synchronised source of truth (SSOT), deployed control plane or autonomous governance authority |
 | This profile (`Traky12/Traky12`) | Public entry point and navigation index. It summarises and links; it decides nothing and grants no license |
 
 Public repositories are not open source by default: a repository is open source only where it contains a `LICENSE` file. Third-party forks (`n8n`, `openclaw`) remain the work of their upstream authors.
 
-## Current ecosystem state
+## Current engineering note — 2026-09-30
 
-**Snapshot dated 2026-08-16 — not updated since.** The automatic sync from `castuo-evolution` has failed on every run since 2026-08-22 and is disabled; this table is a static, historical record.
+The ecosystem remains in technical consolidation.
 
-**GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED** (as of 2026-08-16)
+Local engineering evidence has progressed across testing, bounded
+security controls and evidence preservation. Remote CI validation,
+promotion, merge and deployment remain pending while GitHub Actions
+account billing is being restored.
+
+No production operation, field deployment, paid customer traction,
+continuous service, certification or federated authority is claimed.
+
+## Historical snapshot — 2026-08-16
+
+> **Historical local snapshot; not current deployment evidence.** The automatic sync from `castuo-evolution` has failed on every run since 2026-08-22 and is disabled; this table is a static, historical record.
+
+Label at that date: **GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED** (historical, as of 2026-08-16)
 
 | Dimension | Status (2026-08-16) |
 |---|---|
@@ -75,6 +87,8 @@ The public profile does not claim that this journey is a completed production or
 | `PENDING` | Planned work, or evidence incomplete |
 | `NOT_CLAIMED` | Not implemented; must not be presented as a capability |
 
+These public labels map onto the claim status used in the canonical repository; they are not a separate maturity model.
+
 Words such as "validated", "production", "federated", "complete", "secure" or "ready for…" require concrete evidence: commit, test, result, artifact, hash or release. A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
 
 ## Evidence chain
@@ -91,7 +105,7 @@ Claim → Evidence → Execution → Hash → Reproduction
 | Repository | Public role | Boundary |
 |---|---|---|
 | `Castuo-system` | Core platform · **canonical authority** (private) | Code, operational documentation and technical evolution; production not claimed |
-| `castuo-evolution` | Prepared external surface (private) | Not the current GitHub authority nor a synchronised SSOT |
+| `castuo-evolution` | Experimental governance and evolution framework (private) | Not the current authority, a synchronised SSOT or a deployed control plane |
 | `goldfish` | Assurance and recovery | Security, recovery and evidence preservation |
 | [`Cast-o`](https://github.com/Traky12/Cast-o) | CI and validation | Tests `CURRENT` (partial); performance benchmarking `TARGET`; license `PENDING` |
 | [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge / IoT | Offline continuity and synchronization |
@@ -101,12 +115,22 @@ Claim → Evidence → Execution → Hash → Reproduction
 | `ctaex-iot-pilot` | Laboratory | IoT and connectivity-loss validation; field claims excluded |
 | `agrovision-360` | Experimental | Bounded agro-vision research and drift evidence |
 | `castuo-360-v5.3` | Workspace | Integrated application experience; workspace ≠ production |
+| `castuo-foreign-verifier` | Assurance tooling (private) | Portable evidence verifier; tooling, not an external audit |
+| `castuo-vendor-exit-lab` | Experimental (private) | Vendor-exit scenarios; vendor independence not claimed |
+| `castuo-progress-dashboard` · `castuo-live-status-dashboard` | Status visualisation (private) | Visualisation, not a primary source of truth |
+| `castuo-strategy-knowledge-base` | Strategy navigation (private) | Links to canonical sources; not a canonical source itself |
+| `castuo-product-experience` | Product-experience prototype (private) | Offline demo and pilot-intake flow; demo data, adoption not claimed |
+| `castuo-link` | Concept (private) | Territorial-node concept; no code yet |
+| `castuo-neurocompanion` | Specification stage (private) | No product claims |
 | `-Prueba-final` | Archived | Former integration sandbox; archived |
 | [`n8n`](https://github.com/Traky12/n8n) | Third-party fork | Upstream `n8n-io/n8n`; upstream capability ≠ CASTÚO proprietary capability |
 | `openclaw` | Third-party fork · archived | Upstream capability ≠ CASTÚO proprietary capability |
 | `desktop-tutorial` | Archived | GitHub tutorial repository; archived |
+| `castuo-digital-system` · `castuo-docs-portal` · `castuo-security-runbook-site` · `copia-de-cast-o-system-strategy-knowledge-base` | Archived | Historical reference only |
 
-## Current Gates
+## Gates (historical, 2026-08-16)
+
+> Status as recorded in the 2026-08-16 snapshot; see the current engineering note above.
 
 | Gate | Status | Evidence needed next |
 |---|---|---|
