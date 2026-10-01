@@ -605,7 +605,7 @@ CASTÚO proprietary capability must not be inferred from upstream software merel
 
 * [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
 * [Security Policy](https://github.com/Traky12/Traky12/blob/main/SECURITY.md)
-* [Public Repository Map](https://github.com/Traky12/Traky12/blob/main/docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+* [Public Repository Map](#public-repository-map)
 * [Cast-o](https://github.com/Traky12/Cast-o)
 * [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge)
 * [castuo-offline-field-operations](https://github.com/Traky12/castuo-offline-field-operations)

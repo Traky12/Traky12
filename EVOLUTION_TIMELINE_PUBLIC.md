@@ -4,7 +4,7 @@
 
 `Traky12/Traky12` is the public index of technical evidence and sovereign orchestration. It is intentionally separate from the accounting workbook, the PIE PLUS business plan, financing assumptions and commercial claims. A link or commit proves that an artifact exists in a repository; it does not prove that a customer contract, grant, cash receipt, certification or production operation exists.
 
-Public claims use the status taxonomy of the [profile README](README.md#public-semantic-boundary): `CURRENT`, `TARGET`, `EXPERIMENTAL`, `PENDING` and `NOT_CLAIMED`. The timeline records what was added to the technical evidence chain and what remains pending.
+Public claims use the status taxonomy of the [profile README](README.md#public-status-taxonomy): `CURRENT`, `TARGET`, `EXPERIMENTAL`, `PENDING` and `NOT_CLAIMED`. The timeline records what was added to the technical evidence chain and what remains pending.
 
 **Private evidence.** The internal evolution milestones and their supporting commits are kept in private repositories. They are listed below by short commit reference only, not as public links, because a third party cannot open them. Detailed evidence can be provided under controlled review, subject to confidentiality and scope. These references are therefore **not publicly verifiable evidence**.
 
