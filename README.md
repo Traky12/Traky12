@@ -243,6 +243,8 @@ This is intentional.
 
 ---
 
+<a id="public-semantic-boundary"></a>
+
 ## Public status taxonomy
 
 All public repositories should use the same claim vocabulary:
