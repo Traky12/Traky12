@@ -4,6 +4,8 @@
 
 **Founder and lead architect of CASTÚO-SYSTEM™**
 
+**English** · [Español](README.es.md)
+
 > **NO CLAIM WITHOUT PROVENANCE**
 >
 > **NO AI DEPLOYMENT WITHOUT ASSURANCE**
@@ -608,6 +610,7 @@ CASTÚO proprietary capability must not be inferred from upstream software merel
 * [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
 * [Security Policy](https://github.com/Traky12/Traky12/blob/main/SECURITY.md)
 * [Public Repository Map](#public-repository-map)
+* [Public technical timeline](EVOLUTION_TIMELINE_PUBLIC.md)
 * [Cast-o](https://github.com/Traky12/Cast-o)
 * [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge)
 * [castuo-offline-field-operations](https://github.com/Traky12/castuo-offline-field-operations)
@@ -616,6 +619,8 @@ CASTÚO proprietary capability must not be inferred from upstream software merel
 * [CASTÚO-SYSTEM™](https://castuo-system.es/)
 * [ORCID](https://orcid.org/0009-0007-3489-0565)
 * [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
+
+A Spanish version is available in [`README.es.md`](README.es.md).
 
 ---
 
