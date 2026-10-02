@@ -1,0 +1,99 @@
+# CASTÚO Public Claim Boundary
+
+## Purpose
+
+This file defines the public boundary for claims made by the `Traky12` profile. It is a public presentation of the control plane, not a replacement for `CASTUO-REPOSITORY-STANDARD-V1.0` or private operational evidence.
+
+## CAN CLAIM
+
+The public profile may claim, within a declared scope, that CASTÚO has documented architecture, implemented repository metadata, conformance tooling, governed evidence contracts, bounded AI governance specifications, security and recovery designs, and reproducible technical work when the corresponding artifact is linked.
+
+The profile may describe **CASTÚO Evidence-Ready Field Operations** as the first commercial wedge or intended customer journey. This describes positioning and scope; it is not proof of a paid customer, recurring revenue, production operation or measured customer result.
+
+## CANNOT CLAIM
+
+The profile must not claim production operation, autonomous authority, physical actuation, financial execution, customer adoption, paid revenue, recurring revenue, certification, regulatory conformity, independent validation, continuous operation, universal interoperability, federation, universal security or guaranteed recovery unless each claim has separate dated and reviewable evidence.
+
+Upstream or fork capabilities from `n8n` and `openclaw` must not be presented as proprietary CASTÚO capabilities without explicit integration evidence and disclosure of upstream status, fork status, local modifications, license and version.
+
+## CLAIM REQUIRES
+
+Every promoted public claim requires, at minimum:
+
+| Requirement | Required content |
+|---|---|
+| Scope | Repository, component, tenant/node boundary and declared period |
+| Commit | Exact source commit or immutable artifact identifier |
+| Environment | Local, CI, staging, pilot or other declared environment |
+| Evidence | Linked manifest, execution envelope, test, report or result |
+| Review | Named or attributable human review with date and decision |
+| Gate | Control-plane Gate authorizing the wording |
+| Rollback | Revocation, correction or retraction path |
+
+A local conformance PASS is not remote conformance, staging execution, production evidence or commercial evidence.
+
+## Brand identity boundary
+
+The CASTÚO-SYSTEM logo and other approved brand assets are identity-only surfaces. They identify the ecosystem and its documentation; they do not prove production, certification, customer adoption, revenue, legal compliance, operational readiness, security maturity, staging execution or federation. Brand assets must be versioned through `assets/brand/brand-manifest.yaml`, checked against `assets/brand/checksums.sha256` and reviewed independently from any promotion gate.
+
+## Public state vocabulary
+
+The public profile uses the control-plane vocabulary only:
+
+`DOCUMENTED → IMPLEMENTED → TESTED → VALIDATED → OPERATIONAL → REPEATABLE → FEDERATED`
+
+and the promotion vocabulary:
+
+`CANDIDATE → CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING_EXECUTION → REVIEW → GREEN-STAGING`
+
+`CURRENT`, `TARGET`, `EXPERIMENTAL`, `PENDING` and `NOT_CLAIMED` are presentation labels mapped to those governed states; they are not a parallel taxonomy.
+
+## NEXT PROMOTION
+
+The next valid promotion path is:
+
+```text
+14/14 PASS LOCAL
+→ PR REVIEW / MERGE
+→ REMOTE CONFORMANCE
+→ SECURITY BASELINE
+→ VERTICAL SLICE
+→ EVIDENCE PASSPORT
+→ REPLAY / REPRODUCTION
+→ HUMAN REVIEW
+→ GREEN-STAGING
+```
+
+Current global state remains:
+
+```text
+GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION BLOCKED
+```
+
+## Jurisdiction-aware governance boundary
+
+The public profile may describe jurisdiction-aware AI governance as a `TARGET` architecture with evidence-scoped contracts, policy profiles, data boundaries and promotion Gates.
+
+The profile must not claim global legal compliance, automatic compliance with EU, China, Japan, Korea or any other jurisdiction, authorized cross-border transfer, local operation in a jurisdiction, certification or legal advice without jurisdiction-specific scope, versioned rule source, evidence and competent review.
+
+The public wording remains:
+
+```text
+jurisdiction-aware governance: TARGET
+jurisdiction legal compliance: NOT_CLAIMED
+cross-border execution: NOT_CLAIMED
+```
+
+## Legal, confidentiality and publication boundary
+
+Public documentation must contain only information authorised for public release. Secrets, credentials, access tokens, private endpoints, internal filesystem paths, personal data not necessary for the public profile, unverified operational evidence and protected customer or pilot information must remain outside public repositories.
+
+This boundary is a governance control, not legal advice and not a certification of regulatory compliance. Jurisdiction-specific legal conclusions require a competent human reviewer and a declared source, version, scope and date. Public wording must use `NOT_CLAIMED` whenever those conditions are absent.
+
+A public summary of documentation transfer may describe the authorised scope, canonical index, provenance links, review status and promotion blockers. It must not imply that transfer, publication, a commit, a pull request or a local check constitutes operational evidence, production, certification, customer traction, revenue, continuous operation or legal compliance.
+
+Before publication, each change must pass a confidentiality review and preserve the distinction:
+
+```text
+Identity != Documentation != Evidence != Execution != Review != Promotion
+```
