@@ -50,7 +50,7 @@ La revisión exhaustiva de la estructura demuestra que **CASTÚO-SYSTEM** no es 
 
 ## 5. Referencias
 
-[1] Traky12. *CASTÚO-SYSTEM Core Repository*. GitHub. Recuperado de https://github.com/Traky12/Castuo-system
+[1] Traky12. *CASTÚO-SYSTEM Core Repository*. GitHub, repositorio privado (`Traky12/Castuo-system`); no verificable públicamente, disponible bajo revisión controlada
 [2] Traky12. *Perfil de GitHub y Ecosistema*. GitHub. Recuperado de https://github.com/Traky12
 [3] CASTÚO-SYSTEM Architecture Documentation. *Modular Multi-Repository Separation of Concerns*. (2026).
 [4] Evidence Center Governance Specification v1.0. *Digital Thread & CI/CD Provenance Layer*. (2026).
@@ -65,7 +65,7 @@ La revisión exhaustiva de la estructura demuestra que **CASTÚO-SYSTEM** no es 
 [13] Infrastructure & Kubernetes. *Containerized Deployment and Helm/K8s Manifests*. (2026).
 [14] Security & Governance Framework. *OAuth/OIDC, Secrets Management & Compliance*. (2026).
 [15] Traky12. *castuo-agro-edge Repository*. GitHub. Recuperado de https://github.com/Traky12/castuo-agro-edge
-[16] Traky12. *ctaex-iot-pilot Repository*. GitHub. Recuperado de https://github.com/Traky12/ctaex-iot-pilot
+[16] Traky12. *ctaex-iot-pilot Repository*. GitHub, repositorio privado (`Traky12/ctaex-iot-pilot`); no verificable públicamente, disponible bajo revisión controlada
 [17] Traky12. *Cast-o Repository*. GitHub. Recuperado de https://github.com/Traky12/Cast-o
 [18] Linters & Code Quality Setup. *ESLint, Prettier, Ruff & Black Configurations*. (2026).
 [19] CI/CD Automation & Gates. *Automated Secrets Scanning and Evidence Validation*. (2026).
