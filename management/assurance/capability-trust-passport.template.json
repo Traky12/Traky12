@@ -1,0 +1,38 @@
+{
+  "capability": "",
+  "contract": "",
+  "implementation": [],
+  "evidence": [],
+  "security": {
+    "status": "PENDING",
+    "references": []
+  },
+  "reproducibility": {
+    "status": "PENDING",
+    "test": "",
+    "source_commit": ""
+  },
+  "independent_review": {
+    "status": "PENDING",
+    "reviewer": "",
+    "reviewed_at": ""
+  },
+  "operational_scope": "",
+  "known_limitations": [],
+  "current_gate": "GATE-R1",
+  "allowed_claims": [],
+  "forbidden_claims": [],
+  "sensitivity": "INTERNAL",
+  "provenance": {
+    "source_repository": "",
+    "source_commit": "",
+    "generated_at": ""
+  },
+  "audience": ["GOVERNANCE"],
+  "retention": "GOVERNANCE_RECORD",
+  "redaction": {
+    "applied": true,
+    "excluded_fields": ["credential", "access_token", "email", "provider_payload"],
+    "policy_version": "P1-DATA-POLICY-2026-08-17"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "castuo.commit-governance-policy.v1",
+  "status": "ACTIVE_LOCAL_AND_PR_GOVERNED",
+  "sourceOfTruth": "CASTUO-SOVEREIGN-REFERENCE-ARCHITECTURE.md",
+  "protectedBranches": ["main", "master"],
+  "directWrites": false,
+  "commitRequirements": {
+    "message": "imperative, scoped, auditable",
+    "taskReference": true,
+    "secretFree": true,
+    "reproducibleDiff": true,
+    "destructiveHistoryRewrite": false
+  },
+  "pullRequestRequirements": {
+    "required": true,
+    "governedBlockIdempotent": true,
+    "ownerReviewRequired": true,
+    "checksRequired": true,
+    "selfApprovalForbidden": true,
+    "mergeAutomationForbidden": true,
+    "rollbackReferenceRequired": true
+  },
+  "ownership": {
+    "platform": ["dashboard", "typed-contracts", "tests"],
+    "governance": ["readme-block", "operating-index", "task-registry"],
+    "security": ["connectors", "vault-boundary", "redaction", "supply-chain"],
+    "assurance": ["passports", "claims", "promotion-gates"],
+    "repositoryMaintainer": ["remote-security-alerts", "branch-protection", "merge"],
+    "independentReviewer": ["S-001-replay", "field-evidence", "economic-evidence"]
+  },
+  "requiredChecks": [
+    "unit-and-contract-tests",
+    "typescript",
+    "secret-scan",
+    "dependency-scan",
+    "sbom",
+    "governance-validation",
+    "readme-content-validation",
+    "remote-security-quality-when-authorized"
+  ],
+  "claimPolicy": {
+    "capabilityNotEvidence": true,
+    "localResultNoClaim": true,
+    "unknownNotAbsence": true,
+    "remote403NotZero": true,
+    "fieldAndEconomicEvidenceRequiredForN5": true
+  },
+  "rollback": {
+    "preferred": "named-checkpoint-or-revert-pr",
+    "destructiveReset": false,
+    "secretsInRollbackLogs": false,
+    "restoreReference": "CASTUO-RECOVERY-MANIFEST.json"
+  }
+}

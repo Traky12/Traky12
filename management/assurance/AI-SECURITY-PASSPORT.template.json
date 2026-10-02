@@ -1,0 +1,28 @@
+{
+  "capability": "",
+  "model_provider": "",
+  "model_identifier": "",
+  "source_commit": "",
+  "data_boundary": {
+    "inputs": [],
+    "outputs": [],
+    "retention": "EPHEMERAL_REVIEW",
+    "sensitive_data_allowed": false
+  },
+  "tool_permissions": [],
+  "evaluation": {
+    "dataset_reference": "",
+    "test_reference": "",
+    "status": "PENDING"
+  },
+  "security": {
+    "prompt_injection_controls": [],
+    "exfiltration_controls": [],
+    "human_approval_required": true
+  },
+  "known_limitations": [],
+  "allowed_claims": [],
+  "forbidden_claims": ["autonomous production authority", "field safety without independent evidence", "commercial performance without authorized records"],
+  "current_gate": "GATE-R1",
+  "status": "NOT CLAIMED"
+}

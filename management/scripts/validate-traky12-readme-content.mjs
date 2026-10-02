@@ -1,0 +1,26 @@
+import { execFileSync } from "node:child_process";
+import { readFileSync, writeFileSync } from "node:fs";
+const env = { ...process.env, GH_FORCE_TTY: "0", GH_PAGER: "cat", NO_COLOR: "1" };
+const run = (args) => execFileSync("gh", args, { encoding: "utf8", env }).trim();
+const sync = JSON.parse(readFileSync("docs/governance/TRAKY12-README-SYNC-RESULT.json", "utf8"));
+const block = readFileSync("docs/governance/TRAKY12-README-GOVERNED-BLOCK.md", "utf8").trim();
+const markerStart = "<!-- CASTUO-GOVERNED-README-BLOCK:START -->";
+const markerEnd = "<!-- CASTUO-GOVERNED-README-BLOCK:END -->";
+const required = ["Implemented progress surface", "Secure SaaS connectors", "Quantum Decision Lab", "Assurance P0/P1/P2", "Competitive intelligence", "S-001 reproducibility benchmark", "Supply-chain controls", "Traky12 integration"];
+const forbiddenPositiveClaims = [/CASTÚO\s+is\s+(better|best)/i, /CASTUO\s+is\s+(better|best)/i, /we\s+are\s+best-in-class/i, /commercially\s+superior\s+to/i];
+const checks = sync.results.map((item) => {
+  const repo = item.repo;
+  const branch = item.branch;
+  const payload = JSON.parse(run(["api", `repos/Traky12/${repo}/contents/README.md?ref=${encodeURIComponent(branch)}`]));
+  const content = Buffer.from(payload.content.replace(/\s/g, ""), "base64").toString("utf8");
+  const startCount = content.split(markerStart).length - 1;
+  const endCount = content.split(markerEnd).length - 1;
+  const blockContent = content.includes(markerStart) && content.includes(markerEnd) ? content.slice(content.indexOf(markerStart), content.indexOf(markerEnd) + markerEnd.length) : "";
+  const missing = required.filter((needle) => !blockContent.includes(needle));
+  const forbidden = forbiddenPositiveClaims.filter((pattern) => pattern.test(content)).map(String);
+  return { repo, branch, markerCounts: { start: startCount, end: endCount }, missing, forbidden, ok: startCount === 1 && endCount === 1 && missing.length === 0 && forbidden.length === 0, sha: payload.sha };
+});
+const result = { checked: checks.length, passed: checks.filter((item) => item.ok).length, allPassed: checks.every((item) => item.ok), checks };
+writeFileSync("docs/governance/TRAKY12-README-CONTENT-VALIDATION.json", `${JSON.stringify(result, null, 2)}\n`);
+console.log(JSON.stringify(result, null, 2));
+if (!result.allPassed) process.exit(1);
