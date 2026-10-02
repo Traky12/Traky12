@@ -19,35 +19,37 @@ Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure wher
 >
 > `NO EXTERNAL CLAIM WITHOUT REPRODUCIBLE EVIDENCE`
 
----
+CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. The first commercial wedge is **CASTÚO Evidence-Ready Field Operations**: offline-first continuity, traceability and reviewable evidence for workflows operating with irregular connectivity. It is a validation objective, not a proven commercial product.
 
 ## ⚡ EvOS v13.0 — Public Evidence Baseline Frozen
 
 CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline (`evos-v13.0/`). The documentation layer is now frozen for the current maturity cycle; further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
 
-### Architecture & Public Evidence Flow
-```text
-Traky12 (Profile & Architecture Boundary)
-    ↓ presents
-castuo-evidence (Public Evidence Fabric & S-001A Proofs)
-    ↓ demonstrates within scope
-castuo-evolution (private; prepared external surface — not the current authority nor a synchronised SSOT)
-    ↓ governs
-Castuo-system (Private Platform Core & Execution)
-```
+| Surface | Role |
+|---|---|
+| `Castuo-system` (private) | **Current canonical authority** for code, operational documentation, technical decisions and governed evolution (`governance/`) |
+| `castuo-evolution` (private) | Experimental or prepared governance and evolution framework. **Not** the current authority, **not** a synchronised source of truth (SSOT), deployed control plane or autonomous governance authority |
+| This profile (`Traky12/Traky12`) | Public entry point and navigation index. It summarises and links; it decides nothing and grants no license |
 
 ### 📊 Conformance & Evidence Metrics (Strictly Separated)
 
-| Scope | Metric | State |
-| :--- | :--- | :--- |
-| **Portfolio Local Conformance** | Repositories / Declared Checks | `14/14 PASS` |
-| **S-001A Public Evidence** | Local S-001A Checks | `13/13 PASS` |
-| **S-001A Public Evidence** | Remote Replay | `1/1 SIMULATED (PASS)` |
-| **Evidence Maturity** | EvOS v13.0 Baseline | `E1 VERIFIED · E2 READY · v13.0 FROZEN` |
+## Current engineering note — 2026-09-30
 
-*Note: The portfolio local conformance and the S-001A evidence baseline represent different scopes and must not be combined or interpreted as the same check set.*
+The ecosystem remains in technical consolidation.
 
----
+Local engineering evidence has progressed across testing, bounded
+security controls and evidence preservation. Some internal
+CI-dependent validations remain pending before promotion, merge and
+deployment. Public claims are limited accordingly.
+
+No production operation, field deployment, paid customer traction,
+continuous service, certification or federated authority is claimed.
+
+## Historical snapshot — 2026-08-16
+
+> **Historical local snapshot; not current deployment evidence.** The automatic sync from `castuo-evolution` has failed on every run since 2026-08-22 and is disabled; this table is a static, historical record.
+
+Label at that date: **GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED** (historical, as of 2026-08-16)
 
 ## 🧭 CASTÚO-SYSTEM™ Portfolio Hierarchy
 
@@ -81,6 +83,9 @@ verifiable.
 
 ---
 
+These public labels map onto the claim status used in the canonical repository; they are not a separate maturity model.
+
+Words such as "validated", "production", "federated", "complete", "secure" or "ready for…" require concrete evidence: commit, test, result, artifact, hash or release. A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
 ## ⚖️ Legal & Evidence Notice
 
 CASTÚO-SYSTEM™ is a technology project. Documentation describes technical architecture, engineering evidence, internal controls, and regulatory-readiness work. It does not constitute legal advice, regulatory certification, conformity assessment, accounting valuation, investment advice, or a guarantee of commercial performance.
@@ -115,7 +120,11 @@ The control plane governs the state. Repositories implement declared roles. Evid
 | `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
 | `desktop-tutorial` | Training / support | Repeatable contribution and governance training |
 
-## Current Gates
+Some internal, experimental, archived and pre-promotion work remains intentionally private and is not represented as a public product claim.
+
+## Gates (historical, 2026-08-16)
+
+> Status as recorded in the 2026-08-16 snapshot; see the current engineering note above.
 
 | Gate | Status | Evidence needed next |
 |---|---|---|
