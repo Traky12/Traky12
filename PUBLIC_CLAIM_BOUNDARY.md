@@ -2,7 +2,15 @@
 
 ## Purpose
 
-This file defines the public boundary for claims made by the `Traky12` profile. It is a public presentation of the control plane, not a replacement for `CASTUO-REPOSITORY-STANDARD-V1.0` or private operational evidence.
+This file defines the public boundary for claims made by the `Traky12` profile. It is a public representation layer, not a source of authority, and it does not replace `CASTUO-REPOSITORY-STANDARD-V1.0` or private operational evidence.
+
+## Canonical Authority
+
+Castuo-system is the private canonical authority for current technical state and promotion decisions.
+
+This public profile and its linked repositories expose selected, bounded and evidence-scoped material. They do not independently decide technical state, readiness or promotion outcomes.
+
+castuo-evolution contains prepared, historical and working governance material. It is not a canonical authority, not a synchronized source of truth and does not determine the current promotion state.
 
 ## CAN CLAIM
 
@@ -27,7 +35,7 @@ Every promoted public claim requires, at minimum:
 | Environment | Local, CI, staging, pilot or other declared environment |
 | Evidence | Linked manifest, execution envelope, test, report or result |
 | Review | Named or attributable human review with date and decision |
-| Gate | Control-plane Gate authorizing the wording |
+| Gate | Promotion decision recorded by the canonical authority (`Castuo-system`) authorizing the wording |
 | Rollback | Revocation, correction or retraction path |
 
 A local conformance PASS is not remote conformance, staging execution, production evidence or commercial evidence.
@@ -38,7 +46,7 @@ The CASTÚO-SYSTEM logo and other approved brand assets are identity-only surfac
 
 ## Public state vocabulary
 
-The public profile uses the control-plane vocabulary only:
+The public profile uses only the governed vocabulary defined by the canonical authority (`Castuo-system`):
 
 `DOCUMENTED → IMPLEMENTED → TESTED → VALIDATED → OPERATIONAL → REPEATABLE → FEDERATED`
 
@@ -50,7 +58,7 @@ and the promotion vocabulary:
 
 ## NEXT PROMOTION
 
-The next valid promotion path is:
+Historical promotion path recorded on 2026-08-16 (its starting point is a historical local result, not current status):
 
 ```text
 14/14 PASS LOCAL
@@ -64,10 +72,10 @@ The next valid promotion path is:
 → GREEN-STAGING
 ```
 
-Current global state remains:
+Current public promotion state (see the profile README, Current Public Status, 2026-10-02):
 
 ```text
-GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION BLOCKED
+CONSOLIDATION-1.0 = BLOCKED
 ```
 
 ## Jurisdiction-aware governance boundary
