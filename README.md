@@ -31,6 +31,27 @@ CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baselin
 | `castuo-evolution` (private) | Experimental or prepared governance and evolution framework. **Not** the current authority, **not** a synchronised source of truth (SSOT), deployed control plane or autonomous governance authority |
 | This profile (`Traky12/Traky12`) | Public entry point and navigation index. It summarises and links; it decides nothing and grants no license |
 
+<!-- CASTUO:STATE:START -->
+**STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED**
+
+**Public state generated from:** `Traky12/castuo-evolution@214ebbd` · generated `2026-08-17T02:21:50Z` · scope `canonical_control_plane_candidate`.
+
+| Dimension | Current public status |
+|---|---|
+| Local conformance | `14/14 PASS LOCAL` — repository-standard checks on declared local checkout set only |
+| Remote conformance | `PENDING_OR_SCOPE_LIMITED` |
+| Remote publication | `PENDING` |
+| Environment | `STAGING-CANDIDATE` |
+| Security baseline | `PENDING` |
+| Staging execution | `PENDING` |
+| Human review | `PENDING` |
+| Production | `NOT_CLAIMED` |
+| Commercial validation | `NOT_CLAIMED` |
+| Independent E3 | `PENDING` |
+| Federation | `NOT_CLAIMED` |
+
+**Does not imply:** remote execution, production readiness, security certification, commercial validation or independent review. The profile projects the control plane and does not decide state. `Identity != Evidence != Execution != Review != Promotion`.
+<!-- CASTUO:STATE:END -->
 ### 📊 Conformance & Evidence Metrics (Strictly Separated)
 
 ## Current engineering note — 2026-09-30
@@ -141,12 +162,55 @@ Some internal, experimental, archived and pre-promotion work remains intentional
 ## Public evidence and links
 
 - [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- [GitHub Actions audit-token setup](docs/GITHUB_ACTIONS_CASTUO_AUDIT_TOKEN.md)
+- [Public claim boundary](PUBLIC_CLAIM_BOUNDARY.md)
 - [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
 - [Cast-o validation](https://github.com/Traky12/Cast-o)
 - [Public repository list](https://github.com/Traky12?tab=repositories)
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
 - [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
+
+## Public navigation
+
+- [Public operating model](docs/CASTUO_PUBLIC_OPERATING_MODEL.md)
+- [Repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+- [Castuo-system canonical transition map](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_ECOSYSTEM_CANONICAL_TRANSITION.md)
+- [Castuo-system core remaining work](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_CORE_REMAINING_WORK.md)
+- [Bounded product scope](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/product/CASTUO_EVIDENCE_READY_FIELD_OPERATIONS.md)
+- [PILOT-001 public scope](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/pilot/PILOT-001_PUBLIC_SCOPE.md)
+- [Commercial readiness gates G0–G8](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/commercial/COMMERCIAL_READINESS_GATES_G0_G8.md)
+- [Remote operation readiness](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/operations/REMOTE_OPERATION_READINESS.md)
+- [CASTÚO information index](docs/CASTUO_INFORMATION_INDEX.md)
+- [CASTÚO transfer matrix](docs/CASTUO_TRANSFER_MATRIX.md)
+- [Manus artifact catalog and transfer boundaries](docs/CASTUO_MANUS_ARTIFACT_CATALOG_2026-08-16.md)
+- [CASTÚO strategy integration register](docs/CASTUO_STRATEGY_INTEGRATION_REGISTER.md)
+- [Registro estratégico — ES](docs/CASTUO_STRATEGY_INTEGRATION_REGISTER.es.md)
+- [Índice de información — ES](docs/CASTUO_INFORMATION_INDEX.es.md)
+- [Evidence Center](evidence-center/README.md)
+- [Current GitHub integration status](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md)
+- [Integration blockers and check scope](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_BLOCKERS_2026-08-16.md)
+- [Candidate GitHub consolidation audit](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/GITHUB_CONSOLIDATION_STATUS_2026-08-16.md)
+- [Remote PR check boundaries — candidate branch](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md)
+- [Contributing](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [English public claim boundary](PUBLIC_CLAIM_BOUNDARY.md)
+- [Spanish public claim boundary](PUBLIC_CLAIM_BOUNDARY.es.md)
+
+## CASTÚO processed integration register
+
+The material processed across Manus and GitHub is organized by role rather than copied indiscriminately into the profile. The profile is the public portal; `castuo-evolution` is the governance control plane; `Castuo-system` is the core implementation; `Cast-o` validates conformance; `goldfish` provides assurance and recovery; and the edge, field, pilot, laboratory and upstream repositories remain bounded by their declared scopes.
+
+| Processed artifact | Canonical location | Meaning |
+|---|---|---|
+| Frozen semantic baseline | [`CASTUO-REPOSITORY-STANDARD-V1.0`](https://github.com/Traky12/castuo-evolution/blob/main/docs/CASTUO-REPOSITORY-STANDARD-V1.0.md) | Common vocabulary and state semantics |
+| Core transition map | [`Castuo-system` transition map](https://github.com/Traky12/Castuo-system/blob/brand/castuo-system-identity-20260816/docs/CASTUO_ECOSYSTEM_CANONICAL_TRANSITION.md) | Core role, dependencies and evidence boundary |
+| Governance reference | [`Core implementation reference`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/CASTUO_CORE_IMPLEMENTATION_REFERENCE.md) | Control plane ↔ core relation |
+| Manus transfer record | [`Manus artifact catalog`](docs/CASTUO_MANUS_ARTIFACT_CATALOG_2026-08-16.md) | Public artifacts, references and exclusions |
+| Searchable strategy surface | CASTÚO Strategy Knowledge Base *(Manus project; public deployment pending)* | Search and navigation; not operational evidence |
+| Remote check boundary | [`REMOTE_PR_CHECK_STATUS`](https://github.com/Traky12/castuo-evolution/blob/chore/refresh-integration-status-20260816/docs/REMOTE_PR_CHECK_STATUS_2026-08-16.md) | Visible checks and upstream limitations |
+
+The transition remains governed by `CONFORMANCE → TEST → SECURITY → EVIDENCE → STAGING EXECUTION → REVIEW → GREEN-STAGING`. A local PASS, a README, a commit, an open PR or an identity asset does not close a promotion gate. The present public state remains `GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED`.
 
 ## Not claimed
 
@@ -156,9 +220,26 @@ The official PIE PLUS workbook remains authoritative for financial figures. Tech
 
 > The objective is not to make CASTÚO look certain. It is to make its evidence inspectable, its use understandable and its evolution safe.
 
-## Promotion closure / Cierre de promoción
+<!-- CASTUO-PUBLIC-INTEGRATION:START -->
+## CASTÚO-SYSTEM public integration
 
-The current CASTÚO posture remains **`PROMOTION = BLOCK` / `LOCAL_RESULT_NO_CLAIM`** until the bounded S-001A slice has an executable contract, portable evidence envelope, independent replay, human review and rollback evidence.
+**Repository role:** Public profile / portal.
 
-La ruta priorizada, los gaps, los riesgos P0 y los gates de salida están documentados en [`docs/CASTUO_PROMOTION_CLOSURE_PLAN.md`](docs/CASTUO_PROMOTION_CLOSURE_PLAN.md). Este repositorio debe conservar estados evidence-scoped y no elevar `LOCAL`, `PENDING` o `EVIDENCE_REQUIRED` a claims de producción, independencia de proveedor o validación independiente.
+Superficie pública; no fuente de verdad operativa. The public reference surface is governed by the [Traky12 profile](https://github.com/Traky12/Traky12) and the [castuo-evolution control plane](https://github.com/Traky12/castuo-evolution). Current ecosystem status is documented in the [integration status](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md) and [blocker register](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_BLOCKERS_2026-08-16.md).
 
+> Identity is not evidence. Repository activity is not operational truth. No production, certification, legal-compliance, customer, revenue, continuous-operation or federation claim is implied by this README block.
+<!-- CASTUO-PUBLIC-INTEGRATION:END -->
+
+<!-- CASTUO:ECOSYSTEM-INTEGRATION:START -->
+## CASTÚO-SYSTEM ecosystem integration
+
+**Declared role:** Portal público del ecosistema y superficie de claims.
+
+This repository is connected to the CASTÚO-SYSTEM ecosystem through the [Traky12 public profile](https://github.com/Traky12), the [Castuo-system core](https://github.com/Traky12/Castuo-system), and the [castuo-evolution governance control plane](https://github.com/Traky12/castuo-evolution). The canonical map defines relationships; repository activity does not become operational evidence by itself.
+
+**Current bounded state:** GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED, unless this repository's own metadata declares a narrower state. Identity, implementation, tests, evidence, review and promotion remain separate dimensions.
+
+**Evidence boundary:** This README does not claim production operation, certification, legal compliance, independent validation, customer traction, revenue, continuous operation, autonomous authority or federation. Such claims require scope-bound provenance, reproducible artifacts, security review, human review and an explicit promotion decision.
+
+**Canonical references:** [CASTÚO-REPOSITORY-STANDARD-V1.0](https://github.com/Traky12/Castuo-system/blob/main/README.md), [CASTÚO public claim boundary](https://github.com/Traky12/Traky12/blob/main/PUBLIC_CLAIM_BOUNDARY.md), and the [public profile](https://github.com/Traky12/Traky12).
+<!-- CASTUO:ECOSYSTEM-INTEGRATION:END -->
