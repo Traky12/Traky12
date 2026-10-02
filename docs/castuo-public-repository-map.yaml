@@ -1,17 +1,19 @@
 standard: CASTUO-REPOSITORY-STANDARD-V1.0
 status: PUBLIC_MAP
-semantic_owner: castuo-evolution
+semantic_owner: Castuo-system
 repositories:
   - name: Traky12
     class: PROFILE
     question: What is CASTÚO and where should a visitor start?
     claims_blocked: [control_plane_authority, production, certification]
   - name: castuo-evolution
-    class: GOV
-    question: What may CASTÚO claim, under which Gate and with what evidence?
+    class: EXTERNAL
+    question: Prepared external surface; not the current authority nor a synchronised SSOT.
     visibility: private
+    claims_blocked: [control_plane_authority, ssot]
   - name: Castuo-system
     class: CORE
+    authority: canonical
     question: What is implemented in the core platform?
     visibility: private
   - name: goldfish

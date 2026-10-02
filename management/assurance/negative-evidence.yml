@@ -1,0 +1,26 @@
+- id: NEG-REMOTE-CI-001
+  test: remote-ci
+  status: FAILED
+  scope: Castuo-system / PR #346
+  reason: checks-read-permission-unavailable
+  conditions:
+    - GitHub API returned 403 for checks and Dependabot security endpoints
+    - local reproduction and branch integration remained available
+  excluded:
+    - production runtime claim
+    - independent field validation
+  not_tested:
+    - authenticated remote alert enumeration with security_events scope
+  claim_impact: promotion_blocked
+  next_action: verify through authenticated GitHub session or security-scoped token
+
+- id: NEG-FIELD-EVIDENCE-001
+  test: quantum-field-metrics
+  status: NOT_TESTED
+  scope: Quantum Decision Lab
+  reason: no signed field evidence packet exists
+  excluded:
+    - field performance claim
+    - independent review claim
+  claim_impact: no_claim
+  next_action: collect signed field packet and independent review
