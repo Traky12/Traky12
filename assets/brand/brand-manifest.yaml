@@ -1,0 +1,40 @@
+brand_asset:
+  id: CASTUO-BRAND-LOGO-001
+  name: CASTÚO-SYSTEM™
+  version: 1.0.0
+  source: official_supplied_asset
+  master: assets/brand/castuo-system-logo-master.png
+  usage: official_identity_asset
+  status_claim: IDENTITY_ONLY
+  evidence_status: NOT_APPLICABLE
+  legal_certification_claim: NOT_CLAIMED
+  promotion_impact: NONE
+  human_review: REQUIRED
+  approved_for:
+    - github_profile
+    - public_readmes
+    - documentation
+    - evidence_center_index
+  prohibited_interpretations:
+    - production
+    - certification
+    - customer_adoption
+    - revenue
+    - legal_compliance
+    - operational_readiness
+    - federation
+  visual_rules:
+    preserve_aspect_ratio: true
+    prohibit_distortion: true
+    prohibit_unapproved_recoloring: true
+    prohibit_low_contrast_usage: true
+    prohibit_overlay_on_sensitive_content: true
+    minimum_clear_space: logo_height_times_0_25
+    minimum_display_width_px: 180
+  assets:
+    master_png: assets/brand/castuo-system-logo-master.png
+    master_jpg: assets/brand/castuo-system-logo-master.jpg
+    horizontal_jpg: assets/brand/castuo-system-logo-horizontal.jpg
+    square_jpg: assets/brand/castuo-system-logo-square.jpg
+    mark_png: assets/brand/castuo-system-mark.png
+    checksums: assets/brand/checksums.sha256

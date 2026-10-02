@@ -24,7 +24,7 @@ Forks and upstream-integrated repositories must preserve project attribution and
 
 ## Scope rule
 
-The README should point to deeper documents instead of copying the control plane. `Traky12` remains the public entry point; `castuo-evolution` remains the governance authority; Evidence Center remains the public evidence surface.
+The README should point to deeper documents instead of copying the control plane. `Traky12` remains the public entry point; `Castuo-system` is the canonical authority; `castuo-evolution` is a prepared external surface, not the governance authority or a synchronised SSOT; Evidence Center remains the public evidence surface.
 
 ## Minimal template
 

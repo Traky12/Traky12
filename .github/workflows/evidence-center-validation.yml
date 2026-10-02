@@ -1,16 +1,13 @@
 name: Evidence Center validation
 
+# No path filters: "Validate evidence dossiers" is a REQUIRED status check on
+# main. A path-filtered required check never reports on PRs that do not touch
+# evidence-center/, leaving them permanently BLOCKED (2026-09-28).
 on:
   push:
     branches: [main]
-    paths:
-      - 'evidence-center/**'
-      - '.github/workflows/evidence-center-validation.yml'
   pull_request:
     branches: [main]
-    paths:
-      - 'evidence-center/**'
-      - '.github/workflows/evidence-center-validation.yml'
 
 permissions:
   contents: read
@@ -21,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Install validation dependency
         run: python3 -m pip install --disable-pip-version-check --quiet pyyaml
