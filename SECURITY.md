@@ -2,22 +2,45 @@
 
 ## Scope
 
-This profile is the public entry point for CASTÚO-SYSTEM. It may contain documentation, public evidence indexes, governance references and identity assets. Sensitive execution envelopes, credentials, private endpoints, personal data and protected operational artifacts must not be published here.
+This is the public profile repository of CASTÚO-SYSTEM™ (`Traky12/Traky12`):
+documentation, a public Evidence Center and two GitHub Actions workflows. It
+runs no service and publishes no releases.
+
+This policy covers only the content of this repository. Each CASTÚO repository
+handles its own vulnerabilities; report issues in another repository through
+that repository's security policy.
+
+## Supported versions
+
+| Version | Supported |
+|---|---|
+| `main` branch (latest commit) | :white_check_mark: |
+| Any other branch or fork | :x: |
 
 ## Reporting a vulnerability
 
-Do not open a public issue for credentials, exploitable details, personal data or active infrastructure weaknesses. Use the private security-reporting channel configured for the affected repository, or contact the repository owner through the verified profile channels. Include the affected repository, commit or version, bounded reproduction steps, impact, evidence and a safe mitigation proposal.
+Do **not** open a public issue.
 
-## Evidence and security boundaries
+Report privately through GitHub: **Security → Report a vulnerability**
+(<https://github.com/Traky12/Traky12/security/advisories/new>).
 
-Security evidence must identify its scope, environment, commit, tool version, result, reviewer status and handling classification. A security workflow passing in one repository does not certify the ecosystem, a deployment or a production environment.
+Relevant findings include, for example, a credential or personal data
+exposed in this repository or its history, or a workflow that could be abused
+to write to the repository.
 
-The following remain denied by default in the initial CASTÚO dry-run scope: payment execution, production database administration, identity administration, direct PostgreSQL, MQTT or Vault access, physical actuation and unrestricted external-system access.
+This is a single-maintainer project; the times below are targets, not
+contractual SLAs:
 
-## Public claims
+- Acknowledgement: within 7 days.
+- Initial assessment (accepted / declined, with reasoning): within 30 days.
 
-Do not report a vulnerability fix as proof of certification, legal compliance, operational readiness or production security unless the corresponding evidence and review exist. The public claim boundary is defined in [`PUBLIC_CLAIM_BOUNDARY.md`](PUBLIC_CLAIM_BOUNDARY.md) and its Spanish counterpart [`PUBLIC_CLAIM_BOUNDARY.es.md`](PUBLIC_CLAIM_BOUNDARY.es.md).
+## Contributions
 
-## Retention
+This repository is a curated profile. Unsolicited pull requests that change
+claims, status or the repository map are not accepted; open an issue instead
+to point out an inaccuracy.
 
-Failed checks, negative tests and blocked promotion attempts are preserved as classified evidence. They are not deleted to create a cleaner public narrative. Secrets must never be committed; if a secret is exposed, revoke it first, then document the incident within the appropriate private channel.
+## License
+
+No license is granted for the content of this repository. Default copyright
+applies (all rights reserved by the author) unless a file states otherwise.

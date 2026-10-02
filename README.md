@@ -1,28 +1,35 @@
-<!-- CASTUO:BRAND:START -->
-<p align="center">
-  <a href="https://github.com/Traky12/Traky12/blob/brand/castuo-system-identity-20260816/assets/brand/brand-manifest.yaml">
-    <img src="https://raw.githubusercontent.com/Traky12/Traky12/brand/castuo-system-identity-20260816/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo — IDENTITY_ONLY" width="520" />
-  </a>
-</p>
-<!-- CASTUO:BRAND:END -->
+# Gregorio Jiménez Bodes — Traky12
 
-# CASTÚO-SYSTEM™
+> **⚠️ Superseded draft (branch `profile-hierarchy`, 2026-08-19).** This
+> branch is not the published profile; the canonical profile is the `main`
+> branch. It is kept for reference only. Corrected on 2026-09-28: the
+> valuation figure and links to private repositories were removed, and
+> `castuo-evolution` is no longer presented as the current authority or SSOT
+> (`Castuo-system` is the canonical authority).
 
 ### Systems Architect · Evidence Engineer · AI Governance & Assurance
 
 **Founder and lead architect of CASTÚO-SYSTEM™**
 
-> **NO CLAIM WITHOUT PROVENANCE**
+Building evidence-driven AI, Edge/IoT, and resilient digital infrastructure where software, operational state, and public claims must remain traceable and verifiable.
+
+> `NO CLAIM WITHOUT PROVENANCE`
 >
-> **NO AI DEPLOYMENT WITHOUT ASSURANCE**
+> `NO AI DEPLOYMENT WITHOUT ASSURANCE`
 >
-> **NO SCALE WITHOUT SECURITY AND OBSERVABILITY**
+> `NO EXTERNAL CLAIM WITHOUT REPRODUCIBLE EVIDENCE`
 
-CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. The first commercial wedge is **CASTÚO Evidence-Ready Field Operations**: offline-first continuity, traceability and reviewable evidence for workflows operating with irregular connectivity.
+CASTÚO-SYSTEM is an evidence-driven infrastructure direction for resilient rural and distributed operations. The first commercial wedge is **CASTÚO Evidence-Ready Field Operations**: offline-first continuity, traceability and reviewable evidence for workflows operating with irregular connectivity. It is a validation objective, not a proven commercial product.
 
-AI, Edge/IoT, federation, sovereignty and private cloud are enabling architecture. They are not separate products or claims of current production operation.
+## ⚡ EvOS v13.0 — Public Evidence Baseline Frozen
 
-## Current ecosystem state
+CASTÚO-SYSTEM™ has consolidated **EvOS v13.0** as its public evidence baseline (`evos-v13.0/`). The documentation layer is now frozen for the current maturity cycle; further progress will be demonstrated through independent review, real-world validation, and externally produced evidence.
+
+| Surface | Role |
+|---|---|
+| `Castuo-system` (private) | **Current canonical authority** for code, operational documentation, technical decisions and governed evolution (`governance/`) |
+| `castuo-evolution` (private) | Experimental or prepared governance and evolution framework. **Not** the current authority, **not** a synchronised source of truth (SSOT), deployed control plane or autonomous governance authority |
+| This profile (`Traky12/Traky12`) | Public entry point and navigation index. It summarises and links; it decides nothing and grants no license |
 
 <!-- CASTUO:STATE:START -->
 **STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED**
@@ -45,70 +52,74 @@ AI, Edge/IoT, federation, sovereignty and private cloud are enabling architectur
 
 **Does not imply:** remote execution, production readiness, security certification, commercial validation or independent review. The profile projects the control plane and does not decide state. `Identity != Evidence != Execution != Review != Promotion`.
 <!-- CASTUO:STATE:END -->
+### 📊 Conformance & Evidence Metrics (Strictly Separated)
 
-## Customer wedge
+## Current engineering note — 2026-09-30
 
-```text
-Problem → Field workflow → Capability → Implementation
-→ Test → Evidence → Review → Pilot → Payment → Operation
-→ Repeatability → Federation
-```
+The ecosystem remains in technical consolidation.
 
-The first user journey is intentionally bounded:
+Local engineering evidence has progressed across testing, bounded
+security controls and evidence preservation. Some internal
+CI-dependent validations remain pending before promotion, merge and
+deployment. Public claims are limited accordingly.
 
-```text
-Create organisation → register an operation → continue through connectivity loss
-→ synchronise → review evidence → export a report
-```
+No production operation, field deployment, paid customer traction,
+continuous service, certification or federated authority is claimed.
 
-The public profile does not claim that this journey is a completed production or commercial operation. Measured field results, payment, renewal and continuous operation require separate evidence.
+## Historical snapshot — 2026-08-16
 
-## Public semantic boundary
+> **Historical local snapshot; not current deployment evidence.** The automatic sync from `castuo-evolution` has failed on every run since 2026-08-22 and is disabled; this table is a static, historical record.
 
-| Label | Meaning in this profile |
-|---|---|
-| `CURRENT` | Presently supported by the declared control-plane scope and evidence basis |
-| `TARGET` | Intended capability or promotion profile, not current operational truth |
-| `EXPERIMENTAL` | Bounded laboratory, pilot or integration work; not production evidence |
-| `PENDING` | Required evidence, execution or review has not yet been completed |
-| `NOT_CLAIMED` | Explicitly outside the claims authorised by current evidence |
+Label at that date: **GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED** (historical, as of 2026-08-16)
 
-A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
+## 🧭 CASTÚO-SYSTEM™ Portfolio Hierarchy
 
-## Operating boundary
+CASTÚO-SYSTEM™ is structured as a hierarchical portfolio of modular technical assets:
 
-CASTÚO-SYSTEM currently distinguishes four independent states:
+- **Platform Core (`Castuo-system`)**: Core backend engine and offline-first runtime logic.
+- **`castuo-evolution`** (private): prepared external surface for governance material; not the current authority nor a synchronised SSOT. The canonical authority is `Castuo-system`.
+- **Evidence Fabric (`castuo-evidence`)**: Public evidence units, S-001A fixtures, schemas, and claim firewalls.
+- **Assurance & Benchmarking (`Cast-o`)**: Engineering automation and adversarial test harness.
+- **Public Capabilities (`castuo-agro-edge`, `castuo-offline-field-operations`)**: Edge IoT and resilient field synchronization.
+- **Research Workspaces (`goldfish`, `ctaex-iot-pilot`)**: Security hardening and agricultural field validation.
 
-| Layer | Public state |
-|---|---|
-| Brand | `CURRENT` |
-| Architecture | `CURRENT / EVIDENCE-SCOPED` |
-| Technical implementation | `IMPLEMENTED_LOCAL / TESTED` where evidenced |
-| Remote production | `NOT_CLAIMED` |
-| Commercial operation | `NOT_CLAIMED` |
-| Federation | `TARGET` |
-| Regulatory conformity | `NOT_CLAIMED` |
+---
 
-`DOCUMENTED` describes a specification, `IMPLEMENTED_LOCAL` describes code in the declared scope, `TESTED` describes a bounded test, and `OPERATIONAL` requires remote service, owner, access control, observability, backup/restore, rollback and dated evidence. No capability is promoted from documentation, code presence, local tests or repository activity alone.
+## 🎯 Next External Milestone: E3-001 — Independent Review & Reproduction
 
-## What CASTÚO can demonstrate today
+The first external validation milestone is structured as a reproducible evidence bundle (`external-validation/E3-001/`):
+- **Scope:** Independent reproduction of `governance/ai/ai_assurance_gate.py` and independent execution of the 12 automated adversarial tests covering 6 control categories.
+- **Protocol:** Defined in the private `castuo-evolution` repository (not publicly verifiable; available under controlled review).
+- **Evidence Integrity Rule:** Negative results, discrepancies, failures, and incidents form part of the evidence record (`FAILURE ≠ DELETE` → `FAILURE → FINDING → REMEDIATION → RE-TEST`). Unfavorable results will not be silently replaced.
 
-The public record can demonstrate evidence-oriented repository governance, capability-oriented architecture, local conformance checks, CI/CD and validation tooling, edge/offline architecture, evidence manifests and hashes, negative assurance testing, security and recovery controls, and governance gates with explicit promotion semantics.
+---
 
-It does not yet demonstrate continuous production operation, recurring paid customers, independent E3 review, repeatable commercial deployment, a production SLA or federated operation at scale. These remain `PENDING`, `TARGET` or `NOT_CLAIMED` according to the Proof Matrix.
+## 💶 Economic Evidence — Separate Domain
 
-## Proof Matrix and Evidence Center
+Historical internal valuation reference — not independently audited, not
+legally validated, not a current valuation, and not suitable for capital
+contribution, investment, financing, or due-diligence claims. No figure is
+published here. Supporting material is kept privately and is not publicly
+verifiable.
 
-The canonical assurance path is [`CASTUO_PROOF_MATRIX.md`](docs/governance/CASTUO_PROOF_MATRIX.md), which maps `Capability → Implementation → Test → Evidence → Review → Gate → State`. The operating rules are in [`CASTUO_OPERATING_BOUNDARY.md`](docs/governance/CASTUO_OPERATING_BOUNDARY.md), and the public navigation index is [`CASTUO_EVIDENCE_CENTER_INDEX.md`](docs/evidence/CASTUO_EVIDENCE_CENTER_INDEX.md).
+---
 
-Recent verified changes are recorded in [`CASTUO_RECENT_VERIFIED_CHANGES_2026-08-17.md`](docs/governance/CASTUO_RECENT_VERIFIED_CHANGES_2026-08-17.md). Activity demonstrates work performed in a declared scope; activity is not evidence of maturity.
+These public labels map onto the claim status used in the canonical repository; they are not a separate maturity model.
 
-## Evidence chain
+Words such as "validated", "production", "federated", "complete", "secure" or "ready for…" require concrete evidence: commit, test, result, artifact, hash or release. A commit, issue, README, badge or green workflow does not prove production, customer adoption, certification, autonomy, federation, recurring revenue or continuous operation.
+## ⚖️ Legal & Evidence Notice
 
-```text
-Claim → Evidence → Execution → Hash → Reproduction
-→ Independent review → Gate → Promotion / rollback
-```
+CASTÚO-SYSTEM™ is a technology project. Documentation describes technical architecture, engineering evidence, internal controls, and regulatory-readiness work. It does not constitute legal advice, regulatory certification, conformity assessment, accounting valuation, investment advice, or a guarantee of commercial performance.
+
+---
+
+## 🔗 Connect
+
+- 🌐 [CASTÚO-SYSTEM™](https://castuo-system.es/)
+- 🔬 [ORCID](https://orcid.0009-0007-3489-0565)
+- 💼 [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/)
+
+> *The goal is not to make the system look certain. The goal is to make its evidence inspectable.*
 
 The control plane governs the state. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
 
@@ -130,7 +141,11 @@ The control plane governs the state. Repositories implement declared roles. Evid
 | `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
 | `desktop-tutorial` | Training / support | Repeatable contribution and governance training |
 
-## Current Gates
+Some internal, experimental, archived and pre-promotion work remains intentionally private and is not represented as a public product claim.
+
+## Gates (historical, 2026-08-16)
+
+> Status as recorded in the 2026-08-16 snapshot; see the current engineering note above.
 
 | Gate | Status | Evidence needed next |
 |---|---|---|
