@@ -220,26 +220,24 @@ The official PIE PLUS workbook remains authoritative for financial figures. Tech
 
 > The objective is not to make CASTÚO look certain. It is to make its evidence inspectable, its use understandable and its evolution safe.
 
-<!-- CASTUO-PUBLIC-INTEGRATION:START -->
-## CASTÚO-SYSTEM public integration
 
-**Repository role:** Public profile / portal.
+## CASTÚO-SYSTEM — Governed public projection / Proyección pública gobernada
 
-Superficie pública; no fuente de verdad operativa. The public reference surface is governed by the [Traky12 profile](https://github.com/Traky12/Traky12) and the [castuo-evolution control plane](https://github.com/Traky12/castuo-evolution). Current ecosystem status is documented in the [integration status](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_STATUS_2026-08-16.md) and [blocker register](https://github.com/Traky12/castuo-evolution/blob/main/docs/GITHUB_INTEGRATION_BLOCKERS_2026-08-16.md).
+### English
 
-> Identity is not evidence. Repository activity is not operational truth. No production, certification, legal-compliance, customer, revenue, continuous-operation or federation claim is implied by this README block.
-<!-- CASTUO-PUBLIC-INTEGRATION:END -->
+This repository is part of the CASTÚO-SYSTEM governed public projection. The canonical control-plane source is `castuo-evolution`; this README is a bounded read-model and does not replace private evidence. Current local evidence is limited to `LOCAL_RESULT_NO_CLAIM` and declared scope. `N6/G10` remains `TARGET`; independent replay, production, field validation, commercial validation, federation, vendor independence and Gaia-X certification are not claimed without dated external evidence.
 
-<!-- CASTUO:ECOSYSTEM-INTEGRATION:START -->
-## CASTÚO-SYSTEM ecosystem integration
+Integration semantics remain explicit: **Capability ≠ Evidence ≠ Maturity ≠ Claim ≠ Competitive Advantage**. The permitted promotion path is identity → authority → integrity → evidence → replay → security → reconciliation → review → rollback. Missing evidence blocks promotion.
 
-**Declared role:** Portal público del ecosistema y superficie de claims.
+### Español
 
-This repository is connected to the CASTÚO-SYSTEM ecosystem through the [Traky12 public profile](https://github.com/Traky12), the [Castuo-system core](https://github.com/Traky12/Castuo-system), and the [castuo-evolution governance control plane](https://github.com/Traky12/castuo-evolution). The canonical map defines relationships; repository activity does not become operational evidence by itself.
+Este repositorio forma parte de la proyección pública gobernada de CASTÚO-SYSTEM. La fuente canónica del control plane es `castuo-evolution`; este README es un read-model delimitado y no sustituye la evidencia privada. La evidencia local actual se limita a `LOCAL_RESULT_NO_CLAIM` y al alcance declarado. `N6/G10` permanece como `TARGET`; no se declaran replay independiente, producción, validación de campo, validación comercial, federación, independencia de proveedor ni certificación Gaia-X sin evidencia externa fechada.
 
-**Current bounded state:** GREEN-STAGING-CANDIDATE · EVIDENCE-SCOPED · PROMOTION-BLOCKED, unless this repository's own metadata declares a narrower state. Identity, implementation, tests, evidence, review and promotion remain separate dimensions.
+La semántica de integración permanece explícita: **Capability ≠ Evidence ≠ Maturity ≠ Claim ≠ Competitive Advantage**. La ruta de promoción permitida es identidad → autoridad → integridad → evidencia → replay → seguridad → reconciliación → revisión → rollback. La ausencia de evidencia bloquea la promoción.
 
-**Evidence boundary:** This README does not claim production operation, certification, legal compliance, independent validation, customer traction, revenue, continuous operation, autonomous authority or federation. Such claims require scope-bound provenance, reproducible artifacts, security review, human review and an explicit promotion decision.
+### Release traceability
 
-**Canonical references:** [CASTÚO-REPOSITORY-STANDARD-V1.0](https://github.com/Traky12/Castuo-system/blob/main/README.md), [CASTÚO public claim boundary](https://github.com/Traky12/Traky12/blob/main/PUBLIC_CLAIM_BOUNDARY.md), and the [public profile](https://github.com/Traky12/Traky12).
-<!-- CASTUO:ECOSYSTEM-INTEGRATION:END -->
+- Release: `R47 / release/castuo-bilingual-evidence-20260819`
+- Change type: documentation-only, PR-only, no direct push to `main`
+- Source: `castuo-evolution` control-plane; local dashboard preparation
+- Status: prepared for repository-specific review; remote claims remain bounded
