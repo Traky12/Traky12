@@ -86,15 +86,16 @@ Los repositorios de terceros o upstream (por ejemplo, forks) son componentes ext
 
 **No se declara:** E3-001 todavía no es un resultado de validación independiente, una validación en producción, una certificación, un piloto con cliente ni una prueba comercial.
 
-## Snapshot histórico de evidencia
+## Baseline histórico de evidencia
 
-Los resultados históricos no deben leerse como evidencia actual remota, de producción ni comercial.
+### EvOS v13.0
 
-| Elemento | Fecha | Alcance | Resultado registrado | Limitación |
-|---|---|---|---|---|
-| EvOS v13.0 | 2026-08-15 | Baseline documental para un alcance de evidencia pública delimitado | Capa documental congelada | No es un claim actual de madurez, producción, operación, certificación de seguridad ni validación independiente |
-| Conformidad local del portfolio | 2026-08-16 | Comprobaciones locales declaradas sobre 14 repositorios | `14/14 PASS LOCAL` | Resultado local histórico; no es conformidad remota, certificación, producción ni evidencia de mercado |
-| Contadores del baseline S-001A | 2026-08-19 | Alcance delimitado de continuidad offline S-001A ([`castuo-evidence`](https://github.com/Traky12/castuo-evidence)) | `local 13/13`, `remote 0/1` | Contadores históricos; `castuo-evidence` registra la procedencia del baseline como bloqueada (defectuosa) y muestra aparte las cifras verificables actuales |
+**Fecha:** 2026-08-15  
+**Naturaleza:** Baseline documental histórico para un alcance de evidencia pública delimitado.  
+**Estado:** Histórico y no promocionable.  
+**Limitación:** El baseline asociado contiene limitaciones conocidas y no se usa como evidencia actual remota, operativa, de producción, de revisión independiente ni comercial.
+
+Los claims actuales se rigen por el Estado público actual y por la evidencia enlazada desde los repositorios públicos correspondientes.
 
 ## Aviso económico y jurídico
 
@@ -108,7 +109,6 @@ La documentación de CASTÚO-SYSTEM describe arquitectura técnica, evidencia de
 
 - [Web de CASTÚO-SYSTEM™](https://castuo-system.es/)
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
-- LinkedIn: CASTÚO-SYSTEM *(URL canónica pendiente de confirmación)*
 - [Límite público de claims](PUBLIC_CLAIM_BOUNDARY.es.md) · [Evidence Center](evidence-center/README.md) · [Política de seguridad](SECURITY.md) · [Contribuir](CONTRIBUTING.md)
 - [English version](README.md)
 

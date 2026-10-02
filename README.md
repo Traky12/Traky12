@@ -1,3 +1,9 @@
+<!-- CASTUO:BRAND:START -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo" width="520" />
+</p>
+<!-- CASTUO:BRAND:END -->
+
 # Gregorio Jiménez Bodes — Traky12
 
 ### Systems Architect · Evidence Engineer · AI Governance & Assurance
@@ -80,15 +86,16 @@ Third-party or upstream repositories (for example forks) are external components
 
 **Not claimed:** E3-001 is not yet an independent validation result, production validation, certification, customer pilot or commercial proof.
 
-## Historical Evidence Snapshot
+## Historical Evidence Baseline
 
-Historical results must not be read as current remote, production or commercial evidence.
+### EvOS v13.0
 
-| Item | Date | Scope | Recorded result | Limitation |
-|---|---|---|---|---|
-| EvOS v13.0 | 2026-08-15 | Documentation baseline for a bounded public evidence scope | Documentation layer frozen | Not a current maturity, production, operational, security-certification or independent-validation claim |
-| Portfolio local conformance | 2026-08-16 | Declared local checks across 14 repositories | `14/14 PASS LOCAL` | Historical local result; not remote conformance, certification, production or market evidence |
-| S-001A baseline counters | 2026-08-19 | Bounded S-001A offline-continuity scope ([`castuo-evidence`](https://github.com/Traky12/castuo-evidence)) | `local 13/13`, `remote 0/1` | Historical counters; `castuo-evidence` records the baseline provenance as blocked (defective) and lists today's verifiable figures separately |
+**Date:** 2026-08-15  
+**Nature:** Historical documentation baseline for a bounded public evidence scope.  
+**Status:** Historical and non-promotable.  
+**Limitation:** The associated baseline contains known limitations and is not used as current remote, operational, production, independent-review or commercial evidence.
+
+Current claims are governed by the Current Public Status and the evidence linked from the relevant public repositories.
 
 ## Economic and Legal Notice
 
@@ -102,7 +109,6 @@ CASTÚO-SYSTEM documentation describes technical architecture, engineering evide
 
 - [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
-- LinkedIn: CASTÚO-SYSTEM *(canonical profile URL pending confirmation)*
 - [Public claim boundary](PUBLIC_CLAIM_BOUNDARY.md) · [Evidence Center](evidence-center/README.md) · [Security policy](SECURITY.md) · [Contributing](CONTRIBUTING.md)
 - [Versión en español](README.es.md)
 
