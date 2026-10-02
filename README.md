@@ -18,7 +18,7 @@ Building evidence-driven digital infrastructure for bounded, traceable and revie
 
 CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and governed distributed operations. Its first product direction, **CASTÚO Evidence-Ready Field Operations** (offline-first continuity, traceability and reviewable evidence for workflows with irregular connectivity), is a validation objective, not a proven commercial product.
 
-## Current Public Status
+<!-- CASTUO:STATE:START -->
 
 **Snapshot date:** 2026-10-02  
 **Status:** Technical consolidation in progress  
