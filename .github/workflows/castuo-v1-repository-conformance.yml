@@ -33,6 +33,16 @@ jobs:
           grep -q 'production: NOT_CLAIMED' governance/castuo-standard-reference.yaml
           grep -q 'promotion: BLOCKED_UNTIL_LOCAL_SCOPE_EVIDENCE' governance/castuo-standard-reference.yaml
 
+      # Documentation regression control for the current public surfaces
+      # (README EN/ES, claim boundary EN/ES, public repository map). It is not
+      # a status authority and does not fetch other repositories.
+      - name: Validate public profile authority boundaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/validate_public_profile_surface.py --self-test
+          python3 scripts/validate_public_profile_surface.py --root .
+
       - name: Emit bounded conformance result
         shell: bash
         run: |
