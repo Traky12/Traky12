@@ -95,4 +95,61 @@ CASTÚO-SYSTEM™ is a technology project. Documentation describes technical arc
 
 > *The goal is not to make the system look certain. The goal is to make its evidence inspectable.*
 
-**Build · Validate · Observe · Document · Evolve**
+The control plane governs the state. Repositories implement declared roles. Evidence Packs demonstrate bounded results. The profile summarizes and links; it does not decide.
+
+## Repository map
+
+| Repository | Public role | Boundary |
+|---|---|---|
+| `castuo-evolution` | Governance control plane | SSOT for vocabulary, Gates, evidence and promotion state |
+| `Castuo-system` | Core platform | Implementation and bounded execution; production not claimed |
+| `goldfish` | Assurance and recovery | Security, recovery and evidence preservation |
+| [`Cast-o`](https://github.com/Traky12/Cast-o) | CI and validation | Tests, provenance and release evidence |
+| [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) | Edge / IoT | Offline continuity and synchronization |
+| [`castuo-offline-field-operations`](https://github.com/Traky12/castuo-offline-field-operations) | Field application | Local workflow, recovery and evidence export |
+| `ctaex-iot-pilot` | Laboratory | IoT and connectivity-loss validation; field claims excluded |
+| `agrovision-360` | Experimental | Bounded agro-vision research and drift evidence |
+| `castuo-360-v5.3` | Workspace | Integrated application experience; workspace ≠ production |
+| `-Prueba-final` | Experimental sandbox | Integration experiments only |
+| `n8n` | Upstream / fork | Governed workflow integration; upstream capability ≠ CASTÚO proprietary capability |
+| `openclaw` | Upstream / fork | Bounded assistant integration; upstream capability ≠ CASTÚO proprietary capability |
+| `desktop-tutorial` | Training / support | Repeatable contribution and governance training |
+
+## Current Gates
+
+| Gate | Status | Evidence needed next |
+|---|---|---|
+| Local conformance | `14/14 PASS LOCAL` | Preserve per-repository artifacts |
+| Remote publication | `PENDING` | PR review and merge |
+| Remote conformance | `PENDING` | Workflow execution on merged remote heads |
+| Security baseline | `PENDING` | Secrets, dependencies, SBOM, permissions and review controls |
+| Tests | `PENDING` | Repository-specific and negative tests |
+| Evidence | `PENDING` | Typed manifests, hashes and execution envelopes |
+| Staging execution | `PENDING` | Bounded core-to-field vertical slice |
+| Human review | `PENDING` | Dated scope-bound decision |
+| GREEN-STAGING | `BLOCKED` | All previous gates complete |
+
+## Public evidence and links
+
+- [Evidence Center](https://github.com/Traky12/Traky12/tree/main/evidence-center)
+- [Public repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md)
+- [Cast-o validation](https://github.com/Traky12/Cast-o)
+- [Public repository list](https://github.com/Traky12?tab=repositories)
+- [CASTÚO-SYSTEM™ website](https://castuo-system.es/)
+- [ORCID](https://orcid.org/0009-0007-3489-0565)
+- [LinkedIn](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b/)
+
+## Not claimed
+
+This profile does not claim production operation, autonomous authority, federation, certification, independent validation, regulatory conformity, paid customer traction, recurring revenue, private-cloud provisioning, operational robotics, semiconductor manufacturing or universal interoperability.
+
+The official PIE PLUS workbook remains authoritative for financial figures. Technical assets, architecture, code, planning scenarios and repository activity are not cash, market value, accounting value, income, funding, contract or customer result.
+
+> The objective is not to make CASTÚO look certain. It is to make its evidence inspectable, its use understandable and its evolution safe.
+
+## Promotion closure / Cierre de promoción
+
+The current CASTÚO posture remains **`PROMOTION = BLOCK` / `LOCAL_RESULT_NO_CLAIM`** until the bounded S-001A slice has an executable contract, portable evidence envelope, independent replay, human review and rollback evidence.
+
+La ruta priorizada, los gaps, los riesgos P0 y los gates de salida están documentados en [`docs/CASTUO_PROMOTION_CLOSURE_PLAN.md`](docs/CASTUO_PROMOTION_CLOSURE_PLAN.md). Este repositorio debe conservar estados evidence-scoped y no elevar `LOCAL`, `PENDING` o `EVIDENCE_REQUIRED` a claims de producción, independencia de proveedor o validación independiente.
+
