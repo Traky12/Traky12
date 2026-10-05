@@ -4,7 +4,7 @@
 </p>
 <!-- CASTUO:BRAND:END -->
 
-# Gregorio Jiménez Bodes — Traky12
+# Gregorio Julián Jiménez Bodes — Traky12
 
 ### Systems Architect · Evidence Engineer · AI Governance & Assurance
 
@@ -12,11 +12,13 @@
 
 Building evidence-driven digital infrastructure for bounded, traceable and reviewable operations.
 
-> This profile is a public index to selected technical evidence, repository roles and declared limitations. It is not the private technical authority for CASTÚO-SYSTEM.
+> This profile presents the public technical work of Gregorio Julián Jiménez Bodes, including selected evidence, repository roles, development activity and declared boundaries related to CASTÚO-SYSTEM™.
 
 > `NO CLAIM WITHOUT PROVENANCE` · `NO EXTERNAL CLAIM WITHOUT REPRODUCIBLE EVIDENCE`
 
-CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and governed distributed operations. Its first product direction, **CASTÚO Evidence-Ready Field Operations** (offline-first continuity, traceability and reviewable evidence for workflows with irregular connectivity), is a validation objective, not a proven commercial product.
+## Executive Summary
+
+CASTÚO-SYSTEM™ is a modular technical asset under active consolidation for traceable, governed and reviewable distributed operations. Its first product direction, **CASTÚO Evidence-Ready Field Operations**, focuses on offline-first continuity, operational traceability, evidence preservation and reviewable workflows for environments with irregular connectivity. The current engineering programme is centred on **OVS-01**, a controlled technical scenario covering event identity, offline persistence, recovery, synchronization and evidence integrity. The project follows a disciplined validation approach in which implementation, reproducibility, security, operational evidence and independent review are treated as distinct layers.
 
 ## Current Public Status
 
@@ -24,38 +26,47 @@ CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and g
 **Status:** Technical consolidation in progress  
 **Promotion state:** `CONSOLIDATION-1.0 = BLOCKED`  
 **Private technical authority:** `Castuo-system`  
-**Public representation:** Selected evidence, documented boundaries and explicit limitations  
-**Production operation:** Not claimed  
+**Public representation:** Selected technical evidence, repository roles, documented boundaries and development status  
+**Production operation:** Not currently claimed  
 **Independent validation:** Pending  
 **Operational validation:** Pending  
-**Commercial validation:** Not claimed
+**Commercial validation:** Not yet established
 
-`CURRENT` means implemented and verifiable within the declared scope. It does not imply production deployment, operational validation, independent validation, commercial availability or market traction.
+### Definition of CURRENT
+
+`CURRENT` means that the corresponding state is implemented and verifiable within the declared scope.
+
+It does not, by itself, mean production deployment, operational validation, independent validation, commercial availability or market adoption.
 
 ## Current Technical Focus
 
-**OVS-01 — CASTUO-SYSTEM Edge Continuity**
+### OVS-01 — CASTÚO-SYSTEM Edge Continuity
 
 **Status:** `PENDING`
 
-**Scope:** controlled engineering scenario for event identity, offline persistence, recovery, synchronization, evidence and replay.
+**Scope:**
+```text
+event identity → local persistence → connectivity loss → restart and recovery → synchronization → evidence generation → replay
+```
 
-**Boundary:** defined but not formally executed. No production, real CTAEX, independent, certification or commercial claim is promoted.
+**Objective:** Establish a reproducible technical basis for continuity and evidence preservation in a controlled scenario.
+
+**Current boundary:** The scenario is defined but has not yet been formally executed as an end-to-end promoted result. Production deployment, CTAEX validation, independent certification and commercial outcomes remain outside the current claim boundary unless separately evidenced.
 
 `PROMOTION-BLOCKED` remains the default until the required evidence and human review gate exist.
 
 ## Current Promotion State
 
-| Area | Current status (2026-10-05) | Meaning |
+| **Area** | **Current status** | **Meaning** |
 |---|---|---|
-| Technical consolidation | `IN PROGRESS` | Architecture, security and governance work continue |
-| Consolidation-1.0 | `BLOCKED` | Engineering and operational evidence gates remain open |
-| Staging execution | `PENDING` | Requires a bounded, reproducible deployment |
-| Identity and authorization | `PENDING` | Requires OIDC, organization and role evidence |
-| Operational Vertical Slice | `PENDING` | OVS-01 is defined as a controlled validation objective; no end-to-end operation is promoted |
-| Independent reproduction | `PENDING` | Third-party reproduction without synchronous assistance has not been demonstrated |
-| Third-party review | `PENDING` | No completed independent review is claimed |
-| Market validation | `NOT CLAIMED` | No commercial adoption, contract or recurring-revenue claim |
+| Technical consolidation | `IN PROGRESS` | Architecture, security, governance and evidence work continue |
+| Consolidation-1.0 | `BLOCKED` | Required engineering and validation gates remain open |
+| Staging execution | `PENDING` | Requires a bounded and reproducible deployment |
+| Identity and authorization | `PENDING` | Requires complete organization, identity and role evidence |
+| Operational Vertical Slice | `PENDING` | OVS-01 remains the principal controlled validation objective |
+| Independent reproduction | `PENDING` | Controlled third-party reproduction has not yet been demonstrated |
+| Third-party review | `PENDING` | No completed independent review is currently represented |
+| Market validation | `NOT ESTABLISHED` | No commercial adoption, customer contract or recurring-revenue evidence is currently represented |
 
 **Claim discipline:** capability is not evidence; evidence is not maturity; maturity is not a claim; and a claim is not competitive advantage (`CAPABILITY ≠ EVIDENCE ≠ MATURITY ≠ CLAIM`).
 
@@ -69,7 +80,7 @@ CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and g
 
 **`Traky12`** is the public read-model: a representation and evidence index for selected claims, repository roles and declared limitations. It does not decide technical state, governance outcomes or promotion.
 
-**`Cast-o`** and **`goldfish`** are assurance, recovery and technical-support surfaces. They do not independently certify the private core.
+**`Cast-o`** and **`goldfish`** provide assurance, recovery and technical-support surfaces within their declared scopes. They do not independently certify the private core.
 
 ## Public Authority and Evidence Model
 
@@ -117,15 +128,15 @@ Third-party or upstream repositories, including forks, are external components a
 
 ## Economic and Legal Notice
 
-Technical assets, architecture, code, planning scenarios, documentation and repository activity are not cash, accounting value, funding, revenue, contracts, customer results or market validation.
+This profile distinguishes technical development evidence from economic, legal and regulatory conclusions.
 
-Repository activity demonstrates ongoing development; it does not by itself demonstrate user adoption, customer value, market traction, commercial validation or recurring revenue.
+Repository activity, architecture, code, documentation, planning scenarios and engineering work may demonstrate development activity and technical investment. They do not, by themselves, establish accounting value, funding, revenue, contractual commitments, customer adoption or market traction.
 
-The official PIE PLUS workbook remains authoritative for financial figures, assumptions and business-planning scenarios.
+Financial assumptions and business-planning figures are maintained in the appropriate dated business documentation. The official PIE PLUS workbook remains authoritative for its respective financial scenarios.
 
-Any technical-asset valuation, contribution valuation or economic scenario belongs in a dated valuation memo or technical-economic report, not in this public profile unless its methodology and publication scope are explicitly approved.
+Any technical-asset valuation, contribution valuation or economic scenario should be presented through a dated technical-economic or valuation document with an explicit methodology and publication scope.
 
-CASTÚO-SYSTEM documentation describes technical architecture, engineering evidence, internal controls and work in progress. It does not constitute legal advice, regulatory certification, conformity assessment, investment advice, accounting valuation or a guarantee of commercial performance.
+The information presented here is descriptive and evidentiary in nature. It is not intended, by itself, to constitute legal advice, regulatory certification, conformity assessment, accounting valuation, investment advice or a guarantee of future commercial performance.
 
 ## Historical Engineering Record
 
@@ -147,9 +158,9 @@ The official brand asset is versioned at `assets/brand/castuo-system-logo-horizo
 - [Contributing](CONTRIBUTING.md)
 - [Versión en español](README.es.md)
 
-## Not Claimed
+## Current Boundaries
 
-This profile does not claim:
+The current profile does not represent the following outcomes as established facts:
 
 - Production operation.
 - Autonomous authority.
@@ -166,4 +177,8 @@ This profile does not claim:
 - AI autonomy in production.
 - Multi-site industrial deployment.
 
-> The goal is not to make the system look certain. The goal is to make bounded claims, evidence and limitations inspectable. Public materials do not replace controlled technical review of the private core.
+The purpose of this profile is to present the work of Gregorio Julián Jiménez Bodes and the CASTÚO-SYSTEM™ technical ecosystem in a useful, professional, transparent and independently reviewable form.
+
+The objective is not to eliminate uncertainty. It is to make technical progress, evidence, boundaries and next validation steps clearly inspectable.
+
+> The profile does not claim certainty; it makes the current state, technical boundaries, evidence model and next validation steps inspectable.
