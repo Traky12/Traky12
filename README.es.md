@@ -20,7 +20,7 @@ CASTÚO-SYSTEM es un activo tecnológico modular en consolidación para operacio
 
 ## Estado público actual
 
-**Fecha del snapshot:** 2026-10-02  
+**Fecha del snapshot:** 2026-10-05  
 **Estado:** Consolidación técnica en curso  
 **Estado de promoción:** `CONSOLIDATION-1.0 = BLOCKED`  
 **Autoridad técnica privada:** `Castuo-system`  
@@ -32,15 +32,27 @@ CASTÚO-SYSTEM es un activo tecnológico modular en consolidación para operacio
 
 `CURRENT` significa implementado y verificable dentro del alcance declarado. No implica despliegue en producción, validación operativa, validación independiente, disponibilidad comercial ni tracción de mercado.
 
+## Foco técnico actual
+
+**OVS-01 — CASTUO-SYSTEM Edge Continuity**
+
+**Estado:** `PENDING`
+
+**Alcance:** escenario controlado de ingeniería para identidad de eventos, persistencia offline, recuperación, sincronización, evidencia y replay.
+
+**Límite:** definido pero no ejecutado formalmente. No se promociona ningún claim de producción, operación real CTAEX, validación independiente, certificación ni validación comercial.
+
+`PROMOTION-BLOCKED` sigue siendo el estado por defecto hasta que exista la evidencia requerida y la revisión humana correspondiente.
+
 ## Estado de promoción actual
 
-| Área | Estado actual (2026-10-02) | Significado |
+| Área | Estado actual (2026-10-05) | Significado |
 |---|---|---|
 | Consolidación técnica | `IN PROGRESS` | Continúa el trabajo de arquitectura, seguridad y gobernanza |
 | Consolidation-1.0 | `BLOCKED` | Siguen abiertos gates de evidencia de ingeniería y de operación |
 | Ejecución en staging | `PENDING` | Requiere un despliegue delimitado y reproducible |
 | Identidad y autorización | `PENDING` | Requiere evidencia de OIDC, organización y roles |
-| Vertical Slice operativo | `PENDING` | No se promociona ninguna operación de usuario de extremo a extremo |
+| Vertical Slice operativo | `PENDING` | OVS-01 está definido como objetivo de validación controlada; no se promociona ninguna operación de extremo a extremo |
 | Reproducción independiente | `PENDING` | No se ha demostrado la reproducción por un tercero sin asistencia síncrona |
 | Revisión por tercero | `PENDING` | No se declara ninguna revisión independiente completada |
 | Validación de mercado | `NOT CLAIMED` | Sin claims de adopción comercial, contratos ni ingresos recurrentes |
@@ -121,7 +133,7 @@ Los registros de ingeniería anteriores, snapshots de validación local, iteraci
 
 - [Registro de ingeniería del 2026-08-18 (README del perfil en el commit `860a20e`)](https://github.com/Traky12/Traky12/blob/860a20ecee74af90191fb25cd72327bf5739528c/README.md)
 
-Esos registros describen estados delimitados capturados durante agosto de 2026. No prevalecen sobre el estado público actual fechado el 2026-10-02 y no constituyen evidencia actual de producción, operativa, independiente, de campo, comercial ni de mercado. Un commit registra historia del repositorio; por sí solo no es evidencia de campo, de despliegue, de aseguramiento de seguridad ni comercial.
+Esos registros describen estados delimitados capturados durante agosto de 2026. No prevalecen sobre el estado público actual fechado el 2026-10-05 y no constituyen evidencia actual de producción, operativa, independiente, de campo, comercial ni de mercado. Un commit registra historia del repositorio; por sí solo no es evidencia de campo, de despliegue, de aseguramiento de seguridad ni comercial.
 
 El activo oficial de marca está versionado en `assets/brand/castuo-system-logo-horizontal.jpg`. La coherencia de marca es solo metadato de presentación y no constituye evidencia técnica, de seguridad, de producción ni comercial.
 
