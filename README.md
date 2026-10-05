@@ -20,7 +20,7 @@ CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and g
 
 ## Current Public Status
 
-**Snapshot date:** 2026-10-02  
+**Snapshot date:** 2026-10-05  
 **Status:** Technical consolidation in progress  
 **Promotion state:** `CONSOLIDATION-1.0 = BLOCKED`  
 **Private technical authority:** `Castuo-system`  
@@ -32,15 +32,27 @@ CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and g
 
 `CURRENT` means implemented and verifiable within the declared scope. It does not imply production deployment, operational validation, independent validation, commercial availability or market traction.
 
+## Current Technical Focus
+
+**OVS-01 — CASTUO-SYSTEM Edge Continuity**
+
+**Status:** `PENDING`
+
+**Scope:** controlled engineering scenario for event identity, offline persistence, recovery, synchronization, evidence and replay.
+
+**Boundary:** defined but not formally executed. No production, real CTAEX, independent, certification or commercial claim is promoted.
+
+`PROMOTION-BLOCKED` remains the default until the required evidence and human review gate exist.
+
 ## Current Promotion State
 
-| Area | Current status (2026-10-02) | Meaning |
+| Area | Current status (2026-10-05) | Meaning |
 |---|---|---|
 | Technical consolidation | `IN PROGRESS` | Architecture, security and governance work continue |
 | Consolidation-1.0 | `BLOCKED` | Engineering and operational evidence gates remain open |
 | Staging execution | `PENDING` | Requires a bounded, reproducible deployment |
 | Identity and authorization | `PENDING` | Requires OIDC, organization and role evidence |
-| Operational Vertical Slice | `PENDING` | No end-to-end user operation is promoted |
+| Operational Vertical Slice | `PENDING` | OVS-01 is defined as a controlled validation objective; no end-to-end operation is promoted |
 | Independent reproduction | `PENDING` | Third-party reproduction without synchronous assistance has not been demonstrated |
 | Third-party review | `PENDING` | No completed independent review is claimed |
 | Market validation | `NOT CLAIMED` | No commercial adoption, contract or recurring-revenue claim |
@@ -121,7 +133,7 @@ Earlier engineering records, local validation snapshots, dashboard iterations, r
 
 - [Engineering record of 2026-08-18 (profile README at commit `860a20e`)](https://github.com/Traky12/Traky12/blob/860a20ecee74af90191fb25cd72327bf5739528c/README.md)
 
-Those records describe bounded states captured during August 2026. They do not override the current public status dated 2026-10-02 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
+Those records describe bounded states captured during August 2026. They do not override the current public status dated 2026-10-05 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
 
 The official brand asset is versioned at `assets/brand/castuo-system-logo-horizontal.jpg`. Brand consistency is presentation metadata only and does not constitute technical, security, production or commercial evidence.
 
