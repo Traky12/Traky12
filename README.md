@@ -18,10 +18,19 @@ Building evidence-driven digital infrastructure for bounded, traceable and revie
 
 CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and governed distributed operations. Its first product direction, **CASTÚO Evidence-Ready Field Operations** (offline-first continuity, traceability and reviewable evidence for workflows with irregular connectivity), is a validation objective, not a proven commercial product.
 
+CASTÚO-SYSTEM is a modular technical asset in consolidation.
+It is designed for evidence-ready, offline-first and governed distributed operations.
+Current focus: **OVS-01 — Edge Continuity**.
+Current status: technical consolidation; promotion blocked pending evidence gates.
+No production, independent validation, commercial traction or recurring revenue is claimed.
+
 ## Current Public Status
 
-**Snapshot date:** 2026-10-05  
+**Snapshot date:** 2026-10-07  
 **Status:** Technical consolidation in progress  
+**Security remediation:** ACTIVE  
+**Credential rotation:** PENDING  
+**Dependabot verification:** NOT_FULLY_VERIFIABLE_WITH_CURRENT_ACCESS  
 **Promotion state:** `CONSOLIDATION-1.0 = BLOCKED`  
 **Private technical authority:** `Castuo-system`  
 **Public representation:** Selected evidence, documented boundaries and explicit limitations  
@@ -29,6 +38,20 @@ CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and g
 **Independent validation:** Pending  
 **Operational validation:** Pending  
 **Commercial validation:** Not claimed
+
+## Active Security Remediation
+
+**Cast-o #46:** `OPEN`  
+**Purpose:** remove embedded credentials and harden runtime secret handling.  
+**CI status:** pending complete validation.  
+**Merge:** not authorized until all required checks complete.
+
+Exposed credentials must be rotated independently of repository cleanup. Removing a secret from the repository does not revoke a credential that may have been previously exposed.
+
+**Credential rotation:** `PENDING`  
+**Dependabot verification:** `NOT_FULLY_VERIFIABLE_WITH_CURRENT_ACCESS`
+
+No “zero vulnerabilities”, production, TRL9, operational-continuity or commercial claim is promoted while these remediation and validation gates remain open.
 
 `CURRENT` means implemented and verifiable within the declared scope. It does not imply production deployment, operational validation, independent validation, commercial availability or market traction.
 
@@ -99,6 +122,16 @@ This profile does not replace repository-specific authority. Build, deployment, 
 
 Third-party or upstream repositories, including forks, are external components and are not proprietary CASTÚO capability. The full role map lives in [`docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md`](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md).
 
+
+## Dashboard Boundaries
+
+**Public status representation:** `castuo-live-status-dashboard`  
+**Internal progress tracking:** `castuo-progress-dashboard`
+
+Neither dashboard is canonical technical authority.  
+Neither dashboard decides current technical state, governance outcomes or promotion.
+
+Canonical technical authority remains `Castuo-system`.
 ## Next Validation Milestone
 
 ### E3-001 — Controlled Independent Reproduction
