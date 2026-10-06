@@ -110,6 +110,38 @@ This profile does not replace repository-specific authority. Build, deployment, 
 
 Third-party or upstream repositories, including forks, are external components and are not proprietary CASTÚO capability. The full role map lives in [`docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md`](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md).
 
+## CASTÚO Ecosystem Architecture
+
+The ecosystem uses differentiated architectural identifiers so that repositories are related by architecture without being treated as interchangeable components.
+
+| Layer | Architectural component | GitHub repository |
+|---|---|---|
+| 01 · Core | `castuo-core-platform` | `Traky12/Castuo-system` |
+| 01 · Platform workspace | `castuo-cloud-workspace` | `Traky12/castuo-360-v5.3` |
+| 01 · Strategy/state | `castuo-strategy-registry` | `Traky12/castuo-strategy-knowledge-base` |
+| 02 · Field | `castuo-field-runtime` | `Traky12/castuo-offline-field-operations` |
+| 02 · Edge | `castuo-edge-telemetry` | `Traky12/castuo-agro-edge` |
+| 02 · IoT validation | `castuo-iot-lab` | `Traky12/ctaex-iot-pilot` |
+| 02 · Territorial | `castuo-territorial-nodes` | `Traky12/castuo-link` |
+| 02 · Vision | `castuo-vision-lab` | `Traky12/agrovision-360` |
+| 03 · Evidence | `castuo-evidence-pack` | `Traky12/castuo-evidence` |
+| 03 · Replay | `castuo-replay-protocol` | `Traky12/castuo-e3-001` |
+| 03 · Verification | `castuo-independent-verifier` | `Traky12/castuo-foreign-verifier` |
+| 03 · Assurance | `castuo-assurance-workbench` | `Traky12/Cast-o` |
+| 03 · Continuity | `castuo-continuity-lab` | `Traky12/castuo-vendor-exit-lab` |
+| 04 · Governance | `castuo-governance-plane` | `Traky12/castuo-evolution` |
+| 04 · Security | `castuo-security-ops` | `Traky12/goldfish` |
+| 04 · Security procedures | `castuo-security-runbook` | `Traky12/castuo-security-runbook-site` *(archived)* |
+| 05 · Demo | `castuo-field-demo` | `Traky12/castuo-product-experience` |
+| 05 · Maturity | `castuo-maturity-dashboard` | `Traky12/castuo-progress-dashboard` |
+| 05 · Ecosystem status | `castuo-ecosystem-status` | `Traky12/castuo-live-status-dashboard` |
+| 05 · Trust/docs | `castuo-trust-portal` | `Traky12/castuo-docs-portal` *(archived)* |
+| 06 · AI laboratory | `castuo-assistant-lab` | `Traky12/castuo-neurocompanion` |
+
+**Naming rule:** the architectural identifier names the function; the GitHub slug remains the locator until a repository-rename operation and full reference reconciliation can be performed.
+
+Archived historical repositories and third-party forks retain their original slugs for traceability and provenance. They are not presented as active CASTÚO architectural components.
+
 ## Next Validation Milestone
 
 ### E3-001 — Controlled Independent Reproduction
