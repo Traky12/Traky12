@@ -56,6 +56,15 @@ The architectural name describes the function. The GitHub slug remains the techn
 
 Enable a third-party reviewer to reproduce a bounded, non-sensitive assurance scenario without exposing private implementation or credentials.
 
+## European engineering baseline
+
+CASTÚO applies a risk-based European regulatory engineering baseline covering data protection, AI governance, cybersecurity, connected-product data, accessibility and applicable sector requirements.
+
+- [European Regulatory Baseline](docs/CASTUO-EUROPEAN-BASELINE.md)
+- [Impact Model](IMPACT.md)
+
+These documents describe engineering controls and applicability assessment. They are not legal certification or a declaration of compliance.
+
 ## Current boundaries
 
 The public profile does not represent production operation, independent validation, certification, regulatory conformity, paid customer traction, recurring revenue or operational field validation as established facts.
