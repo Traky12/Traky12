@@ -86,6 +86,8 @@ This profile does not replace repository-specific authority. Build, deployment, 
 
 ## Public Repository Map
 
+The consolidated single-page ecosystem map is maintained in [ECOSYSTEM.md](ECOSYSTEM.md).
+
 | Repository | Public role | Boundary |
 |---|---|---|
 | `Castuo-system` *(private)* | Private platform core | Canonical authority for current technical state and promotion decisions; implementation is not publicly exposed in full |
