@@ -129,6 +129,35 @@ Any technical-asset valuation, contribution valuation or economic scenario belon
 
 CASTÚO-SYSTEM documentation describes technical architecture, engineering evidence, internal controls and work in progress. It does not constitute legal advice, regulatory certification, conformity assessment, investment advice, accounting valuation or a guarantee of commercial performance.
 
+## Indicative Technical-Asset Value — 2026-10-08
+
+**Purpose:** provide a dated working valuation of the CASTÚO-SYSTEM technical asset for planning and negotiation. This is **not** an accounting valuation, independent appraisal, investment advice, or proof of market value.
+
+| Reference | Indicative range | Interpretation |
+|---|---:|---|
+| Reconstruction / replacement value | **€750,000–€1,300,000** | Estimated effort and engineering scope required to recreate the accumulated technical asset, architecture, governance, evidence structures and implementation base under equivalent assumptions. |
+| Current technical-asset value | **€600,000–€900,000** | Working range for the present technical asset, before independent technical appraisal and before commercial validation. |
+| Working midpoint | **≈ €750,000** | Internal planning anchor within the current technical-asset range; not a market transaction price. |
+| Pre-seed negotiation reference | **€1.1M–€1.5M** | Indicative negotiation range that may be used for financing discussions if supported by the dated technical asset, execution plan and subsequent evidence. |
+
+### Valuation boundary
+
+The figures above are **working scenarios**, not realised economic value. They do not establish:
+
+- recurring revenue;
+- customer contracts or adoption;
+- independent validation;
+- certification or regulatory conformity;
+- production deployment;
+- a third-party appraisal;
+- a guaranteed sale price or company valuation.
+
+The principal distinction is:
+
+`technical asset ≠ accounting value ≠ market value ≠ company valuation`
+
+The valuation should be updated whenever the technical state, evidence status, IP position, commercial traction or financing assumptions materially change. The official PIE PLUS workbook remains authoritative for business-plan financial assumptions; this profile provides only a dated public valuation reference.
+
 ## Historical Engineering Record
 
 Earlier engineering records, local validation snapshots, dashboard iterations, repository inventories and commit ledgers from August 2026 are retained for historical traceability in the repository history. This includes the EvOS v13.0 documentation baseline of 2026-08-15 and the governed engineering record of 2026-08-18, with its 91-entry historical commit ledger:
