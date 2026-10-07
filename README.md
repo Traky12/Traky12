@@ -30,6 +30,8 @@ CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and g
 **Operational validation:** Pending  
 **Commercial validation:** Not claimed
 
+**Update — 2026-10-07:** Authentication hardening work has advanced in the private canonical repository. Two remediations have been merged after passing the required Linux CI checks. Deployment, post-deployment verification, operational validation, independent reproduction and promotion gates remain pending. This update does not claim production operation, field validation, certification or commercial validation.
+
 `CURRENT` means implemented and verifiable within the declared scope. It does not imply production deployment, operational validation, independent validation, commercial availability or market traction.
 
 ## Current Technical Focus

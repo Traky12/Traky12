@@ -30,6 +30,8 @@ CASTÚO-SYSTEM es un activo tecnológico modular en consolidación para operacio
 **Validación operativa:** Pendiente  
 **Validación comercial:** No se declara
 
+**Actualización — 2026-10-07:** El endurecimiento de autenticación ha avanzado en el repositorio privado canónico. Dos remediaciones se han fusionado tras superar los checks obligatorios de CI en Linux. El despliegue, la verificación posterior, la validación operativa, la reproducción independiente y los gates de promoción siguen pendientes. Esta actualización no afirma operación en producción, validación de campo, certificación ni validación comercial.
+
 `CURRENT` significa implementado y verificable dentro del alcance declarado. No implica despliegue en producción, validación operativa, validación independiente, disponibilidad comercial ni tracción de mercado.
 
 ## Foco técnico actual
