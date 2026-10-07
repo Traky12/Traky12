@@ -69,7 +69,7 @@ No “zero vulnerabilities”, production, TRL9, operational-continuity or comme
 
 ## Current Promotion State
 
-| Area | Current status (2026-10-05) | Meaning |
+| Area | Current status (2026-10-07) | Meaning |
 |---|---|---|
 | Technical consolidation | `IN PROGRESS` | Architecture, security and governance work continue |
 | Consolidation-1.0 | `BLOCKED` | Engineering and operational evidence gates remain open |
@@ -132,6 +132,37 @@ Neither dashboard is canonical technical authority.
 Neither dashboard decides current technical state, governance outcomes or promotion.
 
 Canonical technical authority remains `Castuo-system`.
+## Engineering Evidence Register — 2026-10-07
+
+**Evidence class:** `SOURCE-REVIEW / READ-ONLY / NOT_INDEPENDENT / NOT_RUNTIME_VALIDATION`  
+**Audit base:** `Castuo-system@6f509ecf898acb3cd83e4fbf4a1f452a206dfc06`  
+**Audit record:** `Castuo-system/audit/AUDIT-2026-10-07.md`  
+**Audit status:** `RECORDED / REMEDIATION REQUIRED`
+
+The 2026-10-07 audit is recorded as engineering evidence of the ability to inspect the system, identify concrete security defects, classify them by severity and preserve explicit evidence boundaries.
+
+| Evidence | What it demonstrates | What it does not demonstrate |
+|---|---|---|
+| Repository-wide source/security review | Structured engineering and defect-detection capability | Independent security certification |
+| 3 P1 / 11 P2 / 3 P3 findings recorded | Material issues are being detected rather than hidden behind documentation or CI status | That the system is currently secure |
+| Dependency review | Active supply-chain scrutiny; current lockfile vulnerabilities identified | Zero vulnerable dependencies |
+| Authentication/RBAC/tenant-control review | Security architecture and fail-closed intent exist in code | Correct production configuration or operational security |
+| Evidence/gate review | Technical claims are being tied to scope, evidence and promotion gates | Independent reproduction of the private core |
+
+### Current security findings
+
+`P1`: local login can issue low-privilege JWTs from caller-supplied identity/tenant when OIDC is disabled; predictable/default credential material remains in Vault/MQTT bootstrap artefacts.
+
+`P2`: current lockfiles contain `sharp 0.35.4` and `source-map-js 1.2.1` requiring security updates; non-production MQTT configurations permit anonymous access; environment/rate-limit/key-provider boundaries require hardening; some interfaces and documentation are out of sync.
+
+`P3`: additional security-utility and configuration hygiene issues are recorded in the canonical audit.
+
+**Promotion consequence:** `CONSOLIDATION-1.0 = BLOCKED`. Findings remain open until remediated and independently rechecked.
+
+**Runtime boundary:** no production shell execution or secret inspection forms part of this audit. Any operator-supplied runtime observation remains `PENDING` independent reproduction.
+
+**Value statement:** this register evidences engineering discipline, security scrutiny and evidence governance. It is not a claim of production security, zero vulnerabilities, certification, independent validation, operational continuity or commercial validation.
+
 ## Next Validation Milestone
 
 ### E3-001 — Controlled Independent Reproduction
@@ -166,7 +197,7 @@ Earlier engineering records, local validation snapshots, dashboard iterations, r
 
 - [Engineering record of 2026-08-18 (profile README at commit `860a20e`)](https://github.com/Traky12/Traky12/blob/860a20ecee74af90191fb25cd72327bf5739528c/README.md)
 
-Those records describe bounded states captured during August 2026. They do not override the current public status dated 2026-10-05 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
+Those records describe bounded states captured during August 2026. They do not override the current public status dated 2026-10-07 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
 
 The official brand asset is versioned at `assets/brand/castuo-system-logo-horizontal.jpg`. Brand consistency is presentation metadata only and does not constitute technical, security, production or commercial evidence.
 
