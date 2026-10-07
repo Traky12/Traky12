@@ -43,7 +43,7 @@ No production, independent validation, commercial traction or recurring revenue 
 
 **Cast-o #46:** `OPEN`  
 **Purpose:** remove embedded credentials and harden runtime secret handling.  
-**CI status:** pending complete validation.  
+**CI status:** `BLOCKED_BY_GITHUB_ACTIONS_ACCOUNT_CONDITION` (operator-observed); the blocked jobs are not evidence of code failure. A clean post-unblock run is still required.  
 **Merge:** not authorized until all required checks complete.
 
 Exposed credentials must be rotated independently of repository cleanup. Removing a secret from the repository does not revoke a credential that may have been previously exposed.
@@ -162,6 +162,24 @@ The 2026-10-07 audit is recorded as engineering evidence of the ability to inspe
 **Runtime boundary:** no production shell execution or secret inspection forms part of this audit. Any operator-supplied runtime observation remains `PENDING` independent reproduction.
 
 **Value statement:** this register evidences engineering discipline, security scrutiny and evidence governance. It is not a claim of production security, zero vulnerabilities, certification, independent validation, operational continuity or commercial validation.
+
+## GitHub Actions Execution Evidence — 2026-10-07
+
+A focused investigation of CASTÚO-SYSTEM PRs **#451** and **#456** established the following boundary:
+
+| Evidence | Demonstrates | Does not demonstrate |
+|---|---|---|
+| PR #451: OPEN, 5 commits ahead, 0 behind, mergeable | The remediation branch remains current with `main` within the observed snapshot | That its CI has passed |
+| PR #456: OPEN, 1 commit ahead, 0 behind, mergeable | The follow-up authentication hardening branch is current within the observed snapshot | That its CI has passed |
+| Repeated failed workflow attempts | CI validation is not currently green | That the application code caused those failures |
+| GitHub message observed before job startup: `The job was not started because recent account payments have failed or your spending limit needs to be increased.` | An account/billing execution condition can block Actions before tests/scans start | Which of the two billing causes is responsible |
+| Account billing endpoints unavailable to the current connector | The blocker requires owner-side verification | That payment failure or spending exhaustion has been independently confirmed |
+
+**Evidence class:** `OPERATOR-OBSERVED / REMOTE-UI / NOT-INDEPENDENTLY-RETRIEVED-BY-CURRENT-CONNECTOR`
+
+**Required next gate:** owner verifies GitHub billing/payment/spending state; only then is a clean CI execution a valid code-validation result.
+
+This is a **validation-infrastructure blocker**, not a promoted code-quality result.
 
 ## Next Validation Milestone
 
