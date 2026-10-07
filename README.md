@@ -16,11 +16,11 @@ Building evidence-driven digital infrastructure for bounded, traceable and revie
 
 > `NO CLAIM WITHOUT PROVENANCE` · `NO EXTERNAL CLAIM WITHOUT REPRODUCIBLE EVIDENCE`
 
-CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and governed distributed operations. Its first product direction, **CASTÚO Evidence-Ready Field Operations** (offline-first continuity, traceability and reviewable evidence for workflows with irregular connectivity), is a validation objective, not a proven commercial product.
+CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and governed distributed operations. Its first commercial product direction is a **SaaS service for rural and productive environments**, complemented when justified by data integration, IoT and edge capabilities. This is a product direction and business hypothesis, not proof of customer adoption, recurring revenue or commercial validation.
 
 ## Current Public Status
 
-**Snapshot date:** 2026-10-05  
+**Snapshot date:** 2026-10-08  
 **Status:** Technical consolidation in progress  
 **Promotion state:** `CONSOLIDATION-1.0 = BLOCKED`  
 **Private technical authority:** `Castuo-system`  
@@ -138,6 +138,14 @@ Earlier engineering records, local validation snapshots, dashboard iterations, r
 Those records describe bounded states captured during August 2026. They do not override the current public status dated 2026-10-05 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
 
 The official brand asset is versioned at `assets/brand/castuo-system-logo-horizontal.jpg`. Brand consistency is presentation metadata only and does not constitute technical, security, production or commercial evidence.
+
+## Presentation baseline
+
+The current **5-minute Spanish presentation** is maintained as a communication artefact aligned with the current public claim boundary.
+
+It is not a technical SSOT and does not promote production, independent validation, field validation, customer adoption or recurring revenue. The pricing, investment and first-year sales figures in the script are **PIE PLUS planning figures** and do not constitute recorded revenue or secured funding.
+
+- [CASTÚO-SYSTEM — 5-minute presentation (ES)](CASTUO-SYSTEM-5-MIN-PRESENTATION-ES.md)
 
 ## Links
 
