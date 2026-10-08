@@ -741,11 +741,11 @@ No existe promoción implícita por ausencia de errores visibles.
 #### CP-2 — Ejecutar OVS-01
 
 - **Owner:** responsable técnico actual del proyecto.
-- **Scope:** `apps/edge-gateway/main.py) como implementación canónica.
+- **Scope:** `apps/edge-gateway/main.py` como implementación canónica.
 - **Inputs:** issue #468, escenario OVS-01, datos de prueba y entorno controlado.
 - **Preconditions:** CP-0/CP-1 en estado suficiente para ejecutar y verificar; alcance congelado.
 - **Execution:** captura → pérdida de conectividad → persistencia offline → nuevas operaciones → reinicio → recuperación → sincronización → inyección de duplicados → hash → replay → bundle.
-- **Acceptance:** `lost_events = 0`; `duplicate_events = 0`; `silent_mutations = 0`; `replay_mismatch = 0`; `evidence/hash mismatch = 0).
+- **Acceptance:** `lost_events = 0`; `duplicate_events = 0`; `silent_mutations = 0`; `replay_mismatch = 0`; `evidence/hash mismatch = 0`.
 - **Required evidence:** logs de ejecución, eventos, estados de persistencia, sync results, duplicate injection, manifest, hashes, replay output y bundle portable.
 - **Security checks:** identidad/autorización; secretos ausentes de logs; integridad; permisos sobre almacenamiento y sincronización.
 - **Known failures:** reinicio no recuperable, duplicación, orden temporal ambiguo, mutation silenciosa, serialización inconsistente.
