@@ -45,7 +45,9 @@ La primera unidad de prueba será un único vertical slice de operación rural/p
 
 Ese slice debe demostrar una cadena concreta:
 
-`ACTUACIÓN → IDENTIDAD → EVENTO → PERSISTENCIA LOCAL → PÉRDIDA DE CONECTIVIDAD → RECUPERACIÓN → SINCRONIZACIÓN IDEMPOTENTE → EVIDENCIA → REPLAY → REVIEW`
+`EVENTO DE SENSOR → IDENTIDAD DE EVENTO → EDGE GATEWAY → PERSISTENCIA LOCAL → PÉRDIDA DE CONECTIVIDAD → REINICIO → RECUPERACIÓN → SINCRONIZACIÓN IDEMPOTENTE → EVIDENCIA → REPLAY → REVIEW`
+
+El alcance de ese slice (OVS-01) es el definido en PR #435 de `Castuo-system`; ver §9.
 
 No se abrirá un segundo gran flujo hasta que el primero haya alcanzado su criterio de cierre.
 
@@ -148,7 +150,7 @@ Esto es reproducción controlada. No se convierte automáticamente en validació
 
 ### CP-4 — Product vertical slice
 
-Solo después de CP-2/CP-3.
+Solo después de CP-2/CP-3. Este recorrido de producto queda fuera de OVS-01 (ver §9) y no amplía su alcance.
 
 El producto mínimo debe concentrarse en:
 
@@ -211,13 +213,25 @@ La ruta crítica queda condicionada por los blockers ya abiertos en el core:
 
 | Referencia | Problema | Efecto |
 |---|---|---|
-| #439 | Validación remota de PR/CI | Impide usar CI remoto como evidencia hasta restaurarlo |
+| #439 | Validación remota de PR/CI | **PARTIAL** (2026-10-08): los PR checks vuelven a ejecutarse de forma observable (p. ej. PR #472 con todos los checks en verde), pero la causa de los fallos de 2026-10-05 no está documentada y PR #473 falla en «Merge gate». No es PASS. |
 | #468 | OVS-01 no ejecutado end-to-end | Impide cerrar continuidad canónica |
 | #457 | fallo del test de evidencia en Windows | Mantiene una deuda de portabilidad reproducible; candidato de corrección: PR #472 (abierto, sin merge a 2026-10-08) |
-| #435 / #468 | Alcance (#435) y cierre (#468) de OVS-01 en dos superficies | Fijar cuál es la referencia canónica antes de congelar el alcance v0.1 |
 | Seguridad P1 / #459 / #440 | Credenciales, exposición histórica y rotación | Impide elevar claims de seguridad sin cierre verificable |
 
 Estos elementos no deben esconderse al presentar el estado. Forman parte del evidence ledger.
+
+### Referencias de autoridad
+
+| Ámbito | Autoridad (`Castuo-system`) |
+|---|---|
+| Alcance de OVS-01 | PR #435 |
+| Ejecución y cierre de OVS-01 | Issue #468 |
+| Contrato de continuidad y ubicación de evidencia | PR #469 |
+| Estado y recuperación del CI remoto | Issue #439 |
+| Corrección de salida de evidencia en Windows | PR #472 (cierra #457 solo tras merge y ejecución en Windows) |
+| Estrategia transversal de ejecución | Este plan (Traky12 PR #52) |
+
+Este plan coordina esas superficies, pero no redefine su alcance.
 
 ---
 
@@ -337,31 +351,46 @@ Esto convierte la disciplina de alcance en una herramienta de productividad, no 
 
 ## 9. Contrato operativo del vertical slice
 
+### Alineación de alcance (OVS-01)
+
+Esta estrategia adopta el alcance canónico definido en **PR #435** de `Castuo-system`: continuidad de eventos de sensores en el escenario del gateway del invernadero CTAEX, reutilizando E3-001-S001A dentro de su límite declarado. Este plan no redefine ese alcance.
+
+El cierre se sigue en **issue #468** e incluye: ejecución del edge gateway canónico (`apps/edge-gateway/main.py`), pérdida de red controlada, reinicio, persistencia local, inyección/detección de duplicados, verificación de los cinco contadores a cero, generación de evidencia y replay por un segundo operador.
+
+**Fuera del alcance de OVS-01** (direcciones futuras válidas, para un slice posterior tras cerrar OVS-01):
+
+- FIELD-001;
+- flujos de actuación de operador humano;
+- OperationEvent;
+- autorización y permisos offline;
+- contabilidad de coste/consumo;
+- escenarios Golden Path no incluidos en PR #435.
+
 ### Escenario
 
-Un operador registra una actuación rural sin conectividad estable.
+Un evento de sensor llega al edge gateway durante un periodo de conectividad inestable.
 
 ### Entrada
 
-- identidad autorizada;
-- operación;
-- timestamp;
-- datos operativos;
-- coste/consumo cuando aplique.
+- evento de sensor con identidad estable de evento;
+- timestamp de origen;
+- datos de medida;
+- procedencia del dispositivo/gateway.
 
 ### Ejecución
 
-- captura;
+- recepción en edge gateway;
 - persistencia local;
-- desconexión;
-- nuevas operaciones;
-- reinicio;
-- recuperación;
-- sincronización.
+- caída de red;
+- nuevos eventos durante la caída;
+- reinicio del gateway;
+- recuperación de conectividad;
+- reconciliación/sincronización;
+- inyección deliberada de duplicados.
 
 ### Verificación
 
-- identidad;
+- identidad de evento;
 - orden;
 - idempotencia;
 - integridad;
@@ -370,7 +399,7 @@ Un operador registra una actuación rural sin conectividad estable.
 
 ### Salida
 
-- operación reconstruida;
+- secuencia de eventos reconstruida;
 - paquete de evidencia;
 - manifest;
 - resultado de verifier;
@@ -635,7 +664,8 @@ Durante esta fase no deben convertirse en prioridades del core:
 - nuevos agentes AI;
 - nuevas plataformas de dashboard;
 - duplicación de repositorios;
-- reescritura del sistema por preferencia tecnológica.
+- reescritura del sistema por preferencia tecnológica;
+- un segundo vertical slice de actuación humana con identidad y permisos offline (FIELD-001 / OperationEvent), que queda aplazado hasta cerrar OVS-01 y requerirá su propio alcance canónico.
 
 Podrán volver a la agenda cuando la evidencia del núcleo reduzca suficientemente el riesgo.
 
