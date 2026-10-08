@@ -213,7 +213,7 @@ La ruta crítica queda condicionada por los blockers ya abiertos en el core:
 
 | Referencia | Problema | Efecto |
 |---|---|---|
-| #439 | Validación remota de PR/CI | **PARTIAL** (2026-10-08): los PR checks vuelven a ejecutarse de forma observable (p. ej. PR #472 con todos los checks en verde), pero la causa de los fallos de 2026-10-05 no está documentada y PR #473 falla en «Merge gate». No es PASS. |
+| #439 | Validación remota de PR/CI | **BLOCKED** (2026-10-08): los checks corrieron de forma observable hasta ~09:08Z (PR #472 en verde) y desde ~09:40Z los jobs no arrancan («recent account payments have failed or your spending limit needs to be increased»). Un check que no se ejecuta no es FAIL ni PASS. Desbloqueo: facturación de Actions (owner). |
 | #468 | OVS-01 no ejecutado end-to-end | Impide cerrar continuidad canónica |
 | #457 | fallo del test de evidencia en Windows | Mantiene una deuda de portabilidad reproducible; candidato de corrección: PR #472 (abierto, sin merge a 2026-10-08) |
 | Seguridad P1 / #459 / #440 | Credenciales, exposición histórica y rotación | Impide elevar claims de seguridad sin cierre verificable |
@@ -469,7 +469,7 @@ evidence/
 
 No se publicarán credenciales, datos sensibles ni implementación privada innecesaria.
 
-**Ubicación en `Castuo-system`:** la estructura anterior describe contenido, no un árbol nuevo. `evidence/01–10` está reservado a los expedientes SEV; la evidencia de continuidad (OVS-01) se ubica en `evidence/continuity/` según el contrato de PR #469 y se declara mediante SEV. No se crean directorios `evidence/<capability>/` paralelos.
+**Ubicación en `Castuo-system`:** la estructura anterior describe contenido, no un árbol nuevo. `evidence/01–10` está reservado a los expedientes SEV; la evidencia de continuidad sigue el contrato de PR #469 (`governance/evidence/<escenario>/`, verificable con `scripts/castuo.py verify`); los bundles de OVS-01 están en `governance/evidence/OVS-01/runs/` (PR #474). No se crean directorios `evidence/<capability>/` paralelos.
 
 ---
 
