@@ -5,6 +5,16 @@
 **Autoridad:** `Traky12` es el public read-model; `Castuo-system` conserva la autoridad técnica del core.  
 **Regla estructural:** este documento no crea una SSOT, una taxonomía normativa, un nuevo maturity enum ni nuevos promotion gates.
 
+## Posición ejecutiva
+
+Este plan no afirma que todas las capacidades enumeradas estén implementadas.
+Distingue entre capacidades documentadas, parcialmente implementadas, probadas,
+revisadas de forma independiente, validadas en piloto y validadas comercialmente.
+
+El objetivo inmediato no es ampliar la arquitectura, sino cerrar un único vertical
+slice reproducible, validarlo con un usuario externo y convertir la evidencia resultante
+en un producto, un expediente de financiación y una oferta comercial.
+
 ---
 
 ## 1. Cambio de estrategia
@@ -174,9 +184,24 @@ La valoración se actualiza después de aumentar evidencia, no antes.
 
 Mantener separados:
 
-`420k RCN ≠ 750k technical asset ≠ market value ≠ company valuation`
+`coste de reposición ≠ valoración técnica del activo ≠ valor de mercado ≠ valoración societaria`
 
-La cifra del activo tecnológico es una valoración técnica de trabajo; la empresa necesita además evidencia comercial y financiera.
+Este documento público no publica cifras económicas. Cualquier valoración técnica de trabajo se mantiene fechada en superficies privadas y requiere además evidencia comercial y financiera.
+
+### Correspondencia orientativa CP ↔ gates existentes
+
+Los checkpoints CP-0…CP-7 son **hitos de ejecución**, no gates. La promoción se decide únicamente en los gates canónicos de `Castuo-system`: G1–G4 de operación (`gates/`, declarados por SEV) y, para producto SaaS, `docs/SAAS-LAUNCH-GATES.md`. La madurez de capacidad sigue siendo N0–N6 (`data/capabilities.yaml`).
+
+| CP | Aporta evidencia a | No cierra por sí mismo |
+|---|---|---|
+| CP-0 | Prerrequisito de G1 (procedencia CI/SEV) | Ningún gate |
+| CP-1 | G1 Procedencia · G2 Integridad | G2 seguridad completa |
+| CP-2 | G2 Integridad · G3 en entorno controlado | G3 dato real E2E de campo |
+| CP-3 | G1/G2 reproducibilidad | Validación independiente formal |
+| CP-4 | `SAAS-LAUNCH-GATES.md` (producto) | G1–G4 |
+| CP-5 | Ninguno técnico (evidencia comercial) | Ningún gate técnico |
+| CP-6 | G4 Operación | G4 cumplimiento |
+| CP-7 | Ninguno técnico (evidencia de valor) | Ningún gate técnico |
 
 ---
 
@@ -188,7 +213,8 @@ La ruta crítica queda condicionada por los blockers ya abiertos en el core:
 |---|---|---|
 | #439 | Validación remota de PR/CI | Impide usar CI remoto como evidencia hasta restaurarlo |
 | #468 | OVS-01 no ejecutado end-to-end | Impide cerrar continuidad canónica |
-| #457 | fallo del test de evidencia en Windows | Mantiene una deuda de portabilidad reproducible |
+| #457 | fallo del test de evidencia en Windows | Mantiene una deuda de portabilidad reproducible; candidato de corrección: PR #472 (abierto, sin merge a 2026-10-08) |
+| #435 / #468 | Alcance (#435) y cierre (#468) de OVS-01 en dos superficies | Fijar cuál es la referencia canónica antes de congelar el alcance v0.1 |
 | Seguridad P1 / #459 / #440 | Credenciales, exposición histórica y rotación | Impide elevar claims de seguridad sin cierre verificable |
 
 Estos elementos no deben esconderse al presentar el estado. Forman parte del evidence ledger.
@@ -413,6 +439,8 @@ evidence/
 - limitaciones.
 
 No se publicarán credenciales, datos sensibles ni implementación privada innecesaria.
+
+**Ubicación en `Castuo-system`:** la estructura anterior describe contenido, no un árbol nuevo. `evidence/01–10` está reservado a los expedientes SEV; la evidencia de continuidad (OVS-01) se ubica en `evidence/continuity/` según el contrato de PR #469 y se declara mediante SEV. No se crean directorios `evidence/<capability>/` paralelos.
 
 ---
 
@@ -669,6 +697,8 @@ Estas etiquetas:
 - no crean un nuevo maturity enum;
 - no autorizan promoción por sí mismas;
 - no sustituyen los gates o registros canónicos de `Castuo-system`.
+
+La madurez canónica de cada capacidad sigue siendo **N0–N6** en `data/capabilities.yaml`. Cada ficha CP cita el nivel N vigente de las capacidades afectadas; si la etiqueta de tracking y el nivel N discrepan, prevalece el nivel N y la discrepancia se registra.
 
 Reglas:
 
@@ -939,7 +969,7 @@ Cada commit incluido en un PR debe tener propósito único y trazable. La planti
 
 ### Cobertura aplicada
 
-La baseline se ha propagado a las superficies CASTÚO activas incluidas en el inventario del 2026-10-08, incluyendo:
+La baseline se ha **propuesto** mediante PRs de plantilla (`chore(governance): align PR closure…`) en las superficies CASTÚO activas del inventario del 2026-10-08. A esa fecha los 20 PRs están **abiertos y sin merge**; la baseline no rige en un repositorio hasta que su PR se fusione. Superficies:
 
 - core técnico: `Castuo-system`;
 - public read-model: `Traky12`;
