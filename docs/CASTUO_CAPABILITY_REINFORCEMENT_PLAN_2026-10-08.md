@@ -1,327 +1,672 @@
-# CASTÚO-SYSTEM — Plan transversal de capacidades y refuerzo del ecosistema
+# CASTÚO-SYSTEM — Estrategia maestra de capacidades y cierre demostrable
 
 **Fecha:** 2026-10-08  
-**Rol del documento:** mapa público de capacidades y hoja de ruta de refuerzo.  
-**Autoridad:** `Traky12` es el índice público; `Castuo-system` sigue siendo la autoridad técnica privada del núcleo.  
-**Regla:** este documento no crea una nueva SSOT, no sustituye `data/capabilities.yaml`, `governance/framework.yaml`, el Evidence Center ni los gates existentes.
-
-## 1. Objetivo
-
-Convertir el ecosistema CASTÚO-SYSTEM en un activo técnico gobernado, transferible y progresivamente demostrable, reforzando de forma coordinada:
-
-`producto → core → datos → edge → campo → evidencia → seguridad → assurance → gobernanza → operación → mercado → valor`
-
-La estrategia no consiste en añadir más repositorios ni más funcionalidades por volumen. Consiste en cerrar las capacidades críticas con contratos, pruebas, evidencia, revisión y límites de claim claros.
-
-## 2. Principios de ejecución
-
-1. **Una autoridad por dominio.**  
-   `Castuo-system` gobierna el estado técnico del core. `Traky12` solo representa el estado público.
-
-2. **Capability ≠ Evidence ≠ Maturity ≠ Claim.**
-
-3. **No promoción automática.**  
-   Ninguna capacidad cambia de estado por número de commits, edad del código, documentación o actividad de GitHub.
-
-4. **Evidence-first.**  
-   Toda capacidad relevante debe poder seguir la cadena:
-   `scope → contract → implementation → test → evidence → security → review → promotion`.
-
-5. **No duplicación.**  
-   Antes de crear un módulo, registro, dashboard, workflow o repositorio, se comprueba si ya existe una superficie equivalente.
-
-6. **Negative evidence is evidence.**  
-   Los blockers, fallos reproducibles y límites conocidos deben quedar registrados y no ocultarse.
-
-7. **Commercial separation.**  
-   Precio, previsión, financiación y valoración son hipótesis económicas fechadas; no se convierten en evidencia comercial por estar documentadas.
+**Rol:** mapa público de capacidades, ruta crítica y control de refuerzo del ecosistema.  
+**Autoridad:** `Traky12` es el public read-model; `Castuo-system` conserva la autoridad técnica del core.  
+**Regla estructural:** este documento no crea una SSOT, una taxonomía normativa, un nuevo maturity enum ni nuevos promotion gates.
 
 ---
 
-## 3. Mapa transversal de capacidades
+## 1. Cambio de estrategia
 
-> Los identificadores `CAP-TRK-xx` son **identificadores de seguimiento público**, no una nueva taxonomía normativa ni un sustituto del registro canónico de capacidades.
+CASTÚO-SYSTEM entra en una fase distinta.
 
-| ID | Capacidad | Resultado buscado | Superficie principal | Estado de referencia | Evidencia mínima para promoción |
-|---|---|---|---|---|---|
-| CAP-TRK-01 | Producto SaaS | Flujo de valor claro para cliente rural/productivo | `Castuo-system` + product-experience | PREPARED | Vertical slice usable + pruebas + feedback de usuarios/piloto |
-| CAP-TRK-02 | Core platform | Núcleo modular y mantenible | `Castuo-system` | IMPLEMENTED / consolidating | Tests, contratos, observabilidad y control de regresión |
-| CAP-TRK-03 | Gestión de datos | Operaciones, consumos, costes, incidencias y resultados trazables | `Castuo-system` | IMPLEMENTED / scope-dependent | Schema + persistence test + lineage + integrity evidence |
-| CAP-TRK-04 | Identidad y autorización | Acceso deny-by-default y separación de organizaciones/roles | `Castuo-system` | PENDING | OIDC/tenant/role evidence + security review + CI |
-| CAP-TRK-05 | Continuidad edge | Captura y continuidad con conectividad irregular | `Castuo-system` + `castuo-agro-edge` | PENDING | OVS-01 end-to-end + zero loss/duplicate/mutation + replay |
-| CAP-TRK-06 | Operación offline | Trabajo de campo sin dependencia continua de nube | `castuo-offline-field-operations` | PENDING | Controlled offline scenario + recovery + exportable evidence |
-| CAP-TRK-07 | IoT integration | Ingesta y sincronización de dispositivos bajo límites seguros | `castuo-agro-edge` | PENDING | Device contract + broker isolation + credential boundary + tests |
-| CAP-TRK-08 | Evidence fabric | Paquetes verificables y replayables | `castuo-evidence` / E3 | IMPLEMENTED / bounded | Manifest + hashes + verifier + reproducible replay |
-| CAP-TRK-09 | Independent verification | Reproducción por tercero sin asistencia síncrona | `castuo-e3-001` + foreign-verifier | PENDING | Independent reviewer run + recorded result + scope boundary |
-| CAP-TRK-10 | Assurance / testing | Detección de regresión, seguridad y claims | `Cast-o` + `goldfish` | PENDING / partial | Reproducible test sets + report + risk disposition |
-| CAP-TRK-11 | Security / supply chain | Dependencias, secrets, Actions y exposición controlados | `Castuo-system` + assurance surfaces | IN PROGRESS | Required security checks + pinned Actions + secret scan + remediation evidence |
-| CAP-TRK-12 | Observability | Health, metrics, alerting y SLOs cuando desplegado | `Castuo-system` | PENDING | Deployed instrumentation + telemetry + runbook + observed evidence |
-| CAP-TRK-13 | Deployment / rollback | Despliegue reproducible y reversión controlada | `Castuo-system` | PENDING | Clean environment + deployment record + rollback test |
-| CAP-TRK-14 | Governance / claim control | Claims coherentes con evidencia | `Castuo-system` + public read-model | CURRENT / consolidating | Registry consistency + gate evidence + dated status |
-| CAP-TRK-15 | Compliance / EU readiness | Trazabilidad regulatoria y organizativa | Governance + strategy surfaces | PREPARED | Requirement matrix + ownership + evidence links |
-| CAP-TRK-16 | Commercial validation | Convertir utilidad técnica en clientes repetibles | Commercial dossier / product surfaces | NOT CLAIMED | Signed scope + measured KPI + paid pilot + repeatability |
-| CAP-TRK-17 | Economic evidence | Vincular inversión, coste, precio y resultados | PIE PLUS / dated valuation memos | PLANNING | Workbook reconciliation + dated assumptions + realised results |
-| CAP-TRK-18 | Technical asset / IP | Preservar valor, titularidad, provenance y transferibilidad | Profile + legal/IP records + core | IN PROGRESS | IP inventory + provenance + ownership + independent review |
-| CAP-TRK-19 | Ecosystem coherence | Roles, links, names y boundaries consistentes | `Traky12` public map | CURRENT / consolidating | Repository map consistency + automated conformance |
-| CAP-TRK-20 | Knowledge transfer | Un tercero puede entender, operar y revisar lo permitido | Docs + runbooks + evidence packages | PENDING | Reproducible onboarding + bounded operational procedure |
+Hasta ahora, la prioridad ha sido construir arquitectura, capacidades, seguridad, gobernanza y superficies de evidencia. La siguiente etapa debe reducir la incertidumbre mediante **cierre demostrable**.
+
+El objetivo no es desarrollar más superficie. Es demostrar una unidad técnica completa que pueda ser:
+
+`ejecutada → observada → reproducida → verificada → revisada → promovida`
+
+La estrategia pasa de:
+
+`capability accumulation`
+
+a:
+
+`evidence closure`
+
+La primera unidad de prueba será un único vertical slice de operación rural/productiva con continuidad frente a pérdida de conectividad.
 
 ---
 
-## 4. Orden de prioridad
+## 2. Objetivo inmediato
 
-### P0 — Cerrar el riesgo de credibilidad técnica
+> **Cerrar un único vertical slice de CASTÚO-SYSTEM que pueda ejecutarse, probarse, auditarse y explicarse sin depender de promesas futuras.**
 
-**CAP-TRK-04, 05, 08, 09 y 11**
+Ese slice debe demostrar una cadena concreta:
 
-Estas capacidades forman el núcleo de confianza:
+`ACTUACIÓN → IDENTIDAD → EVENTO → PERSISTENCIA LOCAL → PÉRDIDA DE CONECTIVIDAD → RECUPERACIÓN → SINCRONIZACIÓN IDEMPOTENTE → EVIDENCIA → REPLAY → REVIEW`
 
-- identidad y autorización;
-- continuidad edge;
-- evidencia verificable;
-- reproducción independiente;
-- seguridad y cadena de suministro.
-
-No debe promocionarse una narrativa de producto más avanzada mientras este bloque mantenga blockers críticos sin evidencia.
-
-### P1 — Convertir el núcleo en sistema demostrable
-
-**CAP-TRK-02, 03, 06, 07, 10, 12 y 13**
-
-Objetivo: demostrar un vertical slice completo y reproducible desde operación hasta observación.
-
-La referencia técnica es:
-
-`event → identity → persistence → continuity → recovery → sync → evidence → verify → observe`
-
-### P2 — Convertir capacidad técnica en producto
-
-**CAP-TRK-01, 14, 15, 20**
-
-Objetivo: que un tercero pueda entender el producto, sus límites, sus responsabilidades y la evidencia que respalda cada claim.
-
-### P3 — Convertir producto en negocio demostrable
-
-**CAP-TRK-16 y 17**
-
-Objetivo: reemplazar progresivamente las hipótesis por:
-
-`discovery → pilot scope → paid pilot → KPI → renewal/repeatability`
-
-y:
-
-`planning → realised cost → realised revenue → unit economics → repeatability`
-
-### P4 — Consolidación de valor
-
-**CAP-TRK-18 y 19**
-
-Objetivo: preservar titularidad, provenance, coherencia del ecosistema y transferibilidad del activo técnico.
+No se abrirá un segundo gran flujo hasta que el primero haya alcanzado su criterio de cierre.
 
 ---
 
-## 5. Contrato común para cada capacidad
+## 3. Arquitectura de control
 
-Cada capacidad prioritaria debe poder responder, en un único paquete o cadena enlazada:
+La estrategia se organiza en cinco planos, que no sustituyen los artefactos canónicos existentes:
 
-| Pregunta | Evidencia requerida |
-|---|---|
-| ¿Qué hace? | Capability contract / scope |
-| ¿Dónde vive? | Canonical repository/path |
-| ¿Qué estado tiene? | State from canonical authority |
-| ¿Cómo se prueba? | Test command / test fixture |
-| ¿Qué demuestra el test? | Explicit acceptance criterion |
-| ¿Qué evidencia queda? | Manifest, log, hash, artifact or report |
-| ¿Quién revisa? | Named role or independent reviewer where required |
-| ¿Qué riesgo queda? | Residual risk record |
-| ¿Qué NO demuestra? | Claim ceiling / negative evidence |
-| ¿Qué permite promover? | Existing canonical gate |
+| Plano | Pregunta | Autoridad / superficie |
+|---|---|---|
+| **Core** | ¿Qué sistema existe? | `Castuo-system` |
+| **Evidence** | ¿Qué puede demostrarse? | Evidence Center / `castuo-evidence` / E3 |
+| **Assurance** | ¿Qué controles y pruebas lo respaldan? | `Cast-o` / `goldfish` |
+| **Public read-model** | ¿Qué puede decirse públicamente? | `Traky12` |
+| **External proof** | ¿Qué confirma un tercero/cliente? | Reviewer / pilot owner / evidence commercial |
 
----
+Regla:
 
-## 6. Vertical slice objetivo
-
-El principal objetivo transversal de 2026-Q4 es cerrar **un único vertical slice verificable**, no muchos demostradores paralelos.
-
-### Escenario
-
-Un operador registra una actuación o evento en un entorno rural con conectividad potencialmente irregular.
-
-La cadena deseada es:
-
-`ACTUACIÓN → IDENTIDAD → PERSISTENCIA LOCAL → PÉRDIDA DE CONECTIVIDAD → RECUPERACIÓN → SINCRONIZACIÓN IDEMPOTENTE → HASH/EVIDENCIA → REPLAY → REVIEW`
-
-### Criterios duros
-
-- 0 eventos perdidos.
-- 0 duplicados no controlados.
-- 0 mutaciones silenciosas.
-- Replay reproducible.
-- Integridad verificable.
-- Clean-environment reproduction.
-- Security boundary preserved.
-- Claim ceiling respected.
-
-Un PASS de laboratorio no autoriza por sí solo una afirmación de producción, piloto real, certificación o adopción comercial.
+`Traky12 representa; Castuo-system decide técnicamente; evidence demuestra; assurance controla; terceros validan.`
 
 ---
 
-## 7. Reglas de dependencia entre capacidades
+## 4. Ruta crítica única
 
-1. **Producto depende de capacidad demostrable.**  
-   No se promueve el SaaS sobre capacidades únicamente conceptuales.
+### CP-0 — Restaurar la capacidad de validación remota
 
-2. **Commercial validation depende de producto usable.**  
-   No se convierte una conversación comercial en validación.
+Antes de interpretar el estado de los cambios como evidencia de integración, debe funcionar el mecanismo que los valida.
 
-3. **Operational status depende de deployment evidence.**  
-   Código, Docker, dashboards o una health endpoint no equivalen a operación continua.
+**Referencia actual:** issue #439 de `Castuo-system`.
 
-4. **Independent validation depende de reproducibilidad.**  
-   El tercero debe disponer de un procedimiento acotado y suficiente para ejecutar su revisión.
+Cierre:
 
-5. **Value depends on evidence.**  
-   La actividad de GitHub apoya el historial de ingeniería, pero no crea por sí sola valor de mercado.
+- required PR checks arrancan;
+- workflow execution es observable;
+- raíz de fallos comunes identificada;
+- al menos un PR validado end-to-end;
+- branch protection preservada;
+- ningún bypass de checks;
+- ningún auto-merge basado únicamente en ausencia de resultados.
 
----
+**Stop rule:** mientras la validación remota obligatoria esté rota, no se declara CI verde por inferencia.
 
-## 8. Métricas de capacidad
+### CP-1 — Estabilizar el contrato de evidencia
 
-El panel público debe evitar contar únicamente commits o contribuciones.
+**Referencia:** PR #469 de `Castuo-system`.
 
-Métricas principales:
+Objetivo:
 
-- **Coverage:** % de capacidades prioritarias con contract + test.
-- **Evidence readiness:** % con evidencia reproducible enlazada.
-- **Security closure:** % de findings críticos cerrados y verificados.
-- **Reproducibility:** % de escenarios reproducibles sin asistencia síncrona.
-- **Operational readiness:** % con deployment + telemetry + rollback evidence.
-- **Commercial evidence:** nº de pilotos pagados, KPIs medidos y repeticiones.
-- **Traceability:** % de claims públicos con provenance y claim ceiling.
-- **Knowledge transfer:** nº de procedimientos que un tercero puede ejecutar según el alcance autorizado.
-- **Value evidence:** coste real, ingresos realizados y resultados observados frente al plan.
+- contrato de continuidad;
+- bundle portable;
+- verifier independiente del core;
+- integrity checks;
+- claim ceiling;
+- regression tests.
 
-**GitHub contributions, commits, PR count y line changes son métricas de actividad, no métricas de madurez.**
+El PASS estructural del verifier demuestra consistencia del paquete, no operación de producción ni independencia del revisor.
 
----
+### CP-2 — Ejecutar OVS-01 contra el gateway canónico
 
-## 9. Governance of the plan
+**Referencia:** issue #468.
 
-### `Traky12`
+La evidencia anterior no basta. Debe ejecutarse el flujo contra la implementación canónica:
 
-Public read-model:
+`apps/edge-gateway/main.py`
 
-- mantiene este plan;
-- publica el mapa de capacidades;
-- enlaza evidencia pública;
-- muestra límites y blockers;
-- no decide la promoción técnica.
+Cierre:
 
-### `Castuo-system`
+- pérdida de conectividad reproducible;
+- reinicio/recuperación reproducible;
+- persistencia local demostrada;
+- sincronización idempotente;
+- duplicate injection;
+- hash verification;
+- replay;
+- portable evidence bundle.
 
-Canonical technical authority:
+Criterios duros:
 
-- define e implementa capacidades del core;
-- mantiene contratos técnicos y gates;
-- registra evidencia;
-- decide la promoción dentro del alcance autorizado.
+`lost_events = 0`  
+`duplicate_events = 0`  
+`silent_mutations = 0`  
+`replay_mismatch = 0`  
+`evidence/hash mismatch = 0`
 
-### `castuo-evidence` / `castuo-e3-001`
+### CP-3 — Reproducción en entorno limpio
 
-Public evidence and reproduction surfaces:
+El autor debe dejar de ser el único camino de ejecución.
 
-- exponen evidencia seleccionada;
-- permiten reproducción acotada;
-- no sustituyen la autoridad técnica privada.
+Una persona distinta del autor debe poder:
 
-### `Cast-o` / `goldfish`
+1. preparar el entorno;
+2. ejecutar el escenario;
+3. generar la evidencia;
+4. verificar el bundle;
+5. obtener el mismo resultado esperado;
+6. registrar las diferencias y límites.
 
-Assurance surfaces:
+Esto es reproducción controlada. No se convierte automáticamente en validación independiente.
 
-- test, security, recovery y verification support;
-- no certifican por sí mismos el core.
+### CP-4 — Product vertical slice
 
-### External reviewers / pilot owners
+Solo después de CP-2/CP-3.
 
-Independent evidence:
+El producto mínimo debe concentrarse en:
 
-- reproducción;
-- campo;
-- KPIs;
-- operación;
-- resultados económicos.
+`actuación → dato → coste/consumo → evidencia → resultado → revisión`
 
----
+Debe existir un recorrido usable y una salida verificable.
 
-## 10. Definition of Done transversal
+No se incorporan nuevas verticales hasta cerrar este flujo.
 
-Una capacidad prioritaria no se considera cerrada hasta disponer de:
+### CP-5 — Commercial proof
 
-`scope + implementation + test + evidence + security + review + residual risk + claim ceiling`
+Solo después de disponer de un slice usable.
 
-y, cuando aplique:
+Secuencia:
 
-`independent reproduction + field result + commercial result + operational telemetry`
+`discovery → scoped pilot → paid pilot → KPI baseline → measured result → renewal/repeatability`
 
-La ausencia de un elemento mantiene la capacidad en el estado correspondiente; no se completa por narrativa.
+Una demo, LOI, conversación, visita o interés no equivale por sí mismo a validación comercial.
 
----
+### CP-6 — Operational proof
 
-## 11. Primera secuencia de ejecución
+Solo cuando el sistema tenga un escenario técnicamente reproducible y un contexto real autorizado.
 
-**Bloque A — OVS-01**
+Secuencia:
 
-Cerrar la ejecución controlada del gateway canónico y convertir el actual paquete P0 de evidencia en evidencia de ejecución P1.
+`deployment → telemetry → runbook → failure test → recovery → rollback → observation`
 
-**Bloque B — Identity / Security**
+Una health endpoint o un contenedor arrancado no constituyen evidencia de operación continua.
 
-Cerrar los blockers de identidad, credenciales, broker boundary y checks remotos antes de hablar de producción.
+### CP-7 — Value evidence
 
-**Bloque C — Independent reproduction**
+La valoración se actualiza después de aumentar evidencia, no antes.
 
-Hacer que E3-001 pueda ser ejecutado por un tercero de forma independiente y registrar exactamente qué queda demostrado.
-
-**Bloque D — Product vertical slice**
-
-Reducir el producto a un flujo comercial mínimo: actuación → coste/consumo → evidencia → resultado → revisión.
-
-**Bloque E — Commercial dossier**
-
-Preparar un dossier de piloto con scope, baseline, KPI, responsable, tratamiento de datos, seguridad, precio y criterio de éxito.
-
-**Bloque F — Economic / asset evidence**
-
-Mantener separadas las magnitudes:
+Mantener separados:
 
 `420k RCN ≠ 750k technical asset ≠ market value ≠ company valuation`
 
-La valoración técnica de trabajo debe permanecer fechada y revisarse cuando cambien la evidencia, la propiedad intelectual o la tracción comercial.
+La cifra del activo tecnológico es una valoración técnica de trabajo; la empresa necesita además evidencia comercial y financiera.
 
 ---
 
-## 12. Target state
+## 5. Bloqueadores actuales que afectan la ruta
 
-El objetivo no es llegar a “muchas capacidades”.
+La ruta crítica queda condicionada por los blockers ya abiertos en el core:
 
-El objetivo es disponer de **pocas capacidades críticas plenamente demostradas**, con evidencia suficiente para que un tercero pueda revisar:
+| Referencia | Problema | Efecto |
+|---|---|---|
+| #439 | Validación remota de PR/CI | Impide usar CI remoto como evidencia hasta restaurarlo |
+| #468 | OVS-01 no ejecutado end-to-end | Impide cerrar continuidad canónica |
+| #457 | fallo del test de evidencia en Windows | Mantiene una deuda de portabilidad reproducible |
+| Seguridad P1 / #459 / #440 | Credenciales, exposición histórica y rotación | Impide elevar claims de seguridad sin cierre verificable |
 
-`what exists → how it works → how it was tested → what was observed → what remains unknown`
+Estos elementos no deben esconderse al presentar el estado. Forman parte del evidence ledger.
 
-El estado objetivo del ecosistema es:
+---
 
-**menos promesa, más evidencia; menos duplicación, más coherencia; menos actividad sin criterio, más capacidades cerradas.**
+## 6. Modelo de capacidades
+
+Se mantienen los identificadores `CAP-TRK-xx` como **tracking público solamente**.
+
+No tienen autoridad sobre el estado técnico.
+
+Cada capacidad prioritaria debe tener exactamente:
+
+`
+owner
+canonical_surface
+scope
+current_state
+dependency
+next_gate
+acceptance_criterion
+evidence_artifact
+security_check
+residual_risk
+claim_ceiling
+`
+
+Una capacidad sin `next_gate` no está lista para ejecución.
+
+Una capacidad sin `acceptance_criterion` no está lista para cierre.
+
+Una capacidad sin `evidence_artifact` no está lista para promoción.
+
+---
+
+## 7. Priorización real
+
+### P0 — Trust kernel
+
+Solo:
+
+- identidad/autorización;
+- continuidad;
+- evidencia;
+- seguridad;
+- validación remota.
+
+**Meta:** eliminar incertidumbre crítica.
+
+### P1 — Demonstrable system
+
+Solo lo necesario para:
+
+- operación;
+- datos;
+- offline;
+- sync;
+- verifier;
+- observabilidad;
+- despliegue controlado.
+
+**Meta:** cerrar OVS-01 y el vertical slice.
+
+### P2 — Productization
+
+- UX;
+- onboarding;
+- documentación de uso;
+- gestión de recursos;
+- reporting;
+- integración comercial.
+
+**Meta:** producto mínimo utilizable.
+
+### P3 — Market proof
+
+- piloto;
+- KPI;
+- precio;
+- pago;
+- repetibilidad.
+
+**Meta:** transformar hipótesis comercial en evidencia.
+
+### P4 — Scale and value
+
+- ampliaciones de edge/IoT;
+- nuevas verticales;
+- infraestructura industrial;
+- expansión territorial;
+- optimización económica;
+- valoración actualizada.
+
+**Meta:** escalar únicamente después de demostrar.
+
+---
+
+## 8. Regla de expansión
+
+Cada nueva feature, repositorio o componente debe responder:
+
+**¿Es necesario para cerrar el vertical slice?**
+
+Si no:
+
+**¿Elimina un blocker crítico?**
+
+Si tampoco:
+
+**¿Genera evidencia que reduzca incertidumbre material?**
+
+Si la respuesta sigue siendo no:
+
+> **NO ENTREGAR EN EL CICLO ACTUAL.**
+
+Esto convierte la disciplina de alcance en una herramienta de productividad, no en una restricción.
+
+---
+
+## 9. Contrato operativo del vertical slice
+
+### Escenario
+
+Un operador registra una actuación rural sin conectividad estable.
+
+### Entrada
+
+- identidad autorizada;
+- operación;
+- timestamp;
+- datos operativos;
+- coste/consumo cuando aplique.
+
+### Ejecución
+
+- captura;
+- persistencia local;
+- desconexión;
+- nuevas operaciones;
+- reinicio;
+- recuperación;
+- sincronización.
+
+### Verificación
+
+- identidad;
+- orden;
+- idempotencia;
+- integridad;
+- hash;
+- replay.
+
+### Salida
+
+- operación reconstruida;
+- paquete de evidencia;
+- manifest;
+- resultado de verifier;
+- claim permitido;
+- claim ceiling;
+- riesgo residual.
+
+---
+
+## 10. Criterios de aceptación
+
+El vertical slice no queda cerrado porque “funciona en mi máquina”.
+
+Debe cumplir:
+
+| Criterio | Estado de cierre |
+|---|---|
+| Captura | ejecutada |
+| Persistencia offline | demostrada |
+| Network loss | reproducible |
+| Restart recovery | reproducible |
+| Idempotency | demostrada con duplicados |
+| Integrity | verificable |
+| Replay | reproducible |
+| Evidence bundle | portable |
+| Clean environment | reproducible |
+| Second operator | ejecutado |
+| Security checks | documentados y aprobados según alcance |
+| Residual risk | registrado |
+| Claim ceiling | explícito |
+
+La ausencia de cualquiera de los criterios obligatorios mantiene el slice bloqueado para promoción.
+
+---
+
+## 11. Evidence package mínimo
+
+Cada cierre de capacidad crítica debe poder empaquetarse en una estructura como:
+
+`
+evidence/
+  <capability>/
+    README.md
+    scenario.yaml
+    environment.yaml
+    commands.md
+    results/
+    logs/
+    artifacts/
+    hashes/
+    review/
+    residual-risk.md
+    claim.md
+`
+
+`README.md` debe indicar:
+
+- versión exacta;
+- commit;
+- entorno;
+- prerequisitos;
+- ejecutor;
+- fecha;
+- resultado;
+- artefactos;
+- limitaciones.
+
+No se publicarán credenciales, datos sensibles ni implementación privada innecesaria.
+
+---
+
+## 12. Claim discipline
+
+El modelo público será:
+
+`
+DOCUMENTED
+    ↓
+IMPLEMENTED
+    ↓
+TESTED
+    ↓
+EVIDENCE_READY
+    ↓
+VERIFIED
+    ↓
+PILOT_READY
+    ↓
+OPERATIONAL
+`
+
+Solo deben usarse los estados que ya estén respaldados por la autoridad y gates correspondientes.
+
+No crear un nuevo enum paralelo.
+
+Nunca convertir:
+
+`
+README → evidence
+PASS local → production
+protocol → independent result
+commit → market value
+activity → maturity
+planning revenue → actual revenue
+`
+
+---
+
+## 13. Métricas de gestión
+
+Las métricas principales dejan de ser “cuánto se ha escrito”.
+
+### Engineering
+
+- % de capacidades críticas con tests.
+- % con evidencia reproducible.
+- defectos críticos abiertos/cerrados.
+- tiempo de resolución de blockers.
+- regresiones detectadas antes de merge.
+
+### Assurance
+
+- % de claims con provenance;
+- % de evidence bundles verificables;
+- reproducibilidad por segundo operador;
+- integrity failures;
+- security findings por severidad.
+
+### Operations
+
+- successful controlled deployments;
+- recovery success;
+- rollback tests;
+- telemetry coverage;
+- unresolved operational blockers.
+
+### Commercial
+
+- scoped pilots;
+- paid pilots;
+- KPI completion;
+- renewal/repeatability;
+- realised revenue.
+
+### Value
+
+- realised development cost;
+- IP ownership evidence;
+- technical asset evidence;
+- realised revenue;
+- valuation update date.
+
+**GitHub contributions, commits, PRs y líneas modificadas se conservarán como métricas de actividad e historial, nunca como sustituto de madurez o valor de mercado.**
+
+---
+
+## 14. Cadencia de gestión
+
+### Revisión semanal de evidencia
+
+Cada semana se revisan solamente:
+
+`new evidence → failed evidence → blockers → risks → promotion decisions`
+
+### Revisión de arquitectura
+
+Solo cuando una modificación:
+
+- cambia un contrato;
+- añade dependencia estructural;
+- modifica identidad;
+- altera persistencia;
+- altera sincronización;
+- modifica boundary de seguridad.
+
+### Revisión comercial
+
+Separada de la técnica.
+
+Un posible cliente no puede elevar el estado técnico.
+
+Una prueba técnica tampoco implica demanda de mercado.
+
+### Revisión económica
+
+Mensual o ante cambio material de:
+
+- financiación;
+- precio;
+- costes;
+- propiedad intelectual;
+- ingresos;
+- valoración.
+
+---
+
+## 15. Cadencia de 30 días
+
+### Días 1–5 — Control
+
+- cerrar diagnóstico de #439;
+- reparar ejecución de checks;
+- resolver la portabilidad reproducible de #457;
+- revisar #469;
+- congelar el alcance de OVS-01.
+
+### Días 6–15 — Ejecución
+
+- ejecutar OVS-01 contra el gateway canónico;
+- demostrar pérdida de conectividad;
+- recovery;
+- idempotent sync;
+- evidence bundle;
+- verifier.
+
+### Días 16–22 — Reproducción
+
+- entorno limpio;
+- segundo operador;
+- replay;
+- revisión del paquete;
+- residual risk;
+- claim ceiling.
+
+### Días 23–27 — Producto
+
+- recorrido SaaS mínimo;
+- actuación;
+- dato;
+- coste/consumo;
+- evidencia;
+- resultado.
+
+### Días 28–30 — Decisión
+
+Solo una de estas salidas:
+
+**PASS:** continuar al siguiente gate.
+
+**PARTIAL:** mantener capacidad y corregir únicamente el gap.
+
+**FAIL:** congelar promoción y abrir remediación.
+
+**BLOCKED:** documentar causa, owner y condición de desbloqueo.
+
+No existe una quinta categoría basada en percepción positiva.
+
+---
+
+## 16. Lo que queda deliberadamente fuera
+
+Durante esta fase no deben convertirse en prioridades del core:
+
+- nuevas verticales;
+- expansión industrial;
+- federación;
+- despliegue multi-site;
+- automatización física avanzada;
+- nuevas capas de blockchain;
+- nuevos agentes AI;
+- nuevas plataformas de dashboard;
+- duplicación de repositorios;
+- reescritura del sistema por preferencia tecnológica.
+
+Podrán volver a la agenda cuando la evidencia del núcleo reduzca suficientemente el riesgo.
+
+---
+
+## 17. Resultado objetivo
+
+El resultado de esta estrategia no es “tener más CASTÚO”.
+
+Es conseguir que un tercero pueda responder, con evidencia:
+
+1. **Qué existe.**
+2. **Dónde existe.**
+3. **Cómo se ejecuta.**
+4. **Cómo se prueba.**
+5. **Qué ocurrió.**
+6. **Qué puede reproducirse.**
+7. **Qué permanece desconocido.**
+8. **Qué claim está permitido.**
+
+El activo técnico aumenta su valor defendible cuando aumenta su **verificabilidad, transferibilidad y utilidad**, no cuando aumenta el número de repositorios.
+
+---
+
+## 18. Target state
+
+La fase de consolidación termina cuando:
+
+- existe un core canónico;
+- los blockers críticos están registrados y controlados;
+- OVS-01 tiene ejecución documentada;
+- existe replay reproducible;
+- un segundo operador puede reproducir el escenario;
+- el claim ceiling coincide con la evidencia;
+- el producto mínimo tiene un flujo demostrable;
+- las hipótesis comerciales permanecen separadas de los hechos;
+- la evidencia económica del activo está fechada;
+- el siguiente ciclo se decide sobre resultados, no sobre volumen de desarrollo.
+
+### Principio rector
+
+> **No construir para parecer maduro. Construir lo necesario para demostrarlo.**
+
+> **No reclamar lo que el sistema podría hacer. Reclamar únicamente lo que la evidencia permite afirmar.**
+
+---
 
 ## Claim boundary
 
-Este documento no afirma:
+Este plan no afirma:
 
 - producción;
 - certificación;
 - independencia ya conseguida;
+- validación CTAEX real;
 - adopción comercial;
 - ingresos recurrentes;
-- operación industrial;
-- validación CTAEX real;
-- valor de mercado;
-- conformidad regulatoria.
+- conformidad regulatoria;
+- operación industrial multi-site;
+- valor de mercado.
 
-El plan es una hoja de ruta de refuerzo. Su éxito se mide por el cierre verificable de capacidades, no por la cantidad de documentación o actividad de GitHub.
+El plan es una estrategia de consolidación y cierre demostrable. Su éxito se mide por **reducción de incertidumbre y evidencia reproducible**, no por actividad de GitHub.
