@@ -924,6 +924,37 @@ Si falta cualquiera de esos elementos, el checkpoint permanece `PARTIAL`, `FAIL`
 `[ ]` El documento no afirma implementación, validación, producción o mercado sin evidencia.
 
 
+
+## 21. Aplicación transversal a commits y repositorios
+
+La estrategia se aplica transversalmente a las superficies CASTÚO activas mediante un control de revisión común en sus PR templates.
+
+### Regla
+
+Los **commits históricos no se reescriben** para aparentar madurez. A partir de esta baseline, cada nuevo conjunto de cambios debe poder responder, como mínimo:
+
+`work reference → scope → acceptance → tests/CI → evidence → security → residual risk → claim ceiling → next gate`
+
+Cada commit incluido en un PR debe tener propósito único y trazable. La plantilla de PR es un control de revisión; no constituye por sí misma evidencia de funcionamiento, validación, operación o valor.
+
+### Cobertura aplicada
+
+La baseline se ha propagado a las superficies CASTÚO activas incluidas en el inventario del 2026-10-08, incluyendo:
+
+- core técnico: `Castuo-system`;
+- public read-model: `Traky12`;
+- edge/offline/evidence: `castuo-agro-edge`, `castuo-offline-field-operations`, `castuo-evidence`, `castuo-e3-001`;
+- assurance/security: `Cast-o`, `goldfish`, `castuo-foreign-verifier`, `castuo-vendor-exit-lab`;
+- producto/piloto: `castuo-product-experience`, `ctaex-iot-pilot`, `castuo-360-v5.3`, `agrovision-360`;
+- gobierno/visibilidad: `castuo-evolution`, `castuo-strategy-knowledge-base`, `castuo-progress-dashboard`, `castuo-live-status-dashboard`;
+- soporte conceptual: `castuo-link`, `castuo-neurocompanion`.
+
+Los repositorios archivados y forks no se incluyen en esta aplicación.
+
+### Límite
+
+Esta propagación no crea un nuevo gate de promoción, un nuevo maturity enum ni una segunda fuente de verdad. Su función es hacer que la disciplina de cierre sea visible en cada futuro PR y, por extensión, revisable sobre cada commit incluido en él.
+
 ---
 
 ## Claim boundary
