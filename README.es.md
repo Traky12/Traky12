@@ -37,13 +37,15 @@ Una verificación correcta comprueba la integridad de los ficheros y las firmas 
 
 ## Estado público actual
 
-**Fecha del snapshot:** 2026-10-05 · **Estado:** consolidación técnica en curso · **Estado de promoción:** `CONSOLIDATION-1.0 = BLOCKED`
+**Fecha del snapshot:** 2026-10-09 · **Estado:** consolidación técnica en curso · **Estado de promoción:** `CONSOLIDATION-1.0 = BLOCKED`
 
 CASTÚO-SYSTEM es un activo tecnológico modular en consolidación para operaciones distribuidas trazables y gobernadas. Su primera dirección de producto, **CASTÚO Evidence-Ready Field Operations** (continuidad offline-first, trazabilidad y evidencia revisable para flujos con conectividad irregular), es un objetivo de validación, no un producto comercial demostrado.
 
 No se declaran operación en producción ni validación comercial. La validación independiente y la operativa están pendientes. El próximo hito de validación, **E3-001 — reproducción independiente controlada**, está `PENDING`: el protocolo público permite que un tercero reproduzca un escenario delimitado y no sensible; el material de revisión controlada puede facilitarse en condiciones definidas; el núcleo privado queda fuera del alcance público.
 
 **Actualización — 2026-10-07:** El endurecimiento de autenticación ha avanzado en el repositorio privado canónico; dos remediaciones se fusionaron tras superar los checks obligatorios de CI en Linux. El despliegue, la verificación posterior, la validación operativa, la reproducción independiente y los gates de promoción siguen pendientes. Esta actualización no afirma operación en producción, validación de campo, certificación ni validación comercial.
+
+**Bloqueo actual de CI — 2026-10-09:** las ejecuciones requeridas del núcleo privado están terminando antes de asignar un runner (`runner_id=0`, `steps=[]`). La causa raíz no está establecida. Estas ejecuciones se clasifican como `BLOCKED / NOT EXECUTED`: no demuestran que los tests de código hayan fallado ni que hayan pasado. Los PR de seguridad afectados siguen sin autorización de integración hasta que los checks se ejecuten y pasen en sus commits vigentes.
 
 Estado completo, tabla de promoción, modelo de autoridad, aviso económico y jurídico y registro histórico: [`docs/PROFILE-STATUS-DETAIL.es.md`](docs/PROFILE-STATUS-DETAIL.es.md).
 
