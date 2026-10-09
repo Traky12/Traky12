@@ -22,6 +22,15 @@ brand_asset:
 
 Preserve aspect ratio. Do not distort, recolor, crop away the identifying mark, place the logo over sensitive evidence, or use it to imply certification, partnership, regulatory approval or operational maturity. Maintain clear space of at least 25% of the displayed logo height and use a minimum display width of 180px where legibility matters.
 
+## Website use
+
+Approved by the owner on 2026-10-09 for the CASTÚO-SYSTEM public website and its design prototypes.
+
+- Use only the approved files listed in `checksums.sha256`, unmodified.
+- Place the logo on a dark ground: the approved files carry their own dark background and are not transparent.
+- Display it at 180px or wider where the name must be read (page headers, hero areas, footers). A smaller emblem (about 48px) is allowed only next to the name set in text.
+- Keep it away from evidence content and from any statement about certification, production, validation, adoption or compliance.
+
 ## Public README block
 
 Public READMEs may use the controlled block below. The status, claims and promotion state must continue to come from `castuo-evolution` and never from the logo itself.

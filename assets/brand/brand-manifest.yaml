@@ -15,6 +15,7 @@ brand_asset:
     - public_readmes
     - documentation
     - evidence_center_index
+    - public_website
   prohibited_interpretations:
     - production
     - certification
