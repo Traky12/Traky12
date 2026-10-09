@@ -1,6 +1,7 @@
 # CASTÚO-SYSTEM — Estrategia maestra de capacidades y cierre demostrable
 
-**Fecha:** 2026-10-08  
+**Fecha de elaboración:** 2026-10-08  
+**Estado actualizado:** 2026-10-09  
 **Rol:** mapa público de capacidades, ruta crítica y control de refuerzo del ecosistema.  
 **Autoridad:** `Traky12` es el public read-model; `Castuo-system` conserva la autoridad técnica del core.  
 **Regla estructural:** este documento no crea una SSOT, una taxonomía normativa, un nuevo maturity enum ni nuevos promotion gates.
@@ -108,30 +109,22 @@ El PASS estructural del verifier demuestra consistencia del paquete, no operaci�
 
 ### CP-2 — Ejecutar OVS-01 contra el gateway canónico
 
-**Referencia:** issue #468.
+**Referencia:** issue #468 y PR #474 de `Castuo-system`.
 
-La evidencia anterior no basta. Debe ejecutarse el flujo contra la implementación canónica:
+La aceptación técnica sigue siendo:
 
-`apps/edge-gateway/main.py`
+`lost_events = 0` · `duplicate_events = 0` · `silent_mutations = 0` · `replay_mismatch = 0` · `evidence/hash mismatch = 0`
 
-Cierre:
+El registro de ejecución del autor informa:
 
-- pérdida de conectividad reproducible;
-- reinicio/recuperación reproducible;
-- persistencia local demostrada;
-- sincronización idempotente;
-- duplicate injection;
-- hash verification;
-- replay;
-- portable evidence bundle.
+- CP-2A controlado: **PASS**.
+- CP-2B E2E local (gateway, SQLite, broker Mosquitto, backend FastAPI y PostgreSQL en loopback): **PASS ×3**.
+- Bundles y replay: verificados localmente en el alcance declarado.
+- CI remoto de la rama de #474: **BLOCKED**, porque GitHub Actions no inicia los jobs por el aviso de facturación/límite de gasto registrado en #439.
+- CP-3, segunda persona en entorno limpio: **PENDING**.
+- Revisión externa independiente: **NOT ESTABLISHED**.
 
-Criterios duros:
-
-`lost_events = 0`  
-`duplicate_events = 0`  
-`silent_mutations = 0`  
-`replay_mismatch = 0`  
-`evidence/hash mismatch = 0`
+Por ello, OVS-01 **no está cerrado**. Los PASS locales documentan ejecuciones del lado del autor; no reemplazan CI remoto ejecutado, reproducción por segundo operador, revisión ni evidencia de campo.
 
 ### CP-3 — Reproducción en entorno limpio
 
@@ -213,10 +206,11 @@ La ruta crítica queda condicionada por los blockers ya abiertos en el core:
 
 | Referencia | Problema | Efecto |
 |---|---|---|
-| #439 | Validación remota de PR/CI | **BLOCKED** (2026-10-08): los checks corrieron de forma observable hasta ~09:08Z (PR #472 en verde) y desde ~09:40Z los jobs no arrancan («recent account payments have failed or your spending limit needs to be increased»). Un check que no se ejecuta no es FAIL ni PASS. Desbloqueo: facturación de Actions (owner). |
-| #468 | OVS-01 no ejecutado end-to-end | Impide cerrar continuidad canónica |
-| #457 | fallo del test de evidencia en Windows | Mantiene una deuda de portabilidad reproducible; candidato de corrección: PR #472 (abierto, sin merge a 2026-10-08) |
-| Seguridad P1 / #459 / #440 | Credenciales, exposición histórica y rotación | Impide elevar claims de seguridad sin cierre verificable |
+| #439 | Validación remota de PR/CI | **BLOCKED** (actualización registrada 2026-10-08): jobs sin iniciar por facturación/límite de gasto de Actions. No es PASS ni evidencia de fallo de código. Requiere actuación del owner en Billing; después, reejecutar checks sobre el SHA final. |
+| #468 | Cierre OVS-01 | CP-2A PASS y CP-2B E2E PASS ×3 local, según el registro del autor; **CP-3 y revisión pendientes**. OVS-01 continúa NOT CLOSED. |
+| #474 | Integración OVS-01 + migración de recibos | Incluye protocolo CP-2 y una migración Alembic acotada a `ingestion_receipts`; cambio propuesto, sin CI remoto válido ni aplicación de migración a ningún entorno. |
+| #457 | Portabilidad de salida de evidencia en Windows | PR #472 sigue abierto; el cierre requiere merge autorizado y ejecución reproducible en Windows. |
+| Seguridad P1 / #459 / #440 | Credenciales, exposición histórica y rotación | Impide elevar claims de seguridad sin cierre verificable; rotación y verificación externa siguen siendo responsabilidad del owner. |
 
 Estos elementos no deben esconderse al presentar el estado. Forman parte del evidence ledger.
 
@@ -1032,3 +1026,20 @@ Este plan no afirma:
 - valor de mercado.
 
 El plan es una estrategia de consolidación y cierre demostrable. Su éxito se mide por **reducción de incertidumbre y evidencia reproducible**, no por actividad de GitHub.
+
+---
+
+## 13. Actualización de ejecución — 2026-10-09
+
+Este bloque actualiza el estado operativo del mapa público, sin crear autoridad nueva:
+
+| Tema | Estado observado | Próxima prueba |
+|---|---|---|
+| OVS-01 local | CP-2A PASS; CP-2B PASS ×3 según registro del autor | Reproducción CP-3 por otra persona, desde clon limpio |
+| GitHub Actions | BLOCKED por problema de facturación/límite de gasto, según #439 | Owner resuelve Billing; reejecutar workflows en el SHA candidato |
+| Persistencia de idempotencia | Migración Alembic `ingestion_receipts` añadida a la rama de #474 | Revisión de código, CI y prueba contra PostgreSQL; no aplicar a un entorno compartido sin backup y aprobación |
+| Credenciales y entornos | Cierre externo pendiente en #459 | Rotación/revocación real, inspección de runtime y evidencia fechada |
+| Perfil público | Read-model únicamente | Reflejar únicamente estados y artefactos verificables; no convertir plan o actividad en madurez |
+
+**Claim ceiling actual:** ejecución local controlada/E2E documentada; independencia no establecida, operación de producción no demostrada, validación de campo y validación comercial no reclamadas.
+
