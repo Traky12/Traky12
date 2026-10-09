@@ -143,7 +143,7 @@ The official brand asset is versioned at `assets/brand/castuo-system-logo-horizo
 
 A dated public plan maps the capability work required to reinforce the CASTÚO-SYSTEM ecosystem without creating a parallel technical authority. It links product, core, data, edge, field, evidence, security, assurance, observability, deployment, compliance, commercial validation and technical-asset evidence to explicit dependencies and evidence requirements.
 
-- [CASTÚO-SYSTEM — transversal capability reinforcement plan (2026-10-08)](docs/CASTUO_CAPABILITY_REINFORCEMENT_PLAN_2026-10-08.md)
+- [CASTÚO-SYSTEM — transversal capability reinforcement plan (baseline 2026-10-08; execution update 2026-10-09)](docs/CASTUO_CAPABILITY_REINFORCEMENT_PLAN_2026-10-08.md)
 
 The plan is a public read-model and execution map. Canonical capability state and promotion decisions remain in the authoritative repositories.
 
