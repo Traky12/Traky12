@@ -28,7 +28,8 @@ Una herramienta Python pequeña, con licencia MIT, que registra el SHA-256 de ca
 
 ```bash
 python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.1"
-git clone https://github.com/Traky12/castuo-e3-001 && cd castuo-e3-001
+git clone --branch v0.1.1 --depth 1 https://github.com/Traky12/castuo-e3-001
+cd castuo-e3-001
 e3bundle verify examples/bundles/valid    --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json   # VERIFIED, salida 0
 e3bundle verify examples/bundles/tampered --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json   # FAILED, salida 1
 ```
