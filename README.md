@@ -28,7 +28,7 @@ Release `v0.1.0` is published as an alpha prerelease; the `e3.bundle.v1` format 
 
 ```bash
 python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.0"
-git clone --branch v0.1.0 --depth 1 https://github.com/Traky12/castuo-e3-001.git
+git clone --branch v0.1.0 --depth 1 https://github.com/Traky12/castuo-e3-001
 cd castuo-e3-001
 e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
 # Expected: VERIFIED, exit 0
