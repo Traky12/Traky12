@@ -50,6 +50,8 @@ Production operation and commercial validation are not claimed. Independent and 
 
 **Update — 2026-10-07:** Authentication hardening work has advanced in the private canonical repository; two remediations were merged after passing the required Linux CI checks. Deployment, post-deployment verification, operational validation, independent reproduction and promotion gates remain pending. This update does not claim production operation, field validation, certification or commercial validation.
 
+**Current CI blocker — 2026-10-09:** required private-core runs are terminating before a runner is assigned (`runner_id=0`, `steps=[]`). The root cause is not established. These runs are classified as `BLOCKED / NOT EXECUTED`: they do not show that code tests failed or passed. Affected security PRs remain unapproved for integration until required checks execute and pass on their current commits.
+
 Full status, promotion table, authority model, economic and legal notice and historical record: [`docs/PROFILE-STATUS-DETAIL.md`](docs/PROFILE-STATUS-DETAIL.md).
 
 ## Public Repositories
