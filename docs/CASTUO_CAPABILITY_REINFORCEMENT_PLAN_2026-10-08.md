@@ -1037,7 +1037,7 @@ Este bloque actualiza el estado operativo del mapa público, sin crear autoridad
 |---|---|---|
 | OVS-01 local | CP-2A PASS; CP-2B PASS ×3 según registro del autor | Reproducción CP-3 por otra persona, desde clon limpio |
 | GitHub Actions | BLOCKED por problema de facturación/límite de gasto, según #439 | Owner resuelve Billing; reejecutar workflows en el SHA candidato |
-| Persistencia de idempotencia | Migración Alembic `ingestion_receipts` añadida a la rama de #474 | Revisión de código, CI y prueba contra PostgreSQL; no aplicar a un entorno compartido sin backup y aprobación |
+| Persistencia de idempotencia | Migración Alembic `ingestion_receipts` en #474; incluye `event_time` y adopción no destructiva de una tabla antigua válida | Se añadieron cuatro pruebas de contrato SQLite y Alembic a `requirements/dev.txt`; CI remoto y validación PostgreSQL continúan pendientes. No aplicar a un entorno compartido sin backup y aprobación |
 | Credenciales y entornos | Cierre externo pendiente en #459 | Rotación/revocación real, inspección de runtime y evidencia fechada |
 | Perfil público | Read-model únicamente | Reflejar únicamente estados y artefactos verificables; no convertir plan o actividad en madurez |
 
