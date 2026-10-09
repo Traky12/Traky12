@@ -24,11 +24,13 @@ A small MIT-licensed Python tool that records the SHA-256 of every file in a fol
 - Signed `valid` and `tampered` example bundles you can verify in seconds.
 - Reusable GitHub Action for CI pipelines.
 
-Release `v0.1.0` is published as an alpha prerelease; the `e3.bundle.v1` format is experimental.
+**[Try it in your browser](https://traky12.github.io/castuo-e3-001/)** — no installation: the demo verifies the real `v0.1.1` example bundles with WebCrypto (SHA-256, Ed25519), lets you tamper with them, and creates and signs bundles that the CLI also verifies. CI checks that the demo and the CLI give the same results.
+
+Release `v0.1.1` is published as an alpha prerelease; the `e3.bundle.v1` format is experimental.
 
 ```bash
-python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.0"
-git clone --branch v0.1.0 --depth 1 https://github.com/Traky12/castuo-e3-001
+python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.1"
+git clone --branch v0.1.1 --depth 1 https://github.com/Traky12/castuo-e3-001
 cd castuo-e3-001
 e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
 # Expected: VERIFIED, exit 0

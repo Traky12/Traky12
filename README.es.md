@@ -24,8 +24,10 @@ Una herramienta Python pequeña, con licencia MIT, que registra el SHA-256 de ca
 - Paquetes de ejemplo firmados, `valid` y `tampered`, que se verifican en segundos.
 - GitHub Action reutilizable para pipelines de CI.
 
+**[Pruébalo en tu navegador](https://traky12.github.io/castuo-e3-001/)**, sin instalar nada: la demo verifica los paquetes de ejemplo reales de `v0.1.1` con WebCrypto (SHA-256, Ed25519), te deja manipularlos y crea y firma paquetes que el CLI también verifica. La integración continua comprueba que la demo y el CLI dan los mismos resultados.
+
 ```bash
-python -m pip install "git+https://github.com/Traky12/castuo-e3-001"
+python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.1"
 git clone https://github.com/Traky12/castuo-e3-001 && cd castuo-e3-001
 e3bundle verify examples/bundles/valid    --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json   # VERIFIED, salida 0
 e3bundle verify examples/bundles/tampered --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json   # FAILED, salida 1
