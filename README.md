@@ -24,18 +24,23 @@ A small MIT-licensed Python tool that records the SHA-256 of every file in a fol
 - Signed `valid` and `tampered` example bundles you can verify in seconds.
 - Reusable GitHub Action for CI pipelines.
 
+Release `v0.1.0` is published as an alpha prerelease; the `e3.bundle.v1` format is experimental.
+
 ```bash
-python -m pip install "git+https://github.com/Traky12/castuo-e3-001"
-git clone https://github.com/Traky12/castuo-e3-001 && cd castuo-e3-001
-e3bundle verify examples/bundles/valid    --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json   # VERIFIED, exit 0
-e3bundle verify examples/bundles/tampered --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json   # FAILED, exit 1
+python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.0"
+git clone --branch v0.1.0 --depth 1 https://github.com/Traky12/castuo-e3-001.git
+cd castuo-e3-001
+e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
+# Expected: VERIFIED, exit 0
+e3bundle verify examples/bundles/tampered --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
+# Expected: FAILED, exit 1
 ```
 
 A successful verification checks file integrity and signatures over the declared manifest. It does not prove that the content is true, does not identify signers without pinned keys and is not a certification or production authorization.
 
 ## Current Public Status
 
-**Snapshot date:** 2026-10-05 · **Status:** technical consolidation in progress · **Promotion state:** `CONSOLIDATION-1.0 = BLOCKED`
+**Snapshot date:** 2026-10-09 · **Status:** technical consolidation in progress · **Promotion state:** `CONSOLIDATION-1.0 = BLOCKED`
 
 CASTÚO-SYSTEM is a modular technical asset in consolidation for traceable and governed distributed operations. Its first product direction, **CASTÚO Evidence-Ready Field Operations** (offline-first continuity, traceability and reviewable evidence for workflows with irregular connectivity), is a validation objective, not a proven commercial product.
 
