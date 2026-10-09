@@ -4,7 +4,7 @@
 </p>
 <!-- CASTUO:BRAND:END -->
 
-# Gregorio Jiménez Bodes — Traky12
+# Gregorio Julián Jiménez Bodes — Traky12
 
 ### Systems Architect · Evidence Engineer · AI Governance & Assurance
 
@@ -77,6 +77,7 @@ Full boundaries: [`PUBLIC_CLAIM_BOUNDARY.md`](PUBLIC_CLAIM_BOUNDARY.md) · Evide
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
 - [Security policy](SECURITY.md)
 - [Contributing](CONTRIBUTING.md)
+- [Presentación del proyecto — 5 minutos](CASTUO-SYSTEM-5-MIN-PRESENTATION-ES.md)
 - [Versión en español](README.es.md)
 
 ## Not Claimed
