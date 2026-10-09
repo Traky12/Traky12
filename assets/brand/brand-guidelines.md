@@ -33,7 +33,7 @@ Approved by the owner on 2026-10-09 for the CASTÚO-SYSTEM public website and it
 
 ## Public README block
 
-Public READMEs may use the controlled block below. The status, claims and promotion state must continue to come from `castuo-evolution` and never from the logo itself.
+Public READMEs may use the controlled block below. The status, claims and promotion state come from `Castuo-system`, the private canonical authority, as represented in this profile, and never from the logo itself.
 
 ```html
 <!-- CASTUO:BRAND:START -->
@@ -45,4 +45,4 @@ Public READMEs may use the controlled block below. The status, claims and promot
 
 ## Review boundary
 
-Changes to the master, derivatives, checksums or controlled README block require a pull request, CODEOWNERS review and visual inspection. No brand change may alter control-plane state or promotion status.
+Changes to the master, derivatives, checksums or controlled README block require a pull request, CODEOWNERS review and visual inspection. No brand change may alter technical state or promotion status.
