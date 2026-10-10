@@ -108,7 +108,6 @@ Full boundary: [`PUBLIC_CLAIM_BOUNDARY.md`](PUBLIC_CLAIM_BOUNDARY.md) · Evidenc
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
 - [Security policy](SECURITY.md)
 - [Contributing](CONTRIBUTING.md)
-- [Project presentation — 5 minutes (Spanish)](CASTUO-SYSTEM-5-MIN-PRESENTATION-ES.md)
 - [Versión en español](README.es.md)
 
 ## Not Claimed
