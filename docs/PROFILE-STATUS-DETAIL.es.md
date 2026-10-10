@@ -1,6 +1,17 @@
 # CASTÚO-SYSTEM — detalle del estado público
 
-Detalle trasladado desde el README del perfil el 2026-10-09 para que el perfil empiece por lo que un visitante puede probar. El contenido no cambia; el README del perfil sigue siendo el resumen público fechado.
+Detalle del estado y del contexto histórico del README del perfil. Actualizado el 2026-10-10; el README del perfil contiene el resumen público y este documento conserva el estado de apoyo y el registro histórico.
+
+
+## Puerta actual de publicación y validación — 2026-10-10
+
+- **e3bundle:** la última versión alfa publicada es `v0.1.1`. El trabajo de `v0.1.2` sigue siendo una candidata sin publicar; no se declara ninguna release `v0.1.2` ni `v0.1.3`.
+- **Demo de navegador:** `main` evita que la identidad del titular quede en el historial público de Git: los campos legales se renderizan solo desde secretos de Actions administrados por el titular. Una corrección posterior hace que la compilación conserve la plantilla si faltan esos secretos. Ninguno de esos cambios autoriza por sí solo la publicación.
+- **Puerta de Pages:** el despliegue sigue bloqueado hasta que exista una versión corregida aprobada y coincidan la release de GitHub, el paquete PyPI y la imagen GHCR, además de la configuración legal requerida. Una compilación correcta o un despliegue omitido no equivalen a una publicación.
+- **CI del núcleo privado:** siguen abiertos los fallos de asignación de runner sin evidencia de pasos ejecutables. La causa raíz no está establecida; estos resultados no se aceptan como resultados de tests de código.
+- **OVS-01 y reproducción independiente:** siguen en `PENDING`; no se promociona ningún resultado operativo de extremo a extremo ni independiente.
+
+Son observaciones públicas fechadas, no sustituyen comprobaciones en vivo. Antes de modificar el estado del perfil o declarar una release, vuelve a comprobar las versiones, los artefactos y los workflows.
 
 ## Foco técnico actual
 
@@ -16,7 +27,7 @@ Detalle trasladado desde el README del perfil el 2026-10-09 para que el perfil e
 
 ## Estado de promoción actual
 
-| Área | Estado actual (2026-10-05) | Significado |
+| Área | Estado base (2026-10-05) | Significado |
 |---|---|---|
 | Consolidación técnica | `IN PROGRESS` | Continúa el trabajo de arquitectura, seguridad y gobernanza |
 | Consolidation-1.0 | `BLOCKED` | Siguen abiertos gates de evidencia de ingeniería y de operación |
