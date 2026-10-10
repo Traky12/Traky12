@@ -19,7 +19,7 @@ Construyo infraestructura basada en evidencia para operaciones trazables, offlin
 
 **[Probar la demo — ejemplos v0.1.1](https://traky12.github.io/castuo-e3-001/)** · **[Abrir el repositorio](https://github.com/Traky12/castuo-e3-001)** · **[Contribuir](https://github.com/Traky12/castuo-e3-001/contribute)**
 
-**Estado de publicación (11 oct 2026):** existe una prerelease alfa `v0.1.3` en GitHub, pero no se han verificado todos los requisitos de PyPI/GHCR, los metadatos de versión corregida del aviso de seguridad y el despliegue de la demo correspondiente. La documentación pública indica que la demo usa ejemplos de `v0.1.1`; todavía no se anuncia el comando `pip install e3bundle==0.1.3`.
+**Estado de publicación (11 oct 2026):** existe una [prerelease alfa `v0.1.3` en GitHub](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3), pero no se han verificado todos los requisitos de PyPI/GHCR, los metadatos de versión corregida del aviso de seguridad y el despliegue de la demo correspondiente. La documentación pública indica que la demo usa ejemplos de `v0.1.1`; todavía no se anuncia el comando `pip install e3bundle==0.1.3`.
 
 ## Qué construyo
 
