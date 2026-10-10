@@ -1,17 +1,20 @@
 # CASTÚO-SYSTEM — detalle del estado público
 
-Detalle del estado y del contexto histórico del README del perfil. Actualizado el 2026-10-10; el README del perfil contiene el resumen público y este documento conserva el estado de apoyo y el registro histórico.
+Detalle del estado y del contexto histórico del README del perfil. Actualizado el 2026-10-11; el README del perfil contiene el resumen público y este documento conserva el estado de apoyo y el registro histórico.
 
+## Puerta actual de publicación y validación — 2026-10-11
 
-## Puerta actual de publicación y validación — 2026-10-10
-
-- **e3bundle:** la última versión alfa publicada es `v0.1.1`. El trabajo de `v0.1.2` sigue siendo una candidata sin publicar; no se declara ninguna release `v0.1.2` ni `v0.1.3`.
-- **Demo de navegador:** `main` evita que la identidad del titular quede en el historial público de Git: los campos legales se renderizan solo desde secretos de Actions administrados por el titular. Una corrección posterior hace que la compilación conserve la plantilla si faltan esos secretos. Ninguno de esos cambios autoriza por sí solo la publicación.
-- **Puerta de Pages:** el despliegue sigue bloqueado hasta que exista una versión corregida aprobada y coincidan la release de GitHub, el paquete PyPI y la imagen GHCR, además de la configuración legal requerida. Una compilación correcta o un despliegue omitido no equivalen a una publicación.
-- **CI del núcleo privado:** siguen abiertos los fallos de asignación de runner sin evidencia de pasos ejecutables. La causa raíz no está establecida; estos resultados no se aceptan como resultados de tests de código.
+- **GitHub:** existe [`v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) como prerelease alfa pública, publicada el 2026-10-10. La release no tiene assets adjuntos manualmente. Es distinto de una release aprobada y publicada de forma coherente en todos los registros.
+- **PyPI:** el [run de publicación existente](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) aporta la evidencia decisiva: pasaron la comprobación de versión, los tests, el build de sdist/wheel y el smoke test en venv limpio, pero el job de publicación falló en el intercambio OIDC con `invalid-publisher` porque no había un Trusted Publisher coincidente. La auditoría operativa adjunta también informa HTTP 404 de PyPI. Registrar un pending publisher para proyecto `e3bundle`, owner `Traky12`, repo `castuo-e3-001`, workflow `publish-pypi.yml`, entorno `pypi`, y luego repetir el job fallido. El perfil mantiene la vía probada de instalación desde el tag GitHub y no anuncia `pip install e3bundle==0.1.3` hasta que el paquete sea público.
+- **GHCR:** el PR fusionado #67 registra como publicada la imagen `ghcr.io/traky12/e3bundle:0.1.3`. Esta actualización no consultó de forma independiente el manifiesto en vivo; la disponibilidad actual está respaldada por la evidencia de esa operación, no por una nueva comprobación de este turno.
+- **Aviso de seguridad:** las notas de la release de GitHub dicen que `v0.1.3` corrige `GHSA-55pc-7v4h-jf7c`. No se ha verificado de forma independiente el campo real de versión corregida del aviso; no se debe afirmar públicamente que el registro marca `0.1.3` como corregida hasta consultar ese registro.
+- **Demo de navegador:** el perfil y el README del repositorio describen la demo pública como basada en los bundles de ejemplo de `v0.1.1`. El workflow de Pages prueba una candidata `v0.1.3` fijada por commit, pero los tests de una candidata no demuestran que la URL pública la esté sirviendo.
+- **Gate de Pages:** [el workflow](https://github.com/Traky12/castuo-e3-001/blob/main/.github/workflows/pages.yml) exige una release GitHub `v0.1.3`, PyPI `0.1.3`, imagen GHCR `0.1.3`, checks de compilación/UI y campos legales configurados por el titular antes del despliegue. La inspección del código confirma la lógica del gate, no que la última ejecución haya pasado ni que el despliegue haya terminado.
+- **Inconsistencia documental:** el README del tag `v0.1.3` aún dice que no hay una release `v0.1.3` aprobada y que no se declara la disponibilidad en PyPI. Resolver esa contradicción forma parte del cierre de publicación.
+- **CI del núcleo privado:** los fallos de asignación de runner sin evidencia de pasos ejecutados siguen siendo un bloqueo separado. Su causa raíz no está establecida y esos resultados no son resultados de tests de código.
 - **OVS-01 y reproducción independiente:** siguen en `PENDING`; no se promociona ningún resultado operativo de extremo a extremo ni independiente.
 
-Son observaciones públicas fechadas, no sustituyen comprobaciones en vivo. Antes de modificar el estado del perfil o declarar una release, vuelve a comprobar las versiones, los artefactos y los workflows.
+No se deben fusionar claims de instalación general de `v0.1.3` hasta que se pueda recuperar la release de PyPI, el registro GHSA marque realmente `0.1.3` como corregida, se compruebe la imagen GHCR y se verifique que el sitio público de Pages sirve la candidata correspondiente tras una ejecución de despliegue satisfactoria.
 
 ## Foco técnico actual
 
@@ -71,7 +74,7 @@ Los registros de ingeniería anteriores, snapshots de validación local, iteraci
 
 - [Registro de ingeniería del 2026-08-18 (README del perfil en el commit `860a20e`)](https://github.com/Traky12/Traky12/blob/860a20ecee74af90191fb25cd72327bf5739528c/README.md)
 
-Esos registros describen estados delimitados capturados durante agosto de 2026. No prevalecen sobre el estado público actual fechado el 2026-10-05 y no constituyen evidencia actual de producción, operativa, independiente, de campo, comercial ni de mercado. Un commit registra historia del repositorio; por sí solo no es evidencia de campo, de despliegue, de aseguramiento de seguridad ni comercial.
+Esos registros describen estados delimitados capturados durante agosto de 2026. No prevalecen sobre el estado público actual fechado el 2026-10-11 y no constituyen evidencia actual de producción, operativa, independiente, de campo, comercial ni de mercado. Un commit registra historia del repositorio; por sí solo no es evidencia de campo, de despliegue, de aseguramiento de seguridad ni comercial.
 
 El activo oficial de marca está versionado en `assets/brand/castuo-system-logo-horizontal.jpg`. La coherencia de marca es solo metadato de presentación y no constituye evidencia técnica, de seguridad, de producción ni comercial.
 

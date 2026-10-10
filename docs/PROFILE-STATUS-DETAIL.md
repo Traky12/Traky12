@@ -1,17 +1,20 @@
 # CASTÚO-SYSTEM — public status detail
 
-Detailed status and historical context for the profile README. Updated 2026-10-10; the profile README is the concise public snapshot, while this document holds the supporting status and historical record.
+Detailed status and historical context for the profile README. Updated 2026-10-11; the profile README is the concise public snapshot, while this document holds supporting status and history.
 
+## Current public release and validation gate — 2026-10-11
 
-## Current public release and validation gate — 2026-10-10
-
-- **e3bundle:** the latest published alpha release is `v0.1.1`. The `v0.1.2` work remains an unpublished candidate; no `v0.1.2` or `v0.1.3` release is claimed.
-- **Browser demo:** `main` now keeps holder identity out of public Git history by rendering legal fields only from owner-managed Actions secrets. A subsequent guard fix makes the build keep the template if those secrets are absent. Neither change alone authorizes public deployment.
-- **Pages gate:** deployment remains blocked until the approved corrected release and matching GitHub Release, PyPI package and GHCR image exist, and required legal-page settings are present. A passing build or skipped deployment is not a publication.
-- **Private-core CI:** runner-assignment failures without executable step evidence remain an open blocker. The root cause is not established; these results are not accepted as code-test results.
+- **GitHub:** [`v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) exists as a public alpha prerelease, published on 2026-10-10. The release has no manually attached assets. This is distinct from an approved, cross-registry release.
+- **PyPI:** the [existing publish workflow run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) is decisive: version check, tests, sdist/wheel build and clean-venv smoke test passed, but the publish job failed at OIDC exchange with `invalid-publisher` because no matching Trusted Publisher was registered. The attached operator audit also reports HTTP 404 for PyPI. Register a pending publisher for project `e3bundle`, owner `Traky12`, repo `castuo-e3-001`, workflow `publish-pypi.yml`, environment `pypi`; then rerun the failed job. The profile keeps the tested GitHub-tag installation path and does not advertise `pip install e3bundle==0.1.3` until the package is public.
+- **GHCR:** merged profile PR #67 records `ghcr.io/traky12/e3bundle:0.1.3` as published. This update did not independently probe the live manifest, so the claim's current registry availability remains operator-evidence-backed rather than freshly rechecked here.
+- **Security advisory:** the GitHub release notes say `v0.1.3` fixes `GHSA-55pc-7v4h-jf7c`. The advisory's actual fixed-version metadata was not independently verified; do not claim it publicly marks `0.1.3` as fixed until that record is checked.
+- **Browser demo:** the profile and repository README describe the public demo as using the `v0.1.1` example bundles. The Pages workflow tests a pinned `v0.1.3` candidate, but tests on a candidate build do not prove that the live public URL serves it.
+- **Pages gate:** [the workflow](https://github.com/Traky12/castuo-e3-001/blob/main/.github/workflows/pages.yml) requires a GitHub `v0.1.3` release, PyPI `0.1.3`, GHCR image `0.1.3`, build/UI checks and owner-configured legal identity fields before deployment. Source inspection establishes the gate logic, not that the latest run passed or deployment completed.
+- **Documentation mismatch:** the `v0.1.3` tag's [README](https://github.com/Traky12/castuo-e3-001/blob/v0.1.3/README.md) still says no approved `v0.1.3` release is available and PyPI availability is not claimed. Resolve that contradiction as part of the release closeout.
+- **Private-core CI:** runner-assignment failures without executable step evidence remain a separate blocker. Their root cause is not established and those results are not code-test outcomes.
 - **OVS-01 and independent reproduction:** remain `PENDING`; no end-to-end operational or independent result is promoted.
 
-These are dated public observations, not a substitute for live checks. Recheck the release, artifact and workflow state before changing the profile status or making a release claim.
+Do not merge public claims for a general `v0.1.3` install until the PyPI release can be retrieved, the GHSA record actually marks `0.1.3` as fixed, the GHCR image is checked, and the live Pages site is verified to serve the matching candidate from a successful deployment run.
 
 ## Current Technical Focus
 
@@ -71,7 +74,7 @@ Earlier engineering records, local validation snapshots, dashboard iterations, r
 
 - [Engineering record of 2026-08-18 (profile README at commit `860a20e`)](https://github.com/Traky12/Traky12/blob/860a20ecee74af90191fb25cd72327bf5739528c/README.md)
 
-Those records describe bounded states captured during August 2026. They do not override the current public status snapshot dated 2026-10-10 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
+Those records describe bounded states captured during August 2026. They do not override the current public status snapshot dated 2026-10-11 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
 
 The official brand asset is versioned at `assets/brand/castuo-system-logo-horizontal.jpg`. Brand consistency is presentation metadata only and does not constitute technical, security, production or commercial evidence.
 
