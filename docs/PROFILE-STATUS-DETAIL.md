@@ -82,3 +82,12 @@ A dated public plan maps the capability work required to reinforce the CASTÚO-S
 - [CASTÚO-SYSTEM — transversal capability reinforcement plan (baseline 2026-10-08; execution update 2026-10-09)](CASTUO_CAPABILITY_REINFORCEMENT_PLAN_2026-10-08.md)
 
 The plan is a public read-model and execution map. Canonical capability state and promotion decisions remain in the authoritative repositories.
+
+## Moved from the profile README (2026-10-11)
+
+The profile README was shortened to a front page (try, status, contribute, limits). These passages moved here unchanged in substance:
+
+- **Private-core CI boundary.** Required workflows in the private core have not executed steps; GitHub reports the jobs as not started. Those observations are classified as `BLOCKED / NOT EXECUTED`, not as proof that tests passed or failed. Security-sensitive changes remain unapproved for integration until required checks execute and pass on their current commits.
+- **Validation focus — OVS-01: CASTUO-SYSTEM Edge Continuity** (event identity, offline persistence, recovery after restart, synchronization, evidence and replay) remains `PENDING`.
+- **Design exploration — bioinput traceability.** A product-agnostic evidence model linking a declared bioinput lot, application conditions and later crop observations. Design proposal only: not an implemented capability, field trial, efficacy result, certification or manufacturer partnership. [Scope, scientific limits and privacy boundaries](BIOINPUT-TRACEABILITY.md).
+- **e3bundle release history.** `v0.1.2` was a candidate that was never released; `v0.1.3` (GHSA-55pc-7v4h-jf7c fix) is published on GitHub Releases and GHCR, with PyPI pending.
