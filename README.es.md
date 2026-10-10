@@ -29,7 +29,9 @@ Genera un manifiesto con huellas SHA-256, admite firmas Ed25519 e informa de los
 La instalación necesita conexión a Internet. Después, los comandos de verificación se ejecutan localmente.
 
 ```bash
-python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.1"
+git clone --branch v0.1.1 --depth 1 https://github.com/Traky12/castuo-e3-001
+cd castuo-e3-001
+python -m pip install .
 
 e3bundle verify examples/bundles/valid \
   --min-signatures 2 \
@@ -42,7 +44,7 @@ e3bundle verify examples/bundles/tampered \
 # Esperado: FAILED, salida 1
 ```
 
-Ejecuta los comandos desde un clon del repositorio en la etiqueta `v0.1.1`, que contiene los paquetes de ejemplo. Consulta el [README del repositorio](https://github.com/Traky12/castuo-e3-001#readme) para ver los pasos de preparación y uso.
+Los comandos clonan el código fijado en `v0.1.1` y lo instalan desde esa copia. La instalación puede descargar dependencias; la verificación se ejecuta localmente. Consulta el [README del repositorio](https://github.com/Traky12/castuo-e3-001#readme) para más detalles.
 
 **Límite:** una verificación correcta establece que el contenido de los archivos declarados coincide con sus huellas y que las firmas examinadas son válidas según las reglas de confianza configuradas. No demuestra que las afirmaciones originales sean verdaderas, que un firmante sea quien dice ser sin fijar su clave de forma independiente ni que un sistema esté certificado o autorizado para producción.
 
