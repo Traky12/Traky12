@@ -108,7 +108,6 @@ Límite completo: [`PUBLIC_CLAIM_BOUNDARY.es.md`](PUBLIC_CLAIM_BOUNDARY.es.md) �
 - [ORCID](https://orcid.org/0009-0007-3489-0565)
 - [Política de seguridad](SECURITY.md)
 - [Contribuir](CONTRIBUTING.md)
-- [Presentación del proyecto — 5 minutos](CASTUO-SYSTEM-5-MIN-PRESENTATION-ES.md)
 - [English version](README.md)
 
 ## No se declara
