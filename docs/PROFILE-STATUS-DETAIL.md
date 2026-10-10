@@ -1,17 +1,18 @@
 # CASTÚO-SYSTEM — public status detail
 
-Detailed status and historical context for the profile README. Updated 2026-10-10; the profile README is the concise public snapshot, while this document holds the supporting status and historical record.
+Detailed status and historical context for the profile README. Updated 2026-10-11; the profile README is the concise public snapshot, while this document holds supporting status and history.
 
+## Current public release and validation gate — 2026-10-11
 
-## Current public release and validation gate — 2026-10-10
-
-- **e3bundle:** the latest published alpha release is `v0.1.1`. The `v0.1.2` work remains an unpublished candidate; no `v0.1.2` or `v0.1.3` release is claimed.
-- **Browser demo:** `main` now keeps holder identity out of public Git history by rendering legal fields only from owner-managed Actions secrets. A subsequent guard fix makes the build keep the template if those secrets are absent. Neither change alone authorizes public deployment.
-- **Pages gate:** deployment remains blocked until the approved corrected release and matching GitHub Release, PyPI package and GHCR image exist, and required legal-page settings are present. A passing build or skipped deployment is not a publication.
-- **Private-core CI:** runner-assignment failures without executable step evidence remain an open blocker. The root cause is not established; these results are not accepted as code-test results.
+- **GitHub release:** `v0.1.3` exists as a public alpha prerelease, published on 2026-10-10. The release has no manually attached assets. A GitHub prerelease is not by itself proof that the package is available through PyPI or that the matching browser demo is deployed.
+- **PyPI and GHCR:** availability of `e3bundle==0.1.3` and `ghcr.io/traky12/e3bundle:0.1.3` has not been established by the evidence reviewed for this update. The Pages workflow explicitly tests both registries before deployment. The profile therefore does not advertise a PyPI installation command.
+- **Browser demo:** the current repository documentation describes the public demo as using the `v0.1.1` example bundles. The Pages workflow tests a pinned `v0.1.3` candidate, but a candidate build and browser tests do not prove that the public URL serves that candidate.
+- **Security advisory:** the `v0.1.3` release notes say they fix `GHSA-55pc-7v4h-jf7c`. The advisory's public fixed-version metadata was not independently verified in this update; do not claim that the public advisory is marked fixed at `0.1.3` until its actual record is checked.
+- **Pages publication gate:** deployment requires the GitHub release, PyPI package, GHCR image, build/UI checks and owner-configured legal identity fields. Source inspection confirms the gate logic; it does not establish that the latest run passed or that deployment completed.
+- **Private-core CI:** runner-assignment failures without executable step evidence remain a separate blocker. Their root cause is not established and these observations are not accepted as code-test results.
 - **OVS-01 and independent reproduction:** remain `PENDING`; no end-to-end operational or independent result is promoted.
 
-These are dated public observations, not a substitute for live checks. Recheck the release, artifact and workflow state before changing the profile status or making a release claim.
+Do not merge release claims into the profile until the PyPI package is retrievable, the GHSA record identifies `0.1.3` as fixed, and the live Pages site is verified to use the matching candidate. Recheck the registries, advisory record and deployment run immediately before changing this section.
 
 ## Current Technical Focus
 
@@ -71,7 +72,7 @@ Earlier engineering records, local validation snapshots, dashboard iterations, r
 
 - [Engineering record of 2026-08-18 (profile README at commit `860a20e`)](https://github.com/Traky12/Traky12/blob/860a20ecee74af90191fb25cd72327bf5739528c/README.md)
 
-Those records describe bounded states captured during August 2026. They do not override the current public status snapshot dated 2026-10-10 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
+Those records describe bounded states captured during August 2026. They do not override the current public status snapshot dated 2026-10-11 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
 
 The official brand asset is versioned at `assets/brand/castuo-system-logo-horizontal.jpg`. Brand consistency is presentation metadata only and does not constitute technical, security, production or commercial evidence.
 
