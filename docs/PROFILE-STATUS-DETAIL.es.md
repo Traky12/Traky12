@@ -1,17 +1,18 @@
 # CASTÚO-SYSTEM — detalle del estado público
 
-Detalle del estado y del contexto histórico del README del perfil. Actualizado el 2026-10-10; el README del perfil contiene el resumen público y este documento conserva el estado de apoyo y el registro histórico.
+Detalle del estado y del contexto histórico del README del perfil. Actualizado el 2026-10-11; el README del perfil contiene el resumen público y este documento conserva el estado de apoyo y el registro histórico.
 
+## Puerta actual de publicación y validación — 2026-10-11
 
-## Puerta actual de publicación y validación — 2026-10-10
-
-- **e3bundle:** la última versión alfa publicada es `v0.1.1`. El trabajo de `v0.1.2` sigue siendo una candidata sin publicar; no se declara ninguna release `v0.1.2` ni `v0.1.3`.
-- **Demo de navegador:** `main` evita que la identidad del titular quede en el historial público de Git: los campos legales se renderizan solo desde secretos de Actions administrados por el titular. Una corrección posterior hace que la compilación conserve la plantilla si faltan esos secretos. Ninguno de esos cambios autoriza por sí solo la publicación.
-- **Puerta de Pages:** el despliegue sigue bloqueado hasta que exista una versión corregida aprobada y coincidan la release de GitHub, el paquete PyPI y la imagen GHCR, además de la configuración legal requerida. Una compilación correcta o un despliegue omitido no equivalen a una publicación.
-- **CI del núcleo privado:** siguen abiertos los fallos de asignación de runner sin evidencia de pasos ejecutables. La causa raíz no está establecida; estos resultados no se aceptan como resultados de tests de código.
+- **Release de GitHub:** existe `v0.1.3` como prerelease alfa pública, publicada el 2026-10-10. La release no tiene assets adjuntos manualmente. Una prerelease en GitHub no demuestra por sí sola que el paquete esté disponible en PyPI ni que la demo correspondiente esté desplegada.
+- **PyPI y GHCR:** la evidencia revisada para esta actualización no establece la disponibilidad de `e3bundle==0.1.3` ni de `ghcr.io/traky12/e3bundle:0.1.3`. El workflow de Pages comprueba ambos registros antes de desplegar. Por eso el perfil no anuncia un comando de instalación desde PyPI.
+- **Demo de navegador:** la documentación actual del repositorio indica que la demo pública usa los bundles de ejemplo de `v0.1.1`. El workflow de Pages prueba una candidata `v0.1.3` fijada por commit, pero una compilación candidata y los tests del navegador no demuestran que la URL pública sirva esa versión.
+- **Aviso de seguridad:** las notas de la release `v0.1.3` indican que corrige `GHSA-55pc-7v4h-jf7c`. En esta actualización no se ha verificado de forma independiente el metadato público de versión corregida del aviso; no se debe afirmar que el registro público marca `0.1.3` como versión corregida hasta comprobarlo.
+- **Puerta de publicación de Pages:** el despliegue requiere la release de GitHub, el paquete PyPI, la imagen GHCR, los checks de compilación/UI y los campos legales configurados por el titular. La inspección del código confirma la lógica de la puerta, no que la última ejecución haya pasado ni que el despliegue haya terminado.
+- **CI del núcleo privado:** los fallos de asignación de runner sin evidencia de pasos ejecutados siguen siendo un bloqueo separado. Su causa raíz no está establecida y no se consideran resultados de tests de código.
 - **OVS-01 y reproducción independiente:** siguen en `PENDING`; no se promociona ningún resultado operativo de extremo a extremo ni independiente.
 
-Son observaciones públicas fechadas, no sustituyen comprobaciones en vivo. Antes de modificar el estado del perfil o declarar una release, vuelve a comprobar las versiones, los artefactos y los workflows.
+No se deben fusionar claims de publicación en el perfil hasta que el paquete PyPI sea recuperable, el registro GHSA identifique `0.1.3` como versión corregida y se verifique que el sitio público de Pages sirve la candidata correspondiente. Antes de cambiar este apartado, vuelve a comprobar registros, aviso y ejecución de despliegue.
 
 ## Foco técnico actual
 
@@ -71,6 +72,6 @@ Los registros de ingeniería anteriores, snapshots de validación local, iteraci
 
 - [Registro de ingeniería del 2026-08-18 (README del perfil en el commit `860a20e`)](https://github.com/Traky12/Traky12/blob/860a20ecee74af90191fb25cd72327bf5739528c/README.md)
 
-Esos registros describen estados delimitados capturados durante agosto de 2026. No prevalecen sobre el estado público actual fechado el 2026-10-05 y no constituyen evidencia actual de producción, operativa, independiente, de campo, comercial ni de mercado. Un commit registra historia del repositorio; por sí solo no es evidencia de campo, de despliegue, de aseguramiento de seguridad ni comercial.
+Esos registros describen estados delimitados capturados durante agosto de 2026. No prevalecen sobre el estado público actual fechado el 2026-10-11 y no constituyen evidencia actual de producción, operativa, independiente, de campo, comercial ni de mercado. Un commit registra historia del repositorio; por sí solo no es evidencia de campo, de despliegue, de aseguramiento de seguridad ni comercial.
 
 El activo oficial de marca está versionado en `assets/brand/castuo-system-logo-horizontal.jpg`. La coherencia de marca es solo metadato de presentación y no constituye evidencia técnica, de seguridad, de producción ni comercial.
