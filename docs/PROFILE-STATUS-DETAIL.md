@@ -1,6 +1,17 @@
 # CASTÚO-SYSTEM — public status detail
 
-Detail moved from the profile README on 2026-10-09 so the profile can lead with what a visitor can try. Content is unchanged; the profile README remains the dated public summary.
+Detailed status and historical context for the profile README. Updated 2026-10-10; the profile README is the concise public snapshot, while this document holds the supporting status and historical record.
+
+
+## Current public release and validation gate — 2026-10-10
+
+- **e3bundle:** the latest published alpha release is `v0.1.1`. The `v0.1.2` work remains an unpublished candidate; no `v0.1.2` or `v0.1.3` release is claimed.
+- **Browser demo:** `main` now keeps holder identity out of public Git history by rendering legal fields only from owner-managed Actions secrets. A subsequent guard fix makes the build keep the template if those secrets are absent. Neither change alone authorizes public deployment.
+- **Pages gate:** deployment remains blocked until the approved corrected release and matching GitHub Release, PyPI package and GHCR image exist, and required legal-page settings are present. A passing build or skipped deployment is not a publication.
+- **Private-core CI:** runner-assignment failures without executable step evidence remain an open blocker. The root cause is not established; these results are not accepted as code-test results.
+- **OVS-01 and independent reproduction:** remain `PENDING`; no end-to-end operational or independent result is promoted.
+
+These are dated public observations, not a substitute for live checks. Recheck the release, artifact and workflow state before changing the profile status or making a release claim.
 
 ## Current Technical Focus
 
@@ -16,7 +27,7 @@ Detail moved from the profile README on 2026-10-09 so the profile can lead with 
 
 ## Current Promotion State
 
-| Area | Current status (2026-10-05) | Meaning |
+| Area | Baseline status (2026-10-05) | Meaning |
 |---|---|---|
 | Technical consolidation | `IN PROGRESS` | Architecture, security and governance work continue |
 | Consolidation-1.0 | `BLOCKED` | Engineering and operational evidence gates remain open |
@@ -60,7 +71,7 @@ Earlier engineering records, local validation snapshots, dashboard iterations, r
 
 - [Engineering record of 2026-08-18 (profile README at commit `860a20e`)](https://github.com/Traky12/Traky12/blob/860a20ecee74af90191fb25cd72327bf5739528c/README.md)
 
-Those records describe bounded states captured during August 2026. They do not override the current public status dated 2026-10-05 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
+Those records describe bounded states captured during August 2026. They do not override the current public status snapshot dated 2026-10-10 and do not constitute current production, operational, independent, field, commercial or market evidence. A commit records repository history; it is not, by itself, field evidence, deployment evidence, security assurance or commercial evidence.
 
 The official brand asset is versioned at `assets/brand/castuo-system-logo-horizontal.jpg`. Brand consistency is presentation metadata only and does not constitute technical, security, production or commercial evidence.
 
