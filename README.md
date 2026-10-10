@@ -19,7 +19,7 @@ I build evidence-driven infrastructure for traceable, offline-first and reviewab
 
 **[Try the browser demo — v0.1.1 examples](https://traky12.github.io/castuo-e3-001/)** · **[Open the repository](https://github.com/Traky12/castuo-e3-001)** · **[Contribute](https://github.com/Traky12/castuo-e3-001/contribute)**
 
-**Release status (11 Oct 2026):** a GitHub `v0.1.3` alpha prerelease exists, but PyPI/GHCR availability, advisory fixed-version metadata and deployment of the matching demo have not all been verified. The public demo is currently documented as using `v0.1.1` examples; no `pip install e3bundle==0.1.3` command is advertised yet.
+**Release status (11 Oct 2026):** a [GitHub `v0.1.3` alpha prerelease](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) exists, but PyPI/GHCR availability, advisory fixed-version metadata and deployment of the matching demo have not all been verified. The public demo is currently documented as using `v0.1.1` examples; no `pip install e3bundle==0.1.3` command is advertised yet.
 
 ## What I build
 
