@@ -55,7 +55,7 @@ The commands clone the pinned `v0.1.1` source and install it from that checkout.
 - The GitHub Pages publication gate remains closed until a corrected, approved release and matching GitHub, PyPI and GHCR artifacts are available, along with the required legal-page configuration.
 - Do not pin the moving `main` branch as a released version or treat the current candidate as security-reviewed for production use.
 
-## CASTÚO-SYSTEM — public status
+## Current Public Status
 
 **Snapshot:** 2026-10-10  
 **Technical state:** consolidation in progress  
@@ -63,7 +63,7 @@ The commands clone the pinned `v0.1.1` source and install it from that checkout.
 
 CASTÚO-SYSTEM is a modular technical asset being consolidated for traceable and governed distributed operations. **CASTÚO Evidence-Ready Field Operations** is a product direction and validation objective, not a proven commercial product.
 
-**Current validation focus — OVS-01: CASTUO-SYSTEM Edge Continuity.** The defined scenario covers event identity, offline persistence, recovery after restart, synchronization, evidence and replay. It remains `PENDING`; formal end-to-end execution and independent reproduction have not been established.
+**Current validation focus — OVS-01: CASTUO-SYSTEM Edge Continuity.** The defined scenario covers event identity, offline persistence, recovery after restart, synchronization, evidence and replay. It remains `PENDING`; formal end-to-end execution and independent reproduction have not been established. The next validation milestone, **E3-001 — controlled independent reproduction**, is also `PENDING`.
 
 **Private-core CI boundary.** Required workflows have shown runner-assignment failures with no executable step evidence. The cause has not been established. Those observations are classified as `BLOCKED / NOT EXECUTED`, not as proof that tests passed or failed. Security-sensitive changes remain unapproved for integration until required checks execute and pass on their current commits.
 
@@ -111,7 +111,7 @@ Full boundary: [`PUBLIC_CLAIM_BOUNDARY.md`](PUBLIC_CLAIM_BOUNDARY.md) · Evidenc
 - [Project presentation — 5 minutes (Spanish)](CASTUO-SYSTEM-5-MIN-PRESENTATION-ES.md)
 - [Versión en español](README.es.md)
 
-## Not claimed
+## Not Claimed
 
 This profile does not claim production operation, independent or field validation, certification or regulatory conformity, paid-customer traction, recurring revenue, production AI autonomy, autonomous authority, or multi-site industrial deployment.
 
