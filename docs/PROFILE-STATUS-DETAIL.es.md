@@ -74,3 +74,12 @@ Los registros de ingeniería anteriores, snapshots de validación local, iteraci
 Esos registros describen estados delimitados capturados durante agosto de 2026. No prevalecen sobre el estado público actual fechado el 2026-10-05 y no constituyen evidencia actual de producción, operativa, independiente, de campo, comercial ni de mercado. Un commit registra historia del repositorio; por sí solo no es evidencia de campo, de despliegue, de aseguramiento de seguridad ni comercial.
 
 El activo oficial de marca está versionado en `assets/brand/castuo-system-logo-horizontal.jpg`. La coherencia de marca es solo metadato de presentación y no constituye evidencia técnica, de seguridad, de producción ni comercial.
+
+## Trasladado desde el README del perfil (2026-10-11)
+
+El README del perfil se ha acortado a una portada (probar, estado, contribuir, límites). Estos pasajes se trasladan aquí sin cambios de fondo:
+
+- **Límite de CI del núcleo privado.** Los workflows obligatorios del núcleo privado no han ejecutado pasos; GitHub informa de que los jobs no se iniciaron. Esas observaciones se clasifican como `BLOCKED / NOT EXECUTED`; no prueban que los tests hayan pasado ni fallado. Los cambios sensibles a seguridad no se aprueban para integración hasta que los checks requeridos se ejecuten y pasen sobre sus commits actuales.
+- **Foco de validación — OVS-01: CASTUO-SYSTEM Edge Continuity** (identidad de eventos, persistencia sin conexión, recuperación tras reinicio, sincronización, evidencia y replay): sigue en `PENDING`.
+- **Exploración de diseño — trazabilidad de bioinsumos.** Modelo de evidencia agnóstico al producto que conecta un lote de bioinsumo declarado, las condiciones de aplicación y observaciones posteriores del cultivo. Solo propuesta de diseño: no es una capacidad implementada, ensayo de campo, resultado de eficacia, certificación ni colaboración con fabricantes. [Alcance, límites científicos y de privacidad](BIOINPUT-TRACEABILITY.md).
+- **Historial de versiones de e3bundle.** `v0.1.2` fue una candidata nunca publicada; `v0.1.3` (corrección de GHSA-55pc-7v4h-jf7c) está publicada en GitHub Releases y GHCR, con PyPI pendiente.
