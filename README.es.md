@@ -55,7 +55,7 @@ Los comandos clonan el código fijado en `v0.1.1` y lo instalan desde esa copia.
 - La puerta de publicación de GitHub Pages sigue cerrada hasta disponer de una versión corregida y aprobada, de los artefactos coincidentes de GitHub, PyPI y GHCR, y de la configuración legal requerida.
 - No fijes la rama móvil `main` como si fuera una versión publicada ni trates la candidata actual como revisada para uso en producción con requisitos de seguridad.
 
-## CASTÚO-SYSTEM — estado público
+## Estado público actual
 
 **Snapshot:** 2026-10-10  
 **Estado técnico:** consolidación en curso  
@@ -63,7 +63,7 @@ Los comandos clonan el código fijado en `v0.1.1` y lo instalan desde esa copia.
 
 CASTÚO-SYSTEM es un activo tecnológico modular en consolidación para operaciones distribuidas trazables y gobernadas. **CASTÚO Evidence-Ready Field Operations** es una dirección de producto y un objetivo de validación, no un producto comercial demostrado.
 
-**Foco de validación — OVS-01: CASTUO-SYSTEM Edge Continuity.** El escenario definido comprende identidad de eventos, persistencia sin conexión, recuperación tras reinicio, sincronización, evidencia y replay. Sigue en estado `PENDING`: no se ha establecido su ejecución formal de extremo a extremo ni una reproducción independiente.
+**Foco de validación — OVS-01: CASTUO-SYSTEM Edge Continuity.** El escenario definido comprende identidad de eventos, persistencia sin conexión, recuperación tras reinicio, sincronización, evidencia y replay. Sigue en estado `PENDING`: no se ha establecido su ejecución formal de extremo a extremo ni una reproducción independiente. El siguiente hito, **E3-001 — reproducción independiente controlada**, también sigue en `PENDING`.
 
 **Límite de CI del núcleo privado.** Se han observado fallos de asignación de runner sin evidencia de pasos ejecutados en workflows obligatorios. La causa no está establecida. Esas observaciones se clasifican como `BLOCKED / NOT EXECUTED`; no prueban que los tests hayan pasado ni que hayan fallado. Los cambios sensibles a seguridad no se aprueban para integración hasta que los checks requeridos se ejecuten y pasen sobre sus commits actuales.
 
