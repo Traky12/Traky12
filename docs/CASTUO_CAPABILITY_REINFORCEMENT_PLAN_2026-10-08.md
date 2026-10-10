@@ -341,6 +341,17 @@ Si la respuesta sigue siendo no:
 
 Esto convierte la disciplina de alcance en una herramienta de productividad, no en una restricción.
 
+### Candidato de backlog posterior a OVS-01 — trazabilidad de bioinsumos
+
+**Estado:** candidato de diseño; fuera del ciclo actual. No abre un segundo vertical slice mientras OVS-01 siga sin cerrar.
+
+Posible valor: vincular producto y lote declarados, dosis/unidad, método y timestamps de aplicación con contexto medido y observaciones posteriores, preservando la procedencia y la verificabilidad de un paquete de evidencia. La observación de una diferencia no demuestra causalidad ni eficacia del tratamiento.
+
+**Gates antes de priorizarlo:** cierre y reproducción independiente de OVS-01; capacidad de CI restaurada; aprobación del contrato y del versionado de esquemas; validación automatizada positiva/negativa; revisión de privacidad y normativa aplicable; protocolo agronómico predefinido; revisión humana. No asignar ID de capacidad ni elevar madurez hasta que se cumplan los procedimientos canónicos del repositorio privado.
+
+Lectura pública del alcance y límites: [Trazabilidad de bioinsumos — exploración de diseño](BIOINPUT-TRACEABILITY.md).
+
+
 ---
 
 ## 9. Contrato operativo del vertical slice
