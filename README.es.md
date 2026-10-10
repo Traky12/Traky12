@@ -19,7 +19,19 @@ Construyo infraestructura basada en evidencia para operaciones trazables, offlin
 
 **[Probar la demo — ejemplos v0.1.1](https://traky12.github.io/castuo-e3-001/)** · **[Abrir el repositorio](https://github.com/Traky12/castuo-e3-001)** · **[Contribuir](https://github.com/Traky12/castuo-e3-001/contribute)**
 
-**Estado de publicación (11 oct 2026):** GitHub muestra una prerelease alfa `v0.1.3`. La disponibilidad en PyPI/GHCR, los metadatos de versión corregida del aviso y el despliegue de la demo correspondiente no están confirmados de forma independiente en su totalidad. La documentación de la demo indica que usa ejemplos de `v0.1.1`; por eso no se anuncia un comando de instalación de `v0.1.3` hasta que se superen esos gates.
+### Instalar la alfa de GitHub
+
+La publicación en PyPI está pendiente. Se puede instalar directamente el tag fijado de GitHub:
+
+```bash
+python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.3"
+git clone --branch v0.1.3 --depth 1 https://github.com/Traky12/castuo-e3-001
+cd castuo-e3-001
+e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
+# Esperado: VERIFIED, salida 0
+```
+
+**Estado de publicación (11 oct 2026):** la alfa `v0.1.3` está publicada en GitHub Releases y como imagen de contenedor GHCR; PyPI sigue pendiente. La demo del navegador continúa usando ejemplos de `v0.1.1`. Esto no equivale a revisión independiente ni autorización para producción.
 
 ## Qué construyo
 
@@ -30,9 +42,13 @@ Construyo infraestructura basada en evidencia para operaciones trazables, offlin
 
 CASTÚO-SYSTEM es la arquitectura más amplia; `e3bundle` es su herramienta pública más concreta.
 
+## Estado público actual
+
+`CONSOLIDATION-1.0 = BLOCKED`. El foco público es `e3bundle`; la reproducción independiente (E3-001) sigue en `PENDING`, con 0 de 2 revisiones externas firmadas. `Traky12` es el read-model público: informa del estado, pero no lo decide. `Castuo-system` (privado) es la autoridad canónica del estado técnico y de la promoción; `castuo-evolution` (privado) es un espacio no canónico. Detalle e historial: [estado público](docs/PROFILE-STATUS-DETAIL.es.md).
+
 ## Contribuir
 
-Reproduce el flujo de ejemplo, informa de errores reproducibles, mejora pruebas/accesibilidad/documentación o propone un cambio pequeño con un criterio de aceptación claro.
+Reproduce el flujo de ejemplo, informa de errores reproducibles, mejora pruebas/accesibilidad/documentación o propone un cambio pequeño con criterio de aceptación claro.
 
 [Issues para empezar](https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue) · [Guía de contribución](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md) · [Política de seguridad](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
 
@@ -42,12 +58,12 @@ Reproduce el flujo de ejemplo, informa de errores reproducibles, mejora pruebas/
 - [`castuo-evidence`](https://github.com/Traky12/castuo-evidence) — unidades de evidencia pública seleccionadas y artefactos de reproducibilidad.
 - [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) — experimentos edge/IoT offline-first; no se declaran resultados de campo ni producción.
 
-[Mapa completo y detalle de estado](docs/PROFILE-STATUS-DETAIL.es.md) · [Límites de claims públicos](PUBLIC_CLAIM_BOUNDARY.es.md)
+[Mapa completo de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Límites de claims](PUBLIC_CLAIM_BOUNDARY.es.md) · [Índice de evidencia](evidence-center/README.md)
 
-## Límites
+## No se declara
 
-La verificación puede establecer la integridad de los archivos y la validez de las firmas conforme a las reglas de confianza configuradas; no demuestra que el contenido sea verdadero ni establece por sí sola la identidad de un firmante. No se declaran reproducción independiente, validación de campo/producción, certificación, conformidad regulatoria, clientes de pago, ingresos recurrentes ni autonomía de IA en producción.
+La verificación establece la integridad de los archivos y la validez de las firmas conforme a las reglas de confianza configuradas; no demuestra que el contenido sea verdadero ni establece por sí sola la identidad del firmante. No se declaran reproducción independiente, validación de campo/producción, certificación, conformidad regulatoria, clientes de pago, ingresos recurrentes ni autonomía de IA en producción.
 
 ## Enlaces
 
-[CASTÚO-SYSTEM](https://castuo-system.es/) · [ORCID](https://orcid.org/0009-0007-3489-0565) · [Índice de evidencia](evidence-center/README.md) · [English version](README.md)
+[CASTÚO-SYSTEM](https://castuo-system.es/) · [ORCID](https://orcid.org/0009-0007-3489-0565) · [English version](README.md)
