@@ -54,6 +54,12 @@ Production operation and commercial validation are not claimed. Independent and 
 
 Full status, promotion table, authority model, economic and legal notice and historical record: [`docs/PROFILE-STATUS-DETAIL.md`](docs/PROFILE-STATUS-DETAIL.md).
 
+## Design exploration — traceability of bioinputs
+
+CASTÚO-SYSTEM is exploring a product-agnostic evidence workflow to connect declared bioinput product/lot, application conditions and later measured crop observations. This is a **design proposal only**: not an implemented capability, field trial, efficacy claim, product certification or manufacturer partnership. Scientific results must remain tied to product-specific evidence and a defined protocol; privacy and regulatory review precede any real dataset.
+
+[Read the bilingual scope, scientific limits and privacy/legal boundaries](docs/BIOINPUT-TRACEABILITY.md).
+
 ## Public Repositories
 
 | Repository | Purpose |
