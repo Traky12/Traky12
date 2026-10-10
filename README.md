@@ -29,7 +29,9 @@ It creates a manifest with SHA-256 digests, supports Ed25519 signatures, and rep
 The installation step needs network access. Verification commands run locally after installation.
 
 ```bash
-python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.1"
+git clone --branch v0.1.1 --depth 1 https://github.com/Traky12/castuo-e3-001
+cd castuo-e3-001
+python -m pip install .
 
 e3bundle verify examples/bundles/valid \
   --min-signatures 2 \
@@ -42,7 +44,7 @@ e3bundle verify examples/bundles/tampered \
 # Expected: FAILED, exit 1
 ```
 
-Run the commands from a clone of the repository at tag `v0.1.1`, where the example bundles are present. See the [repository README](https://github.com/Traky12/castuo-e3-001#readme) for setup and usage details.
+The commands clone the pinned `v0.1.1` source and install it from that checkout. Package installation may download dependencies; verification itself runs locally. See the [repository README](https://github.com/Traky12/castuo-e3-001#readme) for usage details.
 
 **Limit:** a successful check establishes that the declared file contents match their digests and that the checked signatures validate under the configured trust rules. It does not prove that the underlying statements are true, that a signer is who they claim to be unless their key is independently pinned, or that a system is certified or approved for production.
 
