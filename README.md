@@ -69,7 +69,7 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 
 > **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-This is a vector illustration with optional CSS motion in supporting SVG viewers. GitHub's SVG rendering does not currently support inline animation, so the profile displays the complete diagram as a static image. The illustration is not a live sensor feed, executable public demo, human-approval workflow, or production system. The queue uses a timed simulation rule every 14 steps; no human actor, approval, or rejection is modelled. The moving particles are illustrative, not measurements. No real providers, cadastral data, field validation, autonomous decisions, or operational readiness are claimed.
+This is a vector illustration with optional CSS motion in supporting SVG viewers. GitHub's SVG rendering does not currently support inline animation, so the profile displays the complete diagram as a static image. [Open the motion-capable English and Spanish SVGs in a browser](docs/VECTOR-MOTION.md). The illustration is not a live sensor feed, executable public demo, human-approval workflow, or production system. The queue uses a timed simulation rule every 14 steps; no human actor, approval, or rejection is modelled. The moving particles are illustrative, not measurements. No real providers, cadastral data, field validation, autonomous decisions, or operational readiness are claimed.
 
 - [Read the governed-orchestration scope and the questions every datum must answer](docs/GOVERNED-ORCHESTRATION.md)
 - [Read the governed-flow scope, reproducibility rule and limitations](docs/GOVERNED-FLOW-SOVEREIGNTY.md)

@@ -1,6 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="280" viewBox="0 0 1400 280" role="img" aria-labelledby="title desc">
   <title id="title">e3bundle evidence verification flow</title>
   <desc id="desc">Input files are hashed into a SHA-256 manifest, signatures are checked with Ed25519 against configured trust rules, and an offline machine-readable result is produced.</desc>
+  <style>
+    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 9s linear infinite}
+    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 5.2s ease-in-out infinite}
+    .motion-nodes circle:nth-of-type(3n+2){animation-delay:-1.7s}
+    .motion-nodes circle:nth-of-type(3n){animation-delay:-3.4s}
+    .motion-glow{animation:motion-glow 6s ease-in-out infinite}
+    @keyframes motion-flow{to{stroke-dashoffset:-80}}
+    @keyframes motion-node{0%,100%{opacity:.78;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+    @keyframes motion-glow{0%,100%{opacity:.1}50%{opacity:.24}}
+    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}}
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0C1825"/><stop offset="1" stop-color="#163242"/>
@@ -43,7 +54,7 @@
       <text x="1188" y="160" fill="#BDEDE4" font-size="10">VERIFIED / FAILED / ERROR</text>
     </g>
   </g>
-  <g fill="none" stroke="#69D8C3" stroke-width="2.5" marker-end="url(#arrow)">
+  <g class="motion-flow" fill="none" stroke="#69D8C3" stroke-width="2.5" marker-end="url(#arrow)">
     <path d="M270 132H318"/><path d="M550 132H598"/><path d="M830 132H878"/><path d="M1110 132H1158"/>
   </g>
   <text x="700" y="231" fill="#C3D2DA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" text-anchor="middle">Integrity and signature checks are bounded by the supplied bundle and the configured trust policy.</text>

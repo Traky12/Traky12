@@ -1,6 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="320" viewBox="0 0 1440 320" role="img" aria-labelledby="title desc">
   <title id="title">Evidence-first systems engineering</title>
   <desc id="desc">A dark technical canvas with connected evidence nodes, emphasizing traceability, offline-first systems and assurance.</desc>
+  <style>
+    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 9s linear infinite}
+    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 5.2s ease-in-out infinite}
+    .motion-nodes circle:nth-of-type(3n+2){animation-delay:-1.7s}
+    .motion-nodes circle:nth-of-type(3n){animation-delay:-3.4s}
+    .motion-glow{animation:motion-glow 6s ease-in-out infinite}
+    @keyframes motion-flow{to{stroke-dashoffset:-80}}
+    @keyframes motion-node{0%,100%{opacity:.78;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+    @keyframes motion-glow{0%,100%{opacity:.1}50%{opacity:.24}}
+    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}}
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0B1724"/>
@@ -18,10 +29,10 @@
   <rect width="1440" height="320" rx="24" fill="url(#bg)"/>
   <rect width="1440" height="320" rx="24" fill="url(#grid)"/>
   <circle cx="1130" cy="146" r="230" fill="url(#glow)"/>
-  <path d="M845 50L960 110L1080 70L1190 135L1322 92" fill="none" stroke="#5CD6BF" stroke-opacity="0.48" stroke-width="2"/>
-  <path d="M840 230L965 182L1087 229L1198 171L1333 228" fill="none" stroke="#8EB8C8" stroke-opacity="0.36" stroke-width="2"/>
-  <path d="M960 110L965 182M1080 70L1087 229M1190 135L1198 171M1322 92L1333 228" fill="none" stroke="#8EB8C8" stroke-opacity="0.2" stroke-width="1.5"/>
-  <g fill="#102A3A" stroke="#5CD6BF" stroke-width="2">
+  <path class="motion-flow" d="M845 50L960 110L1080 70L1190 135L1322 92" fill="none" stroke="#5CD6BF" stroke-opacity="0.48" stroke-width="2"/>
+  <path class="motion-flow" d="M840 230L965 182L1087 229L1198 171L1333 228" fill="none" stroke="#8EB8C8" stroke-opacity="0.36" stroke-width="2"/>
+  <path class="motion-flow" d="M960 110L965 182M1080 70L1087 229M1190 135L1198 171M1322 92L1333 228" fill="none" stroke="#8EB8C8" stroke-opacity="0.2" stroke-width="1.5"/>
+  <g class="motion-nodes" fill="#102A3A" stroke="#5CD6BF" stroke-width="2">
     <circle cx="845" cy="50" r="6"/><circle cx="960" cy="110" r="7"/><circle cx="1080" cy="70" r="6"/>
     <circle cx="1190" cy="135" r="8"/><circle cx="1322" cy="92" r="6"/><circle cx="840" cy="230" r="6"/>
     <circle cx="965" cy="182" r="6"/><circle cx="1087" cy="229" r="8"/><circle cx="1198" cy="171" r="6"/><circle cx="1333" cy="228" r="6"/>
