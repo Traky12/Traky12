@@ -44,12 +44,13 @@
 
 ### Release gate and source review
 
-The GitHub `v0.1.3` alpha prerelease exists, but the release documentation at that tag still marks its installation path as **not approved** pending release closeout. PyPI publication remains pending. Do not treat `v0.1.3` as an approved installation or production dependency yet.
+The GitHub `v0.1.3` alpha prerelease exists. There is a documentation conflict: the README stored in that tag still carries an older release-state statement, while the current repository README documents the tag for **bounded alpha testing only**. Until the tag documentation is reconciled, this profile links to the source and release evidence but does not repeat a copy/paste installation command. This is not a production recommendation.
 
-- [Inspect the `v0.1.3` source](https://github.com/Traky12/castuo-e3-001/tree/v0.1.3)
-- [Read the alpha prerelease notes](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3)
+- [Current release and alpha-testing notes](https://github.com/Traky12/castuo-e3-001/blob/main/README.md#install)
+- [Inspect the pinned `v0.1.3` source](https://github.com/Traky12/castuo-e3-001/tree/v0.1.3) · [Read the prerelease notes](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3)
+- [Inspect the failed PyPI publication run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) · [Inspect the successful GHCR publication run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766046)
 - [Review the release and publication gate](docs/PROFILE-STATUS-DETAIL.md)
-- [Try the browser demo](https://traky12.github.io/castuo-e3-001/) — still using synthetic `v0.1.1` examples; this is not validation of the `v0.1.3` CLI release.
+- [Try the browser demo](https://traky12.github.io/castuo-e3-001/) — synthetic `v0.1.1` examples only; this does not validate the `v0.1.3` CLI release.
 
 Synthetic examples illustrate defined behaviour; they do not independently validate CASTÚO-SYSTEM or establish the truth of the underlying data.
 
@@ -57,12 +58,12 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 
 | Area | Current state |
 |---|---|
-| GitHub release | Alpha prerelease `v0.1.3` exists; approval of its installation path remains pending |
-| PyPI | **Pending** — publishing was blocked by a Trusted Publisher / OIDC configuration mismatch |
-| GHCR image | Publication was recorded in the project status; live registry availability has not been independently rechecked in this profile update |
-| Browser demo | Public page still uses `v0.1.1` example bundles |
-| Independent reproduction (E3-001) | `PENDING` — 0 of 2 signed external reviews |
-| CASTÚO-SYSTEM consolidation | **BLOCKED** — engineering, security and operational evidence gates remain open |
+| GitHub release | [Alpha prerelease `v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) exists; tag documentation conflict remains open |
+| PyPI | **Blocked** — publish run failed with `invalid-publisher`; the [OIDC-claim explanation is a hypothesis, not a confirmed root cause](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md) · [failed run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) |
+| GHCR image | Multi-platform image publication passed ([workflow](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766046)); current registry pull has not been repeated in this profile update |
+| Browser demo | [Public demo](https://traky12.github.io/castuo-e3-001/) still uses synthetic `v0.1.1` bundles; it does not validate the `v0.1.3` CLI release |
+| Independent reproduction (E3-001) | `PENDING` — 0 of 2 signed external reviews; [tester/reproduction issue #30 is paused](https://github.com/Traky12/castuo-e3-001/issues/30) until PyPI, advisory and Pages gates close |
+| CASTÚO-SYSTEM consolidation | **BLOCKED** — engineering, security and operational evidence gates remain open; see [detailed status](docs/PROFILE-STATUS-DETAIL.md) |
 
 **`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` is the public read-model: it reports state but does not decide technical state or promotion. `Castuo-system` is the private canonical authority for technical state and promotion decisions; `castuo-evolution` is a non-canonical workspace. For the detailed release gate, known limitations and source links, see [public status and history](docs/PROFILE-STATUS-DETAIL.md). These states are deliberately kept separate: a GitHub prerelease is not the same as a PyPI publication, a current live demo, external reproduction or production approval.
 
