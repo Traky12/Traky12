@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Agricultural edge systems — conceptual application domain</title>
+  <desc id="desc">A conceptual dark technical illustration connecting crop and sensor signals to local edge processing and reviewable evidence. It does not depict a live deployment or field results.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1724"/>
+      <stop offset="0.56" stop-color="#102638"/>
+      <stop offset="1" stop-color="#163640"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9CF4D8"/>
+      <stop offset="1" stop-color="#46BDAE"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#829BAA" stroke-opacity=".10" stroke-width="1"/>
+    </pattern>
+    <filter id="soft-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="22" fill="url(#grid)"/>
+  <path d="M600 30C740 35 815 6 960 28S1115 80 1200 42V0H600Z" fill="#4ED0B7" opacity=".045"/>
+  <rect x="44" y="54" width="4" height="132" rx="2" fill="#65DCC6"/>
+  <text x="68" y="61" fill="#83E5D2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2.7">AGRICULTURAL EDGE SYSTEMS</text>
+  <text x="66" y="112" fill="#F2F7FA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="31" font-weight="700" letter-spacing="-.7">Field signals →</text>
+  <text x="66" y="151" fill="#F2F7FA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="31" font-weight="700" letter-spacing="-.7">verifiable decisions</text>
+  <text x="68" y="184" fill="#BCD0DA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Sensors · offline continuity · data provenance</text>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">
+    <rect x="68" y="211" width="112" height="28" rx="14" fill="#173D43" stroke="#4AAE9E"/>
+    <text x="124" y="229" fill="#A5F0DE" text-anchor="middle">CONCEPT ONLY</text>
+    <rect x="190" y="211" width="100" height="28" rx="14" fill="#182F41" stroke="#476F80"/>
+    <text x="240" y="229" fill="#D1E1E8" text-anchor="middle">EDGE / IoT</text>
+    <rect x="300" y="211" width="106" height="28" rx="14" fill="#182F41" stroke="#476F80"/>
+    <text x="353" y="229" fill="#D1E1E8" text-anchor="middle">EVIDENCE</text>
+  </g>
+  <g fill="none" stroke="#69D8C3" stroke-width="1.5" stroke-opacity=".66">
+    <path d="M470 83L592 112L688 73L790 119L875 78L1014 110L1120 69"/>
+    <path d="M485 170L592 151L681 209L790 165L877 211L1010 170L1117 213"/>
+    <path d="M592 112L592 151M688 73L681 209M790 119L790 165M875 78L877 211M1014 110L1010 170"/>
+    <path d="M592 112C618 88 632 73 650 60M592 151C616 177 632 198 651 221"/>
+  </g>
+  <g fill="#102A3A" stroke="#72E0CB" stroke-width="2">
+    <circle cx="470" cy="83" r="5"/><circle cx="485" cy="170" r="5"/>
+    <circle cx="592" cy="112" r="7"/><circle cx="592" cy="151" r="5"/>
+    <circle cx="688" cy="73" r="6"/><circle cx="681" cy="209" r="6"/>
+    <circle cx="790" cy="119" r="8"/><circle cx="790" cy="165" r="5"/>
+    <circle cx="875" cy="78" r="6"/><circle cx="877" cy="211" r="6"/>
+    <circle cx="1014" cy="110" r="7"/><circle cx="1010" cy="170" r="5"/>
+    <circle cx="1120" cy="69" r="5"/><circle cx="1117" cy="213" r="5"/>
+  </g>
+  <circle cx="790" cy="142" r="36" fill="#48C5B1" opacity=".12" filter="url(#soft-glow)"/>
+  <g transform="translate(790 142)" fill="none" stroke="url(#mint)" stroke-width="2" stroke-linecap="round">
+    <path d="M-20 -10C-26 -24 -9 -30 0 -22C11 -31 27 -20 21 -9C31 2 20 16 10 15C5 28 -8 26 -12 16C-27 17 -32 1 -20 -10Z"/>
+    <path d="M0 -21V20M-19 -9L-7 -2M20 -9L8 -2M-14 12L-5 4M14 12L5 4M-8 -16L-2 -8M9 -16L3 -8"/>
+  </g>
+  <g transform="translate(950 43)">
+    <rect width="204" height="70" rx="9" fill="#102636" stroke="#365D6B"/>
+    <text x="14" y="18" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.2" fill="#84DCCB">SENSOR INPUTS</text>
+    <g transform="translate(15 29)" stroke="#65D8C4" stroke-width="1.5" fill="none">
+      <path d="M0 18V2M-5 7L0 2L5 7M0 12C7 7 13 7 19 12M0 17C10 9 20 9 30 17"/>
+      <path d="M48 18V8L58 2L68 8V18Z"/><path d="M58 2V18M48 8H68"/>
+      <path d="M92 18C92 9 107 9 107 18M99 4V18M94 7L99 4L104 7"/>
+    </g>
+    <text x="130" y="43" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" fill="#C3D3DC">soil · air</text>
+    <text x="130" y="56" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" fill="#C3D3DC">field signals</text>
+  </g>
+  <g transform="translate(955 145)">
+    <rect width="200" height="92" rx="9" fill="#102636" stroke="#365D6B"/>
+    <text x="14" y="18" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.2" fill="#84DCCB">LOCAL REVIEW</text>
+    <g transform="translate(14 29)" fill="none" stroke="#4FC8B5" stroke-width="1.5">
+      <path d="M0 45H170M0 0V45"/>
+      <path d="M0 35L24 29L42 34L65 15L87 23L110 11L134 19L156 5L170 10" stroke="#93E6D7" stroke-width="2"/>
+      <path d="M0 11H170M0 22H170M0 33H170" stroke="#6C8997" stroke-opacity=".35" stroke-dasharray="3 4"/>
+    </g>
+  </g>
+  <text x="610" y="266" fill="#94ABB7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" letter-spacing=".5">ILLUSTRATIVE ARCHITECTURE · NO LIVE DATA OR FIELD RESULTS IMPLIED</text>
+</svg>

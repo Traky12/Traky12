@@ -92,6 +92,16 @@ Los ejemplos sintéticos ilustran el comportamiento definido; no validan de form
 
 [Mapa completo de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Límites de claims públicos](PUBLIC_CLAIM_BOUNDARY.es.md) · [Índice de evidencia](evidence-center/README.md)
 
+## Sistemas agro-edge · ámbito de aplicación
+
+<p align="center">
+  <img src="assets/brand/agro-edge-concept.svg" alt="Ilustración conceptual que conecta señales de cultivo y sensores con procesamiento edge local y evidencia revisable; no representa un despliegue real" width="100%" />
+</p>
+
+<p align="center"><sub>Solo ilustración conceptual. No representa un sistema desplegado, señales de sensores en vivo, una prueba de campo, resultados agronómicos medidos ni validación de producción.</sub></p>
+
+Esta es la línea visual del ámbito agrícola edge explorado en [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge). Representa una arquitectura posible —señales de campo, procesamiento local y decisiones trazables—, no un claim operativo ni de validación en campo.
+
 ## Principios de ingeniería
 
 - **Trazabilidad antes que afirmaciones.** Vincular los claims con fuentes inspeccionables y comprobaciones reproducibles.
