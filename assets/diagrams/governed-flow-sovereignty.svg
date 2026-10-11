@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">CASTÚO-SYSTEM — Governed Flow and Evidence Sovereignty</title>
+  <desc id="desc">Vector illustration of a synthetic agricultural data flow: seventy sources pass three policy gates, reach a simulated review queue, and produce a SHA-256 chained synthetic evidence event. A conceptual digital brain and agricultural leaf represent the evidence destination. This is experimental simulation only, with no production claim or autonomous decision-making.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071522"/>
+      <stop offset=".54" stop-color="#10283A"/>
+      <stop offset="1" stop-color="#0D3135"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B4F7E3"/>
+      <stop offset="1" stop-color="#43C4AD"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DAF69A"/>
+      <stop offset="1" stop-color="#75BF75"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#132F42" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#0B2030" stop-opacity=".98"/>
+    </linearGradient>
+    <linearGradient id="brainGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4ED4C0" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#A7DF76" stop-opacity=".1"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#93B4C0" stroke-opacity=".09"/>
+      <circle cx="0" cy="0" r="1.5" fill="#83DCC9" fill-opacity=".19"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#6FDCC7"/>
+    </marker>
+    <marker id="arrowMuted" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0 0L6 3L0 6Z" fill="#6B94A6"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <rect width="1600" height="900" rx="28" fill="url(#grid)"/>
+  <circle cx="1330" cy="650" r="280" fill="url(#brainGlow)" filter="url(#glow)"/>
+  <path d="M0 160C350 235 550 105 810 160S1300 220 1600 115V0H0Z" fill="#64DEC7" opacity=".035"/>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="64" y="67" fill="#87E6D3" font-size="15" font-weight="700" letter-spacing="3.2">CASTÚO-SYSTEM  /  GOVERNANCE LAB</text>
+    <text x="62" y="124" fill="#F0F7FA" font-size="43" font-weight="700" letter-spacing="-1.2">From field signals to decision sovereignty</text>
+    <text x="65" y="158" fill="#AFC5D0" font-size="19">A governed path for capacity, policy, review and verifiable evidence.</text>
+    <rect x="1190" y="47" width="346" height="42" rx="21" fill="#132F3C" stroke="#3A8F82"/>
+    <circle cx="1214" cy="68" r="5" fill="#80E4CE"/>
+    <text x="1230" y="73" fill="#B3F4E4" font-size="12" font-weight="700" letter-spacing="1.3">EXPERIMENTAL MODEL</text>
+  </g>
+
+  <!-- Top row: inputs, policy gates, review queue -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect x="55" y="215" width="295" height="262" rx="18" fill="url(#panel)" stroke="#31566A" stroke-width="1.5"/>
+    <text x="79" y="250" fill="#8FE8D4" font-size="12" font-weight="700" letter-spacing="1.7">01 / INPUT FIELD</text>
+    <text x="78" y="292" fill="#F2F7FA" font-size="27" font-weight="700">70 synthetic sources</text>
+    <text x="80" y="320" fill="#AFC5D0" font-size="15">7 families · 10 sources each</text>
+    <g stroke="#6AD9C4" stroke-width="1.6" fill="none" opacity=".95">
+      <path d="M90 365C112 340 137 350 156 365S194 388 213 365S251 343 273 365"/>
+      <path d="M91 403C117 381 137 391 158 403S194 424 213 403S251 380 275 403"/>
+    </g>
+    <g fill="#102C3C" stroke="#8BE8D4" stroke-width="1.8">
+      <circle cx="91" cy="365" r="5"/><circle cx="126" cy="353" r="5"/><circle cx="156" cy="365" r="5"/>
+      <circle cx="186" cy="386" r="5"/><circle cx="213" cy="365" r="5"/><circle cx="245" cy="350" r="5"/><circle cx="273" cy="365" r="5"/>
+      <circle cx="91" cy="403" r="5"/><circle cx="125" cy="390" r="5"/><circle cx="158" cy="403" r="5"/>
+      <circle cx="186" cy="421" r="5"/><circle cx="213" cy="403" r="5"/><circle cx="245" cy="389" r="5"/><circle cx="275" cy="403" r="5"/>
+    </g>
+    <rect x="79" y="438" width="245" height="24" rx="12" fill="#173E45" stroke="#337F76"/>
+    <text x="201" y="454" fill="#B7F1E3" font-size="10" font-weight="700" text-anchor="middle" letter-spacing=".8">DETERMINISTIC · NO LIVE PROVIDERS</text>
+
+    <!-- Gate 1 -->
+    <rect x="390" y="233" width="180" height="224" rx="17" fill="url(#panel)" stroke="#39766F" stroke-width="1.5"/>
+    <text x="410" y="264" fill="#8FE8D4" font-size="11" font-weight="700" letter-spacing="1.2">02 / POLICY GATE</text>
+    <text x="410" y="299" fill="#F0F7FA" font-size="22" font-weight="700">Grounding</text>
+    <text x="410" y="345" fill="#F0F7FA" font-size="36" font-weight="700">≥ 0.18</text>
+    <path d="M409 366H551" stroke="#477B83"/>
+    <g stroke="#76DFCA" stroke-width="3" stroke-linecap="round">
+      <path d="M421 384V415"/><path d="M441 384V415"/><path d="M461 384V415"/><path d="M481 384V415"/><path d="M501 384V415"/><path d="M521 384V415"/>
+    </g>
+    <path d="M435 399H450M475 399H490M515 399H530" stroke="#B6F0E0" stroke-width="5" stroke-linecap="round"/>
+    <text x="410" y="441" fill="#AFC5D0" font-size="12">Initial threshold</text>
+
+    <!-- Gate 2 -->
+    <rect x="605" y="233" width="180" height="224" rx="17" fill="url(#panel)" stroke="#39766F" stroke-width="1.5"/>
+    <text x="625" y="264" fill="#8FE8D4" font-size="11" font-weight="700" letter-spacing="1.2">03 / POLICY GATE</text>
+    <text x="625" y="299" fill="#F0F7FA" font-size="22" font-weight="700">Grounding</text>
+    <text x="625" y="345" fill="#F0F7FA" font-size="36" font-weight="700">≥ 0.36</text>
+    <path d="M624 366H766" stroke="#477B83"/>
+    <g stroke="#76DFCA" stroke-width="3" stroke-linecap="round">
+      <path d="M636 384V415"/><path d="M656 384V415"/><path d="M676 384V415"/><path d="M696 384V415"/><path d="M716 384V415"/><path d="M736 384V415"/>
+    </g>
+    <path d="M665 399H682M708 399H725" stroke="#B6F0E0" stroke-width="5" stroke-linecap="round"/>
+    <text x="625" y="441" fill="#AFC5D0" font-size="12">Stricter threshold</text>
+
+    <!-- Gate 3 -->
+    <rect x="820" y="233" width="180" height="224" rx="17" fill="url(#panel)" stroke="#39766F" stroke-width="1.5"/>
+    <text x="840" y="264" fill="#8FE8D4" font-size="11" font-weight="700" letter-spacing="1.2">04 / POLICY GATE</text>
+    <text x="840" y="299" fill="#F0F7FA" font-size="22" font-weight="700">Grounding</text>
+    <text x="840" y="345" fill="#F0F7FA" font-size="36" font-weight="700">≥ 0.52</text>
+    <path d="M839 366H981" stroke="#477B83"/>
+    <g stroke="#76DFCA" stroke-width="3" stroke-linecap="round">
+      <path d="M851 384V415"/><path d="M871 384V415"/><path d="M891 384V415"/><path d="M911 384V415"/><path d="M931 384V415"/><path d="M951 384V415"/>
+    </g>
+    <path d="M882 399H900M926 399H944" stroke="#B6F0E0" stroke-width="5" stroke-linecap="round"/>
+    <text x="840" y="441" fill="#AFC5D0" font-size="12">Final threshold</text>
+
+    <!-- Simulated queue -->
+    <rect x="1050" y="215" width="495" height="262" rx="18" fill="url(#panel)" stroke="#31566A" stroke-width="1.5"/>
+    <text x="1075" y="250" fill="#8FE8D4" font-size="12" font-weight="700" letter-spacing="1.6">05 / SIMULATED REVIEW QUEUE</text>
+    <text x="1074" y="289" fill="#F2F7FA" font-size="26" font-weight="700">Grounded ≠ approved</text>
+    <text x="1076" y="318" fill="#AFC5D0" font-size="15">A timed simulation rule releases queue items.</text>
+    <rect x="1076" y="344" width="210" height="44" rx="10" fill="#183E48" stroke="#398C80"/>
+    <circle cx="1095" cy="366" r="5" fill="#84E3CE"/>
+    <text x="1110" y="362" fill="#B5F2E3" font-size="11" font-weight="700" letter-spacing=".8">AUTO RELEASE</text>
+    <text x="1110" y="378" fill="#E2F7F1" font-size="13">every 14 steps</text>
+    <rect x="1300" y="344" width="216" height="44" rx="10" fill="#2A2830" stroke="#796E61"/>
+    <text x="1408" y="362" fill="#E5D9C8" font-size="11" font-weight="700" text-anchor="middle" letter-spacing=".8">NO HUMAN ACTOR</text>
+    <text x="1408" y="378" fill="#C7BDB1" font-size="12" text-anchor="middle">No approval modeled</text>
+    <path d="M1076 410H1518" stroke="#31566A"/>
+    <text x="1076" y="435" fill="#AFC5D0" font-size="13">Only a synthetic event continues downstream.</text>
+    <text x="1076" y="455" fill="#7D9EAD" font-size="12">No real-world or production gate is closed.</text>
+  </g>
+
+  <!-- Directed flow -->
+  <g fill="none" stroke="#6FDCC7" stroke-width="2.6" marker-end="url(#arrow)">
+    <path d="M350 343H382"/>
+    <path d="M570 343H597"/>
+    <path d="M785 343H812"/>
+    <path d="M1000 343H1042"/>
+    <path d="M1297 478V514"/>
+    <path d="M950 640H1000"/>
+  </g>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" fill="#82DBC9" font-size="11" font-weight="700" letter-spacing="1">
+    <text x="352" y="326">SIGNALS</text>
+    <text x="575" y="326">PASS</text>
+    <text x="790" y="326">PASS</text>
+  </g>
+
+  <!-- Abstention branch -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <path d="M690 457V505H250V523" fill="none" stroke="#8298A2" stroke-width="1.8" stroke-dasharray="6 6" marker-end="url(#arrowMuted)"/>
+    <rect x="55" y="535" width="395" height="170" rx="16" fill="#171F2A" stroke="#596C78" stroke-width="1.3"/>
+    <text x="80" y="570" fill="#B5C5CF" font-size="12" font-weight="700" letter-spacing="1.5">SIDE PATH / ABSTENTION</text>
+    <text x="80" y="609" fill="#F0F7FA" font-size="25" font-weight="700">Insufficient grounding</text>
+    <text x="80" y="638" fill="#B9C9D2" font-size="15">Abstain → record the trace → stop promotion.</text>
+    <rect x="80" y="660" width="220" height="25" rx="12.5" fill="#29343C" stroke="#5A6B75"/>
+    <text x="190" y="677" fill="#D5E0E5" font-size="11" font-weight="700" text-anchor="middle" letter-spacing=".8">NO AUTOMATIC PROMOTION</text>
+
+    <!-- Evidence event -->
+    <rect x="490" y="535" width="460" height="170" rx="16" fill="url(#panel)" stroke="#37666D" stroke-width="1.4"/>
+    <text x="515" y="570" fill="#8FE8D4" font-size="12" font-weight="700" letter-spacing="1.5">06 / EVIDENCE EVENT</text>
+    <text x="515" y="608" fill="#F0F7FA" font-size="26" font-weight="700">Synthetic event + SHA-256</text>
+    <text x="516" y="637" fill="#B1C7D1" font-size="14">Canonical record · hash-linked custody chain</text>
+    <rect x="515" y="656" width="192" height="26" rx="13" fill="#183F47" stroke="#398C80"/>
+    <text x="611" y="673" fill="#B8F3E5" font-size="11" font-weight="700" text-anchor="middle">CONNECTED → ANCHORED</text>
+    <rect x="718" y="656" width="205" height="26" rx="13" fill="#172E40" stroke="#426C80"/>
+    <text x="820" y="673" fill="#D0E4ED" font-size="11" font-weight="700" text-anchor="middle">OFFLINE → RECONCILE</text>
+
+    <!-- Final brain / sovereignty destination -->
+    <rect x="1000" y="520" width="545" height="255" rx="19" fill="#0B2028" stroke="#3A8D7D" stroke-width="1.6"/>
+    <text x="1028" y="555" fill="#8FE8D4" font-size="12" font-weight="700" letter-spacing="1.5">DESTINATION / EVIDENCE SOVEREIGNTY</text>
+    <circle cx="1120" cy="650" r="84" fill="url(#brainGlow)"/>
+    <circle cx="1120" cy="650" r="74" fill="#10343C" stroke="#32776F" stroke-width="1.4"/>
+    <!-- Vector brain outline and internal traces, deliberately not a medical anatomical claim -->
+    <path d="M1116 595C1101 578 1074 589 1071 609C1050 613 1046 637 1059 648C1048 670 1063 690 1082 687C1089 710 1112 716 1124 696L1124 611C1122 604 1120 599 1116 595Z" fill="#174653" stroke="#78DECD" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M1124 611C1130 588 1156 586 1168 604C1188 606 1196 630 1183 645C1194 666 1177 687 1160 684C1152 708 1132 710 1124 696Z" fill="#234C3E" stroke="#B8E88B" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M1124 610V696" fill="none" stroke="#D5F4D1" stroke-width="1.7" stroke-dasharray="3 5"/>
+    <g fill="none" stroke="#79DCCD" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1108 607L1090 621L1098 639L1080 654L1092 672L1110 668L1118 682"/>
+      <path d="M1079 634L1098 639L1110 650"/>
+    </g>
+    <g fill="#B0F2E2" stroke="#10343C" stroke-width="1.3">
+      <circle cx="1108" cy="607" r="4"/><circle cx="1090" cy="621" r="4"/><circle cx="1098" cy="639" r="4"/>
+      <circle cx="1080" cy="654" r="4"/><circle cx="1092" cy="672" r="4"/><circle cx="1110" cy="668" r="4"/>
+    </g>
+    <g fill="none" stroke="#B6E88A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1140 613C1157 624 1166 637 1167 653C1168 666 1154 677 1140 688"/>
+      <path d="M1140 646C1154 639 1166 639 1178 642"/>
+      <path d="M1147 672C1160 666 1170 665 1180 668"/>
+    </g>
+    <path d="M1144 674C1126 666 1124 645 1143 632C1161 643 1163 661 1144 674Z" fill="url(#lime)" stroke="#CFF5A5" stroke-width="1.6"/>
+    <path d="M1135 662L1152 644M1143 653L1157 658" fill="none" stroke="#235342" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M1090 714C1105 705 1125 707 1143 714S1178 721 1192 713" fill="none" stroke="#61C8B1" stroke-width="1.3" stroke-opacity=".75"/>
+    <text x="1224" y="612" fill="#F0F7FA" font-size="23" font-weight="700">Evidence reaches</text>
+    <text x="1224" y="641" fill="#F0F7FA" font-size="23" font-weight="700">the decision owner.</text>
+    <text x="1225" y="675" fill="#9EE9D7" font-size="16" font-weight="700">Evidence ≠ command</text>
+    <text x="1225" y="701" fill="#B3C7D0" font-size="13">The image is conceptual, not operational.</text>
+    <text x="1225" y="722" fill="#B3C7D0" font-size="13">Real authority stays outside the simulation.</text>
+  </g>
+
+  <!-- Footer / hard claim boundary -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <path d="M55 808H1545" stroke="#315568"/>
+    <rect x="55" y="828" width="1490" height="44" rx="12" fill="#132F38" stroke="#397F73"/>
+    <circle cx="80" cy="850" r="5" fill="#84E3CE"/>
+    <text x="97" y="855" fill="#BDF4E6" font-size="14" font-weight="700" letter-spacing=".7">SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM</text>
+    <text x="1530" y="855" fill="#9FB9C4" font-size="12" text-anchor="end">Seed = reproducibility, never governance authority</text>
+    <text x="58" y="894" fill="#8AA5B1" font-size="11">No real providers · no real cadastral data · no human approval modeled · no autonomous decisions · no field validation claimed</text>
+  </g>
+</svg>
