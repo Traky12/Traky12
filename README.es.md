@@ -69,6 +69,22 @@ Es una ilustración vectorial estática y una explicación del modelo; no es una
 - [Leer el alcance, la regla de reproducibilidad y los límites del flujo gobernado](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
 - [Consultar el estado público y las compuertas de evidencia abiertas](docs/PROFILE-STATUS-DETAIL.es.md)
 
+## Orquestación con IA · coordinar el dato de campo sin apropiarse de él
+
+<p align="center">
+  <img src="assets/diagrams/ai-orchestrator-brain.es.svg" alt="Ilustración conceptual de una sala de mando agroindustrial: un cerebro digital central hecho de una malla neuronal extiende ramificaciones como raíces hacia sensores de suelo, dron o satélite, cuaderno de campo, ERP y trazabilidad, motor de reglas y contexto de parcela; el dato supera controles de identidad, procedencia, integridad, permisos y calidad antes de llegar a él; sin afirmaciones de datos en vivo, validación de campo, producción ni autonomía" width="100%" />
+</p>
+
+**El principio:** el cerebro coordina; no se apropia del dato ni da órdenes. El dato de campo conserva su procedencia, sus permisos y su contexto. El orquestador solo trabaja con dato que ha superado los controles de **identidad, procedencia, integridad, permisos y calidad**, y devuelve recomendaciones explicables a un responsable humano.
+
+`Captura → Validación → Normalización → Persistencia → Reglas / IA → Decisión explicable → Evidencia`
+
+> **CONCEPT ILLUSTRATION · TARGET ARCHITECTURE · NO PRODUCTION CLAIM**
+
+Es una ilustración vectorial estática de una arquitectura objetivo. No es un flujo de datos en vivo, un orquestador desplegado, un sistema validado en campo ni un motor de decisión autónoma, y las compuertas de evidencia relacionadas siguen abiertas.
+
+- [Leer la nota de alcance y las preguntas que debe responder cada dato](docs/AI-ORCHESTRATION-BRAIN.md)
+
 ## Estado público actual
 
 | Área | Estado actual |
@@ -79,6 +95,7 @@ Es una ilustración vectorial estática y una explicación del modelo; no es una
 | Aviso de seguridad público (`GHSA-55pc-7v4h-jf7c`) | **Bloqueado** — la consulta anónima al registro público devolvió HTTP 404; el registro no confirma actualmente `0.1.3` como versión corregida ([gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
 | Demo del navegador | La [demo pública](https://traky12.github.io/castuo-e3-001/) sigue usando bundles sintéticos `v0.1.1`; el despliegue de Pages para `v0.1.3` permanece bloqueado por PyPI y el aviso público |
 | Visual del flujo gobernado | Concepto vectorial estático y nota de alcance; no es una simulación ejecutable o en directo y no afirma producción |
+| Visual de orquestación con IA | Concepto vectorial estático y nota de alcance; no es un orquestador desplegado, un flujo de datos en vivo ni un motor de decisión autónoma |
 | Reproducción independiente (E3-001) | `PENDIENTE` — 0 de 2 revisiones externas firmadas; el [issue #30 de testers/reproducción está pausado](https://github.com/Traky12/castuo-e3-001/issues/30) hasta cerrar PyPI, el aviso y Pages |
 | Consolidación de CASTÚO-SYSTEM | **BLOCKED** — siguen abiertos los gates de ingeniería, seguridad y evidencia operativa; consulta el [estado detallado](docs/PROFILE-STATUS-DETAIL.es.md) |
 

@@ -69,6 +69,22 @@ This is a static, scalable vector illustration and an explanation of the model�
 - [Read the governed-flow scope, reproducibility rule and limitations](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
 - [Review public status and open evidence gates](docs/PROFILE-STATUS-DETAIL.md)
 
+## AI orchestration · coordinate field data without owning it
+
+<p align="center">
+  <img src="assets/diagrams/ai-orchestrator-brain.svg" alt="Concept illustration of an agro-industrial control room: a central digital brain made of a neural mesh sends root-like branches to soil sensors, drone or satellite, field notebook, ERP and traceability, a rules engine and plot context; data passes identity, provenance, integrity, permission and quality controls before reaching it; no live data, field validation, production or autonomy claim" width="100%" />
+</p>
+
+**The principle:** the brain coordinates; it does not own or command. Field data keeps its provenance, permissions and context. The orchestrator works only on data that has passed **identity, provenance, integrity, permission and quality** controls, and it returns explainable recommendations to an accountable human owner.
+
+`Capture → Validate → Normalise → Persist → Rules / AI → Explainable decision → Evidence`
+
+> **CONCEPT ILLUSTRATION · TARGET ARCHITECTURE · NO PRODUCTION CLAIM**
+
+This is a static vector illustration of a target architecture. It is not a live data feed, a deployed orchestrator, a field-validated system or an autonomous decision engine, and the related evidence gates remain open.
+
+- [Read the scope note and the questions every datum must answer](docs/AI-ORCHESTRATION-BRAIN.md)
+
 ## Current Public Status
 
 | Area | Current state |
@@ -79,6 +95,7 @@ This is a static, scalable vector illustration and an explanation of the model�
 | Public security advisory (`GHSA-55pc-7v4h-jf7c`) | **Blocked** — anonymous public metadata lookup returned HTTP 404; the public record does not currently confirm `0.1.3` as the fixed version ([gate run](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
 | Browser demo | [Public demo](https://traky12.github.io/castuo-e3-001/) still uses synthetic `v0.1.1` bundles; the `v0.1.3` Pages deployment remains blocked by the PyPI and public-advisory gates |
 | Governed-flow visual | Public static SVG concept and scope note; not an executable or live simulator, with no production claim |
+| AI-orchestration visual | Public static SVG concept and scope note; not a deployed orchestrator, live data feed or autonomous decision engine |
 | Independent reproduction (E3-001) | `PENDING` — 0 of 2 signed external reviews; [tester/reproduction issue #30 is paused](https://github.com/Traky12/castuo-e3-001/issues/30) until PyPI, advisory and Pages gates close |
 | CASTÚO-SYSTEM consolidation | **BLOCKED** — engineering, security and operational evidence gates remain open; see [detailed status](docs/PROFILE-STATUS-DETAIL.md) |
 
