@@ -34,7 +34,7 @@
 **[e3bundle](https://github.com/Traky12/castuo-e3-001)** is a small MIT-licensed Python CLI for creating, signing and verifying portable evidence bundles offline. It creates SHA-256 manifests and verifies Ed25519 signatures against explicitly configured trust rules.
 
 <p align="center">
-  <img src="assets/brand/e3bundle-flow.svg" alt="e3bundle flow: input files, SHA-256 manifest, Ed25519 signatures, offline verification, and a machine-readable PASS, FAIL or ERROR result" width="100%" />
+  <img src="assets/brand/e3bundle-flow.svg" alt="e3bundle flow: input files, SHA-256 manifest, Ed25519 signatures, offline verification, and a machine-readable VERIFIED, FAILED or ERROR result" width="100%" />
 </p>
 
 **What it does**
