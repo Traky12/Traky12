@@ -42,23 +42,22 @@
 - Checks signatures against the public keys and trust policy supplied by the operator.
 - Produces a bounded verification result suitable for scripting and review.
 
-### Try it from the pinned GitHub tag
+### Release gate and source review
 
-```bash
-git clone --branch v0.1.3 --depth 1 https://github.com/Traky12/castuo-e3-001
-cd castuo-e3-001
-python -m pip install .
-e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
-# Expected for the bundled synthetic example: VERIFIED, exit code 0
-```
+The GitHub `v0.1.3` alpha prerelease exists, but the release documentation at that tag still marks its installation path as **not approved** pending release closeout. PyPI publication remains pending. Do not treat `v0.1.3` as an approved installation or production dependency yet.
 
-The example is synthetic. This command demonstrates the tool's defined verification behaviour; it does not independently validate CASTÚO-SYSTEM or the truth of the underlying data.
+- [Inspect the `v0.1.3` source](https://github.com/Traky12/castuo-e3-001/tree/v0.1.3)
+- [Read the alpha prerelease notes](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3)
+- [Review the release and publication gate](docs/PROFILE-STATUS-DETAIL.md)
+- [Try the browser demo](https://traky12.github.io/castuo-e3-001/) — still using synthetic `v0.1.1` examples; this is not validation of the `v0.1.3` CLI release.
+
+Synthetic examples illustrate defined behaviour; they do not independently validate CASTÚO-SYSTEM or establish the truth of the underlying data.
 
 ## Current Public Status
 
 | Area | Current state |
 |---|---|
-| GitHub release | `v0.1.3` alpha prerelease available |
+| GitHub release | Alpha prerelease `v0.1.3` exists; approval of its installation path remains pending |
 | PyPI | **Pending** — publishing was blocked by a Trusted Publisher / OIDC configuration mismatch |
 | GHCR image | Publication was recorded in the project status; live registry availability has not been independently rechecked in this profile update |
 | Browser demo | Public page still uses `v0.1.1` example bundles |
