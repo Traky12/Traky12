@@ -90,6 +90,14 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
   </tr>
 </table>
 
+## Agronomic application context · concept visual
+
+<p align="center">
+  <img src="assets/illustrations/precision-crop-management.jpg" alt="Concept illustration of an AI-inspired agronomic monitoring interface connecting crop, field and environmental indicators" width="100%" />
+</p>
+
+<sub><strong>Concept art, not a product screenshot.</strong> This image communicates the intended agronomic/edge application context. It is not evidence of a deployed model, measured crop outcomes, real sensor telemetry, a field trial or CTAEX validation. The public <code>e3bundle</code> tool verifies evidence-bundle integrity; it does not implement or validate the agronomic intelligence depicted here.</sub>
+
 [Full repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Public claim boundary](PUBLIC_CLAIM_BOUNDARY.md) · [Evidence index](evidence-center/README.md)
 
 ## Engineering principles
