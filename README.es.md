@@ -57,7 +57,7 @@ Los ejemplos sintéticos ilustran el comportamiento definido; no validan de form
 ## Flujo gobernado · el dato sube, la decisión baja, la evidencia se ancla
 
 <p align="center">
-  <img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Diagrama conceptual animado: el dato de seis fuentes gobernadas sube por ramificaciones como raíces, supera controles de identidad, procedencia, integridad, permisos y calidad y llega a un cerebro central de malla neuronal; como simulación, las salidas bajan por compuertas de grounding 0,18, 0,36 y 0,52, se abstienen dejando huella o pasan una cola con liberación temporal, y se convierten en eventos sintéticos anclados y encadenados con SHA-256; sin afirmaciones de datos en vivo, producción ni decisión autónoma" width="100%" />
+  <img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Diagrama conceptual: el dato de seis fuentes gobernadas sube por ramificaciones como raíces, supera controles de identidad, procedencia, integridad, permisos y calidad y llega a un cerebro central de malla neuronal; como simulación, las salidas bajan por compuertas de grounding 0,18, 0,36 y 0,52, se abstienen dejando huella o pasan una cola con liberación temporal, y se convierten en eventos sintéticos anclados y encadenados con SHA-256; sin afirmaciones de datos en vivo, producción ni decisión autónoma" width="100%" />
 </p>
 
 **Dos flujos, un modelo de gobernanza.**
@@ -69,7 +69,7 @@ Los ejemplos sintéticos ilustran el comportamiento definido; no validan de form
 
 > **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-Es una ilustración vectorial animada (animación CSS dentro del SVG, que se detiene si el sistema del visitante pide movimiento reducido) y una explicación del modelo; no es una señal de sensores en directo, una demo pública ejecutable, un flujo real de aprobación humana ni un sistema de producción. La cola usa una regla temporal simulada cada 14 pasos; no se modelan actor, aprobación o rechazo humanos. Las partículas en movimiento son ilustrativas, no medidas. No se afirman proveedores reales conectados, datos catastrales reales, validación de campo, decisiones autónomas ni preparación operativa.
+Es una ilustración vectorial con movimiento CSS opcional en los visores SVG compatibles. La vista SVG de GitHub no admite actualmente animación en línea, así que el perfil muestra el diagrama completo como imagen estática. No es una señal de sensores en directo, una demo pública ejecutable, un flujo real de aprobación humana ni un sistema de producción. La cola usa una regla temporal simulada cada 14 pasos; no se modelan actor, aprobación o rechazo humanos. Las partículas en movimiento son ilustrativas, no medidas. No se afirman proveedores reales conectados, datos catastrales reales, validación de campo, decisiones autónomas ni preparación operativa.
 
 - [Leer el alcance de la orquestación gobernada y las preguntas que debe responder cada dato](docs/GOVERNED-ORCHESTRATION.md)
 - [Leer el alcance, la regla de reproducibilidad y los límites del flujo gobernado](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
@@ -84,7 +84,7 @@ Es una ilustración vectorial animada (animación CSS dentro del SVG, que se det
 | Imagen GHCR | La publicación multi-arquitectura pasó y el manifiesto vivo `0.1.3` se verificó en el [gate posterior a la fusión](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
 | Aviso de seguridad público (`GHSA-55pc-7v4h-jf7c`) | **Bloqueado** — la consulta anónima al registro público devolvió HTTP 404; el registro no confirma actualmente `0.1.3` como versión corregida ([gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
 | Demo del navegador | La [demo pública](https://traky12.github.io/castuo-e3-001/) sigue usando bundles sintéticos `v0.1.1`; el despliegue de Pages para `v0.1.3` permanece bloqueado por PyPI y el aviso público |
-| Visual del flujo gobernado | Concepto vectorial animado que fusiona el flujo gobernado y el cerebro orquestador, con notas de alcance; no es una simulación ejecutable o en directo, un orquestador desplegado ni un flujo de datos en vivo, y no afirma producción |
+| Visual del flujo gobernado | Concepto SVG que fusiona el flujo gobernado y el cerebro orquestador; GitHub lo muestra como diagrama estático, sin claim de producción |
 | Reproducción independiente (E3-001) | `PENDIENTE` — 0 de 2 revisiones externas firmadas; el [issue #30 de testers/reproducción está pausado](https://github.com/Traky12/castuo-e3-001/issues/30) hasta cerrar PyPI, el aviso y Pages |
 | Consolidación de CASTÚO-SYSTEM | **BLOCKED** — siguen abiertos los gates de ingeniería, seguridad y evidencia operativa; consulta el [estado detallado](docs/PROFILE-STATUS-DETAIL.es.md) |
 

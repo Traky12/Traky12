@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
   <title id="title">CASTÚO-SYSTEM — orquestación gobernada: el dato sube, la decisión baja, la evidencia se ancla</title>
-  <desc id="desc">Ilustración conceptual animada. A la izquierda, el dato de seis fuentes de campo sube por ramificaciones como raíces, supera controles de identidad, procedencia, integridad, permisos y calidad y llega a un cerebro central de malla neuronal. A la derecha, como simulación, las salidas bajan por tres compuertas de política con umbrales de grounding 0,18, 0,36 y 0,52; lo que no alcanza el umbral se abstiene y deja huella; el resto entra en una cola de revisión simulada que libera con una regla temporal cada 14 pasos, sin actor humano, y se convierte en eventos sintéticos anclados en un territorio sintético y encadenados con SHA-256. No se afirman datos en vivo, validación de campo, uso en producción ni decisiones autónomas.</desc>
+  <desc id="desc">Ilustración conceptual; el movimiento opcional solo es ilustrativo. A la izquierda, el dato de seis fuentes de campo sube por ramificaciones como raíces, supera controles de identidad, procedencia, integridad, permisos y calidad y llega a un cerebro central de malla neuronal. A la derecha, como simulación, las salidas bajan por tres compuertas de política con umbrales de grounding 0,18, 0,36 y 0,52; lo que no alcanza el umbral se abstiene y deja huella; el resto entra en una cola de revisión simulada que libera con una regla temporal cada 14 pasos, sin actor humano, y se convierte en eventos sintéticos anclados en un territorio sintético y encadenados con SHA-256. No se afirman datos en vivo, validación de campo, uso en producción ni decisiones autónomas.</desc>
   <style>
 .mv{offset-rotate:0deg;animation:mv var(--d,6s) linear infinite;animation-delay:var(--t,0s)}
 .ab{offset-rotate:0deg;animation:mv var(--d,7s) linear infinite,ab var(--d,7s) linear infinite;animation-delay:var(--t,0s),var(--t,0s)}
 .pu{animation:pu 3.2s ease-in-out infinite;animation-delay:var(--t,0s)}
 .rg{transform-box:fill-box;transform-origin:center;animation:rg 1.4s ease-out infinite;animation-delay:var(--t,0s)}
 .ck{animation:ck 2.4s ease-in-out infinite;animation-delay:var(--t,0s)}
-.ch{stroke-dasharray:var(--l);stroke-dashoffset:var(--l);animation:ch 10s linear infinite}
-.st{opacity:0;animation:st 8.4s linear infinite;animation-delay:var(--t,0s)}
+.ch{stroke-dasharray:none;stroke-dashoffset:0;animation:ch 10s linear infinite}
+.st{opacity:1;animation:st 8.4s linear infinite;animation-delay:var(--t,0s)}
 .br{animation:br 5s ease-in-out infinite}
 .rc{animation:rc 6s ease-in-out infinite}
 @keyframes mv{from{offset-distance:0%}to{offset-distance:100%}}
@@ -16,11 +16,11 @@
 @keyframes pu{0%,100%{opacity:.25}50%{opacity:1}}
 @keyframes rg{0%{transform:scale(.7);opacity:.85}100%{transform:scale(2.4);opacity:0}}
 @keyframes ck{0%,100%{opacity:.35}45%,55%{opacity:1}}
-@keyframes ch{0%{stroke-dashoffset:var(--l)}75%,100%{stroke-dashoffset:0}}
+@keyframes ch{0%{stroke-dasharray:var(--l);stroke-dashoffset:var(--l)}75%,100%{stroke-dasharray:var(--l);stroke-dashoffset:0}}
 @keyframes st{0%{opacity:0}3%,12%{opacity:1}16%,100%{opacity:0}}
 @keyframes br{0%,100%{opacity:.55}50%{opacity:1}}
 @keyframes rc{0%,45%{stroke-dasharray:3 4;opacity:1}55%,100%{stroke-dasharray:none;opacity:.9}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}.st{opacity:0}.ch{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.st{opacity:1}.ch{stroke-dasharray:none;stroke-dashoffset:0}}
 </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071522"/><stop offset=".55" stop-color="#10283A"/><stop offset="1" stop-color="#0D3135"/></linearGradient>

@@ -57,7 +57,7 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 ## Governed flow · field data rises, decisions descend, evidence anchors
 
 <p align="center">
-  <img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Animated concept diagram: field data from six governed sources rises through root-like branches, passes identity, provenance, integrity, permission and quality controls and reaches a central neural-mesh brain; as a simulation, outputs descend through grounding gates 0.18, 0.36 and 0.52, abstain with a trace or pass a timed-release queue, and become synthetic events anchored and chained with SHA-256; no live data, production or autonomous-decision claim" width="100%" />
+  <img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Concept diagram: field data from six governed sources rises through root-like branches, passes identity, provenance, integrity, permission and quality controls and reaches a central neural-mesh brain; as a simulation, outputs descend through grounding gates 0.18, 0.36 and 0.52, abstain with a trace or pass a timed-release queue, and become synthetic events anchored and chained with SHA-256; no live data, production or autonomous-decision claim" width="100%" />
 </p>
 
 **Two flows, one governance model.**
@@ -69,7 +69,7 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 
 > **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-This is an animated vector illustration (CSS animation inside the SVG, which stops when the viewer prefers reduced motion) and an explanation of the model—not a live sensor feed, executable public demo, human-approval workflow, or production system. The queue uses a timed simulation rule every 14 steps; no human actor, approval, or rejection is modelled. The moving particles are illustrative, not measurements. No real providers, cadastral data, field validation, autonomous decisions, or operational readiness are claimed.
+This is a vector illustration with optional CSS motion in supporting SVG viewers. GitHub's SVG rendering does not currently support inline animation, so the profile displays the complete diagram as a static image. The illustration is not a live sensor feed, executable public demo, human-approval workflow, or production system. The queue uses a timed simulation rule every 14 steps; no human actor, approval, or rejection is modelled. The moving particles are illustrative, not measurements. No real providers, cadastral data, field validation, autonomous decisions, or operational readiness are claimed.
 
 - [Read the governed-orchestration scope and the questions every datum must answer](docs/GOVERNED-ORCHESTRATION.md)
 - [Read the governed-flow scope, reproducibility rule and limitations](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
@@ -84,7 +84,7 @@ This is an animated vector illustration (CSS animation inside the SVG, which sto
 | GHCR image | The multi-platform publication workflow passed and the live `0.1.3` manifest was verified by the [post-merge publication gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
 | Public security advisory (`GHSA-55pc-7v4h-jf7c`) | **Blocked** — anonymous public metadata lookup returned HTTP 404; the public record does not currently confirm `0.1.3` as the fixed version ([gate run](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
 | Browser demo | [Public demo](https://traky12.github.io/castuo-e3-001/) still uses synthetic `v0.1.1` bundles; the `v0.1.3` Pages deployment remains blocked by the PyPI and public-advisory gates |
-| Governed-flow visual | Public animated SVG concept fusing the governed flow and the orchestrator brain, with scope notes; not an executable or live simulator, deployed orchestrator or live data feed, with no production claim |
+| Governed-flow visual | Public SVG concept fusing the governed flow and the orchestrator brain; GitHub displays it as a static diagram, with no production claim |
 | Independent reproduction (E3-001) | `PENDING` — 0 of 2 signed external reviews; [tester/reproduction issue #30 is paused](https://github.com/Traky12/castuo-e3-001/issues/30) until PyPI, advisory and Pages gates close |
 | CASTÚO-SYSTEM consolidation | **BLOCKED** — engineering, security and operational evidence gates remain open; see [detailed status](docs/PROFILE-STATUS-DETAIL.md) |
 

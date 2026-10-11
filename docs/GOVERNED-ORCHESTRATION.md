@@ -2,12 +2,12 @@
 
 > **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-This public, animated illustration fuses two CASTÚO-SYSTEM concepts into one governance model:
+This public illustration, with optional CSS motion in supporting SVG viewers, fuses two CASTÚO-SYSTEM concepts into one governance model:
 
 - the **Governed Flow** (policy gates, abstention, simulated review queue, SHA-256 evidence chain), see [GOVERNED-FLOW-SOVEREIGNTY.md](GOVERNED-FLOW-SOVEREIGNTY.md);
 - the **orchestrator brain**: a central digital brain coordinates agricultural data flows **without taking ownership of them**.
 
-![Governed orchestration (animated)](../assets/diagrams/castuo-governed-orchestration.svg)
+![Governed orchestration diagram](../assets/diagrams/castuo-governed-orchestration.svg)
 
 Spanish version: [`castuo-governed-orchestration.es.svg`](../assets/diagrams/castuo-governed-orchestration.es.svg).
 
@@ -46,15 +46,15 @@ Governed cycle: `Capture → Validate → Normalise → Persist → Rules / AI �
 6. **Which decision used it?** The recommendation, its reasons, the rules applied and the data referenced.
 7. **Who is accountable?** The human owner who accepts or rejects the recommendation.
 
-## How the animation works
+## Motion and static rendering
 
-- Plain SVG with CSS animation inside the file (`offset-path` motion, keyframes). There is no JavaScript, no external font and no embedded image. GitHub renders it as an image and plays the animation.
-- When the viewer's system asks for reduced motion (`prefers-reduced-motion: reduce`), the animation stops and a static frame remains.
+- The SVG contains CSS motion (`offset-path`, keyframes), with no JavaScript, external fonts or embedded images. GitHub's SVG rendering does not currently support inline animation; in the profile and repository views this asset is a static diagram.
+- The static fallback shows the full diagram, including all pipeline stages and evidence paths, whether animation runs or not. Supporting SVG viewers stop motion when the system requests reduced motion (`prefers-reduced-motion: reduce`).
 - The particles are illustrative motion, not measurements. No counter, rate or volume in the image comes from a real system.
 
 ## Boundaries
 
-This is an animated concept of a target architecture and a synthetic simulation model. It is not a live data feed, an executable public demo, a deployed orchestrator, a human-approval workflow, a field-validated system or a production system. No real providers, cadastral data, field validation, autonomous decisions or operational readiness are claimed. See [public status](PROFILE-STATUS-DETAIL.md).
+This is a static-first concept of a target architecture and a synthetic simulation model, with optional motion only in supporting viewers. It is not a live data feed, an executable public demo, a deployed orchestrator, a human-approval workflow, a field-validated system or a production system. No real providers, cadastral data, field validation, autonomous decisions or operational readiness are claimed. See [public status](PROFILE-STATUS-DETAIL.md).
 
 ## Provenance of the asset
 
@@ -71,5 +71,5 @@ This is an animated concept of a target architecture and a synthetic simulation 
 
 - **01 · El dato sube.** Seis fuentes gobernadas envían dato por raíces. El dato supera **identidad, procedencia, integridad, permisos y calidad** antes de llegar al cerebro, que coordina sin apropiarse del dato.
 - **02 · La decisión baja (simulación).** Hay tres compuertas de *grounding* (0,18 → 0,36 → 0,52). Lo que no alcanza el umbral se abstiene y deja huella. La cola simulada libera cada 14 pasos, sin actor humano. Los eventos sintéticos se anclan en un territorio sintético y se encadenan con SHA-256.
-- **Animación:** CSS dentro del SVG, sin JavaScript. Se detiene con `prefers-reduced-motion`. Las partículas son movimiento ilustrativo, no medidas.
+- **Movimiento y vista estática:** CSS dentro del SVG, sin JavaScript. GitHub lo presenta como diagrama estático; los visores compatibles respetan `prefers-reduced-motion`. Las partículas son ilustrativas, no medidas.
 - **Límites:** no es un flujo de datos en vivo, una demo ejecutable, un orquestador desplegado ni un sistema validado en campo o en producción ([estado público](PROFILE-STATUS-DETAIL.es.md)).
