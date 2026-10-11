@@ -77,12 +77,14 @@ This is a vector illustration with optional CSS motion in supporting SVG viewers
 
 ## Current Public Status
 
+> **Snapshot checked 2026-10-11:** GHCR `0.1.3` is verified; PyPI publication, public fixed-version metadata and the `v0.1.3` Pages deployment remain blocked. Independent reproduction remains paused.
+
 | Area | Current state |
 |---|---|
 | GitHub release | [Alpha prerelease `v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) exists; tag documentation conflict remains open |
-| PyPI | **Blocked** — the publish run failed with `invalid-publisher`; the [publish run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) and [live Pages gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) show PyPI returns HTTP 404 for `e3bundle 0.1.3`. The OIDC-claim explanation remains a hypothesis, not a confirmed root cause ([runbook](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md)) |
+| PyPI | **Blocked** — the publish run failed with `invalid-publisher`; the [publish run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) and [live Pages gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) show PyPI returns HTTP 404 for `e3bundle 0.1.3`. The runbook records the observed claims and next owner check: compare the stored Trusted Publisher row with the non-secret claims; if they match, stop retries and escalate. The root cause is not confirmed ([runbook](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md)) |
 | GHCR image | The multi-platform publication workflow passed and the live `0.1.3` manifest was verified by the [post-merge publication gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
-| Public security advisory (`GHSA-55pc-7v4h-jf7c`) | **Blocked** — anonymous public metadata lookup returned HTTP 404; the public record does not currently confirm `0.1.3` as the fixed version ([gate run](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
+| Public fixed-version metadata (`GHSA-55pc-7v4h-jf7c`) | **Blocked** — anonymous public metadata lookup returned HTTP 404; the public record does not currently confirm `0.1.3` as the fixed version ([gate run](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
 | Browser demo | [Public demo](https://traky12.github.io/castuo-e3-001/) still uses synthetic `v0.1.1` bundles; the `v0.1.3` Pages deployment remains blocked by the PyPI and public-advisory gates |
 | Governed-flow visual | Public SVG concept fusing the governed flow and the orchestrator brain; GitHub displays it as a static diagram, with no production claim |
 | Independent reproduction (E3-001) | `PENDING` — 0 of 2 signed external reviews; [tester/reproduction issue #30 is paused](https://github.com/Traky12/castuo-e3-001/issues/30) until PyPI, advisory and Pages gates close |
