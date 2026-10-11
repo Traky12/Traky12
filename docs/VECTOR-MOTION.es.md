@@ -2,7 +2,7 @@
 
 ## Propósito
 
-El proyecto usa el movimiento como ayuda de lectura: recorre un flujo documentado, señala nodos conectados y dirige la atención a un resultado revisable. El movimiento es decorativo e ilustrativo. Nunca representa telemetría en directo, actividad de campo, una aprobación, un estado de producción ni una decisión.
+El proyecto usa un movimiento más claro y vivo como ayuda de lectura: señales breves recorren flujos documentados, los nodos conectados respiran y los destinos clave pulsan. El movimiento sigue siendo ilustrativo y nunca representa telemetría en directo, actividad de campo, una aprobación, un estado de producción ni una decisión. El movimiento es decorativo e ilustrativo. Nunca representa telemetría en directo, actividad de campo, una aprobación, un estado de producción ni una decisión.
 
 ## Reproducción y vista estática
 
@@ -16,10 +16,10 @@ El proyecto usa el movimiento como ayuda de lectura: recorre un flujo documentad
 
 | Recurso | Señal prevista | Vista en navegador |
 |---|---|---|
-| Cabecera del perfil | Flujo lento de evidencia y respiración de nodos | [Abrir SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/profile-header.svg) |
-| e3bundle | Avance del flujo de verificación por sus cinco pasos documentados | [Abrir SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/e3bundle-flow.svg) |
-| Concepto agro-edge | Flujo de red sintética, respiración de nodos y brillo central discreto | [Abrir SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/agro-edge-concept.svg) |
-| Soberanía del flujo gobernado | Recorrido sintético dirigido y brillo del destino | [Abrir SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/diagrams/governed-flow-sovereignty.svg) |
+| Cabecera del perfil | Señales móviles de evidencia, pulsos más visibles en los nodos y halo respirando | [Abrir SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/profile-header.svg) |
+| e3bundle | Señales que recorren los cinco pasos de verificación | [Abrir SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/e3bundle-flow.svg) |
+| Concepto agro-edge | Dos señales móviles en la red, pulsos más visibles en los nodos y brillo central respirando | [Abrir SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/agro-edge-concept.svg) |
+| Soberanía del flujo gobernado | Señales por etapas, nodos de origen pulsantes y un pulso más visible en el destino | [Abrir SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/diagrams/governed-flow-sovereignty.svg) |
 | Orquestación gobernada | Flujo simulado existente desde campo hasta evidencia; GitHub muestra la vista estática | [Inglés](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/diagrams/castuo-governed-orchestration.svg) · [Español](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/diagrams/castuo-governed-orchestration.es.svg) |
 
 ## Revisión de cambios

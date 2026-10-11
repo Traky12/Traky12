@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The project uses motion as a restrained reading aid: it traces a documented path, marks connected nodes and draws attention to a reviewable result. Motion is decorative and illustrative. It never represents live telemetry, field activity, an approval, a production state or a decision.
+The project uses clearer, livelier motion as a reading aid: short signal packets travel documented paths, connected nodes breathe, and key destinations pulse. The movement remains illustrative and never represents live telemetry, field activity, an approval, a production state or a decision. Motion is decorative and illustrative. It never represents live telemetry, field activity, an approval, a production state or a decision.
 
 ## Playback and static fallback
 
@@ -16,10 +16,10 @@ The project uses motion as a restrained reading aid: it traces a documented path
 
 | Asset | Intended cue | Browser view |
 |---|---|---|
-| Profile header | Slow evidence-path flow and node breathing | [Open SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/profile-header.svg) |
-| e3bundle | Verification path advances through the five documented steps | [Open SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/e3bundle-flow.svg) |
-| Agro-edge concept | Synthetic network flow, node breathing and a quiet center glow | [Open SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/agro-edge-concept.svg) |
-| Governed flow sovereignty | Directed synthetic path and destination glow | [Open SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/diagrams/governed-flow-sovereignty.svg) |
+| Profile header | Moving evidence signals, brighter node pulses and a breathing halo | [Open SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/profile-header.svg) |
+| e3bundle | Signal packets hop across the five verification steps | [Open SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/e3bundle-flow.svg) |
+| Agro-edge concept | Two moving network signals, more visible node pulses and a breathing center glow | [Open SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/agro-edge-concept.svg) |
+| Governed flow sovereignty | Staged signal packets, pulsing source nodes and a brighter destination pulse | [Open SVG](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/diagrams/governed-flow-sovereignty.svg) |
 | Governed orchestration | Existing simulated field-to-evidence flow; GitHub shows its static fallback | [English](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/diagrams/castuo-governed-orchestration.svg) · [Spanish](https://raw.githubusercontent.com/Traky12/Traky12/main/assets/diagrams/castuo-governed-orchestration.es.svg) |
 
 ## Change review

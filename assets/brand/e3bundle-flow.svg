@@ -2,15 +2,17 @@
   <title id="title">e3bundle evidence verification flow</title>
   <desc id="desc">Input files are hashed into a SHA-256 manifest, signatures are checked with Ed25519 against configured trust rules, and an offline machine-readable result is produced.</desc>
   <style>
-    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 9s linear infinite}
-    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 5.2s ease-in-out infinite}
+    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 4.8s linear infinite}
+    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 3.6s ease-in-out infinite}
     .motion-nodes circle:nth-of-type(3n+2){animation-delay:-1.7s}
     .motion-nodes circle:nth-of-type(3n){animation-delay:-3.4s}
-    .motion-glow{animation:motion-glow 6s ease-in-out infinite}
+    .motion-glow{transform-box:fill-box;transform-origin:center;animation:motion-glow 4.4s ease-in-out infinite}
     @keyframes motion-flow{to{stroke-dashoffset:-80}}
-    @keyframes motion-node{0%,100%{opacity:.78;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
-    @keyframes motion-glow{0%,100%{opacity:.1}50%{opacity:.24}}
-    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}}
+    .motion-signal{offset-rotate:0deg;offset-distance:0%;opacity:0;transform-box:fill-box;transform-origin:center;filter:drop-shadow(0 0 4px #9CF4D8);animation:motion-travel var(--duration,2.5s) cubic-bezier(.4,0,.2,1) infinite;animation-delay:var(--delay,0s)}
+    @keyframes motion-travel{0%{offset-distance:0%;opacity:0;transform:scale(.7)}14%,82%{opacity:1;transform:scale(1.15)}100%{offset-distance:100%;opacity:0;transform:scale(.7)}}
+    @keyframes motion-node{0%,100%{opacity:.68;transform:scale(.98)}50%{opacity:1;transform:scale(1.18)}}
+    @keyframes motion-glow{0%,100%{opacity:.08;transform:scale(.94)}50%{opacity:.36;transform:scale(1.08)}}
+    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow,.motion-signal{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}.motion-signal{display:none;filter:none}}
   </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -56,6 +58,12 @@
   </g>
   <g class="motion-flow" fill="none" stroke="#69D8C3" stroke-width="2.5" marker-end="url(#arrow)">
     <path d="M270 132H318"/><path d="M550 132H598"/><path d="M830 132H878"/><path d="M1110 132H1158"/>
+  </g>
+  <g aria-hidden="true">
+    <circle class="motion-signal" r="4" fill="#E8FFF8" style="offset-path:path('M270 132H318');--duration:1.3s;--delay:0s"/>
+    <circle class="motion-signal" r="4" fill="#E8FFF8" style="offset-path:path('M550 132H598');--duration:1.3s;--delay:-0.3s"/>
+    <circle class="motion-signal" r="4" fill="#E8FFF8" style="offset-path:path('M830 132H878');--duration:1.3s;--delay:-0.6s"/>
+    <circle class="motion-signal" r="4" fill="#E8FFF8" style="offset-path:path('M1110 132H1158');--duration:1.3s;--delay:-0.9s"/>
   </g>
   <text x="700" y="231" fill="#C3D2DA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" text-anchor="middle">Integrity and signature checks are bounded by the supplied bundle and the configured trust policy.</text>
   <text x="700" y="254" fill="#91A8B6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" text-anchor="middle">They do not prove that the content is true or independently establish a signer's identity.</text>

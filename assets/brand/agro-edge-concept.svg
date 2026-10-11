@@ -2,15 +2,17 @@
   <title id="title">Agricultural edge systems — conceptual application domain</title>
   <desc id="desc">A conceptual dark technical illustration connecting crop and sensor signals to local edge processing and reviewable evidence. It does not depict a live deployment or field results.</desc>
   <style>
-    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 9s linear infinite}
-    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 5.2s ease-in-out infinite}
+    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 4.8s linear infinite}
+    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 3.6s ease-in-out infinite}
     .motion-nodes circle:nth-of-type(3n+2){animation-delay:-1.7s}
     .motion-nodes circle:nth-of-type(3n){animation-delay:-3.4s}
-    .motion-glow{animation:motion-glow 6s ease-in-out infinite}
+    .motion-glow{transform-box:fill-box;transform-origin:center;animation:motion-glow 4.4s ease-in-out infinite}
     @keyframes motion-flow{to{stroke-dashoffset:-80}}
-    @keyframes motion-node{0%,100%{opacity:.78;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
-    @keyframes motion-glow{0%,100%{opacity:.1}50%{opacity:.24}}
-    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}}
+    .motion-signal{offset-rotate:0deg;offset-distance:0%;opacity:0;transform-box:fill-box;transform-origin:center;filter:drop-shadow(0 0 4px #9CF4D8);animation:motion-travel var(--duration,2.5s) cubic-bezier(.4,0,.2,1) infinite;animation-delay:var(--delay,0s)}
+    @keyframes motion-travel{0%{offset-distance:0%;opacity:0;transform:scale(.7)}14%,82%{opacity:1;transform:scale(1.15)}100%{offset-distance:100%;opacity:0;transform:scale(.7)}}
+    @keyframes motion-node{0%,100%{opacity:.68;transform:scale(.98)}50%{opacity:1;transform:scale(1.18)}}
+    @keyframes motion-glow{0%,100%{opacity:.08;transform:scale(.94)}50%{opacity:.36;transform:scale(1.08)}}
+    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow,.motion-signal{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}.motion-signal{display:none;filter:none}}
   </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -50,6 +52,10 @@
     <path d="M485 170L592 151L681 209L790 165L877 211L1010 170L1117 213"/>
     <path d="M592 112L592 151M688 73L681 209M790 119L790 165M875 78L877 211M1014 110L1010 170"/>
     <path d="M592 112C618 88 632 73 650 60M592 151C616 177 632 198 651 221"/>
+  </g>
+  <g aria-hidden="true">
+    <circle class="motion-signal" r="4.5" fill="#E8FFF8" style="offset-path:path('M470 83L592 112L688 73L790 119L875 78L1014 110L1120 69');--duration:5.4s;--delay:-1.4s"/>
+    <circle class="motion-signal" r="4" fill="#B4F7E3" style="offset-path:path('M485 170L592 151L681 209L790 165L877 211L1010 170L1117 213');--duration:5.8s;--delay:-3s"/>
   </g>
   <g class="motion-nodes" fill="#102A3A" stroke="#72E0CB" stroke-width="2">
     <circle cx="470" cy="83" r="5"/><circle cx="485" cy="170" r="5"/>
