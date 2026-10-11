@@ -92,6 +92,16 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 
 [Full repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Public claim boundary](PUBLIC_CLAIM_BOUNDARY.md) · [Evidence index](evidence-center/README.md)
 
+## Agricultural edge systems · application domain
+
+<p align="center">
+  <img src="assets/brand/agro-edge-concept.svg" alt="Conceptual illustration connecting crop and sensor signals to local edge processing and reviewable evidence; no live deployment is represented" width="100%" />
+</p>
+
+<p align="center"><sub>Concept illustration only. It does not represent a deployed system, live sensor feed, field trial, measured agronomic outcome or production validation.</sub></p>
+
+This is the visual direction for the agricultural edge domain explored in [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge). It communicates a possible architecture—field signals, local processing and traceable decisions—not an operational or field-validation claim.
+
 ## Engineering principles
 
 - **Traceability over assertion.** Keep claims linked to inspectable sources and reproducible checks.
