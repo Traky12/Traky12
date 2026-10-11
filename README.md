@@ -1,69 +1,123 @@
+# Gregorio Julián Jiménez Bodes · Traky12
+
+<p align="center">
+  <img src="assets/brand/profile-header.svg" alt="Evidence-first systems engineering: traceability, offline-first and assurance" width="100%" />
+</p>
+
 <!-- CASTUO:BRAND:START -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo" width="280" />
+  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo" width="220" />
 </p>
 <!-- CASTUO:BRAND:END -->
 
-# Gregorio Julián Jiménez Bodes — Traky12
+<p align="center">
+  <strong>Systems Architect · Evidence Engineer · AI Governance &amp; Assurance</strong><br />
+  Founder and lead architect of CASTÚO-SYSTEM™
+</p>
 
-**Systems Architect · Evidence Engineer · AI Governance & Assurance**  
-Founder and lead architect of CASTÚO-SYSTEM™
+<p align="center">
+  I build evidence-driven infrastructure for operations that must be traceable, resilient offline and independently reviewable.
+</p>
 
-I build evidence-driven infrastructure for traceable, offline-first and reviewable operations.
+<p align="center">
+  <a href="https://traky12.github.io/castuo-e3-001/"><img src="https://img.shields.io/badge/TRY_THE_DEMO-Examples_v0.1.1-167D78?style=for-the-badge" alt="Try the browser demo using v0.1.1 examples" /></a>
+  <a href="https://github.com/Traky12/castuo-e3-001"><img src="https://img.shields.io/badge/EXPLORE-e3bundle-183346?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Explore e3bundle source code" /></a>
+  <a href="https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue"><img src="https://img.shields.io/badge/CONTRIBUTE-Start_here-BB6B3D?style=for-the-badge" alt="Find beginner-friendly contribution issues" /></a>
+</p>
 
 > **No claim without provenance. No external claim without reproducible evidence.**
 
-## Try e3bundle
+---
 
-**[e3bundle](https://github.com/Traky12/castuo-e3-001)** is a small MIT-licensed Python CLI for creating, signing and verifying evidence bundles offline. It creates SHA-256 manifests and checks Ed25519 signatures against configured trust rules.
+## Featured tool · e3bundle
 
-**[Try the browser demo — v0.1.1 examples](https://traky12.github.io/castuo-e3-001/)** · **[Open the repository](https://github.com/Traky12/castuo-e3-001)** · **[Contribute](https://github.com/Traky12/castuo-e3-001/contribute)**
+**[e3bundle](https://github.com/Traky12/castuo-e3-001)** is a small MIT-licensed Python CLI for creating, signing and verifying portable evidence bundles offline. It creates SHA-256 manifests and verifies Ed25519 signatures against explicitly configured trust rules.
 
-### Install the GitHub alpha
+<p align="center">
+  <img src="assets/brand/e3bundle-flow.svg" alt="e3bundle flow: input files, SHA-256 manifest, Ed25519 signatures, offline verification, and a machine-readable VERIFIED, FAILED or ERROR result" width="100%" />
+</p>
 
-PyPI publication is pending. The pinned GitHub tag can be installed directly:
+**What it does**
+- Detects changed, missing or added files against a manifest.
+- Checks signatures against the public keys and trust policy supplied by the operator.
+- Produces a bounded verification result suitable for scripting and review.
 
-```bash
-python -m pip install "git+https://github.com/Traky12/castuo-e3-001@v0.1.3"
-git clone --branch v0.1.3 --depth 1 https://github.com/Traky12/castuo-e3-001
-cd castuo-e3-001
-e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
-# Expected: VERIFIED, exit 0
-```
+### Release gate and source review
 
-**Release status (11 Oct 2026):** `v0.1.3` alpha is published on GitHub Releases and the GHCR container image; PyPI publication is pending. The browser demo still serves the `v0.1.1` examples. Do not treat these as independent review or production approval.
+The GitHub `v0.1.3` alpha prerelease exists. There is a documentation conflict: the README stored in that tag still carries an older release-state statement, while the current repository README documents the tag for **bounded alpha testing only**. Until the tag documentation is reconciled, this profile links to the source and release evidence but does not repeat a copy/paste installation command. This is not a production recommendation.
 
-## What I build
+- [Current release and alpha-testing notes](https://github.com/Traky12/castuo-e3-001/blob/main/README.md#install)
+- [Inspect the pinned `v0.1.3` source](https://github.com/Traky12/castuo-e3-001/tree/v0.1.3) · [Read the prerelease notes](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3)
+- [Inspect the failed PyPI publication run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) · [Inspect the successful GHCR publication run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766046)
+- [Review the release and publication gate](docs/PROFILE-STATUS-DETAIL.md)
+- [Try the browser demo](https://traky12.github.io/castuo-e3-001/) — synthetic `v0.1.1` examples only; this does not validate the `v0.1.3` CLI release.
 
-- Offline-first edge and IoT systems.
-- Portable evidence bundles and cryptographic verification.
-- Fail-closed identity, access and secret-management patterns.
-- AI governance and assurance for operational systems.
-
-CASTÚO-SYSTEM is the wider architecture; `e3bundle` is its most concrete public tool.
+Synthetic examples illustrate defined behaviour; they do not independently validate CASTÚO-SYSTEM or establish the truth of the underlying data.
 
 ## Current Public Status
 
-`CONSOLIDATION-1.0 = BLOCKED`. The public focus is `e3bundle`; independent reproduction (E3-001) is `PENDING`, with 0 of 2 signed external reviews. `Traky12` is the public read-model: it reports state but does not decide it. `Castuo-system` (private) is the canonical authority for technical state and promotion; `castuo-evolution` (private) is a non-canonical workspace. Details: [public status and history](docs/PROFILE-STATUS-DETAIL.md).
+| Area | Current state |
+|---|---|
+| GitHub release | [Alpha prerelease `v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) exists; tag documentation conflict remains open |
+| PyPI | **Blocked** — publish run failed with `invalid-publisher`; the [OIDC-claim explanation is a hypothesis, not a confirmed root cause](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md) · [failed run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) |
+| GHCR image | Multi-platform image publication passed ([workflow](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766046)); current registry pull has not been repeated in this profile update |
+| Browser demo | [Public demo](https://traky12.github.io/castuo-e3-001/) still uses synthetic `v0.1.1` bundles; it does not validate the `v0.1.3` CLI release |
+| Independent reproduction (E3-001) | `PENDING` — 0 of 2 signed external reviews; [tester/reproduction issue #30 is paused](https://github.com/Traky12/castuo-e3-001/issues/30) until PyPI, advisory and Pages gates close |
+| CASTÚO-SYSTEM consolidation | **BLOCKED** — engineering, security and operational evidence gates remain open; see [detailed status](docs/PROFILE-STATUS-DETAIL.md) |
 
-## Contribute
+**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` is the public read-model: it reports state but does not decide technical state or promotion. `Castuo-system` is the private canonical authority for technical state and promotion decisions; `castuo-evolution` is a non-canonical workspace. For the detailed release gate, known limitations and source links, see [public status and history](docs/PROFILE-STATUS-DETAIL.md). These states are deliberately kept separate: a GitHub prerelease is not the same as a PyPI publication, a current live demo, external reproduction or production approval.
 
-Reproduce the example workflow, report a reproducible bug, improve tests/accessibility/docs, or propose a small change with a clear acceptance test.
+## Selected work
 
-[Good first issues](https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue) · [Contribution guide](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md) · [Security policy](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
-
-## Selected repositories
-
-- [`castuo-e3-001`](https://github.com/Traky12/castuo-e3-001) — `e3bundle` CLI, browser verifier and bounded E3-001 protocol.
-- [`castuo-evidence`](https://github.com/Traky12/castuo-evidence) — selected public evidence units and reproducibility artefacts.
-- [`castuo-agro-edge`](https://github.com/Traky12/castuo-agro-edge) — offline-first edge/IoT runtime experiments; no field or production claim is promoted.
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <strong><a href="https://github.com/Traky12/castuo-evidence">castuo-evidence</a></strong><br />
+      Selected public evidence units, manifests and reproducibility artefacts.<br /><br />
+      <sub>Focus: provenance · reviewability</sub>
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="https://github.com/Traky12/castuo-agro-edge">castuo-agro-edge</a></strong><br />
+      Offline-first edge and IoT runtime experiments, with field and production claims kept unpromoted.<br /><br />
+      <sub>Focus: continuity · edge systems</sub>
+    </td>
+    <td width="33%" valign="top">
+      <strong><a href="https://github.com/Traky12/Cast-o">Cast-o</a></strong><br />
+      Testing and assurance tooling. The test suite is partially executable; performance benchmarking is not yet evidenced and licensing remains under IP review.<br /><br />
+      <sub>Focus: testing · assurance</sub>
+    </td>
+  </tr>
+</table>
 
 [Full repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Public claim boundary](PUBLIC_CLAIM_BOUNDARY.md) · [Evidence index](evidence-center/README.md)
 
+## Engineering principles
+
+- **Traceability over assertion.** Keep claims linked to inspectable sources and reproducible checks.
+- **Fail closed.** Missing trust, unclear state or unavailable evidence must not silently become success.
+- **Capability is not maturity.** `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
+
 ## Not Claimed
 
-Verification establishes file integrity and signature validity under configured trust rules; it does not prove that content is true or independently establish a signer's identity. Independent reproduction, field/production validation, certification, regulatory conformity, paid-customer traction, recurring revenue and production AI autonomy are not claimed.
+A valid manifest establishes whether files match the recorded digests. A valid signature establishes that a signature verifies under a configured public key and policy. Neither proves that the content is true, nor independently establishes a signer's real-world identity.
+
+Independent reproduction, field and production validation, certification, regulatory conformity, paid-customer traction, recurring revenue and production AI autonomy are **not claimed**.
+
+## Contribute
+
+Start with a bounded, reproducible change:
+- [Good first issues](https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue)
+- [Contribution guide](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md)
+- [Security policy](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
 
 ## Links
 
-[CASTÚO-SYSTEM](https://castuo-system.es/) · [ORCID](https://orcid.org/0009-0007-3489-0565) · [Versión en español](README.es.md)
+<p align="center">
+  <a href="https://castuo-system.es/">CASTÚO-SYSTEM</a> ·
+  <a href="https://orcid.org/0009-0007-3489-0565">ORCID</a> ·
+  <a href="README.es.md">Versión en español</a>
+</p>
+
+<p align="center">
+  <sub><code>Traky12</code> is the public read-model. Canonical technical state and promotion decisions remain in the private <code>Castuo-system</code> repository.</sub>
+</p>

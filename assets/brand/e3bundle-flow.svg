@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="280" viewBox="0 0 1400 280" role="img" aria-labelledby="title desc">
+  <title id="title">e3bundle evidence verification flow</title>
+  <desc id="desc">Input files are hashed into a SHA-256 manifest, signatures are checked with Ed25519 against configured trust rules, and an offline machine-readable result is produced.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C1825"/><stop offset="1" stop-color="#163242"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#69D8C3"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="280" rx="20" fill="url(#bg)"/>
+  <text x="48" y="43" fill="#92E8D9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2.5">THE VERIFICATION PATH</text>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <g>
+      <rect x="48" y="76" width="220" height="112" rx="13" fill="#132A3A" stroke="#3B6475" stroke-width="1.5"/>
+      <circle cx="73" cy="101" r="12" fill="#205A62"/><text x="73" y="105" font-size="11" font-weight="700" fill="#DFFFF9" text-anchor="middle">01</text>
+      <text x="68" y="134" fill="#F3F7FA" font-size="19" font-weight="700">Input files</text>
+      <text x="68" y="160" fill="#B5C8D3" font-size="13">Portable evidence folder</text>
+    </g>
+    <g>
+      <rect x="328" y="76" width="220" height="112" rx="13" fill="#132A3A" stroke="#3B6475" stroke-width="1.5"/>
+      <circle cx="353" cy="101" r="12" fill="#205A62"/><text x="353" y="105" font-size="11" font-weight="700" fill="#DFFFF9" text-anchor="middle">02</text>
+      <text x="348" y="134" fill="#F3F7FA" font-size="19" font-weight="700">SHA-256</text>
+      <text x="348" y="160" fill="#B5C8D3" font-size="13">Manifest per file</text>
+    </g>
+    <g>
+      <rect x="608" y="76" width="220" height="112" rx="13" fill="#132A3A" stroke="#3B6475" stroke-width="1.5"/>
+      <circle cx="633" cy="101" r="12" fill="#205A62"/><text x="633" y="105" font-size="11" font-weight="700" fill="#DFFFF9" text-anchor="middle">03</text>
+      <text x="628" y="134" fill="#F3F7FA" font-size="19" font-weight="700">Ed25519</text>
+      <text x="628" y="160" fill="#B5C8D3" font-size="13">Configured trust rules</text>
+    </g>
+    <g>
+      <rect x="888" y="76" width="220" height="112" rx="13" fill="#132A3A" stroke="#3B6475" stroke-width="1.5"/>
+      <circle cx="913" cy="101" r="12" fill="#205A62"/><text x="913" y="105" font-size="11" font-weight="700" fill="#DFFFF9" text-anchor="middle">04</text>
+      <text x="908" y="134" fill="#F3F7FA" font-size="19" font-weight="700">Offline check</text>
+      <text x="908" y="160" fill="#B5C8D3" font-size="13">Integrity + signatures</text>
+    </g>
+    <g>
+      <rect x="1168" y="76" width="184" height="112" rx="13" fill="#173B42" stroke="#5CD6BF" stroke-width="1.5"/>
+      <circle cx="1193" cy="101" r="12" fill="#246B69"/><text x="1193" y="105" font-size="11" font-weight="700" fill="#DFFFF9" text-anchor="middle">05</text>
+      <text x="1188" y="134" fill="#F3F7FA" font-size="19" font-weight="700">Result</text>
+      <text x="1188" y="160" fill="#BDEDE4" font-size="10">VERIFIED / FAILED / ERROR</text>
+    </g>
+  </g>
+  <g fill="none" stroke="#69D8C3" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M270 132H318"/><path d="M550 132H598"/><path d="M830 132H878"/><path d="M1110 132H1158"/>
+  </g>
+  <text x="700" y="231" fill="#C3D2DA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" text-anchor="middle">Integrity and signature checks are bounded by the supplied bundle and the configured trust policy.</text>
+  <text x="700" y="254" fill="#91A8B6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" text-anchor="middle">They do not prove that the content is true or independently establish a signer's identity.</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="320" viewBox="0 0 1440 320" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence-first systems engineering</title>
+  <desc id="desc">A dark technical canvas with connected evidence nodes, emphasizing traceability, offline-first systems and assurance.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1724"/>
+      <stop offset="0.58" stop-color="#112638"/>
+      <stop offset="1" stop-color="#142E3B"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5CD6BF" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#5CD6BF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7892A3" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1440" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1440" height="320" rx="24" fill="url(#grid)"/>
+  <circle cx="1130" cy="146" r="230" fill="url(#glow)"/>
+  <path d="M845 50L960 110L1080 70L1190 135L1322 92" fill="none" stroke="#5CD6BF" stroke-opacity="0.48" stroke-width="2"/>
+  <path d="M840 230L965 182L1087 229L1198 171L1333 228" fill="none" stroke="#8EB8C8" stroke-opacity="0.36" stroke-width="2"/>
+  <path d="M960 110L965 182M1080 70L1087 229M1190 135L1198 171M1322 92L1333 228" fill="none" stroke="#8EB8C8" stroke-opacity="0.2" stroke-width="1.5"/>
+  <g fill="#102A3A" stroke="#5CD6BF" stroke-width="2">
+    <circle cx="845" cy="50" r="6"/><circle cx="960" cy="110" r="7"/><circle cx="1080" cy="70" r="6"/>
+    <circle cx="1190" cy="135" r="8"/><circle cx="1322" cy="92" r="6"/><circle cx="840" cy="230" r="6"/>
+    <circle cx="965" cy="182" r="6"/><circle cx="1087" cy="229" r="8"/><circle cx="1198" cy="171" r="6"/><circle cx="1333" cy="228" r="6"/>
+  </g>
+  <g fill="#EAF2F6">
+    <rect x="72" y="67" width="5" height="112" rx="2.5" fill="#5CD6BF"/>
+    <text x="101" y="87" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3.5" fill="#84E4D2">EVIDENCE-FIRST ENGINEERING</text>
+    <text x="98" y="145" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="700" letter-spacing="-1.3">Systems that can be reviewed.</text>
+    <text x="101" y="185" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" fill="#B8CBD5">Traceability · Offline-first · Explicit assurance</text>
+  </g>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">
+    <rect x="850" y="258" width="144" height="30" rx="15" fill="#173847" stroke="#2D756F"/>
+    <text x="922" y="277" fill="#9BE8D9" text-anchor="middle">TRACEABILITY</text>
+    <rect x="1004" y="258" width="150" height="30" rx="15" fill="#173847" stroke="#2D756F"/>
+    <text x="1079" y="277" fill="#9BE8D9" text-anchor="middle">OFFLINE-FIRST</text>
+    <rect x="1164" y="258" width="134" height="30" rx="15" fill="#173847" stroke="#2D756F"/>
+    <text x="1231" y="277" fill="#9BE8D9" text-anchor="middle">ASSURANCE</text>
+  </g>
+</svg>
