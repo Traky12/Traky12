@@ -42,13 +42,13 @@
 
 ### Try it from the pinned GitHub tag
 
-\`\`\`bash
+```bash
 git clone --branch v0.1.3 --depth 1 https://github.com/Traky12/castuo-e3-001
 cd castuo-e3-001
 python -m pip install .
 e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
 # Expected for the bundled synthetic example: VERIFIED, exit code 0
-\`\`\`
+```
 
 The example is synthetic. This command demonstrates the tool's defined verification behaviour; it does not independently validate CASTÚO-SYSTEM or the truth of the underlying data.
 
@@ -56,10 +56,10 @@ The example is synthetic. This command demonstrates the tool's defined verificat
 
 | Area | Current state |
 |---|---|
-| GitHub release | \`v0.1.3\` alpha prerelease available |
+| GitHub release | `v0.1.3` alpha prerelease available |
 | PyPI | **Pending** — publishing was blocked by a Trusted Publisher / OIDC configuration mismatch |
 | GHCR image | Publication was recorded in the project status; live registry availability has not been independently rechecked in this profile update |
-| Browser demo | Public page still uses \`v0.1.1\` example bundles |
+| Browser demo | Public page still uses `v0.1.1` example bundles |
 | Independent reproduction (E3-001) | **PENDING** — 0 of 2 signed external reviews |
 | CASTÚO-SYSTEM consolidation | **BLOCKED** — engineering, security and operational evidence gates remain open |
 
@@ -93,7 +93,7 @@ For the detailed release gate, known limitations and source links, see [public s
 
 - **Traceability over assertion.** Keep claims linked to inspectable sources and reproducible checks.
 - **Fail closed.** Missing trust, unclear state or unavailable evidence must not silently become success.
-- **Capability is not maturity.** \`DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL\`.
+- **Capability is not maturity.** `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## What verification does not prove
 
