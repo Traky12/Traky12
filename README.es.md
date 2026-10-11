@@ -4,9 +4,11 @@
   <img src="assets/brand/profile-header.svg" alt="Ingeniería de sistemas basada en evidencia: trazabilidad, funcionamiento offline-first y aseguramiento" width="100%" />
 </p>
 
+<!-- CASTUO:BRAND:START -->
 <p align="center">
-  <img src="assets/brand/castuo-system-logo-horizontal.jpg" alt="Logotipo oficial de CASTÚO-SYSTEM" width="220" />
+  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-logo-horizontal.jpg" alt="Logotipo oficial de CASTÚO-SYSTEM" width="220" />
 </p>
+<!-- CASTUO:BRAND:END -->
 
 <p align="center">
   <strong>Arquitecto de sistemas · Ingeniero de evidencia · Gobernanza y aseguramiento de IA</strong><br />
@@ -52,7 +54,7 @@ e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys example
 
 El ejemplo utiliza datos sintéticos. El comando demuestra el comportamiento definido de la herramienta; no valida de forma independiente CASTÚO-SYSTEM ni la veracidad de los datos subyacentes.
 
-## Estado público · 11 de octubre de 2026
+## Estado público actual
 
 | Área | Estado actual |
 |---|---|
@@ -60,10 +62,10 @@ El ejemplo utiliza datos sintéticos. El comando demuestra el comportamiento def
 | PyPI | **Pendiente** — la publicación quedó bloqueada por una discrepancia de configuración Trusted Publisher / OIDC |
 | Imagen GHCR | La publicación figura en el estado del proyecto; la disponibilidad actual del registro no se ha vuelto a comprobar de forma independiente en esta actualización del perfil |
 | Demo del navegador | La página pública continúa usando paquetes de ejemplo `v0.1.1` |
-| Reproducción independiente (E3-001) | **PENDING** — 0 de 2 revisiones externas firmadas |
+| Reproducción independiente (E3-001) | `PENDIENTE` — 0 de 2 revisiones externas firmadas |
 | Consolidación de CASTÚO-SYSTEM | **BLOCKED** — permanecen abiertos gates de ingeniería, seguridad y evidencia operativa |
 
-Consulta el [estado público y el historial](docs/PROFILE-STATUS-DETAIL.es.md) para ver los bloqueos de publicación, las limitaciones y los enlaces de procedencia. Los estados se mantienen separados deliberadamente: una prerelease de GitHub no equivale a publicación en PyPI, demo pública actualizada, reproducción externa ni aprobación para producción.
+**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` es el read-model público: informa del estado, pero no decide el estado técnico ni la promoción. `Castuo-system` es la autoridad privada canónica del estado técnico y de las decisiones de promoción; `castuo-evolution` es un espacio no canónico. Consulta el [estado público y el historial](docs/PROFILE-STATUS-DETAIL.es.md) para ver los bloqueos de publicación, las limitaciones y los enlaces de procedencia. Los estados se mantienen separados deliberadamente: una prerelease de GitHub no equivale a publicación en PyPI, demo pública actualizada, reproducción externa ni aprobación para producción.
 
 ## Trabajo seleccionado
 
@@ -95,7 +97,7 @@ Consulta el [estado público y el historial](docs/PROFILE-STATUS-DETAIL.es.md) p
 - **Fail-closed.** La falta de confianza, un estado ambiguo o la ausencia de evidencia no deben convertirse silenciosamente en éxito.
 - **Capacidad no equivale a madurez.** `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
-## Qué no demuestra la verificación
+## No se declara
 
 Un manifiesto válido permite comprobar si los archivos coinciden con los hashes registrados. Una firma válida demuestra que esa firma verifica con una clave pública y una política configuradas. Ninguna de las dos cosas demuestra que el contenido sea verdadero ni establece de forma independiente la identidad real del firmante.
 
