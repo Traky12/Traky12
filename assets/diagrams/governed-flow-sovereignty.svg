@@ -1,6 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">CASTÚO-SYSTEM — Governed Flow and Evidence Sovereignty</title>
   <desc id="desc">Vector illustration of a synthetic agricultural data flow: seventy sources pass three policy gates, reach a simulated review queue, and produce a SHA-256 chained synthetic evidence event. A conceptual digital brain and agricultural leaf represent the evidence destination. This is experimental simulation only, with no production claim or autonomous decision-making.</desc>
+  <style>
+    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 9s linear infinite}
+    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 5.2s ease-in-out infinite}
+    .motion-nodes circle:nth-of-type(3n+2){animation-delay:-1.7s}
+    .motion-nodes circle:nth-of-type(3n){animation-delay:-3.4s}
+    .motion-glow{animation:motion-glow 6s ease-in-out infinite}
+    @keyframes motion-flow{to{stroke-dashoffset:-80}}
+    @keyframes motion-node{0%,100%{opacity:.78;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+    @keyframes motion-glow{0%,100%{opacity:.1}50%{opacity:.24}}
+    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}}
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#071522"/>
@@ -62,7 +73,7 @@
       <path d="M90 365C112 340 137 350 156 365S194 388 213 365S251 343 273 365"/>
       <path d="M91 403C117 381 137 391 158 403S194 424 213 403S251 380 275 403"/>
     </g>
-    <g fill="#102C3C" stroke="#8BE8D4" stroke-width="1.8">
+    <g class="motion-nodes" fill="#102C3C" stroke="#8BE8D4" stroke-width="1.8">
       <circle cx="91" cy="365" r="5"/><circle cx="126" cy="353" r="5"/><circle cx="156" cy="365" r="5"/>
       <circle cx="186" cy="386" r="5"/><circle cx="213" cy="365" r="5"/><circle cx="245" cy="350" r="5"/><circle cx="273" cy="365" r="5"/>
       <circle cx="91" cy="403" r="5"/><circle cx="125" cy="390" r="5"/><circle cx="158" cy="403" r="5"/>
@@ -125,7 +136,7 @@
   </g>
 
   <!-- Directed flow -->
-  <g fill="none" stroke="#6FDCC7" stroke-width="2.6" marker-end="url(#arrow)">
+  <g class="motion-flow" fill="none" stroke="#6FDCC7" stroke-width="2.6" marker-end="url(#arrow)">
     <path d="M350 343H382"/>
     <path d="M570 343H597"/>
     <path d="M785 343H812"/>
@@ -162,7 +173,7 @@
     <!-- Final brain / sovereignty destination -->
     <rect x="1000" y="520" width="545" height="255" rx="19" fill="#0B2028" stroke="#3A8D7D" stroke-width="1.6"/>
     <text x="1028" y="555" fill="#8FE8D4" font-size="12" font-weight="700" letter-spacing="1.5">DESTINATION / EVIDENCE SOVEREIGNTY</text>
-    <circle cx="1120" cy="650" r="84" fill="url(#brainGlow)"/>
+    <circle class="motion-glow" cx="1120" cy="650" r="84" fill="url(#brainGlow)"/>
     <circle cx="1120" cy="650" r="74" fill="#10343C" stroke="#32776F" stroke-width="1.4"/>
     <!-- Vector brain outline and internal traces, deliberately not a medical anatomical claim -->
     <path d="M1116 595C1101 578 1074 589 1071 609C1050 613 1046 637 1059 648C1048 670 1063 690 1082 687C1089 710 1112 716 1124 696L1124 611C1122 604 1120 599 1116 595Z" fill="#174653" stroke="#78DECD" stroke-width="2.5" stroke-linejoin="round"/>
