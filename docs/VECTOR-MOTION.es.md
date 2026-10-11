@@ -2,7 +2,7 @@
 
 ## Propósito
 
-El proyecto usa un movimiento más claro y vivo como ayuda de lectura: señales breves recorren flujos documentados, los nodos conectados respiran y los destinos clave pulsan. El movimiento sigue siendo ilustrativo y nunca representa telemetría en directo, actividad de campo, una aprobación, un estado de producción ni una decisión. El movimiento es decorativo e ilustrativo. Nunca representa telemetría en directo, actividad de campo, una aprobación, un estado de producción ni una decisión.
+El proyecto usa un movimiento más claro y vivo como ayuda de lectura: señales breves recorren flujos documentados, los nodos conectados respiran y los destinos clave pulsan. El movimiento sigue siendo ilustrativo y nunca representa telemetría en directo, actividad de campo, una aprobación, un estado de producción ni una decisión.
 
 ## Reproducción y vista estática
 

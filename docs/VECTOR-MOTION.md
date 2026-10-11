@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The project uses clearer, livelier motion as a reading aid: short signal packets travel documented paths, connected nodes breathe, and key destinations pulse. The movement remains illustrative and never represents live telemetry, field activity, an approval, a production state or a decision. Motion is decorative and illustrative. It never represents live telemetry, field activity, an approval, a production state or a decision.
+The project uses clearer, livelier motion as a reading aid: short signal packets travel documented paths, connected nodes breathe, and key destinations pulse. The movement remains illustrative; it never represents live telemetry, field activity, an approval, a production state or a decision.
 
 ## Playback and static fallback
 
