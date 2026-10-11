@@ -54,36 +54,26 @@ The GitHub `v0.1.3` alpha prerelease exists. There is a documentation conflict: 
 
 Synthetic examples illustrate defined behaviour; they do not independently validate CASTÚO-SYSTEM or establish the truth of the underlying data.
 
-## Governed flow · agricultural signals to evidence sovereignty
+## Governed flow · field data rises, decisions descend, evidence anchors
 
 <p align="center">
-  <img src="assets/diagrams/governed-flow-sovereignty.svg" alt="High-resolution vector diagram: 70 synthetic sources pass three policy gates, a simulated timed-release queue and a SHA-256 evidence chain, ending at a conceptual evidence-sovereignty destination; no production or autonomous-decision claim" width="100%" />
+  <img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Animated concept diagram: field data from six governed sources rises through root-like branches, passes identity, provenance, integrity, permission and quality controls and reaches a central neural-mesh brain; as a simulation, outputs descend through grounding gates 0.18, 0.36 and 0.52, abstain with a trace or pass a timed-release queue, and become synthetic events anchored and chained with SHA-256; no live data, production or autonomous-decision claim" width="100%" />
 </p>
 
-**The principle:** raw capability is not authority. Synthetic inputs pass three explicit grounding thresholds (0.18 → 0.36 → 0.52); eligible items enter a simulated queue, then become traceable synthetic events. The final brain is a visual metaphor for **evidence sovereignty**: evidence reaches the accountable decision owner, not an automated action.
+**Two flows, one governance model.**
 
-> **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
-
-This is a static, scalable vector illustration and an explanation of the model—not a live sensor feed, executable public demo, human-approval workflow, or production system. The queue uses a timed simulation rule every 14 steps; no human actor, approval, or rejection is modelled. The seed reproduces a run; it does not grant governance authority. No real providers, cadastral data, field validation, autonomous decisions, or operational readiness are claimed.
-
-- [Read the governed-flow scope, reproducibility rule and limitations](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
-- [Review public status and open evidence gates](docs/PROFILE-STATUS-DETAIL.md)
-
-## AI orchestration · coordinate field data without owning it
-
-<p align="center">
-  <img src="assets/diagrams/ai-orchestrator-brain.svg" alt="Concept illustration of an agro-industrial control room: a central digital brain made of a neural mesh sends root-like branches to soil sensors, drone or satellite, field notebook, ERP and traceability, a rules engine and plot context; data passes identity, provenance, integrity, permission and quality controls before reaching it; no live data, field validation, production or autonomy claim" width="100%" />
-</p>
-
-**The principle:** the brain coordinates; it does not own or command. Field data keeps its provenance, permissions and context. The orchestrator works only on data that has passed **identity, provenance, integrity, permission and quality** controls, and it returns explainable recommendations to an accountable human owner.
+- **Field data rises.** Six governed sources send data through root-like branches. It reaches the central brain only after **identity, provenance, integrity, permission and quality** controls. The brain coordinates; it does not own the data.
+- **Decisions descend (simulation).** Outputs pass three explicit grounding thresholds (0.18 → 0.36 → 0.52). Items below a threshold abstain and leave a trace. Eligible items enter a simulated queue and become traceable synthetic events, anchored and chained with SHA-256. Evidence reaches the accountable decision owner, not an automated action.
 
 `Capture → Validate → Normalise → Persist → Rules / AI → Explainable decision → Evidence`
 
-> **CONCEPT ILLUSTRATION · TARGET ARCHITECTURE · NO PRODUCTION CLAIM**
+> **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-This is a static vector illustration of a target architecture. It is not a live data feed, a deployed orchestrator, a field-validated system or an autonomous decision engine, and the related evidence gates remain open.
+This is an animated vector illustration (CSS animation inside the SVG, which stops when the viewer prefers reduced motion) and an explanation of the model—not a live sensor feed, executable public demo, human-approval workflow, or production system. The queue uses a timed simulation rule every 14 steps; no human actor, approval, or rejection is modelled. The moving particles are illustrative, not measurements. No real providers, cadastral data, field validation, autonomous decisions, or operational readiness are claimed.
 
-- [Read the scope note and the questions every datum must answer](docs/AI-ORCHESTRATION-BRAIN.md)
+- [Read the governed-orchestration scope and the questions every datum must answer](docs/GOVERNED-ORCHESTRATION.md)
+- [Read the governed-flow scope, reproducibility rule and limitations](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
+- [Review public status and open evidence gates](docs/PROFILE-STATUS-DETAIL.md)
 
 ## Current Public Status
 
@@ -94,8 +84,7 @@ This is a static vector illustration of a target architecture. It is not a live 
 | GHCR image | The multi-platform publication workflow passed and the live `0.1.3` manifest was verified by the [post-merge publication gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
 | Public security advisory (`GHSA-55pc-7v4h-jf7c`) | **Blocked** — anonymous public metadata lookup returned HTTP 404; the public record does not currently confirm `0.1.3` as the fixed version ([gate run](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
 | Browser demo | [Public demo](https://traky12.github.io/castuo-e3-001/) still uses synthetic `v0.1.1` bundles; the `v0.1.3` Pages deployment remains blocked by the PyPI and public-advisory gates |
-| Governed-flow visual | Public static SVG concept and scope note; not an executable or live simulator, with no production claim |
-| AI-orchestration visual | Public static SVG concept and scope note; not a deployed orchestrator, live data feed or autonomous decision engine |
+| Governed-flow visual | Public animated SVG concept fusing the governed flow and the orchestrator brain, with scope notes; not an executable or live simulator, deployed orchestrator or live data feed, with no production claim |
 | Independent reproduction (E3-001) | `PENDING` — 0 of 2 signed external reviews; [tester/reproduction issue #30 is paused](https://github.com/Traky12/castuo-e3-001/issues/30) until PyPI, advisory and Pages gates close |
 | CASTÚO-SYSTEM consolidation | **BLOCKED** — engineering, security and operational evidence gates remain open; see [detailed status](docs/PROFILE-STATUS-DETAIL.md) |
 
