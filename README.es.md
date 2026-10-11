@@ -42,23 +42,22 @@
 - Comprobar firmas usando las claves públicas y la política de confianza proporcionadas por el operador.
 - Producir un resultado de verificación delimitado, utilizable en scripts y revisiones.
 
-### Probar desde el tag fijado de GitHub
+### Gate de publicación y revisión del código
 
-```bash
-git clone --branch v0.1.3 --depth 1 https://github.com/Traky12/castuo-e3-001
-cd castuo-e3-001
-python -m pip install .
-e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json
-# Esperado para el ejemplo sintético incluido: VERIFIED, código de salida 0
-```
+La prerelease alfa `v0.1.3` existe en GitHub, pero la documentación de publicación incluida en ese tag todavía marca su vía de instalación como **no aprobada** hasta cerrar la revisión. La publicación en PyPI sigue pendiente. No trates aún `v0.1.3` como una instalación aprobada ni como dependencia apta para producción.
 
-El ejemplo utiliza datos sintéticos. El comando demuestra el comportamiento definido de la herramienta; no valida de forma independiente CASTÚO-SYSTEM ni la veracidad de los datos subyacentes.
+- [Inspeccionar el código fuente de `v0.1.3`](https://github.com/Traky12/castuo-e3-001/tree/v0.1.3)
+- [Consultar las notas de la prerelease alfa](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3)
+- [Revisar el gate de publicación y sus bloqueos](docs/PROFILE-STATUS-DETAIL.es.md)
+- [Probar la demo de navegador](https://traky12.github.io/castuo-e3-001/) — continúa usando ejemplos sintéticos `v0.1.1`; no valida la release CLI `v0.1.3`.
+
+Los ejemplos sintéticos ilustran el comportamiento definido; no validan de forma independiente CASTÚO-SYSTEM ni demuestran la veracidad de los datos subyacentes.
 
 ## Estado público actual
 
 | Área | Estado actual |
 |---|---|
-| Release de GitHub | Prerelease alfa `v0.1.3` disponible |
+| Release de GitHub | Existe la prerelease alfa `v0.1.3`; sigue pendiente aprobar su vía de instalación |
 | PyPI | **Pendiente** — la publicación quedó bloqueada por una discrepancia de configuración Trusted Publisher / OIDC |
 | Imagen GHCR | La publicación figura en el estado del proyecto; la disponibilidad actual del registro no se ha vuelto a comprobar de forma independiente en esta actualización del perfil |
 | Demo del navegador | La página pública continúa usando paquetes de ejemplo `v0.1.1` |
