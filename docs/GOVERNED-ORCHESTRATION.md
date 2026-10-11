@@ -60,8 +60,8 @@ This is an animated concept of a target architecture and a synthetic simulation 
 
 - Vector reconstruction drawn from the owner's description of a control-room image, fused with the Governed Flow model. The original raster image is not published here.
 - Deterministic layout; seed `509055`, the Governed Flow reference seed, used only for placement.
-- SHA-256 (EN): `9e7d452e4ccd3cbf8926f6424d36c50d744ef757b96d7ca014a226cd2a68fcaa`
-- SHA-256 (ES): `fd78d2a801a5d1bead59e8fa31ddcf3fa5a74b7375fba9750cc1e8a592c1e034`
+- SHA-256 (EN): `ec0460f1aee69673d5e63faa81065150a4795a87d3efccea36f9eb0659d1007a`
+- SHA-256 (ES): `66b19709c2f0405c37fbc504cca870f6e7a6a6c3e8971da54bb8534582662db3`
 
 ---
 
