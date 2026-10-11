@@ -2,15 +2,17 @@
   <title id="title">CASTÚO-SYSTEM — Governed Flow and Evidence Sovereignty</title>
   <desc id="desc">Vector illustration of a synthetic agricultural data flow: seventy sources pass three policy gates, reach a simulated review queue, and produce a SHA-256 chained synthetic evidence event. A conceptual digital brain and agricultural leaf represent the evidence destination. This is experimental simulation only, with no production claim or autonomous decision-making.</desc>
   <style>
-    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 9s linear infinite}
-    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 5.2s ease-in-out infinite}
+    .motion-flow{stroke-dasharray:8 12;animation:motion-flow 4.8s linear infinite}
+    .motion-nodes circle{transform-box:fill-box;transform-origin:center;animation:motion-node 3.6s ease-in-out infinite}
     .motion-nodes circle:nth-of-type(3n+2){animation-delay:-1.7s}
     .motion-nodes circle:nth-of-type(3n){animation-delay:-3.4s}
-    .motion-glow{animation:motion-glow 6s ease-in-out infinite}
+    .motion-glow{transform-box:fill-box;transform-origin:center;animation:motion-glow 4.4s ease-in-out infinite}
     @keyframes motion-flow{to{stroke-dashoffset:-80}}
-    @keyframes motion-node{0%,100%{opacity:.78;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
-    @keyframes motion-glow{0%,100%{opacity:.1}50%{opacity:.24}}
-    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}}
+    .motion-signal{offset-rotate:0deg;offset-distance:0%;opacity:0;transform-box:fill-box;transform-origin:center;filter:drop-shadow(0 0 4px #9CF4D8);animation:motion-travel var(--duration,2.5s) cubic-bezier(.4,0,.2,1) infinite;animation-delay:var(--delay,0s)}
+    @keyframes motion-travel{0%{offset-distance:0%;opacity:0;transform:scale(.7)}14%,82%{opacity:1;transform:scale(1.15)}100%{offset-distance:100%;opacity:0;transform:scale(.7)}}
+    @keyframes motion-node{0%,100%{opacity:.68;transform:scale(.98)}50%{opacity:1;transform:scale(1.18)}}
+    @keyframes motion-glow{0%,100%{opacity:.08;transform:scale(.94)}50%{opacity:.36;transform:scale(1.08)}}
+    @media (prefers-reduced-motion:reduce){.motion-flow,.motion-nodes circle,.motion-glow,.motion-signal{animation:none!important}.motion-flow{stroke-dasharray:none;stroke-dashoffset:0}.motion-nodes circle{transform:none}.motion-signal{display:none;filter:none}}
   </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -143,6 +145,14 @@
     <path d="M1000 343H1042"/>
     <path d="M1297 478V514"/>
     <path d="M950 640H1000"/>
+  </g>
+  <g aria-hidden="true">
+    <circle class="motion-signal" r="4.5" fill="#E8FFF8" style="offset-path:path('M350 343H382');--duration:1.6s;--delay:0s"/>
+    <circle class="motion-signal" r="4.5" fill="#E8FFF8" style="offset-path:path('M570 343H597');--duration:1.35s;--delay:-0.25s"/>
+    <circle class="motion-signal" r="4.5" fill="#E8FFF8" style="offset-path:path('M785 343H812');--duration:1.35s;--delay:-0.5s"/>
+    <circle class="motion-signal" r="4.5" fill="#E8FFF8" style="offset-path:path('M1000 343H1042');--duration:1.8s;--delay:-0.75s"/>
+    <circle class="motion-signal" r="4.5" fill="#DAF69A" style="offset-path:path('M1297 478V514');--duration:1.45s;--delay:-1s"/>
+    <circle class="motion-signal" r="4.5" fill="#E8FFF8" style="offset-path:path('M950 640H1000');--duration:2s;--delay:-1.25s"/>
   </g>
   <g font-family="Inter,Segoe UI,Arial,sans-serif" fill="#82DBC9" font-size="11" font-weight="700" letter-spacing="1">
     <text x="352" y="326">SIGNALS</text>
