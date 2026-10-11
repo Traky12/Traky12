@@ -90,6 +90,14 @@ Los ejemplos sintéticos ilustran el comportamiento definido; no validan de form
   </tr>
 </table>
 
+## Contexto de aplicación agronómica · ilustración conceptual
+
+<p align="center">
+  <img src="assets/illustrations/precision-crop-management.jpg" alt="Ilustración conceptual de una interfaz de monitorización agronómica con indicadores de cultivos, parcelas y entorno" width="100%" />
+</p>
+
+<sub><strong>Arte conceptual, no captura de un producto.</strong> La imagen comunica la dirección prevista de aplicación agronómica y edge. No acredita un modelo desplegado, resultados medidos de cultivo, telemetría real, ensayo de campo ni validación de CTAEX. La herramienta pública <code>e3bundle</code> verifica la integridad de bundles de evidencia; no implementa ni valida la inteligencia agronómica representada.</sub>
+
 [Mapa completo de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Límites de claims públicos](PUBLIC_CLAIM_BOUNDARY.es.md) · [Índice de evidencia](evidence-center/README.md)
 
 ## Principios de ingeniería
