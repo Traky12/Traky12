@@ -54,18 +54,24 @@ La prerelease alfa `v0.1.3` existe en GitHub. Hay una discrepancia documental: e
 
 Los ejemplos sintéticos ilustran el comportamiento definido; no validan de forma independiente CASTÚO-SYSTEM ni demuestran la veracidad de los datos subyacentes.
 
-## Flujo gobernado · de señales agrarias a soberanía de evidencia
+## Flujo gobernado · el dato sube, la decisión baja, la evidencia se ancla
 
 <p align="center">
-  <img src="assets/diagrams/governed-flow-sovereignty.svg" alt="Diagrama vectorial de alta resolución: 70 fuentes sintéticas atraviesan tres compuertas de política, una cola con liberación temporal simulada y una cadena de evidencia SHA-256 hasta un destino conceptual de soberanía de evidencia; sin afirmaciones de producción ni decisión autónoma" width="100%" />
+  <img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Diagrama conceptual: el dato de seis fuentes gobernadas sube por ramificaciones como raíces, supera controles de identidad, procedencia, integridad, permisos y calidad y llega a un cerebro central de malla neuronal; como simulación, las salidas bajan por compuertas de grounding 0,18, 0,36 y 0,52, se abstienen dejando huella o pasan una cola con liberación temporal, y se convierten en eventos sintéticos anclados y encadenados con SHA-256; sin afirmaciones de datos en vivo, producción ni decisión autónoma" width="100%" />
 </p>
 
-**El principio:** la capacidad en bruto no es autoridad. Las entradas sintéticas atraviesan tres umbrales explícitos de *grounding* (0,18 → 0,36 → 0,52); los elementos que cumplen pasan a una cola simulada y después se convierten en eventos sintéticos trazables. El cerebro final es una metáfora visual de **soberanía de evidencia**: la evidencia llega a quien tiene la responsabilidad de decidir, no a una acción automatizada.
+**Dos flujos, un modelo de gobernanza.**
+
+- **El dato de campo sube.** Seis fuentes gobernadas envían dato por ramificaciones como raíces. Solo llega al cerebro central tras superar los controles de **identidad, procedencia, integridad, permisos y calidad**. El cerebro coordina; no se apropia del dato.
+- **La decisión baja (simulación).** Las salidas atraviesan tres umbrales explícitos de *grounding* (0,18 → 0,36 → 0,52). Lo que no alcanza un umbral se abstiene y deja huella. Lo que cumple pasa a una cola simulada y se convierte en eventos sintéticos trazables, anclados y encadenados con SHA-256. La evidencia llega a quien tiene la responsabilidad de decidir, no a una acción automatizada.
+
+`Captura → Validación → Normalización → Persistencia → Reglas / IA → Decisión explicable → Evidencia`
 
 > **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-Es una ilustración vectorial estática y una explicación del modelo; no es una señal de sensores en directo, una demo pública ejecutable, un flujo real de aprobación humana ni un sistema de producción. La cola usa una regla temporal simulada cada 14 pasos; no se modelan actor, aprobación o rechazo humanos. La semilla reproduce una ejecución; no otorga autoridad de gobernanza. No se afirman proveedores reales conectados, datos catastrales reales, validación de campo, decisiones autónomas ni preparación operativa.
+Es una ilustración vectorial con movimiento CSS opcional en los visores SVG compatibles. La vista SVG de GitHub no admite actualmente animación en línea, así que el perfil muestra el diagrama completo como imagen estática. No es una señal de sensores en directo, una demo pública ejecutable, un flujo real de aprobación humana ni un sistema de producción. La cola usa una regla temporal simulada cada 14 pasos; no se modelan actor, aprobación o rechazo humanos. Las partículas en movimiento son ilustrativas, no medidas. No se afirman proveedores reales conectados, datos catastrales reales, validación de campo, decisiones autónomas ni preparación operativa.
 
+- [Leer el alcance de la orquestación gobernada y las preguntas que debe responder cada dato](docs/GOVERNED-ORCHESTRATION.md)
 - [Leer el alcance, la regla de reproducibilidad y los límites del flujo gobernado](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
 - [Consultar el estado público y las compuertas de evidencia abiertas](docs/PROFILE-STATUS-DETAIL.es.md)
 
@@ -78,7 +84,7 @@ Es una ilustración vectorial estática y una explicación del modelo; no es una
 | Imagen GHCR | La publicación multi-arquitectura pasó y el manifiesto vivo `0.1.3` se verificó en el [gate posterior a la fusión](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
 | Aviso de seguridad público (`GHSA-55pc-7v4h-jf7c`) | **Bloqueado** — la consulta anónima al registro público devolvió HTTP 404; el registro no confirma actualmente `0.1.3` como versión corregida ([gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
 | Demo del navegador | La [demo pública](https://traky12.github.io/castuo-e3-001/) sigue usando bundles sintéticos `v0.1.1`; el despliegue de Pages para `v0.1.3` permanece bloqueado por PyPI y el aviso público |
-| Visual del flujo gobernado | Concepto vectorial estático y nota de alcance; no es una simulación ejecutable o en directo y no afirma producción |
+| Visual del flujo gobernado | Concepto SVG que fusiona el flujo gobernado y el cerebro orquestador; GitHub lo muestra como diagrama estático, sin claim de producción |
 | Reproducción independiente (E3-001) | `PENDIENTE` — 0 de 2 revisiones externas firmadas; el [issue #30 de testers/reproducción está pausado](https://github.com/Traky12/castuo-e3-001/issues/30) hasta cerrar PyPI, el aviso y Pages |
 | Consolidación de CASTÚO-SYSTEM | **BLOCKED** — siguen abiertos los gates de ingeniería, seguridad y evidencia operativa; consulta el [estado detallado](docs/PROFILE-STATUS-DETAIL.es.md) |
 
