@@ -59,9 +59,10 @@ Los ejemplos sintéticos ilustran el comportamiento definido; no validan de form
 | Área | Estado actual |
 |---|---|
 | Release de GitHub | Existe la [prerelease alfa `v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3); sigue abierta la discrepancia documental del tag |
-| PyPI | **Bloqueado** — el run de publicación falló con `invalid-publisher`; la [explicación basada en claims OIDC es una hipótesis, no una causa raíz confirmada](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md) · [run fallido](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) |
-| Imagen GHCR | La publicación multi-arquitectura pasó ([workflow](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766046)); este cambio del perfil no ha repetido un pull del registro actual |
-| Demo del navegador | La [demo pública](https://traky12.github.io/castuo-e3-001/) continúa usando bundles sintéticos `v0.1.1`; no valida la release CLI `v0.1.3` |
+| PyPI | **Bloqueado** — el run de publicación falló con `invalid-publisher`; el [run original](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) y el [gate de Pages en vivo](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) muestran HTTP 404 para `e3bundle 0.1.3` en PyPI. La explicación de los claims OIDC sigue siendo hipótesis, no causa raíz confirmada ([runbook](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md)) |
+| Imagen GHCR | La publicación multi-arquitectura pasó y el manifiesto vivo `0.1.3` se verificó en el [gate posterior a la fusión](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
+| Aviso de seguridad público (`GHSA-55pc-7v4h-jf7c`) | **Bloqueado** — la consulta anónima al registro público devolvió HTTP 404; el registro no confirma actualmente `0.1.3` como versión corregida ([gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
+| Demo del navegador | La [demo pública](https://traky12.github.io/castuo-e3-001/) sigue usando bundles sintéticos `v0.1.1`; el despliegue de Pages para `v0.1.3` permanece bloqueado por PyPI y el aviso público |
 | Reproducción independiente (E3-001) | `PENDIENTE` — 0 de 2 revisiones externas firmadas; el [issue #30 de testers/reproducción está pausado](https://github.com/Traky12/castuo-e3-001/issues/30) hasta cerrar PyPI, el aviso y Pages |
 | Consolidación de CASTÚO-SYSTEM | **BLOCKED** — siguen abiertos los gates de ingeniería, seguridad y evidencia operativa; consulta el [estado detallado](docs/PROFILE-STATUS-DETAIL.es.md) |
 
