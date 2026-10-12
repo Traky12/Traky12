@@ -48,6 +48,7 @@ change its authority class.
 | castuo-360-v5.3 (private) | **Candidate** | Which earlier integrated application surface exists? | Historical integration surface | No current production claim |
 | agrovision-360 (private) | **Candidate** | Which experimental architecture surface remains? | Experimental workspace | No current capability or product claim |
 | n8n | **Upstream** | Which external automation technology is evaluated? | Third-party/upstream source | Not proprietary CASTUO capability |
+| [openclaw (archived fork)](https://github.com/Traky12/openclaw) | **Upstream** | Which upstream AI-assistant code was evaluated as a comparison? | Archived public fork of [openclaw/openclaw](https://github.com/openclaw/openclaw) | GitHub marks it archived and forked; it is not a CASTÚO product, canonical component or evidence of proprietary capability |
 
 ## OVS-01 relationship
 

@@ -37,6 +37,7 @@ PUBLIC_REPOS = {
     "cast-o",
     "castuo-agro-edge",
     "castuo-offline-field-operations",
+    "openclaw",
 }
 
 # Always forbidden on a current public surface.
