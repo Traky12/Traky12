@@ -78,20 +78,16 @@ Es una ilustración vectorial con movimiento CSS opcional en los visores SVG com
 
 ## Estado público actual
 
-> **Estado revisado el 2026-10-11:** GHCR `0.1.3` está verificado; la publicación en PyPI, los metadatos públicos de versión corregida y el despliegue de Pages para `v0.1.3` siguen bloqueados. La reproducción independiente continúa en pausa.
+> **Última verificación completa de los gates: 2026-10-11.** La prerelease alfa `v0.1.3` de GitHub y su imagen GHCR están verificadas; la publicación coherente en todos los registros continúa **BLOQUEADA**. La publicación en PyPI, los metadatos públicos de versión corregida del aviso y el despliegue de Pages para `v0.1.3` no están desbloqueados. La demo sigue utilizando ejemplos sintéticos `v0.1.1`. La reproducción independiente continúa en pausa.
 
-| Área | Estado actual |
-|---|---|
-| Release de GitHub | Existe la [prerelease alfa `v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3); sigue abierta la discrepancia documental del tag |
-| PyPI | **Bloqueado** — el run de publicación falló con `invalid-publisher`; el [run original](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) y el [gate de Pages en vivo](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) muestran HTTP 404 para `e3bundle 0.1.3` en PyPI. El runbook registra los claims observados y la siguiente comprobación del responsable: comparar la fila de Trusted Publisher guardada con los claims no secretos; si coinciden, detener los reintentos y escalar. La causa raíz no está confirmada ([runbook](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md)) |
-| Imagen GHCR | La publicación multi-arquitectura pasó y el manifiesto vivo `0.1.3` se verificó en el [gate posterior a la fusión](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
-| Metadatos públicos de versión corregida (`GHSA-55pc-7v4h-jf7c`) | **Bloqueado** — la consulta anónima al registro público devolvió HTTP 404; el registro no confirma actualmente `0.1.3` como versión corregida ([gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768)) |
-| Demo del navegador | La [demo pública](https://traky12.github.io/castuo-e3-001/) sigue usando bundles sintéticos `v0.1.1`; el despliegue de Pages para `v0.1.3` permanece bloqueado por PyPI y el aviso público |
-| Visual del flujo gobernado | Concepto SVG que fusiona el flujo gobernado y el cerebro orquestador; GitHub lo muestra como diagrama estático, sin claim de producción |
-| Reproducción independiente (E3-001) | `PENDIENTE` — 0 de 2 revisiones externas firmadas; el [issue #30 de testers/reproducción está pausado](https://github.com/Traky12/castuo-e3-001/issues/30) hasta cerrar PyPI, el aviso y Pages |
-| Consolidación de CASTÚO-SYSTEM | **BLOCKED** — siguen abiertos los gates de ingeniería, seguridad y evidencia operativa; consulta el [estado detallado](docs/PROFILE-STATUS-DETAIL.es.md) |
+| Gate | Estado actual | Evidencia |
+|---|---|---|
+| GitHub / GHCR | Artefactos alfa disponibles; no implica aprobación para producción | [Release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) · [Gate de publicación](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
+| PyPI / aviso / Pages | **BLOQUEADO** — el último gate documentado observó `invalid-publisher` y HTTP 404; la causa raíz no está confirmada | [Runbook de PyPI](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md) · [Gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
+| Demo de navegador | Solo ejemplos sintéticos `v0.1.1`; no valida la CLI `v0.1.3` | [Abrir demo](https://traky12.github.io/castuo-e3-001/) |
+| Reproducción independiente (E3-001) | **E3-001 como `PENDIENTE`** — 0 de 2 revisiones externas firmadas; la reproducción sigue en pausa | [Issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
 
-**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` es el read-model público: informa del estado, pero no decide el estado técnico ni la promoción. `Castuo-system` es la autoridad privada canónica del estado técnico y de las decisiones de promoción; `castuo-evolution` es un espacio no canónico. Consulta el [estado público y el historial](docs/PROFILE-STATUS-DETAIL.es.md) para ver los bloqueos de publicación, las limitaciones y los enlaces de procedencia. Los estados se mantienen separados deliberadamente: una prerelease de GitHub no equivale a publicación en PyPI, demo pública actualizada, reproducción externa ni aprobación para producción.
+**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` cumple el papel de read-model público: informa del estado, pero no decide la autoridad técnica ni la promoción. `Castuo-system` sigue siendo la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` permanece como espacio no canónico (non-canonical), sin autoridad de promoción. Una prerelease de GitHub o una imagen GHCR no equivalen a una release correcta en PyPI, una demo actualizada, reproducción independiente ni aprobación para producción. Consulta el [estado público y el historial](docs/PROFILE-STATUS-DETAIL.es.md) para ver el detalle y la evidencia de apoyo.
 
 ## Trabajo seleccionado
 
