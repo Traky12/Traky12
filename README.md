@@ -58,23 +58,23 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 ## Governed flow · field data rises, decisions descend, evidence anchors
 
 <p align="center">
-  <img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Concept diagram: field data from six governed sources rises through root-like branches, passes identity, provenance, integrity, permission and quality controls and reaches a central neural-mesh brain; as a simulation, outputs descend through grounding gates 0.18, 0.36 and 0.52, abstain with a trace or pass a timed-release queue, and become synthetic events anchored and chained with SHA-256; no live data, production or autonomous-decision claim" width="100%" />
+  <img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Conceptual CASTÚO-SYSTEM flow: six sources pass identity, provenance, integrity, permission and quality controls; simulated outputs pass grounding thresholds, abstain or become synthetic SHA-256-linked evidence. No live data or production claim." width="100%" />
 </p>
 
-**Two flows, one governance model.**
+**One governance model, two bounded flows.**
 
-- **Field data rises.** Six governed sources send data through root-like branches. It reaches the central brain only after **identity, provenance, integrity, permission and quality** controls. The brain coordinates; it does not own the data.
-- **Decisions descend (simulation).** Outputs pass three explicit grounding thresholds (0.18 → 0.36 → 0.52). Items below a threshold abstain and leave a trace. Eligible items enter a simulated queue and become traceable synthetic events, anchored and chained with SHA-256. Evidence reaches the accountable decision owner, not an automated action.
+- **Field data rises:** Six conceptual sources reach the coordinating layer only after identity, provenance, integrity, permission and quality checks.
+- **Decisions descend (simulation):** Outputs pass illustrative thresholds `0.18 → 0.36 → 0.52`. Outputs below a threshold abstain with a trace; eligible outputs enter a simulated queue and become synthetic events anchored with SHA-256. No automated action follows.
 
 `Capture → Validate → Normalise → Persist → Rules / AI → Explainable decision → Evidence`
 
 > **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-This is a vector illustration with optional CSS motion in supporting SVG viewers. GitHub's SVG rendering does not currently support inline animation, so the profile displays the complete diagram as a static image. [Open the motion-capable English and Spanish SVGs in a browser](docs/VECTOR-MOTION.md). The illustration is not a live sensor feed, executable public demo, human-approval workflow, or production system. The queue uses a timed simulation rule every 14 steps; no human actor, approval, or rejection is modelled. The moving particles are illustrative, not measurements. No real providers, cadastral data, field validation, autonomous decisions, or operational readiness are claimed.
+<sub>Concept illustration only. GitHub renders the SVG statically; [open the motion-capable version](docs/VECTOR-MOTION.md). Sources, particles, thresholds and the queue's every-14-step timing are illustrative, not measurements. No live providers, cadastral data, human approval, field validation, autonomous action or production readiness is represented.</sub>
 
-- [Read the governed-orchestration scope and the questions every datum must answer](docs/GOVERNED-ORCHESTRATION.md)
-- [Read the governed-flow scope, reproducibility rule and limitations](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
-- [Review public status and open evidence gates](docs/PROFILE-STATUS-DETAIL.md)
+- [Governed-orchestration scope and evidence questions](docs/GOVERNED-ORCHESTRATION.md)
+- [Governed-flow scope, reproducibility and limitations](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
+- [Public status and open evidence gates](docs/PROFILE-STATUS-DETAIL.md)
 
 ## Current Public Status
 
