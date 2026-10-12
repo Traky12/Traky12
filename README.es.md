@@ -149,7 +149,6 @@ Empieza con un cambio acotado y reproducible:
 ## Enlaces
 
 <p align="center">
-  <a href="https://castuo-system.es/">CASTÚO-SYSTEM</a> ·
   <a href="https://orcid.org/0009-0007-3489-0565">ORCID</a> ·
   <a href="README.md">English version</a>
 </p>
