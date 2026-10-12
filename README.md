@@ -85,9 +85,9 @@ This is a vector illustration with optional CSS motion in supporting SVG viewers
 | GitHub / GHCR | Alpha artefacts available; not production approval | [Release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) · [Publication gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
 | PyPI / advisory / Pages | **BLOCKED** — `invalid-publisher` and HTTP 404 were observed in the last documented gate; root cause is not confirmed | [PyPI runbook](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md) · [Gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
 | Browser demo | Synthetic `v0.1.1` examples only; does not validate the `v0.1.3` CLI | [Open demo](https://traky12.github.io/castuo-e3-001/) |
-| Independent reproduction | `PENDING` — 0 of 2 signed external reviews; recruitment/reproduction remains paused | [Issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
+| Independent reproduction (E3-001) | **E3-001 as `PENDING`** — 0 of 2 signed external reviews; reproduction remains paused | [Issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
 
-**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` is the public read-model; `Castuo-system` remains the private canonical authority for technical state and promotion, while `castuo-evolution` is non-canonical. A GitHub prerelease or GHCR image is not equivalent to a successful PyPI release, a current demo, independent reproduction or production approval. See [public status and history](docs/PROFILE-STATUS-DETAIL.md) for details and supporting evidence.
+**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` is the public read-model; it reports state but does not decide technical state or promotion. `Castuo-system` remains the private canonical authority for technical state and promotion, while `castuo-evolution` is a non-canonical workspace. A GitHub prerelease or GHCR image is not equivalent to a successful PyPI release, a current demo, independent reproduction or production approval. See [public status and history](docs/PROFILE-STATUS-DETAIL.md) for details and supporting evidence.
 
 ## Selected work
 
