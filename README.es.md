@@ -58,23 +58,23 @@ Los ejemplos sintéticos ilustran el comportamiento definido; no validan de form
 ## Flujo gobernado · el dato sube, la decisión baja, la evidencia se ancla
 
 <p align="center">
-  <img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Diagrama conceptual: el dato de seis fuentes gobernadas sube por ramificaciones como raíces, supera controles de identidad, procedencia, integridad, permisos y calidad y llega a un cerebro central de malla neuronal; como simulación, las salidas bajan por compuertas de grounding 0,18, 0,36 y 0,52, se abstienen dejando huella o pasan una cola con liberación temporal, y se convierten en eventos sintéticos anclados y encadenados con SHA-256; sin afirmaciones de datos en vivo, producción ni decisión autónoma" width="100%" />
+  <img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Flujo conceptual de CASTÚO-SYSTEM: seis fuentes pasan controles de identidad, procedencia, integridad, permisos y calidad; salidas simuladas atraviesan umbrales de grounding, se abstienen o se convierten en evidencia sintética enlazada con SHA-256. Sin datos en vivo ni claim de producción." width="100%" />
 </p>
 
-**Dos flujos, un modelo de gobernanza.**
+**Un modelo de gobernanza, dos flujos acotados.**
 
-- **El dato de campo sube.** Seis fuentes gobernadas envían dato por ramificaciones como raíces. Solo llega al cerebro central tras superar los controles de **identidad, procedencia, integridad, permisos y calidad**. El cerebro coordina; no se apropia del dato.
-- **La decisión baja (simulación).** Las salidas atraviesan tres umbrales explícitos de *grounding* (0,18 → 0,36 → 0,52). Lo que no alcanza un umbral se abstiene y deja huella. Lo que cumple pasa a una cola simulada y se convierte en eventos sintéticos trazables, anclados y encadenados con SHA-256. La evidencia llega a quien tiene la responsabilidad de decidir, no a una acción automatizada.
+- **El dato de campo sube:** Seis fuentes conceptuales llegan a la capa coordinadora solo después de los controles de identidad, procedencia, integridad, permisos y calidad.
+- **La decisión baja (simulación):** Las salidas atraviesan umbrales ilustrativos `0,18 → 0,36 → 0,52`. Las que no alcanzan un umbral se abstienen y dejan una traza; las elegibles entran en una cola simulada y se convierten en eventos sintéticos anclados con SHA-256. No se ejecuta ninguna acción automatizada.
 
 `Captura → Validación → Normalización → Persistencia → Reglas / IA → Decisión explicable → Evidencia`
 
 > **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-Es una ilustración vectorial con movimiento CSS opcional en los visores SVG compatibles. La vista SVG de GitHub no admite actualmente animación en línea, así que el perfil muestra el diagrama completo como imagen estática. [Abrir los SVG con movimiento en un navegador](docs/VECTOR-MOTION.es.md). No es una señal de sensores en directo, una demo pública ejecutable, un flujo real de aprobación humana ni un sistema de producción. La cola usa una regla temporal simulada cada 14 pasos; no se modelan actor, aprobación o rechazo humanos. Las partículas en movimiento son ilustrativas, no medidas. No se afirman proveedores reales conectados, datos catastrales reales, validación de campo, decisiones autónomas ni preparación operativa.
+<sub>Solo ilustración conceptual. GitHub muestra el SVG de forma estática; [abre la versión con movimiento](docs/VECTOR-MOTION.es.md). Las fuentes, partículas, umbrales y la temporización de la cola cada 14 pasos son ilustrativos, no mediciones. No se representan proveedores conectados en vivo, datos catastrales, aprobación humana, validación de campo, acción autónoma ni preparación para producción.</sub>
 
-- [Leer el alcance de la orquestación gobernada y las preguntas que debe responder cada dato](docs/GOVERNED-ORCHESTRATION.md)
-- [Leer el alcance, la regla de reproducibilidad y los límites del flujo gobernado](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
-- [Consultar el estado público y las compuertas de evidencia abiertas](docs/PROFILE-STATUS-DETAIL.es.md)
+- [Alcance de la orquestación gobernada y preguntas de evidencia](docs/GOVERNED-ORCHESTRATION.md)
+- [Alcance, reproducibilidad y limitaciones del flujo gobernado](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
+- [Estado público y gates de evidencia abiertos](docs/PROFILE-STATUS-DETAIL.es.md)
 
 ## Estado público actual
 
