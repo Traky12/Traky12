@@ -47,7 +47,7 @@ change its authority class.
 | ctaex-iot-pilot (private) | **Candidate** | What is the declared IoT validation workspace? | Controlled validation workspace | No current field or institutional claim is promoted |
 | castuo-360-v5.3 (private) | **Candidate** | Which earlier integrated application surface exists? | Historical integration surface | No current production claim |
 | agrovision-360 (private) | **Candidate** | Which experimental architecture surface remains? | Experimental workspace | No current capability or product claim |
-| n8n | **Upstream** | Which external automation technology is evaluated? | Third-party/upstream source | Not proprietary CASTUO capability |
+| [n8n (public fork)](https://github.com/Traky12/n8n) | **Upstream** | Which external automation technology is evaluated? | Public fork of [n8n-io/n8n](https://github.com/n8n-io/n8n) | Third-party code; not proprietary CASTÚO capability |
 | [openclaw (archived fork)](https://github.com/Traky12/openclaw) | **Upstream** | Which upstream AI-assistant code was evaluated as a comparison? | Archived public fork of [openclaw/openclaw](https://github.com/openclaw/openclaw) | GitHub marks it archived and forked; it is not a CASTÚO product, canonical component or evidence of proprietary capability |
 
 ## OVS-01 relationship
