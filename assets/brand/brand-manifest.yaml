@@ -39,3 +39,18 @@ brand_asset:
     square_jpg: assets/brand/castuo-system-logo-square.jpg
     mark_png: assets/brand/castuo-system-mark.png
     checksums: assets/brand/checksums.sha256
+
+profile_header_asset:
+  id: CASTUO-BRAND-HEADER-001
+  name: CASTÚO-SYSTEM profile header
+  version: 1.0.0
+  source: owner_supplied_asset
+  asset: assets/brand/castuo-system-header.png
+  format: PNG
+  dimensions_px: 1024x384
+  usage: github_profile_header
+  status_claim: IDENTITY_ONLY
+  evidence_status: NOT_APPLICABLE
+  legal_certification_claim: NOT_CLAIMED
+  promotion_impact: NONE
+  human_review: REQUIRED
