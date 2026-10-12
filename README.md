@@ -1,12 +1,12 @@
 # Gregorio Julián Jiménez Bodes · Traky12
 
 <p align="center">
-  <img src="assets/brand/castuo-system-header.png" alt="CASTÚO-SYSTEM profile header: excellence and innovation" width="100%" />
+  <img src="assets/brand/profile-header.svg" alt="Evidence-first systems engineering: traceability, offline-first and assurance" width="100%" />
 </p>
 
 <!-- CASTUO:BRAND:START -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-logo-horizontal.jpg" alt="CASTÚO-SYSTEM official logo" width="220" />
+  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-header.png" alt="CASTÚO-SYSTEM brand banner" width="100%" />
 </p>
 <!-- CASTUO:BRAND:END -->
 

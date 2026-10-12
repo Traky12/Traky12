@@ -40,15 +40,15 @@ brand_asset:
     mark_png: assets/brand/castuo-system-mark.png
     checksums: assets/brand/checksums.sha256
 
-profile_header_asset:
-  id: CASTUO-BRAND-HEADER-001
-  name: CASTÚO-SYSTEM profile header
+brand_banner_asset:
+  id: CASTUO-BRAND-BANNER-001
+  name: CASTÚO-SYSTEM supplementary brand banner
   version: 1.0.0
   source: owner_supplied_asset
   asset: assets/brand/castuo-system-header.png
   format: PNG
   dimensions_px: 1024x384
-  usage: github_profile_header
+  usage: public_readme_brand_banner
   status_claim: IDENTITY_ONLY
   evidence_status: NOT_APPLICABLE
   legal_certification_claim: NOT_CLAIMED
