@@ -7,7 +7,7 @@
 <!-- CASTUO:BRAND:START -->
 <p align="center">
   <img src="assets/brand/castuo-system-header.png"
-       alt="CASTÚO-SYSTEM — Excelencia e Innovación"
+       alt="CASTÚO-SYSTEM visual identity"
        width="100%" />
 </p>
 <!-- CASTUO:BRAND:END -->
@@ -23,9 +23,9 @@
 
 <p align="center">
   <a href="https://traky12.github.io/castuo-e3-001/"><img src="https://img.shields.io/badge/TRY_THE_DEMO-Examples_v0.1.1-167D78?style=for-the-badge" alt="Try the browser demo using v0.1.1 examples" /></a>
-  <a href="https://github.com/Traky12/castuo-e3-001"><img src="https://img.shields.io/badge/EXPLORE-e3bundle-183346?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Explore e3bundle source code" /></a>
-  <a href="https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue"><img src="https://img.shields.io/badge/CONTRIBUTE-Start_here-BB6B3D?style=for-the-badge" alt="Find beginner-friendly contribution issues" /></a>
-  <a href="https://discord.gg/tgxmnmPPD"><img src="https://img.shields.io/badge/JOIN_THE_COMMUNITY-Discord-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Join the CASTÚO community on Discord" /></a>
+  <a href="https://github.com/Traky12/castuo-e3-001"><img src="https://img.shields.io/badge/EXPLORE-e3bundle-183346?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Explore e3bundle source and evidence" /></a>
+  <a href="https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue"><img src="https://img.shields.io/badge/CONTRIBUTE-Start_here-BB6B3D?style=for-the-badge" alt="Find beginner-friendly work items" /></a>
+  <a href="https://discord.gg/tgxmnmPPD"><img src="https://img.shields.io/badge/JOIN_THE_COMMUNITY-Discord-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Join the CASTÚO community" /></a>
 </p>
 
 > **No claim without provenance. No external claim without reproducible evidence.**
@@ -34,7 +34,7 @@
 
 ## Featured tool · e3bundle
 
-**[e3bundle](https://github.com/Traky12/castuo-e3-001)** is a small MIT-licensed Python CLI for creating, signing and verifying portable evidence bundles offline. It creates SHA-256 manifests and verifies Ed25519 signatures against explicitly configured trust rules.
+**[e3bundle](https://github.com/Traky12/castuo-e3-001)** is a small MIT-licensed Python CLI for creating, signing and verifying portable evidence bundles offline. It creates SHA-256 manifests and checks signatures against supplied public keys.
 
 <p align="center">
   <img src="assets/brand/e3bundle-flow.svg" alt="e3bundle flow: input files, SHA-256 manifest, Ed25519 signatures, offline verification, and a machine-readable VERIFIED, FAILED or ERROR result" width="100%" />
@@ -47,11 +47,11 @@
 
 ### Release gate and source review
 
-The GitHub `v0.1.3` alpha prerelease exists. There is a documentation conflict: the README stored in that tag still carries an older release-state statement, while the current repository README documents the tag for **bounded alpha testing only**. Until the tag documentation is reconciled, this profile links to the source and release evidence but does not repeat a copy/paste installation command. This is not a production recommendation.
+The GitHub `v0.1.3` alpha prerelease exists. There is a documentation conflict: the README stored in that tag still carries an older release-state statement, while the current repository README documents the current public status.
 
 - [Current release and alpha-testing notes](https://github.com/Traky12/castuo-e3-001/blob/main/README.md#install)
 - [Inspect the pinned `v0.1.3` source](https://github.com/Traky12/castuo-e3-001/tree/v0.1.3) · [Read the prerelease notes](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3)
-- [Inspect the failed PyPI publication run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) · [Inspect the successful GHCR publication run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766046)
+- [Inspect the failed PyPI publication run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) · [Inspect the successful GHCR publication run](https://github.com/Traky12/castuo-e3-001/actions/runs/38088624936)
 - [Review the release and publication gate](docs/PROFILE-STATUS-DETAIL.md)
 - [Try the browser demo](https://traky12.github.io/castuo-e3-001/) — synthetic `v0.1.1` examples only; this does not validate the `v0.1.3` CLI release.
 
@@ -60,19 +60,19 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 ## Governed flow · field data rises, decisions descend, evidence anchors
 
 <p align="center">
-  <img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Conceptual CASTÚO-SYSTEM flow: six sources pass identity, provenance, integrity, permission and quality controls; simulated outputs pass grounding thresholds, abstain or become synthetic SHA-256-linked evidence. No live data or production claim." width="100%" />
+  <img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Conceptual CASTÚO-SYSTEM flow: six sources pass identity, provenance, integrity, permission and quality controls; simulated outputs descend into evidence review" width="100%" />
 </p>
 
 **One governance model, two bounded flows.**
 
 - **Field data rises:** Six conceptual sources reach the coordinating layer only after identity, provenance, integrity, permission and quality checks.
-- **Decisions descend (simulation):** Outputs pass illustrative thresholds `0.18 → 0.36 → 0.52`. Outputs below a threshold abstain with a trace; eligible outputs enter a simulated queue and become synthetic events anchored with SHA-256. No automated action follows.
+- **Decisions descend (simulation):** Outputs pass illustrative thresholds `0.18 → 0.36 → 0.52`. Outputs below a threshold abstain with a trace; eligible outputs enter a simulated queue and are compared against evidence criteria.
 
 `Capture → Validate → Normalise → Persist → Rules / AI → Explainable decision → Evidence`
 
 > **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
 
-<sub>Concept illustration only. GitHub renders the SVG statically; [open the motion-capable version](docs/VECTOR-MOTION.md). Sources, particles, thresholds and the queue's every-14-step timing are illustrative, not measurements. No live providers, cadastral data, human approval, field validation, autonomous action or production readiness is represented.</sub>
+<sub>Concept illustration only. GitHub renders the SVG statically; [open the motion-capable version](docs/VECTOR-MOTION.md). Sources, particles, thresholds and the queue's every-14-step timing are intentionally synthetic.</sub>
 
 - [Governed-orchestration scope and evidence questions](docs/GOVERNED-ORCHESTRATION.md)
 - [Governed-flow scope, reproducibility and limitations](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
@@ -80,16 +80,16 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 
 ## Current Public Status
 
-> **Last complete gate verification: 2026-10-11.** GitHub alpha prerelease `v0.1.3` and its GHCR image are verified; cross-registry publication remains **BLOCKED**. PyPI publication, public fixed-version advisory metadata and the `v0.1.3` Pages deployment are not cleared. The browser demo still uses synthetic `v0.1.1` examples. Independent reproduction remains paused.
+> **Last complete gate verification: 2026-10-11.** GitHub alpha prerelease `v0.1.3` and its GHCR image are verified; cross-registry publication remains **BLOCKED**. PyPI publication, public fixed-version Pages publication and independent reproduction are still unresolved.
 
 | Gate | Current state | Evidence |
 |---|---|---|
-| GitHub / GHCR | Alpha artefacts available; not production approval | [Release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) · [Publication gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
-| PyPI / advisory / Pages | **BLOCKED** — `invalid-publisher` and HTTP 404 were observed in the last documented gate; root cause is not confirmed | [PyPI runbook](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md) · [Gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
+| GitHub / GHCR | Alpha artefacts available; not production approval | [Release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) · [Publication gate](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PROFILE-STATUS-DETAIL.md) |
+| PyPI / advisory / Pages | **BLOCKED** — `invalid-publisher` and HTTP 404 were observed in the last documented gate; root cause is not confirmed | [PyPI runbook](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PROFILE-STATUS-DETAIL.md) |
 | Browser demo | Synthetic `v0.1.1` examples only; does not validate the `v0.1.3` CLI | [Open demo](https://traky12.github.io/castuo-e3-001/) |
 | Independent reproduction (E3-001) | **E3-001 as `PENDING`** — 0 of 2 signed external reviews; reproduction remains paused | [Issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
 
-**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` is the public read-model; it reports state but does not decide technical state or promotion. `Castuo-system` remains the private canonical authority for technical state and promotion, while `castuo-evolution` is a non-canonical workspace. A GitHub prerelease or GHCR image is not equivalent to a successful PyPI release, a current demo, independent reproduction or production approval. See [public status and history](docs/PROFILE-STATUS-DETAIL.md) for details and supporting evidence.
+**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` is the public read-model; it reports state but does not decide technical state or promotion. `Castuo-system` remains the private canonical authority for technical promotion decisions.
 
 ## Selected work
 
@@ -123,7 +123,7 @@ Synthetic examples illustrate defined behaviour; they do not independently valid
 
 <p align="center"><sub>Concept illustration only. It does not represent a deployed system, live sensor feed, field trial, measured agronomic outcome or production validation.</sub></p>
 
-This is the visual direction for the agricultural edge domain explored in [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge). It communicates a possible architecture—field signals, local processing and traceable decisions—not an operational or field-validation claim.
+This is the visual direction for the agricultural edge domain explored in [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge). It communicates a possible architecture—field signals, local processing and reviewable evidence—without claiming a live operational service.
 
 ## Engineering principles
 
@@ -133,7 +133,7 @@ This is the visual direction for the agricultural edge domain explored in [castu
 
 ## Not Claimed
 
-A valid manifest establishes whether files match the recorded digests. A valid signature establishes that a signature verifies under a configured public key and policy. Neither proves that the content is true, nor independently establishes a signer's real-world identity.
+A valid manifest establishes whether files match the recorded digests. A valid signature establishes that a signature verifies under a configured public key and policy. Neither proves that the content itself is true, complete, operational or authoritative.
 
 Independent reproduction, field and production validation, certification, regulatory conformity, paid-customer traction, recurring revenue and production AI autonomy are **not claimed**.
 
