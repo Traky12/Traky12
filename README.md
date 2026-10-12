@@ -23,6 +23,7 @@
   <a href="https://traky12.github.io/castuo-e3-001/"><img src="https://img.shields.io/badge/TRY_THE_DEMO-Examples_v0.1.1-167D78?style=for-the-badge" alt="Try the browser demo using v0.1.1 examples" /></a>
   <a href="https://github.com/Traky12/castuo-e3-001"><img src="https://img.shields.io/badge/EXPLORE-e3bundle-183346?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Explore e3bundle source code" /></a>
   <a href="https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue"><img src="https://img.shields.io/badge/CONTRIBUTE-Start_here-BB6B3D?style=for-the-badge" alt="Find beginner-friendly contribution issues" /></a>
+  <a href="https://discord.gg/tgxmnmPPD"><img src="https://img.shields.io/badge/JOIN_THE_COMMUNITY-Discord-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Join the CASTÚO community on Discord" /></a>
 </p>
 
 > **No claim without provenance. No external claim without reproducible evidence.**
