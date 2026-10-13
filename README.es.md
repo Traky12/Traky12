@@ -68,7 +68,7 @@ La CLI `v0.1.3` es una versión **alfa**. Este recorrido sirve para una evaluaci
 | Reproducción independiente (E3-001) | **PENDING · 0 de 2 revisiones externas firmadas** | La reproducción sigue en pausa · [issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
 | `CONSOLIDATION-1.0` | **BLOCKED** | Traky12 es el read-model público, no la autoridad de promoción técnica |
 
-`Castuo-system` sigue siendo la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` es un espacio de trabajo no canónico. Consulta el [estado público y los gates de evidencia abiertos](docs/PROFILE-STATUS-DETAIL.es.md) para ver el historial y la evidencia completa de publicación.
+La promoción permanece en **CONSOLIDATION-1.0 = BLOCKED**. `Traky12` es el read-model público: informa del estado, pero no decide el estado técnico ni la promoción. `Castuo-system` sigue siendo la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` es un espacio de trabajo no canónico. Consulta el [estado público y los gates de evidencia abiertos](docs/PROFILE-STATUS-DETAIL.es.md) para ver el historial y la evidencia completa de publicación.
 
 ## Sistemas gobernados · cómo se mueve la evidencia
 
