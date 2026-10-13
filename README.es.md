@@ -16,133 +16,84 @@
 </p>
 
 <p align="center">
-  Diseño infraestructura basada en evidencia para operaciones trazables, resilientes sin conexión y revisables de forma independiente.
+  Arquitectura de sistemas orientada a evidencia para operaciones resilientes sin conexión, con procedencia, verificación de integridad y límites de gobernanza de IA.
 </p>
 
 <p align="center">
-  <a href="https://traky12.github.io/castuo-e3-001/"><img src="https://img.shields.io/badge/PROBAR_LA_DEMO-Ejemplos_v0.1.1-167D78?style=for-the-badge" alt="Probar la demo del navegador con ejemplos v0.1.1" /></a>
-  <a href="https://github.com/Traky12/castuo-e3-001"><img src="https://img.shields.io/badge/EXPLORAR-e3bundle-183346?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Explorar el código de e3bundle" /></a>
-  <a href="https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue"><img src="https://img.shields.io/badge/CONTRIBUIR-Empieza_aqui-BB6B3D?style=for-the-badge" alt="Ver issues adecuados para empezar a contribuir" /></a>
-  <a href="https://discord.gg/tgxmnmPPD"><img src="https://img.shields.io/badge/UNIRSE_A_LA_COMUNIDAD-Discord-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Unirse a la comunidad de CASTÚO en Discord" /></a>
+  <strong>Ningún claim sin procedencia. Ningún claim externo sin evidencia reproducible.</strong>
 </p>
 
-> **Ningún claim sin procedencia. Ningún claim externo sin evidencia reproducible.**
+<p align="center">
+  <a href="https://traky12.github.io/castuo-e3-001/">Probar la demo <em>(ejemplos sintéticos v0.1.1)</em></a> ·
+  <a href="https://github.com/Traky12/castuo-e3-001">Código de e3bundle</a> ·
+  <a href="https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue">Contribuir</a> ·
+  <a href="https://discord.gg/tgxmnmPPD">Comunidad</a>
+</p>
 
 ---
 
 ## Herramienta destacada · e3bundle
 
-**[e3bundle](https://github.com/Traky12/castuo-e3-001)** es una herramienta CLI de Python con licencia MIT para crear, firmar y verificar paquetes de evidencia portables sin conexión. Genera manifiestos SHA-256 y verifica firmas Ed25519 conforme a reglas de confianza configuradas explícitamente.
+**[e3bundle](https://github.com/Traky12/castuo-e3-001)** es una herramienta CLI de Python con licencia MIT para crear, firmar y verificar paquetes de evidencia portables sin conexión.
 
-<p align="center">
-  <img src="assets/brand/e3bundle-flow.svg" alt="Flujo e3bundle: archivos de entrada, manifiesto SHA-256, firmas Ed25519, verificación offline y resultado legible por máquina VERIFIED, FAILED o ERROR" width="100%" />
-</p>
+- Registra hashes de archivos en un manifiesto SHA-256 y detecta archivos modificados, ausentes o no declarados.
+- Verifica firmas Ed25519 frente a claves públicas de confianza configuradas explícitamente.
+- Emite resultados delimitados y legibles por máquina para automatización y revisión.
 
-**Qué permite**
-- Detectar archivos modificados, ausentes o añadidos respecto al manifiesto.
-- Comprobar firmas usando las claves públicas y la política de confianza proporcionadas por el operador.
-- Producir un resultado de verificación delimitado, utilizable en scripts y revisiones.
+### Prueba el recorrido de verificación
 
-### Gate de publicación y revisión del código
+El repositorio incluye dos paquetes de ejemplo sintéticos y firmados: [válido](https://github.com/Traky12/castuo-e3-001/tree/main/examples/bundles/valid) y [alterado](https://github.com/Traky12/castuo-e3-001/tree/main/examples/bundles/tampered). El ejemplo alterado cambia un valor de `data/readings.csv`.
 
-La prerelease alfa `v0.1.3` existe en GitHub. Hay una discrepancia documental: el README incluido en ese tag conserva un estado anterior de la release, mientras que el README actual del repositorio documenta el tag para **pruebas alfa delimitadas**. Hasta reconciliar la documentación del tag, este perfil enlaza al código y a la evidencia de publicación, pero no repite un comando de instalación listo para copiar. No es una recomendación para producción.
+Después de seguir la configuración de **evaluación acotada del código fuente** descrita en el [README actual de e3bundle](https://github.com/Traky12/castuo-e3-001/blob/main/README.md#install), ejecuta desde la raíz del repositorio:
 
-- [Instrucciones actuales de release y prueba alfa](https://github.com/Traky12/castuo-e3-001/blob/main/README.md#install)
-- [Inspeccionar el código fijado de `v0.1.3`](https://github.com/Traky12/castuo-e3-001/tree/v0.1.3) · [Consultar las notas de la prerelease](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3)
-- [Consultar el run fallido de PyPI](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766020) · [Consultar el run satisfactorio de GHCR](https://github.com/Traky12/castuo-e3-001/actions/runs/38088766046)
-- [Revisar el gate de publicación y sus bloqueos](docs/PROFILE-STATUS-DETAIL.es.md)
-- [Probar la demo de navegador](https://traky12.github.io/castuo-e3-001/) — solo ejemplos sintéticos `v0.1.1`; no valida la release CLI `v0.1.3`.
+```console
+e3bundle verify examples/bundles/valid --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json --format text
+# Esperado: VERIFIED · salida 0
 
-Los ejemplos sintéticos ilustran el comportamiento definido; no validan de forma independiente CASTÚO-SYSTEM ni demuestran la veracidad de los datos subyacentes.
+e3bundle verify examples/bundles/tampered --min-signatures 2 --trusted-keys examples/bundles/trusted-keys.json --format text
+# Esperado: FAILED · hash mismatch en data/readings.csv · salida 1
+```
 
-## Flujo gobernado · el dato sube, la decisión baja, la evidencia se ancla
-
-<p align="center">
-  <img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Flujo conceptual de CASTÚO-SYSTEM: seis fuentes pasan controles de identidad, procedencia, integridad, permisos y calidad; salidas simuladas atraviesan umbrales de grounding, se abstienen o se convierten en evidencia sintética enlazada con SHA-256. Sin datos en vivo ni claim de producción." width="100%" />
-</p>
-
-**Un modelo de gobernanza, dos flujos acotados.**
-
-- **El dato de campo sube:** Seis fuentes conceptuales llegan a la capa coordinadora solo después de los controles de identidad, procedencia, integridad, permisos y calidad.
-- **La decisión baja (simulación):** Las salidas atraviesan umbrales ilustrativos `0,18 → 0,36 → 0,52`. Las que no alcanzan un umbral se abstienen y dejan una traza; las elegibles entran en una cola simulada y se convierten en eventos sintéticos anclados con SHA-256. No se ejecuta ninguna acción automatizada.
-
-`Captura → Validación → Normalización → Persistencia → Reglas / IA → Decisión explicable → Evidencia`
-
-> **SIMULATION · SYNTHETIC SOURCES · EXPERIMENTAL · NO PRODUCTION CLAIM**
-
-<sub>Solo ilustración conceptual. GitHub muestra el SVG de forma estática; [abre la versión con movimiento](docs/VECTOR-MOTION.es.md). Las fuentes, partículas, umbrales y la temporización de la cola cada 14 pasos son ilustrativos, no mediciones. No se representan proveedores conectados en vivo, datos catastrales, aprobación humana, validación de campo, acción autónoma ni preparación para producción.</sub>
-
-- [Alcance de la orquestación gobernada y preguntas de evidencia](docs/GOVERNED-ORCHESTRATION.md)
-- [Alcance, reproducibilidad y limitaciones del flujo gobernado](docs/GOVERNED-FLOW-SOVEREIGNTY.md)
-- [Estado público y gates de evidencia abiertos](docs/PROFILE-STATUS-DETAIL.es.md)
+La CLI `v0.1.3` es una versión **alfa**. Este recorrido sirve para una evaluación acotada, no constituye una recomendación general de instalación para producción. La demo del navegador ejecuta localmente ejemplos sintéticos `v0.1.1`: permite probar la interacción, pero no valida la CLI `v0.1.3`. Una verificación correcta de integridad o firma no demuestra que el contenido sea verdadero.
 
 ## Estado público actual
 
-> **Última verificación completa de los gates: 2026-10-11.** La prerelease alfa `v0.1.3` de GitHub y su imagen GHCR están verificadas; la publicación coherente en todos los registros continúa **BLOQUEADA**. La publicación en PyPI, los metadatos públicos de versión corregida del aviso y el despliegue de Pages para `v0.1.3` no están desbloqueados. La demo sigue utilizando ejemplos sintéticos `v0.1.1`. La reproducción independiente continúa en pausa.
+> Última verificación completa de los gates de publicación: **2026-10-11**. El documento detallado conserva enlaces a ejecuciones, historial y bloqueos pendientes.
 
-| Gate | Estado actual | Evidencia |
+| Superficie | Estado | Límite / evidencia |
 |---|---|---|
-| GitHub / GHCR | Artefactos alfa disponibles; no implica aprobación para producción | [Release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) · [Gate de publicación](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
-| PyPI / aviso / Pages | **BLOQUEADO** — el último gate documentado observó `invalid-publisher` y HTTP 404; la causa raíz no está confirmada | [Runbook de PyPI](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PYPI-RELEASE-RUNBOOK.es.md) · [Gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
-| Demo de navegador | Solo ejemplos sintéticos `v0.1.1`; no valida la CLI `v0.1.3` | [Abrir demo](https://traky12.github.io/castuo-e3-001/) |
-| Reproducción independiente (E3-001) | **E3-001 como `PENDIENTE`** — 0 de 2 revisiones externas firmadas; la reproducción sigue en pausa | [Issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
+| GitHub / GHCR | Artefactos alfa disponibles | No implica aprobación para producción · [release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) |
+| PyPI / aviso / Pages | **BLOQUEADO** | Se observaron `invalid-publisher` y HTTP 404; la causa raíz no está confirmada · [gate de publicación](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
+| Demo del navegador | Ejemplos sintéticos `v0.1.1` | No valida la CLI `v0.1.3` · [abrir demo](https://traky12.github.io/castuo-e3-001/) |
+| Reproducción independiente (E3-001) | `PENDING` · 0 de 2 revisiones externas firmadas | La reproducción sigue en pausa · [issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
+| `CONSOLIDATION-1.0` | **BLOCKED** | Traky12 es el read-model público, no la autoridad de promoción técnica |
 
-**`CONSOLIDATION-1.0 = BLOCKED`.** `Traky12` cumple el papel de read-model público: informa del estado, pero no decide la autoridad técnica ni la promoción. `Castuo-system` sigue siendo la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` permanece como espacio no canónico (non-canonical), sin autoridad de promoción. Una prerelease de GitHub o una imagen GHCR no equivalen a una release correcta en PyPI, una demo actualizada, reproducción independiente ni aprobación para producción. Consulta el [estado público y el historial](docs/PROFILE-STATUS-DETAIL.es.md) para ver el detalle y la evidencia de apoyo.
+La promoción permanece en **CONSOLIDATION-1.0 = BLOCKED**. `Traky12` es el read-model público: informa del estado, pero no decide el estado técnico ni la promoción. `Castuo-system` sigue siendo la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` es un espacio de trabajo no canónico. Consulta el [estado público y los gates de evidencia abiertos](docs/PROFILE-STATUS-DETAIL.es.md) para ver el historial y la evidencia completa de publicación.
 
-## Trabajo seleccionado
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <strong><a href="https://github.com/Traky12/castuo-evidence">castuo-evidence</a></strong><br />
-      Unidades de evidencia pública seleccionadas, manifiestos y artefactos de reproducibilidad.<br /><br />
-      <sub>Enfoque: procedencia · revisabilidad</sub>
-    </td>
-    <td width="33%" valign="top">
-      <strong><a href="https://github.com/Traky12/castuo-agro-edge">castuo-agro-edge</a></strong><br />
-      Experimentos de runtime edge e IoT offline-first; no se promocionan claims de campo ni de producción.<br /><br />
-      <sub>Enfoque: continuidad · sistemas edge</sub>
-    </td>
-    <td width="33%" valign="top">
-      <strong><a href="https://github.com/Traky12/Cast-o">Cast-o</a></strong><br />
-      Herramientas de prueba y aseguramiento. La suite es parcialmente ejecutable; el benchmarking aún no está demostrado y la licencia sigue bajo revisión de propiedad intelectual.<br /><br />
-      <sub>Enfoque: pruebas · assurance</sub>
-    </td>
-  </tr>
-</table>
-
-[Mapa completo de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Límites de claims públicos](PUBLIC_CLAIM_BOUNDARY.es.md) · [Índice de evidencia](evidence-center/README.md)
-
-## Sistemas agro-edge · ámbito de aplicación
+## Sistemas gobernados · cómo se mueve la evidencia
 
 <p align="center">
-  <img src="assets/brand/agro-edge-concept.svg" alt="Ilustración conceptual que conecta señales de cultivo y sensores con procesamiento edge local y evidencia revisable; no representa un despliegue real" width="100%" />
+  <img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Flujo gobernado conceptual: las fuentes pasan controles de identidad, procedencia, integridad, permisos y calidad; las salidas simuladas se abstienen o se convierten en evidencia sintética enlazada con SHA-256. Sin datos en vivo ni claim de producción." width="100%" />
 </p>
 
-<p align="center"><sub>Solo ilustración conceptual. No representa un sistema desplegado, señales de sensores en vivo, una prueba de campo, resultados agronómicos medidos ni validación de producción.</sub></p>
+Es una **simulación conceptual**: las fuentes, los umbrales y la temporización de la cola son ilustrativos, no mediciones ni integraciones en vivo. No representa validación de campo, acción autónoma ni preparación para producción. Consulta el [alcance y las preguntas de evidencia](docs/GOVERNED-ORCHESTRATION.md).
 
-Esta es la línea visual del ámbito agrícola edge explorado en [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge). Representa una arquitectura posible —señales de campo, procesamiento local y decisiones trazables—, no un claim operativo ni de validación en campo.
-
-## Principios de ingeniería
-
-- **Trazabilidad antes que afirmaciones.** Vincular los claims con fuentes inspeccionables y comprobaciones reproducibles.
-- **Fail-closed.** La falta de confianza, un estado ambiguo o la ausencia de evidencia no deben convertirse silenciosamente en éxito.
-- **Capacidad no equivale a madurez.** `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
+Trabajo seleccionado: [castuo-evidence](https://github.com/Traky12/castuo-evidence) · [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge) (experimentos edge/IoT; no se declara validación de campo) · [Cast-o](https://github.com/Traky12/Cast-o) (herramientas de assurance; el benchmarking no está demostrado y la licencia sigue bajo revisión de propiedad intelectual).
 
 ## No se declara
 
-Un manifiesto válido permite comprobar si los archivos coinciden con los hashes registrados. Una firma válida demuestra que esa firma verifica con una clave pública y una política configuradas. Ninguna de las dos cosas demuestra que el contenido sea verdadero ni establece de forma independiente la identidad real del firmante.
+Un resultado `VERIFIED` significa que los archivos declarados coinciden con el manifiesto y se satisface la política de firmas configurada. No demuestra que el contenido sea verdadero ni establece de forma independiente la identidad real del firmante.
 
-No se declaran como alcanzadas la reproducción independiente, la validación de campo o producción, la certificación, la conformidad regulatoria, los clientes de pago, los ingresos recurrentes ni la autonomía de IA en producción.
+No se declaran como alcanzadas la reproducción independiente, la validación de campo o producción, la certificación, la conformidad regulatoria, los clientes de pago, los ingresos recurrentes ni la autonomía de IA en producción. Capacidad no equivale a madurez: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## Contribuir
 
-Empieza con un cambio acotado y reproducible:
+Empieza con una contribución acotada y reproducible:
+
 - [Issues adecuados para empezar](https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue)
 - [Guía de contribución](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md)
 - [Política de seguridad](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
-
-## Enlaces
+- [Mapa completo de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Límites de claims públicos](PUBLIC_CLAIM_BOUNDARY.es.md) · [Índice de evidencia](evidence-center/README.md)
 
 <p align="center">
   <a href="https://orcid.org/0009-0007-3489-0565">ORCID</a> ·
@@ -150,5 +101,5 @@ Empieza con un cambio acotado y reproducible:
 </p>
 
 <p align="center">
-  <sub>`Traky12` es la vista pública de estado. La autoridad técnica canónica y las decisiones de promoción permanecen en el repositorio privado `Castuo-system`.</sub>
+  <sub><code>Traky12</code> es el read-model público. La autoridad técnica canónica y las decisiones de promoción permanecen en el repositorio privado <code>Castuo-system</code>.</sub>
 </p>
