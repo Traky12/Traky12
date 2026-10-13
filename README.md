@@ -58,7 +58,7 @@ The CLI release `v0.1.3` is an **alpha**. This source-level path is for bounded 
 
 ## Current Public Status
 
-> Last complete release-gate verification: **2026-10-11**. The detailed status document preserves run links, history and unresolved gates.
+> Profile status reviewed: **2026-10-13**. Last complete release-gate verification remains **2026-10-11**; this review does not claim a new release-gate run. Detailed status preserves run links, history and unresolved gates.
 
 | Surface | State | Boundary / evidence |
 |---|---|---|
