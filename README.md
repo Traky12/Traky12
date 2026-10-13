@@ -65,7 +65,7 @@ The CLI release `v0.1.3` is an **alpha**. This source-level path is for bounded 
 | GitHub / GHCR | Alpha artefacts available | Not production approval · [release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) |
 | PyPI / advisory / Pages | **BLOCKED** | `invalid-publisher` and HTTP 404 were observed; root cause is not confirmed · [publication gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
 | Browser demo | Synthetic `v0.1.1` examples | Does not validate the `v0.1.3` CLI · [open demo](https://traky12.github.io/castuo-e3-001/) |
-| Independent reproduction (E3-001) | **PENDING · 0 of 2 signed external reviews** | Reproduction remains paused · [issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
+| Independent reproduction (E3-001) | `PENDING` · 0 of 2 signed external reviews | Reproduction remains paused · [issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
 | `CONSOLIDATION-1.0` | **BLOCKED** | Traky12 is the public read-model, not technical promotion authority |
 
 Promotion remains **CONSOLIDATION-1.0 = BLOCKED**. `Traky12` is the public read-model; it reports status but does not decide technical state or promotion. `Castuo-system` remains the private canonical authority for technical state and promotion. `castuo-evolution` is a non-canonical workspace. See [public status and open evidence gates](docs/PROFILE-STATUS-DETAIL.md) for the complete release history and evidence.
