@@ -95,6 +95,13 @@ Start with one bounded, reproducible contribution:
 - [Security policy](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
 - [Full repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Public claim boundary](PUBLIC_CLAIM_BOUNDARY.md) · [Evidence index](evidence-center/README.md)
 
+## Contact
+
+For technical collaboration, independent review or pilot discussions:
+
+- LinkedIn: [CASTÚO-SYSTEM™](https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/)
+- GitHub: [@Traky12](https://github.com/Traky12)
+
 <p align="center">
   <a href="https://orcid.org/0009-0007-3489-0565">ORCID</a> ·
   <a href="README.es.md">Versión en español</a>
