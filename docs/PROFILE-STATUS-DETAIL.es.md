@@ -13,6 +13,20 @@ La fecha de revisión y la fecha del gate técnico se mantienen separadas delibe
 
 Esta actualización documental no presupone un nuevo informe de tester externo, una firma independiente, un replay de OVS-01, publicación en PyPI, confirmación del aviso ni despliegue de Pages.
 
+## Incidencia de gobernanza del núcleo — 2026-10-13
+
+**Estado público:** `GOVERNANCE_INCIDENT = OPEN` · `POST_MERGE_FAILURE_CAUSE = UNDETERMINED` · `SYSTEM_PROMOTION = BLOCKED`.
+
+El repositorio privado canónico `Castuo-system` registra que PR #564 se fusionó sin que todos los gates de gobernanza anotados estuvieran respaldados por evidencia de cierre. Seis workflows posteriores a la fusión muestran `FAILURE`; los datos de jobs no aportaron pasos utilizables, los 15 intentos de descarga de logs respondieron `404 BlobNotFound` y no había artefactos disponibles para esos runs.
+
+Esto establece una incidencia de evidencia/proceso, no una causa raíz. La evidencia disponible no permite afirmar un fallo de tests de código, regresión, caída de GitHub Actions ni CI satisfactorio tras la fusión. La degradación de estado de GitHub comunicada el 12 de octubre se resolvió antes de la fusión y se conserva como contexto, no como causa demostrada. Otro reporte comunitario con síntomas parecidos también es no concluyente.
+
+Siguen pendientes la confirmación directa del titular sobre si publicó manualmente el contenido y la URL pública, si existe. También están pendientes la prueba de acceso/alcance/rol de LinkedIn y una revisión humana independiente del merge commit. El perfil no afirma que la publicación haya ocurrido ni que no haya ocurrido.
+
+En el proceso registrado no se reejecutó el workflow de publicación, no se ejecutó una publicación ni se intentó un revert. El workflow que combina preflight y publicación sigue bloqueado; no se ha demostrado una ruta `PREFLIGHT_ONLY` ejecutada de forma independiente. El registro completo, con las referencias exactas de runs, permanece en el repositorio privado canónico.
+
+**Límite de interpretación:** el inventario de capacidades no equivale a una verificación en ejecución. Esta incidencia, por sí sola, ni promociona ni invalida evidencia histórica de capacidades concretas; cada afirmación debe seguir acotada al artefacto, alcance y prueba específicos.
+
 ## Puerta actual de publicación y validación — 2026-10-11
 
 - **GitHub:** existe [`v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) como prerelease alfa pública, publicada el 2026-10-10. La release no tiene assets adjuntos manualmente. Es distinto de una release aprobada y publicada de forma coherente en todos los registros.
