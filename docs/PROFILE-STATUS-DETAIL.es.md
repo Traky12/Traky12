@@ -1,6 +1,17 @@
 # CASTÚO-SYSTEM — detalle del estado público
 
-Detalle del estado y del contexto histórico del README del perfil. Actualizado el 2026-10-11; el README del perfil contiene el resumen público y este documento conserva el estado de apoyo y el registro histórico.
+Detalle del estado y del contexto histórico del README del perfil. Revisión documental actualizada el 2026-10-13. La verificación completa de los gates de publicación documentada abajo sigue fechada el 2026-10-11; este cambio reconcilia documentación y no constituye una nueva ejecución del workflow. El README del perfil contiene el resumen público y este documento conserva el estado de apoyo y el registro histórico.
+
+## Reconciliación documental — 2026-10-13
+
+La fecha de revisión y la fecha del gate técnico se mantienen separadas deliberadamente. El último resultado completo del gate documentado aquí es la [ejecución 38137298070](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070); este cambio no afirma que el gate se haya vuelto a ejecutar.
+
+- Pasaron el build y las pruebas de interfaz Chromium, Firefox y WebKit de esa ejecución. También pasó el requisito de identidad legal. El paso del gate de publicación registró `release=true, pypi=false, ghcr=true, advisory=false`, y el job `deploy` quedó omitido. Que el job termine correctamente significa que la lógica del gate se ejecutó, no que se cumplieran todos los requisitos de publicación.
+- El estado público de E3-001 sigue en `Independent foreign replay: PENDING`, `Runner attestation: PENDING`, `Signed human review: PENDING · quorum 0/2`, `G2: REVIEW_REQUIRED`, `staging-rls handoff: BLOCKED` y `Promotion: BLOCKED` ([estado público canónico](https://github.com/Traky12/castuo-e3-001/blob/main/STATUS.md)). La solicitud de segundo operador para CP-3 continúa abierta y pendiente ([issue #86](https://github.com/Traky12/castuo-e3-001/issues/86)).
+- La convocatoria de cinco testers sigue pausada mientras no se resuelvan los gates de PyPI, aviso y Pages ([issue #30](https://github.com/Traky12/castuo-e3-001/issues/30)). Sus instrucciones históricas de CLI corresponden a `v0.1.1` y no se deben contabilizar como reproducción de `v0.1.3`.
+- La discrepancia entre el README de la etiqueta inmutable `v0.1.3` y el texto de publicación de la rama por defecto se sigue por separado en el [issue #87](https://github.com/Traky12/castuo-e3-001/issues/87). No reescribir la etiqueta antigua ni inferir disponibilidad multi-registro a partir de una release de GitHub o una imagen GHCR.
+
+Esta actualización documental no presupone un nuevo informe de tester externo, una firma independiente, un replay de OVS-01, publicación en PyPI, confirmación del aviso ni despliegue de Pages.
 
 ## Puerta actual de publicación y validación — 2026-10-11
 

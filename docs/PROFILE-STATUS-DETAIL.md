@@ -1,6 +1,17 @@
 # CASTÚO-SYSTEM — public status detail
 
-Detailed status and historical context for the profile README. Updated 2026-10-11; the profile README is the concise public snapshot, while this document holds supporting status and history.
+Detailed status and historical context for the profile README. Document review updated 2026-10-13. The complete release-gate verification documented below remains dated 2026-10-11; this edit is a documentary reconciliation, not a new workflow run. The profile README is the concise public snapshot, while this document holds supporting status and history.
+
+## Documentary reconciliation — 2026-10-13
+
+This review date and the technical gate date are deliberately separate. The last complete release-gate result documented here is [workflow run 38137298070](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070); this change does not assert that the gate was re-executed.
+
+- The run's build job and Chromium, Firefox and WebKit UI jobs passed. The legal-identity prerequisite passed. The publication-gate step reported `release=true, pypi=false, ghcr=true, advisory=false`, and the `deploy` job was skipped. A successful job conclusion means the gate logic executed; it does not mean all publication prerequisites passed.
+- The public E3-001 status remains `Independent foreign replay: PENDING`, `Runner attestation: PENDING`, `Signed human review: PENDING · quorum 0/2`, `G2: REVIEW_REQUIRED`, `staging-rls handoff: BLOCKED`, and `Promotion: BLOCKED` ([canonical public status](https://github.com/Traky12/castuo-e3-001/blob/main/STATUS.md)). The CP-3 second-operator request remains open and pending ([issue #86](https://github.com/Traky12/castuo-e3-001/issues/86)).
+- The five-tester recruitment issue remains paused while PyPI, advisory and Pages gates are unresolved ([issue #30](https://github.com/Traky12/castuo-e3-001/issues/30)). Its historical CLI instructions target `v0.1.1` and must not be counted as a reproduction of `v0.1.3`.
+- The mismatch between the immutable `v0.1.3` tag README and the current default-branch release wording is tracked separately in [issue #87](https://github.com/Traky12/castuo-e3-001/issues/87). Do not rewrite the old tag or infer cross-registry availability from a GitHub release or GHCR image.
+
+No new external tester report, independent signature, OVS-01 replay, PyPI publication, advisory confirmation or Pages deployment is inferred from this documentation update.
 
 ## Current public release and validation gate — 2026-10-11
 

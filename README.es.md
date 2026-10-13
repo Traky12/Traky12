@@ -58,7 +58,7 @@ La CLI `v0.1.3` es una versión **alfa**. Este recorrido sirve para una evaluaci
 
 ## Estado público actual
 
-> Última verificación completa de los gates de publicación: **2026-10-11**. El documento detallado conserva enlaces a ejecuciones, historial y bloqueos pendientes.
+> Estado del perfil revisado: **2026-10-13**. La última verificación completa de los gates de publicación sigue siendo **2026-10-11**; esta revisión no declara una nueva ejecución del gate. El documento detallado conserva enlaces a ejecuciones, historial y bloqueos pendientes.
 
 | Superficie | Estado | Límite / evidencia |
 |---|---|---|
