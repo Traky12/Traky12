@@ -13,6 +13,20 @@ This review date and the technical gate date are deliberately separate. The last
 
 No new external tester report, independent signature, OVS-01 replay, PyPI publication, advisory confirmation or Pages deployment is inferred from this documentation update.
 
+## Core governance incident — 2026-10-13
+
+**Public status:** `GOVERNANCE_INCIDENT = OPEN` · `POST_MERGE_FAILURE_CAUSE = UNDETERMINED` · `SYSTEM_PROMOTION = BLOCKED`.
+
+The private canonical `Castuo-system` repository records that PR #564 merged while its registered governance gates were not all evidenced as closed. Six post-merge workflows report `FAILURE`; available job data did not include usable steps, 15 job-log download attempts returned `404 BlobNotFound`, and no artifacts were available for those runs.
+
+This establishes an evidence/incident condition, not a root cause. The available evidence does not justify claims of a source-level test failure, code regression, GitHub Actions outage, or successful post-merge CI. The GitHub status degradation reported for 12 October was resolved before the merge and remains contextual, not causal evidence. A separate community report with similar symptoms is also non-conclusive.
+
+The account owner's direct confirmation of whether a manual LinkedIn post exists, and any public URL, remains pending. LinkedIn API access/scope/page-role evidence and an independent human review of the merge commit are also pending. The current profile does not claim that publication happened or did not happen.
+
+No publication workflow rerun, publication execution, or revert is recorded by the incident session. A workflow that combines preflight and publication remains blocked; an independently executed `PREFLIGHT_ONLY` path has not been demonstrated. The core incident record in the private canonical repository retains the full evidence and exact run references.
+
+**Interpretation boundary:** capability inventory is not runtime verification. This incident alone neither promotes nor erases individual historical capability evidence; capability claims must stay bounded to their own exact artifact, scope and test.
+
 ## Current public release and validation gate — 2026-10-11
 
 - **GitHub:** [`v0.1.3`](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) exists as a public alpha prerelease, published on 2026-10-10. The release has no manually attached assets. This is distinct from an approved, cross-registry release.
