@@ -56,7 +56,26 @@ e3bundle verify examples/bundles/tampered --min-signatures 2 --trusted-keys exam
 # Expected: FAILED · hash mismatch in data/readings.csv · exit 1
 ```
 
-The CLI release `v0.1.3` is an **alpha**. This source-level path is for bounded evaluation, not a general production-install recommendation. The browser demo runs synthetic `v0.1.1` examples locally; it is useful for trying the interaction, but does not validate the `v0.1.3` CLI. A successful integrity or signature check does not prove the underlying content is true.
+The CLI release `v0.1.3` is an **alpha**. This source-level path is for bounded evaluation, not a general production-install recommendation. The browser demo runs synthetic `v0.1.1` examples locally; it is useful for trying the interaction, but does not validate the `v0.1.3` CLI.
+
+## What VERIFIED means
+
+A `VERIFIED` result means that:
+
+- The declared files match the SHA-256 manifest.
+- No required file has been detected as changed or missing.
+- The configured signature policy has been satisfied.
+- The supplied trusted-key configuration accepted the required signatures.
+
+It does **not** prove that:
+
+- The underlying content is true.
+- The evidence was collected correctly in the real world.
+- The signer's real-world identity has been independently confirmed.
+- The operation was performed in the field.
+- The system is certified, production-ready or compliant with a regulation.
+
+Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
 
 ## Current Public Status
 
