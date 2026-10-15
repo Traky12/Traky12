@@ -73,7 +73,7 @@ It does **not** prove that:
 - The evidence was collected correctly in the real world.
 - The signer's real-world identity has been independently confirmed.
 - The operation was performed in the field.
-- The system is certified, production-ready or compliant with a regulation.
+- Independent third-party assurance, production readiness or regulatory compliance has not been established.
 
 Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
 
@@ -107,7 +107,7 @@ It does **not** establish that the underlying content is true, that evidence was
 
 Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
 
-## Not claimed
+## Not Claimed
 
 The following are not claimed:
 
