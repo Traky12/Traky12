@@ -1,4 +1,4 @@
-# Gregorio Julián Jiménez Bodes · Traky12
+# Traky12 · CASTÚO-SYSTEM™
 
 <p align="center">
   <img src="assets/brand/profile-header.svg" alt="Evidence-first systems engineering: traceability, offline-first and assurance" width="100%" />
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  Evidence-driven systems architecture for offline-resilient operations, with provenance, integrity verification and AI governance boundaries.
+  I design offline-capable systems that preserve data provenance, integrity checks and explicit boundaries for AI-assisted decisions.
 </p>
 
 <p align="center">
@@ -32,13 +32,15 @@
 
 ---
 
-## Featured tool · e3bundle
+## Featured open-source prototype · e3bundle
 
 **[e3bundle](https://github.com/Traky12/castuo-e3-001)** is a small MIT-licensed Python CLI for creating, signing and verifying portable evidence bundles offline.
 
 - Records file digests in a SHA-256 manifest and detects changed, missing or undeclared files.
 - Verifies Ed25519 signatures against explicitly configured trusted public keys.
 - Produces bounded, machine-readable results for automation and review.
+
+> **Scope warning:** These examples are synthetic and locally verifiable. They demonstrate bundle integrity and signature-policy checks only. They do not validate field data, operational performance or production readiness.
 
 ### Try the verification path
 
@@ -54,22 +56,38 @@ e3bundle verify examples/bundles/tampered --min-signatures 2 --trusted-keys exam
 # Expected: FAILED · hash mismatch in data/readings.csv · exit 1
 ```
 
-The CLI release `v0.1.3` is an **alpha**. This source-level path is for bounded evaluation, not a general production-install recommendation. The browser demo runs synthetic `v0.1.1` examples locally; it is useful for trying the interaction, but does not validate the `v0.1.3` CLI. A successful integrity or signature check does not prove the underlying content is true.
+The CLI release `v0.1.3` is an **alpha**. This source-level path is for bounded evaluation, not a general production-install recommendation. The browser demo runs synthetic `v0.1.1` examples locally; it is useful for trying the interaction, but does not validate the `v0.1.3` CLI.
+
+## What VERIFIED means
+
+A `VERIFIED` result means that:
+
+- The declared files match the SHA-256 manifest.
+- No required file has been detected as changed or missing.
+- The configured signature policy has been satisfied.
+- The supplied trusted-key configuration accepted the required signatures.
+
+It does **not** prove that:
+
+- The underlying content is true.
+- The evidence was collected correctly in the real world.
+- The signer's real-world identity has been independently confirmed.
+- The operation was performed in the field.
+- Independent third-party assurance, production readiness or regulatory compliance has not been established.
+
+Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
 
 ## Current Public Status
 
-> Profile status reviewed: **2026-10-13**. Last complete release-gate verification remains **2026-10-11**; this review does not claim a new release-gate run. Detailed status preserves run links, history and unresolved gates.
+The public tool is an **alpha**, not a production-approved release.
 
-| Surface | State | Boundary / evidence |
-|---|---|---|
-| GitHub / GHCR | Alpha artefacts available | Not production approval · [release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) |
-| PyPI / advisory / Pages | **BLOCKED** | `invalid-publisher` and HTTP 404 were observed; root cause is not confirmed · [publication gate](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
-| Browser demo | Synthetic `v0.1.1` examples | Does not validate the `v0.1.3` CLI · [open demo](https://traky12.github.io/castuo-e3-001/) |
-| Independent reproduction (E3-001) | `PENDING` · 0 of 2 signed external reviews | Reproduction remains paused · [issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
-| `CONSOLIDATION-1.0` | **BLOCKED** | Traky12 is the public read-model, not technical promotion authority |
-| CASTÚO-SYSTEM core governance (2026-10-13) | **OPEN · PROMOTION BLOCKED** | Six post-merge workflows report failure, but steps/logs are unavailable; cause undetermined. Independent review and owner-side LinkedIn confirmation remain pending. |
+- Independent E3-001 reproduction: `PENDING`.
+- Publication and deployment gates remain open.
+- `CONSOLIDATION-1.0 = BLOCKED`.
 
-Promotion remains **CONSOLIDATION-1.0 = BLOCKED**. `Traky12` is the public read-model; it reports status but does not decide technical state or promotion. `Castuo-system` remains the private canonical authority for technical state and promotion. `castuo-evolution` is a non-canonical workspace. See [public status and open evidence gates](docs/PROFILE-STATUS-DETAIL.md) for the complete release history and evidence.
+`Traky12` is the public read-model, not the technical authority. `Castuo-system` is the private canonical authority for technical state and promotion. `castuo-evolution` is a non-canonical workspace.
+
+For dated evidence, unresolved gates and workflow history, see the [public status detail](docs/PROFILE-STATUS-DETAIL.md). Current capability must not be confused with maturity: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## Governed systems · how evidence moves
 
@@ -81,11 +99,29 @@ This is a **conceptual simulation**: sources, thresholds and queue timing are il
 
 Selected work: [castuo-evidence](https://github.com/Traky12/castuo-evidence) · [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge) (edge/IoT experiments; field validation not claimed) · [Cast-o](https://github.com/Traky12/Cast-o) (assurance tooling; benchmarking remains unevidenced and licensing is under IP review).
 
+## What `VERIFIED` means
+
+A `VERIFIED` result means that the declared files match the SHA-256 manifest, no required file has been detected as changed or missing, the configured signature policy has been satisfied, and the supplied trusted-key configuration accepted the required signatures.
+
+It does **not** establish that the underlying content is true, that evidence was collected correctly in the real world, that the signer's real-world identity was independently confirmed, or that an operation was performed in the field. It also does not establish independent third-party assurance, production readiness or regulatory compliance.
+
+Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
+
 ## Not Claimed
 
-A `VERIFIED` result means the declared files match their manifest and the configured signature policy is satisfied. It does not prove that the content is true or independently establish a signer's real-world identity.
+The following are not claimed:
 
-Independent reproduction, field and production validation, certification, regulatory conformity, paid-customer traction, recurring revenue and production AI autonomy are **not claimed**. Capability is not maturity: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
+- Independent reproduction of E3-001.
+- Field validation.
+- Production validation.
+- Third-party conformity assessment.
+- Regulatory conformity.
+- Paid-customer traction.
+- Recurring revenue.
+- Production AI autonomy.
+- Production readiness of the current alpha artefacts.
+
+Capability is not maturity: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## Contribute
 

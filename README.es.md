@@ -1,4 +1,4 @@
-# Gregorio Julián Jiménez Bodes · Traky12
+# Traky12 · CASTÚO-SYSTEM™
 
 <p align="center">
   <img src="assets/brand/profile-header.svg" alt="Ingeniería de sistemas basada en evidencia: trazabilidad, funcionamiento offline-first y aseguramiento" width="100%" />
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  Arquitectura de sistemas orientada a evidencia para operaciones resilientes sin conexión, con procedencia, verificación de integridad y límites de gobernanza de IA.
+  Diseño sistemas capaces de operar sin conexión que preservan la procedencia de los datos, las comprobaciones de integridad y límites explícitos para las decisiones asistidas por IA.
 </p>
 
 <p align="center">
@@ -32,13 +32,15 @@
 
 ---
 
-## Herramienta destacada · e3bundle
+## Prototipo de código abierto destacado · e3bundle
 
 **[e3bundle](https://github.com/Traky12/castuo-e3-001)** es una herramienta CLI de Python con licencia MIT para crear, firmar y verificar paquetes de evidencia portables sin conexión.
 
 - Registra hashes de archivos en un manifiesto SHA-256 y detecta archivos modificados, ausentes o no declarados.
 - Verifica firmas Ed25519 frente a claves públicas de confianza configuradas explícitamente.
 - Emite resultados delimitados y legibles por máquina para automatización y revisión.
+
+> **Límite de la demostración:** Estos ejemplos son sintéticos y verificables localmente. Solo demuestran la integridad del paquete y las comprobaciones de la política de firmas. No validan datos de campo, rendimiento operativo ni preparación para producción.
 
 ### Prueba el recorrido de verificación
 
@@ -58,18 +60,15 @@ La CLI `v0.1.3` es una versión **alfa**. Este recorrido sirve para una evaluaci
 
 ## Estado público actual
 
-> Estado del perfil revisado: **2026-10-13**. La última verificación completa de los gates de publicación sigue siendo **2026-10-11**; esta revisión no declara una nueva ejecución del gate. El documento detallado conserva enlaces a ejecuciones, historial y bloqueos pendientes.
+La herramienta pública sigue siendo una **versión alfa**, no un lanzamiento autorizado para producción.
 
-| Superficie | Estado | Límite / evidencia |
-|---|---|---|
-| GitHub / GHCR | Artefactos alfa disponibles | No implica aprobación para producción · [release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) |
-| PyPI / aviso / Pages | **BLOQUEADO** | Se observaron `invalid-publisher` y HTTP 404; la causa raíz no está confirmada · [gate de publicación](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
-| Demo del navegador | Ejemplos sintéticos `v0.1.1` | No valida la CLI `v0.1.3` · [abrir demo](https://traky12.github.io/castuo-e3-001/) |
-| Reproducción independiente (E3-001) | `PENDING` · 0 de 2 revisiones externas firmadas | La reproducción sigue en pausa · [issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
-| `CONSOLIDATION-1.0` | **BLOCKED** | Traky12 es el read-model público, no la autoridad de promoción técnica |
-| Gobernanza del núcleo CASTÚO-SYSTEM (2026-10-13) | **OPEN · PROMOTION BLOCKED** | Seis workflows posteriores a la fusión registran fallo, pero no hay pasos/logs utilizables; causa indeterminada. Siguen pendientes la revisión independiente y la confirmación del titular sobre LinkedIn. |
+- Reproducción independiente de E3-001: `PENDIENTE` (`PENDING`).
+- Las puertas de publicación y despliegue siguen abiertas.
+- `CONSOLIDATION-1.0 = BLOCKED`.
 
-La promoción permanece en **CONSOLIDATION-1.0 = BLOCKED**. `Traky12` es el read-model público: informa del estado, pero no decide el estado técnico ni la promoción. `Castuo-system` sigue siendo la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` es un espacio de trabajo no canónico. Consulta el [estado público y los gates de evidencia abiertos](docs/PROFILE-STATUS-DETAIL.es.md) para ver el historial y la evidencia completa de publicación.
+`Traky12` es el read-model público, no la autoridad técnica. `Castuo-system` es la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` es un espacio de trabajo no canónico.
+
+Consulta la [evidencia fechada, los bloqueos y el historial de workflows](docs/PROFILE-STATUS-DETAIL.es.md). La capacidad actual no debe confundirse con la madurez: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## Sistemas gobernados · cómo se mueve la evidencia
 
