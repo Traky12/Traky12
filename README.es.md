@@ -58,9 +58,15 @@ La CLI `v0.1.3` es una versión **alfa**. Este recorrido sirve para una evaluaci
 
 ## Estado público actual
 
-La herramienta pública sigue siendo una **versión alfa**, no un lanzamiento autorizado para producción. La reproducción independiente continúa pendiente y siguen abiertos los gates de publicación/despliegue. El núcleo de CASTÚO-SYSTEM está **bloqueado para promoción**; este perfil informa del estado público, pero no es la autoridad técnica.
+La herramienta pública sigue siendo una **versión alfa**, no un lanzamiento autorizado para producción.
 
-Para consultar la evidencia fechada, los bloqueos pendientes, el historial de ejecuciones y los límites de autoridad, visita el [detalle del estado público](docs/PROFILE-STATUS-DETAIL.es.md). La capacidad actual no debe confundirse con la madurez: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
+- Reproducción independiente de E3-001: `PENDIENTE` (`PENDING`).
+- Las puertas de publicación y despliegue siguen abiertas.
+- `CONSOLIDATION-1.0 = BLOCKED`.
+
+`Traky12` es el read-model público, no la autoridad técnica. `Castuo-system` es la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` es un espacio de trabajo no canónico.
+
+Consulta la [evidencia fechada, los bloqueos y el historial de workflows](docs/PROFILE-STATUS-DETAIL.es.md). La capacidad actual no debe confundirse con la madurez: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## Sistemas gobernados · cómo se mueve la evidencia
 
