@@ -58,18 +58,9 @@ La CLI `v0.1.3` es una versión **alfa**. Este recorrido sirve para una evaluaci
 
 ## Estado público actual
 
-> Estado del perfil revisado: **2026-10-13**. La última verificación completa de los gates de publicación sigue siendo **2026-10-11**; esta revisión no declara una nueva ejecución del gate. El documento detallado conserva enlaces a ejecuciones, historial y bloqueos pendientes.
+La herramienta pública sigue siendo una **versión alfa**, no un lanzamiento autorizado para producción. La reproducción independiente continúa pendiente y siguen abiertos los gates de publicación/despliegue. El núcleo de CASTÚO-SYSTEM está **bloqueado para promoción**; este perfil informa del estado público, pero no es la autoridad técnica.
 
-| Superficie | Estado | Límite / evidencia |
-|---|---|---|
-| GitHub / GHCR | Artefactos alfa disponibles | No implica aprobación para producción · [release](https://github.com/Traky12/castuo-e3-001/releases/tag/v0.1.3) |
-| PyPI / aviso / Pages | **BLOQUEADO** | Se observaron `invalid-publisher` y HTTP 404; la causa raíz no está confirmada · [gate de publicación](https://github.com/Traky12/castuo-e3-001/actions/runs/38137298070/job/114463677768) |
-| Demo del navegador | Ejemplos sintéticos `v0.1.1` | No valida la CLI `v0.1.3` · [abrir demo](https://traky12.github.io/castuo-e3-001/) |
-| Reproducción independiente (E3-001) | `PENDING` · 0 de 2 revisiones externas firmadas | La reproducción sigue en pausa · [issue #30](https://github.com/Traky12/castuo-e3-001/issues/30) |
-| `CONSOLIDATION-1.0` | **BLOCKED** | Traky12 es el read-model público, no la autoridad de promoción técnica |
-| Gobernanza del núcleo CASTÚO-SYSTEM (2026-10-13) | **OPEN · PROMOTION BLOCKED** | Seis workflows posteriores a la fusión registran fallo, pero no hay pasos/logs utilizables; causa indeterminada. Siguen pendientes la revisión independiente y la confirmación del titular sobre LinkedIn. |
-
-La promoción permanece en **CONSOLIDATION-1.0 = BLOCKED**. `Traky12` es el read-model público: informa del estado, pero no decide el estado técnico ni la promoción. `Castuo-system` sigue siendo la autoridad privada canónica para el estado técnico y la promoción. `castuo-evolution` es un espacio de trabajo no canónico. Consulta el [estado público y los gates de evidencia abiertos](docs/PROFILE-STATUS-DETAIL.es.md) para ver el historial y la evidencia completa de publicación.
+Para consultar la evidencia fechada, los bloqueos pendientes, el historial de ejecuciones y los límites de autoridad, visita el [detalle del estado público](docs/PROFILE-STATUS-DETAIL.es.md). La capacidad actual no debe confundirse con la madurez: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## Sistemas gobernados · cómo se mueve la evidencia
 
