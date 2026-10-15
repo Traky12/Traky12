@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  Arquitectura de sistemas orientada a evidencia para operaciones resilientes sin conexión, con procedencia, verificación de integridad y límites de gobernanza de IA.
+  Diseño sistemas basados en evidencia para operar de forma resiliente sin conexión. Mi trabajo se centra en la procedencia de los datos, la verificación de integridad y límites claros para las decisiones asistidas por IA.
 </p>
 
 <p align="center">
