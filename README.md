@@ -1,4 +1,4 @@
-# Gregorio Julián Jiménez Bodes · Traky12
+# Traky12 · CASTÚO-SYSTEM™
 
 <p align="center">
   <img src="assets/brand/profile-header.svg" alt="Evidence-first systems engineering: traceability, offline-first and assurance" width="100%" />
@@ -99,11 +99,29 @@ This is a **conceptual simulation**: sources, thresholds and queue timing are il
 
 Selected work: [castuo-evidence](https://github.com/Traky12/castuo-evidence) · [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge) (edge/IoT experiments; field validation not claimed) · [Cast-o](https://github.com/Traky12/Cast-o) (assurance tooling; benchmarking remains unevidenced and licensing is under IP review).
 
-## Not Claimed
+## What `VERIFIED` means
 
-A `VERIFIED` result means the declared files match their manifest and the configured signature policy is satisfied. It does not prove that the content is true or independently establish a signer's real-world identity.
+A `VERIFIED` result means that the declared files match the SHA-256 manifest, no required file has been detected as changed or missing, the configured signature policy has been satisfied, and the supplied trusted-key configuration accepted the required signatures.
 
-Independent reproduction, field and production validation, certification, regulatory conformity, paid-customer traction, recurring revenue and production AI autonomy are **not claimed**. Capability is not maturity: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
+It does **not** establish that the underlying content is true, that evidence was collected correctly in the real world, that the signer's real-world identity was independently confirmed, or that an operation was performed in the field. It also does not establish independent third-party assurance, production readiness or regulatory compliance.
+
+Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
+
+## Not claimed
+
+The following are not claimed:
+
+- Independent reproduction of E3-001.
+- Field validation.
+- Production validation.
+- Third-party conformity assessment.
+- Regulatory conformity.
+- Paid-customer traction.
+- Recurring revenue.
+- Production AI autonomy.
+- Production readiness of the current alpha artefacts.
+
+Capability is not maturity: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## Contribute
 
