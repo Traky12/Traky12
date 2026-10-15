@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  Evidence-driven systems architecture for offline-resilient operations, with provenance, integrity verification and AI governance boundaries.
+  I design evidence-driven systems for offline-resilient operations. My work focuses on data provenance, integrity verification and clear boundaries for AI-assisted decisions.
 </p>
 
 <p align="center">
