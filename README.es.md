@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  Diseño sistemas basados en evidencia para operar de forma resiliente sin conexión. Mi trabajo se centra en la procedencia de los datos, la verificación de integridad y límites claros para las decisiones asistidas por IA.
+  Diseño sistemas capaces de operar sin conexión que preservan la procedencia de los datos, las comprobaciones de integridad y límites explícitos para las decisiones asistidas por IA.
 </p>
 
 <p align="center">
@@ -32,13 +32,15 @@
 
 ---
 
-## Herramienta destacada · e3bundle
+## Prototipo de código abierto destacado · e3bundle
 
 **[e3bundle](https://github.com/Traky12/castuo-e3-001)** es una herramienta CLI de Python con licencia MIT para crear, firmar y verificar paquetes de evidencia portables sin conexión.
 
 - Registra hashes de archivos en un manifiesto SHA-256 y detecta archivos modificados, ausentes o no declarados.
 - Verifica firmas Ed25519 frente a claves públicas de confianza configuradas explícitamente.
 - Emite resultados delimitados y legibles por máquina para automatización y revisión.
+
+> **Límite de la demostración:** Estos ejemplos son sintéticos y verificables localmente. Solo demuestran la integridad del paquete y las comprobaciones de la política de firmas. No validan datos de campo, rendimiento operativo ni preparación para producción.
 
 ### Prueba el recorrido de verificación
 
