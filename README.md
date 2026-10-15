@@ -58,9 +58,15 @@ The CLI release `v0.1.3` is an **alpha**. This source-level path is for bounded 
 
 ## Current Public Status
 
-The public tool is an **alpha**, not a production-approved release. Independent reproduction remains pending, and publication/deployment gates remain open. The CASTÚO-SYSTEM core is **promotion-blocked**; this profile reports public status but is not the technical authority.
+The public tool is an **alpha**, not a production-approved release.
 
-For dated evidence, unresolved gates, run history and authority boundaries, see the [public status detail](docs/PROFILE-STATUS-DETAIL.md). Current capability must not be confused with maturity: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
+- Independent E3-001 reproduction: `PENDING`.
+- Publication and deployment gates remain open.
+- `CONSOLIDATION-1.0 = BLOCKED`.
+
+`Traky12` is the public read-model, not the technical authority. `Castuo-system` is the private canonical authority for technical state and promotion. `castuo-evolution` is a non-canonical workspace.
+
+For dated evidence, unresolved gates and workflow history, see the [public status detail](docs/PROFILE-STATUS-DETAIL.md). Current capability must not be confused with maturity: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED ≠ OPERATIONAL`.
 
 ## Governed systems · how evidence moves
 
