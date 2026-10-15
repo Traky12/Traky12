@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  I design evidence-driven systems for offline-resilient operations. My work focuses on data provenance, integrity verification and clear boundaries for AI-assisted decisions.
+  I design offline-capable systems that preserve data provenance, integrity checks and explicit boundaries for AI-assisted decisions.
 </p>
 
 <p align="center">
@@ -32,13 +32,15 @@
 
 ---
 
-## Featured tool · e3bundle
+## Featured open-source prototype · e3bundle
 
 **[e3bundle](https://github.com/Traky12/castuo-e3-001)** is a small MIT-licensed Python CLI for creating, signing and verifying portable evidence bundles offline.
 
 - Records file digests in a SHA-256 manifest and detects changed, missing or undeclared files.
 - Verifies Ed25519 signatures against explicitly configured trusted public keys.
 - Produces bounded, machine-readable results for automation and review.
+
+> **Scope warning:** These examples are synthetic and locally verifiable. They demonstrate bundle integrity and signature-policy checks only. They do not validate field data, operational performance or production readiness.
 
 ### Try the verification path
 
