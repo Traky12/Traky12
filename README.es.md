@@ -1,4 +1,4 @@
-# Traky12 · CASTÚO-SYSTEM™
+#  CASTÚO-SYSTEM™
 
 <p align="center">
   <img src="assets/brand/profile-header.svg" alt="Ingeniería de sistemas basada en evidencia: trazabilidad, funcionamiento offline-first y aseguramiento" width="100%" />
