@@ -1,4 +1,4 @@
-# Traky12 · CASTÚO-SYSTEM™
+#  CASTÚO-SYSTEM™
 
 <p align="center">
   <img src="assets/brand/profile-header.svg" alt="Evidence-first systems engineering: traceability, offline-first and assurance" width="100%" />
