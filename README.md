@@ -97,15 +97,16 @@ For dated evidence, unresolved gates and workflow history, see the [public statu
 
 This is a **conceptual simulation**: sources, thresholds and queue timing are illustrative, not measurements or live integrations. It does not represent field validation, autonomous action or production readiness. Read the [scope and evidence questions](docs/GOVERNED-ORCHESTRATION.md) for detail.
 
-Selected work: [castuo-evidence](https://github.com/Traky12/castuo-evidence) · [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge) (edge/IoT experiments; field validation not claimed) · [Cast-o](https://github.com/Traky12/Cast-o) (assurance tooling; benchmarking remains unevidenced and licensing is under IP review).
+## Project map
 
-## What `VERIFIED` means
+| Project | Purpose | Current boundary |
+|---|---|---|
+| [e3bundle](https://github.com/Traky12/castuo-e3-001) | Offline SHA-256 manifest and Ed25519 signature verification | Alpha; integrity checks are not a truth claim, certification or production approval |
+| [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge) | Offline-first edge/IoT runtime experiments | Field validation is not claimed |
+| [castuo-evidence](https://github.com/Traky12/castuo-evidence) | Bounded public evidence package and replay material | Independent replay and human review remain pending |
+| [Cast-o](https://github.com/Traky12/Cast-o) | Software-assurance and testing tooling | Benchmarking is not evidenced; licensing remains under IP review |
 
-A `VERIFIED` result means that the declared files match the SHA-256 manifest, no required file has been detected as changed or missing, the configured signature policy has been satisfied, and the supplied trusted-key configuration accepted the required signatures.
-
-It does **not** establish that the underlying content is true, that evidence was collected correctly in the real world, that the signer's real-world identity was independently confirmed, or that an operation was performed in the field. It also does not establish independent third-party assurance, production readiness or regulatory compliance.
-
-Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
+For the e3bundle onboarding sequence, adoption gates and the Starstruck visibility milestones, see the [public adoption roadmap](https://github.com/Traky12/castuo-e3-001/blob/main/docs/PUBLIC_ADOPTION_PLAN.md). The roadmap is a work plan, not evidence that its gates have passed.
 
 ## Not Claimed
 
