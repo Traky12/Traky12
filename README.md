@@ -1,9 +1,5 @@
 #  CASTÚO-SYSTEM™
 
-<p align="center">
-  <img src="assets/brand/profile-header.svg" alt="Evidence-first systems engineering: traceability, offline-first and assurance" width="100%" />
-</p>
-
 <!-- CASTUO:BRAND:START -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-header.png" alt="CASTÚO-SYSTEM brand banner" width="100%" />
@@ -75,7 +71,7 @@ It does **not** prove that:
 - The evidence was collected correctly in the real world.
 - The signer's real-world identity has been independently confirmed.
 - The operation was performed in the field.
-- Independent third-party assurance, production readiness or regulatory compliance has not been established.
+- Independent third-party assurance, production readiness or regulatory compliance has been established.
 
 Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
 
