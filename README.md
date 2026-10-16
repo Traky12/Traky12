@@ -58,6 +58,8 @@ e3bundle verify examples/bundles/tampered --min-signatures 2 --trusted-keys exam
 
 The CLI release `v0.1.3` is an **alpha**. This source-level path is for bounded evaluation, not a general production-install recommendation. The browser demo runs synthetic `v0.1.1` examples locally; it is useful for trying the interaction, but does not validate the `v0.1.3` CLI.
 
+For a reproducible hands-on example, follow the [English dataset-tampering tutorial](https://github.com/Traky12/castuo-e3-001/blob/main/docs/tutorial-dataset-tampering.md) or the [Spanish guide](https://github.com/Traky12/castuo-e3-001/blob/main/docs/tutorial-dataset-tampering.es.md). It creates a synthetic signed dataset and shows how the verifier rejects edits, added files and missing files; it does not count as external field validation.
+
 ## What VERIFIED means
 
 A `VERIFIED` result means that:
