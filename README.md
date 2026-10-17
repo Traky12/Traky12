@@ -98,6 +98,8 @@ For dated evidence, unresolved gates and workflow history, see the [public statu
 </p>
 
 
+**Explore the data:** [local interactive explorer](demos/governed-explorer/README.md): six synthetic cases, step-by-step checks, abstention reasons and JSON export. Download the HTML and open it in a browser; GitHub displays its source rather than executing it. The interface is in Spanish.
+
 <p align="center"><a href="assets/diagrams/castuo-governed-orchestration.es.preview.gif">Spanish animation preview · 10 s</a> · <a href="assets/diagrams/castuo-governed-orchestration.es.preview.mp4">Higher-definition video</a></p>
 
 This is a **conceptual simulation**: sources, thresholds and queue timing are illustrative, not measurements or live integrations. It does not represent field validation, autonomous action or production readiness. Read the [scope and evidence questions](docs/GOVERNED-ORCHESTRATION.md) for detail.

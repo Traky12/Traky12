@@ -48,20 +48,19 @@ Governed cycle: `Capture → Validate → Normalise → Persist → Rules / AI �
 
 ## Motion and static rendering
 
-- The SVG contains CSS motion (`offset-path`, keyframes), with no JavaScript, external fonts or embedded images. GitHub's SVG rendering does not currently support inline animation; in the profile and repository views this asset is a static diagram.
+- The SVG contains CSS motion (`offset-path`, keyframes), with no JavaScript, external fonts or embedded images. Motion depends on the viewer and embedding context. The tested Chromium img context animated; this is not a guarantee for every GitHub client.
 - The static fallback shows the full diagram, including all pipeline stages and evidence paths, whether animation runs or not. Supporting SVG viewers stop motion when the system requests reduced motion (`prefers-reduced-motion: reduce`).
 - The particles are illustrative motion, not measurements. No counter, rate or volume in the image comes from a real system.
 
 ## Boundaries
 
-This is a static-first concept of a target architecture and a synthetic simulation model, with optional motion only in supporting viewers. It is not a live data feed, an executable public demo, a deployed orchestrator, a human-approval workflow, a field-validated system or a production system. No real providers, cadastral data, field validation, autonomous decisions or operational readiness are claimed. See [public status](PROFILE-STATUS-DETAIL.md).
+This is a static-first concept of a target architecture and a synthetic simulation model, with optional motion only in supporting viewers. The SVG is not a live data feed, an executable data explorer, a deployed orchestrator, a human-approval workflow, a field-validated system or a production system. No real providers, cadastral data, field validation, autonomous decisions or operational readiness are claimed. See [public status](PROFILE-STATUS-DETAIL.md).
 
 ## Provenance of the asset
 
 - Vector reconstruction drawn from the owner's description of a control-room image, fused with the Governed Flow model. The original raster image is not published here.
 - Deterministic layout; seed `509055`, the Governed Flow reference seed, used only for placement.
-- SHA-256 (EN): `c79bb73b9976dd128f0716164b4d2387f036fbd1f397949197447455754e9bcf`
-- SHA-256 (ES): `74e2af60f3b29e7d5d4b58641f79dfc63bf69d9ed859b879dd77ddd89e203f03`
+- Current SVG hashes are recorded in `GOVERNED-ORCHESTRATION-VISUAL-QA-2026-10-17.json`; the original asset hashes are superseded.
 
 ---
 
@@ -71,7 +70,7 @@ This is a static-first concept of a target architecture and a synthetic simulati
 
 - **01 · El dato sube.** Seis fuentes gobernadas envían dato por raíces. El dato supera **identidad, procedencia, integridad, permisos y calidad** antes de llegar al cerebro, que coordina sin apropiarse del dato.
 - **02 · La decisión baja (simulación).** Hay tres compuertas de *grounding* (0,18 → 0,36 → 0,52). Lo que no alcanza el umbral se abstiene y deja huella. La cola simulada libera cada 14 pasos, sin actor humano. Los eventos sintéticos se anclan en un territorio sintético y se encadenan con SHA-256.
-- **Movimiento y vista estática:** CSS dentro del SVG, sin JavaScript. GitHub lo presenta como diagrama estático; los visores compatibles respetan `prefers-reduced-motion`. Las partículas son ilustrativas, no medidas.
+- **Movimiento y vista estática:** CSS dentro del SVG, sin JavaScript. La animación depende del visor y del contexto; los visores compatibles respetan `prefers-reduced-motion`. Las partículas son ilustrativas, no medidas.
 - **Límites:** no es un flujo de datos en vivo, una demo ejecutable, un orquestador desplegado ni un sistema validado en campo o en producción ([estado público](PROFILE-STATUS-DETAIL.es.md)).
 
 
@@ -88,3 +87,11 @@ No embedded raster, scripts or external-image fetches are required. Native colou
 A ten-second preview is provided as GIF (8 fps, 1120×700) and MP4 (10 fps, 1600×1000), sampled from the browser's CSS animation timeline. These compressed previews are for visual review, not the RGB-fidelity proof. QA metadata and asset hashes are in docs/GOVERNED-ORCHESTRATION-VISUAL-QA-2026-10-17.json.
 
 GitHub/LinkedIn links remain next to the footer. The illustration and timing are conceptual/synthetic, not live data, measured KPIs, independent review, field validation, production or autonomous decision authority. The proposal remains unmerged pending owner visual approval.
+
+## Local interactive companion
+
+[Open the instructions](../demos/governed-explorer/README.md). The standalone Spanish HTML reuses the exact reference-brain geometry and existing CSS motion. Six explicitly synthetic fixtures can be selected through buttons or keyboard-accessible SVG source regions. Selection synchronizes the source outline, five control states, explanatory detail and exported JSON. Checks stop at the first failure; subsequent controls remain NOT_EVALUATED. Passing all declared checks yields PENDING_HUMAN_REVIEW, never an operational instruction.
+
+These are declared fixture booleans, not live identity, provenance, cryptographic or permission verification. This companion does not execute the diagram's grounding thresholds or 14-step queue model and is separate from e3bundle. It has no external dependencies, network calls, persistence, uploads or field actions. Motion can be paused and follows reduced-motion preference. A mobile layout keeps controls outside the scaled illustration. GitHub does not execute this HTML in the repository file view: download and open locally.
+
+Browser QA covers six selections and JSON downloads, each distinct blocking gate, pending-human outcome, non-evaluated controls, step navigation, SVG keyboard selection, pause/resume, reduced motion, mobile overflow and unexpected network/script errors. See `GOVERNED-EXPLORER-QA-2026-10-17.json`. This is local functional QA, not independent review or field validation.

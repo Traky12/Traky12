@@ -1,0 +1,39 @@
+{
+  "browser": "153.0.8010.0",
+  "cases": [
+    {
+      "id": "SYN-SOIL-01",
+      "status": "PENDING_HUMAN_REVIEW",
+      "blockedAt": null
+    },
+    {
+      "id": "SYN-DRONE-02",
+      "status": "ABSTAIN",
+      "blockedAt": "Procedencia"
+    },
+    {
+      "id": "SYN-NOTE-03",
+      "status": "ABSTAIN",
+      "blockedAt": "Identidad"
+    },
+    {
+      "id": "SYN-ERP-04",
+      "status": "ABSTAIN",
+      "blockedAt": "Integridad"
+    },
+    {
+      "id": "SYN-RULE-05",
+      "status": "ABSTAIN",
+      "blockedAt": "Permisos"
+    },
+    {
+      "id": "SYN-WATER-06",
+      "status": "ABSTAIN",
+      "blockedAt": "Calidad"
+    }
+  ],
+  "mobileOverflow": false,
+  "reducedMotionAnimations": 0,
+  "errors": [],
+  "externalRequests": []
+}

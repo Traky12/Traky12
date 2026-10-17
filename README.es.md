@@ -81,6 +81,8 @@ Consulta la [evidencia fechada, los bloqueos y el historial de workflows](docs/P
 </p>
 
 
+**Explora el dato:** [explorador interactivo local](demos/governed-explorer/README.md): seis casos sintéticos, controles paso a paso, motivos de abstención y exportación JSON. Descarga el HTML y ábrelo en el navegador; GitHub muestra su código, no lo ejecuta.
+
 <p align="center"><a href="assets/diagrams/castuo-governed-orchestration.es.preview.gif">Vista previa animada · 10 s</a> · <a href="assets/diagrams/castuo-governed-orchestration.es.preview.mp4">Vídeo con más definición</a></p>
 
 Es una **simulación conceptual**: las fuentes, los umbrales y la temporización de la cola son ilustrativos, no mediciones ni integraciones en vivo. No representa validación de campo, acción autónoma ni preparación para producción. Consulta el [alcance y las preguntas de evidencia](docs/GOVERNED-ORCHESTRATION.md).
