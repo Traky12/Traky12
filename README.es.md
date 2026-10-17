@@ -1,14 +1,12 @@
 #  CASTÚO-SYSTEM™
 
+<p align="center">
+  <img src="assets/brand/profile-header.svg" alt="Ingeniería de sistemas basada en evidencia: trazabilidad, funcionamiento offline-first y aseguramiento" width="100%" />
+</p>
+
 <!-- CASTUO:BRAND:START -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">
-    <img src="assets/brand/castuo-neural-header.png" alt="CASTÚO-SYSTEM: ilustración conceptual de cerebro neuronal, hoja y circuitos" width="100%" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/Traky12">GitHub · @Traky12</a> ·
-  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">LinkedIn · CASTÚO-SYSTEM</a>
+  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-header.png" alt="Imagen de marca CASTÚO-SYSTEM" width="100%" />
 </p>
 <!-- CASTUO:BRAND:END -->
 
@@ -75,7 +73,11 @@ Consulta la [evidencia fechada, los bloqueos y el historial de workflows](docs/P
 ## Sistemas gobernados · cómo se mueve la evidencia
 
 <p align="center">
-  <img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Flujo gobernado conceptual: las fuentes pasan controles de identidad, procedencia, integridad, permisos y calidad; las salidas simuladas se abstienen o se convierten en evidencia sintética enlazada con SHA-256. Sin datos en vivo ni claim de producción." width="100%" />
+  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/"><img src="assets/diagrams/castuo-governed-orchestration.es.svg" alt="Flujo gobernado conceptual: las fuentes pasan controles de identidad, procedencia, integridad, permisos y calidad; las salidas simuladas se abstienen o se convierten en evidencia sintética enlazada con SHA-256. Sin datos en vivo ni claim de producción." width="100%" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/Traky12">GitHub · @Traky12</a> ·
+  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">LinkedIn · CASTÚO-SYSTEM</a>
 </p>
 
 Es una **simulación conceptual**: las fuentes, los umbrales y la temporización de la cola son ilustrativos, no mediciones ni integraciones en vivo. No representa validación de campo, acción autónoma ni preparación para producción. Consulta el [alcance y las preguntas de evidencia](docs/GOVERNED-ORCHESTRATION.md).

@@ -2,13 +2,7 @@
 
 <!-- CASTUO:BRAND:START -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">
-    <img src="assets/brand/castuo-neural-header.png" alt="CASTÚO-SYSTEM: conceptual neural brain, leaf and circuit brand illustration" width="100%" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/Traky12">GitHub · @Traky12</a> ·
-  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">LinkedIn · CASTÚO-SYSTEM</a>
+  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-header.png" alt="CASTÚO-SYSTEM brand banner" width="100%" />
 </p>
 <!-- CASTUO:BRAND:END -->
 
@@ -96,7 +90,11 @@ For dated evidence, unresolved gates and workflow history, see the [public statu
 ## Governed systems · how evidence moves
 
 <p align="center">
-  <img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Conceptual governed flow: sources pass identity, provenance, integrity, permission and quality checks; simulated outputs abstain or become synthetic SHA-256-linked evidence. No live data or production claim." width="100%" />
+  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/"><img src="assets/diagrams/castuo-governed-orchestration.svg" alt="Conceptual governed flow: sources pass identity, provenance, integrity, permission and quality checks; simulated outputs abstain or become synthetic SHA-256-linked evidence. No live data or production claim." width="100%" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/Traky12">GitHub · @Traky12</a> ·
+  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">LinkedIn · CASTÚO-SYSTEM</a>
 </p>
 
 This is a **conceptual simulation**: sources, thresholds and queue timing are illustrative, not measurements or live integrations. It does not represent field validation, autonomous action or production readiness. Read the [scope and evidence questions](docs/GOVERNED-ORCHESTRATION.md) for detail.

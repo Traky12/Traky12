@@ -73,3 +73,14 @@ This is a static-first concept of a target architecture and a synthetic simulati
 - **02 · La decisión baja (simulación).** Hay tres compuertas de *grounding* (0,18 → 0,36 → 0,52). Lo que no alcanza el umbral se abstiene y deja huella. La cola simulada libera cada 14 pasos, sin actor humano. Los eventos sintéticos se anclan en un territorio sintético y se encadenan con SHA-256.
 - **Movimiento y vista estática:** CSS dentro del SVG, sin JavaScript. GitHub lo presenta como diagrama estático; los visores compatibles respetan `prefers-reduced-motion`. Las partículas son ilustrativas, no medidas.
 - **Límites:** no es un flujo de datos en vivo, una demo ejecutable, un orquestador desplegado ni un sistema validado en campo o en producción ([estado público](PROFILE-STATUS-DETAIL.es.md)).
+
+
+## LinkedIn reference brain — 2026-10-17
+
+The footer brain in the English and Spanish SVGs is vector-traced from the brain in the image supplied by the owner as the LinkedIn visual reference. Its anatomy and mint/cyan palette are derived from that source; it is a vector interpretation, not a claim of pixel-identical or higher-resolution source data.
+
+Only the brain region was extracted (source crop x=610, y=97, width=180, height=130 from the 1375×343 reference). Colour contours were traced as native SVG paths and clipped to the brain outline. The SVGs contain no embedded raster, remote-image dependency, script or new data service. Illustrative neural pulses connect the brain to the existing paths. Existing sources, policy controls, thresholds, abstention, synthetic queue/evidence and reduced-motion support are retained.
+
+The README header/logo remains the original. Actual GitHub and LinkedIn links accompany the footer illustration; the artwork does not alter either account or publish a LinkedIn post. The withdrawn header experiment is not the final design.
+
+QA: EN/ES SVG parsed, unique IDs, no scripts/raster, reduced-motion CSS retained, original flow text/thresholds retained; both rendered and visually inspected. Motion is illustrative, not evidence of live orchestration, autonomy, measured KPIs, field validation or production.
