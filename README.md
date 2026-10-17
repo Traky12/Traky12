@@ -2,7 +2,13 @@
 
 <!-- CASTUO:BRAND:START -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-header.png" alt="CASTÚO-SYSTEM brand banner" width="100%" />
+  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">
+    <img src="assets/brand/castuo-neural-header.png" alt="CASTÚO-SYSTEM: conceptual neural brain, leaf and circuit brand illustration" width="100%" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Traky12">GitHub · @Traky12</a> ·
+  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">LinkedIn · CASTÚO-SYSTEM</a>
 </p>
 <!-- CASTUO:BRAND:END -->
 

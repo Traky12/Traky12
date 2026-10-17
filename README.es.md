@@ -1,12 +1,14 @@
 #  CASTÚO-SYSTEM™
 
-<p align="center">
-  <img src="assets/brand/profile-header.svg" alt="Ingeniería de sistemas basada en evidencia: trazabilidad, funcionamiento offline-first y aseguramiento" width="100%" />
-</p>
-
 <!-- CASTUO:BRAND:START -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Traky12/Traky12/main/assets/brand/castuo-system-header.png" alt="Imagen de marca CASTÚO-SYSTEM" width="100%" />
+  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">
+    <img src="assets/brand/castuo-neural-header.png" alt="CASTÚO-SYSTEM: ilustración conceptual de cerebro neuronal, hoja y circuitos" width="100%" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Traky12">GitHub · @Traky12</a> ·
+  <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">LinkedIn · CASTÚO-SYSTEM</a>
 </p>
 <!-- CASTUO:BRAND:END -->
 
