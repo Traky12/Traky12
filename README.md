@@ -97,6 +97,9 @@ For dated evidence, unresolved gates and workflow history, see the [public statu
   <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">LinkedIn · CASTÚO-SYSTEM</a>
 </p>
 
+
+<p align="center"><a href="assets/diagrams/castuo-governed-orchestration.es.preview.gif">Spanish animation preview · 10 s</a> · <a href="assets/diagrams/castuo-governed-orchestration.es.preview.mp4">Higher-definition video</a></p>
+
 This is a **conceptual simulation**: sources, thresholds and queue timing are illustrative, not measurements or live integrations. It does not represent field validation, autonomous action or production readiness. Read the [scope and evidence questions](docs/GOVERNED-ORCHESTRATION.md) for detail.
 
 ## Project map

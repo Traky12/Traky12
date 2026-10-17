@@ -80,6 +80,9 @@ Consulta la [evidencia fechada, los bloqueos y el historial de workflows](docs/P
   <a href="https://www.linkedin.com/in/cast%C3%BAo-system-00b8493b8/">LinkedIn · CASTÚO-SYSTEM</a>
 </p>
 
+
+<p align="center"><a href="assets/diagrams/castuo-governed-orchestration.es.preview.gif">Vista previa animada · 10 s</a> · <a href="assets/diagrams/castuo-governed-orchestration.es.preview.mp4">Vídeo con más definición</a></p>
+
 Es una **simulación conceptual**: las fuentes, los umbrales y la temporización de la cola son ilustrativos, no mediciones ni integraciones en vivo. No representa validación de campo, acción autónoma ni preparación para producción. Consulta el [alcance y las preguntas de evidencia](docs/GOVERNED-ORCHESTRATION.md).
 
 Trabajo seleccionado: [castuo-evidence](https://github.com/Traky12/castuo-evidence) · [castuo-agro-edge](https://github.com/Traky12/castuo-agro-edge) (experimentos edge/IoT; no se declara validación de campo) · [Cast-o](https://github.com/Traky12/Cast-o) (herramientas de assurance; el benchmarking no está demostrado y la licencia sigue bajo revisión de propiedad intelectual).

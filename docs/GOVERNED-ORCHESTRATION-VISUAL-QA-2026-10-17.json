@@ -1,0 +1,407 @@
+{
+  "sourceFidelity": {
+    "source_crop": [
+      610,
+      97,
+      180,
+      130
+    ],
+    "samples": 23400,
+    "different_rgb_samples": 0,
+    "max_rgb_error": 0,
+    "scope": "unscaled source grid before outline clip/display scaling; no quantisation"
+  },
+  "browserAnimation": {
+    "browser": "153.0.8010.0",
+    "files": {
+      "original": {
+        "animations": 109,
+        "checkedMovingElements": 12,
+        "movedElements": 12,
+        "pulseChanged": true,
+        "before": {
+          "animations": 109,
+          "samples": [
+            {
+              "x": 160.9705352783203,
+              "y": 720.416748046875,
+              "distance": "6.34836%"
+            },
+            {
+              "x": 164.9705352783203,
+              "y": 724.416748046875,
+              "distance": "6.34836%"
+            },
+            {
+              "x": 578.9505004882812,
+              "y": 654.2821655273438,
+              "distance": "51.5865%"
+            },
+            {
+              "x": 582.9505004882812,
+              "y": 658.2821655273438,
+              "distance": "51.5865%"
+            },
+            {
+              "x": 793.2000122070312,
+              "y": 417.15155029296875,
+              "distance": "94.4436%"
+            },
+            {
+              "x": 797.2000122070312,
+              "y": 421.15155029296875,
+              "distance": "94.4436%"
+            },
+            {
+              "x": 436.1781005859375,
+              "y": 708.25244140625,
+              "distance": "20.6341%"
+            },
+            {
+              "x": 440.1781005859375,
+              "y": 712.25244140625,
+              "distance": "20.6341%"
+            },
+            {
+              "x": 767.7001342773438,
+              "y": 613.1702270507812,
+              "distance": "65.8722%"
+            },
+            {
+              "x": 771.7001342773438,
+              "y": 617.1702270507812,
+              "distance": "65.8722%"
+            },
+            {
+              "x": 348.37677001953125,
+              "y": 732.2700805664062,
+              "distance": "8.72931%"
+            },
+            {
+              "x": 352.37677001953125,
+              "y": 736.2700805664062,
+              "distance": "8.72931%"
+            }
+          ],
+          "pulse": "0.360201"
+        },
+        "after": {
+          "animations": 109,
+          "samples": [
+            {
+              "x": 557.012451171875,
+              "y": 657.8004760742188,
+              "distance": "49.2059%"
+            },
+            {
+              "x": 561.012451171875,
+              "y": 661.8004760742188,
+              "distance": "49.2059%"
+            },
+            {
+              "x": 793.2000122070312,
+              "y": 417.14752197265625,
+              "distance": "94.444%"
+            },
+            {
+              "x": 797.2000122070312,
+              "y": 421.14752197265625,
+              "distance": "94.444%"
+            },
+            {
+              "x": 446.92022705078125,
+              "y": 674.1865234375,
+              "distance": "37.3012%"
+            },
+            {
+              "x": 450.92022705078125,
+              "y": 678.1865234375,
+              "distance": "37.3012%"
+            },
+            {
+              "x": 751.4873657226562,
+              "y": 621.4612426757812,
+              "distance": "63.4916%"
+            },
+            {
+              "x": 755.4873657226562,
+              "y": 625.4612426757812,
+              "distance": "63.4916%"
+            },
+            {
+              "x": 348.37994384765625,
+              "y": 732.2691650390625,
+              "distance": "8.72974%"
+            },
+            {
+              "x": 352.37994384765625,
+              "y": 736.2691650390625,
+              "distance": "8.72974%"
+            },
+            {
+              "x": 665.8602905273438,
+              "y": 651.2740478515625,
+              "distance": "51.5869%"
+            },
+            {
+              "x": 669.8602905273438,
+              "y": 655.2740478515625,
+              "distance": "51.5869%"
+            }
+          ],
+          "pulse": "0.543888"
+        }
+      },
+      "proposed": {
+        "animations": 110,
+        "checkedMovingElements": 12,
+        "movedElements": 12,
+        "pulseChanged": true,
+        "before": {
+          "animations": 110,
+          "samples": [
+            {
+              "x": 150.2448272705078,
+              "y": 722.6312255859375,
+              "distance": "5.15779%"
+            },
+            {
+              "x": 154.2448272705078,
+              "y": 726.6312255859375,
+              "distance": "5.15779%"
+            },
+            {
+              "x": 567.9568481445312,
+              "y": 656.0618286132812,
+              "distance": "50.3959%"
+            },
+            {
+              "x": 571.9568481445312,
+              "y": 660.0618286132812,
+              "distance": "50.3959%"
+            },
+            {
+              "x": 793.2000122070312,
+              "y": 428.283203125,
+              "distance": "93.253%"
+            },
+            {
+              "x": 797.2000122070312,
+              "y": 432.283203125,
+              "distance": "93.253%"
+            },
+            {
+              "x": 427.341064453125,
+              "y": 710.50439453125,
+              "distance": "19.4435%"
+            },
+            {
+              "x": 431.341064453125,
+              "y": 714.50439453125,
+              "distance": "19.4435%"
+            },
+            {
+              "x": 759.6964721679688,
+              "y": 617.4797973632812,
+              "distance": "64.6816%"
+            },
+            {
+              "x": 763.6964721679688,
+              "y": 621.4797973632812,
+              "distance": "64.6816%"
+            },
+            {
+              "x": 339.6185302734375,
+              "y": 734.9320068359375,
+              "distance": "7.53874%"
+            },
+            {
+              "x": 343.6185302734375,
+              "y": 738.9320068359375,
+              "distance": "7.53874%"
+            }
+          ],
+          "pulse": "0.339277"
+        },
+        "after": {
+          "animations": 110,
+          "samples": [
+            {
+              "x": 373.4194030761719,
+              "y": 684.8240356445312,
+              "distance": "29.3622%"
+            },
+            {
+              "x": 377.4194030761719,
+              "y": 688.8240356445312,
+              "distance": "29.3622%"
+            },
+            {
+              "x": 785.6980590820312,
+              "y": 598.9833374023438,
+              "distance": "74.6003%"
+            },
+            {
+              "x": 789.6980590820312,
+              "y": 602.9833374023438,
+              "distance": "74.6003%"
+            },
+            {
+              "x": 263.2579345703125,
+              "y": 701.8052978515625,
+              "distance": "17.4574%"
+            },
+            {
+              "x": 267.2579345703125,
+              "y": 705.8052978515625,
+              "distance": "17.4574%"
+            },
+            {
+              "x": 607.2019653320312,
+              "y": 666.7799072265625,
+              "distance": "43.6479%"
+            },
+            {
+              "x": 611.2019653320312,
+              "y": 670.7799072265625,
+              "distance": "43.6479%"
+            },
+            {
+              "x": 793.2000122070312,
+              "y": 450.08489990234375,
+              "distance": "88.886%"
+            },
+            {
+              "x": 797.2000122070312,
+              "y": 454.08489990234375,
+              "distance": "88.886%"
+            },
+            {
+              "x": 518.6720581054688,
+              "y": 688.1443481445312,
+              "distance": "31.7431%"
+            },
+            {
+              "x": 522.6720581054688,
+              "y": 692.1443481445312,
+              "distance": "31.7431%"
+            }
+          ],
+          "pulse": "0.996428"
+        }
+      }
+    },
+    "reducedMotion": {
+      "animations": 0
+    }
+  },
+  "sources": [
+    {
+      "file": "assets/diagrams/castuo-governed-orchestration.svg",
+      "bytes": 822695,
+      "sha256": "f56df3f40749ca8dff61181cf665b3246b36c25ed5b28f7919da478779b60e57",
+      "nativeSVG": true,
+      "duplicateIds": false
+    },
+    {
+      "file": "assets/diagrams/castuo-governed-orchestration.es.svg",
+      "bytes": 822860,
+      "sha256": "d4ae0a8ded12da21d674873bd18593b4bce50c6faf1c2ed5e55779cf3a104488",
+      "nativeSVG": true,
+      "duplicateIds": false
+    }
+  ],
+  "preview": {
+    "duration_s": 10,
+    "GIF_fps": 8,
+    "MP4_fps": 10,
+    "source_frames": 100
+  },
+  "scope": "Browser visual/animation QA, not live-data, field, autonomous-authority or production evidence",
+  "reducedMotionImageContext": {
+    "mode": "fresh Chromium --force-prefers-reduced-motion",
+    "imageEmbeddingLoaded": true,
+    "documentPrefersReduce": false,
+    "reducedMotionFramesEqual": true,
+    "CSP": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "emulationNote": "Playwright per-page emulateMedia did not settle embedded SVG animation; fresh process preference checked separately"
+  },
+  "nativeSourceUnscaledRGBProof": {
+    "source_crop": [
+      610,
+      97,
+      180,
+      130
+    ],
+    "samples": 23400,
+    "different_rgb_samples": 0,
+    "max_rgb_error": 0,
+    "scope": "unscaled source grid before outline clip/display scaling; no quantisation"
+  },
+  "motionClasses": {
+    "original": {
+      "br": 1,
+      "pu": 10,
+      "ck": 5,
+      "rg": 4,
+      "ch": 1,
+      "rc": 1,
+      "st": 7,
+      "mv": 56,
+      "ab": 12
+    },
+    "proposed": {
+      "br": 2,
+      "pu": 10,
+      "ck": 5,
+      "rg": 4,
+      "ch": 1,
+      "rc": 1,
+      "st": 7,
+      "mv": 56,
+      "ab": 12
+    },
+    "note": "All original motion classes/counts retained; one breathing glow added; original CSS unchanged"
+  },
+  "assets": [
+    {
+      "path": "assets/diagrams/castuo-governed-orchestration.svg",
+      "bytes": 822695,
+      "sha256": "f56df3f40749ca8dff61181cf665b3246b36c25ed5b28f7919da478779b60e57",
+      "gitBlobSHA": "df84e176c61830ac7be45a6c4912970073532675"
+    },
+    {
+      "path": "assets/diagrams/castuo-governed-orchestration.es.svg",
+      "bytes": 822860,
+      "sha256": "d4ae0a8ded12da21d674873bd18593b4bce50c6faf1c2ed5e55779cf3a104488",
+      "gitBlobSHA": "843bdf9db2546598127577ade5f912d0b318de3c"
+    },
+    {
+      "path": "assets/diagrams/castuo-governed-orchestration.es.preview.gif",
+      "bytes": 3084181,
+      "sha256": "369769e9e10768406760e3d38021a3e11004e07fd2be261f608aeae5792e6dcc",
+      "gitBlobSHA": "b4e3614fbf755badfcddc99164b26d340e8e657a"
+    },
+    {
+      "path": "assets/diagrams/castuo-governed-orchestration.es.preview.mp4",
+      "bytes": 889202,
+      "sha256": "eaabf621144d6d3eeededd82f444864440ad9a015b17d22a73b3ab588ab5f57a",
+      "gitBlobSHA": "2601620afc0e4d6e3c56f0af56f1c523f973e5dd"
+    }
+  ],
+  "imageEmbedding": {
+    "imageEmbeddingLoaded": true,
+    "CSP": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "normalMotionFramesDiffer": true,
+    "reducedMotionFreshProcess": {
+      "mode": "fresh Chromium --force-prefers-reduced-motion",
+      "imageEmbeddingLoaded": true,
+      "documentPrefersReduce": false,
+      "reducedMotionFramesEqual": true,
+      "CSP": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+      "emulationNote": "Playwright per-page emulateMedia did not settle embedded SVG animation; fresh process preference checked separately"
+    },
+    "externalResources": 0,
+    "embeddedRaster": false
+  }
+}

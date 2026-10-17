@@ -75,12 +75,16 @@ This is a static-first concept of a target architecture and a synthetic simulati
 - **Límites:** no es un flujo de datos en vivo, una demo ejecutable, un orquestador desplegado ni un sistema validado en campo o en producción ([estado público](PROFILE-STATUS-DETAIL.es.md)).
 
 
-## LinkedIn reference brain — 2026-10-17
+## Reference-brain fidelity and browser motion — 2026-10-17
 
-The footer brain in the English and Spanish SVGs is vector-traced from the brain in the image supplied by the owner as the LinkedIn visual reference. Its anatomy and mint/cyan palette are derived from that source; it is a vector interpretation, not a claim of pixel-identical or higher-resolution source data.
+The target is the animated footer, not the header. The original header/logo is unchanged. The owner-provided LinkedIn reference remains the visual source; no LinkedIn account, banner or post is edited.
 
-Only the brain region was extracted (source crop x=610, y=97, width=180, height=130 from the 1375×343 reference). Colour contours were traced as native SVG paths and clipped to the brain outline. The SVGs contain no embedded raster, remote-image dependency, script or new data service. Illustrative neural pulses connect the brain to the existing paths. Existing sources, policy controls, thresholds, abstention, synthetic queue/evidence and reduced-motion support are retained.
+The earlier contour trace simplified folds and colours and was rejected. It is replaced by native SVG geometry carrying the **original RGB sample values** of crop x=610, y=97, width=180, height=130 from the 1375×343 supplied image. The 23,400 source-grid samples were rendered at native size and compared with the reference: zero differing RGB samples, maximum RGB error zero **before outline clipping, display scaling and illustrative overlays**. This is a lossless source-grid representation, not newly invented high-resolution anatomy or a universally pixel-identical result at every zoom. The original crop is only 180×130 pixels.
 
-The README header/logo remains the original. Actual GitHub and LinkedIn links accompany the footer illustration; the artwork does not alter either account or publish a LinkedIn post. The withdrawn header experiment is not the final design.
+No embedded raster, scripts or external-image fetches are required. Native colour-cell geometry is larger (about 823 kB per SVG); this is the explicit fidelity/size tradeoff. Existing vector flows, pulses, controls, abstention, queue and evidence paths remain. Original animation CSS is byte-identical, and all original motion-class counts are retained: mv=56, ab=12, pu=10, ck=5, rg=4, ch=1, rc=1, st=7. One additional breathing glow is included.
 
-QA: EN/ES SVG parsed, unique IDs, no scripts/raster, reduced-motion CSS retained, original flow text/thresholds retained; both rendered and visually inspected. Motion is illustrative, not evidence of live orchestration, autonomy, measured KPIs, field validation or production.
+**Observed browser QA:** Chromium 153.0.8010.0 executed 109 animations in the original and 110 in the proposed design. All 12 sampled moving elements changed position in each; pulses changed opacity. The proposed SVG also animated as an img with the GitHub-raw-style CSP: default-src 'none'; style-src 'unsafe-inline'; sandbox. Standalone reduced-motion emulation stopped all animations. For the img case, per-page Playwright emulation did not settle motion in this environment; a separate fresh Chromium process with force-prefers-reduced-motion produced identical frames, while the top document reported its preference as false. This harness distinction is recorded, not presented as universal browser/accessibility certification.
+
+A ten-second preview is provided as GIF (8 fps, 1120×700) and MP4 (10 fps, 1600×1000), sampled from the browser's CSS animation timeline. These compressed previews are for visual review, not the RGB-fidelity proof. QA metadata and asset hashes are in docs/GOVERNED-ORCHESTRATION-VISUAL-QA-2026-10-17.json.
+
+GitHub/LinkedIn links remain next to the footer. The illustration and timing are conceptual/synthetic, not live data, measured KPIs, independent review, field validation, production or autonomous decision authority. The proposal remains unmerged pending owner visual approval.
