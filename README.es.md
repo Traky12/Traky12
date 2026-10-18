@@ -32,6 +32,16 @@
 
 ---
 
+## Qué construyo · consulta el trabajo
+
+| Enfoque | Herramientas del artefacto enlazado | Por dónde empezar |
+|---|---|---|
+| Verificación portable de evidencia | Python · SHA-256 · Ed25519 · JSON | [Alfa de e3bundle y sus límites](https://github.com/Traky12/castuo-e3-001) |
+| Límites de decisión comprensibles | HTML · SVG · casos JSON sintéticos | [Explorador gobernado local](demos/governed-explorer/README.md) |
+| Documentación técnica revisable | Markdown · YAML · procedencia y criterios de aceptación | [Dossieres públicos de evidencia](evidence-center/README.md) |
+
+**Foco actual:** facilitar la reproducción de verificaciones, explicar los fallos y la abstención y mejorar las vías de contribución en inglés y español. Los artefactos enlazados muestran el alcance de este trabajo; no acreditan validación independiente ni preparación para producción.
+
 ## Prototipo de código abierto destacado · e3bundle
 
 **[e3bundle](https://github.com/Traky12/castuo-e3-001)** es una herramienta CLI de Python con licencia MIT para crear, firmar y verificar paquetes de evidencia portables sin conexión.
@@ -99,9 +109,16 @@ No se declaran como alcanzadas la reproducción independiente, la validación de
 
 Empieza con una contribución acotada y reproducible:
 
-- [Issues adecuados para empezar](https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue)
-- [Guía de contribución](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md)
-- [Política de seguridad](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
+| Tu interés | Primer paso útil |
+|---|---|
+| Documentación y accesibilidad | Describe un paso confuso, su ubicación y una propuesta de corrección en una [issue del perfil](https://github.com/Traky12/Traky12/issues/new). |
+| Python y verificación | Lee la [configuración actual de evaluación](https://github.com/Traky12/castuo-e3-001/blob/main/README.md#install) y elige una [issue acotada existente](https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue). |
+| Revisión independiente | Lee los [requisitos de revisión y las puertas pendientes](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md#level-3--independent-e3-001-review-formal-process) antes de proponer una revisión. |
+
+Usa datos sintéticos o públicos. Una primera contribución no requiere acceso a repositorios privados ni credenciales. Comprueba si la issue está pausada antes de empezar; el estado de revisión independiente solo cambia tras la aceptación formal de la evidencia.
+
+- [Guía de contribución al perfil](CONTRIBUTING.md) · [Guía de e3bundle](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md)
+- [Comunicar vulnerabilidades en privado](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
 - [Mapa completo de repositorios](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Límites de claims públicos](PUBLIC_CLAIM_BOUNDARY.es.md) · [Índice de evidencia](evidence-center/README.md)
 
 ## Contacto
