@@ -28,6 +28,16 @@
 
 ---
 
+## What I build · inspect the work
+
+| Focus | Tools used in the linked artifact | Start here |
+|---|---|---|
+| Portable evidence verification | Python · SHA-256 · Ed25519 · JSON | [e3bundle alpha and its limits](https://github.com/Traky12/castuo-e3-001) |
+| Understandable decision boundaries | HTML · SVG · synthetic JSON cases | [Local governed explorer](demos/governed-explorer/README.md) |
+| Reviewable engineering documentation | Markdown · YAML · provenance and acceptance criteria | [Public evidence dossiers](evidence-center/README.md) |
+
+**Current focus:** make verification easier to reproduce, explain failure and abstention clearly, and improve contribution paths in English and Spanish. The linked artifacts show the scope of this work; they do not establish independent validation or production readiness.
+
 ## Featured open-source prototype · e3bundle
 
 **[e3bundle](https://github.com/Traky12/castuo-e3-001)** is a small MIT-licensed Python CLI for creating, signing and verifying portable evidence bundles offline.
@@ -135,9 +145,16 @@ Capability is not maturity: `DOCUMENTED ≠ IMPLEMENTED ≠ TESTED ≠ VALIDATED
 
 Start with one bounded, reproducible contribution:
 
-- [Good first issues](https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue)
-- [Contribution guide](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md)
-- [Security policy](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
+| Your interest | Useful first step |
+|---|---|
+| Documentation and accessibility | Describe one confusing step, its location and a proposed correction in a [profile issue](https://github.com/Traky12/Traky12/issues/new). |
+| Python and verification | Read the [current evaluation setup](https://github.com/Traky12/castuo-e3-001/blob/main/README.md#install), then choose an [existing scoped issue](https://github.com/Traky12/castuo-e3-001/labels/good%20first%20issue). |
+| Independent review | Read the [review requirements and current gates](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md#level-3--independent-e3-001-review-formal-process) before proposing a review. |
+
+Use synthetic or public data. A first contribution needs no private-repository access or credentials. Check whether an issue is paused before starting; independent-review status changes only after the formal evidence is accepted.
+
+- [Profile contribution guide](CONTRIBUTING.md) · [e3bundle contribution guide](https://github.com/Traky12/castuo-e3-001/blob/main/CONTRIBUTING.md)
+- [Report vulnerabilities privately](https://github.com/Traky12/castuo-e3-001/blob/main/SECURITY.md)
 - [Full repository map](docs/CASTUO_ECOSYSTEM_PUBLIC_REPOSITORY_MAP.md) · [Public claim boundary](PUBLIC_CLAIM_BOUNDARY.md) · [Evidence index](evidence-center/README.md)
 
 ## Contact

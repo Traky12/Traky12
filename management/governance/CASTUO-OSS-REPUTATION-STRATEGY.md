@@ -49,3 +49,36 @@ La métrica principal no es el número de achievements. El control plane debe ob
 No se fabricarán PRs triviales, issues artificiales, Discussions simuladas, cuentas espejo, actividad inflada, badges comprados ni claims de comunidad o tracción que no estén respaldados. Un achievement de GitHub, una estrella, una release o un commit es una señal de actividad, no evidencia de calidad, producción, adopción, seguridad, independencia o resultado económico.
 
 La reputación queda subordinada a la cadena `capability → evidence → review → gate → claim`. El perfil sólo puede comunicar lo que el índice, los passports y los gates permiten dentro de su alcance declarado.
+
+## Aplicación práctica — 18 de octubre de 2026
+
+La mejora toma patrones generales de presentación de portfolios: foco comprensible, herramientas enlazadas a trabajo concreto y vías de colaboración. No atribuye a terceros automatización, manipulación ni una estrategia que no se haya verificado. Tampoco copia sus textos, identidad o activos.
+
+El README EN/ES incorpora tres muestras inspeccionables y tres rutas de entrada; CONTRIBUTING define el contenido mínimo de una reproducción y mantiene la revisión formal. Son mejoras de navegación y proceso. No añaden capacidad de ejecución a SABIONDA, no corrigen CI del núcleo y no promocionan madurez técnica.
+
+### Secuencia de trabajo propuesta
+
+Las semanas son orden de trabajo, no compromisos de entrega ni resultados alcanzados. Reutilizar issues existentes; abrir una nueva solo si el problema no está registrado.
+
+| Fase | Trabajo | Evidencia de cierre | Dependencia |
+|---|---|---|---|
+| 1 · Entrada clara | Revisar README EN/ES y rutas de contribución | Diff aprobado, enlaces comprobados y checks del head | Revisión humana y checks exigidos del perfil |
+| 2 · Reproducción acotada | Resolver una fricción concreta del tutorial con datos sintéticos | SHA, entorno, comandos, salidas positivas y negativas; PR revisada | Respetar configuración de evaluación y gates de e3bundle |
+| 3 · Colaboración sustantiva | Revisar una contribución externa real sobre una issue acordada | Diff, pruebas, revisión y atribución del trabajo | Participante real; no crear cuentas, PRs o conversaciones artificiales |
+| 4 · Consolidación | Publicar una nota breve del cambio aceptado y sus límites | Enlace a evidencia, limitaciones y siguiente problema verificable | Cambio integrado y evidencia pública autorizada |
+
+La issue de captación e3bundle #30 estaba abierta pero **pausada por gates de PyPI/advisory/Pages** en la consulta del 18 de octubre. Este plan no la reactiva ni inicia captación, mensajes o publicaciones externas. Antes de proponer una actividad, releer el estado de su issue y los gates correspondientes.
+
+### Medición mínima, sin infraestructura nueva
+
+Mantener los datos en las issues/PRs existentes y resumirlos al cerrar un ciclo. Registrar periodo, fuente y tamaño de muestra. Si falta información, usar `UNKNOWN`; no sustituirla por cero.
+
+| Indicador | Definición | Evidencia requerida |
+|---|---|---|
+| Reproducciones utilizables | Informes con SHA, entorno, comandos y salidas / informes recibidos | Enlaces a informes únicos; no contar ejemplos del autor como independientes |
+| Tiempo hasta primera revisión sustantiva | Mediana entre apertura y primera revisión humana con observaciones técnicas | Timestamps y enlaces; excluir respuestas automáticas |
+| Fricciones corregidas | Problemas de incorporación resueltos y comprobados durante el periodo | Issue, diff aceptado y nueva reproducción |
+| Cobertura de límites | Escenarios negativos ejecutados / escenarios negativos declarados para la tarea | Resultados con alcance, skips y fallos visibles |
+| Colaboración sostenida | Personas externas con una segunda aportación sustancial en el periodo | Contribuciones públicas reales, sin recopilar información personal adicional |
+
+No hay baseline ni resultados nuevos de estas métricas. Seguidores, estrellas, organizaciones y achievements no sustituyen ninguna de ellas. El siguiente aumento defendible de capacidad proviene de corregir una fricción o regresión comprobada y obtener revisión independiente; añadir nombres de herramientas al perfil no lo demuestra.
