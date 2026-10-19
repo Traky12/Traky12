@@ -85,6 +85,12 @@ It does **not** prove that:
 
 Integrity verification is one layer of assurance, not complete validation of the underlying event or claim.
 
+## Data & confidentiality boundary
+
+CASTÚO-SYSTEM explores optional database/API integrations, including Supabase, but **no deployed production integration is claimed**. The public profile intentionally does not expose the live project endpoint, database connection strings, secrets, private infrastructure or customer data. A project API URL is not a database password; frontend access still requires correct RLS, limited privileges and security review.
+
+Read the [publication and Supabase disclosure policy](docs/CASTUO_PUBLICATION_AND_SUPABASE_BOUNDARY.md) before proposing public-facing integrations.
+
 ## Current Public Status
 
 The public tool is an **alpha**, not a production-approved release.
